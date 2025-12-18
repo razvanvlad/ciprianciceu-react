@@ -2,6 +2,7 @@
 @use '../utils/typography' as *;
 
 :root {
+
     /**
     @font family declaration
     */
@@ -24,7 +25,7 @@
     /**
     @font weight declaration
     */
-    
+
     @each $fw, $shades in $font-scale {
         @each $shade, $value in $shades {
             --tp-#{$fw}-#{$shade}: #{$value};
@@ -34,7 +35,7 @@
     /**
     @font size declaration
     */
-    
+
     @each $fz, $shades in $font-size {
         @each $shade, $value in $shades {
             --tp-#{$fz}-#{$shade}: #{$value};
@@ -44,5 +45,80 @@
     /**
     @gradient declaration
     */
-    --gradient-ciceu: linear-gradient(135deg, #5C24FC 0%, #1ACEC6 100%);
+    /* PRIMARY COLORS */
+    --primary-dark: #04001A;
+    /* Your dark navy - backgrounds */
+    --primary-purple: #5C24FC;
+    /* From gradient - accents */
+    --primary-teal: #1ACEC6;
+    /* From gradient - accents */
+    --primary-blue: #00A8E4;
+    /* Your blue - secondary accent */
+    --primary-green: #12D2BD;
+    /* Your green - tertiary accent */
+
+    /* GRADIENTS */
+    --gradient-main: linear-gradient(135deg, #5C24FC 0%, #1ACEC6 100%);
+    --gradient-hover: linear-gradient(135deg, #6B39FF 0%, #00DFCA 100%);
+    --gradient-dark: linear-gradient(135deg, #3D0FB8 0%, #0B9E98 100%);
+
+    /* NEUTRALS (NEW - Critical Missing) */
+    --neutral-50: #F8F9FA;
+    /* Almost white - light backgrounds */
+    --neutral-100: #F0F2F5;
+    /* Very light gray - section backgrounds */
+    --neutral-200: #E4E6EB;
+    /* Light gray - borders, dividers */
+    --neutral-300: #CED0D6;
+    /* Medium light - disabled states */
+    --neutral-400: #8A8D91;
+    /* Medium gray - secondary text */
+    --neutral-500: #65676B;
+    /* Darker gray - body text */
+    --neutral-600: #50545A;
+    /* Dark gray - headings */
+    --neutral-700: #3A3D42;
+    /* Very dark gray - emphasis */
+    --neutral-800: #19142C;
+    /* Your dark navy-black */
+    --neutral-900: #04001A;
+    /* Your darkest - primary dark */
+
+    /* STATUS COLORS (NEW - Critical Missing) */
+    --status-success: #10B981;
+    /* Green for success */
+    --status-error: #EF4444;
+    /* Red for errors */
+    --status-warning: #F59E0B;
+    /* Amber for warnings */
+    --status-info: #3B82F6;
+    /* Blue for info */
+
+    /* SEMANTIC COLORS (NEW) */
+    --color-background: #04001A;
+    /* Page background */
+    --color-surface: #0F0624;
+    /* Card/container background */
+    --color-surface-light: #F8F9FA;
+    /* Light card backgrounds */
+    --color-text-primary: #FFFFFF;
+    /* Main text (on dark) */
+    --color-text-secondary: #B0B0B0;
+    /* Secondary text (on dark) */
+    --color-text-tertiary: #808080;
+    /* Tertiary text (on dark) */
+    --color-text-dark: #04001A;
+    /* Text on light backgrounds */
+    --color-border: #2D2440;
+    /* Subtle borders */
+    --color-border-light: #E4E6EB;
+    /* Light borders */
+
+    /* INTERACTIVE STATES (NEW) */
+    --color-hover: #5C24FC;
+    /* Hover state */
+    --color-active: #3D0FB8;
+    /* Active state */
+    --color-disabled: #65676B;
+    /* Disabled state */
 }

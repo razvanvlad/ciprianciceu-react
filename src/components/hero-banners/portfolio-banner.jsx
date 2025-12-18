@@ -5,7 +5,7 @@ import Link from "next/link";
 import shape_1 from '@assets/img/slider/9/slider-shape-1.png';
 import shape_2 from '@assets/img/slider/9/slider-shape-2.png';
 import main_img from '@assets/img/slider/9/slider-1.png';
-import {Behance, Dribble, Instagram} from "@svg/index";
+import { Behance, Dribble, Instagram } from "@svg/index";
 
 const PortfolioBanner = () => {
   return (
@@ -17,10 +17,10 @@ const PortfolioBanner = () => {
               <div className="col-xl-7 col-lg-6 col-md-7">
                 <div className="slider__content-9">
                   <span className="slider__title-pre-9">
-                    Hy ! I am Brian miller
+                    Hi! I am Ciprian Ciceu
                   </span>
                   <h3 className="slider__title-9">
-                    Creative <br /> UI/UX designer
+                    Entrepreneur <br /> Blockchain Educator
                   </h3>
                   <p>
                     Hi! {"I'm"} a UI/UX Designer - creating bold & brave
@@ -41,17 +41,17 @@ const PortfolioBanner = () => {
                     <ul>
                       <li>
                         <a href="https://www.instagram.com/" target='_blank' rel="noreferrer">
-                          <Instagram/>
+                          <Instagram />
                         </a>
                       </li>
                       <li>
                         <a href="https://dribbble.com/" target='_blank' rel="noreferrer">
-                          <Dribble/>
+                          <Dribble />
                         </a>
                       </li>
                       <li>
                         <a href="https://www.behance.net/" target='_blank' rel="noreferrer">
-                          <Behance/>
+                          <Behance />
                         </a>
                       </li>
                     </ul>

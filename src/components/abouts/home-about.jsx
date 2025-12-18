@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 // internal
 import aboutImg from "@assets/img/ciceu/ciceu-profil1.jpeg";
-import authorImg from "@assets/img/about/about-author-thumb.jpg";
+import authorImg from "@assets/img/ciceu/cipri-profiel-circle.png";
 import ShapeLine from "@svg/shape-line";
 import CountUpContent from "@components/common/counter";
 
