@@ -1,0 +1,32 @@
+@use '@assets/scss/utils' as *;
+
+/*----------------------------------------*/
+/*  18. TYPO CSS START
+/*----------------------------------------*/
+
+#landing_page .typo{
+    $self : '.typo';
+    &__wrapper{
+        background: #6364DB;
+        border-radius: 14px;
+        padding: 45px 50px 25px;
+
+        &-2{
+            background-color: #EEF6F1;
+
+            #{$self}{
+                &__title{
+                    color: var(--tp-common-black);
+                }
+            }
+        }
+    }
+    &__title{
+
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: -0.04em;
+        color: #FFFFFF;
+        margin-bottom: 68px;
+    }
+}

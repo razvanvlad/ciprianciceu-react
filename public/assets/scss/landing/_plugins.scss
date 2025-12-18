@@ -1,0 +1,399 @@
+@use '@assets/scss/utils' as *;
+
+/*----------------------------------------*/
+/*  07. PLUGINS CSS START
+/*----------------------------------------*/
+
+#landing_page .plugins{
+    $self: '.plugins';
+    &__section-title{
+        &-shape{
+            position: absolute;
+            top: 18%;
+            right: 29%;
+            z-index: -1;
+
+            @media #{$lg}{
+                top: -85px;
+            }
+
+            @media #{$md}{
+                top: -100px;
+            }
+
+            @media #{$sm}{
+                top: 121px;
+                right: 8%;
+            }
+
+            @media #{$xs}{
+                display: none;
+            }
+        }
+        & .tp-section-title-wrapper{
+            & p{
+                padding-left: 60px;
+
+                @media #{$sm, $xs}{
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    &__item{
+        padding: 40px 30px;
+        border-radius: 8px;
+        @include tp-gradient((180deg, rgba(255, 234, 242, 0) 0%, rgba(255, 234, 242, 0.6) 100%));
+
+        &.tp-mailchimp{
+            background-image: none;
+            background-color: #FFFFFF99;
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: var(--tp-common-black);
+                        border-color: rgba($color: #03041C, $alpha: .08);
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+
+        &.tp-wpzoom{
+            @include tp-gradient((180deg, rgba(255, 244, 244, 0) 0%, #FFF4F4 100%));
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #F54443;
+                        border-color: rgba($color: #F54345, $alpha: .08);
+                        background-color: #FFF6F6;
+                    }
+                }
+            }
+        }
+        &.tp-acf{
+            background-image: none;
+            background-color: #fff;
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #1CB88A;
+                        border-color: rgba($color: #1CB88A, $alpha: .08);
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+        &.tp-cf7{
+            @include tp-gradient((180deg, rgba(234, 250, 255, 0) 0%, #EAFAFF 100%));
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #1FB7E7;
+                        border-color: rgba($color: #1FB7E7, $alpha: .08);
+                        background-color: #EDFBFF;
+                    }
+                }
+            }
+        }
+        &.tp-kirki{
+            @include tp-gradient((180deg, rgba(242, 246, 255, 0) 0%, #F2F6FF 100%));
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #2764F1;
+                        border-color: rgba($color: #2764F1, $alpha: .08);
+                        background-color: #F5F8FF;
+                    }
+                }
+            }
+        }
+        &.tp-navxt{
+            background-image: none;
+            background-color: #FFFFFF;
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #03041C;
+                        border-color: rgba($color: #03041C, $alpha: .08);
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+        &.tp-woo{
+            @include tp-gradient((180deg, rgba(255, 241, 252, 0) 0%, #FFF1FC 100%));
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #98548B;
+                        border-color: rgba($color: #98548B, $alpha: .08);
+                        
+                    }
+                }
+            }
+        }
+
+        &.tp-bs{
+            @include tp-gradient((180deg, rgba(255, 234, 242, 0) 0%, rgba(110, 16, 244, 0.1) 100%));
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #6E10F4;
+                        border-color: rgba($color: #6E10F4, $alpha: .08);
+                        background-color: rgba($color: #6E10F4, $alpha: .01);
+                        
+                    }
+                }
+            }
+        }
+
+        &.tp-html{
+            @include tp-gradient((180deg, rgba(242, 246, 255, 0) 0%, rgba(227, 76, 37, 0.2) 100%));
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #E34C25;
+                        border-color: rgba($color: #E34C25, $alpha: .08);
+                        background-color: rgba($color: #E34C25, $alpha: .01);
+                        
+                    }
+                }
+            }
+        }
+
+        &.tp-sass{
+            background-image: none;
+            background-color: #fff;
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #CD6799;
+                        border-color: rgba($color: #CD6799, $alpha: .08);
+                        background-color: rgba($color: #CD6799, $alpha: .01);
+                        
+                    }
+                }
+            }
+        }
+
+        &.tp-gf{
+           @include tp-gradient((180deg, rgba(242, 246, 255, 0) 0%, rgba(52, 168, 82, 0.1) 100%));
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #34A852;
+                        border-color: rgba($color: #34A852, $alpha: .08);
+                        background-color: rgba($color: #34A852, $alpha: .01);
+                        
+                    }
+                }
+            }
+        }
+
+        &.tp-seo{
+            background-image: none;
+            background-color: #fff;
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #FF3C10;
+                        border-color: rgba($color: #FF3C10, $alpha: .08);
+                        background-color: rgba($color: #FF3C10, $alpha: .01);
+                        
+                    }
+                }
+            }
+        }
+
+        &.tp-slick{
+            @include tp-gradient((180deg, rgba(242, 246, 255, 0) 0%, rgba(52, 152, 219, 0.2) 100%));
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #3498DB;
+                        border-color: rgba($color: #3498DB, $alpha: .08);
+                        background-color: rgba($color: #3498DB, $alpha: .01);
+                        
+                    }
+                }
+            }
+        }
+
+        &.tp-swiper{
+            @include tp-gradient((180deg, rgba(242, 246, 255, 0) 0%, rgba(0, 128, 255, 0.2) 100%));
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #0080FF;
+                        border-color: rgba($color: #0080FF, $alpha: .08);
+                        background-color: rgba($color: #0080FF, $alpha: .01);
+                        
+                    }
+                }
+            }
+        }
+
+        &.tp-magnific{
+           @include tp-gradient((180deg, rgba(242, 246, 255, 0) 0%, rgba(22, 92, 85, 0.22) 100%));
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #165C55;
+                        border-color: rgba($color: #165C55, $alpha: .08);
+                        background-color: rgba($color: #165C55, $alpha: .01);
+                        
+                    }
+                }
+            }
+        }
+
+        &.tp-fontawesome{
+           @include tp-gradient((180deg, rgba(242, 246, 255, 0) 0%, rgba(34, 138, 230, 0.21) 100%));
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #228AE6;
+                        border-color: rgba($color: #228AE6, $alpha: .08);
+                        background-color: rgba($color: #228AE6, $alpha: .01);
+                        
+                    }
+                }
+            }
+        }
+
+        &.tp-support{
+            background-image: none;
+            background-color: #fff;
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #4F5EFF;
+                        border-color: rgba($color: #4F5EFF, $alpha: .08);
+                        background-color: rgba($color: #4F5EFF, $alpha: .01);
+                        
+                    }
+                }
+            }
+        }
+
+        &.tp-speed{
+            background-image: none;
+            background-color: #fff;
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #6EBF04;
+                        border-color: rgba($color: #6EBF04, $alpha: .08);
+                        background-color: rgba($color: #6EBF04, $alpha: .01);
+                        
+                    }
+                }
+            }
+        }
+
+        &.tp-responsive{
+            background-image: none;
+            background-color: #fff;
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #F50963;
+                        border-color: rgba($color: #F50963, $alpha: .08);
+                        background-color: rgba($color: #F50963, $alpha: .01);
+                        
+                    }
+                }
+            }
+        }
+
+        &.tp-documentaion{
+            @include tp-gradient((180deg, rgba(255, 234, 242, 0) 0%, rgba(156, 49, 254, 0.12) 100%));
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #9C31FE;
+                        border-color: rgba($color: #9C31FE, $alpha: .08);
+                        background-color: rgba($color: #9C31FE, $alpha: .01);
+                        
+                    }
+                }
+            }
+        }
+
+        &.tp-code{
+            background-image: none;
+            background-color: #fff;
+
+            #{$self}{
+                &__content{
+                    & > span{
+                        color: #5074E8;
+                        border-color: rgba($color: #5074E8, $alpha: .08);
+                        background-color: rgba($color: #5074E8, $alpha: .01);
+                        
+                    }
+                }
+            }
+        }
+    }
+    &__title{
+        font-size: 18px;
+        line-height: 1.22;
+        color: var(--tp-common-black-solid);
+        margin-bottom: 18px;
+    }
+    &__icon{
+        & span{
+            display: inline-block;
+            margin-bottom: 18px;
+            width: 70px;
+            height: 70px;
+            line-height: 68px;
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0px 3px 5px rgba(16, 70, 197, 0.2);
+            background-color: var(--tp-common-white);
+            overflow: hidden;
+            & img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+    &__content{
+        & > span{
+            font-family: var(--tp-ff-space);
+            font-weight: 500;
+            font-size: 13px;
+            letter-spacing: -0.02em;
+            color: #92003B;
+            background: #FFF5F9;
+            border: 1px solid rgba(146, 0, 59, 0.1);
+            border-radius: 20px;
+            display: inline-block;
+            padding: 5px 12px;
+            line-height: 1;
+        }
+    }
+}

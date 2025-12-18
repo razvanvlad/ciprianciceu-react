@@ -1,0 +1,141 @@
+@use '@assets/scss/utils' as *;
+
+/*----------------------------------------*/
+/*  10. HEADER FOOTER PREVIEW CSS START
+/*----------------------------------------*/
+
+#landing_page .hf__preview{
+    $self: '.hf__preview';
+    &-item{
+        background-color: #FBF7F0;
+        border-radius: 20px;
+        padding: 65px 55px;
+        overflow: hidden;
+        
+        @media #{$xl}{
+            padding: 65px 40px;
+        }
+
+        @media #{$md}{
+            margin-bottom: 20px;
+        }
+
+        @media #{$sm}{
+            margin-bottom: 20px;
+           padding: 65px 40px;
+        }
+
+        @media #{$xs}{
+            margin-bottom: 20px;
+            padding: 45px 35px;
+        }
+
+        &.tp-footer-prv{
+            background-color: #E9F6FB;
+            padding-bottom: 90px;
+            & #{$self}{
+                &-content{
+                    margin-bottom: 112px;
+
+                    @media #{$xl}{
+                        margin-bottom: 129px;
+                    }
+                }
+                &-thumb{
+                    & img{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    &-title{
+        font-size: 30px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        color: var(--tp-common-black-solid);
+
+        @media #{$lg}{
+            font-size: 22px;
+        }
+        @media #{$xs}{
+            margin-top: 40px;
+        }
+        & span{
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            & svg{
+                position: absolute;
+                left: 3px;
+                bottom: -2px;
+                z-index: -1;
+                & path{
+                    stroke: var(--tp-theme-1);
+                }
+            }
+        }
+    }
+    &-number{
+        font-family: var(--tp-ff-space);
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 1;
+        color: var(--tp-common-black);
+        margin-right: 35px;
+        position: relative;
+        z-index: 1;
+        & img{
+            position: absolute;
+            bottom: -13px;
+            left: -11px;
+            z-index: -1;
+        }
+    }
+    &-thumb{
+        position: relative;
+        z-index: 1;
+        & img{
+            @include transform(rotate(-15deg));
+            
+            @media #{$xs}{
+                width: 100%;
+            }
+            &:last-child{
+                @media #{$lg}{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &-content{
+        margin-bottom: 90px;
+    }
+    &-shape{
+        &-1{
+            position: absolute;
+            left: 1%;
+            top: -24%;
+            z-index: -1;
+
+            @media #{$xs}{
+                left: -5%;
+            }
+        }
+        &-2{
+            position: absolute;
+            left: 4%;
+            top: -2%;
+            z-index: -1;
+
+            @media #{$lg}{
+                top: -100px;
+            }
+
+            @media #{$xs}{
+                left: 0;
+            }
+
+        }
+    }
+}

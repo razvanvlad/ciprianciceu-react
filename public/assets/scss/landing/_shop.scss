@@ -1,0 +1,94 @@
+@use '@assets/scss/utils' as *;
+
+/*----------------------------------------*/
+/*  12. SHOP CSS START
+/*----------------------------------------*/
+
+#landing_page .shop{
+    &__section-title{
+        &-pre{
+            margin-bottom: 5px;
+        }
+        & .tp-section-title{
+            margin-bottom: 22px;
+        }
+        & .tp-section-title-underline{
+            & svg{
+                left: 32px;
+
+                @media #{$sm, $xs}{
+                    left: 0;
+                    bottom: -5px;
+                }
+            }
+        }
+    }
+    &__thumb{
+        &-wrapper{
+            position: relative;
+            z-index: 1;
+            margin-right: 40px;
+            @media #{$lg, $md, $sm, $xs, $sm}{
+               margin-right: 0;
+            }
+        }
+        @media #{$lg}{
+            margin-left: 0;
+         }
+
+        @media #{$md, $sm, $xs}{
+           margin-left: 0;
+           margin-top: 90px;
+        }
+
+        & img{
+            @media #{$xl, $lg, $md, $sm, $xs}{
+                width: 100%;
+            }
+        }
+    }
+    &__shape{
+        &-1{
+            position: absolute;
+            top: -56px;
+            left: 57px;
+            z-index: 1;
+
+            @media #{$sm}{
+                left: -40px;
+            }
+            @media #{$xs}{
+                display: none;
+             }
+        }
+        &-2{
+            position: absolute;
+            bottom: 1%;
+            right: -100px;
+            z-index: 1;
+
+            @media #{$sm}{
+                right: -70px;
+                width: 40%;
+            }
+            @media #{$xs}{
+                display: none;
+             }
+        }
+        &-3{
+            position: absolute;
+            top: -50px;
+            right: 0;
+            z-index: -1;
+            @media #{$xs}{
+                display: none;
+            }
+        }
+        &-4{
+            position: absolute;
+            top: 10%;
+            right: 0%;
+            
+        }
+    }
+}

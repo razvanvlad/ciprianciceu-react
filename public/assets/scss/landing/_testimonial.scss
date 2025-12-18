@@ -1,0 +1,175 @@
+@use '@assets/scss/utils' as *;
+
+/*----------------------------------------*/
+/*  23. TESTIMONIAL CSS START
+/*----------------------------------------*/
+
+#landing_page .testimonial{
+    &__item{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: var(--tp-common-white);
+        box-shadow: 0px 10px 20px rgba(3, 4, 28, 0.1);
+        border-radius: 10px;
+        padding: 47px 60px 50px;
+
+        @media #{$sm, $xs}{
+            padding: 47px 30px 50px;
+        }
+
+    }
+    &__avater{
+        
+        & span{
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            line-height: 58px;
+            text-align: center;
+            border: 1px solid rgba($color: #6BBA1F, $alpha: .2);
+            border-radius: 50%;
+            margin-right: 20px;
+            @media #{$xs}{
+                margin-bottom: 25px;
+            }
+            @at-root {
+                div#{&} {
+                    & img{
+                        display: inline-block;
+                    }
+                }
+              }
+            
+        }
+
+        &-title{
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: -0.04em;
+            margin-bottom: 0;
+        }
+        &-designation{
+            font-size: 14px;
+            line-height: 1;
+        }
+    }
+    &__rating{
+        margin-bottom: 7px;
+        & span{
+            font-size: 15px;
+            color: #FFB422;
+        }
+
+        &-thumb{
+            @media #{$xs}{
+                margin-bottom: 40px;
+            }
+        }
+    }
+    &__quote{
+        margin-bottom: 22px;
+    }
+    &__content{
+        & > p{
+            font-size: 20px;
+            line-height: 1.5;
+            color: #03041C;
+            margin-bottom: 21px;
+        }
+    }
+    &__slider{
+        position: relative;
+        & .slick-list{
+            overflow: visible;
+            margin: 0 -15px;
+        }
+
+        
+
+        & .slick-slide{
+            opacity: .3;
+            & > div{
+                margin: 0 15px;
+            }
+
+            &.slick-current.slick-active{
+                opacity: 1;
+            }
+        }
+
+        & .slick-dots{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & li{
+                list-style: none;
+
+                & button{
+                    font-size: 0;
+                    width: 8px;
+                    height: 8px;
+                    background-color: rgba($color: #03041C, $alpha: .1);
+                    border-radius: 50%;
+                    margin: 0 4px;
+                    position: relative;
+                    z-index: 1;
+
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        left: -3px;
+                        top: -3px;
+                        width: 14px;
+                        height: 14px;
+                        border: 1px solid #03041C;
+                        background-color: var(--tp-common-white);
+                        border-radius: 50%;
+                        z-index: -1;
+                        @include transform(scale(0));
+                        @include transition(.2s);
+                    }
+                }
+
+                &.slick-active{
+                    & button{
+                        &::after{
+                            @include transform(scale(1));
+                        }
+                    }
+                }
+            }
+        }
+
+        &-arrow{
+            & button{
+                position: absolute;
+                bottom: 4px;
+                left: 43%;
+                font-size: 14px;
+                color: #03041C;
+                z-index: 1;
+
+                @media #{$sm}{
+                    left: 39%;
+                }
+
+                @media #{$xs}{
+                    display: none;
+                }
+
+                &.slick-next{
+                    right: 43%;
+                    left: auto;
+
+                    @media #{$sm}{
+                        right: 39%;
+                    }
+
+                    @media #{$xs}{
+                        right: 38%;
+                    }
+                }
+            }
+        }
+    }
+}

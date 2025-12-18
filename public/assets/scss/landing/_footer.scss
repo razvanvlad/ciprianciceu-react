@@ -1,0 +1,77 @@
+@use '@assets/scss/utils' as *;
+
+/*----------------------------------------*/
+/*  00. FOOTER CSS START
+/*----------------------------------------*/
+
+#landing_page .footer{
+    &__subtitle{
+        font-family: var(--tp-ff-space);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFD43E;
+        display: inline-block;
+        margin-bottom: 12px;
+    }
+    &__title{
+        font-size: 80px;
+        line-height: 1;
+        text-align: center;
+        letter-spacing: -0.04em;
+        color: #FFFFFF;
+        margin-bottom: 27px;
+
+        @media #{$md}{
+            font-size: 70px;
+        }
+        @media #{$sm, $xs}{
+            font-size: 50px;
+        }
+
+        & span{
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            & svg{
+                position: absolute;
+                bottom: -5px;
+                left: 6px;
+                z-index: -1;
+
+                @media #{$xs}{
+                    bottom: 0;
+                    width: 100%;
+                    left: 0;
+                }
+
+                & path{
+                    stroke-dasharray: 560;
+                    stroke-dashoffset: 560;
+                    animation: section_stroke 3s linear forwards infinite;
+                    -webkit-animation: section_stroke 3s linear forwards infinite;
+                }
+            }
+        }
+    }
+    &__content{
+        & p{
+            font-size: 18px;
+            line-height: 1.56;
+            color: rgba($color: #fff, $alpha: .8);
+            margin-bottom: 40px;
+        }
+    }
+    &__btn{
+        & .tp-btn{
+            padding: 16px 31px 13px;
+        }
+    }
+}
+
+.pb-305{
+    padding-bottom: 305px;
+}

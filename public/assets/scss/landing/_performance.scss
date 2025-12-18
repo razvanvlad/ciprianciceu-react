@@ -1,0 +1,123 @@
+@use '@assets/scss/utils' as *;
+
+/*----------------------------------------*/
+/*  16. PERFORMANCE CSS START
+/*----------------------------------------*/
+
+#landing_page .performance{
+    &__wrapper{
+        background: #F4F0E9;
+        border-radius: 14px;
+        padding: 50px 50px 38px;
+        position: relative;
+        z-index: 1;
+
+        @media #{$lg}{
+            padding: 50px 25px 38px;
+        }
+
+        @media #{$xs}{
+            padding: 50px 30px 38px;
+        }
+
+        &::after{
+            position: absolute;
+            content: '';
+            bottom: -26px;
+            left: 30px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            @include tp-gradient((166.53deg, #FFFFFF 8.19%, rgba(244, 241, 237, 0) 89.49%));
+            z-index: -1;
+
+            @media #{$lg, $xs}{
+                bottom: 0;
+                width: 250px;
+                height: 250px;
+            }
+
+        }
+    }
+    &__title{
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: -0.04em;
+        margin-bottom: 65px;
+    }
+    &__grade{
+        margin-right: 13px;
+        & h5{
+            font-size: 16px;
+            line-height: 1;
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+            background-color: var(--tp-common-black);
+            border-radius: 4px;
+            margin-bottom: 5px;
+            display: inline-block;
+            padding: 3px 9px;
+        }
+
+        & p{
+            font-family: var(--tp-ff-space);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1;
+            color: #000000;
+        }
+    }
+    &__number{
+        margin-left: 13px;
+        & h4{
+            font-size: 80px;
+            line-height: .8;
+            letter-spacing: -0.02em;
+            color: #000000;
+
+        }
+    }
+    &__bar{
+        margin-bottom: 15px;
+        &-text{
+            padding: 18px 20px;
+            border-radius: 10px;
+            @include tp-gradient((96.12deg, #7374FF 3.48%, #FF61AD 102.42%));
+            & h4{
+                font-family: var(--tp-ff-space);
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 1;                
+                color: #FFFFFF;  
+                margin-bottom: 0;               
+            }
+        }
+    }
+    &__compare{
+        &-item{
+            margin-bottom: 5px;
+            &-bar{
+                @include tp-gradient((96.12deg, #7374FF 3.48%, #FF61AD 102.42%));
+                border-radius: 10px;
+                height: 8px;
+                width: 81%;
+                
+
+                &-2{
+                    height: 8px;
+                    border-radius: 6px;
+                    background-color: #DCD8D5;
+                    width: 45%;
+
+                }
+            }
+            & h5{
+                font-weight: 500;
+                font-size: 14px;
+                text-align: right;
+                letter-spacing: -0.02em;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

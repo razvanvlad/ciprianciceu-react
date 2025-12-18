@@ -1,0 +1,104 @@
+@use '@assets/scss/utils' as *;
+
+/*----------------------------------------*/
+/*  05. FEATURES CSS START
+/*----------------------------------------*/
+
+#landing_page .features{
+    $self: '.features';
+    &__item{
+        padding: 50px 50px;
+        background: var(--tp-common-white);
+        box-shadow: 20px 30px 70px rgba(3, 4, 28, 0.1);
+        border-radius: 20px;
+        overflow: hidden;
+        
+        @media #{$xl}{
+            padding: 50px 30px;
+        }
+
+        @media #{$lg}{
+            padding: 20px 20px;
+        }
+
+        @media #{$md, $xs}{
+            padding: 30px 30px;
+        }
+
+        &.tp-shop-features{
+            
+            #{$self}{
+                &__content{
+                    margin-bottom: 73px;
+
+                    @media #{$md}{
+                        margin-bottom: 35px;
+                    }
+                    @media #{$xs}{
+                        margin-bottom: 0;
+                    }
+                }
+                &__thumb{
+                    margin-bottom: -20px;
+                }
+            }
+        }
+
+        &.tp-support-features{
+            
+            #{$self}{
+                &__content{
+                    margin-bottom: 57px;
+
+                    @media #{$xs}{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        &::after{
+            display: none !important;
+        }
+
+        &:hover{
+            transform: translate(0);
+        }
+    }
+    &__title{
+        font-size: 24px;
+        letter-spacing: -0.02em;
+        margin-bottom: 12px;
+    }
+    &__content{
+        & p{
+            font-size: 16px;
+            line-height: 1.5;
+            padding-right: 32px;
+
+            @media #{$xl, $md, $xs}{
+                padding-right: 0;
+            }
+        }
+    }
+    &__thumb{
+        height: 360px;
+
+        @media #{$xs}{
+            height: 270px;
+        }
+        & img{
+            max-width: 100%;
+        }
+    }
+    &__section{
+        &-title{
+            position: relative;
+            &-shape{
+                position: absolute;
+                top: -7%;
+                left: 9%;
+            }
+        }
+    }
+}

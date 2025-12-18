@@ -1,0 +1,24 @@
+@use '@assets/scss/utils' as *;
+
+/*----------------------------------------*/
+/*  14. TOOLS CSS START
+/*----------------------------------------*/
+
+#landing_page .tools{
+    &__section-title{
+        & .tp-section-title{
+            margin-bottom: 20px;
+        }
+    }
+    &__thumb{
+        @media #{$lg, $sm, $xs}{
+            margin-right: 0;
+        }
+
+        & img{
+            @media #{$lg, $sm, $xs}{
+                width: 100%;
+            }
+        }
+    }
+}

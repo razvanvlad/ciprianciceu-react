@@ -1,0 +1,79 @@
+@use '@assets/scss/utils' as *;
+
+/*----------------------------------------*/
+/*  19. CONCEPT CSS START
+/*----------------------------------------*/
+
+#landing_page .concept{
+    &__wrapper{
+        background: #F2F3F8;
+        border-radius: 14px;
+        padding: 75px 80px 33px;
+
+        @media #{$lg, $sm}{
+            padding: 75px 40px 33px;
+        }
+
+        @media #{$xs}{
+            padding: 35px 40px 33px;
+        }
+        & p{
+            font-size: 16px;
+            line-height: 1.62;
+            margin-bottom: 70px;
+
+            & br{
+                @media #{$sm, $xs}{
+                    display: none;
+                }
+            }
+        }
+    }
+    &__title{
+        font-size: 44px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        margin-bottom: 15px;
+
+        & span{
+            position: relative;
+            z-index: 1;
+
+            & svg{
+                position: absolute;
+                bottom: 4px;
+                left: 0;
+                z-index: -1;
+
+                path{
+                    stroke-dasharray: 560;
+					stroke-dashoffset: 560;
+					animation: section_stroke 3s linear forwards infinite;
+					-webkit-animation: section_stroke 3s linear forwards infinite;
+
+					@at-root{
+						@include keyframes(section_stroke){
+							0%{
+								stroke-dashoffset: 560;
+							}
+							50%{
+								stroke-dashoffset: 0;
+							}
+							100% {
+								stroke-dashoffset: -560;
+							}
+
+						}
+					}
+                }
+            }
+        }
+    }
+    &__thumb{
+        & img{
+            @media #{$lg, $sm, $xs}{
+                width: 100%;
+            }
+        }
+    }
+}

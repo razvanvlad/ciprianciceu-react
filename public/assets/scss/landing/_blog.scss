@@ -1,0 +1,109 @@
+@use '@assets/scss/utils/' as *;
+
+/*----------------------------------------*/
+/*  11. BLOG CSS START
+/*----------------------------------------*/
+
+
+#landing_page .blog{
+    &__section-title{
+        padding: 0 30px;
+
+        @media #{$xs}{
+            padding: 0;
+        }
+    }
+    &__bg{
+        @include tp-gradient((180.09deg, #F6F6FA 0.08%, rgba(246, 246, 250, 0) 99.87%));
+    }
+    &__slider{
+        & .swiper-container{
+            overflow: visible;
+        }
+        &-active{
+
+        }
+        & .tp-swiper-fraction{
+            position: absolute;
+            left: 24%;
+            display: inline-block;
+            width: auto;
+            bottom: -8%;
+
+            @media #{$sm}{
+                left: 13%;
+            }
+
+            @media #{$xs}{
+                display: none;
+            }
+            
+            & .tp-swiper-fraction-divide{
+                background-color: var(--tp-common-black);
+                width: 70px;
+                height: 1px;
+                display: inline-block;
+                font-family: var(--tp-ff-space);
+                font-weight: 500;
+                font-size: 15px;
+                color: var(--tp-common-black);
+                margin: 0 4px;
+                @include transform(translateY(-5px));
+            }
+            & span:not(.tp-swiper-fraction-divide){
+                display: inline-block;
+                font-family: var(--tp-ff-space);
+                font-weight: 500;
+                font-size: 15px;
+                color: var(--tp-common-black);
+            }
+
+        }
+    }
+    &__item{
+        border-radius: 10px;
+        box-shadow: 0px 20px 40px rgba(3, 4, 28, 0.1);
+        margin-bottom: 40px;
+        margin-top: 20px;
+        @include transition(.2s);
+
+        & img{
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        &:hover{
+            @include transform(translateY(-10px));
+        }
+    }
+    &__nav{
+        position: absolute;
+        bottom: -10%;
+        right: 24%;
+        z-index: 1;
+
+        @media #{$sm}{
+            right: 13%;
+        }
+        &-btn{
+            width: 46px;
+            height: 46px;
+            line-height: 44px;
+            border: 1px solid transparent;
+            text-align: center;
+            font-size: 18px;
+            color: var(--tp-common-black);
+            border-radius: 50%;
+            margin-right: 10px;
+
+            &.slick-next{
+                margin-right: 0;
+            }
+
+            &:hover{
+                border-color: var(--tp-common-black);
+                background-color: transparent;
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+@use '@assets/scss/utils' as *;
+
+/*----------------------------------------*/
+/*  15. MOBILE CSS START
+/*----------------------------------------*/
+
+
+#landing_page .mobile{
+    &__features{
+        &-wrapper{
+            padding: 60px 50px 100px;
+            border-radius: 14px;
+            @include tp-gradient((121.87deg, #FBF0F1 -2.31%, #F7ECFF 89.64%));
+            z-index: 1;
+
+            @media #{$xs}{
+                padding: 40px 30px 90px;
+            }
+
+            & p{
+                font-size: 15px;
+                line-height: 1.6;
+                margin-bottom: 27px;
+
+                & br{
+                    @media #{$xs}{
+                        display: none;
+                    }
+                }
+            }
+        }
+        &-title{
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 1;
+            letter-spacing: -0.02em;
+            margin-bottom: 20px;
+
+            & span{
+                position: relative;
+                z-index: 1;
+                display: inline-block;
+
+                & svg{
+                    position: absolute;
+                    bottom: 4px;
+                    left: 0;
+                    z-index: -1;
+
+                    path{
+                        stroke-dasharray: 560;
+                        stroke-dashoffset: 560;
+                        animation: section_stroke 3s linear forwards infinite;
+                        -webkit-animation: section_stroke 3s linear forwards infinite;
+
+                        @at-root{
+                            @include keyframes(section_stroke){
+                                0%{
+                                    stroke-dashoffset: 560;
+                                }
+                                50%{
+                                    stroke-dashoffset: 0;
+                                }
+                                100% {
+                                    stroke-dashoffset: -560;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-thumb{
+            position: absolute;
+            right: 0;
+            bottom: -8px;
+            z-index: -1;
+
+            & img{
+                @media #{$lg}{
+                    width: 390px;
+                    height: auto;
+                }
+                @media #{$sm}{
+                    width: 335px;
+                    height: auto;
+                }
+                @media #{$xs}{
+                    display: none;
+                }
+            }
+        }
+    }
+}

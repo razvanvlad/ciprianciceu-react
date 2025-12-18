@@ -1,0 +1,90 @@
+@use '@assets/scss/utils' as *;
+
+/*----------------------------------------*/
+/*  20. POPUP CSS START
+/*----------------------------------------*/
+
+#landing_page .popup{
+    &__wrapper{
+        position: relative;
+        z-index: 1;
+        padding: 59px 50px 163px;
+        background: #F5F3F6;
+        border-radius: 14px;
+
+        @media #{$xs}{
+            padding: 59px 30px 100px;
+        }
+        & p{
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 32px;
+
+            & br{
+                @media #{$xs}{
+                    display: none;
+                }
+            }
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        margin-bottom: 20px;
+
+        @media #{$xs}{
+            font-size: 35px;
+        }
+        & span{
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+
+            & svg{
+                position: absolute;
+                bottom: 4px;
+                left: 0;
+                z-index: -1;
+
+                path{
+                    stroke-dasharray: 560;
+					stroke-dashoffset: 560;
+					animation: section_stroke 3s linear forwards infinite;
+					-webkit-animation: section_stroke 3s linear forwards infinite;
+
+					@at-root{
+						@include keyframes(section_stroke){
+							0%{
+								stroke-dashoffset: 560;
+							}
+							50%{
+								stroke-dashoffset: 0;
+							}
+							100% {
+								stroke-dashoffset: -560;
+							}
+
+						}
+					}
+                }
+            }
+        }
+    }
+    &__thumb{
+        position: absolute;
+        right: 20px;
+        bottom: 15px;
+        z-index: -1;
+
+        & img{
+            @media #{$sm}{
+                width: 350px;
+            }
+        }
+        @media #{$xs}{
+            display: none;
+        }
+    }
+}

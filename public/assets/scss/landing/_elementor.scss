@@ -1,0 +1,47 @@
+@use '@assets/scss/utils' as *;
+
+/*----------------------------------------*/
+/*  09. ELEMENTOR CSS START
+/*----------------------------------------*/
+
+#landing_page .elementor{
+    &__section-title{
+        &-icon{
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        & .tp-section-title{
+            margin-bottom: 20px;
+        }
+        & p{
+            font-size: 16px;
+        }
+    }
+    &__inner{
+        background-color: #F7F0FB;
+        border-radius: 20px;
+        padding-top: 100px;
+        padding-bottom: 43px;
+    }
+    &__content{
+        @media #{$lg}{
+            padding-left: 0;
+        }
+        @media #{$md, $sm}{
+            
+            margin-top: 40px;
+        }
+        @media #{$xs}{
+            margin-top: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    &__thumb{
+        & img{
+            @media #{$lg, $sm, $xs}{
+                width: 100%;
+            }
+        }
+    }
+}

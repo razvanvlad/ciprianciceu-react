@@ -1,0 +1,133 @@
+@use '@assets/scss/utils' as *;
+
+/*----------------------------------------*/
+/*  13. ELEMENTS CSS START
+/*----------------------------------------*/
+
+#landing_page .elements{
+    $self : '.elements';
+
+    &__section-title{
+        @media #{$sm}{
+            padding-left: 0;
+        }
+        @media #{$xs}{
+            padding-left: 0;
+            margin-top: 20px;
+        }
+    }
+    &__bg{
+        @include tp-gradient((178.75deg, rgba(246, 246, 250, 0) 1.73%, #EDEDF2 80.55%, rgba(246, 246, 250, 0) 96.2%));
+    }
+    &__shape{
+        @include transform(translateY(44px) translateX(55px));
+    }
+    &__number{
+
+        @media #{$sm, $xs}{
+            margin-bottom: 35px;
+        }
+
+        &-thumb{
+            @media #{$xs}{
+                max-width: 100%;
+            }
+        }
+        &-title{
+            display: none;
+            font-size: 190px;
+            color: #3031FF;
+            background-color: rgba($color: #3031FF, $alpha: 1);
+            position: relative;
+            -webkit-text-stroke: 2px;
+            -webkit-text-stroke-color: currentcolor;
+            -webkit-text-stroke-color: transparent;
+
+            @media #{$lg}{
+                font-size: 165px;
+            }
+
+            @media #{$md}{
+                font-size: 155px;
+            }
+
+            @media #{$xs}{
+                font-size: 150px;
+            }
+
+            &.has-background{
+                -webkit-background-clip:text;
+                color: transparent;
+                @include background();
+            }
+            &-shape{
+                position: absolute;
+                bottom: -45px;
+                left: 0;
+
+                @media #{$xs}{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    &__item{
+        background: var(--tp-common-white);
+        box-shadow: 0px 20px 30px rgba(3, 4, 28, 0.08);
+        border-radius: 6px;
+        margin: 15px 0;
+        height: 60px;
+        padding: 0 34px;
+        &:hover{
+            @include transform(translateY(-6px));
+            background-color: var(--tp-theme-1);
+            box-shadow: 0px 10px 10px rgba(162, 6, 65, 0.2);
+            #{$self}{
+                &__icon{
+                    & span{
+                        color: var(--tp-common-white);
+                        transition: color .3s ease-in-out 0s;
+                    }
+                }
+                &__title{
+                    color: var(--tp-common-white);
+                }
+            }
+        }
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        color: var(--tp-text-1);
+        margin-bottom: 0;
+
+    }
+    &__icon{
+        margin-right: 13px;
+
+        & span{
+            & svg{
+                @include transform(translateY(-2px));
+            }
+        }
+    }
+
+    &__slider{
+        &-wrapper{
+            padding-top: 10px;
+            padding-bottom: 50px;
+            & .slick-list{
+                overflow: visible;
+                margin: 0 -12px;
+            }
+
+            & .slick-slide{
+                margin: 0 12px;
+            }
+        }
+        &-top{
+        
+        }
+    }
+}
