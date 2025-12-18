@@ -16,18 +16,18 @@ export default function Home() {
   return (
     <Wrapper>
       <SEO pageTitle={'Home Main'} />
-      <Header/>
-      <HomeSliderBanner/>
-      <HomeAbout/>
-      <HomeCounter/>
-      <ServicesHome/>
-      <HomeEvents/>
-      <HomeTeams/>
-      <HomeFaq/>
-      <HomePortfolio/>
-      <HomeTestimonial/>
-      <HomeBlogs/>
-      <Footer/>
+      <Header />
+      <HomeSliderBanner />
+      <HomeAbout />
+      <HomeCounter />
+      <ServicesHome element_style={true} />
+      <HomeEvents />
+      <HomeTeams />
+      <HomeFaq />
+      <HomePortfolio />
+      <HomeTestimonial />
+      <HomeBlogs />
+      <Footer />
     </Wrapper>
   )
 }

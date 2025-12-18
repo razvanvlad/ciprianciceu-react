@@ -40,4 +40,9 @@
             --tp-#{$fz}-#{$shade}: #{$value};
         }
     }
+
+    /**
+    @gradient declaration
+    */
+    --gradient-ciceu: linear-gradient(135deg, #5C24FC 0%, #1ACEC6 100%);
 }

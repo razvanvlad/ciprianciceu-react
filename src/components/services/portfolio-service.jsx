@@ -19,6 +19,11 @@ export const per_port_service_data = [
     title: "Mobile App Design",
   },
   {
+    icon: <PortfolioSerIconTwo />,
+    project: 63,
+    title: "Mobile App Design",
+  },
+  {
     icon: <PortfolioSerIconThree />,
     project: 75,
     title: "Dashboard",
@@ -29,9 +34,8 @@ const PortfolioService = ({ style_2 = false, element_style = false }) => {
   return (
     <>
       <section
-        className={`services__area pb-${
-          style_2 ? "110" : element_style ? "90" : "120"
-        } ${element_style ? "pt-110" : ""}`}
+        className={`services__area pb-${style_2 ? "110" : element_style ? "90" : "120"
+          } ${element_style ? "pt-110" : ""}`}
       >
         <div className="container">
           {element_style && (
@@ -41,14 +45,14 @@ const PortfolioService = ({ style_2 = false, element_style = false }) => {
                   <span className="tp-section-subtitle-3">
                     Minimal &amp; Clean Design
                   </span>
-                  <h3 className="tp-section-title-3">Gradient Overlay</h3>
+                  <h3 className="tp-section-title-3">Gradient Overlay2</h3>
                 </div>
               </div>
             </div>
           )}
           <div className="row">
             {per_port_service_data.map((item, i) => (
-              <div key={i} className="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+              <div key={i} className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
                 <SinglePersonalPortSerItem style_2={style_2} item={item} />
               </div>
             ))}

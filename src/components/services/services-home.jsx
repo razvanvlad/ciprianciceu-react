@@ -12,9 +12,8 @@ const ServicesHome = ({ style_2 = false, element_style = false }) => {
   return (
     <>
       <section
-        className={`services__area ${style_2 ? "pt-100" : ""} ${
-          element_style ? "pt-110" : ""
-        } pb-90`}
+        className={`services__area ${style_2 ? "pt-110" : ""} ${element_style ? "pt-110" : ""
+          } pb-90`}
       >
         <div className="container">
           {!style_2 || !element_style && (

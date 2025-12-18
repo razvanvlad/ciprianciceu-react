@@ -236,7 +236,7 @@
                                 }
                                 &__icon-7{
                                     & span{
-                                        background: linear-gradient(35.1deg, #E8D8C1 18.5%, #FFF9F0 92.94%);
+                                        background: var(--gradient-ciceu);
                                         box-shadow: 0px 3px 5px rgba(47, 28, 6, 0.1);
                                         color: var(--tp-common-black-11);
                                     }
@@ -492,7 +492,7 @@
                 line-height: 90px;
                 text-align: center;
                 color: var(--tp-common-white);
-                background: linear-gradient(213.79deg, #3FF1A5 11.02%, #2CAE76 84.5%);
+                background: var(--gradient-ciceu);
                 box-shadow: 0px 3px 5px rgba(14, 63, 42, 0.12);
                 border-radius: 50%;
                 font-size: 26px;

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import aboutImg from "@assets/img/about/about-img-1.jpg";
+import aboutImg from "@assets/img/ciceu/ciceu-profil1.jpeg";
 import authorImg from "@assets/img/about/about-author-thumb.jpg";
 import ShapeLine from "@svg/shape-line";
 import CountUpContent from "@components/common/counter";
@@ -16,13 +16,13 @@ const about_contents = {
       Years <br /> Experience
     </>
   ),
-  pre_title: "Expert Guidance",
-  title: "What they think",
-  highlight_text: "about us",
-  desc: "The city and town name generator uses a database of over five million names across more than 150 countries. If you are looking for a random city or town name to spark a location for a book, game, or a script, millions of possibilities are at your finger tips. How you use the city or town name is up to you.",
+  pre_title: "Ciprian Ciceu",
+  title: "Blockchain Educator &",
+  highlight_text: "Founder",
+  desc: "Building scalable technology platforms, educational ecosystems and international teams across fintech, blockchain and digital innovation.",
   author_img: authorImg,
-  author_name: "Robert Fox.",
-  author_link: "let’s talk about ideas",
+  author_name: "Ciprian Ciceu.",
+  author_link: "let’s talk about Technology",
 };
 
 const {
@@ -58,14 +58,14 @@ const HomeAbout = () => {
                 <div className="about__thumb-text">
                   <h3 data-text="Expert">{thumb_text}</h3>
                 </div>
-                <div className="about__experience">
+                {/* <div className="about__experience">
                   <h4>
                     <span className="counter">
                       <CountUpContent number={counter} add_style={false} />
                     </span>
                   </h4>
                   <p>{experience}</p>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6">

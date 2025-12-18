@@ -477,7 +477,7 @@
                 top: -10px;
                 width: 350px;
                 height: 655px;
-                background: linear-gradient(0deg, #FDB348 -2.63%, #FF6B6B 91.65%);
+                background: var(--gradient-ciceu);
                 @include transform(rotate(171deg));
                 z-index: -1;
                 -webkit-animation-duration: 1s;
@@ -1190,7 +1190,7 @@
             font-size: 80px;
             font-weight: 700;
             font-family: var(--tp-ff-space);
-            background: linear-gradient(78.5deg, #5A5BFF 23.32%, #F43D55 83.37%);
+            background: var(--gradient-ciceu);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
