@@ -3,7 +3,12 @@
     "allow": [
       "Bash(git init:*)",
       "Bash(git config:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: Harry React Next.js Template\n\n- Fresh installation of Harry template v2.0.0\n- Added comprehensive template-map.md documentation\n- 14 homepage variations\n- 89 pages with complete routing\n- 8 content types \\(blog, portfolio, products, services, team, events, menu\\)\n- 150+ reusable component sections\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(gh auth:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)"
     ]
   }
 }
