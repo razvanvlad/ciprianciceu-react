@@ -4,96 +4,112 @@
 /*  07. ABOUT CSS START
 /*----------------------------------------*/
 
-.about{
+.about {
     $self: &;
-    &__section-wrapper-6{
-        
-        & .section__title-wrapper-6{
-            @media #{$md, $sm, $xs}{
+
+    &__section-wrapper-6 {
+
+        & .section__title-wrapper-6 {
+            @media #{$md, $sm, $xs} {
                 margin-bottom: 40px;
             }
-            & p{
-                @media #{$md, $sm, $xs}{
+
+            & p {
+                @media #{$md, $sm, $xs} {
                     margin-bottom: 40px;
                 }
             }
         }
 
     }
-    &__wrapper{
 
-        @include rtl{
+    &__wrapper {
+
+        @include rtl {
             padding-right: 0;
             padding-left: 95px;
         }
-        @media #{$xl}{
+
+        @media #{$xl} {
             padding-right: 135px;
 
-            @include rtl{
+            @include rtl {
                 padding-right: 0;
                 padding-left: 135px;
             }
         }
-        @media #{$lg}{
+
+        @media #{$lg} {
             padding-right: 0;
-            @include rtl{
+
+            @include rtl {
                 padding-left: 0;
             }
         }
-        @media #{$md, $sm, $xs}{
+
+        @media #{$md, $sm, $xs} {
             margin-top: 50px;
             padding-right: 0;
 
-            @include rtl{
+            @include rtl {
                 padding-left: 0;
             }
         }
-        & > p{
+
+        &>p {
             font-size: 16px;
             line-height: 1.5;
             margin-bottom: 23px;
             letter-spacing: -0.02em;
         }
 
-        &-3{
-            @media #{$xl}{
+        &-3 {
+            @media #{$xl} {
                 padding-left: 65px;
-                @include rtl{
+
+                @include rtl {
                     padding-left: 0;
                     padding-right: 65px;
                 }
             }
-            @media #{$lg}{
+
+            @media #{$lg} {
                 padding-left: 0;
-                @include rtl{
+
+                @include rtl {
                     padding-right: 0;
                 }
             }
 
-            @media #{$md, $sm, $xs}{
+            @media #{$md, $sm, $xs} {
                 padding-left: 0;
                 margin-top: 50px;
-                @include rtl{
+
+                @include rtl {
                     padding-right: 0;
                 }
             }
         }
-        &-4{
-            @media #{$lg, $md, $sm, $xs}{
+
+        &-4 {
+            @media #{$lg, $md, $sm, $xs} {
                 padding-right: 0;
-                @include rtl{
+
+                @include rtl {
                     padding-left: 0;
                 }
             }
 
-            @media #{$md, $sm, $xs}{
+            @media #{$md, $sm, $xs} {
                 padding-right: 0;
                 margin-top: 60px;
-                @include rtl{
+
+                @include rtl {
                     padding-left: 0;
                 }
             }
-            & > p{
+
+            &>p {
 
                 font-size: 16px;
                 line-height: 24px;
@@ -101,52 +117,60 @@
                 padding-right: 25px;
                 margin-bottom: 23px;
 
-                @include rtl{
+                @include rtl {
                     padding-right: 0;
                     padding-left: 25px;
                 }
             }
         }
-        &-5{
 
-            @include rtl{
+        &-5 {
+
+            @include rtl {
                 padding-right: 0;
                 padding-left: 90px;
             }
 
-            @media #{$lg, $sm, $xs}{
+            @media #{$lg, $sm, $xs} {
                 padding-right: 0;
-                @include rtl{
+
+                @include rtl {
                     padding-left: 0;
                 }
             }
-            & > p{
+
+            &>p {
                 font-size: 18px;
                 line-height: 28px;
                 color: var(--tp-text-1);
                 margin-bottom: 50px;
             }
         }
-        &-8{
-            @include rtl{
+
+        &-8 {
+            @include rtl {
                 padding-left: 0;
                 padding-right: 70px;
             }
-            @media #{$lg}{
+
+            @media #{$lg} {
                 padding-left: 0;
-                @include rtl{
+
+                @include rtl {
                     padding-right: 0;
                 }
             }
 
-            @media #{$md, $sm, $xs}{
+            @media #{$md, $sm, $xs} {
                 padding-left: 0;
                 margin-top: 50px;
-                @include rtl{
+
+                @include rtl {
                     padding-right: 0;
                 }
             }
-            & > p{
+
+            &>p {
                 font-family: var(--tp-ff-space);
                 font-size: 16px;
                 line-height: 1.5;
@@ -154,7 +178,7 @@
                 margin-bottom: 65px;
             }
 
-            & .about-wrapper-8-paragraph{
+            & .about-wrapper-8-paragraph {
                 font-family: var(--tp-ff-space);
                 font-weight: 500;
                 font-size: 22px;
@@ -164,12 +188,14 @@
                 margin-bottom: 27px;
             }
         }
-        &-9{
+
+        &-9 {
             padding-top: 115px;
             padding-bottom: 130px;
             position: relative;
             z-index: 1;
-            & .about-subtitle{
+
+            & .about-subtitle {
                 display: inline-block;
                 font-family: var(--tp-ff-syne);
                 font-weight: 600;
@@ -180,22 +206,22 @@
                 padding-left: 13px;
                 margin-bottom: 0;
 
-                @include rtl{
+                @include rtl {
                     padding-left: 0;
                     padding-right: 13px;
                 }
 
-                &::after{
+                &::after {
                     position: absolute;
                     content: '';
                     left: 0;
                     top: 50%;
-                    @include transform(translateY(-50%));
+                    transform: translateY(-50%);
                     width: 3px;
                     height: 20px;
-                    @include tp-gradient((329deg, #FF91FA 13.55%, #FA6490 48.54%, #F7D86A 86.44%));
+                    background-image: var(--gradient-main);
 
-                    @include rtl{
+                    @include rtl {
                         left: auto;
                         right: 0;
                     }
@@ -203,7 +229,7 @@
 
             }
 
-            & .about-title{
+            & .about-title {
                 font-family: var(--tp-ff-syne);
                 font-weight: 700;
                 font-size: 40px;
@@ -211,20 +237,20 @@
                 color: #7C7C85;
                 margin-bottom: 25px;
 
-                & span{
+                & span {
                     color: var(--tp-common-white);
                 }
 
-                @media #{$lg}{
+                @media #{$lg} {
                     font-size: 39px;
                 }
 
-                @media #{$md, $xs}{
+                @media #{$md, $xs} {
                     font-size: 32px;
                 }
             }
 
-            & p{
+            & p {
                 font-family: var(--tp-ff-syne);
                 font-size: 18px;
                 line-height: 1.5;
@@ -232,167 +258,185 @@
                 padding-right: 180px;
                 margin-bottom: 50px;
 
-                @include rtl{
+                @include rtl {
                     padding-right: 0;
                     padding-left: 180px;
                 }
 
-                @media #{$lg}{
+                @media #{$lg} {
                     padding-right: 80px;
-                    @include rtl{
+
+                    @include rtl {
                         padding-right: 0;
                         padding-left: 80px;
                     }
                 }
 
-                @media #{$md, $sm, $xs}{
+                @media #{$md, $sm, $xs} {
                     padding-right: 0;
-                    @include rtl{
+
+                    @include rtl {
                         padding-left: 0;
                     }
                 }
             }
         }
-        &-14{
+
+        &-14 {
             margin-right: -50px;
 
-            @include rtl{
+            @include rtl {
                 margin-right: 0;
                 margin-left: -50px;
             }
 
-            @media #{$xl, $lg, $md, $sm, $xs}{
+            @media #{$xl, $lg, $md, $sm, $xs} {
                 padding-left: 0;
                 margin-right: 0;
-                @include rtl{
+
+                @include rtl {
                     padding-right: 0;
                     margin-left: 0;
                 }
             }
-            & p{
+
+            & p {
                 font-size: 16px;
                 line-height: 1.62;
                 margin-bottom: 42px;
                 padding-right: 150px;
 
-                @include rtl{
+                @include rtl {
                     padding-right: 0;
                     padding-left: 150px;
                 }
 
-                @media #{$lg}{
+                @media #{$lg} {
                     padding-right: 50px;
-                    @include rtl{
+
+                    @include rtl {
                         padding-right: 0;
                         padding-left: 50px;
                     }
                 }
 
-                @media #{$sm}{
+                @media #{$sm} {
                     padding-right: 130px;
-                    @include rtl{
+
+                    @include rtl {
                         padding-right: 0;
                         padding-left: 130px;
                     }
                 }
 
-                @media #{$xs}{
+                @media #{$xs} {
                     padding-right: 0;
-                    @include rtl{
+
+                    @include rtl {
                         padding-left: 0;
                     }
                 }
             }
 
-            & .about-btn{
-                & .tp-btn{
+            & .about-btn {
+                & .tp-btn {
                     font-size: 15px;
                     padding: 11px 34px 13px;
 
-                    &:hover{
+                    &:hover {
                         background-color: var(--tp-common-black);
                     }
                 }
             }
         }
-        &-15{
-            @media #{$xl, $lg}{
+
+        &-15 {
+            @media #{$xl, $lg} {
                 padding-left: 0;
-                @include rtl{
+
+                @include rtl {
                     padding-right: 0;
                 }
             }
-            @media #{$md, $sm, $xs}{
+
+            @media #{$md, $sm, $xs} {
                 padding-left: 0;
                 margin-top: 50px;
-                @include rtl{
+
+                @include rtl {
                     padding-right: 0;
                 }
             }
         }
     }
-    &__thumb{
+
+    &__thumb {
         position: relative;
         animation-duration: 1s;
         animation-delay: 0.5s;
         animation-iteration-count: 1;
         animation-fill-mode: both;
-        &-wrapper{
+
+        &-wrapper {
             position: relative;
             z-index: 1;
 
-            @include rtl{
+            @include rtl {
                 padding-right: 0;
                 margin-left: 0;
                 margin-right: 70px;
                 padding-left: 100px;
             }
 
-            @media #{$md, $sm}{
+            @media #{$md, $sm} {
                 margin-left: 0;
 
-                @include rtl{
+                @include rtl {
                     margin-right: 0;
                 }
             }
 
-            @media #{$xs}{
+            @media #{$xs} {
                 margin-left: 0;
                 padding-right: 0;
-                @include rtl{
+
+                @include rtl {
                     margin-right: 0;
                     padding-left: 0;
                 }
             }
 
-            &-7{
+            &-7 {
                 position: relative;
                 padding-bottom: 70px;
 
-                @media #{$xs}{
+                @media #{$xs} {
                     padding-right: 0;
                     padding-bottom: 0;
 
-                    @include rtl{
+                    @include rtl {
                         padding-left: 0;
                     }
                 }
             }
 
-            &-8{
-                @include rtl{
+            &-8 {
+                @include rtl {
                     padding-right: 0;
                     padding-left: 100px;
                 }
-                @media #{$xs}{
+
+                @media #{$xs} {
                     padding-right: 0;
-                    @include rtl{
+
+                    @include rtl {
                         padding-left: 0;
                     }
                 }
             }
         }
-        &-text{
+
+        &-text {
             position: absolute;
             top: 30%;
             left: 0;
@@ -400,45 +444,48 @@
             z-index: -1;
 
 
-            @include rtl{
+            @include rtl {
                 left: auto;
                 right: 0;
                 @include transform(rotate(-90deg) translateY(188px));
             }
 
-            @media #{$md,$sm}{
+            @media #{$md,$sm} {
                 left: auto;
                 right: 0;
                 @include transform(rotate(-90deg) translateY(110px) scale(-1, -1));
 
-                @include rtl{
+                @include rtl {
                     left: 0;
                     right: auto;
-                    
+
                 }
             }
 
-            @media #{$xs}{
+            @media #{$xs} {
                 left: auto;
                 top: 0;
                 @include transform(rotate(0) translateY(-43px));
 
-                @include rtl{
+                @include rtl {
                     left: 0;
                     right: auto;
                 }
             }
-            & h3{
+
+            & h3 {
                 color: var(--tp-grey-3);
                 font-size: 100px;
                 font-weight: 700;
                 text-transform: uppercase;
                 font-family: var(--tp-ff-space);
                 position: relative;
-                @media #{$xs}{
+
+                @media #{$xs} {
                     font-size: 60px;
                 }
-                &::after{
+
+                &::after {
                     content: attr(data-text);
                     position: absolute;
                     top: 0;
@@ -451,18 +498,20 @@
                     -webkit-animation: about-text 2s ease-in-out 1s forwards infinite alternate-reverse;
                     animation: about-text 2s ease-in-out 1s forwards infinite alternate-reverse;
 
-                    @include rtl{
+                    @include rtl {
                         left: auto;
                         right: 0;
                     }
                 }
-                
+
             }
         }
-        &-3{
+
+        &-3 {
             position: relative;
             z-index: 1;
-            & .about-3-main-thumb{
+
+            & .about-3-main-thumb {
                 @include transform(rotate(0));
                 -webkit-animation-duration: 1s;
                 animation-duration: 1s;
@@ -470,7 +519,8 @@
                 -webkit-animation-name: aboutRotate3;
                 animation-name: aboutRotate3;
             }
-            &::after{
+
+            &::after {
                 position: absolute;
                 content: '';
                 left: 0;
@@ -486,44 +536,47 @@
                 -webkit-animation-name: aboutGradient;
                 animation-name: aboutGradient;
 
-                @include rtl{
+                @include rtl {
                     left: auto;
                     right: 0;
                 }
-                @media #{$xs}{
+
+                @media #{$xs} {
                     width: 260px;
                     height: 399px;
                 }
             }
         }
-        &-4{
+
+        &-4 {
             margin-left: 130px;
             margin-right: 100px;
             background-color: var(--tp-common-green-dark);
             position: relative;
             z-index: 1;
 
-            @include rtl{
+            @include rtl {
                 margin-left: 100px;
                 margin-right: 130px;
             }
 
-            @media #{$lg}{
+            @media #{$lg} {
                 margin-left: 0;
                 margin-right: 30px;
-                @include rtl{
+
+                @include rtl {
                     margin-right: 0;
                     margin-left: 30px;
                 }
             }
 
-            @media #{$sm}{
+            @media #{$sm} {
                 margin-left: 30px;
                 margin-right: 30px;
-                
+
             }
 
-            @media #{$xs}{
+            @media #{$xs} {
                 margin-left: 0;
                 margin-right: 0;
             }
@@ -532,51 +585,57 @@
                 margin-left: -50px;
                 margin-top: -100px;
 
-                @include rtl{
+                @include rtl {
                     margin-right: -50px;
                     margin-left: 0;
                 }
 
-                @media #{$xl}{
+                @media #{$xl} {
                     margin-left: -75px;
-                    @include rtl{
+
+                    @include rtl {
                         margin-left: 0;
                         margin-right: -75px;
                     }
                 }
 
-                @media #{$lg}{
+                @media #{$lg} {
                     margin-left: -20px;
-                    @include rtl{
+
+                    @include rtl {
                         margin-left: 0;
                         margin-right: -20px;
                     }
                 }
 
-                @media #{$sm}{
+                @media #{$sm} {
                     margin-left: 0;
-                    @include rtl{
+
+                    @include rtl {
                         margin-right: 0;
                     }
                 }
 
-                @media #{$xs}{
+                @media #{$xs} {
                     margin-left: 0;
                     max-width: 100%;
-                    @include rtl{
+
+                    @include rtl {
                         margin-right: 0;
                     }
                 }
             }
         }
-        &-5{
+
+        &-5 {
             position: relative;
             z-index: 1;
-            @media #{$md, $sm, $xs}{
-               margin-top: 50px;
+
+            @media #{$md, $sm, $xs} {
+                margin-top: 50px;
             }
 
-            &::after{
+            &::after {
                 position: absolute;
                 content: '';
                 left: -11%;
@@ -587,47 +646,50 @@
                 background-color: #F8ECFF;
                 z-index: -1;
 
-                @include rtl{
+                @include rtl {
                     left: auto;
                     right: -11%;
                 }
 
-                @media #{$md}{
+                @media #{$md} {
                     top: 0%;
                 }
 
-                @media #{$xs}{
+                @media #{$xs} {
                     top: -9%;
                     width: 200px;
                     height: 200px;
                 }
             }
-            &::before{
+
+            &::before {
                 position: absolute;
                 content: '';
                 right: -26%;
-                bottom: 24%;    
+                bottom: 24%;
                 width: 180px;
                 height: 180px;
                 border-radius: 50%;
                 background-color: #EFF8ED;
                 z-index: -1;
 
-                @include rtl{
+                @include rtl {
                     right: auto;
                     left: -26%;
                 }
 
-                @media #{$xxl, $xl, $lg, $md, $sm, $xs}{
+                @media #{$xxl, $xl, $lg, $md, $sm, $xs} {
                     right: 0;
                     bottom: -17%;
-                    @include rtl{
+
+                    @include rtl {
                         right: auto;
                         left: 0;
                     }
                 }
             }
-            & .about-main-5{
+
+            & .about-main-5 {
                 position: absolute;
                 top: 20px;
                 left: 20px;
@@ -635,62 +697,62 @@
                 width: 641px;
                 height: 450px;
 
-                @include rtl{
+                @include rtl {
                     left: auto;
                     right: 20px;
                 }
 
-                @media #{$xl}{
+                @media #{$xl} {
                     top: 17px;
                     left: 16px;
                     width: 515px;
                     height: 357px;
 
-                    @include rtl{
+                    @include rtl {
                         left: auto;
                         right: 16px;
                     }
                 }
 
-                @media #{$lg}{
+                @media #{$lg} {
                     top: 14px;
                     left: 15px;
                     width: 430px;
                     height: 300px;
                     border-radius: 7px;
 
-                    @include rtl{
+                    @include rtl {
                         left: auto;
                         right: 15px;
                     }
                 }
 
-                @media #{$md}{
+                @media #{$md} {
                     top: 20px;
                     left: 20px;
                     width: 655px;
                     height: 458px;
 
-                    @include rtl{
+                    @include rtl {
                         left: auto;
                         right: 20px;
                     }
                 }
 
-                @media #{$sm}{
+                @media #{$sm} {
                     top: 16px;
                     left: 17px;
                     border-radius: 8px;
                     width: 483px;
                     height: 339px;
 
-                    @include rtl{
+                    @include rtl {
                         left: auto;
                         right: 17px;
                     }
                 }
 
-                @media #{$xs}{
+                @media #{$xs} {
                     top: 21px;
                     left: 13px;
                     border-radius: 4px;
@@ -698,14 +760,14 @@
                     height: 86%;
                     object-fit: cover;
 
-                    @include rtl{
+                    @include rtl {
                         left: auto;
                         right: 9px;
                     }
                 }
             }
 
-            & .about-play-btn{
+            & .about-play-btn {
                 position: absolute;
                 top: 48%;
                 left: 59%;
@@ -718,35 +780,36 @@
                 color: var(--tp-common-white);
                 box-shadow: 0px 4px 10px rgba(91, 29, 8, 0.36);
 
-                @include rtl{
+                @include rtl {
                     left: auto;
                     right: 44%;
                 }
 
-                @media #{$xl, $lg, $md, $sm, $xs}{
+                @media #{$xl, $lg, $md, $sm, $xs} {
                     left: 50%;
 
-                    @include rtl{
+                    @include rtl {
                         left: auto;
                         right: 35%;
                     }
                 }
 
-                & svg{
+                & svg {
                     @include transform(translate(2px, -3px));
 
-                    @include rtl{
+                    @include rtl {
                         @include transform(translate(-2px, -3px));
                     }
                 }
 
-                &:hover{
-                    & .video-play-bg{
+                &:hover {
+                    & .video-play-bg {
                         @include transform(scale(1.1));
                     }
                 }
             }
-            .video-play-bg{
+
+            .video-play-bg {
                 position: absolute;
                 left: 0;
                 top: 0;
@@ -756,24 +819,27 @@
                 border-radius: 50%;
                 @extend %tp-transition;
 
-                @include rtl{
+                @include rtl {
                     left: auto;
                     right: 0;
                 }
-   
+
             }
         }
-        &-mockup{
+
+        &-mockup {
             position: relative;
-            & > img{
-                @media #{$xl, $lg, $md, $sm, $xs}{
+
+            &>img {
+                @media #{$xl, $lg, $md, $sm, $xs} {
                     width: 100%;
                     height: auto;
                 }
             }
         }
-        &-shape{
-            &-1{
+
+        &-shape {
+            &-1 {
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -781,12 +847,13 @@
                 width: auto;
                 height: 100%;
 
-                @include rtl{
+                @include rtl {
                     right: auto;
                     left: 0;
                 }
             }
-            &-2{
+
+            &-2 {
                 position: absolute;
                 top: 0%;
                 right: 7%;
@@ -796,109 +863,120 @@
                 border-radius: 50%;
                 box-shadow: 0px 20px 30px rgba(3, 4, 28, 0.1);
 
-                @include rtl{
+                @include rtl {
                     right: auto;
                     left: 7%;
                 }
 
-                @media #{$lg}{
+                @media #{$lg} {
                     right: 0;
-                    @include rtl{
+
+                    @include rtl {
                         right: auto;
                         left: 0;
                     }
                 }
 
-                @media #{$sm}{
+                @media #{$sm} {
                     right: -2%;
-                    @include rtl{
+
+                    @include rtl {
                         right: auto;
                         left: -2%;
                     }
                 }
 
-                @media #{$xs}{
+                @media #{$xs} {
                     top: 74%;
                     right: 8px;
 
-                    @include rtl{
+                    @include rtl {
                         right: auto;
                         left: 8px;
                     }
                 }
 
-                
+
             }
-            &-logo{
+
+            &-logo {
                 -webkit-animation: rotate-infinite 15s linear infinite;
-                    animation: rotate-infinite 15s linear infinite;
-                &-icon{
+                animation: rotate-infinite 15s linear infinite;
+
+                &-icon {
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     @include transform(translate(-50%, -50%));
 
-                    @include rtl{
+                    @include rtl {
                         left: auto;
                         right: 50%;
                         @include transform(translate(50%, -50%));
                     }
-                    
+
                 }
             }
         }
-        &-7{
+
+        &-7 {
             margin-left: -70px;
 
-            @include rtl{
+            @include rtl {
                 margin-left: 0;
                 margin-right: -70px;
             }
-            @media #{$sm, $xs}{
+
+            @media #{$sm, $xs} {
                 margin-left: 0;
-                @include rtl{
+
+                @include rtl {
                     margin-right: 0;
                 }
             }
-            & img{
+
+            & img {
                 border-radius: 40px;
-                @media #{$sm, $xs}{
+
+                @media #{$sm, $xs} {
                     width: 100%;
                     height: 100%;
                 }
             }
         }
-        &-8{
-            &-right{
+
+        &-8 {
+            &-right {
                 position: absolute;
                 z-index: 1;
                 bottom: 0;
                 right: 20px;
 
-                @include rtl{
+                @include rtl {
                     right: auto;
                     left: 20px;
                 }
 
-                @media #{$xs}{
+                @media #{$xs} {
                     right: 0;
 
-                    @include rtl{
+                    @include rtl {
                         right: auto;
                         left: 0;
                     }
                 }
 
-                &-content{
+                &-content {
                     position: absolute;
                     bottom: 38px;
                     left: 58px;
 
-                    @include rtl{
+                    @include rtl {
                         left: auto;
                         right: 58px;
                     }
-                    & p{
+
+                    & p {
                         font-family: var(--tp-ff-space);
                         font-weight: 700;
                         font-size: 20px;
@@ -907,15 +985,18 @@
                         color: #FFFFFF;
                     }
                 }
-                &-year{
+
+                &-year {
                     position: absolute;
                     top: 48px;
                     right: 52px;
-                    @include rtl{
+
+                    @include rtl {
                         right: auto;
                         left: 52px;
                     }
-                    & p{
+
+                    & p {
                         font-family: var(--tp-ff-space);
                         font-weight: 700;
                         font-size: 18px;
@@ -924,63 +1005,69 @@
                         text-transform: uppercase;
                         color: #FFFFFF;
 
-                        @include rtl{
+                        @include rtl {
                             text-align: left;
                         }
                     }
                 }
             }
         }
-        &-14{
-            & .about-img-2{
+
+        &-14 {
+            & .about-img-2 {
                 float: right;
                 position: relative;
                 z-index: 1;
                 margin-top: -200px;
 
-                @include rtl{
+                @include rtl {
                     float: left;
                 }
 
-                @media #{$xl}{
+                @media #{$xl} {
                     margin-right: 25px;
-                    @include rtl{
+
+                    @include rtl {
                         margin-right: 0;
                         margin-left: 25px;
                     }
                 }
 
-                @media #{$lg}{
+                @media #{$lg} {
                     margin-right: 20px;
-                    @include rtl{
+
+                    @include rtl {
                         margin-right: 0;
                         margin-left: 20px;
                     }
                 }
 
-                @media #{$xs}{
+                @media #{$xs} {
                     margin-top: -90px;
                     width: 150px;
                     height: 100%;
                 }
             }
         }
-        &-15{
+
+        &-15 {
             margin-left: 75px;
             margin-right: 25px;
 
-            @include rtl{
+            @include rtl {
                 margin-left: 25px;
                 margin-right: 75px;
             }
 
-            @media #{$md, $sm, $xs}{
+            @media #{$md, $sm, $xs} {
                 margin-left: 30px;
-                @include rtl{
+
+                @include rtl {
                     margin-left: 30px;
                 }
             }
-            &-shape{
+
+            &-shape {
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -989,49 +1076,55 @@
                 background-color: var(--tp-theme-1);
                 overflow: hidden;
                 z-index: -1;
-                @include rtl{
+
+                @include rtl {
                     left: auto;
                     right: -30px;
                 }
-                & img{
+
+                & img {
                     opacity: .3;
                     position: absolute;
                     left: -55%;
                     top: -40%;
                     width: auto;
 
-                    @include rtl{
+                    @include rtl {
                         left: auto;
                         right: -55%;
                     }
 
-                    @media #{$md}{
+                    @media #{$md} {
                         left: -29%;
                         top: -15%;
-                        @include rtl{
+
+                        @include rtl {
                             left: auto;
                             right: -29%;
                         }
                     }
                 }
 
-                &-2{
+                &-2 {
                     width: auto !important;
                     position: absolute;
                     bottom: -15%;
                     left: 6%;
                     z-index: -1;
-                    @include rtl{
+
+                    @include rtl {
                         left: auto;
                         right: 6%;
                     }
-                    @media #{$xs}{
+
+                    @media #{$xs} {
                         width: 70% !important;
                     }
                 }
             }
         }
-        &-bg{
+
+        &-bg {
             position: relative;
             font-size: 150px;
             letter-spacing: 0.02em;
@@ -1047,30 +1140,30 @@
             width: 350px;
             height: 490px;
 
-            @include rtl{
+            @include rtl {
                 padding-left: 86px;
                 padding-right: 17px;
             }
 
-            @media #{$xs}{
+            @media #{$xs} {
                 font-size: 80px;
                 padding: 135px 86px 0px 47px;
                 width: 250px;
                 height: 300px;
 
-                @include rtl{
+                @include rtl {
                     padding-left: 86px;
                     padding-right: 47px;
                 }
             }
 
             &::after,
-            &::before{
-               position: absolute;
-               content: '';
+            &::before {
+                position: absolute;
+                content: '';
             }
 
-            &::before{
+            &::before {
                 z-index: -2;
                 top: 0;
                 right: 0;
@@ -1079,7 +1172,7 @@
                 background-image: inherit;
             }
 
-            &::after{
+            &::after {
                 position: absolute;
                 content: '';
                 z-index: -1;
@@ -1093,66 +1186,75 @@
             }
         }
     }
-    &__author{
-        &-inner{
-            @include rtl{
+
+    &__author {
+        &-inner {
+            @include rtl {
                 margin-left: 10px;
             }
-            @media #{$xs}{
+
+            @media #{$xs} {
                 margin-bottom: 20px;
             }
         }
-        &-thumb{
-            @include rtl{
+
+        &-thumb {
+            @include rtl {
                 margin-right: 0;
                 margin-left: 10px;
             }
-            & img{
+
+            & img {
                 width: 40px;
                 height: 40px;
                 border-radius: 50%;
             }
         }
-        &-title{
+
+        &-title {
             font-size: 16px;
             color: var(--tp-text-1);
             font-weight: 400;
             font-family: var(--tp-ff-inter);
             margin-bottom: 0;
             margin-right: 10px;
-            @include rtl{
+
+            @include rtl {
                 margin-right: 0;
                 margin-left: 10px;
             }
-            & span{
+
+            & span {
                 font-weight: 700;
                 color: var(--tp-common-black);
             }
 
-            &-2{
+            &-2 {
                 font-size: 20px;
                 font-weight: 600;
                 color: var(--tp-common-black);
                 font-family: var(--tp-ff-inter);
             }
         }
-        &-text{
+
+        &-text {
             padding: 0 75px;
 
-            @media #{$xl}{
+            @media #{$xl} {
                 padding-left: 50px;
                 padding-right: 50px;
             }
 
-            @media #{$md}{
+            @media #{$md} {
                 padding-left: 30px;
                 padding-right: 30px;
             }
 
-            @media #{$sm, $xs}{
+            @media #{$sm, $xs} {
                 padding: 0;
             }
-            & p{
+
+            & p {
                 font-size: 22px;
                 font-family: var(--tp-ff-oswald);
                 color: var(--tp-common-black-4);
@@ -1162,7 +1264,8 @@
             }
         }
     }
-    &__experience{
+
+    &__experience {
         position: absolute;
         right: 20px;
         bottom: 30px;
@@ -1171,22 +1274,23 @@
         box-shadow: 0px 30px 50px rgba(3, 4, 28, 0.1);
         z-index: 99;
 
-        @include rtl{
+        @include rtl {
             right: auto;
             left: 20px;
             text-align: left;
         }
-        
-        @media #{$xs}{
+
+        @media #{$xs} {
             right: 0;
             bottom: 0;
-            @include rtl{
+
+            @include rtl {
                 right: auto;
                 left: 0;
             }
         }
 
-        & h4{
+        & h4 {
             font-size: 80px;
             font-weight: 700;
             font-family: var(--tp-ff-space);
@@ -1198,14 +1302,15 @@
             line-height: 1;
             margin-bottom: 0;
         }
-        & p{
+
+        & p {
             font-size: 20px;
             font-weight: 700;
             color: var(--tp-common-black-solid);
             font-family: var(--tp-ff-space);
         }
 
-        &-4{
+        &-4 {
             position: absolute;
             bottom: -10px;
             left: 0;
@@ -1216,38 +1321,40 @@
             box-shadow: 0px 20px 30px rgba(50, 15, 3, 0.2);
             backdrop-filter: blur(20px);
 
-            @include rtl{
+            @include rtl {
                 left: auto;
                 right: 0;
             }
 
-            @media #{$lg}{
+            @media #{$lg} {
                 left: -15px;
-                @include rtl{
+
+                @include rtl {
                     left: auto;
                     right: -15px;
                 }
             }
         }
 
-        &-icon{
-            &-4{
+        &-icon {
+            &-4 {
                 margin-top: 8px;
 
-                @include rtl{
+                @include rtl {
                     margin-right: 0;
                     margin-left: 15px;
                 }
-                & i{
+
+                & i {
                     font-size: 40px;
                     color: var(--tp-common-white);
                 }
             }
         }
 
-        &-content{
-            &-4{
-                & h4{
+        &-content {
+            &-4 {
+                & h4 {
                     font-size: 60px;
                     font-family: var(--tp-ff-space);
                     color: var(--tp-common-white);
@@ -1255,11 +1362,12 @@
                     line-height: 1;
                     font-weight: 300;
 
-                    & span{
+                    & span {
                         font-weight: 700;
                     }
                 }
-                & p{
+
+                & p {
                     font-size: 14px;
                     line-height: 1.4;
                     color: var(--tp-common-white);
@@ -1267,18 +1375,21 @@
             }
         }
     }
-    &__counter{
-        &-item{
+
+    &__counter {
+        &-item {
             background-color: var(--tp-common-white);
             box-shadow: 0px 1px 2px rgba(22, 34, 19, 0.1);
             padding: 33px 0 35px;
         }
-        &-text{
-            @include rtl{
+
+        &-text {
+            @include rtl {
                 margin-right: 0;
                 margin-left: 15px;
             }
-            & h3{
+
+            & h3 {
                 font-size: 50px;
                 font-weight: 300;
                 text-transform: uppercase;
@@ -1286,45 +1397,53 @@
                 margin-bottom: 0;
                 color: var(--tp-theme-2);
 
-                & span{
+                & span {
                     font-weight: 500;
                 }
-                & span.text{
+
+                & span.text {
                     font-weight: 300;
                 }
             }
         }
-        &-content{
-            & h3{
+
+        &-content {
+            & h3 {
                 font-size: 16px;
                 font-weight: 600;
                 font-family: var(--tp-ff-inter);
                 margin-bottom: 0;
             }
-            & p{
+
+            & p {
                 font-size: 13px;
                 margin-bottom: 0;
             }
         }
     }
-    &__tab{
-        &-inner{
+
+    &__tab {
+        &-inner {
             position: relative;
         }
-        &-nav{
+
+        &-nav {
             border-bottom: 1px solid rgba($color: #fff, $alpha: .1);
-            & .nav-item{
+
+            & .nav-item {
                 display: inline-block;
 
-                &:not(:last-child){
+                &:not(:last-child) {
                     margin-right: 24px;
-                    @include rtl{
+
+                    @include rtl {
                         margin-right: 0;
                         margin-left: 24px;
                     }
                 }
             }
-            & .nav-link{
+
+            & .nav-link {
                 padding: 0 6px;
                 padding-bottom: 4px;
                 margin: 0;
@@ -1336,26 +1455,29 @@
                 position: relative;
                 @extend %tp-transition;
 
-                @media #{$xs}{
+                @media #{$xs} {
                     margin-bottom: 12px;
                 }
 
-                &:not(:last-child){
+                &:not(:last-child) {
                     margin-right: 30px;
-                    @include rtl{
+
+                    @include rtl {
                         margin-right: 0;
                         margin-left: 30px;
                     }
                 }
+
                 &:hover,
-                &.active{
+                &.active {
                     color: var(--tp-theme-3);
-                    &::after{
+
+                    &::after {
                         width: 100%;
                         left: 0;
                         right: auto;
 
-                        @include rtl{
+                        @include rtl {
                             left: auto;
                             right: 0;
                         }
@@ -1363,7 +1485,7 @@
                 }
 
                 @media #{$xs} {
-                    &::after{
+                    &::after {
                         position: absolute;
                         content: '';
                         left: auto;
@@ -1374,17 +1496,19 @@
                         background-color: var(--tp-theme-3);
                         @include transition(.3s);
 
-                        @include rtl{
+                        @include rtl {
                             left: 0;
                             right: auto;
                         }
                     }
                 }
             }
-            & .tp-tab-menu{
+
+            & .tp-tab-menu {
                 position: relative;
             }
-            & .tp-tab-line{
+
+            & .tp-tab-line {
                 position: absolute;
                 content: '';
                 left: 0;
@@ -1394,7 +1518,7 @@
                 background-color: var(--tp-theme-3);
                 @extend %tp-transition;
 
-                @include rtl{
+                @include rtl {
                     left: auto;
                     right: 0;
                     display: none !important;
@@ -1403,32 +1527,36 @@
             }
         }
     }
-    &__self{
-        &-des{
-            & p{
+
+    &__self {
+        &-des {
+            & p {
                 font-size: 18px;
                 color: var(--tp-text-7);
                 line-height: 1.7;
                 margin-bottom: 45px;
-                & span{
+
+                & span {
                     color: var(--tp-common-white);
                 }
             }
         }
     }
-    &__education{
-        &-des{
+
+    &__education {
+        &-des {
             margin-bottom: 25px;
-            & p{
+
+            & p {
                 font-size: 18px;
                 color: var(--tp-text-7);
                 line-height: 1.95;
 
-                & a{
+                & a {
                     color: var(--tp-common-white);
                     position: relative;
 
-                    &::after{
+                    &::after {
                         position: absolute;
                         content: '';
                         left: auto;
@@ -1440,18 +1568,19 @@
                         opacity: .4;
                         @extend %tp-transition;
 
-                        @include rtl{
+                        @include rtl {
                             right: auto;
                             left: 0;
                         }
                     }
 
-                    &:hover{
-                        &::after{
+                    &:hover {
+                        &::after {
                             width: 100%;
                             left: 0;
                             right: auto;
-                            @include rtl{
+
+                            @include rtl {
                                 left: auto;
                                 right: 0;
                             }
@@ -1460,17 +1589,20 @@
                 }
             }
         }
-        &-title{
+
+        &-title {
             font-size: 16px;
             font-weight: 600;
             color: var(--tp-text-7);
             font-family: var(--tp-ff-inter);
             margin-bottom: 35px;
         }
-        &-list{
+
+        &-list {
             margin-bottom: 50px;
-            & ul{
-                & li{
+
+            & ul {
+                & li {
                     list-style: none;
                     color: var(--tp-text-7);
                     margin-bottom: 10px;
@@ -1479,12 +1611,12 @@
                     position: relative;
                     padding-left: 14px;
 
-                    @include rtl{
+                    @include rtl {
                         padding-left: 0;
                         padding-right: 14px;
                     }
-                    
-                    &::after{
+
+                    &::after {
                         position: absolute;
                         content: '';
                         left: 0;
@@ -1493,7 +1625,8 @@
                         height: 5px;
                         border-radius: 50%;
                         background-color: #44C987;
-                        @include rtl{
+
+                        @include rtl {
                             left: auto;
                             right: 0;
                         }
@@ -1502,52 +1635,62 @@
             }
         }
     }
-    &__skill{
-        &-wrapper{
+
+    &__skill {
+        &-wrapper {
             margin-top: 8px;
         }
-        &-title{
+
+        &-title {
             font-size: 13px;
             font-weight: 700;
             font-family: var(--tp-ff-space);
             color: var(--tp-text-7);
             margin-bottom: 35px;
         }
-        &-item{
+
+        &-item {
             margin-bottom: 15px;
-            & h4{
+
+            & h4 {
                 font-size: 18px;
                 font-weight: 700;
                 color: var(--tp-common-white);
                 font-family: var(--tp-ff-space);
                 margin-bottom: 0;
             }
-            & p{
+
+            & p {
                 font-size: 14px;
                 color: var(--tp-text-7);
                 margin-bottom: 0;
             }
         }
     }
-    &__info{
-        &-item{
-            @include rtl{
+
+    &__info {
+        &-item {
+            @include rtl {
                 margin-right: 0;
                 margin-left: 40px;
             }
-            &:last-child{
+
+            &:last-child {
                 margin-right: 0;
-                @include rtl{
+
+                @include rtl {
                     margin-left: 0;
                 }
             }
         }
-        &-icon{
-            @include rtl{
+
+        &-icon {
+            @include rtl {
                 margin-right: 0;
                 margin-left: 15px;
             }
-            & span{
+
+            & span {
                 display: inline-block;
                 width: 44px;
                 height: 44px;
@@ -1558,34 +1701,38 @@
                 border-radius: 50%;
             }
         }
-        &-content{
-            & h4{
+
+        &-content {
+            & h4 {
                 font-size: 18px;
                 font-weight: 700;
                 color: var(--tp-common-white);
                 margin-bottom: 0;
                 font-family: var(--tp-ff-space);
             }
-            & p{
+
+            & p {
                 font-size: 16px;
                 color: var(--tp-common-white);
                 opacity: .9;
                 margin-bottom: 0;
 
-                & a{
-                    &:hover{
+                & a {
+                    &:hover {
                         color: var(--tp-theme-1);
                     }
                 }
             }
         }
     }
-    &__call{
-        @media #{$xs}{
+
+    &__call {
+        @media #{$xs} {
             margin-top: 30px;
         }
-        &-icon{
-            & span{
+
+        &-icon {
+            & span {
                 font-size: 26px;
                 color: #03A191;
                 margin-right: 9px;
@@ -1593,12 +1740,13 @@
                 margin-top: 5px;
             }
 
-            &-8{
-                @include rtl{
+            &-8 {
+                @include rtl {
                     margin-right: 0;
                     margin-left: 20px;
                 }
-                & span{
+
+                & span {
                     display: inline-block;
                     font-size: 18px;
                     color: var(--tp-common-white);
@@ -1609,25 +1757,28 @@
                     border: 2px solid rgba($color: #fff, $alpha: .1);
                     border-radius: 50%;
 
-                    & svg{
+                    & svg {
                         @include transform(translateY(-2px));
                     }
                 }
             }
         }
-        &-content{
 
-            @include rtl{
+        &-content {
+
+            @include rtl {
                 margin-right: 10px;
             }
-            & h4{
+
+            & h4 {
                 font-size: 14px;
                 font-weight: 400;
                 font-family: var(--tp-ff-inter);
                 margin-bottom: 0;
                 color: var(--tp-text-1);
             }
-            & p{
+
+            & p {
                 font-size: 16px;
                 font-weight: 700;
                 color: var(--tp-common-black);
@@ -1636,8 +1787,8 @@
 
             }
 
-            &-8{
-                & h4{
+            &-8 {
+                & h4 {
                     font-weight: 500;
                     font-size: 12px;
                     line-height: 15px;
@@ -1648,7 +1799,7 @@
                     margin-bottom: 2px;
                 }
 
-                & p{
+                & p {
                     font-family: var(--tp-ff-space);
                     font-weight: 500;
                     font-size: 24px;
@@ -1660,59 +1811,65 @@
             }
         }
     }
-    &__shape{
-        &-1{
+
+    &__shape {
+        &-1 {
             position: absolute;
             right: 11%;
             top: 24%;
-            -webkit-animation: tpleftright 1s infinite  alternate;
-            animation: tpleftright 1s infinite  alternate;
+            -webkit-animation: tpleftright 1s infinite alternate;
+            animation: tpleftright 1s infinite alternate;
 
-            @include rtl{
+            @include rtl {
                 left: auto;
                 right: 11%;
             }
         }
-        &-2{
+
+        &-2 {
             position: absolute;
             left: 3%;
             top: 41%;
-            -webkit-animation: tpupdown 1s infinite  alternate;
-            animation: tpupdown 1s infinite  alternate;
-            
-            @include rtl{
+            -webkit-animation: tpupdown 1s infinite alternate;
+            animation: tpupdown 1s infinite alternate;
+
+            @include rtl {
                 left: auto;
                 right: 3%;
             }
         }
-        &-3{
+
+        &-3 {
             position: absolute;
             top: 21%;
             left: 4%;
-            z-index: -1 ;
+            z-index: -1;
             -moz-animation: tprotate 3s ease-in-out 1s forwards infinite alternate;
             -webkit-animation: tprotate 3s ease-in-out 1s forwards infinite alternate;
             animation: tprotate 3s ease-in-out 1s forwards infinite alternate;
-            @include rtl{
+
+            @include rtl {
                 left: auto;
                 right: 4%;
             }
         }
-        &-4{
+
+        &-4 {
             position: absolute;
             bottom: 9%;
             left: 6%;
-            z-index: -1 ;
+            z-index: -1;
             -moz-animation: tpleftright 1s ease-in-out 1s forwards infinite alternate;
             -webkit-animation: tpleftright 1s ease-in-out 1s forwards infinite alternate;
             animation: tpleftright 1s ease-in-out 1s forwards infinite alternate;
 
-            @include rtl{
+            @include rtl {
                 left: auto;
                 right: 6%;
             }
         }
-        &-5{
+
+        &-5 {
             position: absolute;
             top: 17%;
             right: 6%;
@@ -1721,61 +1878,64 @@
             -webkit-animation: tpupdown 1s ease-in-out 1s forwards infinite alternate;
             animation: tpupdown 1s ease-in-out 1s forwards infinite alternate;
 
-            @include rtl{
+            @include rtl {
                 right: auto;
                 left: 6%;
             }
 
-            @media #{$lg}{
+            @media #{$lg} {
                 top: 22%;
             }
 
-            @media #{$md, $sm}{
+            @media #{$md, $sm} {
                 top: 24%;
             }
 
-            @media #{$xs}{
+            @media #{$xs} {
                 top: 3%;
             }
         }
-        &-6{
+
+        &-6 {
             position: absolute;
             top: 52%;
             right: 14%;
-            z-index: -1 ;
+            z-index: -1;
             -moz-animation: tprotate 5s ease-in-out 1s forwards infinite alternate;
             -webkit-animation: tprotate 5s ease-in-out 1s forwards infinite alternate;
             animation: tprotate 5s ease-in-out 1s forwards infinite alternate;
 
-            @include rtl{
+            @include rtl {
                 right: auto;
                 left: 14%;
             }
         }
-        &-7{
+
+        &-7 {
             position: absolute;
             top: -9%;
             right: 0;
             z-index: -1;
 
-            @include rtl{
+            @include rtl {
                 right: auto;
                 left: 0;
             }
 
-            @media #{$lg}{
+            @media #{$lg} {
                 top: -6%;
             }
 
-            @media #{$sm, $xs}{
+            @media #{$sm, $xs} {
                 top: 4%;
             }
 
-            @media #{$md}{
+            @media #{$md} {
                 top: 3%;
             }
         }
-        &-8{
+
+        &-8 {
             position: absolute;
             z-index: -1;
             bottom: -20%;
@@ -1784,21 +1944,23 @@
             -webkit-animation: tpupdown 1s ease-in-out 1s forwards infinite alternate;
             animation: tpupdown 1s ease-in-out 1s forwards infinite alternate;
 
-            @include rtl{
+            @include rtl {
                 left: auto;
                 right: -22%;
             }
 
-            @media #{$xs}{
+            @media #{$xs} {
                 bottom: -45%;
                 left: -35%;
-                @include rtl{
+
+                @include rtl {
                     left: auto;
                     right: -35%;
                 }
             }
         }
-        &-9{
+
+        &-9 {
             position: absolute;
             z-index: -1;
             top: 7%;
@@ -1807,35 +1969,38 @@
             -webkit-animation: tpupdown 3s ease-in-out 1s forwards infinite alternate;
             animation: tpupdown 3s ease-in-out 1s forwards infinite alternate;
 
-            @include rtl{
+            @include rtl {
                 right: auto;
                 left: 1%;
             }
         }
     }
-    &__features{
-        @media #{$md, $sm, $xs}{
+
+    &__features {
+        @media #{$md, $sm, $xs} {
             margin-top: 40px;
             margin-bottom: 125px;
         }
-        &-item{
+
+        &-item {
             position: relative;
             margin-bottom: 60px;
             padding-right: 25px;
-            @include rtl{
+
+            @include rtl {
                 padding-right: 0;
                 padding-left: 25px;
             }
 
-            &:last-child{
+            &:last-child {
                 margin-bottom: 0;
 
-                &::after{
+                &::after {
                     display: none;
                 }
             }
 
-            &::after{
+            &::after {
                 position: absolute;
                 content: '';
                 left: 26px;
@@ -1843,25 +2008,29 @@
                 width: 1px;
                 height: 82%;
                 border: 1px dashed rgba(13, 18, 30, 0.2);
-                @include rtl{
+
+                @include rtl {
                     left: auto;
                     right: 26px;
                 }
             }
 
         }
-        &-icon{
-            &.yellow-color{
-                & span{
+
+        &-icon {
+            &.yellow-color {
+                & span {
                     color: var(--tp-common-yellow-2);
                 }
             }
-            &.purple-color{
-                & span{
+
+            &.purple-color {
+                & span {
                     color: var(--tp-common-purple-6);
                 }
             }
-            & span{
+
+            & span {
                 display: inline-block;
                 font-size: 20px;
                 width: 54px;
@@ -1874,33 +2043,37 @@
                 color: var(--tp-common-pink-4);
                 margin-right: 30px;
 
-                @include rtl{
+                @include rtl {
                     margin-right: 0;
                     margin-left: 30px;
                 }
 
-                & svg{
-                    &:not(.center-icon){
+                & svg {
+                    &:not(.center-icon) {
                         @include transform(translateY(-2px));
                     }
+
                     @include transform(translateY(-1px) translateX(3px));
 
-                    @include rtl{
+                    @include rtl {
                         @include transform(translateY(-2px) translateX(2px));
                     }
                 }
             }
         }
-        &-content{
+
+        &-content {
             margin-top: 5px;
-            & > p{
+
+            &>p {
                 font-size: 15px;
                 line-height: 22px;
                 color: var(--tp-text-18);
                 font-family: var(--tp-ff-roboto);
             }
         }
-        &-title{
+
+        &-title {
             font-weight: 700;
             font-size: 18px;
             color: var(--tp-common-black-9);
@@ -1908,14 +2081,15 @@
             font-family: var(--tp-ff-roboto);
         }
     }
-    &__play{
+
+    &__play {
         position: absolute;
         top: 50%;
         left: 50%;
         @include transform(translate(-50%, -50%));
 
-        
-        &-btn{
+
+        &-btn {
             display: inline-block;
             width: 110px;
             height: 110px;
@@ -1927,12 +2101,12 @@
             position: relative;
             box-shadow: 0px 4px 10px rgba(176, 8, 79, 0.4);
 
-            & img{
+            & img {
                 @include transform(translate(2px, 2px));
-                
+
             }
 
-            & .video-play-bg{
+            & .video-play-bg {
                 position: absolute;
                 left: 0;
                 top: 0;
@@ -1942,30 +2116,35 @@
                 @include tp-gradient((27.86deg, #FF0870 8.41%, #FFDC84 93.57%));
                 @extend %tp-transition;
             }
-            @media #{$xs}{
+
+            @media #{$xs} {
                 width: 70px;
                 height: 70px;
                 line-height: 72px;
             }
 
-            &:hover{
-                & .video-play-bg{
+            &:hover {
+                & .video-play-bg {
                     @include transform(scale(1.1));
                 }
             }
         }
     }
-    &__video{
-        &-wrapper{
+
+    &__video {
+        &-wrapper {
             position: relative;
         }
-        &-thumb{
+
+        &-thumb {
             position: relative;
-            & > img{
+
+            &>img {
                 width: 100%;
             }
         }
-        &-counter{
+
+        &-counter {
             position: absolute;
             top: 0;
             right: 100px;
@@ -1974,62 +2153,65 @@
             background-color: var(--tp-common-blue-4);
             z-index: 1;
 
-            @include rtl{
+            @include rtl {
                 right: auto;
                 left: 100px;
             }
 
-            @media #{$lg}{
+            @media #{$lg} {
                 right: 50px;
 
-                @include rtl{
+                @include rtl {
                     right: auto;
                     left: 50px;
                 }
             }
 
-            @media #{$sm, $xs}{
+            @media #{$sm, $xs} {
                 position: static;
             }
-            &-item{
+
+            &-item {
                 position: relative;
                 padding-right: 53px;
                 margin-right: 38px;
 
-                @include rtl{
+                @include rtl {
                     padding-right: 0;
                     margin-right: 0;
                     padding-left: 53px;
                     margin-left: 38px;
                 }
 
-                @media #{$xs}{
-                   padding-right: 0;
-                   margin-right: 0;
-                   margin-bottom: 20px;
-                   padding-bottom: 20px;
+                @media #{$xs} {
+                    padding-right: 0;
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                    padding-bottom: 20px;
 
-                   @include rtl{
-                    padding-left: 0;
-                    margin-left: 0;
-                   }
+                    @include rtl {
+                        padding-left: 0;
+                        margin-left: 0;
+                    }
                 }
 
-                &:last-child{
+                &:last-child {
                     margin-right: 0;
                     padding-right: 0;
                     margin-bottom: 0;
                     padding-bottom: 0;
 
-                    @include rtl{
+                    @include rtl {
                         margin-left: 0;
                         padding-left: 0;
                     }
-                    &::after{
+
+                    &::after {
                         display: none;
                     }
                 }
-                &::after{
+
+                &::after {
                     position: absolute;
                     content: '';
                     right: 0;
@@ -2039,19 +2221,20 @@
                     border: 1px solid rgba($color: #fff, $alpha: .2);
                     @include transform(translateY(-50%));
 
-                    @include rtl{
+                    @include rtl {
                         right: auto;
                         left: 0;
                     }
 
-                    @media #{$xs}{
+                    @media #{$xs} {
                         width: 100%;
                         height: 1px;
                         bottom: 0;
                         top: auto;
                     }
                 }
-                & h4{
+
+                & h4 {
                     font-weight: 900;
                     font-size: 50px;
                     letter-spacing: -0.03em;
@@ -2059,7 +2242,8 @@
                     margin-bottom: 0;
                     font-family: var(--tp-ff-roboto);
                 }
-                & p{
+
+                & p {
                     font-weight: 500;
                     font-size: 14px;
                     line-height: 18px;
@@ -2068,7 +2252,7 @@
                     margin-left: 7px;
                     font-family: var(--tp-ff-roboto);
 
-                    @include rtl{
+                    @include rtl {
                         margin-left: 0;
                         margin-right: 7px;
                     }
@@ -2076,7 +2260,8 @@
             }
         }
     }
-    &__analysis{
+
+    &__analysis {
         position: absolute;
         bottom: -6%;
         right: 70px;
@@ -2085,34 +2270,36 @@
         padding-right: 50px;
         border-radius: 20px;
 
-        @include rtl{
+        @include rtl {
             right: auto;
             left: 70px;
             padding-left: 50px;
         }
 
-        @media #{$sm}{
+        @media #{$sm} {
             right: 0;
 
-            @include rtl{
+            @include rtl {
                 right: auto;
                 left: 0;
             }
         }
 
-        @media #{$xs}{
+        @media #{$xs} {
             position: static;
             margin-top: 50px;
             right: 0;
 
-            @include rtl{
+            @include rtl {
                 right: auto;
                 left: 0;
             }
         }
-        &-icon{
+
+        &-icon {
             margin-bottom: 37px;
-            & span{
+
+            & span {
                 display: inline-block;
                 margin-bottom: 10px;
                 width: 40px;
@@ -2125,16 +2312,18 @@
                 font-size: 16px;
             }
 
-            & p{
+            & p {
                 font-weight: 600;
                 font-size: 20px;
                 color: var(--tp-common-white);
                 margin-bottom: 0;
             }
         }
-        &-item{
+
+        &-item {
             margin-bottom: 40px;
-            & h4{
+
+            & h4 {
                 font-family: var(--tp-ff-inter);
                 font-weight: 700;
                 font-size: 44px;
@@ -2143,16 +2332,18 @@
                 margin-bottom: 0;
                 line-height: 1;
             }
-            & p{
+
+            & p {
                 font-weight: 500;
                 font-size: 15px;
                 color: var(--tp-common-white);
                 margin-bottom: 0;
             }
 
-            &-2{
+            &-2 {
                 margin-bottom: 20px;
-                & h4{
+
+                & h4 {
                     font-family: var(--tp-ff-inter);
                     font-weight: 700;
                     font-size: 28px;
@@ -2161,7 +2352,8 @@
                     margin-bottom: 0;
                     line-height: 1;
                 }
-                & p{
+
+                & p {
                     font-weight: 500;
                     font-size: 15px;
                     color: var(--tp-common-white);
@@ -2170,8 +2362,8 @@
             }
         }
 
-        &-discount{
-            & span{
+        &-discount {
+            & span {
                 display: inline-block;
                 font-weight: 600;
                 font-size: 15px;
@@ -2183,41 +2375,49 @@
             }
         }
     }
-    &__list{
+
+    &__list {
         padding-right: 200px;
         margin-bottom: 27px;
 
-        @include rtl{
+        @include rtl {
             padding-right: 0;
             padding-left: 200px;
         }
 
-        @media #{$xs}{
+        @media #{$xs} {
             padding-right: 0;
-            @include rtl{
+
+            @include rtl {
                 padding-left: 0;
             }
         }
 
-        @media #{$lg}{
+        @media #{$lg} {
             padding-right: 100px;
-            @include rtl{
+
+            @include rtl {
                 padding-left: 100px;
             }
         }
-        &-counter{
+
+        &-counter {
             counter-reset: count;
         }
-        &-item{
+
+        &-item {
             margin-bottom: 20px;
         }
-        &-icon{
+
+        &-icon {
             margin-right: 18px;
-            @include rtl{
+
+            @include rtl {
                 margin-right: 0;
                 margin-left: 18px;
             }
-            & span{
+
+            & span {
                 display: inline-block;
                 width: 40px;
                 height: 40px;
@@ -2230,7 +2430,7 @@
                 color: var(--tp-common-black-11);
                 position: relative;
 
-                &::after{
+                &::after {
                     position: absolute;
                     counter-increment: count;
                     content: counter(count);
@@ -2241,35 +2441,41 @@
                 }
             }
         }
-        &-content{
-            & h4{
+
+        &-content {
+            & h4 {
                 font-family: var(--tp-ff-inter);
                 font-weight: 600;
                 font-size: 22px;
                 color: var(--tp-common-black-11);
 
             }
-            & p{
+
+            & p {
                 font-size: 16px;
                 line-height: 1.5;
             }
         }
 
-        &-2{
+        &-2 {
             overflow: hidden;
             padding-right: 46px;
-            @include rtl{
+
+            @include rtl {
                 padding-right: 0;
                 padding-left: 46px;
             }
-            @media #{$xs}{
+
+            @media #{$xs} {
                 padding-right: 0;
-                @include rtl{
+
+                @include rtl {
                     padding-left: 0;
                 }
             }
-            & ul{
-                & li{
+
+            & ul {
+                & li {
                     position: relative;
                     list-style: none;
                     font-size: 16px;
@@ -2279,18 +2485,18 @@
                     width: 50%;
                     margin-bottom: 14px;
 
-                    @include rtl{
+                    @include rtl {
                         padding-left: 0;
                         padding-right: 14px;
                         float: right;
                     }
 
-                    @media #{$xs}{
+                    @media #{$xs} {
                         float: none;
                         width: 100%;
                     }
 
-                    &::after{
+                    &::after {
                         position: absolute;
                         content: '';
                         left: 0;
@@ -2300,7 +2506,7 @@
                         border-radius: 50%;
                         background-color: var(--tp-common-black);
 
-                        @include rtl{
+                        @include rtl {
                             left: auto;
                             right: 0;
                         }
@@ -2309,32 +2515,34 @@
             }
         }
     }
-    &__space-145{
+
+    &__space-145 {
         padding-left: 145px;
         padding-right: 145px;
 
-        @media #{$xxl, $xl}{
+        @media #{$xxl, $xl} {
             padding-left: 50px;
             padding-right: 50px;
         }
 
-        @media #{$lg}{
+        @media #{$lg} {
             padding-left: 30px;
             padding-right: 30px;
         }
 
-        @media #{$md}{
+        @media #{$md} {
             padding-left: 30px;
             padding-right: 30px;
         }
 
-        @media #{$sm, $xs}{
+        @media #{$sm, $xs} {
             padding-left: 0;
             padding-right: 0;
         }
     }
-    &__heading{
-        &-subtitle{
+
+    &__heading {
+        &-subtitle {
             font-family: var(--tp-ff-space);
             font-weight: 500;
             font-size: 18px;
@@ -2343,20 +2551,22 @@
             display: inline-block;
             margin-bottom: 7px;
         }
-        &-title{
+
+        &-title {
             font-size: 70px;
             line-height: 1;
             letter-spacing: -0.04em;
             color: var(--tp-common-white);
 
-            @media #{$md}{
+            @media #{$md} {
                 font-size: 65px;
             }
         }
-        &-overlay{
+
+        &-overlay {
             position: relative;
-    
-            &::after{
+
+            &::after {
                 position: absolute;
                 content: "";
                 left: 0;
@@ -2365,57 +2575,65 @@
                 height: 100%;
                 background: rgba($color: #03041C, $alpha: .56);
 
-                @include rtl{
+                @include rtl {
                     left: auto;
                     right: 0;
                 }
             }
         }
     }
-    &__text{
-        &-title{
+
+    &__text {
+        &-title {
             font-size: 30px;
             line-height: 1;
             letter-spacing: -0.02em;
             color: var(--tp-common-black);
             margin-bottom: 25px;
         }
-        & p{
+
+        & p {
             font-size: 16px;
             line-height: 1.62;
             margin-bottom: 15px;
         }
     }
-    &__gallery{
-        &-slider{
-            @media #{$xl}{
+
+    &__gallery {
+        &-slider {
+            @media #{$xl} {
                 padding-left: 100px;
                 padding-right: 100px;
             }
-            @media #{$lg}{
+
+            @media #{$lg} {
                 padding-left: 30px;
                 padding-right: 30px;
             }
-            @media #{$md, $sm, $xs}{
+
+            @media #{$md, $sm, $xs} {
                 padding-left: 0;
                 padding-right: 0;
             }
-            & .slick-list{
+
+            & .slick-list {
                 overflow: visible;
                 margin: 0 -40px;
-                @media #{$md, $sm, $xs}{
+
+                @media #{$md, $sm, $xs} {
                     overflow: hidden;
                 }
             }
 
-            & .slick-slide{
-                & > div{
+            & .slick-slide {
+                &>div {
                     margin: 0 40px;
                 }
             }
         }
-        &-arrow{
-            & button{
+
+        &-arrow {
+            & button {
                 position: absolute;
                 top: 50%;
                 left: -9%;
@@ -2429,63 +2647,66 @@
                 font-size: 24px;
                 @include transform(translateY(-50%));
 
-                @include rtl{
+                @include rtl {
                     left: auto;
                     right: -9%;
                 }
 
-                @media #{$xl}{
+                @media #{$xl} {
                     left: -3%;
-                    @include rtl{
+
+                    @include rtl {
                         left: auto;
                         right: -3%;
                     }
                 }
 
-                @media #{$lg}{
+                @media #{$lg} {
                     left: -5%;
-                    @include rtl{
+
+                    @include rtl {
                         left: auto;
                         right: -5%;
                     }
                 }
 
-                @media #{$md}{
+                @media #{$md} {
                     width: 60px;
                     height: 60px;
                     line-height: 60px;
                     left: -4%;
 
-                    @include rtl{
+                    @include rtl {
                         left: auto;
                         right: -4%;
                     }
                 }
 
-                @media #{$sm}{
+                @media #{$sm} {
                     width: 60px;
                     height: 60px;
                     line-height: 60px;
                     left: -4%;
-                    @include rtl{
+
+                    @include rtl {
                         left: auto;
                         right: -4%;
                     }
                 }
 
-                @media #{$xs}{
+                @media #{$xs} {
                     width: 60px;
                     height: 60px;
                     line-height: 60px;
                     left: 0%;
 
-                    @include rtl{
+                    @include rtl {
                         left: auto;
                         right: 0%;
                     }
                 }
-                
-                & span{
+
+                & span {
                     display: inline-block;
                     background: var(--tp-common-white);
                     border: 1px solid var(--tp-text-1);
@@ -2496,66 +2717,76 @@
                     border-radius: 50%;
                     @extend %tp-transition;
 
-                    @media #{$md, $sm, $xs}{
+                    @media #{$md, $sm, $xs} {
                         width: 50px;
                         height: 50px;
                         line-height: 48px;
                     }
 
-                    & svg{
+                    & svg {
                         @include transform(translateY(-2px));
                     }
                 }
 
-                &:hover{
+                &:hover {
                     color: var(--tp-common-white);
 
-                    & span{
+                    & span {
                         color: var(--tp-common-white);
                         background-color: var(--tp-common-black);
                         border-color: var(--tp-common-black);
                     }
                 }
 
-                &.about-button-next{
+                &.about-button-next {
                     left: auto;
                     right: -9%;
 
-                    @include rtl{
+                    @include rtl {
                         left: -9%;
                         right: auto;
                     }
-                    @media #{$xl}{
+
+                    @media #{$xl} {
                         right: -3%;
-                        @include rtl{
+
+                        @include rtl {
                             right: auto;
                             left: -3%;
                         }
                     }
-                    @media #{$lg}{
+
+                    @media #{$lg} {
                         right: -5%;
-                        @include rtl{
+
+                        @include rtl {
                             right: auto;
                             left: -5%;
                         }
                     }
-                    @media #{$md}{
+
+                    @media #{$md} {
                         right: -4%;
-                        @include rtl{
+
+                        @include rtl {
                             right: auto;
                             left: -4%;
                         }
                     }
-                    @media #{$sm}{
+
+                    @media #{$sm} {
                         right: -4%;
-                        @include rtl{
+
+                        @include rtl {
                             right: auto;
                             left: -4%;
                         }
                     }
-                    @media #{$xs}{
+
+                    @media #{$xs} {
                         right: 0%;
-                        @include rtl{
+
+                        @include rtl {
                             right: auto;
                             left: 0%;
                         }
@@ -2564,9 +2795,11 @@
             }
         }
     }
-    &__me{
+
+    &__me {
         $self2 : &;
-        &-title{
+
+        &-title {
             font-weight: 700;
             font-size: 270px;
             line-height: 1;
@@ -2575,58 +2808,61 @@
             -webkit-text-stroke-width: 2px;
             -webkit-text-stroke-color: var(--tp-common-white);
 
-            @media #{$xl}{
+            @media #{$xl} {
                 font-size: 255px;
             }
 
-            @media #{$lg}{
+            @media #{$lg} {
                 font-size: 210px;
             }
 
-            @media #{$md}{
+            @media #{$md} {
                 font-size: 155px;
             }
 
-            @media #{$sm}{
+            @media #{$sm} {
                 font-size: 115px;
             }
 
-            @media #{$xs}{
+            @media #{$xs} {
                 font-size: 65px;
             }
-            
+
         }
-        &-spacing{
+
+        &-spacing {
             padding-top: 420px;
 
-            @media #{$xl, $lg}{
+            @media #{$xl, $lg} {
                 padding-top: 350px;
             }
 
-            @media #{$md}{
+            @media #{$md} {
                 padding-top: 320px;
             }
 
-            @media #{$sm, $xs}{
+            @media #{$sm, $xs} {
                 padding-top: 220px;
             }
 
         }
-        &-translate{
+
+        &-translate {
             overflow: hidden;
 
-            #{$self2}{
-                &-title{
+            #{$self2} {
+                &-title {
                     @include transform(translateY(41%) translateX(40px));
 
-                    @include rtl{
+                    @include rtl {
                         @include transform(translateY(41%) translateX(-40px));
                     }
                 }
             }
         }
-        &-info{
-            &-subtitle{
+
+        &-info {
+            &-subtitle {
                 font-family: var(--tp-ff-space);
                 font-weight: 700;
                 font-size: 14px;
@@ -2637,12 +2873,12 @@
                 position: relative;
                 padding-left: 13px;
 
-                @include rtl{
+                @include rtl {
                     padding-left: 0;
                     padding-right: 13px;
                 }
 
-                &::after{
+                &::after {
                     position: absolute;
                     content: '';
                     left: 0;
@@ -2651,28 +2887,32 @@
                     width: 3px;
                     height: 100%;
                     background-color: var(--tp-theme-1);
-                    @include rtl{
+
+                    @include rtl {
                         left: auto;
                         right: 0;
                     }
                 }
             }
-            &-title{
+
+            &-title {
                 font-size: 40px;
                 line-height: 1.15;
                 letter-spacing: -0.04em;
                 margin-bottom: 15px;
 
             }
-            &-content{
-                & p{
+
+            &-content {
+                & p {
                     font-size: 18px;
                     line-height: 1.56;
                     color: #525258;
                 }
             }
-            &-social{
-                & a{
+
+            &-social {
+                & a {
                     display: inline-block;
                     font-family: var(--tp-ff-space);
                     font-weight: 500;
@@ -2684,32 +2924,34 @@
                     padding-right: 13px;
                     margin-right: 10px;
 
-                    @include rtl{
+                    @include rtl {
                         padding-right: 0;
                         margin-right: 0;
                         padding-left: 13px;
                         margin-left: 10px;
                     }
 
-                    & i{
+                    & i {
                         margin-right: 2px;
 
-                        @include rtl{
+                        @include rtl {
                             margin-right: 0;
                             margin-left: 2px;
                         }
                     }
-                    &:not(:last-child){
+
+                    &:not(:last-child) {
                         padding-right: 13px;
                         margin-right: 8px;
 
-                        @include rtl{
+                        @include rtl {
                             padding-right: 0;
                             margin-right: 0;
                             padding-left: 13px;
                             margin-left: 8px;
                         }
-                        &::after{
+
+                        &::after {
                             position: absolute;
                             content: '';
                             right: 0;
@@ -2719,70 +2961,79 @@
                             height: 100%;
                             background-color: #EAEAEF;
 
-                            @include rtl{
+                            @include rtl {
                                 right: auto;
                                 left: 0;
                             }
                         }
                     }
-                    &:hover{
+
+                    &:hover {
                         color: var(--tp-theme-1);
                     }
 
                 }
             }
-            &-btn{
-                @include rtl{
+
+            &-btn {
+                @include rtl {
                     margin-right: 0;
                     margin-left: 30px;
                 }
-                @media #{$xs}{
+
+                @media #{$xs} {
                     margin-bottom: 20px;
                 }
-                & .tp-btn{
+
+                & .tp-btn {
                     padding: 14px 30px;
 
-                    &:hover{
+                    &:hover {
                         background-color: var(--tp-common-black);
                     }
                 }
             }
         }
     }
-    &__spacing{
+
+    &__spacing {
         padding-top: 225px;
         padding-bottom: 180px;
     }
-    &__btn{
-        &-3{
-            &-inner{
+
+    &__btn {
+        &-3 {
+            &-inner {
                 margin-right: 16px;
 
-                @include rtl{
+                @include rtl {
                     margin-right: 0;
                     margin-left: 16px;
                 }
             }
         }
-        &-4{
-            & .tp-btn-brown{
+
+        &-4 {
+            & .tp-btn-brown {
                 padding: 10px 26px 10px;
                 border: 2px solid var(--tp-theme-4);
 
-                @include rtl{
+                @include rtl {
                     margin-right: 0;
                     margin-left: 30px;
                 }
-                &:hover{
+
+                &:hover {
                     border-color: #EAEAEF;
                     background-color: transparent;
                     color: var(--tp-common-black);
                 }
             }
         }
-        &-8{
-            & .tp-btn-border-8{
-                @include rtl{
+
+        &-8 {
+            & .tp-btn-border-8 {
+                @include rtl {
                     margin-right: 0;
                     margin-left: 30px;
                 }
@@ -2793,7 +3044,7 @@
 
 
 
-.about-author-link{
+.about-author-link {
     display: inline-block;
     font-size: 12px;
     font-weight: 500;
@@ -2806,7 +3057,7 @@
 }
 
 
-.about-play-btn-2{
+.about-play-btn-2 {
     @include flexbox();
     align-items: center;
     position: relative;
@@ -2817,7 +3068,7 @@
     letter-spacing: -0.02em;
     color: var(--tp-common-white);
 
-    & span{
+    & span {
         display: inline-block;
         width: 60px;
         height: 60px;
@@ -2830,11 +3081,12 @@
         position: relative;
         z-index: 1;
 
-        @include rtl{
+        @include rtl {
             margin-right: 0;
             margin-left: 13px;
         }
-        &::after{
+
+        &::after {
             display: inline-block;
             position: relative;
             content: '';
@@ -2848,27 +3100,28 @@
             z-index: -1;
         }
 
-        & img{
+        & img {
             @include transform(translate(2px, 2px));
 
-            @include rtl{
+            @include rtl {
                 @include transform(translate(2px, 2px));
             }
         }
 
-        & svg{
+        & svg {
             @include transform(translate(2px, -2px));
-            
-            @include rtl{
+
+            @include rtl {
                 @include transform(translate(2px, -2px));
             }
         }
     }
 
-    &:hover{
+    &:hover {
         color: var(--tp-common-white);
-        & span{
-            &::after{
+
+        & span {
+            &::after {
                 @include transform(scale(1.08));
             }
         }
@@ -2878,22 +3131,23 @@
 
 
 // tp translate horizontal animation
-@include keyframes(aboutGradient){
-	0%{
-		@include transform(rotate(180deg));
-	}
-	100%{
-		@include transform(rotate(171deg));
-	}
+@include keyframes(aboutGradient) {
+    0% {
+        @include transform(rotate(180deg));
+    }
+
+    100% {
+        @include transform(rotate(171deg));
+    }
 }
 
 // tp translate horizontal animation
-@include keyframes(aboutRotate3){
-	0%{
-		@include transform(rotate(12deg));
-	}
-	100%{
-		@include transform(rotate(0deg));
-	}
-}
+@include keyframes(aboutRotate3) {
+    0% {
+        @include transform(rotate(12deg));
+    }
 
+    100% {
+        @include transform(rotate(0deg));
+    }
+}

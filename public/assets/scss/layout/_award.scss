@@ -4,21 +4,23 @@
 /*  17. AWARD CSS START
 /*----------------------------------------*/
 
-.award{
-    $self:&;
-    &__item{
+.award {
+    $self: &;
+
+    &__item {
         border: 2px solid var(--tp-border-8);
         padding: 50px 40px;
         position: relative;
 
-        &:hover{
+        &:hover {
             border-color: var(--tp-common-white);
             box-shadow: 0px 4px 0px #008080, 0px 20px 30px rgba(22, 34, 19, 0.1);
 
-            #{$self}{
-                &__icon{
+            #{$self} {
+                &__icon {
+
                     & span,
-                    & i{
+                    & i {
                         border-color: var(--tp-theme-2);
                         color: var(--tp-theme-2);
                     }
@@ -27,48 +29,51 @@
 
         }
 
-        &-4{
-            @media #{$xs}{
+        &-4 {
+            @media #{$xs} {
                 margin-bottom: 30px;
             }
         }
 
-        &-5{
+        &-5 {
             padding: 70px 50px 55px;
             background-color: rgba($color: #5EB74B, $alpha: .1);
 
-            @media #{$lg, $xs}{
+            @media #{$lg, $xs} {
                 padding: 50px 30px 35px;
             }
         }
 
-        &-8{
+        &-8 {
             border-bottom: 1px solid #FFFFFF1A;
             padding-top: 40px;
             padding-bottom: 40px;
 
-            @media #{$sm, $xs}{
+            @media #{$sm, $xs} {
                 padding-left: 40px;
                 padding-right: 40px;
             }
-            &:hover{
+
+            &:hover {
                 background-color: #101223;
             }
-            &:last-child{
+
+            &:last-child {
                 border-bottom: 0;
             }
         }
 
-        &-9{
+        &-9 {
             position: relative;
             padding-top: 40px;
             padding-bottom: 43px;
             border-top: 1px solid #EAEAEF;
 
-            &:last-child{
+            &:last-child {
                 border-bottom: 1px solid #EAEAEF;
             }
-            &::after{
+
+            &::after {
                 position: absolute;
                 content: '';
                 left: auto;
@@ -76,32 +81,33 @@
                 bottom: 0;
                 width: 0%;
                 height: 2px;
-                @include tp-gradient((329deg, #FF91FA 13.55%, #FA6490 48.54%, #F7D86A 86.44%));
-                @include transform(matrix(-1, 0, 0, 1, 0, 0));
-                @include transition(.6s);
+                background-image: var(--gradient-main);
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+                transition: all .6s ease-out;
 
-                @include rtl{
+                @include rtl {
                     left: 0;
                     right: auto;
                 }
             }
 
 
-            &:hover{
-                &::after{
+            &:hover {
+                &::after {
                     width: 100%;
                     left: 0;
                     right: auto;
 
-                    @include rtl{
+                    @include rtl {
                         left: auto;
                         right: 0
                     }
 
                 }
-                #{$self}{
-                    &__thumb{
-                        & img{
+
+                #{$self} {
+                    &__thumb {
+                        & img {
                             @include transform(scaleY(1));
                         }
                     }
@@ -109,9 +115,11 @@
             }
         }
     }
-    &__icon{
+
+    &__icon {
         margin-bottom: 30px;
-        & > span{
+
+        &>span {
             position: relative;
             display: inline-block;
             width: 70px;
@@ -122,9 +130,10 @@
             border: 2px solid var(--tp-border-8);
             color: var(--tp-theme-2);
             @extend %tp-transition;
-            
+
         }
-        & i{
+
+        & i {
             display: inline-block;
             width: 70px;
             height: 70px;
@@ -135,67 +144,69 @@
             border: 2px solid var(--tp-border-8);
             color: var(--tp-theme-2);
         }
-    
 
-        &-5{
+
+        &-5 {
             margin-bottom: 36px;
         }
 
-        &-8{
-            @media #{$sm, $xs}{
+        &-8 {
+            @media #{$sm, $xs} {
                 padding-left: 0;
                 margin-bottom: 20px;
-                @include rtl{
+
+                @include rtl {
                     padding-right: 0;
                 }
             }
 
-            & span{
+            & span {
                 display: inline-block;
                 min-height: 70px;
             }
         }
     }
-    &__title{
+
+    &__title {
         font-size: 24px;
         font-weight: 500;
         font-family: var(--tp-ff-oswald);
         margin-bottom: 10px;
 
-        & a{
-            &:hover{
+        & a {
+            &:hover {
                 color: var(--tp-theme-2);
             }
         }
 
-        &-4{
+        &-4 {
             font-family: var(--tp-ff-space);
             font-weight: 700;
             font-size: 18px;
             color: var(--tp-common-black-solid);
             margin-bottom: 0;
 
-            @media #{$lg, $sm, $xs}{
+            @media #{$lg, $sm, $xs} {
                 margin-bottom: 25px;
             }
         }
 
-        &-5{
+        &-5 {
             font-family: var(--tp-ff-space);
             font-weight: 700;
             font-size: 20px;
             letter-spacing: -0.04em;
             margin-bottom: 0;
 
-            & a{
-                &:hover{
+            & a {
+                &:hover {
                     color: var(--tp-common-green-4);
                 }
             }
 
         }
 
-        &-8{
+        &-8 {
             font-family: var(--tp-ff-space);
             font-weight: 700;
             font-size: 28px;
@@ -203,14 +214,14 @@
             color: var(--tp-common-white);
             margin-bottom: 6px;
 
-            & a{
-                &:hover{
+            & a {
+                &:hover {
                     color: var(--tp-theme-8);
                 }
             }
         }
 
-        &-9{
+        &-9 {
             font-family: var(--tp-ff-syne);
             font-weight: 700;
             font-size: 30px;
@@ -219,26 +230,27 @@
             color: var(--tp-common-black-solid);
             margin-bottom: 7px;
 
-            @media #{$md}{
+            @media #{$md} {
                 line-height: 1.16;
             }
 
-            & a{
+            & a {
                 background-image: linear-gradient(#000, #000), linear-gradient(#000, #000);
                 background-size: 0% 2px, 0 2px;
                 background-position: 100% 100%, 0 100%;
                 background-repeat: no-repeat;
                 transition: background-size 0.4s linear;
 
-                &:hover{
+                &:hover {
                     background-size: 0 2px, 100% 2px;
                 }
             }
 
         }
     }
-    &__content{
-        & > p{
+
+    &__content {
+        &>p {
             font-size: 14px;
             font-weight: 500;
             color: var(--tp-text-6);
@@ -247,11 +259,12 @@
             padding-left: 12px;
             text-transform: uppercase;
 
-            @include rtl{
+            @include rtl {
                 padding-left: 0;
                 padding-right: 12px;
             }
-            &::after{
+
+            &::after {
                 position: absolute;
                 content: '';
                 left: 0;
@@ -261,15 +274,15 @@
                 border-radius: 50%;
                 background-color: var(--tp-theme-2);
 
-                @include rtl{
+                @include rtl {
                     left: auto;
                     right: 0;
                 }
             }
         }
 
-        &-5{
-            & > p{
+        &-5 {
+            &>p {
                 font-family: var(--tp-ff-inter);
                 font-size: 15px;
                 letter-spacing: -0.02em;
@@ -278,11 +291,12 @@
             }
         }
 
-        &-8{
-            @media #{$sm, $xs}{
+        &-8 {
+            @media #{$sm, $xs} {
                 margin-bottom: 20px;
             }
-            & > p{
+
+            &>p {
                 font-family: var(--tp-ff-space);
                 font-size: 16px;
                 line-height: 20px;
@@ -293,8 +307,8 @@
             }
         }
 
-        &-9{
-            & > p{
+        &-9 {
+            &>p {
                 font-family: var(--tp-ff-syne);
                 font-weight: 400;
                 font-size: 16px;
@@ -305,103 +319,115 @@
             }
         }
     }
-    &__thumb{
+
+    &__thumb {
         position: absolute;
         top: 51%;
         right: 14.5%;
         z-index: 99;
 
-        @include rtl{
+        @include rtl {
             right: auto;
             left: 14.5%;
         }
-        & img{
+
+        & img {
             box-shadow: 0px 20px 30px rgba(3, 4, 28, 0.2);
             @include transform(scaleY(0));
             transform-origin: top center;
         }
 
-        @media #{$xs}{
+        @media #{$xs} {
             top: 90%;
             right: 9.5%;
-            @include rtl{
+
+            @include rtl {
                 right: auto;
                 left: 9.5%;
             }
         }
     }
-    &__brown{
+
+    &__brown {
         background-color: rgba($color: #AB6C56, $alpha: .1);
 
-        #{$self}{
-            &__title-5{
-                & a{
-                    &:hover{
+        #{$self} {
+            &__title-5 {
+                & a {
+                    &:hover {
                         color: var(--tp-theme-4);
                     }
                 }
             }
         }
     }
-    &__purple{
+
+    &__purple {
         background-color: rgba($color: #4353FF, $alpha: .1);
-        #{$self}{
-            &__title-5{
-                & a{
-                    &:hover{
+
+        #{$self} {
+            &__title-5 {
+                & a {
+                    &:hover {
                         color: var(--tp-theme-5);
                     }
                 }
             }
         }
     }
-    &__stroke{
+
+    &__stroke {
         @include transform(translateY(41px));
-        & img{
-            @media #{$xs}{
+
+        & img {
+            @media #{$xs} {
                 width: 100%;
                 height: 100%;
             }
         }
     }
-    &__shape{
-        &-1{
+
+    &__shape {
+        &-1 {
             position: absolute;
             z-index: -1;
             left: 13%;
             bottom: 4%;
-            -webkit-animation: tpupdown 1s infinite  alternate;
-            animation: tpupdown 1s infinite  alternate;
+            -webkit-animation: tpupdown 1s infinite alternate;
+            animation: tpupdown 1s infinite alternate;
 
-            @include rtl{
+            @include rtl {
                 left: auto;
                 right: 13%;
             }
         }
-        &-2{
+
+        &-2 {
             position: absolute;
             z-index: -1;
             right: 14%;
             top: 30%;
-            -webkit-animation: tprotate 2s infinite  alternate;
-            animation: tprotate 2s infinite  alternate;
+            -webkit-animation: tprotate 2s infinite alternate;
+            animation: tprotate 2s infinite alternate;
 
-            @include rtl{
+            @include rtl {
                 right: auto;
                 left: 14%;
             }
         }
     }
-    &__year{
-        & span{
+
+    &__year {
+        & span {
             font-family: var(--tp-ff-space);
             font-weight: 500;
             font-size: 16px;
             color: var(--tp-common-white);
         }
     }
-    &__topic{
-        & p{
+
+    &__topic {
+        & p {
             font-family: var(--tp-ff-syne);
             font-size: 18px;
             line-height: 1;
@@ -410,83 +436,97 @@
             padding-bottom: 16px;
         }
     }
-    &__btn{
-        &-8{
+
+    &__btn {
+        &-8 {
             padding-left: 28px;
-            @include rtl{
+
+            @include rtl {
                 padding-left: 0;
                 padding-right: 28px;
             }
-            @media #{$md, $sm, $xs}{
+
+            @media #{$md, $sm, $xs} {
                 padding-left: 0;
-                @include rtl{
+
+                @include rtl {
                     padding-right: 0;
                 }
             }
-            & a{
+
+            & a {
                 font-family: var(--tp-ff-space);
                 font-weight: 500;
                 font-size: 16px;
                 color: var(--tp-common-white);
 
-                &:hover{
+                &:hover {
                     color: var(--tp-theme-8);
-                    & i{
+
+                    & i {
                         color: var(--tp-theme-8);
                     }
                 }
 
-                & span{
+                & span {
                     @include transform(translateY(1px));
                 }
             }
         }
-        &-9{
-            @media #{$md, $sm, $xs}{
+
+        &-9 {
+            @media #{$md, $sm, $xs} {
                 margin-top: 20px;
             }
-            & a{
+
+            & a {
                 color: var(--tp-common-black-16);
-                &:hover{
+
+                &:hover {
                     color: #FA6490;
                 }
             }
         }
     }
 
-    &__style-2{
-        #{$self}{
-            &__item-9{
-                &::after{
+    &__style-2 {
+        #{$self} {
+            &__item-9 {
+                &::after {
                     background-image: none;
                     background-color: var(--tp-theme-1);
                 }
             }
-            &__topic{
-                & p{
+
+            &__topic {
+                & p {
                     font-family: var(--tp-ff-space);
                     color: var(--tp-common-black);
                 }
             }
-            &__title-9{
+
+            &__title-9 {
                 font-family: var(--tp-ff-space);
 
-                & a{
+                & a {
                     background-image: none;
                     @extend %tp-transition;
-                    &:hover{
+
+                    &:hover {
                         color: var(--tp-theme-1);
                     }
                 }
             }
-            &__content-9{
-                & p{
+
+            &__content-9 {
+                & p {
                     font-family: var(--tp-ff-inter);
                 }
             }
-            &__btn-9{
-                & a{
-                    &:hover{
+
+            &__btn-9 {
+                & a {
+                    &:hover {
                         color: var(--tp-theme-1);
                     }
                 }
@@ -495,23 +535,24 @@
     }
 }
 
-.award__item-wrapper-9{
-        & .__react_component_tooltip {
-            background: transparent;
-            padding: 0;
-            &.show{
-                opacity: 1 !important;
-            }
+.award__item-wrapper-9 {
+    & .__react_component_tooltip {
+        background: transparent;
+        padding: 0;
 
-            & img{
-                transition: none;
-            }
-         }
-         & .teef9e57e-5902-4b53-91d2-03d4525847a0 {
-             background: transparent;
-             border: 1px solid transparent;
-             border-radius: 3px;
-             padding: 0;
-         }
+        &.show {
+            opacity: 1 !important;
+        }
+
+        & img {
+            transition: none;
+        }
+    }
+
+    & .teef9e57e-5902-4b53-91d2-03d4525847a0 {
+        background: transparent;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        padding: 0;
+    }
 }
-
