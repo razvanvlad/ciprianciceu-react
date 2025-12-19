@@ -29,7 +29,7 @@ const LandingPlugins = () => {
                     >
                       <path
                         d="M3 20.1C45.1562 13.4769 129.172 -14.8215 193 20.1"
-                        stroke="#F50963"
+                        stroke="#5C24FC"
                         strokeWidth="6"
                         strokeLinecap="round"
                       />
@@ -267,7 +267,7 @@ const LandingPlugins = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="col">
             <div className="plugins__item tp-documentaion text-center">
               <div className="plugins__icon">

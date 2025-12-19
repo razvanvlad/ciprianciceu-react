@@ -80,7 +80,7 @@ const LandingBlogs = () => {
                       >
                         <path
                           d="M3 14.728C29.625 10.5468 82.6875 -7.31826 123 14.728"
-                          stroke="#F50963"
+                          stroke="#5C24FC"
                           strokeWidth="6"
                           strokeLinecap="round"
                         />
@@ -163,5 +163,5 @@ const LandingBlogs = () => {
 };
 
 export default dynamic(() => Promise.resolve(LandingBlogs), {
-   ssr: false,
- });
+  ssr: false,
+});

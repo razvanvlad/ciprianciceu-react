@@ -4,24 +4,24 @@
 /*  01. COMMON CSS START
 /*----------------------------------------*/
 
-#landing_page .tp-container-fluid{
-    max-width: 1470px;
+#landing_page .tp-container-fluid {
+	max-width: 1470px;
 }
 
-#landing_page .tp-section{
-    &-subtitle{
-        display: inline-block;
-        font-family: var(--tp-ff-space);
-        font-weight: 700;
-        font-size: 14px;
-        letter-spacing: -0.02em;
-        color: var(--tp-common-white);
-        background: var(--tp-common-purple);
-        border-radius: 20px;
-        padding: 1px 21px;
-        margin-bottom: 22px;
+#landing_page .tp-section {
+	&-subtitle {
+		display: inline-block;
+		font-family: var(--tp-ff-space);
+		font-weight: 700;
+		font-size: 14px;
+		letter-spacing: -0.02em;
+		color: var(--tp-common-white);
+		background: var(--tp-common-purple);
+		border-radius: 20px;
+		padding: 1px 21px;
+		margin-bottom: 22px;
 
-		&-border{
+		&-border {
 			font-family: var(--tp-ff-inter);
 			font-weight: 500;
 			font-size: 13px;
@@ -33,65 +33,70 @@
 			background-color: transparent;
 			padding: 5px 11px;
 		}
-    }
-    &-title{
-        font-family: var(--tp-ff-space);
-        font-weight: 700;
-        font-size: 60px;
-        line-height: 1;
-        letter-spacing: -0.04em;
-        margin-bottom: 10px;
+	}
 
-		@media #{$lg}{
+	&-title {
+		font-family: var(--tp-ff-space);
+		font-weight: 700;
+		font-size: 60px;
+		line-height: 1;
+		letter-spacing: -0.04em;
+		margin-bottom: 10px;
+
+		@media #{$lg} {
 			font-size: 47px;
 		}
 
-		@media #{$md}{
+		@media #{$md} {
 			font-size: 50px;
 		}
 
-		@media #{$sm}{
+		@media #{$sm} {
 			font-size: 45px;
 		}
 
-		@media #{$xs}{
+		@media #{$xs} {
 			font-size: 35px;
 		}
 
-		@media #{$sm, $xs}{
-			& br{
+		@media #{$sm, $xs} {
+			& br {
 				display: none;
 			}
 		}
 
-        &-underline{
-            position: relative;
-            z-index: 1;
+		&-underline {
+			position: relative;
+			z-index: 1;
 			display: inline-block;
-            & svg{
-                position: absolute;
-                left: 15px;
-                bottom: 6px;
-                z-index: -1;
 
-				@media #{$md, $sm, $xs}{
+			& svg {
+				position: absolute;
+				left: 15px;
+				bottom: 6px;
+				z-index: -1;
+
+				@media #{$md, $sm, $xs} {
 					width: 100%;
 				}
-                & path{
-                    stroke: var(--tp-theme-1);
+
+				& path {
+					stroke: var(--tp-theme-1);
 					stroke-dasharray: 560;
 					stroke-dashoffset: 560;
 					animation: section_stroke 3s linear forwards infinite;
 					-webkit-animation: section_stroke 3s linear forwards infinite;
 
-					@at-root{
-						@include keyframes(section_stroke){
-							0%{
+					@at-root {
+						@include keyframes(section_stroke) {
+							0% {
 								stroke-dashoffset: 560;
 							}
-							50%{
+
+							50% {
 								stroke-dashoffset: 0;
 							}
+
 							100% {
 								stroke-dashoffset: -560;
 							}
@@ -99,40 +104,41 @@
 						}
 					}
 
-                }
-            }
-        }
-        &-wrapper{
-            & p{
-                font-size: 18px;
-                line-height: 1.56;
-                letter-spacing: -0.04em;
+				}
+			}
+		}
 
-				@media #{$sm}{
-					& br{
+		&-wrapper {
+			& p {
+				font-size: 18px;
+				line-height: 1.56;
+				letter-spacing: -0.04em;
+
+				@media #{$sm} {
+					& br {
 						display: none;
 					}
 				}
-            }
-        }
-    }
+			}
+		}
+	}
 }
 
-#landing_page .grey-bg{
-    background-color: #F6F6FA;
+#landing_page .grey-bg {
+	background-color: #F6F6FA;
 }
 
-#landing_page .grey-bg-2{
-    background-color: #F5F3F6;
+#landing_page .grey-bg-2 {
+	background-color: #F5F3F6;
 }
 
-#landing_page .pt-275{
-    padding-top: 275px;
+#landing_page .pt-275 {
+	padding-top: 275px;
 }
 
 
 
-#loading{
+#loading {
 	background-color: #fff;
 	height: 100%;
 	width: 100%;
@@ -141,11 +147,13 @@
 	margin-top: 0px;
 	top: 0px;
 }
-#loading-center{
+
+#loading-center {
 	width: 100%;
 	height: 100%;
 	position: relative;
-	}
+}
+
 #loading-center-absolute {
 	position: absolute;
 	left: 50%;
@@ -155,7 +163,7 @@
 }
 
 
-#loading{
+#loading {
 	background-color: #fff;
 	height: 100%;
 	width: 100%;
@@ -164,11 +172,13 @@
 	margin-top: 0px;
 	top: 0px;
 }
-#loading-center{
+
+#loading-center {
 	width: 100%;
 	height: 100%;
 	position: relative;
-	}
+}
+
 #loading-center-absolute {
 	position: absolute;
 	left: 50%;
@@ -184,8 +194,8 @@
 
 
 
-.preloader{
-	&__bar{
+.preloader {
+	&__bar {
 		width: 270px;
 		height: 4px;
 		background-color: #E2E2E8;
@@ -193,96 +203,107 @@
 		margin-bottom: 50px;
 		position: relative;
 		overflow: hidden;
-		&-inner{
+
+		&-inner {
 			position: absolute;
 			left: 0;
 			top: 0;
 			width: 0%;
 			height: 100%;
-			@include tp-gradient((90deg, #F50963 0%, #6A6BFF 100%));
+			@include tp-gradient((90deg, #5C24FC 0%, #6A6BFF 100%));
 			@include transition(1s);
 		}
 	}
-	&__logo{
+
+	&__logo {
 		margin-bottom: 40px;
 
-		& img{
-			&.logo-blink{
+		& img {
+			&.logo-blink {
 				animation: tp-blink .7s ease-in-out .1s infinite;
 
-				@include keyframes(tp-blink){
-					0%{
+				@include keyframes(tp-blink) {
+					0% {
 						opacity: 1;
 					}
-					50%{
+
+					50% {
 						opacity: .5;
 					}
-					100%{
+
+					100% {
 						opacity: 1;
 					}
 				}
 			}
 		}
 	}
-	&__title{
+
+	&__title {
 		font-size: 200px;
 		line-height: 1;
 		text-transform: uppercase;
 		position: relative;
 		color: var(--tp-common-black);
 
-		@media #{$sm}{
+		@media #{$sm} {
 			font-size: 150px;
 		}
 
-		@media #{$xs}{
+		@media #{$xs} {
 			font-size: 90px;
 		}
 
-		&-2{
+		&-2 {
 			font-size: 200px;
 			line-height: 1;
 			font-weight: 700;
 			text-transform: uppercase;
 			position: relative;
 			color: var(--tp-grey-1);
-			&::before{
+
+			&::before {
 				position: absolute;
 				content: attr(data-text-preloader);
 				top: 22px;
 				left: 0;
 				color: var(--tp-common-black);
-				opacity: 0;  
+				opacity: 0;
 				-webkit-transform: rotateY(-90deg);
 				transform: rotateY(-90deg);
 				-webkit-animation: letters-loading 3s infinite;
 				animation: letters-loading 3s infinite;
 			}
-	
-			&:nth-child(2)::before{
+
+			&:nth-child(2)::before {
 				-webkit-animation-delay: 0.2s;
 				animation-delay: 0.2s;
 			}
-			&:nth-child(3)::before{
+
+			&:nth-child(3)::before {
 				-webkit-animation-delay: 0.4s;
 				animation-delay: 0.4s;
 			}
-			&:nth-child(4)::before{
+
+			&:nth-child(4)::before {
 				-webkit-animation-delay: 0.6s;
 				animation-delay: 0.6s;
 			}
-			&:nth-child(5)::before{
+
+			&:nth-child(5)::before {
 				-webkit-animation-delay: 0.8s;
 				animation-delay: 0.8s;
 			}
-			&:nth-child(6)::before{
+
+			&:nth-child(6)::before {
 				-webkit-animation-delay: 1s;
 				animation-delay: 1s;
 			}
 
 		}
 	}
-	&__loading{
+
+	&__loading {
 		font-family: var(--tp-ff-space);
 		font-weight: 700;
 		font-size: 16px;
@@ -291,40 +312,42 @@
 		text-transform: uppercase;
 		color: var(--tp-common-black);
 	}
-	&__with-text{
+
+	&__with-text {
 		display: none;
 	}
 }
 
-  @include keyframes(letters-loading){
-		0%,
-		75%,	
-		100% {
-			opacity: 0;
-			@include transform(rotateY(-90deg));
-	
-		}
-	
-		25%,
-		50% {
-			opacity: 1;
-			@include transform(rotateY(0deg));
-		}
-  }  
-  
-  @keyframes loading {
+@include keyframes(letters-loading) {
+
+	0%,
+	75%,
+	100% {
+		opacity: 0;
+		@include transform(rotateY(-90deg));
+
+	}
+
+	25%,
+	50% {
+		opacity: 1;
+		@include transform(rotateY(0deg));
+	}
+}
+
+@keyframes loading {
 
 	0% {
-	  width: 0%;
+		width: 0%;
 	}
-  
+
 	100% {
-	  width: 100%;
+		width: 100%;
 	}
-  
-  }
+
+}
 
 
-  .testimonial-bg{
+.testimonial-bg {
 	background-color: #F5F5FA;
-  }
+}

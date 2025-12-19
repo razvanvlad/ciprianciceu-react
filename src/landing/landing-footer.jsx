@@ -28,7 +28,7 @@ const LandingFooter = () => {
                     >
                       <path
                         d="M3 26.625C62.9062 17.4747 182.297 -21.6218 273 26.625"
-                        stroke="#F50963"
+                        stroke="#5C24FC"
                         strokeWidth="6"
                         strokeLinecap="round"
                       />

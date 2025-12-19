@@ -1,6 +1,5 @@
 $colors: (
-    'common': (
-        'white': #ffffff,
+    'common': ('white': #ffffff,
         'white-op-7': #ffffffb3, // white opacity 70%
         'white-op-3': #ffffff4d, // white opacity 30%
         'white-op-03': #ffffff4d, // white opacity 3%
@@ -88,11 +87,9 @@ $colors: (
         'brown-dark-2': #D93D1E,
         'brown-light': #E8EBF0,
     ),
-    'heading': (
-        'primary': #03041C,
+    'heading': ('primary': #03041C,
     ),
-    'grey': (
-        '1':#F1F1F1,
+    'grey': ('1':#F1F1F1,
         '2':#F5F6F8,
         '3':#E6E6EC,
         '4':#F0F0F5,
@@ -112,8 +109,7 @@ $colors: (
         '18': #F2F3F5,
 
     ),
-    'text': (
-        'body':#525258,
+    'text': ('body':#525258,
         '1':#525258,
         '2':#A3A3AA,
         '3':#B0B0B8,
@@ -139,10 +135,9 @@ $colors: (
         '23': #858585,
         '24': #C0C9C7,
         '25': #B7B7BB,
-        
+
     ),
-    'theme': (
-        '1': #F50963,
+    'theme': ('1': #5C24FC,
         '1-dark': #C3004B,
         '2': #008080,
         '2-dark': #065454,
@@ -156,8 +151,7 @@ $colors: (
         '9': #03041C,
         '10': #ED212C,
     ),
-    'rgb':(
-        'theme-1': '245, 9, 99',
+    'rgb':('theme-1': '245, 9, 99',
         'theme-1-dark': '195, 0, 75',
         'theme-2': '0, 128, 128',
         'theme-2-dark': '6, 84, 84',
@@ -172,8 +166,7 @@ $colors: (
         'theme-10': '237, 33, 44',
         'purple': '99, 100, 219',
     ),
-    'border': (
-        '1': #ffffff1a, // white opacity 10%
+    'border': ('1': #ffffff1a, // white opacity 10%
         '2': #EAEAF0,
         '3': #ffffff33, // white opacity 20%
         '4': #EFEFF5,

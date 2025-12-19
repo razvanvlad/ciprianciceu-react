@@ -117,7 +117,7 @@ const LandingElements = () => {
                       >
                         <path
                           d="M3 20.1C45.1562 13.4769 129.172 -14.8215 193 20.1"
-                          stroke="#F50963"
+                          stroke="#5C24FC"
                           strokeWidth="6"
                           strokeLinecap="round"
                         />
