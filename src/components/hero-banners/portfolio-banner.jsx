@@ -27,7 +27,7 @@ const PortfolioBanner = () => {
               <div className="col-xl-7 col-lg-6 col-md-7">
                 <div className="slider__content-9">
                   <span className="section__title-pre">{pre_title}</span>
-                  <h3 className="section__title">
+                  <h3 className="section__title mb-4">
                     {title}{" "}
                     <span className="section__title-highlight">
                       {highlight_text}
