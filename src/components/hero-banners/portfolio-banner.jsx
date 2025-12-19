@@ -4,8 +4,18 @@ import Link from "next/link";
 // internal
 import shape_1 from '@assets/img/slider/9/slider-shape-1.png';
 import shape_2 from '@assets/img/slider/9/slider-shape-2.png';
-import main_img from '@assets/img/slider/9/slider-1.png';
+import main_img from '@assets/img/ciceu/ciceu-decupat.png';
 import { Behance, Dribble, Instagram } from "@svg/index";
+import ShapeLine from "@svg/shape-line";
+
+const banner_contents = {
+  pre_title: "Hi! I am Ciprian Ciceu",
+  title: "Entrepreneur & Blockchain",
+  highlight_text: "Educator",
+  desc: "Hi! I'm a UI/UX Designer - creating bold & brave interface design for companies all across the world.",
+}
+
+const { pre_title, title, highlight_text, desc } = banner_contents;
 
 const PortfolioBanner = () => {
   return (
@@ -16,16 +26,15 @@ const PortfolioBanner = () => {
             <div className="row align-items-end">
               <div className="col-xl-7 col-lg-6 col-md-7">
                 <div className="slider__content-9">
-                  <span className="slider__title-pre-9">
-                    Hi! I am Ciprian Ciceu
-                  </span>
-                  <h3 className="slider__title-9">
-                    Entrepreneur <br /> Blockchain Educator
+                  <span className="section__title-pre">{pre_title}</span>
+                  <h3 className="section__title">
+                    {title}{" "}
+                    <span className="section__title-highlight">
+                      {highlight_text}
+                      <ShapeLine />
+                    </span>
                   </h3>
-                  <p>
-                    Hi! {"I'm"} a UI/UX Designer - creating bold & brave
-                    interface design for companies all across the world.
-                  </p>
+                  <p>{desc}</p>
 
                   <div className="slider__btn-9 mb-85">
                     <Link href="/contact" className="tp-btn-5 tp-link-btn-3">

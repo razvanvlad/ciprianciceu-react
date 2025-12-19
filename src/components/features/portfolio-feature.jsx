@@ -4,17 +4,17 @@ import Image from "next/image";
 import user_1 from "@assets/img/users/user-1.jpg";
 import user_2 from "@assets/img/users/user-2.jpg";
 import user_3 from "@assets/img/users/user-3.jpg";
-import feature_thumb_1 from "@assets/img/features/9/features-1.jpg";
-import feature_thumb_2 from "@assets/img/features/9/features-2.jpg";
-import feature_thumb_3 from "@assets/img/features/9/features-3.jpg";
-import feature_thumb_4 from "@assets/img/features/9/features-4.jpg";
+import feature_thumb_1 from "@assets/img/ciceu/determination.png";
+import feature_thumb_2 from "@assets/img/ciceu/tech.png";
+import feature_thumb_3 from "@assets/img/ciceu/financial-inovation.png";
+import feature_thumb_4 from "@assets/img/ciceu/community.png";
 
 // feature content
 const feature_contents = [
-  { id: 1, subtitle: "Strategy", title: "Concept" },
-  { id: 2, subtitle: "Analysis", title: "Research" },
-  { id: 3, subtitle: "Development", title: "Design" },
-  { id: 4, subtitle: "Prototyping", title: "Animation" },
+  { id: 1, subtitle: "Professional", title: "Focus & Determination" },
+  { id: 2, subtitle: "Building", title: "Technology Platforms" },
+  { id: 3, subtitle: "Blockchain", title: "Financial Innovation" },
+  { id: 4, subtitle: "Education", title: "Community Building" },
 ];
 
 const feature_thumbs = [
@@ -42,11 +42,10 @@ const PortfolioFeature = () => {
                   <div
                     key={item.id}
                     onClick={() => handleServiceActive(item.id)}
-                    className={`features__content-9 features-item-content ${
-                      serviceActive === `features-img-${item.id}`
-                        ? "active"
-                        : ""
-                    }`}
+                    className={`features__content-9 features-item-content ${serviceActive === `features-img-${item.id}`
+                      ? "active"
+                      : ""
+                      }`}
                     rel="features-img-1"
                   >
                     <span>{item.subtitle}</span>
@@ -61,9 +60,8 @@ const PortfolioFeature = () => {
                   {feature_thumbs.map((item, i) => (
                     <div
                       key={i}
-                      className={`features__thumb-9 transition-3 ${item.ref} ${
-                        serviceActive === item.ref ? "active" : ""
-                      }`}
+                      className={`features__thumb-9 transition-3 ${item.ref} ${serviceActive === item.ref ? "active" : ""
+                        }`}
                     >
                       <Image src={item.img} alt="image" />
                       <div className="features__thumb-9-content">
