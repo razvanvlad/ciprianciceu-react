@@ -66,8 +66,7 @@ const PortfolioFeature = () => {
                       <Image src={item.img} alt="image" />
                       <div className="features__thumb-9-content">
                         <p>
-                          “I design beautifully simple things,and i love what i
-                          do.”
+                          "Technology should serve people, simplify complexity and contribute to meaningful, long-lasting progress"
                         </p>
 
                         <div className="features-users">

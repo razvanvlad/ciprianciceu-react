@@ -15,23 +15,20 @@ const PortfolioAbout = () => {
                 <div className="about__wrapper-9">
                   <span className="about-subtitle">ABOUT ME</span>
                   <h3 className="about-title">
-                    My name is <span>micael</span>, I’m a <span>Designer</span>{" "}
-                    based in <span>Australia</span> and this is a{" "}
-                    <span>selection</span> of my personal and{" "}
-                    <span>professional</span> work.
+                    Ciprian Ciceu is a<span> technology entrepreneur</span> and blockchain educator<span> with over a decade of experience</span>{" "}
+                    in building digital platforms, <span>automated trading systems</span> and international business communities.{" "}
+
                   </h3>
 
                   <p>
-                    Over the past 12 years, {"I've"} worked with a diverse range of
-                    clients, from startups to fortune 500 companies. I love
-                    crafting interfaces that delight users and help businesses
-                    grow. lorem ipsum dolor sit amet, consectet adipiscing
-                    spendisse iperdiet.
+                    His work focuses on the intersection of technology, financial innovation and education, with projects developed and scaled across Europe, the Middle East and emerging markets.
+                    Throughout his career, Ciprian has contributed to the creation of fintech solutions, blockchain-based infrastructures and educational programs designed to make advanced technology more accessible to individuals and organizations.
+                    His approach combines technical execution, strategic thinking and long-term sustainability, with a strong emphasis on transparency and real-world impact.
                   </p>
 
                   <div className="about__btn-9">
                     <a
-                      href="https://weblearnbd.net/wp/bioxlab/wp-content/uploads/2022/09/demo-cv.pdf"
+                      href="/downloads/CV-Ciprian-Ciceu.pdf"
                       target="_blank"
                       rel="noreferrer"
                       className="tp-btn-5 tp-btn-5-white"
