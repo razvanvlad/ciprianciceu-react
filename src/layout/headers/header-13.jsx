@@ -4,8 +4,8 @@ import Link from 'next/link';
 // internal
 import Talk from '@svg/talk';
 import Menus from './menus';
-import logo_dark from '@assets/img/logo/logo-black-solid.svg';
-import logo_light from '@assets/img/logo/logo.svg';
+import logo_dark from '@assets/img/logo/logo-ciceu-transparent.png';
+import logo_light from '@assets/img/logo/logo-ciceu-transparent.png';
 import OffCanvasSix from '@components/common/off-canvas/off-canvas-6';
 
 const HeaderThirteen = () => {
@@ -58,7 +58,7 @@ const HeaderThirteen = () => {
                           Let’s talk
                           <div className="header-btn-12-icon">
                             <span>
-                              <Talk/>
+                              <Talk />
                             </span>
                           </div>
                         </Link>

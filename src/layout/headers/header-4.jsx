@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 // internal
 import Menus from "./menus";
-import logo from "@assets/img/logo/logo-black.svg";
+import logo from "@assets/img/logo/logo-ciceu-transparent.png";
 import OffCanvasFour from "@components/common/off-canvas/off-canvas-4";
 import useSticky from "@hooks/use-sticky";
 import PhoneThree from "@svg/phone-3";
@@ -15,9 +15,8 @@ const HeaderFour = () => {
     <>
       <header>
         <div
-          className={`header__area header-box-plr-5-245 header__padding-5 header__style-5 header__sticky header-sticky-blur ${
-            sticky ? "header-sticky" : ""
-          }`}
+          className={`header__area header-box-plr-5-245 header__padding-5 header__style-5 header__sticky header-sticky-blur ${sticky ? "header-sticky" : ""
+            }`}
           id="header-sticky"
         >
           <div className="header__gradient-bg"></div>

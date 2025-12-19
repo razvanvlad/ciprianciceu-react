@@ -9,8 +9,8 @@ import SearchPopup from "./component/search-popup";
 import Menus from "./menus";
 import OffCanvasMain from "@components/common/off-canvas";
 // logo
-import logoLight from "@assets/img/logo/logo.svg";
-import logoDark from "@assets/img/logo/logo-black.svg";
+import logoLight from "@assets/img/logo/logo-ciceu-transparent.png";
+import logoDark from "@assets/img/logo/logo-ciceu-transparent.png";
 import useSticky from "@hooks/use-sticky";
 import OffCanvasSix from "@components/common/off-canvas/off-canvas-6";
 
@@ -20,7 +20,7 @@ const Header = ({
   header_solid_2,
   header_black,
   top_bar = true,
-  commonOffCanvas=false
+  commonOffCanvas = false
 }) => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const { sticky } = useSticky();
@@ -29,11 +29,9 @@ const Header = ({
     <>
       <header>
         <div
-          className={`header__area ${
-            header_solid ? "header__white-solid" : "header__transparent"
-          } ${header_solid_2 ? header_solid_2 : ""} ${
-            header_black ? "header__black" : ""
-          }`}
+          className={`header__area ${header_solid ? "header__white-solid" : "header__transparent"
+            } ${header_solid_2 ? header_solid_2 : ""} ${header_black ? "header__black" : ""
+            }`}
         >
           {top_bar && (
             <div className="header__top header__border d-none d-lg-block">
@@ -54,11 +52,10 @@ const Header = ({
             </div>
           )}
           <div
-            className={`header__bottom header__sticky ${
-              header_solid
-                ? ""
-                : `header__bottom-border${transparent ? "-3" : ""}`
-            } ${sticky ? "header-sticky" : ""}`}
+            className={`header__bottom header__sticky ${header_solid
+              ? ""
+              : `header__bottom-border${transparent ? "-3" : ""}`
+              } ${sticky ? "header-sticky" : ""}`}
             id="header-sticky"
           >
             <div className="container">
@@ -72,6 +69,9 @@ const Header = ({
                             className="logo-light"
                             src={logoLight}
                             alt="logo"
+                            width={140}
+                            height={90}
+                            style={{ maxHeight: '90px', width: 'auto' }}
                           />
                         )}
                         <Image
@@ -81,6 +81,9 @@ const Header = ({
                           src={logoDark}
                           alt="logo"
                           priority
+                          width={140}
+                          height={90}
+                          style={{ maxHeight: '90px', width: 'auto' }}
                         />
                       </Link>
                     </div>
@@ -109,11 +112,10 @@ const Header = ({
                             <button
                               onClick={() => setIsOffCanvasOpen(true)}
                               type="button"
-                              className={`hamburger-btn ${
-                                header_solid || header_black
-                                  ? "hamburger-btn-black"
-                                  : ""
-                              } offcanvas-open-btn`}
+                              className={`hamburger-btn ${header_solid || header_black
+                                ? "hamburger-btn-black"
+                                : ""
+                                } offcanvas-open-btn`}
                             >
                               <span></span>
                               <span></span>
@@ -126,11 +128,10 @@ const Header = ({
                         <button
                           onClick={() => setIsOffCanvasOpen(true)}
                           type="button"
-                          className={`hamburger-btn ${
-                            header_solid || header_black
-                              ? "hamburger-btn-black"
-                              : ""
-                          } offcanvas-open-btn`}
+                          className={`hamburger-btn ${header_solid || header_black
+                            ? "hamburger-btn-black"
+                            : ""
+                            } offcanvas-open-btn`}
                         >
                           <span></span>
                           <span></span>

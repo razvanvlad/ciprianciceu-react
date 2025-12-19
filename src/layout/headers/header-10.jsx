@@ -5,18 +5,18 @@ import Link from "next/link";
 import { Search, Email } from "@svg/index";
 import Menus from "./menus";
 import SearchPopup from "./component/search-popup";
-import logo_dark from "@assets/img/logo/logo-black-solid.svg";
-import logo_light from "@assets/img/logo/logo.svg";
+import logo_dark from "@assets/img/logo/logo-ciceu-transparent.png";
+import logo_light from "@assets/img/logo/logo-ciceu-transparent.png";
 import OffCanvasFive from "@components/common/off-canvas/off-canvas-5";
 
-const HeaderTen = ({active}) => {
+const HeaderTen = ({ active }) => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isOffCanvasOpen, setIsOffCanvasOpen] = useState(false);
   return (
     <>
       <header>
         <div className="header__area header__transparent">
-          <div className={`header__bottom-11 header__white ${active?'header__white-slider slider-pagination-11-white':''}`}>
+          <div className={`header__bottom-11 header__white ${active ? 'header__white-slider slider-pagination-11-white' : ''}`}>
             <div className="mega-menu-wrapper p-relative">
               <div className="container-fluid">
                 <div className="row align-items-center">

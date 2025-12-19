@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 // internal
 import shape from "@assets/img/shape/offcanvas-shape-2.png";
-import logo from "@assets/img/logo/logo.svg";
+import logo from "@assets/img/logo/logo-ciceu-transparent.png";
 import SocialLinks from "@components/social";
 import CloseFour from "@svg/close-4";
 import MobileMenus from "./mobile-menus";
@@ -12,9 +12,8 @@ const OffCanvasFive = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
   return (
     <React.Fragment>
       <div
-        className={`offcanvas__area offcanvas__area-3 ${
-          isOffCanvasOpen ? "offcanvas-opened" : ""
-        }`}
+        className={`offcanvas__area offcanvas__area-3 ${isOffCanvasOpen ? "offcanvas-opened" : ""
+          }`}
       >
         <div className="offcanvas__shape">
           <Image className="offcanvas__shape-2" src={shape} alt="shape" />

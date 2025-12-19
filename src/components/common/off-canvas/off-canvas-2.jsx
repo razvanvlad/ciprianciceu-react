@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import logo from "@assets/img/logo/logo-white-solid.svg";
+import logo from "@assets/img/logo/logo-ciceu-transparent.png";
 import shape from "@assets/img/shape/offcanvas-img-1.png";
 import Close from "@svg/close";
 import MobileMenus from "./mobile-menus";
@@ -12,9 +12,8 @@ const OffCanvasTwo = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
   return (
     <React.Fragment>
       <div
-        className={`offcanvas__area offcanvas__area-4 ${
-          isOffCanvasOpen ? "offcanvas-opened" : ""
-        }`}
+        className={`offcanvas__area offcanvas__area-4 ${isOffCanvasOpen ? "offcanvas-opened" : ""
+          }`}
       >
         <div className="offcanvas__wrapper">
           <div
@@ -73,7 +72,7 @@ const OffCanvasTwo = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
         onClick={() => setIsOffCanvasOpen(false)}
         className={`body-overlay ${isOffCanvasOpen ? "opened" : ""}`}
       ></div>
-       {/* overlay */}
+      {/* overlay */}
     </React.Fragment>
   );
 };

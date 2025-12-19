@@ -9,7 +9,7 @@ import inst_img_3 from "@assets/img/instagram/footer/insta-3.jpg";
 import inst_img_4 from "@assets/img/instagram/footer/insta-4.jpg";
 import inst_img_5 from "@assets/img/instagram/footer/insta-5.jpg";
 import inst_img_6 from "@assets/img/instagram/footer/insta-6.jpg";
-import logo from "@assets/img/logo/logo-red.svg";
+import logo from "@assets/img/logo/logo-ciceu-transparent.png";
 import SocialLinks from "@components/social";
 import CopyrightText from "./component/copyright-text";
 import PhotoProviderWrapper from "src/provider/PhotoProviderWrapper";

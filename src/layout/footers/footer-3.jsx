@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 // internal
 import shape from '../../../public/assets/img/shape/footer-shape-1.png';
-import logo from '../../../public/assets/img/logo/logo-black.svg';
+import logo from '../../../public/assets/img/logo/logo-ciceu-transparent.png';
 import SocialLinks from '../../components/social';
 
 const FooterThree = () => {
@@ -60,8 +60,8 @@ const FooterThree = () => {
                 <div className="row align-items-center">
                   <div className="col-sm-6">
                     <div className="footer__copyright-2">
-                      <p>Copyright © {new Date().getFullYear()} by <Link href="/home">HARRY</Link>. 
-                      All Rights Reserved.</p>
+                      <p>Copyright © {new Date().getFullYear()} by <Link href="/home">HARRY</Link>.
+                        All Rights Reserved.</p>
                     </div>
                   </div>
                   <div className="col-sm-6">

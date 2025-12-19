@@ -5,7 +5,7 @@ import Link from 'next/link';
 // internal
 import SocialLinks from '../../components/social';
 import FooterBottom from './component/footer-bottom';
-import logo from '../../../public/assets/img/logo/logo.svg'
+import logo from '../../../public/assets/img/logo/logo-ciceu-transparent.png'
 import FooterWidget from './component/footer-widget';
 import { blog_data } from '../../data';
 
@@ -32,7 +32,7 @@ const footer_widget = [
 ]
 
 // footer blog 
-const footer_blogs = blog_data.slice(0,2);
+const footer_blogs = blog_data.slice(0, 2);
 
 
 const FooterTwo = () => {
@@ -73,20 +73,20 @@ const FooterTwo = () => {
 
                     <div className="footer__widget-content">
                       <div className="footer__blog">
-                        {footer_blogs.map((blog,i) => (
-                        <div key={i} className="footer__blog-item-2">
-                          <div className="footer__blog-content-2">
-                            <div className="footer__blog-tag">
-                              <a href="#">{blog.tag}</a>
-                            </div>
-                            <h3 className="footer__blog-title-4">
-                              <Link href="/blog-details">{blog.title}</Link>
-                            </h3>
-                            <div className="footer__blog-meta-4">
-                              <span>{blog.date}</span>
+                        {footer_blogs.map((blog, i) => (
+                          <div key={i} className="footer__blog-item-2">
+                            <div className="footer__blog-content-2">
+                              <div className="footer__blog-tag">
+                                <a href="#">{blog.tag}</a>
+                              </div>
+                              <h3 className="footer__blog-title-4">
+                                <Link href="/blog-details">{blog.title}</Link>
+                              </h3>
+                              <div className="footer__blog-meta-4">
+                                <span>{blog.date}</span>
+                              </div>
                             </div>
                           </div>
-                        </div>
                         ))}
                       </div>
                     </div>

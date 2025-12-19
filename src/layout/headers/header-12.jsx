@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 // internal
 import Menus from "./menus";
-import logo from "@assets/img/logo/logo-black.svg";
+import logo from "@assets/img/logo/logo-ciceu-transparent.png";
 import { User, HeartThree, Cart, SearchTwo } from "@svg/index";
 import useSticky from "@hooks/use-sticky";
 import CartSidebar from "@components/common/sidebar/cart-sidebar";
@@ -18,9 +18,8 @@ const HeaderTwelve = ({ style_2 = false }) => {
       <header>
         <div className={`header__area ${style_2 ? "" : "header__transparent"}`}>
           <div
-            className={`header__bottom-13 header__padding-7 header__black-3 header__bottom-border-4 ${
-              style_2 ? "header__bottom-13-white" : "grey-bg-17"
-            } header__sticky ${sticky ? "header-sticky" : ""}`}
+            className={`header__bottom-13 header__padding-7 header__black-3 header__bottom-border-4 ${style_2 ? "header__bottom-13-white" : "grey-bg-17"
+              } header__sticky ${sticky ? "header-sticky" : ""}`}
             id="header-sticky"
           >
             <div className="container-fluid">

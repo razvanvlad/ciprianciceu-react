@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 // internal
 import shape from "@assets/img/shape/offcanvas-shape-3.png";
-import logo from "@assets/img/logo/logo-black.svg";
+import logo from "@assets/img/logo/logo-ciceu-transparent.png";
 import insta_img_1 from "@assets/img/instagram/offcanvas/instagram-1.png";
 import insta_img_2 from "@assets/img/instagram/offcanvas/instagram-2.png";
 import insta_img_3 from "@assets/img/instagram/offcanvas/instagram-3.png";
@@ -35,9 +35,8 @@ const OffCanvasFour = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
   return (
     <React.Fragment>
       <div
-        className={`offcanvas__area offcanvas__area-5 ${
-          isOffCanvasOpen ? "offcanvas-opened" : ""
-        }`}
+        className={`offcanvas__area offcanvas__area-5 ${isOffCanvasOpen ? "offcanvas-opened" : ""
+          }`}
       >
         <div className="offcanvas__wrapper offcanvas__wrapper-5">
           <div className="offcanvas__shape">

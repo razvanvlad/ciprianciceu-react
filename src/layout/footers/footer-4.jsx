@@ -3,17 +3,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 // internal
 import SocialLinks from '@components/social';
-import {Call, Email, LocationTwo, Opening} from '@svg/index';
-import logo from '@assets/img/logo/logo.svg';
-import logo_black from '@assets/img/logo/logo-black.svg';
+import { Call, Email, LocationTwo, Opening } from '@svg/index';
+import logo from '@assets/img/logo/logo-ciceu-transparent.png';
+import logo_black from '@assets/img/logo/logo-ciceu-transparent.png';
 import CopyrightText from './component/copyright-text';
 
-const FooterFour = ({style_2=false}) => {
+const FooterFour = ({ style_2 = false }) => {
   return (
     <>
       <footer>
-        <div className={`footer__area ${style_2?'footer__style-3':''}`} 
-        data-bg-color={`footer-bg-${style_2?'grey-4':'black'}`}>
+        <div className={`footer__area ${style_2 ? 'footer__style-3' : ''}`}
+          data-bg-color={`footer-bg-${style_2 ? 'grey-4' : 'black'}`}>
           <div className="footer__top footer__top-5">
             <div className="container">
               <div className="row">
@@ -32,7 +32,7 @@ const FooterFour = ({style_2=false}) => {
                         <div className="footer__opening d-flex align-items-start">
                           <div className="footer__opening-icon mr-15">
                             <span>
-                              <Opening/>
+                              <Opening />
                             </span>
                           </div>
                           <div className="footer__opening-content">
@@ -74,7 +74,7 @@ const FooterFour = ({style_2=false}) => {
                         <div className="footer__info-item d-flex align-items-start">
                           <div className="footer__info-icon mr-20">
                             <span>
-                              <Call/>
+                              <Call />
                             </span>
                           </div>
                           <div className="footer__info-text">
@@ -85,7 +85,7 @@ const FooterFour = ({style_2=false}) => {
                         <div className="footer__info-item d-flex align-items-start">
                           <div className="footer__info-icon mr-20">
                             <span>
-                              <Email/>
+                              <Email />
                             </span>
                           </div>
                           <div className="footer__info-text">
@@ -96,7 +96,7 @@ const FooterFour = ({style_2=false}) => {
                         <div className="footer__info-item d-flex align-items-start">
                           <div className="footer__info-icon mr-20">
                             <span>
-                              <LocationTwo/>
+                              <LocationTwo />
                             </span>
                           </div>
                           <div className="footer__info-text">
@@ -116,7 +116,7 @@ const FooterFour = ({style_2=false}) => {
               <div className="row align-items-center">
                 <div className="col-sm-6">
                   <div className="footer__copyright-5">
-                    <CopyrightText/>
+                    <CopyrightText />
                   </div>
                 </div>
                 <div className="col-sm-6">

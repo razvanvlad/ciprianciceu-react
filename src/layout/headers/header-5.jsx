@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 // internal
 import Menus from './menus';
-import logo from '@assets/img/logo/logo.svg';
+import logo from '@assets/img/logo/logo-ciceu-transparent.png';
 import useSticky from '@hooks/use-sticky';
 import OffCanvasFive from '@components/common/off-canvas/off-canvas-5';
 
@@ -67,8 +67,8 @@ const HeaderFive = () => {
         </div>
       </header>
 
-       {/* off canvas start */}
-       <OffCanvasFive
+      {/* off canvas start */}
+      <OffCanvasFive
         isOffCanvasOpen={isOffCanvasOpen}
         setIsOffCanvasOpen={setIsOffCanvasOpen}
       />

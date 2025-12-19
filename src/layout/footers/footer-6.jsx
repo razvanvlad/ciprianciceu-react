@@ -4,7 +4,7 @@ import Link from "next/link";
 // internal
 import SocialLinks from "@components/social";
 import CopyrightText from "./component/copyright-text";
-import logo from '@assets/img/logo/logo.svg';
+import logo from '@assets/img/logo/logo-ciceu-transparent.png';
 import flag from '@assets/img/footer/footer-lang-flag-1.png';
 import shape from '@assets/img/footer/footer-shape-3.png';
 
@@ -31,15 +31,15 @@ function SingleWidget({ col, col_2, title, contents }) {
   );
 }
 
-const FooterSix = ({style_2=false}) => {
+const FooterSix = ({ style_2 = false }) => {
   const [isShow, setIsShow] = useState(false);
   return (
     <>
       <footer>
         <div
-          className={`footer__area footer__style-${style_2?'blue':'green'} include-bg bg-luminosity`}
-          data-bg-color={`footer-bg-${style_2?'blue':'green-dark'}`}
-          style={{backgroundImage:`url(${shape.src})`}}
+          className={`footer__area footer__style-${style_2 ? 'blue' : 'green'} include-bg bg-luminosity`}
+          data-bg-color={`footer-bg-${style_2 ? 'blue' : 'green-dark'}`}
+          style={{ backgroundImage: `url(${shape.src})` }}
         >
           <div className="footer__top footer__top-7">
             <div className="container">
@@ -170,7 +170,7 @@ const FooterSix = ({style_2=false}) => {
                         >
                           English
                         </span>
-                        <ul className={`footer__lang-list tp-lang-list-2 ${isShow?'tp-lang-list-open-2':''}`}>
+                        <ul className={`footer__lang-list tp-lang-list-2 ${isShow ? 'tp-lang-list-open-2' : ''}`}>
                           <li>Spanish</li>
                           <li>Portugese</li>
                           <li>American</li>

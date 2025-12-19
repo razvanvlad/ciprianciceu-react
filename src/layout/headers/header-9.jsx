@@ -5,7 +5,7 @@ import Link from "next/link";
 import Email from "@svg/email";
 import Search from "@svg/search";
 import Menus from "./menus";
-import logo from "@assets/img/logo/logo.svg";
+import logo from "@assets/img/logo/logo-ciceu-transparent.png";
 import useSticky from "@hooks/use-sticky";
 import SearchPopup from "./component/search-popup";
 import OffCanvasMain from "@components/common/off-canvas";
@@ -19,9 +19,8 @@ const HeaderNine = () => {
       <header>
         <div className="header__area header__transparent">
           <div
-            className={`header__bottom-8 header__sticky header__sticky-black header__sticky-black-2 ${
-              sticky ? "header-sticky" : ""
-            }`}
+            className={`header__bottom-8 header__sticky header__sticky-black header__sticky-black-2 ${sticky ? "header-sticky" : ""
+              }`}
             id="header-sticky"
           >
             <div className="container-fluid">
@@ -68,7 +67,7 @@ const HeaderNine = () => {
                           </li>
                           <li>
                             <button
-                             onClick={() => setIsOffCanvasOpen(true)}
+                              onClick={() => setIsOffCanvasOpen(true)}
                               type="button"
                               className="hamburger-btn-8 offcanvas-open-btn"
                             >
@@ -97,8 +96,8 @@ const HeaderNine = () => {
         </div>
       </header>
 
-       {/* search modal start */}
-       <SearchPopup isSearchOpen={isSearchOpen} setIsSearchOpen={setIsSearchOpen} />
+      {/* search modal start */}
+      <SearchPopup isSearchOpen={isSearchOpen} setIsSearchOpen={setIsSearchOpen} />
       {/* search modal end */}
 
       {/* full canvas area start */}

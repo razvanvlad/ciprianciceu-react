@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import logo from "@assets/img/logo/logo-green.svg";
+import logo from "@assets/img/logo/logo-ciceu-transparent.png";
 import Menus from "./menus";
 import useSticky from "@hooks/use-sticky";
 import OffCanvasTwo from "@components/common/off-canvas/off-canvas-2";
@@ -15,9 +15,8 @@ const HeaderEight = () => {
       <header>
         <div className="header__area">
           <div
-            className={`header__bottom-9 header__sticky ${
-              sticky ? "header-sticky" : ""
-            }`}
+            className={`header__bottom-9 header__sticky ${sticky ? "header-sticky" : ""
+              }`}
             id="header-sticky"
           >
             <div className="container">

@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 // internal
-import logo from '@assets/img/logo/logo-black.svg';
+import logo from '@assets/img/logo/logo-ciceu-transparent.png';
 import payment from '@assets/img/footer/footer-payment.png';
 import SocialLinks from "@components/social";
 import CopyrightText from "./component/copyright-text";

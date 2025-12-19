@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 // internal
 import { Email, Phone } from "@svg/index";
-import logo from "@assets/img/logo/logo-black.svg";
+import logo from "@assets/img/logo/logo-ciceu-transparent.png";
 import Menus from "./menus";
 import OffCanvasTwo from "@components/common/off-canvas/off-canvas-2";
 import useSticky from "@hooks/use-sticky";
@@ -86,9 +86,8 @@ const HeaderTwo = () => {
           </div>
 
           <div
-            className={`header__style-4 header__sticky ${
-              sticky ? "header-sticky" : ""
-            }`}
+            className={`header__style-4 header__sticky ${sticky ? "header-sticky" : ""
+              }`}
             id="header-sticky"
           >
             <div className="container">

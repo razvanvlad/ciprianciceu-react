@@ -3,10 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 // internal
 import shape from "@assets/img/footer/footer-shape-4.png";
-import logo from "@assets/img/logo/logo.svg";
+import logo from "@assets/img/logo/logo-ciceu-transparent.png";
 import SocialLinks from "@components/social";
 import CopyrightText from "./component/copyright-text";
-import {EmailFour,PhoneFive} from "@svg/index";
+import { EmailFour, PhoneFive } from "@svg/index";
 
 // single widget
 function SingleWidget({ col, col_2, col_3, title, contents }) {

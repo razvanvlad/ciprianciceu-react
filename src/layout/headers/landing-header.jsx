@@ -11,9 +11,8 @@ const LandingHeader = () => {
       <header>
         <div
           id="header-sticky"
-          className={`header__area header__transparent header__padding header__sticky header__black ${
-            sticky ? "header-sticky" : ""
-          }`}
+          className={`header__area header__transparent header__padding header__sticky header__black ${sticky ? "header-sticky" : ""
+            }`}
         >
           <div className="container-fluid tp-container-fluid">
             <div className="row align-items-center">
@@ -22,12 +21,12 @@ const LandingHeader = () => {
                   <Link href="/">
                     <img
                       className="logo-light"
-                      src="/assets/img/logo/logo.svg"
+                      src="/assets/img/logo/logo-ciceu-transparent.png"
                       alt=""
                     />
                     <img
                       className="logo-black"
-                      src="/assets/img/logo/logo-black.svg"
+                      src="/assets/img/logo/logo-ciceu-transparent.png"
                       alt=""
                     />
                   </Link>

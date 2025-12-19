@@ -7,8 +7,8 @@ import SearchPopup from "./component/search-popup";
 import Menus from "./menus";
 import { HeaderSocial } from "@components/social";
 import Languages from "./component/languages";
-import logo_light from "@assets/img/logo/logo-red.svg";
-import logo_dark from "@assets/img/logo/logo-red-black.svg";
+import logo_light from "@assets/img/logo/logo-ciceu-transparent.png";
+import logo_dark from "@assets/img/logo/logo-ciceu-transparent.png";
 import useSticky from "@hooks/use-sticky";
 import OffCanvasSix from "@components/common/off-canvas/off-canvas-6";
 
