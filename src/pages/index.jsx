@@ -1,39 +1,33 @@
-import { Wrapper } from "@layout/index";
-import SEO from "@components/seo";
-import LandingHeader from "@layout/headers/landing-header";
-import LandingHero from "src/landing/landing-hero";
-import LandingFeatures from "src/landing/landing-features";
-import LandingDemos from "src/landing/landing-demos";
-import LandingPlugins from "src/landing/landing-plugins";
-import LandingPortfolio from "src/landing/landing-portfolio";
-import LandingHeaderFooterPrev from "src/landing/landing-header-footer-prev";
-import LandingBlogs from "src/landing/landing-blogs";
-import LandingShops from "src/landing/landing-shops";
-import LandingElements from "src/landing/landing-elements";
-import LandingTools from "src/landing/landing-tools";
-import LandingMobileArea from "src/landing/landing-mobile-area";
-import LandingFooter from "src/landing/landing-footer";
+import React from 'react';
+import SEO from '@components/seo';
+import { FooterEight, HeaderEight, Wrapper } from '@layout/index';
+import PortfolioBanner from '@components/hero-banners/portfolio-banner';
+import PortfolioAbout from '@components/abouts/portfolio-about';
+import PortfolioFeature from '@components/features/portfolio-feature';
+import PortfolioService from '@components/services/portfolio-service';
+import HomePersonalPortfolioArea from '@components/portfolios/home-personal-portfolio';
+import PortfolioSkills from '@components/skills/portfolio-skills';
+import PortfolioAwards from '@components/awards/portfolio-awards';
+import PortfolioTestimonial from '@components/testimonials/portfolio-testimonial';
+import PortfolioBlogs from '@components/blogs/portfolio-blogs';
+import PortfolioContact from '@components/contacts/portfolio-contact';
 
-
-export default function LandingPage() {
+export default function Home() {
   return (
     <Wrapper>
-      <SEO pageTitle={'Harry'} />
-      <div id="landing_page">
-      <LandingHeader/>
-      <LandingHero/>
-      <LandingFeatures/>
-      <LandingDemos/>
-      <LandingPlugins/>
-      <LandingPortfolio/>
-      <LandingHeaderFooterPrev/>
-      <LandingBlogs/>
-      <LandingShops/>
-      <LandingElements/>
-      <LandingTools/>
-      <LandingMobileArea/>
-      <LandingFooter/>
-      </div>
+      <SEO pageTitle={'Ciprian Ciceu - Portfolio'} />
+      <HeaderEight/>
+      <PortfolioBanner/>
+      <PortfolioAbout/>
+      <PortfolioFeature/>
+      <PortfolioService/>
+      <HomePersonalPortfolioArea/>
+      <PortfolioSkills/>
+      <PortfolioAwards/>
+      <PortfolioTestimonial/>
+      <PortfolioBlogs/>
+      <PortfolioContact/>
+      <FooterEight/>
     </Wrapper>
-  )
+  );
 }

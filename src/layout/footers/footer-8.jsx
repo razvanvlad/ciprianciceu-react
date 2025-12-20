@@ -18,7 +18,7 @@ const FooterEight = () => {
                   <div className="col-xxl-3 col-xl-3 col-lg-6 col-md-4">
                     <div className="footer__widget footer__widget-9">
                       <div className="footer__logo">
-                        <Link href="/home">
+                        <Link href="/">
                           <Image src={logo} alt="logo" />
                         </Link>
                       </div>
@@ -29,16 +29,16 @@ const FooterEight = () => {
                       <div className="footer__widget-content">
                         <ul id="footer-list-inline-3">
                           <li>
-                            <Link href="/home-portfolio">Home</Link>
-                          </li>
-                          <li>
-                            <Link href="/services">Services</Link>
-                          </li>
-                          <li>
-                            <Link href="/portfolio">Portfolio</Link>
+                            <Link href="/">Home</Link>
                           </li>
                           <li>
                             <Link href="/about">About</Link>
+                          </li>
+                          <li>
+                            <Link href="/portfolio">Projects</Link>
+                          </li>
+                          <li>
+                            <Link href="/media">Media</Link>
                           </li>
                           <li>
                             <Link href="/contact">Contact</Link>

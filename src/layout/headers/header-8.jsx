@@ -4,6 +4,7 @@ import Link from "next/link";
 // internal
 import logo from "@assets/img/logo/logo-ciceu-transparent.png";
 import Menus from "./menus";
+import Languages from "./component/languages";
 import useSticky from "@hooks/use-sticky";
 import OffCanvasTwo from "@components/common/off-canvas/off-canvas-2";
 
@@ -22,23 +23,31 @@ const HeaderEight = () => {
             <div className="container">
               <div className="mega-menu-wrapper p-relative">
                 <div className="row align-items-center">
-                  <div className="col-xxl-3 col-xl-3 col-lg-2 col-md-4 col-sm-5 col-8">
+                  <div className="col-xxl-3 col-xl-3 col-lg-2 col-md-4 col-sm-5 col-6">
                     <div className="logo">
-                      <Link href="/home">
-                        <Image src={logo} alt="logo" />
+                      <Link href="/">
+                        <Image src={logo} alt="logo" width={140} height={90} style={{ maxHeight: '90px', width: 'auto' }} />
                       </Link>
                     </div>
                   </div>
-                  <div className="col-xxl-7 col-xl-7 col-lg-8 d-none d-lg-block">
+                  <div className="col-xxl-6 col-xl-6 col-lg-6 d-none d-lg-block">
                     <div className="main-menu main-menu-9 main-menu-ff-space">
                       <nav id="mobile-menu">
                         <Menus />
                       </nav>
                     </div>
                   </div>
-                  <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-8 col-sm-7 col-4">
+                  <div className="col-xxl-3 col-xl-3 col-lg-4 col-md-8 col-sm-7 col-6">
                     <div className="header__bottom-right-8 d-flex justify-content-end align-items-center">
-                      <div className="header__hamburger ml-50">
+                      <div className="header__lang ml-30 d-none d-lg-block">
+                        <Languages />
+                      </div>
+                      <div className="header__btn-8 ml-30 d-none d-sm-block">
+                        <Link href="/contact" className="tp-btn-5">
+                          Contact
+                        </Link>
+                      </div>
+                      <div className="header__hamburger ml-30">
                         <button
                           onClick={() => setIsOffCanvasOpen(true)}
                           type="button"
