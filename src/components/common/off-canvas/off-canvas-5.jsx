@@ -70,7 +70,7 @@ const OffCanvasFive = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
             </div>
 
             <div className="offcanvas__contact mb-40">
-              <p>
+              <p className="offcanvas__contact-mail">
                 📧 General Inquiries: <br></br>
                 <a href="mailto:contact@ciprianciceu.com">contact@ciprianciceu.com</a>
               </p>

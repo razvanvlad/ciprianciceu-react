@@ -11866,7 +11866,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
   .header__bottom-9 {
-    padding-top: 20px;
     padding-bottom: 20px;
   }
 }
