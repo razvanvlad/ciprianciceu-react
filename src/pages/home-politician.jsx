@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterTen, HeaderEleven, Wrapper } from '@layout/index';
+import { FooterSeven, HeaderEight, Wrapper } from '@layout/index';
 import SEO from '@components/seo';
 import PoliticianBanner from '@components/hero-banners/politician-banner';
 import PoliticianCta from '@components/cta/politician-cta';
@@ -19,20 +19,20 @@ const HomePolitician = () => {
   return (
     <Wrapper>
       <SEO pageTitle={'Home Politician'} />
-      <HeaderEleven/>
-      <PoliticianBanner/>
-      <PoliticianCta/>
-      <PoliticianFeature/>
-      <PoliticianVision/>
-      <PoliticianCounter/>
-      <PoliticianEvents/>
-      <PoliticianBiography/>
-      <PoliticianTeams/>
-      <PoliticianDonate/>
-      <PoliticianBlogs/>
-      <PoliticianTestimonial/>
-      <PoliticianSubscribe/>
-      <FooterTen/>
+      <HeaderEight />
+      <PoliticianBanner />
+      <PoliticianCta />
+      <PoliticianFeature />
+      <PoliticianVision />
+      <PoliticianCounter />
+      <PoliticianEvents />
+      <PoliticianBiography />
+      <PoliticianTeams />
+      <PoliticianDonate />
+      <PoliticianBlogs />
+      <PoliticianTestimonial />
+      <PoliticianSubscribe />
+      <FooterSeven />
     </Wrapper>
   );
 };

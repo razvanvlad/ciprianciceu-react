@@ -1,4 +1,4 @@
-import { FooterEight, HeaderEight, Wrapper } from "@layout/index";
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo";
 import ContactArea from "@components/contacts/contact-area";
 
@@ -7,8 +7,8 @@ export default function Contact() {
     <Wrapper>
       <SEO pageTitle={"Contact - Ciprian Ciceu"} />
       <HeaderEight />
-      <ContactArea/>
-      <FooterEight />
+      <ContactArea />
+      <FooterSeven />
     </Wrapper>
   );
 }

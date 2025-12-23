@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterEleven, HeaderTwelve, Wrapper } from '@layout/index';
+import { FooterSeven, HeaderEight, Wrapper } from '@layout/index';
 import SEO from '@components/seo';
 import ShopHeroBanner from '@components/hero-banners/shop-hero-banner';
 import ShopCategory from '@components/shop/shop-category';
@@ -13,14 +13,14 @@ const HomeShop = () => {
   return (
     <Wrapper>
       <SEO pageTitle={'Home Shop'} />
-      <HeaderTwelve/>
-      <ShopHeroBanner/>
-      <ShopCategory/>
-      <ShopProducts/>
-      <ShopBanner/>
-      <ProductFeature/>
-      <ShopCta/>
-      <FooterEleven/>
+      <HeaderEight />
+      <ShopHeroBanner />
+      <ShopCategory />
+      <ShopProducts />
+      <ShopBanner />
+      <ProductFeature />
+      <ShopCta />
+      <FooterSeven />
     </Wrapper>
   );
 };

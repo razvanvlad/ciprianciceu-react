@@ -1,4 +1,4 @@
-import { FooterEight, HeaderEight, Wrapper } from "@layout/index";
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo";
 import AboutArea from "@components/abouts/about-page-com/about";
 
@@ -8,8 +8,8 @@ export default function About() {
     <Wrapper>
       <SEO pageTitle={'About - Ciprian Ciceu'} />
       <HeaderEight />
-      <AboutArea/>
-      <FooterEight />
+      <AboutArea />
+      <FooterSeven />
     </Wrapper>
   )
 }

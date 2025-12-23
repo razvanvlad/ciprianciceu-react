@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '@components/seo';
-import { FooterFour, HeaderFour, Wrapper } from '@layout/index';
+import { FooterSeven, HeaderEight, Wrapper } from '@layout/index';
 import HomeAgencyBanner from '@components/hero-banners/home-agency-banner';
 import ServicesAgency from '@components/services/services-agency';
 import HomeAgencyAbout from '@components/abouts/home-agency-about';
@@ -17,19 +17,19 @@ const HomeAgency = () => {
   return (
     <Wrapper>
       <SEO pageTitle={'Home Agency'} />
-      <HeaderFour/>
-      <HomeAgencyBanner/>
-      <ServicesAgency/>
-      <HomeAgencyAbout/>
-      <AgencyCounter/>
-      <HomeAgencyPortfolio/>
-      <AgencyAward/>
-      <AgencyPricing/>
-      <AgencyTestimonial/>
-      <AgencyBrands/>
-      <AgencyBlogs/>
-      <AgencyCta/>
-      <FooterFour/>
+      <HeaderEight />
+      <HomeAgencyBanner />
+      <ServicesAgency />
+      <HomeAgencyAbout />
+      <AgencyCounter />
+      <HomeAgencyPortfolio />
+      <AgencyAward />
+      <AgencyPricing />
+      <AgencyTestimonial />
+      <AgencyBrands />
+      <AgencyBlogs />
+      <AgencyCta />
+      <FooterSeven />
     </Wrapper>
   );
 };

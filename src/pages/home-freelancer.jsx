@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '@components/seo';
-import { FooterThree, HeaderThree, Wrapper } from '@layout/index';
+import { FooterSeven, HeaderEight, Wrapper } from '@layout/index';
 import HomeFreelancerAbout from '@components/abouts/home-freelancer-about';
 import FreelancerAward from '@components/awards/freelancer-award';
 import FreelancerBlogs from '@components/blogs/freelancer-blogs';
@@ -15,17 +15,17 @@ const HomeFreelancer = () => {
   return (
     <Wrapper>
       <SEO pageTitle='Home Freelancer' />
-      <HeaderThree/>
-      <HomeFreelancerBanner/>
-      <HomeFreelancerBrands/>
-      <HomeFreelancerAbout/>
-      <HomeFreelancerPortfolio/>
-      <FreelancerSkills/>
-      <FreelancerAward/>
-      <FreelancerTestimonial/>
-      <FreelancerBlogs/>
-      <FreelancerCta/>
-      <FooterThree/>
+      <HeaderEight />
+      <HomeFreelancerBanner />
+      <HomeFreelancerBrands />
+      <HomeFreelancerAbout />
+      <HomeFreelancerPortfolio />
+      <FreelancerSkills />
+      <FreelancerAward />
+      <FreelancerTestimonial />
+      <FreelancerBlogs />
+      <FreelancerCta />
+      <FooterSeven />
     </Wrapper>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterSix, HeaderSix, Wrapper } from '@layout/index';
+import { FooterSeven, HeaderEight, Wrapper } from '@layout/index';
 import SEO from '@components/seo';
 import HomeStartupBanner from '@components/hero-banners/home-startup-banner';
 import StartupFeatures from '@components/features/startup-features';
@@ -19,20 +19,20 @@ const HomeStartUp = () => {
   return (
     <Wrapper>
       <SEO pageTitle={'Home Startup'} />
-      <HeaderSix />
+      <HeaderEight />
       <HomeStartupBanner />
       <StartupFeatures />
       <HomeStartUpAbout />
-      <StartUpCounter/>
-      <StartupServices/>
-      <StartupFeatureLists/>
-      <StartUpSupport/>
-      <StartUpTestimonial/>
-      <StartUpPricing/>
-      <StartUpFaqs/>
-      <StartUpBlogs/>
-      <StartUpCta/>
-      <FooterSix/>
+      <StartUpCounter />
+      <StartupServices />
+      <StartupFeatureLists />
+      <StartUpSupport />
+      <StartUpTestimonial />
+      <StartUpPricing />
+      <StartUpFaqs />
+      <StartUpBlogs />
+      <StartUpCta />
+      <FooterSeven />
     </Wrapper>
   );
 };

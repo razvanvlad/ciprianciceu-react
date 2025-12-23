@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '@components/seo';
-import { FooterNine, HeaderNine, Wrapper } from '@layout/index';
+import { FooterSeven, HeaderEight, Wrapper } from '@layout/index';
 import ArchitectureBanner from '@components/hero-banners/architecture-banner';
 import ArchitectureAbout from '@components/abouts/architecture-about';
 import ArchitectureCounter from '@components/counters/architecture-counter';
@@ -16,18 +16,18 @@ const HomeArchitecture = () => {
   return (
     <Wrapper>
       <SEO pageTitle={'Home Architecture'} />
-      <HeaderNine/>
-      <ArchitectureBanner/>
-      <ArchitectureAbout/>
-      <ArchitectureCounter/>
-      <ArchitecturePortfolio/>
-      <ArchitectureServices/>
-      <ArchitectureAwards/>
-      <ArchitectureVideoArea/>
-      <ArchitectureTestimonial/>
-      <ArchitectureTeams/>
-      <ArchBlogs/>
-      <FooterNine/>
+      <HeaderEight />
+      <ArchitectureBanner />
+      <ArchitectureAbout />
+      <ArchitectureCounter />
+      <ArchitecturePortfolio />
+      <ArchitectureServices />
+      <ArchitectureAwards />
+      <ArchitectureVideoArea />
+      <ArchitectureTestimonial />
+      <ArchitectureTeams />
+      <ArchBlogs />
+      <FooterSeven />
     </Wrapper>
   );
 };

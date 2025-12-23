@@ -1,5 +1,5 @@
-import {FooterSix, Header, Wrapper } from "@layout/index";
-import SEO from "@components/seo"; 
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
+import SEO from "@components/seo";
 import ServiceThreeVideoArea from "@components/video-area/service-3-video-area";
 import ServiceThreeFeature from "@components/features/service-3-feature";
 import ServiceThreeAbout from "@components/abouts/service-3-about";
@@ -14,16 +14,16 @@ export default function ServicesThree() {
   return (
     <Wrapper>
       <SEO pageTitle={'Service Three'} />
-      <Header top_bar={false} commonOffCanvas={true} />
-      <ServiceThreeVideoArea/>
-      <ServiceThreeFeature/>
-      <ServiceThreeAbout/>
-      <ServiceThreeServices/>
-      <ServiceThreeTestimonial/>
+      <HeaderEight />
+      <ServiceThreeVideoArea />
+      <ServiceThreeFeature />
+      <ServiceThreeAbout />
+      <ServiceThreeServices />
+      <ServiceThreeTestimonial />
       <AgencyBrands spacing={true} />
-      <CommonFaq/>
-      <ServiceThreeCta/>
-      <FooterSix style_2={true} />
+      <CommonFaq />
+      <ServiceThreeCta />
+      <FooterSeven />
     </Wrapper>
   )
 }

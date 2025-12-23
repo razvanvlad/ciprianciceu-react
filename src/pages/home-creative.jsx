@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '@components/seo';
-import { FooterSeven, HeaderSeven, Wrapper } from '@layout/index';
+import { FooterSeven, HeaderEight, Wrapper } from '@layout/index';
 import CreativeBanner from '@components/hero-banners/creative-banner';
 import CreativeFeature from '@components/features/creative-feature';
 import CreativeAbout from '@components/abouts/creative-about';
@@ -17,18 +17,18 @@ const HomeCreative = () => {
   return (
     <Wrapper>
       <SEO pageTitle={'Home Creative'} />
-      <HeaderSeven/>
-      <CreativeBanner/>
-      <CreativeFeature/>
-      <CreativeAbout/>
-      <CreativeCta/>
-      <CreativePortfolio/>
-      <CreativeTeam/>
-      <CreativeBlogs/>
-      <CreativeTestimonial/>
-      <CreativeBrands/>
-      <CreativeCtaTwo/>
-      <FooterSeven/>
+      <HeaderEight />
+      <CreativeBanner />
+      <CreativeFeature />
+      <CreativeAbout />
+      <CreativeCta />
+      <CreativePortfolio />
+      <CreativeTeam />
+      <CreativeBlogs />
+      <CreativeTestimonial />
+      <CreativeBrands />
+      <CreativeCtaTwo />
+      <FooterSeven />
     </Wrapper>
   );
 };

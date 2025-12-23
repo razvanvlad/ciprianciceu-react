@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '@components/seo';
-import { FooterEight, HeaderEight, Wrapper } from '@layout/index';
+import { FooterSeven, HeaderEight, Wrapper } from '@layout/index';
 import MediaHero from '@components/media/media-hero';
 import MediaVideos from '@components/media/media-videos';
 import MediaPress from '@components/media/media-press';
@@ -17,7 +17,7 @@ export default function Media() {
       <MediaPress />
       <MediaSocial />
       <MediaPodcasts />
-      <FooterEight />
+      <FooterSeven />
     </Wrapper>
   );
 }

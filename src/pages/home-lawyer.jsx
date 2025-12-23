@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '@components/seo';
-import { FooterTwo, HeaderTwo, Wrapper } from '@layout/index';
+import { FooterSeven, HeaderEight, Wrapper } from '@layout/index';
 import HomeLawyerAbout from '@components/abouts/home-lowyer-about';
 import HomeAward from '@components/awards/home-award';
 import LawyerBlogs from '@components/blogs/lawyer-blogs';
@@ -20,21 +20,21 @@ const HomeLower = () => {
   return (
     <Wrapper>
       <SEO pageTitle={'Home Lawyer'} />
-      <HeaderTwo/>
-      <HomeLowyerBanner/>
-      <HomeAward/>
-      <HomeLowyerCase/>
-      <HomeLawyerAbout/>
-      <LawyerFacts/>
-      <LawyerHistory/>
-      <LawyerVideoArea/>
-      <ServicesLawyer/>
-      <LawyerBlogs/>
-      <LawyerTestimonial/>
-      <LawyerTeams/>
-      <LawyerCounter/>
-      <LawyerContact/>
-      <FooterTwo/>
+      <HeaderEight />
+      <HomeLowyerBanner />
+      <HomeAward />
+      <HomeLowyerCase />
+      <HomeLawyerAbout />
+      <LawyerFacts />
+      <LawyerHistory />
+      <LawyerVideoArea />
+      <ServicesLawyer />
+      <LawyerBlogs />
+      <LawyerTestimonial />
+      <LawyerTeams />
+      <LawyerCounter />
+      <LawyerContact />
+      <FooterSeven />
     </Wrapper>
   );
 };

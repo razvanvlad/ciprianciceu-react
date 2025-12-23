@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterFive, HeaderFive, Wrapper } from '@layout/index';
+import { FooterSeven, HeaderEight, Wrapper } from '@layout/index';
 import SEO from '@components/seo';
 import PhotographerBanner from '@components/hero-banners/photographer-banner';
 import PhotographerPortfolio from '@components/portfolios/photographer-portfolio';
@@ -16,17 +16,17 @@ const HomePhotographer = () => {
   return (
     <Wrapper>
       <SEO pageTitle={'Home Photographer'} />
-      <HeaderFive/>
-      <PhotographerBanner/>
-      <PhotographerAbout/>
-      <PhotographerPortfolio/>
-      <PhotographyPrice/>
-      <PhotographyService/>
-      <PhotographyReview/>
-      <PhotographyTestimonial/>
-      <PhotographerBrands/>
-      <PhotographyInstagram/>
-      <FooterFive/>
+      <HeaderEight />
+      <PhotographerBanner />
+      <PhotographerAbout />
+      <PhotographerPortfolio />
+      <PhotographyPrice />
+      <PhotographyService />
+      <PhotographyReview />
+      <PhotographyTestimonial />
+      <PhotographerBrands />
+      <PhotographyInstagram />
+      <FooterSeven />
     </Wrapper>
   );
 };

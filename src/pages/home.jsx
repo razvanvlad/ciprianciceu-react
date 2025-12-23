@@ -1,4 +1,4 @@
-import { Footer, Header, Wrapper } from "@layout/index";
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo";
 import HomeSliderBanner from "@components/hero-banners/home-slider-banner";
 import HomeAbout from "@components/abouts/home-about";
@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <Wrapper>
       <SEO pageTitle={'Home Main'} />
-      <Header />
+      <HeaderEight />
       <HomeSliderBanner />
       <HomeAbout />
       <HomeCounter />
@@ -27,7 +27,7 @@ export default function Home() {
       <HomePortfolio />
       <HomeTestimonial />
       <HomeBlogs />
-      <Footer />
+      <FooterSeven />
     </Wrapper>
   )
 }
