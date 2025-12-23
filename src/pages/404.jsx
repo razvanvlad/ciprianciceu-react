@@ -1,7 +1,7 @@
 // external
 import Link from "next/link";
 // internal
-import { FooterSix, Header, Wrapper } from "@layout/index";
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo";
 import { ArrowRightFive, ErrorSvg } from "@svg/index";
 
@@ -9,7 +9,7 @@ export default function ErrorPage() {
   return (
     <Wrapper>
       <SEO pageTitle={"Error Page"} />
-      <Header top_bar={false} header_solid={true} commonOffCanvas={true} />
+      <HeaderEight />
       {/* error area start */}
       <section className="error__area error__bg pb-110">
         <div className="container">
@@ -37,7 +37,7 @@ export default function ErrorPage() {
         </div>
       </section>
       {/* error area end */}
-      <FooterSix style_2={true} />
+      <FooterSeven />
     </Wrapper>
   );
 }

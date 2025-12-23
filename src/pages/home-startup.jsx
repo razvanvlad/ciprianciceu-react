@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterSeven, HeaderEight, Wrapper } from '@layout/index';
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from '@components/seo';
 import HomeStartupBanner from '@components/hero-banners/home-startup-banner';
 import StartupFeatures from '@components/features/startup-features';

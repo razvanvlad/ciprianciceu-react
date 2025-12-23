@@ -1,4 +1,4 @@
-import {FooterSix, Header, Wrapper } from "@layout/index";
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo"; 
 import TeamBreadcrumb from "@components/common/breadcrumb/team-breadcrumb";
 import TeamsArea from "@components/teams/teams-area";
@@ -10,11 +10,11 @@ export default function Team() {
   return (
     <Wrapper>
       <SEO pageTitle={'Team'} />
-      <Header top_bar={false} />
+      <HeaderEight />
       <TeamBreadcrumb/>
       <TeamsArea/>
       <JobPositionArea/>
-      <FooterSix style_2={true} />
+      <FooterSeven />
     </Wrapper>
   )
 }

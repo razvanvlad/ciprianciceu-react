@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '@components/seo';
-import { FooterSeven, HeaderEight, Wrapper } from '@layout/index';
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import CreativeBanner from '@components/hero-banners/creative-banner';
 import CreativeFeature from '@components/features/creative-feature';
 import CreativeAbout from '@components/abouts/creative-about';

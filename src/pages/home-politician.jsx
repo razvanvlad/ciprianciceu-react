@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterSeven, HeaderEight, Wrapper } from '@layout/index';
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from '@components/seo';
 import PoliticianBanner from '@components/hero-banners/politician-banner';
 import PoliticianCta from '@components/cta/politician-cta';

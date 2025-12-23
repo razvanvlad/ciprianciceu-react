@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 // internal
-import { FooterEleven, HeaderTwelve, Wrapper } from "@layout/index";
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo";
 import products from "@data/products";
 import ProductDetailsBreadcrumb from "@components/common/breadcrumb/product-details-breadcrumb";
@@ -16,13 +16,13 @@ export default function DynamicShopDetails() {
   return (
     <Wrapper>
       <SEO pageTitle={"Shop Details"} />
-      <HeaderTwelve style_2={true} />
+      <HeaderEight />
       <ProductDetailsBreadcrumb />
       <ProductDetailsArea product={singleProduct} />
       <ProductDetailsTabArea product={singleProduct} />
       <RelatedProducts />
       <ShopCta />
-      <FooterEleven />
+      <FooterSeven />
     </Wrapper>
   );
 }

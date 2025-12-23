@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterSeven, HeaderEight, Wrapper } from '@layout/index';
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from '@components/seo';
 import PhotographerBanner from '@components/hero-banners/photographer-banner';
 import PhotographerPortfolio from '@components/portfolios/photographer-portfolio';

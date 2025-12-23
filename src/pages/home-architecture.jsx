@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '@components/seo';
-import { FooterSeven, HeaderEight, Wrapper } from '@layout/index';
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import ArchitectureBanner from '@components/hero-banners/architecture-banner';
 import ArchitectureAbout from '@components/abouts/architecture-about';
 import ArchitectureCounter from '@components/counters/architecture-counter';

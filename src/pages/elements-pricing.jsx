@@ -1,4 +1,4 @@
-import { Footer, Header, Wrapper } from "@layout/index";
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo";
 import ElementsPricingMain from "@elements/elements-pricing";
 
@@ -7,9 +7,9 @@ export default function index() {
   return (
     <Wrapper>
       <SEO pageTitle={"Element Pricing"} />
-      <Header top_bar={false} commonOffCanvas={true} />
+      <HeaderEight />
       <ElementsPricingMain />
-      <Footer />
+      <FooterSeven />
     </Wrapper>
   );
 }

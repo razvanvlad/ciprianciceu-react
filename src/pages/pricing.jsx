@@ -1,4 +1,4 @@
-import { FooterSix, Header, Wrapper } from "@layout/index";
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo";
 import StartUpPricing from "@components/pricings/start-up-pricing";
 import PricingTestimonial from "@components/testimonials/pricing-testimonial";
@@ -11,17 +11,12 @@ export default function Pricing() {
   return (
     <Wrapper>
       <SEO pageTitle={"Pricing"} />
-      <Header
-        top_bar={false}
-        header_black={true}
-        header_solid={true}
-        commonOffCanvas={true}
-      />
+      <HeaderEight />
       <StartUpPricing style_2={true} />
       <PricingTestimonial />
       <CommonFaq padd={"120"} />
       <AboutCta />
-      <FooterSix style_2={true} />
+      <FooterSeven />
     </Wrapper>
   );
 }

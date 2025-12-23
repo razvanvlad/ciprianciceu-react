@@ -1,7 +1,7 @@
 import Image from "next/image";
 // internal
 import SEO from "@components/seo";
-import { HeaderFourteen, Wrapper } from "@layout/index";
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import shape from "@assets/img/coming/coming-shape-1.png";
 import gif_img from "@assets/img/coming/coming-image-2.gif";
 import SocialLinks from "@components/social";
@@ -11,7 +11,7 @@ export default function ComingSoon() {
   return (
     <Wrapper>
       <SEO pageTitle={"Coming Soon"} />
-      <HeaderFourteen />
+      <HeaderEight />
       {/* coming soon area start */}
       <section className="coming__area coming__height d-flex align-items-center">
         <div className="coming__shape">

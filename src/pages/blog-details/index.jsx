@@ -1,4 +1,4 @@
-import { Footer, Header, Wrapper } from "@layout/index";
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo";
 import BreadcrumbSix from "@components/common/breadcrumb/breadcrumb-6";
 import BlogDetailsArea from "@components/blogs/blog-details/blog-details-area";
@@ -9,12 +9,12 @@ export default function BlogDetails() {
   return (
     <Wrapper>
       <SEO pageTitle={"Blog Details"} />
-      <Header header_solid={true} commonOffCanvas={true} />
+      <HeaderEight />
       <BreadcrumbSix
         {...single_blog}
       />
       <BlogDetailsArea blog={single_blog} />
-      <Footer />
+      <FooterSeven />
     </Wrapper>
   );
 }

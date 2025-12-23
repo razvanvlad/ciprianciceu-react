@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '@components/seo';
-import { FooterSeven, HeaderEight, Wrapper } from '@layout/index';
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import HomeLawyerAbout from '@components/abouts/home-lowyer-about';
 import HomeAward from '@components/awards/home-award';
 import LawyerBlogs from '@components/blogs/lawyer-blogs';

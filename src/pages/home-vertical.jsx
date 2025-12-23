@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SEO from '@components/seo';
-import { FooterSeven, HeaderEight, Wrapper } from '@layout/index';
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import VerticalSlider from '@components/verticle-slider';
 
 

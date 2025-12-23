@@ -1,4 +1,4 @@
-import { FooterSix, Header, Wrapper } from "@layout/index";
+import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo";
 import SectionArea from "@components/section-area/section-area";
 import PolicyArea from "@components/terms-policy/policy-area";
@@ -7,7 +7,7 @@ export default function Policy() {
   return (
     <Wrapper>
       <SEO pageTitle={"Policy"} />
-      <Header top_bar={false} header_solid={true} commonOffCanvas={true} />
+      <HeaderEight />
       <SectionArea
         title="Privacy Policy"
         subtitle={
@@ -20,7 +20,7 @@ export default function Policy() {
         }
       />
       <PolicyArea/>
-      <FooterSix style_2={true} />
+      <FooterSeven />
     </Wrapper>
   );
 }
