@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import logo from "@assets/img/logo/ciprian-ciceu-logo-vertical.png";
-import signature from "@assets/img/shape/offcanvas-signature.png";
+import logo from "@assets/img/logo/ciprian-ciceu-logo-icon.png";
+
 import SocialLinks from "@components/social";
 import MobileMenus from "./mobile-menus";
 import CloseThree from "@svg/close-3";
@@ -40,31 +40,28 @@ const OffCanvasThree = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
               </div>
             </div>
 
-            <div className="offcanvas__btn-2">
-              <Link href="/job" className="tp-btn-offcanvas-green">
-                We Are Hiring
-              </Link>
+            <div className="offcanvas__inner mb-80 d-none d-lg-block">
+              <h4>Professional & Media Inquiries</h4>
+              <p>For professional inquiries, media requests, speaking engagements or collaboration proposals, please use the official contact channels listed below.</p>
+
+              <p>All messages are reviewed with attention and confidentiality.</p>
             </div>
-            <div className="offcanvas__text">
-              <p>
-                Im a UX Designer, Over the past 10+ years I’ve created
-                well-crafted mobile and web apps by connecting Business goals
-                with user needs.
+
+            <div className="offcanvas__inner-btn mb-80">
+              <a href="mailto:contact@ciprianciceu.com" className="tp-btn-offcanvas-white w-100">
+                Say Hello!
+              </a>
+            </div>
+
+            <div className="offcanvas__contact mb-40">
+              <p className="offcanvas__contact-mail">
+                📧 General Inquiries: <br></br>
+                <a href="mailto:contact@ciprianciceu.com">contact@ciprianciceu.com</a>
               </p>
-
-              <div className="offcanvas__signature mb-40">
-                <Image src={signature} alt="signature" />
-              </div>
-            </div>
-
-            <div className="offcanvas__link-btn mb-25">
-              <Link href="/contact-2" className="tp-link-btn-circle">
-                <span>
-                  <i className="fa-regular fa-arrow-right"></i>
-                  <i className="fa-regular fa-arrow-right"></i>
-                </span>
-                Work <br /> With Us
-              </Link>
+              <p className="offcanvas__contact-mail">
+                📧 General Inquiries: <br></br>
+                <a href="mailto:press@ciprianciceu.com">press@ciprianciceu.com</a>
+              </p>
             </div>
             <div className="offcanvas__social">
               <h3 className="offcanvas__social-title">Follow :</h3>

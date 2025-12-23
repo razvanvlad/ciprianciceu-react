@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '@components/seo';
-import { FooterEight, HeaderEight, Wrapper } from '@layout/index';
+import { FooterSeven, HeaderEight, Wrapper } from '@layout/index';
 import PortfolioBanner from '@components/hero-banners/portfolio-banner';
 import PortfolioAbout from '@components/abouts/portfolio-about';
 import PortfolioFeature from '@components/features/portfolio-feature';
@@ -16,18 +16,18 @@ export default function Home() {
   return (
     <Wrapper>
       <SEO pageTitle={'Ciprian Ciceu - Portfolio'} />
-      <HeaderEight/>
-      <PortfolioBanner/>
-      <PortfolioAbout/>
-      <PortfolioFeature/>
-      <PortfolioService/>
-      <HomePersonalPortfolioArea/>
-      <PortfolioSkills/>
-      <PortfolioAwards/>
-      <PortfolioTestimonial/>
-      <PortfolioBlogs/>
-      <PortfolioContact/>
-      <FooterEight/>
+      <HeaderEight />
+      <PortfolioBanner />
+      <PortfolioAbout />
+      <PortfolioFeature />
+      <PortfolioService />
+      <HomePersonalPortfolioArea />
+      <PortfolioSkills />
+      <PortfolioAwards />
+      <PortfolioTestimonial />
+      <PortfolioBlogs />
+      <PortfolioContact />
+      <FooterSeven />
     </Wrapper>
   );
 }

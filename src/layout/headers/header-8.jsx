@@ -6,7 +6,7 @@ import logo from "@assets/img/logo/ciprian-ciceu-logo-horizontal.png";
 import Menus from "./menus";
 import Languages from "./component/languages";
 import useSticky from "@hooks/use-sticky";
-import OffCanvasTwo from "@components/common/off-canvas/off-canvas-2";
+import OffCanvasFive from "@components/common/off-canvas/off-canvas-5";
 
 const HeaderEight = () => {
   const { sticky } = useSticky();
@@ -19,6 +19,7 @@ const HeaderEight = () => {
             className={`header__bottom-9 header__sticky ${sticky ? "header-sticky" : ""
               }`}
             id="header-sticky"
+            style={{ minHeight: "90px", display: "flex", alignItems: "center" }}
           >
             <div className="container">
               <div className="mega-menu-wrapper p-relative">
@@ -26,7 +27,7 @@ const HeaderEight = () => {
                   <div className="col-xxl-3 col-xl-3 col-lg-2 col-md-4 col-sm-5 col-6">
                     <div className="logo">
                       <Link href="/">
-                        <Image src={logo} alt="logo" width={140} height={90} style={{ maxHeight: '90px', width: 'auto' }} />
+                        <Image src={logo} alt="logo" style={{ width: "auto", height: "auto", maxWidth: "100%", maxHeight: "60px" }} />
                       </Link>
                     </div>
                   </div>
@@ -66,7 +67,7 @@ const HeaderEight = () => {
       </header>
 
       {/* off canvas start */}
-      <OffCanvasTwo
+      <OffCanvasFive
         isOffCanvasOpen={isOffCanvasOpen}
         setIsOffCanvasOpen={setIsOffCanvasOpen}
       />

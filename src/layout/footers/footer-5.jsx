@@ -56,7 +56,7 @@ const FooterFive = ({ style_2 }) => {
                     <div className="footer__widget-content">
                       <div className="footer__subscribe">
                         <h3 className="footer__subscribe-title">
-                          Let’s talk about your project.
+                          Let’s talk about.
                         </h3>
                         <form onSubmit={e => e.preventDefault()}>
                           <div className="footer__subscribe-box-3">

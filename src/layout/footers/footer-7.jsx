@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import logo from "@assets/img/logo/ciprian-ciceu-logo-horizontal.png";
+import logo from "@assets/img/logo/ciprian-ciceu-logo-horizontal-90px.png";
 import bg_shape from "@assets/img/footer/footer-shape-2.jpg";
-import { LocationTwo, Call, Email } from "@svg/index";
+import { Call, Email } from "@svg/index";
 import SocialLinks from "@components/social";
 import CopyrightText from "./component/copyright-text";
 
@@ -54,15 +54,14 @@ const FooterSeven = () => {
                     <div className="footer__widget-content">
                       <div className="footer__info">
                         <p>
-                          Qui magni autem id omnis assumenda ut maxime Quis sed
-                          voluptatum modi, omnis tenetur est.
+                          For professional inquiries, media requests, speaking engagements or collaboration proposals, please use the official contact channels listed below.
                         </p>
 
                         <Link
-                          href="/job"
+                          href="/contact"
                           className="tp-link-btn-2 tp-link-btn-white"
                         >
-                          We are Hiring
+                          Get in Touch
                           <span>
                             <i className="fa-regular fa-arrow-right"></i>
                           </span>
@@ -76,23 +75,18 @@ const FooterSeven = () => {
                   col_2="2"
                   title="Quick Link"
                   contents={[
-                    { url: "/about", title: "About Us" },
-                    { url: "/terms", title: "Terms of Use" },
-                    { url: "/services", title: "Our Services" },
-                    { url: "/help", title: "Changelog" },
-                    { url: "/policy", title: "Privacy policy" },
+                    { url: "/about", title: "About" },
+                    { url: "/projects", title: "Projects" },
+                    { url: "/media", title: "Media" },
                   ]}
                 />
                 <FooterWidget
                   col="2"
                   col_2="3"
-                  title="Support Desk"
+                  title="Projects"
                   contents={[
-                    { url: "/home-creative", title: "Digital Solution" },
-                    { url: "/home-creative", title: "Marketing" },
-                    { url: "/home-creative", title: "Finance Support" },
-                    { url: "/home-creative", title: "Insurance" },
-                    { url: "/home-creative", title: "Technology" },
+                    { url: "/projects-creative", title: "🚀 Mainet X" },
+                    { url: "/projects", title: "🎓 BeTrader Academy" },
                   ]}
                 />
                 <div className="col-xxl-4 col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -101,22 +95,7 @@ const FooterSeven = () => {
 
                     <div className="footer__widget-content">
                       <div className="footer__info">
-                        <div className="footer__info-item-6 d-flex align-items-start">
-                          <div className="footer__info-icon-6 mr-20">
-                            <span>
-                              <LocationTwo />
-                            </span>
-                          </div>
-                          <div className="footer__info-text-6">
-                            <a
-                              target="_blank"
-                              rel="noreferrer"
-                              href="https://www.google.com/maps/place/Orville+St,+La+Presa,+CA+91977,+USA/@32.7092048,-117.0082772,17z/data=!3m1!4b1!4m5!3m4!1s0x80d9508a9aec8cd1:0x72d1ac1c9527b705!8m2!3d32.7092003!4d-117.0060885"
-                            >
-                              711-2880 Nulla St.
-                            </a>
-                          </div>
-                        </div>
+
                         <div className="footer__info-item-6 d-flex align-items-start">
                           <div className="footer__info-icon-6 mr-20">
                             <span>
@@ -124,19 +103,9 @@ const FooterSeven = () => {
                             </span>
                           </div>
                           <div className="footer__info-text-6">
-                            <a href="mailto:example@gmail.com">
-                              example@gmail.com
+                            <a href="mailto:contact@ciprianciceu.com">
+                              contact@ciprianciceu.com
                             </a>
-                          </div>
-                        </div>
-                        <div className="footer__info-item-6 d-flex align-items-start">
-                          <div className="footer__info-icon-6 mr-20">
-                            <span>
-                              <Call />
-                            </span>
-                          </div>
-                          <div className="footer__info-text-6">
-                            <a href="tel:012-345-6789">+964 742 44 763</a>
                           </div>
                         </div>
                       </div>

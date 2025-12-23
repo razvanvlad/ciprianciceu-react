@@ -2,34 +2,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import shape from "@assets/img/shape/offcanvas-shape-3.png";
-import logo from "@assets/img/logo/ciprian-ciceu-logo-vertical.png";
-import insta_img_1 from "@assets/img/instagram/offcanvas/instagram-1.png";
-import insta_img_2 from "@assets/img/instagram/offcanvas/instagram-2.png";
-import insta_img_3 from "@assets/img/instagram/offcanvas/instagram-3.png";
-import insta_img_4 from "@assets/img/instagram/offcanvas/instagram-4.png";
-import insta_img_5 from "@assets/img/instagram/offcanvas/instagram-5.png";
-import insta_img_6 from "@assets/img/instagram/offcanvas/instagram-6.png";
+import logo from "@assets/img/logo/ciprian-ciceu-logo-icon.png";
 import { Close, HighlightShapeNine } from "@svg/index";
 import SocialLinks from "@components/social";
 import MobileMenus from "./mobile-menus";
 
-// single instagram
-function SingleInstagram({ img }) {
-  return (
-    <div className="col-4">
-      <div className="offcanvas__instagram-thumb w-img">
-        <a href="https://www.instagram.com/" rel="noreferrer" target="_blank">
-          <Image
-            src={img}
-            alt="instagram img"
-            style={{ width: "100%", height: "100%" }}
-          />
-        </a>
-      </div>
-    </div>
-  );
-}
+
 
 const OffCanvasFour = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
   return (
@@ -39,9 +17,7 @@ const OffCanvasFour = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
           }`}
       >
         <div className="offcanvas__wrapper offcanvas__wrapper-5">
-          <div className="offcanvas__shape">
-            <Image className="offcanvas__shape-3" src={shape} alt="shape" />
-          </div>
+
           <div className="offcanvas__close">
             <button
               onClick={() => setIsOffCanvasOpen(false)}
@@ -89,28 +65,28 @@ const OffCanvasFour = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                 </ul>
               </nav>
             </div>
-            <div className="offcanvas__btn-5 mb-60">
-              <Link href="/register" className="tp-btn-offcanvas-blue">
-                Register Now
-              </Link>
+            <div className="offcanvas__inner mb-80 d-none d-lg-block">
+              <h4>Professional & Media Inquiries</h4>
+              <p>For professional inquiries, media requests, speaking engagements or collaboration proposals, please use the official contact channels listed below.</p>
+
+              <p>All messages are reviewed with attention and confidentiality.</p>
             </div>
-            <div className="offcanvas__instagram mb-55">
-              <div className="offcanvas__instagram-top">
-                <h4 className="offcanvas__instagram-title">
-                  Instagram
-                  <HighlightShapeNine />
-                </h4>
-              </div>
-              <div className="offcanvas__instagram-wrapper">
-                <div className="row gx-2 gy-2">
-                  <SingleInstagram img={insta_img_1} />
-                  <SingleInstagram img={insta_img_2} />
-                  <SingleInstagram img={insta_img_3} />
-                  <SingleInstagram img={insta_img_4} />
-                  <SingleInstagram img={insta_img_5} />
-                  <SingleInstagram img={insta_img_6} />
-                </div>
-              </div>
+
+            <div className="offcanvas__inner-btn mb-80">
+              <a href="mailto:contact@ciprianciceu.com" className="tp-btn-offcanvas-white w-100">
+                Say Hello!
+              </a>
+            </div>
+
+            <div className="offcanvas__contact mb-40">
+              <p className="offcanvas__contact-mail">
+                📧 General Inquiries: <br></br>
+                <a href="mailto:contact@ciprianciceu.com">contact@ciprianciceu.com</a>
+              </p>
+              <p className="offcanvas__contact-mail">
+                📧 General Inquiries: <br></br>
+                <a href="mailto:press@ciprianciceu.com">press@ciprianciceu.com</a>
+              </p>
             </div>
             <div className="offcanvas__social-5 mb-20">
               <h3 className="offcanvas__social-title-5">Follow :</h3>

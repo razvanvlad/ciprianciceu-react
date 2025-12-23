@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import shape from "@assets/img/shape/offcanvas-shape-1.png";
-import logo from "@assets/img/logo/ciprian-ciceu-logo-vertical.png";
+
+import logo from "@assets/img/logo/ciprian-ciceu-logo-icon.png";
 import SocialLinks from "@components/social";
 import MobileMenus from "./mobile-menus";
 
@@ -15,9 +15,7 @@ const OffCanvasSix = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
           }`}
       >
         <div className="offcanvas__wrapper">
-          <div className="offcanvas__shape">
-            <Image className="offcanvas__shape-1" src={shape} alt="shape" />
-          </div>
+
           <div className="offcanvas__close">
             <button
               onClick={() => setIsOffCanvasOpen(false)}
@@ -65,22 +63,33 @@ const OffCanvasSix = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                 </ul>
               </nav>
             </div>
-            <div className="offcanvas__btn">
-              <a href="#" className="tp-btn-offcanvas">
-                Getting Started <i className="fa-regular fa-chevron-right"></i>
+            <div className="offcanvas__inner mb-80 d-none d-lg-block">
+              <h4>Professional & Media Inquiries</h4>
+              <p>For professional inquiries, media requests, speaking engagements or collaboration proposals, please use the official contact channels listed below.</p>
+
+              <p>All messages are reviewed with attention and confidentiality.</p>
+            </div>
+
+            <div className="offcanvas__inner-btn mb-80">
+              <a href="mailto:contact@ciprianciceu.com" className="tp-btn-offcanvas w-100">
+                Say Hello!
               </a>
             </div>
+
+            <div className="offcanvas__contact mb-40">
+              <p className="offcanvas__contact-mail">
+                📧 General Inquiries: <br></br>
+                <a href="mailto:contact@ciprianciceu.com">contact@ciprianciceu.com</a>
+              </p>
+              <p className="offcanvas__contact-mail">
+                📧 General Inquiries: <br></br>
+                <a href="mailto:press@ciprianciceu.com">press@ciprianciceu.com</a>
+              </p>
+            </div>
+
             <div className="offcanvas__social">
               <h3 className="offcanvas__social-title">Follow :</h3>
               <SocialLinks />
-            </div>
-            <div className="offcanvas__contact">
-              <p className="offcanvas__contact-call">
-                <a href="tel:+964-742-44-763">+964 742 44 763</a>
-              </p>
-              <p className="offcanvas__contact-mail">
-                <a href="mailto:info@harry.com">info@harry.com</a>
-              </p>
             </div>
           </div>
         </div>
