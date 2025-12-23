@@ -2,28 +2,10 @@ import React from "react";
 
 const social_links = [
   {
-    link: "http://facebook.com",
-    target: "_blank",
-    icon: "fa-brands fa-facebook-f",
-    name: "Facebook",
-  },
-  {
-    link: "http://twitter.com",
-    target: "_blank",
-    icon: "fa-brands fa-twitter",
-    name: "Twitter",
-  },
-  {
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/ciprian-ciceu-30b72045/",
     target: "_blank",
     icon: "fa-brands fa-linkedin-in",
     name: "Linkedin",
-  },
-  {
-    link: "https://www.youtube.com/",
-    target: "_blank",
-    icon: "fa-brands fa-youtube",
-    name: "Youtube",
   },
 ];
 

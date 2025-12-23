@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 // internal
 import shape from "@assets/img/shape/offcanvas-shape-3.png";
-import logo from "@assets/img/logo/ciprian-ciceu-logo-horizontal.png";
+import logo from "@assets/img/logo/ciprian-ciceu-logo-vertical.png";
 import insta_img_1 from "@assets/img/instagram/offcanvas/instagram-1.png";
 import insta_img_2 from "@assets/img/instagram/offcanvas/instagram-2.png";
 import insta_img_3 from "@assets/img/instagram/offcanvas/instagram-3.png";
@@ -54,7 +54,7 @@ const OffCanvasFour = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
             <div className="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
               <div className="offcanvas__logo logo">
                 <Link href="/home">
-                  <Image src={logo} alt="logo" />
+                  <Image src={logo} alt="logo" style={{ maxWidth: "100%", height: "auto" }} />
                 </Link>
               </div>
             </div>

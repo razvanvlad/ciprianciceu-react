@@ -2,8 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import logo from "@assets/img/logo/ciprian-ciceu-logo-horizontal.png";
-import shape from "@assets/img/shape/offcanvas-img-1.png";
+import logo from "@assets/img/logo/ciprian-ciceu-logo-icon.png";
 import Close from "@svg/close";
 import MobileMenus from "./mobile-menus";
 import SocialLinks from "@components/social";
@@ -28,14 +27,15 @@ const OffCanvasTwo = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
             <div className="offcanvas__top mb-10 d-flex justify-content-between align-items-center">
               <div className="offcanvas__logo logo">
                 <Link href="/home">
-                  <Image src={logo} alt="logo" />
+                  <Image src={logo} alt="logo" style={{ maxWidth: "100%", height: "auto" }} />
                 </Link>
               </div>
             </div>
             <div className="offcanvas__inner mb-80 d-none d-lg-block">
-              <h4>We help to create visual strategies.</h4>
-              <p>We want to hear from you. Let us know how we can help.</p>
-              <Image src={shape} alt="shape" />
+              <h4>Professional & Media Inquiries</h4>
+              <p>For professional inquiries, media requests, speaking engagements or collaboration proposals, please use the official contact channels listed below.</p>
+
+              <p>All messages are reviewed with attention and confidentiality.</p>
             </div>
             <div className="mobile-menu fix mb-40 menu-counter mean-container d-lg-none">
               <div className="mean-bar">
@@ -46,17 +46,19 @@ const OffCanvasTwo = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
             </div>
 
             <div className="offcanvas__inner-btn mb-80">
-              <a href="#" className="tp-btn-offcanvas-white w-100">
+              <a href="mailto:contact@ciprianciceu.com" className="tp-btn-offcanvas-white w-100">
                 Say Hello!
               </a>
             </div>
 
             <div className="offcanvas__contact mb-40">
-              <p className="offcanvas__contact-call">
-                <a href="tel:+964-742-44-763">+964 742 44 763</a>
+              <p className="offcanvas__contact-mail">
+                📧 General Inquiries: <br></br>
+                <a href="mailto:contact@ciprianciceu.com">contact@ciprianciceu.com</a>
               </p>
               <p className="offcanvas__contact-mail">
-                <a href="mailto:info@harry.com">info@harry.com</a>
+                📧 General Inquiries: <br></br>
+                <a href="mailto:press@ciprianciceu.com">press@ciprianciceu.com</a>
               </p>
             </div>
 

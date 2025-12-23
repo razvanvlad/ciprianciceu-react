@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 // internal
 import shape from "@assets/img/shape/offcanvas-shape-1.png";
-import logo from "@assets/img/logo/ciprian-ciceu-logo-horizontal.png";
+import logo from "@assets/img/logo/ciprian-ciceu-logo-vertical.png";
 import SocialLinks from "@components/social";
 import MobileMenus from "./mobile-menus";
 
@@ -30,7 +30,7 @@ const OffCanvasSix = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
             <div className="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
               <div className="offcanvas__logo logo">
                 <Link href="/home">
-                  <Image src={logo} alt="logo" />
+                  <Image src={logo} alt="logo" style={{ maxWidth: "100%", height: "auto" }} />
                 </Link>
               </div>
             </div>
