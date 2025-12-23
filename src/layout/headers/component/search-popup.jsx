@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 // internal
 import { Close, Search } from "@svg/index";
-import logo from "@assets/img/logo/logo-ciceu-transparent.png";
+import logo from "@assets/img/logo/ciprian-ciceu-logo-horizontal.png";
 
 const SearchPopup = ({ isSearchOpen, setIsSearchOpen }) => {
   // handleSubmit

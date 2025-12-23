@@ -5,7 +5,7 @@ import Link from "next/link";
 import SocialLinks from "@components/social";
 import CopyrightText from "./component/copyright-text";
 import footer_shape from "@assets/img/footer/footer-shape-1.png";
-import logo from "@assets/img/logo/logo-ciceu-transparent.png";
+import logo from "@assets/img/logo/ciprian-ciceu-logo-horizontal.png";
 import PhotographerRecentPost from "./component/photographer-recent-post";
 import Email from "@svg/email";
 

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 // internal
 import { Email, Phone } from "@svg/index";
-import logo from "@assets/img/logo/logo-ciceu-transparent.png";
+import logo from "@assets/img/logo/ciprian-ciceu-logo-horizontal.png";
 import Menus from "./menus";
 import OffCanvasTwo from "@components/common/off-canvas/off-canvas-2";
 import useSticky from "@hooks/use-sticky";

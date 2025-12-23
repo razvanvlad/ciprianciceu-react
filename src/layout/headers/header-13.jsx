@@ -4,8 +4,8 @@ import Link from 'next/link';
 // internal
 import Talk from '@svg/talk';
 import Menus from './menus';
-import logo_dark from '@assets/img/logo/logo-ciceu-transparent.png';
-import logo_light from '@assets/img/logo/logo-ciceu-transparent.png';
+import logo_dark from '@assets/img/logo/ciprian-ciceu-logo-horizontal.png';
+import logo_light from '@assets/img/logo/ciprian-ciceu-logo-horizontal.png';
 import OffCanvasSix from '@components/common/off-canvas/off-canvas-6';
 
 const HeaderThirteen = () => {

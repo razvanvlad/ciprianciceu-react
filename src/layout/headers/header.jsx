@@ -9,8 +9,8 @@ import SearchPopup from "./component/search-popup";
 import Menus from "./menus";
 import OffCanvasMain from "@components/common/off-canvas";
 // logo
-import logoLight from "@assets/img/logo/logo-ciceu-transparent.png";
-import logoDark from "@assets/img/logo/logo-ciceu-transparent.png";
+import logoLight from "@assets/img/logo/ciprian-ciceu-logo-horizontal.png";
+import logoDark from "@assets/img/logo/ciprian-ciceu-logo-horizontal.png";
 import useSticky from "@hooks/use-sticky";
 import OffCanvasSix from "@components/common/off-canvas/off-canvas-6";
 

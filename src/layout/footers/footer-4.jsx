@@ -4,8 +4,8 @@ import Link from 'next/link';
 // internal
 import SocialLinks from '@components/social';
 import { Call, Email, LocationTwo, Opening } from '@svg/index';
-import logo from '@assets/img/logo/logo-ciceu-transparent.png';
-import logo_black from '@assets/img/logo/logo-ciceu-transparent.png';
+import logo from '@assets/img/logo/ciprian-ciceu-logo-horizontal.png';
+import logo_black from '@assets/img/logo/ciprian-ciceu-logo-horizontal.png';
 import CopyrightText from './component/copyright-text';
 
 const FooterFour = ({ style_2 = false }) => {

@@ -5,7 +5,7 @@ import Link from "next/link";
 import Email from "@svg/email";
 import Search from "@svg/search";
 import Menus from "./menus";
-import logo from "@assets/img/logo/logo-ciceu-transparent.png";
+import logo from "@assets/img/logo/ciprian-ciceu-logo-horizontal.png";
 import useSticky from "@hooks/use-sticky";
 import SearchPopup from "./component/search-popup";
 import OffCanvasMain from "@components/common/off-canvas";

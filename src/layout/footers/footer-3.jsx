@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 // internal
 import shape from '../../../public/assets/img/shape/footer-shape-1.png';
-import logo from '../../../public/assets/img/logo/logo-ciceu-transparent.png';
+import logo from '../../../public/assets/img/logo/ciprian-ciceu-logo-horizontal.png';
 import SocialLinks from '../../components/social';
 
 const FooterThree = () => {

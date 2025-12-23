@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 // internal
-import logo from '@assets/img/logo/logo-ciceu-transparent.png';
+import logo from '@assets/img/logo/ciprian-ciceu-logo-horizontal.png';
 import useSticky from '@hooks/use-sticky';
 import Menus from './menus';
 import OffCanvasSix from '@components/common/off-canvas/off-canvas-6';

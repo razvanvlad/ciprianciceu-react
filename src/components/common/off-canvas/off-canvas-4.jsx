@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 // internal
 import shape from "@assets/img/shape/offcanvas-shape-3.png";
-import logo from "@assets/img/logo/logo-ciceu-transparent.png";
+import logo from "@assets/img/logo/ciprian-ciceu-logo-horizontal.png";
 import insta_img_1 from "@assets/img/instagram/offcanvas/instagram-1.png";
 import insta_img_2 from "@assets/img/instagram/offcanvas/instagram-2.png";
 import insta_img_3 from "@assets/img/instagram/offcanvas/instagram-3.png";

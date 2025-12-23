@@ -1,14 +1,14 @@
-import { FooterSix, Header, Wrapper } from "@layout/index";
+import { FooterEight, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo";
 import ContactArea from "@components/contacts/contact-area";
 
 export default function Contact() {
   return (
     <Wrapper>
-      <SEO pageTitle={"Contact"} />
-      <Header top_bar={false} header_solid={true} />
+      <SEO pageTitle={"Contact - Ciprian Ciceu"} />
+      <HeaderEight />
       <ContactArea/>
-      <FooterSix style_2={true} />
+      <FooterEight />
     </Wrapper>
   );
 }

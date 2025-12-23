@@ -4,7 +4,7 @@ import Link from "next/link";
 // internal
 import SocialLinks from "@components/social";
 import CopyrightText from "./component/copyright-text";
-import logo from '@assets/img/logo/logo-ciceu-transparent.png';
+import logo from '@assets/img/logo/ciprian-ciceu-logo-horizontal.png';
 import flag from '@assets/img/footer/footer-lang-flag-1.png';
 import shape from '@assets/img/footer/footer-shape-3.png';
 

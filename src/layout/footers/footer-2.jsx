@@ -5,7 +5,7 @@ import Link from 'next/link';
 // internal
 import SocialLinks from '../../components/social';
 import FooterBottom from './component/footer-bottom';
-import logo from '../../../public/assets/img/logo/logo-ciceu-transparent.png'
+import logo from '../../../public/assets/img/logo/ciprian-ciceu-logo-horizontal.png'
 import FooterWidget from './component/footer-widget';
 import { blog_data } from '../../data';
 

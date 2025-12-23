@@ -12,7 +12,7 @@ const banner_contents = {
   pre_title: "Hi! I am Ciprian Ciceu",
   title: "Entrepreneur & Blockchain",
   highlight_text: "Educator",
-  desc: "Hi! I'm a UI/UX Designer - creating bold & brave interface design for companies all across the world.",
+  desc: "Building scalable technology platforms, educational ecosystems and international teams across fintech, blockchain and digital innovation.",
 }
 
 const { pre_title, title, highlight_text, desc } = banner_contents;

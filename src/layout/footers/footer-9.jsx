@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 // internal
 import shape from "@assets/img/footer/footer-shape-4.png";
-import logo from "@assets/img/logo/logo-ciceu-transparent.png";
+import logo from "@assets/img/logo/ciprian-ciceu-logo-horizontal.png";
 import SocialLinks from "@components/social";
 import CopyrightText from "./component/copyright-text";
 import { EmailFour, PhoneFive } from "@svg/index";

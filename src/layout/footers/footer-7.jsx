@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import logo from "@assets/img/logo/logo-ciceu-transparent.png";
+import logo from "@assets/img/logo/ciprian-ciceu-logo-horizontal.png";
 import bg_shape from "@assets/img/footer/footer-shape-2.jpg";
 import { LocationTwo, Call, Email } from "@svg/index";
 import SocialLinks from "@components/social";

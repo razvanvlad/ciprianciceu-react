@@ -21,12 +21,12 @@ const LandingHeader = () => {
                   <Link href="/">
                     <img
                       className="logo-light"
-                      src="/assets/img/logo/logo-ciceu-transparent.png"
+                      src="/assets/img/logo/ciprian-ciceu-logo-horizontal.png"
                       alt=""
                     />
                     <img
                       className="logo-black"
-                      src="/assets/img/logo/logo-ciceu-transparent.png"
+                      src="/assets/img/logo/ciprian-ciceu-logo-horizontal.png"
                       alt=""
                     />
                   </Link>

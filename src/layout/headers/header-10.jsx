@@ -5,8 +5,8 @@ import Link from "next/link";
 import { Search, Email } from "@svg/index";
 import Menus from "./menus";
 import SearchPopup from "./component/search-popup";
-import logo_dark from "@assets/img/logo/logo-ciceu-transparent.png";
-import logo_light from "@assets/img/logo/logo-ciceu-transparent.png";
+import logo_dark from "@assets/img/logo/ciprian-ciceu-logo-horizontal.png";
+import logo_light from "@assets/img/logo/ciprian-ciceu-logo-horizontal.png";
 import OffCanvasFive from "@components/common/off-canvas/off-canvas-5";
 
 const HeaderTen = ({ active }) => {
