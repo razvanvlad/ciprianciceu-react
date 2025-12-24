@@ -6,6 +6,7 @@ import shape_1 from '@assets/img/slider/9/slider-shape-1.png';
 import shape_2 from '@assets/img/slider/9/slider-shape-2.png';
 import main_img from '@assets/img/ciceu/ciceu-decupat.png';
 import ShapeLine from "@svg/shape-line";
+import TwitterX from "@svg/twitter-x";
 
 const banner_contents = {
   pre_title: "Hi! I am Ciprian Ciceu",
@@ -69,7 +70,7 @@ const PortfolioBanner = () => {
                       </li>
                       <li>
                         <a href="https://x.com/ciceu_ciprian?s=11&t=EBHN-d7VEHH1sp-EP0D8rQ" target='_blank' rel="noreferrer">
-                          <i className="fa-brands fa-x-twitter"></i>
+                          <TwitterX />
                         </a>
                       </li>
                     </ul>

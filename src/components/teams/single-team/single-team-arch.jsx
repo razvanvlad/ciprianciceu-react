@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { SocialIcon } from "../../social";
 
 const SingleTeamArch = ({ team }) => {
   const { img, name, title, delay, social_links } = team || {};
@@ -24,7 +25,7 @@ const SingleTeamArch = ({ team }) => {
         <div className="team__social-8 d-flex flex-wrap align-items-center justify-content-center">
           {social_links.map((l, i) => (
             <a key={i} href={l.link} target={l.target}>
-              <i className={l.icon}></i>
+              <SocialIcon icon={l.icon} />
             </a>
           ))}
         </div>

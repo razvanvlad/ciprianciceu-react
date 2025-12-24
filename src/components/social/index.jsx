@@ -1,4 +1,11 @@
-import React from "react";
+import TwitterX from "@svg/twitter-x";
+
+export const SocialIcon = ({ icon }) => {
+  if (icon === "fa-brands fa-x-twitter") {
+    return <TwitterX />;
+  }
+  return <i className={icon}></i>;
+};
 
 const social_links = [
   {
@@ -38,7 +45,7 @@ const SocialLinks = () => {
     <>
       {social_links.map((l, i) => (
         <a key={i} href={l.link} target={l.target}>
-          <i className={l.icon}></i>
+          <SocialIcon icon={l.icon} />
         </a>
       ))}
     </>
@@ -53,7 +60,7 @@ export function HeaderSocial() {
       {social_links.slice(0, 3).map((l, i) => (
         <li key={i}>
           <a href={l.link} target={l.target}>
-            <i className={l.icon}></i>
+            <SocialIcon icon={l.icon} />
           </a>
         </li>
       ))}
@@ -66,7 +73,7 @@ export function SocialShare() {
     <>
       {social_links.slice(0, 3).map((l, i) => (
         <a key={i} href={l.link} target={l.target}>
-          <i className={l.icon}></i>
+          <SocialIcon icon={l.icon} />
         </a>
       ))}
     </>

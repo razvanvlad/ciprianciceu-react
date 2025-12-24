@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { SocialIcon } from "../../social";
 
-const LawyerSingleTeam = ({item}) => {
+const LawyerSingleTeam = ({ item }) => {
   return (
     <div className="team__item-4 p-relative z-index-1 fix mb-40">
       <div className="team__thumb-4 w-img fix">
@@ -21,7 +22,7 @@ const LawyerSingleTeam = ({item}) => {
         <div className="team__social-4">
           {item.social_links.map((l, i) => (
             <a key={i} href={l.link} target={l.target}>
-              <i className={l.icon}></i>
+              <SocialIcon icon={l.icon} />
             </a>
           ))}
         </div>

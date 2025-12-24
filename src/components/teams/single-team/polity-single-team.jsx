@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { SocialIcon } from "../../social";
 // internal
 import CommentBig from "@svg/comment-big";
 
@@ -10,13 +11,13 @@ const PolitySingleTeam = ({ item }) => {
     <React.Fragment>
       <div className="team__thumb-10 p-relative m-img">
         <Link href="/team-details">
-          <Image src={img} alt="team img" style={{width:'100%',height:'100%'}} />
+          <Image src={img} alt="team img" style={{ width: '100%', height: '100%' }} />
         </Link>
 
         <div className="team__contact-overlay">
           <div className="team__contact-top">
             <span>
-              <CommentBig/>
+              <CommentBig />
             </span>
             <p>Get touch with me</p>
           </div>
@@ -31,7 +32,7 @@ const PolitySingleTeam = ({ item }) => {
           <div className="team__social-10 d-flex justify-content-center">
             {social_links.map((l, i) => (
               <a key={i} href={l.link} target={l.target}>
-                <i className={l.icon}></i>
+                <SocialIcon icon={l.icon} />
               </a>
             ))}
           </div>

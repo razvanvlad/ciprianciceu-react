@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { SocialIcon } from "../../social";
 
-const HomeSingleTeam = ({item,team_p=false}) => {
+const HomeSingleTeam = ({ item, team_p = false }) => {
   const { id, img, mail, name, social_links, title } = item || {};
   return (
-    <div className={`team__item ${team_p?'mb-55':''}`}>
+    <div className={`team__item ${team_p ? 'mb-55' : ''}`}>
       <div className="team__thumb w-img fix transition-3">
         <div className="tp-thumb-overlay wow"></div>
         <Link href="/team-details">
@@ -31,7 +32,7 @@ const HomeSingleTeam = ({item,team_p=false}) => {
                   {social_links.map((l, i) => (
                     <li key={i}>
                       <a href={l.link} target={l.target}>
-                        <i className={l.icon}></i>
+                        <SocialIcon icon={l.icon} />
                       </a>
                     </li>
                   ))}
