@@ -3,8 +3,9 @@ import Image from "next/image";
 import Slider from "react-slick";
 import Link from 'next/link';
 // internal
-import img_1 from "@assets/img/portfolio/details/portfolio-big-3.jpg";
+import img_1 from "@assets/img/portfolio/details/mainetx-project.png";
 import img_2 from "@assets/img/portfolio/details/betrader-courses.png";
+import img_3 from "@assets/img/portfolio/details/blockchain-project.png";
 import { ArrowRightTwo, AwardFive, Category, Client, Date } from "@svg/index";
 import MetaItem from "../list-details/single-meta";
 
@@ -29,7 +30,7 @@ const project_data = [
     launched: "2021"
   },
   {
-    img: img_1,
+    img: img_3,
     title: "Blockchain & Automation Projects",
     description: "Independent and collaborative initiatives focused on blockchain integration, automation and digital transformation.",
     founder: "Ciprian Ciceu",
@@ -41,13 +42,15 @@ const project_data = [
 
 // slider setting
 const settings = {
-  autoplaySpeed: 4000,
+  autoplay: true,
+  autoplaySpeed: 3000,
   arrows: false,
   dots: true,
   infinite: true,
-  speed: 300,
+  speed: 1000,
   slidesToShow: 1,
   slidesToScroll: 1,
+  rtl: true,
 };
 
 //ImageStyle
