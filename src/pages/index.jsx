@@ -8,10 +8,7 @@ import SliderPortfolioArea from '@components/portfolio-details/slider-details/sl
 import SliderItems from '@components/portfolio-details/slider-details/slider-items';
 import PortfolioSkills from '@components/skills/portfolio-skills';
 import AgencyBrands from '@components/brands/agency-brands';
-import PortfolioAwards from '@components/awards/portfolio-awards';
-import PortfolioTestimonial from '@components/testimonials/portfolio-testimonial';
 import BlogGridArea from '@components/blogs/blog-grid-area';
-import PortfolioContact from '@components/contacts/portfolio-contact';
 
 export default function Home() {
   return (
@@ -26,9 +23,6 @@ export default function Home() {
       <PortfolioSkills />
       <AgencyBrands spacing={true} pt="0" />
       <BlogGridArea />
-      <PortfolioAwards />
-      <PortfolioTestimonial />
-      <PortfolioContact />
       <FooterSeven />
     </Wrapper>
   );

@@ -1,51 +1,65 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-// internal
-import skill_1 from "@assets/img/skill/9/skill-icon-1.png";
-import skill_2 from "@assets/img/skill/9/skill-icon-2.png";
-import skill_3 from "@assets/img/skill/9/skill-icon-3.png";
-import skill_4 from "@assets/img/skill/9/skill-icon-4.png";
-import CountUpContent from "@components/common/counter";
-import company_icon_1 from "@assets/img/skill/company/9/company-icon-1.png";
-import company_icon_2 from "@assets/img/skill/company/9/company-icon-2.png";
-import company_icon_3 from "@assets/img/skill/company/9/company-icon-3.png";
-import company_icon_4 from "@assets/img/skill/company/9/company-icon-4.png";
-import UpArrowTwo from "@svg/up-arrow-2";
 
 // data
 const skill_data = [
-  { icon: skill_1, title: "Figma", num: 90, text: "%" },
-  { icon: skill_2, title: "XD", num: 66, text: "%" },
-  { icon: skill_3, title: "Photoshop", num: 80, text: "%" },
-  { icon: skill_4, title: "Sketch", num: 86, text: "%" },
+  {
+    title: "Blockchain Architecture & Crypto Ecosystems",
+    level: "Expert Level",
+    description: "Design of scalable blockchain systems, token economics, smart contracts, secure payment flows, and real-world crypto adoption."
+  },
+  {
+    title: "AI-Powered Trading & Automation",
+    level: "Advanced",
+    description: "Development of automated trading robots, hedge strategies, risk optimization models, and AI-driven execution systems."
+  },
+  {
+    title: "FinTech Product Strategy & UX Vision",
+    level: "Advanced",
+    description: "End-to-end design of trading platforms, prop-firm infrastructures, user dashboards, and financial UX at scale."
+  },
+  {
+    title: "Global Business Leadership & Scaling",
+    level: "Expert Level",
+    description: "International expansion, team leadership across multiple countries, strategic partnerships, and long-term vision execution."
+  },
+  {
+    title: "Personal Branding, Growth & Reputation Management",
+    level: "Advanced",
+    description: "High-authority personal branding, SEO reputation strategy, media positioning, and digital influence building."
+  },
 ];
 
 // career_data
 const career_data = [
   {
-    icon: company_icon_1,
-    title: "Product designer",
-    designation: "Microsoft Edge",
-    year: "April 2020 - Present",
+    title: "Founder & CEO",
+    designation: "Mainet Prop Firm Services – FZCO · Dubai, UAE",
+    year: "2019 – Present",
+    description: "Leading a global fintech and AI-driven trading ecosystem operating across Europe, the Middle East, and Africa. Architect of the Mainet X platform, combining automated trading, prop-firm systems, and advanced fintech infrastructure."
   },
   {
-    icon: company_icon_2,
-    title: "UX/UX designer",
-    designation: "Amazon Inc",
-    year: "April 2016 - March 2020",
+    title: "Founder & Strategic Visionary",
+    designation: "BeTrader Academy · Europe",
+    year: "2016 – Present",
+    description: "International financial education platform focused on trading, blockchain, and applied financial intelligence. Creator of proprietary trading methodologies and scalable education systems."
   },
   {
-    icon: company_icon_3,
-    title: "Product designer",
-    designation: "Google",
-    year: "April 2012 - March 2016",
+    title: "Blockchain Technology Professor",
+    designation: "Romanian-American University · Bucharest",
+    year: "2018 – 2021",
+    description: "Delivered academic and practical courses on blockchain technology, crypto economics, and digital finance applications."
   },
   {
-    icon: company_icon_4,
-    title: "UI Designer",
-    designation: "Dribbble",
-    year: "April 2008 - March 2012",
+    title: "Founder & Product Architect",
+    designation: "Betra Coin / BetraPay",
+    year: "2017 – 2020",
+    description: "Developed Romania's first privately funded cryptocurrency ecosystem, focusing on utility, payments, and adoption strategy."
+  },
+  {
+    title: "International FinTech & Blockchain Consultant",
+    designation: "Independent",
+    year: "2014 – 2019",
+    description: "Advised startups and private investors on fintech products, trading automation, crypto systems, and scaling strategies."
   },
 ];
 
@@ -58,40 +72,28 @@ const PortfolioSkills = () => {
             <div className="col-xxl-5 col-xl-5 col-lg-5">
               <div className="skill__wrapper-9">
                 <div className="section__title-wrapper-9 mb-55">
-                  <span className="section__title-pre-9">Experience</span>
+                  <span className="section__title-pre-9">Elite Capabilities</span>
                   <h3 className="section__title-9">
                     Skills & <br />
                     Experience
                   </h3>
                 </div>
                 <div className="skill__item-wrapper-9">
-                  <div className="row">
-                    {skill_data.map((skill, i) => (
-                      <div
-                        key={i}
-                        className="col-xxl-6 col-md-6 col-sm-6 col-6"
-                      >
-                        <div className="skill__item-9">
-                          <div className="skill__icon-9">
-                            <span>
-                              <Image src={skill.icon} alt="icon" />
-                            </span>
-                          </div>
-                          <div className="skill__content-9">
-                            <h4 className="d-flex align-items-center">
-                              {skill.title}{" "}
-                              <span className="counter mx-1 d-flex align-items-center">
-                                (<CountUpContent
-                                  number={skill.num}
-                                  text={skill.text}
-                                />)
-                              </span>
-                            </h4>
-                          </div>
+                  {skill_data.map((skill, i) => (
+                    <div key={i} className="skill__item-9 mb-30">
+                      <div className="skill__content-9">
+                        <div className="d-flex align-items-center justify-content-between mb-2">
+                          <h4 className="mb-0">{skill.title}</h4>
+                          <span className="badge bg-primary text-white px-3 py-2" style={{fontSize: '12px', fontWeight: '600'}}>
+                            {skill.level}
+                          </span>
                         </div>
+                        <p style={{fontSize: '14px', color: '#666', lineHeight: '1.6', margin: 0}}>
+                          {skill.description}
+                        </p>
                       </div>
-                    ))}
-                  </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -101,40 +103,30 @@ const PortfolioSkills = () => {
                 {career_data.map((item, i) => (
                   <div
                     key={i}
-                    className="career__item transition-3 white-bg d-sm-flex align-items-center justify-content-between wow fadeInUp"
+                    className="career__item transition-3 white-bg mb-30 wow fadeInUp"
                     data-wow-delay=".3s"
                     data-wow-duration="1s"
+                    style={{padding: '30px'}}
                   >
-                    <div className="career__info d-sm-flex align-items-center">
-                      <div className="career__logo mr-20">
-                        <span>
-                          <Image src={item.icon} alt="icon" />
-                        </span>
+                    <div className="career__info-content">
+                      <h3 className="career__info-title mb-2">{item.title}</h3>
+                      <span className="career__info-designation d-block mb-2" style={{fontWeight: '600', color: '#5956e9'}}>
+                        {item.designation}
+                      </span>
+                      <div className="career__year-info mb-3">
+                        <p style={{fontSize: '14px', color: '#999', margin: 0}}>{item.year}</p>
                       </div>
-                      <div className="career__info-content">
-                        <h3 className="career__info-title">{item.title}</h3>
-                        <span className="career__info-designation">
-                          {item.designation}
-                        </span>
-                      </div>
-                    </div>
-                    <div className="career__year text-sm-end">
-                      <div className="career__btn">
-                        <Link
-                          href="/portfolio-details"
-                          className="career-link-btn"
-                        >
-                          <span>
-                            <UpArrowTwo />
-                          </span>
-                        </Link>
-                      </div>
-                      <div className="career__year-info">
-                        <p>{item.year}</p>
-                      </div>
+                      <p style={{fontSize: '14px', color: '#666', lineHeight: '1.6', margin: 0}}>
+                        {item.description}
+                      </p>
                     </div>
                   </div>
                 ))}
+                <div className="mt-50 text-center" style={{borderTop: '2px solid #e0e0e0', paddingTop: '30px'}}>
+                  <p style={{fontSize: '18px', fontStyle: 'italic', color: '#333', fontWeight: '500', lineHeight: '1.6'}}>
+                    "I build scalable financial ecosystems where technology, automation, and vision converge."
+                  </p>
+                </div>
               </div>
             </div>
           </div>
