@@ -13,14 +13,14 @@ import inst_8 from "@assets/img/instagram/instagram-8.jpg";
 
 // data
 export const instagram_items = [
-  { img: inst_1, link: "https://www.instagram.com/" },
-  { img: inst_2, link: "https://www.instagram.com/" },
-  { img: inst_3, link: "https://www.instagram.com/" },
-  { img: inst_4, link: "https://www.instagram.com/" },
-  { img: inst_5, link: "https://www.instagram.com/" },
-  { img: inst_6, link: "https://www.instagram.com/" },
-  { img: inst_7, link: "https://www.instagram.com/" },
-  { img: inst_8, link: "https://www.instagram.com/" },
+  { img: inst_1, link: "https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr" },
+  { img: inst_2, link: "https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr" },
+  { img: inst_3, link: "https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr" },
+  { img: inst_4, link: "https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr" },
+  { img: inst_5, link: "https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr" },
+  { img: inst_6, link: "https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr" },
+  { img: inst_7, link: "https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr" },
+  { img: inst_8, link: "https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr" },
 ];
 
 // slider instagram items

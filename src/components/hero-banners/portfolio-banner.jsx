@@ -5,7 +5,6 @@ import Link from "next/link";
 import shape_1 from '@assets/img/slider/9/slider-shape-1.png';
 import shape_2 from '@assets/img/slider/9/slider-shape-2.png';
 import main_img from '@assets/img/ciceu/ciceu-decupat.png';
-import { Behance, Dribble, Instagram } from "@svg/index";
 import ShapeLine from "@svg/shape-line";
 
 const banner_contents = {
@@ -49,18 +48,28 @@ const PortfolioBanner = () => {
                     <span>Check out my:</span>
                     <ul>
                       <li>
-                        <a href="https://www.instagram.com/" target='_blank' rel="noreferrer">
-                          <Instagram />
+                        <a href="https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr" target='_blank' rel="noreferrer">
+                          <i className="fa-brands fa-instagram"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://dribbble.com/" target='_blank' rel="noreferrer">
-                          <Dribble />
+                        <a href="https://www.tiktok.com/@ciprian.ciceu22?_r=1&_t=ZN-92UEGvw67du" target='_blank' rel="noreferrer">
+                          <i className="fa-brands fa-tiktok"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.behance.net/" target='_blank' rel="noreferrer">
-                          <Behance />
+                        <a href="https://www.facebook.com/share/1FZ8CDueWj/?mibextid=wwXIfr" target='_blank' rel="noreferrer">
+                          <i className="fa-brands fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/in/ciprian-ciceu-30b72045?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target='_blank' rel="noreferrer">
+                          <i className="fa-brands fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://x.com/ciceu_ciprian?s=11&t=EBHN-d7VEHH1sp-EP0D8rQ" target='_blank' rel="noreferrer">
+                          <i className="fa-brands fa-x-twitter"></i>
                         </a>
                       </li>
                     </ul>

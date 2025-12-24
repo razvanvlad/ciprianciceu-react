@@ -2,10 +2,34 @@ import React from "react";
 
 const social_links = [
   {
-    link: "https://www.linkedin.com/in/ciprian-ciceu-30b72045/",
+    link: "https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr",
+    target: "_blank",
+    icon: "fa-brands fa-instagram",
+    name: "Instagram",
+  },
+  {
+    link: "https://www.tiktok.com/@ciprian.ciceu22?_r=1&_t=ZN-92UEGvw67du",
+    target: "_blank",
+    icon: "fa-brands fa-tiktok",
+    name: "TikTok",
+  },
+  {
+    link: "https://www.facebook.com/share/1FZ8CDueWj/?mibextid=wwXIfr",
+    target: "_blank",
+    icon: "fa-brands fa-facebook-f",
+    name: "Facebook",
+  },
+  {
+    link: "https://www.linkedin.com/in/ciprian-ciceu-30b72045?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     target: "_blank",
     icon: "fa-brands fa-linkedin-in",
-    name: "Linkedin",
+    name: "LinkedIn",
+  },
+  {
+    link: "https://x.com/ciceu_ciprian?s=11&t=EBHN-d7VEHH1sp-EP0D8rQ",
+    target: "_blank",
+    icon: "fa-brands fa-x-twitter",
+    name: "X",
   },
 ];
 

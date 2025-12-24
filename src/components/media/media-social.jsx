@@ -43,7 +43,7 @@ const MediaSocial = () => {
         <div className="row mt-30">
           <div className="col-xxl-12 text-center">
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr"
               target="_blank"
               rel="noreferrer"
               className="tp-btn-5"
