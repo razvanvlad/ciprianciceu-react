@@ -1,20 +1,17 @@
 import React from "react";
 import Image from "next/image";
 // internal
-import { QuoteTwo, EyeTwo, CommentThree, DateTwo } from "@svg/index";
+import { QuoteTwo, DateTwo } from "@svg/index";
 import Link from "next/link";
 
 const SingleGridItem = ({
   id,
   img,
-  tag,
   date,
   title,
   sm_desc,
   author_img,
   author_name,
-  comments,
-  watch,
   blog_quote,
   masonry = false,
   outlet_logo,
@@ -52,11 +49,11 @@ const SingleGridItem = ({
                     </span>
                   </div>
                 </div>
-                <h3 className="blog__title-10">
+                <h3 className="blog__title-10" style={{minHeight: '6em', display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', overflow: 'hidden'}}>
                   <Link href={`/blog-details/${id}`}>{title}</Link>
                 </h3>
 
-                <p>{sm_desc}...</p>
+                <p style={{minHeight: '4.5em', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden'}}>{sm_desc}...</p>
               </div>
               <div className="blog__content-10-bottom">
                 <div className="blog__outlet-logo d-flex align-items-center gap-3">
