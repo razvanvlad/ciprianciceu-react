@@ -17,6 +17,8 @@ const SingleGridItem = ({
   watch,
   blog_quote,
   masonry = false,
+  outlet_logo,
+  link,
 }) => {
   return (
     <React.Fragment>
@@ -38,7 +40,7 @@ const SingleGridItem = ({
                 </Link>
               )}
               <div className="blog__tag-10">
-                <a href="#">{tag}</a>
+                <Link href={`/blog-details/${id}`}>Read More</Link>
               </div>
             </div>
             <div className="blog__content-10">
@@ -56,26 +58,24 @@ const SingleGridItem = ({
 
                 <p>{sm_desc}...</p>
               </div>
-              <div className="blog__content-10-bottom d-flex align-items-center justify-content-between">
-                <div className="blog__meta-author-10 d-flex align-items-center">
-                  <div className="blog__meta-author-thumb-10">
-                    <a href="#">
-                      <Image src={author_img} alt="author" />
+              <div className="blog__content-10-bottom">
+                <div className="blog__outlet-logo d-flex align-items-center gap-3">
+                  {link && (
+                    <a href={link} target="_blank" rel="noopener noreferrer" className="btn btn-sm">
+                      Original Article:
                     </a>
+                  )}
+                  <div className="blog__outlet-logo-img">
+                    {outlet_logo ? (
+                      <a href={link} target="_blank" rel="noopener noreferrer">
+                        <Image src={outlet_logo} alt={author_name} style={{objectFit: 'contain', maxWidth: '140px', maxHeight: '40px', width: 'auto', height: 'auto'}} />
+                      </a>
+                    ) : author_img && (
+                      <a href="#">
+                        <Image src={author_img} alt="author" />
+                      </a>
+                    )}
                   </div>
-                  <div className="blog__meta-author-content-10">
-                    <span>
-                      By <a href="#">{author_name}</a>
-                    </span>
-                  </div>
-                </div>
-                <div className="blog__meta-10 blog-meta-10-2">
-                  <span>
-                    <CommentThree /> {comments}
-                  </span>
-                  <span>
-                    <EyeTwo /> {watch}
-                  </span>
                 </div>
               </div>
             </div>

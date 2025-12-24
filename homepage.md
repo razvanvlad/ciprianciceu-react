@@ -38,7 +38,7 @@ Creating educational frameworks and international communities that empower indiv
 
 ###
 
-🔹 KEY PROJECTS & INITIATIVES
+KEY PROJECTS & INITIATIVES
 
 Over the years, Ciprian Ciceu has been involved in multiple international projects, including:
 	•	Mainet X – A fintech and technology ecosystem focused on automation, digital finance and scalable infrastructure.
