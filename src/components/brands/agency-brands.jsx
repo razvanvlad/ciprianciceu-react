@@ -4,18 +4,18 @@ import Slider from "react-slick";
 import Image from "next/image";
 // internal
 import ElBrandSectionWrapper from "@elements/elements-brand/el-brand-section-wrapper";
-import brand_1 from "@assets/img/brand/5/brand-1.png";
-import brand_2 from "@assets/img/brand/5/brand-2.png";
-import brand_3 from "@assets/img/brand/5/brand-3.png";
-import brand_4 from "@assets/img/brand/5/brand-4.png";
-import brand_5 from "@assets/img/brand/5/brand-5.png";
-import brand_6 from "@assets/img/brand/5/brand-6.png";
-import brand_7 from "@assets/img/brand/5/brand-7.png";
-import brand_8 from "@assets/img/brand/5/brand-8.png";
+import brand_1 from "@assets/img/brand/5/forbes-2x.png";
+import brand_2 from "@assets/img/brand/5/wall-street-2x.png";
+import brand_3 from "@assets/img/brand/5/ceo-times-2x.png";
+import brand_4 from "@assets/img/brand/5/comtex-2x.png";
+import brand_5 from "@assets/img/brand/5/digital-journal-2x.png";
+import brand_6 from "@assets/img/brand/5/now-payments-2x.png";
+import brand_7 from "@assets/img/brand/5/tnt-2x.png";
+import brand_8 from "@assets/img/brand/5/barchart-2x.png";
 
 // slider setting 1
 const settings_1 = {
-  speed: 4000,
+  speed: 6000,
   autoplay: true,
   autoplaySpeed: 0,
   cssEase: "linear",
@@ -31,7 +31,7 @@ const settings_1 = {
 };
 
 const settings_2 = {
-  speed: 3000,
+  speed: 6000,
   cssEase: "linear",
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -68,8 +68,10 @@ const AgencyBrands = ({
   spacing = false,
   element_style = false,
   square = "",
+  pt = "",
+  pb = ""
 }) => {
-  
+
   const sliderRef = useRef();
   let autoplayOn = true;
   let autoplaySpeed = 0;
@@ -83,22 +85,11 @@ const AgencyBrands = ({
   return (
     <>
       <section
-        className={`brand__area ${spacing ? "pb-120" : ""} ${
-          element_style ? "pt-110 pb-120" : ""
-        }`}
+        className={`brand__area ${spacing ? "pb-120" : ""} ${element_style ? "pt-110 pb-120" : ""
+          } ${pt ? `pt-${pt}` : ""} ${pb ? `pb-${pb}` : ""}`}
       >
         <div className="container-fluid g-0">
-          {!style_2 && !element_style && (
-            <div className="row gx-0">
-              <div className="col-xxl-12">
-                <div className="brand__info text-center">
-                  <p>
-                    Join the <span>10.000+</span> companies trusting harry
-                  </p>
-                </div>
-              </div>
-            </div>
-          )}
+
           {element_style && (
             <ElBrandSectionWrapper
               cls="gx-0"

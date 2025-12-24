@@ -4,10 +4,10 @@ import Link from "next/link";
 import { ArrowRightTwo, AwardFive, Category, Client, Date } from "@svg/index";
 import MetaItem from "../list-details/single-meta";
 
-const SliderPortfolioArea = () => {
+const SliderPortfolioArea = ({ pt = '100', pb = '10' }) => {
   return (
     <>
-      <section className="portfolio__area pt-100 pb-10">
+      <section className={`portfolio__area pt-${pt} pb-${pb}`}>
         <div className="container">
           <div className="row">
             <div className="col-xl-8 col-lg-8 col-md-8">
