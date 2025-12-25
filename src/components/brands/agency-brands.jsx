@@ -7,10 +7,10 @@ import ElBrandSectionWrapper from "@elements/elements-brand/el-brand-section-wra
 import brand_1 from "@assets/img/brand/5/forbes-2x.png";
 import brand_2 from "@assets/img/brand/5/wall-street-2x.png";
 import brand_3 from "@assets/img/brand/5/ceo-times-2x.png";
-import brand_4 from "@assets/img/brand/5/comtex-2x.png";
+// import brand_4 from "@assets/img/brand/5/comtex-2x.png";
 import brand_5 from "@assets/img/brand/5/digital-journal-2x.png";
 import brand_6 from "@assets/img/brand/5/now-payments-2x.png";
-import brand_7 from "@assets/img/brand/5/tnt-2x.png";
+// import brand_7 from "@assets/img/brand/5/tnt-2x.png";
 import brand_8 from "@assets/img/brand/5/barchart-2x.png";
 
 // slider setting 1
@@ -46,10 +46,10 @@ const brand_1_data = [
   { brand: brand_1 },
   { brand: brand_2 },
   { brand: brand_3 },
-  { brand: brand_4 },
+  { brand: brand_1 },
   { brand: brand_5 },
   { brand: brand_6 },
-  { brand: brand_7 },
+  { brand: brand_2 },
   { brand: brand_8 },
 ];
 const brand_2_data = [
@@ -59,8 +59,8 @@ const brand_2_data = [
   { brand: brand_5 },
   { brand: brand_8 },
   { brand: brand_2 },
-  { brand: brand_7 },
-  { brand: brand_4 },
+  { brand: brand_1 },
+  { brand: brand_3 },
 ];
 
 const AgencyBrands = ({

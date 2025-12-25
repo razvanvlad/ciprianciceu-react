@@ -18,7 +18,7 @@ const project_data = [
     founder: "Ciprian Ciceu",
     status: "Active",
     sector: "Technology",
-    launched: "2022"
+    launched: "2020"
   },
   {
     img: img_2,
@@ -27,7 +27,7 @@ const project_data = [
     founder: "Ciprian Ciceu",
     status: "Active",
     sector: "Education",
-    launched: "2021"
+    launched: "2017"
   },
   {
     img: img_3,

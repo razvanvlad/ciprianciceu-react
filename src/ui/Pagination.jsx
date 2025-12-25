@@ -1,29 +1,29 @@
 import React from "react";
 import Link from "next/link";
 // internal
-import {NextArrowTwo,PrevArrowTwo} from "@svg/index";
+import { NextArrowTwo, PrevArrowTwo } from "@svg/index";
 
-const Pagination = ({url}) => {
+const Pagination = ({ url = "blog" }) => {
   return (
     <nav>
       <ul>
         <li>
-          <Link href={url} className="tp-pagination-prev prev page-numbers">
+          <Link href={`/${url}`} className="tp-pagination-prev prev page-numbers">
             <PrevArrowTwo />
             Prev
           </Link>
         </li>
         <li>
-          <Link href={url}>1</Link>
+          <span className="current">1</span>
         </li>
         <li>
-          <span className="current">2</span>
+          <Link href={`/${url}`}>2</Link>
         </li>
         <li>
-          <Link href={url}>3</Link>
+          <Link href={`/${url}`}>3</Link>
         </li>
         <li>
-          <Link href={url} className="next page-numbers">
+          <Link href={`/${url}`} className="next page-numbers">
             Next
             <NextArrowTwo />
           </Link>

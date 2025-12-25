@@ -22,7 +22,7 @@ export default function Home() {
       <SliderItems />
       <PortfolioSkills />
       <AgencyBrands spacing={true} pt="0" />
-      <BlogGridArea />
+      <BlogGridArea limit={3} />
       <FooterSeven />
     </Wrapper>
   );

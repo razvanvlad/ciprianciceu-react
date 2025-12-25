@@ -10,7 +10,7 @@ export default function BlogGrid() {
       <SEO pageTitle={'Blog Grid'} />
       <HeaderEight />
       <SliderBreadcrumb />
-      <BlogGridArea/>
+      <BlogGridArea url="blog-grid" />
       <FooterSeven />
     </Wrapper>
   )
