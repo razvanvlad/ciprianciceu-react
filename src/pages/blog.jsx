@@ -1,16 +1,16 @@
 import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo";
-import BreadcrumbFour from "@components/common/breadcrumb/breadcrumb-4";
-import BlogPostboxArea from "@components/blogs/blog-postbox-area";
+import SliderBreadcrumb from "@components/common/breadcrumb/slider-breadcrumb";
+import BlogGridArea from "@components/blogs/blog-grid-area";
 
 
 export default function Blogs() {
   return (
     <Wrapper>
-      <SEO pageTitle={'Blogs'} />
+      <SEO pageTitle={'Blog - Ciprian Ciceu'} />
       <HeaderEight />
-      <BreadcrumbFour title='Our Blog' subtitle='Blog' />
-      <BlogPostboxArea />
+      <SliderBreadcrumb />
+      <BlogGridArea url="blog" />
       <FooterSeven />
     </Wrapper>
   )
