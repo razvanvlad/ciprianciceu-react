@@ -5,7 +5,7 @@ import about_img from "@assets/img/about/6/about-1.jpg";
 import play_icon from "@assets/img/about/6/about-play-icon.png";
 import { useVideoModal } from "src/provider/VideoProvider";
 
-const ElVideoStyleOne = () => {
+const ElVideoStyleOne = ({ videoId = "IPYr8a3LgWs", thumbnail = about_img }) => {
   const { playVideo } = useVideoModal();
 
   return (
@@ -16,14 +16,14 @@ const ElVideoStyleOne = () => {
               <div className="about__video-wrapper">
                 <div className="about__video-thumb">
                   <Image
-                    src={about_img}
+                    src={thumbnail}
                     alt="about img"
                     style={{ width: "100%", height: "100%" }}
                   />
                   <div className="about__play">
                     <a
                       style={{ cursor: "pointer" }}
-                      onClick={() => playVideo("z4dQmpf5PLM")}
+                      onClick={() => playVideo(videoId)}
                       className="about__play-btn popup-video tp-pulse-border"
                     >
                       <span className="video-play-bg"></span>

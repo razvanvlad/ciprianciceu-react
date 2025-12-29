@@ -28,7 +28,7 @@ const ArchitectureVideoArea = ({ element_style = false }) => {
                 <div className="video__play-8 mb-20">
                   <a
                     style={{ cursor: "pointer" }}
-                    onClick={() => playVideo("go7QYaQR494")}
+                    onClick={() => playVideo("IPYr8a3LgWs")}
                     className="popup-video video__play-btn video__play-btn-8 tp-pulse-border"
                   >
                     <span className="video-play-bg"></span>

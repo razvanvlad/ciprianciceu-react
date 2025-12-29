@@ -16,7 +16,11 @@ const SingleGridItem = ({
   masonry = false,
   outlet_logo,
   link,
+  tag,
 }) => {
+  // Handle both single tag (string) and multiple tags (array)
+  const tags = Array.isArray(tag) ? tag.slice(0, 3) : tag ? [tag] : [];
+
   return (
     <React.Fragment>
       {!blog_quote && (
@@ -36,8 +40,10 @@ const SingleGridItem = ({
                   />
                 </Link>
               )}
-              <div className="blog__tag-10">
-                <Link href={`/blog-details/${id}`}>Read More</Link>
+              <div className="blog__tag-10" style={{ display: 'flex', gap: '5px', flexWrap: 'wrap' }}>
+                {tags.map((t, index) => (
+                  <Link key={index} href={`/blog-details/${id}`}>{t}</Link>
+                ))}
               </div>
             </div>
             <div className="blog__content-10">

@@ -566,7 +566,7 @@ const blog_data = [
   // blog grid items
   {
     id: 40,
-    tag: 'Business',
+    tag: ['Education', 'Business'],
     img: forbes_img,
     date: 'March 15, 2024',
     title: 'Academia care pregătește românii pentru riscuri mari și eficiență în trading',
@@ -616,7 +616,7 @@ const blog_data = [
   },
   {
     id: 41,
-    tag: 'Business',
+    tag: ['Education', 'Business'],
     img: adevarul_img,
     date: 'April 8, 2024',
     title: 'Academia internațională din Pipera care te învață să câștigi din trading',
@@ -725,7 +725,7 @@ const blog_data = [
   },
   {
     id: 44,
-    tag: 'Business',
+    tag: ['Education', 'Business'],
     img: antena3_img,
     date: 'June 3, 2024',
     title: 'Billions în București – Academia care te pregătește pentru trading de elită',
@@ -774,7 +774,7 @@ const blog_data = [
   },
   {
     id: 45,
-    tag: 'Business',
+    tag: ['Education', 'Business'],
     img: clickro_img,
     date: 'July 21, 2024',
     title: 'BeTrader Academy din Pipera a creat prima generație de traderi profesioniști',
@@ -830,6 +830,55 @@ const blog_data = [
       <p>BeTrader Academy a format prima generație de traderi profesioniști din România, mulți dintre absolvenți activând acum pe piețele financiare internaționale sau dezvoltându-și propriile portofolii de investiții.</p>
 
       <p>Pentru mai multe informații, vizitați <a href="https://betra.eu/" target="_blank">betra.eu</a> sau pagina de <a href="https://www.facebook.com/betraderacademyromania/" target="_blank">Facebook BeTrader România</a>.</p>
+    `,
+  },
+  {
+    id: 52,
+    tag: ['Business', 'Background', 'Family'],
+    img: grid_img_8,
+    date: 'September 7, 2016',
+    title: 'Maramureșul din capitala Europei: românii care au cucerit Bruxellesul cu mâncarea tradițională',
+    sm_desc: 'Povestea familiei Ciceu din Maramureș care a construit un lanț de restaurante de succes în zona Bruxelles',
+    author_name: 'Adevărul Cluj-Napoca',
+    outlet_logo: adevarul_logo,
+    comments: 12,
+    watch: '45k',
+    blog_grid: true,
+    link: 'https://adevarul.ro/stiri-locale/cluj-napoca/maramuresul-din-capitala-europei-romanii-care-au-1733957.html',
+    content: `
+      <p>Familia Ciceu din Maramureș a stabilit o rețea de restaurante de succes în zona Bruxelles după ce a petrecut un deceniu navigând printre cerințele de rezidență belgiene. Restaurantele lor, toate numite "Mara", servesc acum bucătărie tradițională românească oficialilor europeni, personalului NATO și diplomaților.</p>
+
+      <h3>Călătoria spre Belgia</h3>
+      <p>George și Rodica Ciceu, împreună cu fiii lor Ciprian și Florin (pe atunci în vârstă de 12 și 11 ani), au plecat din Baia Mare în căutarea unor oportunități mai bune. George lucrase ca inginer la renumita fabrică de porțelan Faimar, în timp ce Rodica era muncitoare textilă. Familia a înfruntat dificultăți semnificative în primul lor deceniu în străinătate, mutându-se între cartiere în mod repetat, deoarece cererile lor de rezidență au fost respinse de opt ori între 1991 și 2001.</p>
+
+      <h3>Momentul Decisiv</h3>
+      <p>După șase ani de respingeri și descurajare, familia a primit în sfârșit aprobarea în 2001 de la municipalitatea Jette. Această reușită le-a permis să investească în propria afacere. Au achiziționat o fermă istorică în Ath, la aproximativ 45 de kilometri de Bruxelles, care a devenit atât casa lor, cât și locația primului lor restaurant.</p>
+
+      <h3>Expansiunea Rețelei de Restaurante</h3>
+      <p>Restaurantul original "Mara" a fost deschis pe 18 mai 2002. În primii șapte ani, restaurantul s-a confruntat cu provocări din cauza distanței față de Bruxelles și a clientelei românești limitate. Ciprian a explicat că "multă muncă și perseverență" au condus la succesul lor, mama sa continuând operațiunile din bucătărie, în timp ce tatăl său păstra un loc de muncă în exterior.</p>
+
+      <h4>Cronologia Expansiunii:</h4>
+      <ul>
+        <li>2002: Restaurantul Mara în Ath</li>
+        <li>2013: Mara Louise deschis pe Boulevard Louise (Bruxelles)</li>
+        <li>2015: Braseria Mara Crown deschis pe Boulevard General Jacques</li>
+        <li>2016: Achiziționat "Conacul Prințului" în Anderlecht</li>
+      </ul>
+
+      <h3>Filosofie și Identitate</h3>
+      <p>Ciprian a subliniat angajamentul lor față de mândria românească: "Nouă nu ne-a fost rușine să spunem că suntem români". Familia a recunoscut că România post-revoluționară se confrunta cu stereotipuri negative în media belgiană, dar a ales să sărbătorească moștenirea lor prin bucătărie autentică și reprezentare culturală.</p>
+
+      <h3>Cifre de Afaceri</h3>
+      <ul>
+        <li>Venituri anuale: 1,45 milioane €</li>
+        <li>Angajați: 34 (predominant români)</li>
+        <li>Investiții: 950.000 € (Ath), 250.000 € (Louise), 185.000 € (Crown), 3,5 milioane € (Conac)</li>
+      </ul>
+
+      <h3>Planuri de Viitor</h3>
+      <p>Familia a achiziționat trei pensiuni agroturistice în regiunea Maramureș pentru dezvoltare viitoare.</p>
+
+      <p><em>Articol de Remus Florescu, publicat pe 7 septembrie 2016, actualizat pe 10 august 2022.</em></p>
     `,
   },
   {
@@ -1059,6 +1108,427 @@ const blog_data = [
       <p>The platform distinguishes itself by coupling automated execution with comprehensive user education. An integrated FAQ Assistant offers real-time guidance, enabling clients to understand trading mechanics while the AI operates independently.</p>
 
       <p><strong>Contact:</strong> <a href="https://www.mainetx.com/" target="_blank">www.mainetx.com</a></p>
+    `,
+  },
+  {
+    id: 53,
+    tag: ['Business', 'Trading', 'Entrepreneurship'],
+    img: grid_img_1,
+    date: 'July 18, 2019',
+    title: 'Ciprian Ciceu, co-fondator BeTrader Academy: Tranzacționez mai mult decât investesc și îmi place să o fac în FUTURES',
+    sm_desc: 'Interviu Business24 despre filosofia de trading, educație financiară și preferința pentru piețele futures',
+    author_name: 'Business24',
+    outlet_logo: grid_img_1,
+    comments: 28,
+    watch: '112k',
+    blog_grid: true,
+    link: 'https://business24.ro/idei-afaceri/afaceri-de-succes/ciprian-ciceu-co-fondator-betrader-academy-romania-tranzactionez-mai-mult-decat-investesc-si-imi-place-sa-o-fac-in-futures-1605125',
+    content: `
+      <p>Ciprian Ciceu este un antreprenor român care s-a mutat în Belgia ca copil și a construit afaceri de succes în domeniul ospitalității înainte de a reveni în România. A co-fondat BeTrader Academy România, afiliată cu academii prestigioase de trading din Bruxelles și Londra.</p>
+
+      <h3>Inovație în Educație Financiară</h3>
+      <p>Academia se specializează în cursuri de trading OPTIONS și FUTURES. Ciceu subliniază: "Suntem singurii de pe piața românească care predau aceste cursuri în OPTIONS" și oferă certificare VTCT Level 5 recunoscută în toată Europa.</p>
+
+      <h3>Filosofia de Trading</h3>
+      <p>Ciceu adoptă o strategie "Buy Low - Sell High", identificându-se ca un NEWS TRADER care capitalizează pe reacțiile pieței la anunțuri majore. El preferă oportunitățile pe termen scurt față de investițiile pasive.</p>
+
+      <h3>Focus Actual</h3>
+      <p>În loc de investiții tradiționale în acțiuni, Ciceu tranzacționează activ FUTURES pe patru piețe: DAX (Frankfurt), EUROSTOXX50, S&P500 (SUA) și BUND (obligațiuni germane), folosind OPTIONS pentru managementul riscului.</p>
+
+      <h3>Recomandări</h3>
+      <p>Ciceu pledează pentru investiții în educație financiară de trading mai degrabă decât în portofolii individuale de acțiuni, argumentând că învățarea structurată permite profituri consistente indiferent de direcția pieței.</p>
+    `,
+  },
+  {
+    id: 54,
+    tag: ['Business', 'Technology', 'Trading'],
+    img: grid_img_2,
+    date: 'September 22, 2022',
+    title: 'Lansare Mainet EA – Platformă de trading Forex automatizat produsă în România',
+    sm_desc: 'Ciprian Ciceu lansează Mainet EA, o platformă de trading automatizat bazată pe algoritmi sofisticați',
+    author_name: 'Money.ro',
+    outlet_logo: grid_img_2,
+    comments: 19,
+    watch: '87k',
+    blog_grid: true,
+    link: 'https://www.money.ro/lansare-mainet-ea-platforma-de-trading-forex-automatizat-produsa-in-romania/',
+    content: `
+      <p>Ciprian Ciceu, fondatorul și CEO-ul BeTrader Academy România, a lansat Mainet EA, o platformă de trading automatizat concepută pentru a ajuta utilizatorii să genereze venituri de acasă.</p>
+
+      <h3>Tehnologie Avansată</h3>
+      <p>Platforma utilizează algoritmi sofisticați care încorporează indicatori tehnici precum RSI, EMA, VAP și analiza Order Book pentru a facilita tranzacționarea forex automatizată profitabilă. Operând continuu, sistemul execută tranzacții zilnice bazate pe analiză statistică de volum, vizând să livreze randamente pozitive în condiții de piață variabile.</p>
+
+      <h3>Despre Creator</h3>
+      <p>Ciceu aduce peste 20 de ani de experiență antreprenorială și financiară. După obținerea unui MBA în finanțe și management, a lucrat ca trader independent înainte de a se alătura BeTrader Academy din Belgia în 2017. Ulterior a lansat divizia românească și a extins operațiunile în Europa de Est, Asia și Statele Unite.</p>
+
+      <h3>Inovație și Dezvoltare</h3>
+      <p>În 2019, Ciceu a introdus BETRA Coin, o criptomonedă ERC-20 oferind educație financiară crypto. Până în 2020, a asamblat o echipă de ingineri software și matematicieni de elită pentru a dezvolta algoritmul EA, culminând cu lansarea Mainet EA.</p>
+
+      <h4>Caracteristică Cheie</h4>
+      <p>Platforma permite utilizatorilor să se conecteze prin API la platformele brokerilor reglementați, automatizând strategiile lor personale de tranzacționare.</p>
+    `,
+  },
+  {
+    id: 55,
+    tag: ['Business', 'Education', 'Trading'],
+    img: grid_img_3,
+    date: 'September 25, 2019',
+    title: 'BeTrader Academy România – Un nou proiect de succes al antreprenorului Ciprian Ciceu',
+    sm_desc: 'Academia de trading acreditată care oferă cursuri profesionale de OPTIONS și FUTURES',
+    author_name: 'Realitatea.net',
+    outlet_logo: grid_img_3,
+    comments: 24,
+    watch: '95k',
+    blog_grid: true,
+    link: 'https://www.realitatea.net/stiri/actual/betrader-academy-romania-un-nou-proiect-de-succes-al-antreprenorului-ciprian-ciceu_5dcc9282406af85273d81c9e',
+    content: `
+      <p>BeTrader Academy România reprezintă o inițiativă educațională concepută pentru a pregăti aspiranți traderi și investitori în tranzacții la bursă. Fondată de antreprenorul Ciprian Ciceu, centrul acreditat operează ca parte a celei mai prestigioase organizații de educație în trading din Europa, cu birouri în Paris, Bruxelles, Miami și București.</p>
+
+      <h3>Caracteristici Cheie ale Programului</h3>
+      <p>Academia oferă cursuri cuprinzătoare care acoperă principiile fundamentale ale pieței până la strategii avansate de tranzacționare. Curricula include instrucțiuni în "cum să identifici tendințe prin analiza grafică" și tehnici de gestionare a riscului portofoliului. În mod notabil, academia se specializează în trading OPTIONS și FUTURES — instrumente financiare sofisticate rar predate la instituții concurente.</p>
+
+      <h3>Acreditări și Recunoaștere</h3>
+      <p>Absolvenții programului primesc diplome VTCT Level 5, echivalente cu 120 de credite universitare sau doi ani academici. Ciceu aduce două decenii de experiență în antreprenoriat, analiză financiară și managementul riscului în metodologia sa de predare.</p>
+
+      <h3>Inovație: BETRA COIN</h3>
+      <p>Academia a lansat recent propria criptomonedă ERC20, oferind utilizatorilor reduceri de 75% la comisioanele de tranzacționare pe exchange. Lansarea platformei însoțitoare este planificată pentru anul următor, integrând tehnologia blockchain în ecosistemul de educație în trading.</p>
+    `,
+  },
+  {
+    id: 56,
+    tag: ['Education', 'University', 'Blockchain'],
+    img: antena3_img,
+    date: 'October 19, 2022',
+    title: 'Universitatea Româno-Americană implementează cursul Blockchain și tehnologii financiare',
+    sm_desc: 'Program universitar de master în blockchain predat de Ciprian Ciceu la Universitatea Româno-Americană',
+    author_name: 'Antena 3',
+    outlet_logo: antena3_logo,
+    comments: 32,
+    watch: '145k',
+    blog_grid: true,
+    link: 'https://www.antena3.ro/actualitate/universitatea-romano-americana-implementeaza-cursul-blockchain-si-tehnologii-financiare-in-2022-655000.html',
+    content: `
+      <p>Universitatea Româno-Americană (RAU) a introdus un curs specializat în blockchain și tehnologii financiare începând cu 2022, alăturându-se instituțiilor prestigioase precum Harvard, MIT și Oxford în acest domeniu educațional.</p>
+
+      <h3>Program și Obiective</h3>
+      <p>Cursul vizează studenții de master din programul "Finanțe și tehnologii financiare" de la Facultatea de Contabilitate și Finanțe. Se desfășoară pe parcursul a 56 de ore în primul semestru și acoperă concepte fundamentale blockchain, inclusiv blocuri, tranzacții, mining, funcții hash, criptomonede, portofele, criptografie și algoritmi de consens.</p>
+
+      <h3>Aplicație Practică</h3>
+      <p>Curricula pune accent pe aplicarea practică, solicitând studenților să proiecteze și să implementeze un smart contract pe blockchain-ul Ethereum. Instructorul Ciprian Ciceu, un antreprenor cu două decenii de experiență în finanțe și inginerie software, conduce cursul prin BeTrader Academy — descrisă ca "una dintre cele mai puternice organizații de training FinTech din Europa".</p>
+
+      <h3>Perspectivă de Angajare</h3>
+      <p>Universitatea anticipează că această inițiativă va îmbunătăți angajabilitatea absolvenților, având în vedere proiecțiile industriei că blockchain-ul va crea "peste 40 de milioane de noi locuri de muncă la nivel global" în următorii opt ani.</p>
+    `,
+  },
+  {
+    id: 57,
+    tag: ['Education', 'University', 'Blockchain'],
+    img: grid_img_4,
+    date: 'December 1, 2022',
+    title: 'Cursuri de master în Blockchain și Criptomonede predate de Ciprian Ciceu',
+    sm_desc: 'Program educațional la Universitatea Româno-Americană axat pe blockchain și tehnologii financiare',
+    author_name: 'KingNewsWire',
+    outlet_logo: grid_img_4,
+    comments: 18,
+    watch: '72k',
+    blog_grid: true,
+    link: 'https://kingnewswire.com/students-at-the-romanian-american-university-will-have-master-courses-on-blockchain-and-cryptocurrencies-taught-by-ciprian-ciceu/',
+    content: `
+      <p>Ciprian Ciceu, un antreprenor cu peste 20 de ani de experiență în finanțe și inginerie software, predă un curs de nivel master despre blockchain și tehnologii financiare la Universitatea Româno-Americană. Programul se întinde pe 56 de ore și acoperă concepte esențiale despre criptomonede.</p>
+
+      <h3>Focus-ul Cursului</h3>
+      <p>Studenții vor explora "blocuri, tranzacții, mining, funcții hash, criptomonede, portofele, criptografie cu cheie publică și privată, algoritmi de consens" și vor învăța să proiecteze smart contracts pe platforma Ethereum. Instrucția pune accent pe aplicarea practică alături de fundamentele teoretice.</p>
+
+      <h3>Background-ul Instructorului</h3>
+      <p>Ciceu a dezvoltat anterior Mainet EA, o platformă de trading forex automatizat, și a primit recunoaștere când "Mainet Robotics a fost premiat la gala I Success Awards din Dubai ca Best Crypto&Forex Trading Algorithm 2022". Acreditările sale academice includ un MBA în finanțe și management.</p>
+
+      <h3>Contact</h3>
+      <p>Organizație: Mainet Robotics<br />
+      Email: ciprian@betra.eu<br />
+      Locație: București, România</p>
+    `,
+  },
+  {
+    id: 58,
+    tag: ['Technology', 'Crypto', 'FinTech'],
+    img: grid_img_5,
+    date: 'November 1, 2019',
+    title: 'BETRA – Noua criptomonedă românească cu portofel digital și plăți instante prin QR Code',
+    sm_desc: 'Be Trader Academy lansează BETRA Coin, prima criptomonedă privată românească cu wallet și plăți QR',
+    author_name: 'Observator News',
+    outlet_logo: grid_img_5,
+    comments: 41,
+    watch: '178k',
+    blog_grid: true,
+    link: 'https://observatornews.ro/tehnologie/betra-noua-criptomoneda-romaneasca-portofel-digital-plati-instante-qr-code-322677.html',
+    content: `
+      <p>Be Trader Academy, cu sediul în Pipera, România, a anunțat planuri de lansare a BETRA Coin, descrisă ca "prima criptomonedă românească privată". Inițiativa a fost condusă de Ciprian Ciceu (cunoscut ca "Lupul din Pipera"), care aduce peste 20 de ani de experiență în afaceri.</p>
+
+      <h3>Caracteristici Cheie</h3>
+      <p><strong>BETRA Coin</strong> operează ca un token ERC20 construit pe blockchain-ul Ethereum, oferind tranzacții descentralizate cu anonimatul utilizatorilor. Utilizatorii au fost promisi posibilitatea de a efectua tranzacții începând din aprilie anul următor prin BETRA Pay — o aplicație wallet digital.</p>
+
+      <p><strong>BETRA Pay</strong> wallet-ul ar susține aproximativ 200 de criptomonede diferite și ar permite plăți bazate pe cod QR la comercianții care acceptă Bitcoin, Ethereum sau alte tokenuri ERC20. Sistemul pune accent pe securitate prin autentificare biometrică și tehnologie de criptare Secure Enclave, cu 80% din activele digitale stocate offline.</p>
+
+      <h3>Perspectivă de Piață</h3>
+      <p>Compania a proiectat că piața criptomonedelor va experimenta o creștere semnificativă în următorii cinci ani, poziționând BETRA să captureze oportunitățile emergente în infrastructura de plăți digitale.</p>
+    `,
+  },
+  {
+    id: 59,
+    tag: ['Technology', 'Crypto', 'Payments'],
+    img: wowbiz_img,
+    date: 'November 7, 2019',
+    title: 'Betra Coin lansează propriul sistem de plată prin QR Code – BetraPay',
+    sm_desc: 'BetraPay oferă wallet digital cu suport pentru 200 de criptomonede și plăți instant prin QR',
+    author_name: 'WowBiz',
+    outlet_logo: wowbiz_logo,
+    comments: 35,
+    watch: '156k',
+    blog_grid: true,
+    link: 'https://www.wowbiz.ro/betra-coin-lanseaza-propriul-sistem-de-plata-prin-qr-code-betrapay-20050142',
+    content: `
+      <p>BETRA Coin a dezvăluit BetraPay, un wallet digital și sistem de plată utilizând tehnologia QR code. Criptomoneda, un token ERC-20 pe blockchain-ul Ethereum, urma să fie lansată pe exchange-uri publice începând cu 30 noiembrie 2019, tranzacționarea începând pe 1 decembrie.</p>
+
+      <h3>Capabilități BetraPay Wallet</h3>
+      <ul>
+        <li>Stochează aproximativ 200 de tipuri diferite de criptomonede</li>
+        <li>Oferă autentificare biometrică și criptare securizată</li>
+        <li>Permite procesare de plăți prin "QR Code" cu conversie automată de valută</li>
+        <li>Permite comercianților să accepte multiple criptomonede</li>
+      </ul>
+
+      <h3>Tehnologie Inspirată</h3>
+      <p>Sistemul reflectă modelul WeChat Pay din China, permițând tranzacții rapide prin scanarea codurilor QR. Utilizatorii puteau procesa plăți instant, în timp ce software-ul convertea automat între diverse valute digitale bazat pe preferințele comerciantului.</p>
+
+      <h3>Detalii Tehnice</h3>
+      <p>BETRA operează pe blockchain-ul Ethereum cu caracteristici open-source, oferind privacy îmbunătățită și transparență tranzacțională. Platforma susține criptomonede majore incluzând Bitcoin, Ethereum și Litecoin.</p>
+
+      <h3>Detalii Lansare</h3>
+      <ul>
+        <li><strong>Preț Inițial:</strong> 0,22 USD per coin</li>
+        <li><strong>Disponibil pe:</strong> Exchange-ul Bitlocus</li>
+        <li><strong>Fondator:</strong> Ciprian Ciceu, cu 20+ ani în management și analiză financiară</li>
+      </ul>
+    `,
+  },
+  {
+    id: 60,
+    tag: ['Technology', 'Crypto', 'Investment'],
+    img: grid_img_6,
+    date: 'September 27, 2019',
+    title: 'OFICIAL: BETRA, criptomoneda propusă de celebra academie de trading din Pipera este acum în Private Sale',
+    sm_desc: 'BETRA Coin intră în faza de Private Sale cu reduceri de 75% la comisioane de trading',
+    author_name: 'Kanal D',
+    outlet_logo: grid_img_6,
+    comments: 29,
+    watch: '134k',
+    blog_grid: true,
+    link: 'https://www.kanald.ro/oficial-betra-criptomoneda-propusa-de-celebra-academie-de-trading-din-pipera-este-acum-in-private-sale-20043495',
+    content: `
+      <p>Articolul anunță lansarea vânzării private a BETRA, un token de criptomonedă ERC20 propus de Be Trader Academy, o organizație de educație în trading cu sediul în Pipera, România.</p>
+
+      <h3>Detalii Cheie</h3>
+      <ul>
+        <li><strong>Tip Token:</strong> ERC20 bazat pe blockchain-ul Ethereum</li>
+        <li><strong>Scop:</strong> Coin-ul oferă "reduceri de 75% la comisioanele de tranzacționare" pentru utilizatorii unei viitoare platforme de schimb de criptomonede</li>
+        <li><strong>Supply Curent:</strong> 100 milioane monede BETRA în circulație</li>
+        <li><strong>Preț Proiectat:</strong> Se așteaptă să tranzacționeze la aproximativ 0,22 USD în viitorul apropiat</li>
+        <li><strong>Potențial de Piață:</strong> Sectorul tehnologic ar putea atinge 2 miliarde de dolari în următorii trei ani</li>
+      </ul>
+
+      <h3>Metodă de Achiziție</h3>
+      <p>Utilizatorii interesați să achiziționeze BETRA în timpul vânzării private trebuie să:</p>
+      <ol>
+        <li>Se înregistreze pe platforma BitLocus</li>
+        <li>Completeze verificarea KYC</li>
+        <li>Aleagă opțiunea de plată (EURO sau Bitcoin)</li>
+        <li>Acceseze linkurile private furnizate pentru achiziție</li>
+      </ol>
+
+      <h3>Caracteristici Platformă</h3>
+      <p>Platforma de tranzacționare BBTA va oferi niveluri de membru premium variind de la 10.000 USD la peste 100.000 USD, permițând utilizatorilor să tranzacționeze criptomonede folosind Visa și Mastercard.</p>
+
+      <p>Fondatorul, Ciprian Ciceu, conduce programele de educație profesională în trading ale academiei.</p>
+    `,
+  },
+  {
+    id: 61,
+    tag: ['Technology', 'Crypto', 'Exchange'],
+    img: grid_img_7,
+    date: 'November 11, 2019',
+    title: 'BETRA Coin va fi listată pe 3 Exchange-uri importante din lumea criptomonedelor',
+    sm_desc: 'BETRA Coin se listează pe Bitlocus, IDCM și BIKI – trei platforme majore de schimb cripto',
+    author_name: 'SpyNews',
+    outlet_logo: grid_img_7,
+    comments: 38,
+    watch: '167k',
+    blog_grid: true,
+    link: 'https://spynews.ro/actualitate/stiri-interne/betra-coin-va-fi-listata-pe-3-exchangeuri-importante-din-lumea-criptomonedelor-213160.html',
+    content: `
+      <p>BETRA COIN, descrisă ca "prima criptomonedă privată românească", urma să fie lansată public de BETrader Academy în Pipera, Dubai, de Ziua Națională a României.</p>
+
+      <h3>Caracteristici Tehnice Cheie</h3>
+      <ul>
+        <li>Blockchain de tip ERC20 bazat pe Ethereum</li>
+        <li>Arhitectură open-source oferind tranzacții securizate, confidențialitate și transparență</li>
+        <li>Alimentat de aplicația wallet BetraPay, suportând aproximativ 200 de criptomonede diferite</li>
+      </ul>
+
+      <h3>Listări pe Exchange-uri</h3>
+      <p>Începând cu 1 decembrie 2019, BETRA COIN a devenit disponibil pe trei platforme majore:</p>
+
+      <ol>
+        <li><strong>Bitlocus Exchange</strong> - Listare inițială în timpul Private Sale</li>
+        <li><strong>IDCM</strong> - Exchange cu sediul în Hong Kong, procesând 1,4 milioane comenzi/secundă</li>
+        <li><strong>BIKI</strong> - Platformă cu sediul în Singapore, clasată pe locul cinci între exchange-urile globale de criptomonede</li>
+      </ol>
+
+      <h3>Context Adițional</h3>
+      <p>Proiectul a apărut din rețeaua BE TRADER, fondată de Ciprian Ciceu, oferind cursuri și educație în trading prin Academia lor din Pipera pentru a ajuta antreprenorii să crească veniturile prin strategii de tranzacționare.</p>
+    `,
+  },
+  {
+    id: 62,
+    tag: ['Technology', 'Crypto', 'Blockchain'],
+    img: grid_img_8,
+    date: 'August 29, 2019',
+    title: 'Imperium Talks to BETRA Coin CEO About All Things Blockchain',
+    sm_desc: 'Interviu internațional cu Ciprian Ciceu despre blockchain, BETRA Coin și viitorul tehnologiei',
+    author_name: 'PR Newswire',
+    outlet_logo: grid_img_8,
+    comments: 21,
+    watch: '89k',
+    blog_grid: true,
+    link: 'https://www.prnewswire.com/news-releases/imperium-talks-to-betra-coins-ceo-about-all-things-blockchain-300909344.html',
+    content: `
+      <p>Într-o conversație exclusivă, CEO-ul și Fondatorul BETRA Coin, CICEU Ciprian, a discutat despre abordarea platformei de criptomonede față de tehnologia blockchain. El a subliniat că "BETRA Coin vine cu rezultate care sunt de fapt implementabile. Aceasta este puterea lor comparativ cu alte companii de consultanță."</p>
+
+      <h3>Puncte Cheie</h3>
+      <ul>
+        <li>BETRA Coin operează ca o criptomonedă blockchain descentralizată axată pe anonimatul utilizatorilor și confidențialitatea tranzacțiilor</li>
+        <li>Deși similar cu Ethereum în caracterul open-source, BETRA Coin se diferențiază prin caracteristici îmbunătățite de privacy și transparență</li>
+        <li>Background-ul lui Ciprian include fondarea a două companii Internet în Bruxelles și deținerea diferitelor roluri de management, inclusiv Vice Președinte la BeTrader Academy, unde s-a concentrat pe dezvoltarea afacerilor și managementul riscului</li>
+      </ul>
+
+      <h3>Perspectivă Industrială</h3>
+      <p>Articolul menționează că abilitățile blockchain rămân dificil de achiziționat în ciuda creșterii oportunităților de angajare în sectoarele bancar, retail și educațional.</p>
+    `,
+  },
+  {
+    id: 63,
+    tag: ['Social', 'Personal', 'Entrepreneurship'],
+    img: newsro_img,
+    date: 'August 8, 2018',
+    title: 'Înstrăinații – Ciprian Ciceu și povestea primului restaurant românesc din Belgia',
+    sm_desc: 'Povestea emigrării în Belgia și a construirii primului restaurant românesc de către familia Ciceu',
+    author_name: 'Newsweek România',
+    outlet_logo: newsro_logo,
+    comments: 31,
+    watch: '128k',
+    blog_grid: true,
+    link: 'https://newsweek.ro/actualitate/instrainatii-ciprian-ciceu-si-povestea-primului-restaurant-romanesc-din-belgia',
+    content: `
+      <p>Articolul profilează pe Ciprian Ciceu, un antreprenor român de 38 de ani care a stabilit primul restaurant românesc din Belgia.</p>
+
+      <h3>Călătoria Emigrării</h3>
+      <p>Ciceu a emigrat în Belgia ca copil în 1991, călătorind în secret "ascunși sub bancheta unei camionete" (ascunși sub bancheta unui camion) împreună cu fratele său. Părinții săi au plecat din România cu viză de turist în același an cu planuri ca familia să se reunească în Belgia.</p>
+
+      <h3>Începuturi Dificile</h3>
+      <p>Familia s-a confruntat cu dificultăți inițiale, primind asistență de la o biserică penticostală cu membri români. Această perioadă a fost marcată de provocări și adaptare la o nouă țară.</p>
+
+      <h3>Succes Antreprenorial</h3>
+      <p>Dincolo de restaurantul său principal, Ciceu și-a extins portofoliul de afaceri pentru a include un motel, bar, discotecă și restaurant adițional. Piesa încadrează călătoria sa ca o poveste de succes, subliniind anii de sacrificiu și luptă care au stat la baza realizărilor sale antreprenoriale.</p>
+
+      <p><em>Articolul este marcat ca conținut premium necesitând abonament pentru citire completă.</em></p>
+    `,
+  },
+  {
+    id: 64,
+    tag: ['Awards', 'Recognition', 'Success'],
+    img: clickro_img,
+    date: 'September 26, 2020',
+    title: 'Ciprian Ciceu premiat la gala I Success – Oameni de succes',
+    sm_desc: 'Recunoaștere publică pentru Leadership în Tehnologie Blockchain – Betra Coin la gala iSuccess',
+    author_name: 'Celebritatea.ro',
+    outlet_logo: clickro_logo,
+    comments: 27,
+    watch: '103k',
+    blog_grid: true,
+    link: 'https://celebritatea.ro/ciprian-ciceu-un-cunoscut-om-de-afaceri-a-fost-premiat-la-gala-i-success-oameni-de-succes/',
+    content: `
+      <p>Ciprian Ciceu, un cunoscut om de afaceri, a primit recunoaștere la cea de-a patra ediție a galei "I Success - Oameni de succes" desfășurată pe 22 septembrie 2020. El a fost onorat cu premiul pentru "Leader în Tehnologie Blockchain - Betra Coin".</p>
+
+      <h3>Despre Eveniment</h3>
+      <p>Gala celebrează realizări din diverse sectoare incluzând televiziune, sport, medicină, muzică și afaceri. Expertiza lui Ciceu cuprinde antreprenoriat, inginerie software, analiză financiară și dezvoltare blockchain.</p>
+
+      <h3>Realizări</h3>
+      <p>El a lansat prima criptomonedă românească susținută privat în Dubai și a co-fondat BeTrader Academy în București, servind ca partener cu filiale în Bruxelles și Paris.</p>
+
+      <h3>Viziune Publică</h3>
+      <p>Conform articolului, Ciceu a subliniat că "Digitalizarea administrației, îmbunătățirea comportamentului funcționarilor publici față de cetățeni și reducerea birocrației ar trebui să fie o prioritate pentru România."</p>
+
+      <h3>Organizare</h3>
+      <p>Evenimentul a fost organizat de Flavia Covaciu și Oana Irimia, cu Eduard Irimia în calitate de producător.</p>
+    `,
+  },
+  {
+    id: 65,
+    tag: ['Politics', 'Social', 'Policy'],
+    img: evz_img,
+    date: 'September 8, 2020',
+    title: 'Ciprian Ciceu atrage atenția asupra alocației pentru copii la care au dreptul cetățenii români',
+    sm_desc: 'Candidat pentru Primăria Sectorului 1 informează despre drepturile la alocații pentru copii',
+    author_name: 'România Liberă',
+    outlet_logo: evz_logo,
+    comments: 15,
+    watch: '67k',
+    blog_grid: true,
+    link: 'https://romanialibera.ro/social/ciprian-ciceu-atrage-atentia-asupra-alocatiei-pentru-copii-la-care-au-dreptul-cetatenii-romani-830061/',
+    content: `
+      <p>Ciprian Ciceu, candidat Re:Start România pentru primarul Sectorului 1, a evidențiat drepturile la alocații pentru copii pentru cetățenii români care locuiesc în Spania. În urma Ordonanței Guvernului 20/2020, "beneficiul de suport pentru copii a fost anulat" cu efect din 31 decembrie 2020.</p>
+
+      <h3>Apel la Acțiune</h3>
+      <p>Ciceu a îndemnat românii afectați să aplice pentru alocații pentru copii în România, menționând că procedura simplificată nu mai necesită dovezi de neîncasare de la autoritățile spaniole. Ambasada României în Spania a furnizat detalii de aplicare retroactivă pe site-ul său web.</p>
+
+      <h3>Critică Administrativă</h3>
+      <p>Ciceu a criticat eșecul administrației locale de a comunica aceste drepturi esențiale către cetățeni, declarând: "Sunt interesat de bunăstarea copiilor" și a promis reforme administrative dacă va fi ales.</p>
+    `,
+  },
+  {
+    id: 66,
+    tag: ['Politics', 'Civic', 'Leadership'],
+    img: newsro_img,
+    date: 'August 28, 2020',
+    title: 'Cum are de gând Ciprian Ciceu să producă un Re:Start România în Sectorul 1 al Capitalei',
+    sm_desc: 'Viziunea candidatului Re:Start România pentru modernizarea și digitalizarea Sectorului 1',
+    author_name: 'România Liberă',
+    outlet_logo: newsro_logo,
+    comments: 42,
+    watch: '198k',
+    blog_grid: true,
+    link: 'https://romanialibera.ro/politica/cum-are-de-gand-ciprian-ciceu-sa-produca-un-restart-romania-in-sectorul-1-al-capitalei-829568/',
+    content: `
+      <p>Ciprian Ciceu, candidatul partidului Re:Start România pentru Primarul Sectorului 1 din București, prezintă o platformă ambițioasă de modernizare. Cu peste 20 de ani de experiență antreprenorială și expertiză în IT și tehnologia blockchain, Ciceu propune transformarea administrației locale prin reforme de digitalizare și transparență.</p>
+
+      <h3>Priorități Principale ale Politicilor</h3>
+
+      <h4>Reformă Administrativă</h4>
+      <p>Ciceu își propune să restructureze Poliția Locală și să îmbunătățească transparența în administrația publică, schimbând fundamental modul în care oficialii interacționează cu cetățenii.</p>
+
+      <h4>Infrastructură și Mediu</h4>
+      <p>Agenda sa include rezolvarea problemelor ilegale de gestionare a deșeurilor la marginile orașului, modernizarea sistemelor de colectare a gunoiului și prevenirea infestărilor cu dăunători în blocurile rezidențiale.</p>
+
+      <h4>Dezvoltare Urbană</h4>
+      <p>Candidatul se opune construcției de turnuri în cartiere neadecvate și pledează pentru renovarea Pieței Pajura menținând caracterul său de piață în aer liber cu standarde îmbunătățite de igienă.</p>
+
+      <h4>Transport</h4>
+      <p>Soluțiile includ stabilirea modelelor de circulație într-un sens, crearea de facilități de parcare adiționale pe bulevarde aglomerate și promovarea transportului public și a alternativelor de transport durabil.</p>
+
+      <h4>Servicii Sociale</h4>
+      <p>Programele de sănătate pun accent pe educația cetățenilor și prevenirea bolilor, în timp ce populațiile vulnerabile — în special rezidenții vârstnici și studenții — ar primi subvenții și suport adițional.</p>
+
+      <h4>Inovație</h4>
+      <p>Într-o premieră națională, Ciceu propune utilizarea tehnologiei blockchain pentru procesele de colectare a semnăturilor și votare.</p>
     `,
   },
   // masonry items

@@ -35216,7 +35216,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .portfolio__details-slider-2 .slick-list {
   overflow: visible;
-  margin: 0 -50px;
+  margin: 0 -40px;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px),
@@ -35228,17 +35228,17 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .portfolio__details-slider-2 .slick-list {
-    margin: 0 -15px;
+    margin: 0 -12px;
   }
 }
 
 .portfolio__details-slider-2 .slick-list .slick-slide>div {
-  margin: 0 50px;
+  margin: 0 40px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .portfolio__details-slider-2 .slick-list .slick-slide>div {
-    margin: 0 15px;
+    margin: 0 12px;
   }
 }
 

@@ -82,7 +82,7 @@ const SliderItems = ({ padd = '120' }) => {
                       <h3 style={{ fontSize: '32px', marginBottom: '10px', color: 'var(--tp-common-black)' }}>{item.title}</h3>
                       <p style={{ fontSize: '18px', maxWidth: '800px', margin: '0 auto', color: '#666' }}>{item.description}</p>
                     </div>
-                    <div style={{ padding: '0 20px' }}>
+                    <div style={{ padding: '0 16px' }}>
                       <Image src={item.img} alt={item.title} style={ImageStyle} />
                     </div>
                     <div className="portfolio__details-meta portfolio__details-meta-slider d-flex justify-content-center flex-wrap mt-40" style={{ gap: '40px' }}>

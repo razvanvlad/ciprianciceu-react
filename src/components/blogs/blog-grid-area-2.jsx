@@ -6,9 +6,9 @@ import BlogSidebar from "@components/common/sidebar/blog-sidebar";
 import Pagination from "@ui/Pagination";
 
 
-const BlogGridAreaTwo = ({blog_items,grid_sidebar}) => {
+const BlogGridAreaTwo = ({ blog_items, grid_sidebar }) => {
   return (
-    <section className={`blog__grid ${grid_sidebar?'grey-bg-4':''} pt-90 pb-100`}>
+    <section className={`blog__grid ${grid_sidebar ? 'grey-bg-4' : ''} pt-90 pb-100`}>
       <div className="container">
         <div className="row">
           <div className="col-xxl-12">
@@ -37,7 +37,7 @@ const BlogGridAreaTwo = ({blog_items,grid_sidebar}) => {
             </div>
           </div>
           <div className="col-lg-4">
-            <BlogSidebar style_2={grid_sidebar?false:true} />
+            <BlogSidebar style_2={grid_sidebar ? false : true} />
           </div>
         </div>
         <div className="row">

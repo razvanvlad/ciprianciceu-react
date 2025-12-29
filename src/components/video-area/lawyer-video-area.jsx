@@ -23,7 +23,7 @@ const LawyerVideoArea = ({ element_style = false }) => {
               <div className="video__content text-center">
                 <div
                   className="video__play"
-                  onClick={() => playVideo("go7QYaQR494")}
+                  onClick={() => playVideo("aiEKoEc7P2Y")}
                 >
                   <a
                     style={{ cursor: "pointer" }}
