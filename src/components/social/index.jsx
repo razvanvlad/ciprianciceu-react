@@ -38,6 +38,12 @@ const social_links = [
     icon: "fa-brands fa-x-twitter",
     name: "X",
   },
+  {
+    link: "https://youtube.com/@ciprianciceu22?si=sTZ9n5HPGhHqrFcz",
+    target: "_blank",
+    icon: "fa-brands fa-youtube",
+    name: "YouTube",
+  },
 ];
 
 const SocialLinks = () => {

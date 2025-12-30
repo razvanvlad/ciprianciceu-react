@@ -5,27 +5,27 @@ const skill_data = [
   {
     title: "Blockchain Architecture & Crypto Ecosystems",
     level: "Expert Level",
-    description: "Design of scalable blockchain systems, token economics, smart contracts, secure payment flows, and real-world crypto adoption."
+    description: "Design and implementation of scalable blockchain architectures, tokenized ecosystems, smart contracts, secure payment infrastructures, and real-world crypto adoption models. Proven experience in building compliant, scalable crypto platforms used internationally."
   },
   {
     title: "AI-Powered Trading & Automation",
-    level: "Advanced",
-    description: "Development of automated trading robots, hedge strategies, risk optimization models, and AI-driven execution systems."
+    level: "Expert Level",
+    description: "Development of AI-driven trading systems, automated trading bots, hedge strategies, and risk-management algorithms. Hands-on experience with execution systems, market automation, and real-time performance optimization."
   },
   {
     title: "FinTech Product Strategy & UX Vision",
     level: "Advanced",
-    description: "End-to-end design of trading platforms, prop-firm infrastructures, user dashboards, and financial UX at scale."
+    description: "End-to-end strategy and product vision for FinTech platforms, prop-firm infrastructures, trading dashboards, and scalable financial user experiences. Focused on usability, performance, and long-term platform growth."
   },
   {
     title: "Global Business Leadership & Scaling",
     level: "Expert Level",
-    description: "International expansion, team leadership across multiple countries, strategic partnerships, and long-term vision execution."
+    description: "International business expansion, cross-border team leadership, and strategic partnerships across Europe, Middle East, and emerging markets. Execution-driven leadership with a strong focus on scalability and sustainability."
   },
   {
     title: "Personal Branding, Growth & Reputation Management",
     level: "Advanced",
-    description: "High-authority personal branding, SEO reputation strategy, media positioning, and digital influence building."
+    description: "High-authority personal branding, SEO reputation strategy, media positioning, and digital influence building. Active management of online presence, press coverage, and long-term brand credibility."
   },
 ];
 
