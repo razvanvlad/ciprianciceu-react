@@ -73,6 +73,11 @@ const PortfolioBanner = () => {
                           <TwitterX />
                         </a>
                       </li>
+                      <li>
+                        <a href="https://youtube.com/@ciprianciceu22?si=sTZ9n5HPGhHqrFcz" target='_blank' rel="noreferrer">
+                          <i className="fa-brands fa-youtube"></i>
+                        </a>
+                      </li>
                     </ul>
                   </div>
                 </div>

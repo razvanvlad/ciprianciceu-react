@@ -4,6 +4,9 @@ const BreadcrumbSix = ({
   title = "Investment Trend Monitor: Top Trends in 2022",
   tag = "Business",
 }) => {
+  // Handle both single tag (string) and multiple tags (array)
+  const displayTags = Array.isArray(tag) ? tag.join(' · ') : tag;
+
   return (
     <section className="breadcrumb__area include-bg pb-70 pt-120 grey-bg-4">
       <div className="container">
@@ -11,19 +14,13 @@ const BreadcrumbSix = ({
           <div className="col-xxl-10">
             <div className="breadcrumb__content p-relative z-index-1">
               <div className="postbox__category">
-                <a href="#">{tag}</a>
+                <a href="#">{displayTags}</a>
               </div>
               <h3 className="breadcrumb__title">{title}</h3>
 
               <div className="breadcrumb__list">
                 <span>
-                  <a href="#">Home</a>
-                </span>
-                <span className="dvdr">
-                  <i className="fa-solid fa-circle-small"></i>
-                </span>
-                <span>
-                  <a href="#">{tag}</a>
+                  <a href="/">Home</a>
                 </span>
                 <span className="dvdr">
                   <i className="fa-solid fa-circle-small"></i>

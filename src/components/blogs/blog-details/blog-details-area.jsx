@@ -23,8 +23,8 @@ const BlogDetailsArea = ({ blog }) => {
           <div className="col-xxl-12">
             <div className="postbox__wrapper">
               <div className="postbox__top">
-                <div className="postbox__thumb m-img mb-55">
-                  <Image src={featuredImage} alt={blog?.title || "blog img"} />
+                <div className="postbox__thumb m-img mb-55" style={{ display: 'flex', justifyContent: 'center' }}>
+                  <Image src={featuredImage} alt={blog?.title || "blog img"} style={{ maxWidth: '100%', height: 'auto' }} />
                 </div>
               </div>
               <div className="postbox__main">
@@ -78,11 +78,11 @@ const BlogDetailsArea = ({ blog }) => {
                         )}
                       </div>
                       {/* navigation start */}
-                      <PostNavigation />
+                      <PostNavigation currentBlog={blog} />
                       {/* navigation end */}
 
                       {/* share wrapper start */}
-                      <PostShareWrapper />
+                      <PostShareWrapper tags={blog?.tag} />
                       {/* share wrapper end */}
 
                       <div className="postbox__related mb-65">

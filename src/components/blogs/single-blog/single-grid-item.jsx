@@ -21,6 +21,17 @@ const SingleGridItem = ({
   // Handle both single tag (string) and multiple tags (array)
   const tags = Array.isArray(tag) ? tag.slice(0, 3) : tag ? [tag] : [];
 
+  // Create URL slug from title (replace spaces with dashes, keep existing dashes)
+  const createSlug = (str) => {
+    if (!str || typeof str !== 'string') return '';
+    return str
+      .trim()
+      .replace(/\s+/g, '-')  // Replace spaces with dashes
+      .replace(/--+/g, '-'); // Replace multiple dashes with single dash
+  };
+
+  const blogUrl = `/blog/${createSlug(title)}`;
+
   return (
     <React.Fragment>
       {!blog_quote && (
@@ -32,7 +43,7 @@ const SingleGridItem = ({
           <div className="blog__item-10 white-bg transition-3 mb-30 fix">
             <div className="blog__thumb-10 w-img fix">
               {img && (
-                <Link href={`/blog-details/${id}`}>
+                <Link href={blogUrl}>
                   <Image
                     src={img}
                     alt="blog img"
@@ -42,7 +53,7 @@ const SingleGridItem = ({
               )}
               <div className="blog__tag-10" style={{ display: 'flex', gap: '5px', flexWrap: 'wrap' }}>
                 {tags.map((t, index) => (
-                  <Link key={index} href={`/blog-details/${id}`}>{t}</Link>
+                  <Link key={index} href={blogUrl}>{t}</Link>
                 ))}
               </div>
             </div>
@@ -56,7 +67,7 @@ const SingleGridItem = ({
                   </div>
                 </div>
                 <h3 className="blog__title-10" style={{minHeight: '6em', display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', overflow: 'hidden'}}>
-                  <Link href={`/blog-details/${id}`}>{title}</Link>
+                  <Link href={blogUrl}>{title}</Link>
                 </h3>
 
                 <p style={{minHeight: '4.5em', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden'}}>{sm_desc}...</p>

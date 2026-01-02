@@ -1,7 +1,10 @@
 import React from "react";
 import { SocialShare } from "@components/social";
 
-const PostShareWrapper = ({ blog_details_2 = false }) => {
+const PostShareWrapper = ({ blog_details_2 = false, tags = [] }) => {
+  // Handle both single tag (string) and multiple tags (array)
+  const displayTags = Array.isArray(tags) ? tags : tags ? [tags] : [];
+
   return (
     <div
       className={`postbox__share-wrapper ${
@@ -16,10 +19,13 @@ const PostShareWrapper = ({ blog_details_2 = false }) => {
             }`}
           >
             <span>Tags:</span>
-            <a href="#">Blog</a>
-            <a href="#">Creative</a>
-            <a href="#">Portfoilo</a>
-            <a href="#">Harry</a>
+            {displayTags.length > 0 ? (
+              displayTags.map((tag, index) => (
+                <a key={index} href="#">{tag}</a>
+              ))
+            ) : (
+              <a href="#">General</a>
+            )}
           </div>
         </div>
         <div className={`col-xl-5 ${blog_details_2 ? "col-lg-5" : ""}`}>
