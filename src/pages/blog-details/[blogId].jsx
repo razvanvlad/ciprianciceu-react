@@ -12,9 +12,30 @@ export default function BlogDetails() {
   const single_blog = blog_data.find(
     (item) => Number(item.id) === Number(blogId)
   );
+
+  // Convert date to ISO format for structured data
+  const getISODate = (dateString) => {
+    if (!dateString) return new Date().toISOString();
+    try {
+      const date = new Date(dateString);
+      return date.toISOString();
+    } catch {
+      return new Date().toISOString();
+    }
+  };
+
   return (
     <Wrapper>
-      <SEO pageTitle={"Blog Details"} />
+      <SEO
+        pageTitle={single_blog?.title || "Blog Details"}
+        description={single_blog?.sm_desc || single_blog?.desc || "Read the latest insights and updates from Ciprian Ciceu"}
+        image={single_blog?.img?.src || single_blog?.img}
+        url={`/blog-details/${blogId}`}
+        type="article"
+        author={single_blog?.author_name || "Ciprian Ciceu"}
+        publishedDate={getISODate(single_blog?.date)}
+        tags={single_blog?.tag}
+      />
       <HeaderEight />
       <BreadcrumbSix {...single_blog} />
       <BlogDetailsArea blog={single_blog} />

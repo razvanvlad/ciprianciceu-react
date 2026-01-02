@@ -40,9 +40,36 @@ export default function BlogDetails() {
     );
   }
 
+  // Helper function to create slug from title
+  const getBlogUrl = (blog) => {
+    if (!blog?.title) return '/blog';
+    return `/blog/${createSlug(blog.title)}`;
+  };
+
+  // Convert date to ISO format for structured data
+  const getISODate = (dateString) => {
+    if (!dateString) return new Date().toISOString();
+    try {
+      const date = new Date(dateString);
+      return date.toISOString();
+    } catch {
+      return new Date().toISOString();
+    }
+  };
+
   return (
     <Wrapper>
-      <SEO pageTitle={single_blog?.title || "Blog Details"} />
+      <SEO
+        pageTitle={single_blog?.title || "Blog Details"}
+        description={single_blog?.sm_desc || single_blog?.desc || "Read the latest insights and updates from Ciprian Ciceu"}
+        image={single_blog?.img?.src || single_blog?.img}
+        url={getBlogUrl(single_blog)}
+        type="article"
+        author={single_blog?.author_name || "Ciprian Ciceu"}
+        publishedDate={getISODate(single_blog?.date)}
+        tags={single_blog?.tag}
+        canonical={`https://ciprianciceu.com${getBlogUrl(single_blog)}`}
+      />
       <HeaderEight />
       <BreadcrumbSix {...single_blog} />
       <BlogDetailsArea blog={single_blog} />
