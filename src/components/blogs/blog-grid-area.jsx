@@ -55,14 +55,18 @@ const BlogGridArea = ({ limit, url }) => {
         <div className="container">
           <div className="row">
             <div className="col-xxl-12">
-              <div className="section__title-wrapper section-title-sm mb-40">
-                <h3 className="section__title">
-                  Our latest
+              <div className="section__title-wrapper section-title-sm mb-20">
+                <h2 className="section__title">
+                  Latest Media & Press
                   <span className="section__title-highlight">
-                    articles
+                    {" "}Articles
                     <ShapeLine />
                   </span>
-                </h3>
+                  {" "}Featuring Ciprian Ciceu
+                </h2>
+                <p className="section__subtitle mt-3" style={{ maxWidth: "800px", fontSize: "16px", lineHeight: "1.6", color: "#666" }}>
+                  A selection of recent international media articles and press features highlighting Ciprian Ciceu's work in fintech, blockchain innovation and AI-driven trading platforms.
+                </p>
               </div>
             </div>
           </div>
@@ -152,7 +156,7 @@ const BlogGridArea = ({ limit, url }) => {
                 <div className="tp-pagination mt-20">
                   <div className="text-center">
                     <Link href="/blog" className="tp-btn-5 tp-link-btn-3">
-                      View All Articles
+                      View All Media & Press Coverage
                       <span>
                         <i className="fa-regular fa-arrow-right"></i>
                       </span>

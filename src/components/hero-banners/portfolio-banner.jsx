@@ -10,8 +10,8 @@ import TwitterX from "@svg/twitter-x";
 
 const banner_contents = {
   pre_title: "Hi! I am Ciprian Ciceu",
-  title: "Entrepreneur & Blockchain",
-  highlight_text: "Educator",
+  title: "FinTech & Blockchain",
+  highlight_text: "Entrepreneur",
   desc: "Building scalable technology platforms, educational ecosystems and international teams across fintech, blockchain and digital innovation.",
 }
 

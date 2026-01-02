@@ -13,7 +13,11 @@ import BlogGridArea from '@components/blogs/blog-grid-area';
 export default function Home() {
   return (
     <Wrapper>
-      <SEO pageTitle={'Ciprian Ciceu - Portfolio'} />
+      <SEO
+        pageTitle={'Ciprian Ciceu – FinTech & Blockchain Entrepreneur | Founder Mainet X'}
+        description="Ciprian Ciceu is a FinTech & Blockchain entrepreneur, Founder & CEO of Mainet X, building scalable financial ecosystems from Dubai to Europe."
+        url="/"
+      />
       <HeaderEight />
       <PortfolioBanner />
       <PortfolioAbout />

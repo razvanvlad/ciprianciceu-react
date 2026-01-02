@@ -8,11 +8,11 @@ export default function Blogs() {
   return (
     <Wrapper>
       <SEO
-        pageTitle="Blog"
-        description="Explore insights on blockchain, entrepreneurship, trading, and technology. Stay updated with Ciprian Ciceu's latest articles on business innovation, education, and digital transformation."
+        pageTitle="Media & Press Articles"
+        description="International media coverage featuring Ciprian Ciceu's work in fintech, blockchain innovation, AI-driven trading platforms, and entrepreneurial insights."
         url="/blog"
         type="website"
-        tags={['Blog', 'Blockchain', 'Business', 'Trading', 'Education', 'Technology', 'Entrepreneurship']}
+        tags={['Media', 'Press', 'FinTech', 'Blockchain', 'Business', 'Trading', 'Education', 'Technology', 'Entrepreneurship']}
       />
       <HeaderEight />
       <SliderBreadcrumb />

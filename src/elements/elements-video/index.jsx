@@ -7,6 +7,7 @@ import prezentareCandidatThumbnail from "@assets/img/video/prezentare-candidat.j
 import euSuntCiprianThumbnail from "@assets/img/video/eu-sunt-ciprian-ciceu.jpg";
 import historyBehindThumbnail from "@assets/img/video/Ciceu Ciprian - History behind.jpg";
 import mainetDubaiThumbnail from "@assets/img/video/Mainet First Incentive in Dubai.jpg";
+import abidjanThumbnail from "@assets/img/video/MAINET-BIG-EVENT-ABIDJAN.jpg";
 
 
 const ElementsVideoMain = () => {
@@ -24,6 +25,13 @@ const ElementsVideoMain = () => {
       title: "INCENTIVE EGYPT",
       date: "Mar 24, 2023",
       description: "Second Mainet Incentive in Egypt. After Dubai a Yacht Party on a 'GREEN SEA' we continue with Boat party on the 'RED SEA' and of course the next incentive will be on the 'BLACK SEA' we respect the natural flow of our diamonds positions"
+    },
+    {
+      videoId: "myol9P_KOTE",
+      thumbnail: abidjanThumbnail,
+      title: "MAINET BIG EVENT ABIDJAN 2023 !! + de 1000 Personnes sur Place !",
+      date: "Apr 18, 2023",
+      description: "Dans cette vidéo, je partage avec vous tout sur le MAINET BIG EVENT ABIDJAN 2023 ! !! le CEO Ciprian Ciceu était présent ! Cet événement a été incroyable ! Ne ratez pas cette occasion unique d'apprendre les dernières nouveautés ! Le MAINET BIG EVENT ABIDJAN 2023 ! !"
     },
     {
       videoId: "42VkeRLruqw",
@@ -51,7 +59,7 @@ const ElementsVideoMain = () => {
   return (
     <React.Fragment>
       {/* breadcrumb start */}
-      <ElementBreadcrumb title="Video Content" />
+      <ElementBreadcrumb title="Media & Press Coverage" />
       {/* breadcrumb end */}
 
       {videos.map((video, index) => (

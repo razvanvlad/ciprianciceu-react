@@ -2,7 +2,7 @@ import Head from "next/head";
 
 const SEO = ({
   pageTitle,
-  description = "Over the years, Ciprian Ciceu has been involved in multiple international projects",
+  description = "Ciprian Ciceu is a FinTech & Blockchain entrepreneur, Founder & CEO of Mainet X, building scalable financial ecosystems from Dubai to Europe.",
   image,
   url,
   type = "website",
@@ -12,7 +12,7 @@ const SEO = ({
   tags = [],
   canonical
 }) => {
-  const siteName = "Ciprian Ciceu - Entrepreneur & Blockchain Educator";
+  const siteName = "Ciprian Ciceu – FinTech & Blockchain Entrepreneur";
   const fullTitle = pageTitle ? `${pageTitle} | ${siteName}` : siteName;
   const defaultImage = image || "https://ciprianciceu.com/assets/img/ciprian-ciceu-og-image.jpg";
   const siteUrl = "https://ciprianciceu.com";
@@ -23,7 +23,67 @@ const SEO = ({
     ? description.substring(0, 157) + '...'
     : description;
 
-  // Generate JSON-LD structured data for articles
+  // Person Schema - Always present on all pages
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${siteUrl}/#person`,
+    "name": "Ciprian Ciceu",
+    "url": siteUrl,
+    "image": defaultImage,
+    "jobTitle": "Founder & CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      "name": "Mainet X",
+      "url": "https://mainetx.com"
+    },
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "University of Bucharest"
+      }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dubai",
+      "addressCountry": "UAE"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/ciprian-ciceu-30b72045",
+      "https://x.com/ciceu_ciprian",
+      "https://www.instagram.com/ciprian_ciceu22",
+      "https://www.tiktok.com/@ciprian.ciceu22",
+      "https://www.facebook.com/ciprian.ciceu",
+      "https://youtube.com/@ciprianciceu22"
+    ],
+    "knowsAbout": [
+      "FinTech",
+      "Blockchain Technology",
+      "Cryptocurrency",
+      "Financial Technology",
+      "Trading Systems",
+      "Entrepreneurship",
+      "AI-driven Trading Platforms"
+    ],
+    "description": "FinTech & Blockchain entrepreneur, Founder & CEO of Mainet X, building scalable financial ecosystems and educational platforms."
+  };
+
+  // Organization Schema - Mainet X
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${siteUrl}/#organization`,
+    "name": "Mainet X",
+    "url": "https://mainetx.com",
+    "founder": {
+      "@type": "Person",
+      "@id": `${siteUrl}/#person`
+    },
+    "description": "FinTech and Blockchain platform building scalable financial ecosystems"
+  };
+
+  // Article Schema - connected to Person entity
   const articleSchema = type === "article" ? {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -32,11 +92,13 @@ const SEO = ({
     "image": defaultImage,
     "author": {
       "@type": "Person",
-      "name": author,
+      "@id": `${siteUrl}/#person`,
+      "name": "Ciprian Ciceu",
       "url": siteUrl
     },
     "publisher": {
       "@type": "Person",
+      "@id": `${siteUrl}/#person`,
       "name": "Ciprian Ciceu",
       "logo": {
         "@type": "ImageObject",
@@ -49,7 +111,11 @@ const SEO = ({
       "@type": "WebPage",
       "@id": fullUrl
     },
-    "keywords": Array.isArray(tags) ? tags.join(', ') : tags
+    "keywords": Array.isArray(tags) ? tags.join(', ') : tags,
+    "about": {
+      "@type": "Person",
+      "@id": `${siteUrl}/#person`
+    }
   } : null;
 
   return (
@@ -91,7 +157,19 @@ const SEO = ({
       {/* Favicon */}
       <link rel="icon" href="/favicon.ico" />
 
-      {/* JSON-LD Structured Data for Articles */}
+      {/* JSON-LD Structured Data - Person Schema (Always present) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+
+      {/* JSON-LD Structured Data - Organization Schema (Always present) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+
+      {/* JSON-LD Structured Data - Article Schema (When applicable) */}
       {articleSchema && (
         <script
           type="application/ld+json"
