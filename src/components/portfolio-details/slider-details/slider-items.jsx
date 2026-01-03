@@ -133,14 +133,14 @@ const SliderItems = ({ padd = '120' }) => {
               <p style={{ fontSize: '20px', fontStyle: 'italic', marginBottom: '40px', color: 'var(--tp-common-black)' }}>
                 Each project reflects a long-term vision centered on innovation, education and sustainable growth.
               </p>
-              <div className="portfolio__details-btn">
+              {/* <div className="portfolio__details-btn">
                 <Link href="/portfolio" className="tp-btn-border">
                   View Projects
                   <span>
                     <ArrowRightTwo />
                   </span>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

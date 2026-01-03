@@ -67,6 +67,7 @@ import grid_img_5 from '@assets/img/blog/grid/blog-grid-5.jpg';
 import grid_img_6 from '@assets/img/blog/grid/blog-grid-6.jpg';
 import grid_img_7 from '@assets/img/blog/grid/blog-grid-7.jpg';
 import grid_img_8 from '@assets/img/blog/grid/blog-grid-8.jpg';
+import middleeast_img from '@assets/img/blog/grid/blog-grid-middleeast.jpg';
 // press article images
 import forbes_img from '@assets/img/blog/grid/antena-3.png';
 import adevarul_img from '@assets/img/blog/grid/adevarul.png';
@@ -78,6 +79,15 @@ import wowbiz_img from '@assets/img/blog/grid/wowbiz.png';
 import digital_img from '@assets/img/blog/grid/digital.png';
 import technews_img from '@assets/img/blog/grid/technews.png';
 import barchart_img from '@assets/img/blog/grid/barchart.png';
+import kingnewswire_img from '@assets/img/blog/grid/kingnewswire-blockchain-course.jpg';
+import money_img from '@assets/img/blog/grid/money-mainet-ea.jpg';
+import spynews_img from '@assets/img/blog/grid/spynews-betra-exchange.jpg';
+import observator_img from '@assets/img/blog/grid/observator-betra-crypto.jpg';
+import kanald_img from '@assets/img/blog/grid/kanald-betra-private-sale.jpg';
+import realitatea_img from '@assets/img/blog/grid/realitatea-betrader-academy.jpg';
+import prnewswire_img from '@assets/img/blog/grid/prnewswire-imperium-betra.jpg';
+import business24_img from '@assets/img/blog/grid/business24-ciceu-futures.jpg';
+import adevarul_mara_img from '@assets/img/blog/grid/adevarul-mara-restaurant.jpg';
 // masonry images
 import masonry_img_1 from '@assets/img/blog/masonary/blog-masonary-1.jpg';
 import masonry_img_2 from '@assets/img/blog/masonary/blog-masonary-2.jpg';
@@ -103,6 +113,15 @@ import wowbiz_logo from '@assets/img/brand/5/wowbiz-2x.png';
 import digital_journal_logo from '@assets/img/brand/5/digital-journal-2x.png';
 import technewstab_logo from '@assets/img/brand/5/technewstab-2x.png';
 import barchart_logo from '@assets/img/brand/5/barchart-2x.png';
+import middleeastbusiness_logo from '@assets/img/brand/5/middleeastbusiness-2x.png';
+import kingnewswire_logo from '@assets/img/brand/5/kingnewswire-2x.png';
+import money_logo from '@assets/img/brand/5/money-2x.png';
+import spynews_logo from '@assets/img/brand/5/spynews-2x.svg';
+import observator_logo from '@assets/img/brand/5/observator-2x.svg';
+import kanald_logo from '@assets/img/brand/5/kanald-2x.svg';
+import realitatea_logo from '@assets/img/brand/5/realitatea-2x.png';
+import prnewswire_logo from '@assets/img/brand/5/prnewswire-2x.png';
+import business24_logo from '@assets/img/brand/5/business24-2x.svg';
 // svg icon
 import { Resource, Tutorial, UX } from '@svg/index';
 
@@ -576,6 +595,7 @@ const blog_data = [
     comments: 42,
     watch: '185k',
     blog_grid: true,
+    featured: true,
     link: 'https://www.antena3.ro/economic/companii/billions-in-bucuresti-academia-care-te-pregateste-pentru-risc-mize-mari-si-eficienta-in-trading-539069.html',
     content: `
       <img src="https://www.antena3.ro/thumbs/amp/2019/09/26/billions-in-bucuresti-academia-care-te-pregateste-pentru-risc-mize-mari-si-eficienta-in-trading-616519.jpeg" alt="Be Trader Academy" style="max-width: 100%; margin: 20px 0;" />
@@ -626,6 +646,7 @@ const blog_data = [
     comments: 38,
     watch: '156k',
     blog_grid: true,
+    featured: true,
     link: 'https://adevarul.ro/economie/academia-internationala-din-pipera-care-te-invata-1972598.html',
     content: `
       <p>Be Trader Academy Romania, located in Pipera, Bucharest, offers accredited courses in stock market trading and financial investment. The academy is described as "a center that can provide you with a European diploma in finance and trading," with offices across Europe including Brussels, Paris, Miami, and Bucharest.</p>
@@ -835,7 +856,7 @@ const blog_data = [
   {
     id: 52,
     tag: ['Business', 'Background', 'Family'],
-    img: grid_img_8,
+    img: adevarul_mara_img,
     date: 'September 7, 2016',
     title: 'Maramureșul din capitala Europei: românii care au cucerit Bruxellesul cu mâncarea tradițională',
     sm_desc: 'Povestea familiei Ciceu din Maramureș care a construit un lanț de restaurante de succes în zona Bruxelles',
@@ -1113,15 +1134,16 @@ const blog_data = [
   {
     id: 53,
     tag: ['Business', 'Trading', 'Entrepreneurship'],
-    img: grid_img_1,
+    img: business24_img,
     date: 'July 18, 2019',
     title: 'Ciprian Ciceu, co-fondator BeTrader Academy: Tranzacționez mai mult decât investesc și îmi place să o fac în FUTURES',
     sm_desc: 'Interviu Business24 despre filosofia de trading, educație financiară și preferința pentru piețele futures',
     author_name: 'Business24',
-    outlet_logo: grid_img_1,
+    outlet_logo: business24_logo,
     comments: 28,
     watch: '112k',
     blog_grid: true,
+    featured: true,
     link: 'https://business24.ro/idei-afaceri/afaceri-de-succes/ciprian-ciceu-co-fondator-betrader-academy-romania-tranzactionez-mai-mult-decat-investesc-si-imi-place-sa-o-fac-in-futures-1605125',
     content: `
       <p>Ciprian Ciceu este un antreprenor român care s-a mutat în Belgia ca copil și a construit afaceri de succes în domeniul ospitalității înainte de a reveni în România. A co-fondat BeTrader Academy România, afiliată cu academii prestigioase de trading din Bruxelles și Londra.</p>
@@ -1142,12 +1164,12 @@ const blog_data = [
   {
     id: 54,
     tag: ['Business', 'Technology', 'Trading'],
-    img: grid_img_2,
+    img: money_img,
     date: 'September 22, 2022',
     title: 'Lansare Mainet EA – Platformă de trading Forex automatizat produsă în România',
     sm_desc: 'Ciprian Ciceu lansează Mainet EA, o platformă de trading automatizat bazată pe algoritmi sofisticați',
     author_name: 'Money.ro',
-    outlet_logo: grid_img_2,
+    outlet_logo: money_logo,
     comments: 19,
     watch: '87k',
     blog_grid: true,
@@ -1171,12 +1193,12 @@ const blog_data = [
   {
     id: 55,
     tag: ['Business', 'Education', 'Trading'],
-    img: grid_img_3,
+    img: realitatea_img,
     date: 'September 25, 2019',
     title: 'BeTrader Academy România – Un nou proiect de succes al antreprenorului Ciprian Ciceu',
     sm_desc: 'Academia de trading acreditată care oferă cursuri profesionale de OPTIONS și FUTURES',
     author_name: 'Realitatea.net',
-    outlet_logo: grid_img_3,
+    outlet_logo: realitatea_logo,
     comments: 24,
     watch: '95k',
     blog_grid: true,
@@ -1223,12 +1245,12 @@ const blog_data = [
   {
     id: 57,
     tag: ['Education', 'University', 'Blockchain'],
-    img: grid_img_4,
+    img: kingnewswire_img,
     date: 'December 1, 2022',
     title: 'Cursuri de master în Blockchain și Criptomonede predate de Ciprian Ciceu',
     sm_desc: 'Program educațional la Universitatea Româno-Americană axat pe blockchain și tehnologii financiare',
     author_name: 'KingNewsWire',
-    outlet_logo: grid_img_4,
+    outlet_logo: kingnewswire_logo,
     comments: 18,
     watch: '72k',
     blog_grid: true,
@@ -1251,12 +1273,12 @@ const blog_data = [
   {
     id: 58,
     tag: ['Technology', 'Crypto', 'FinTech'],
-    img: grid_img_5,
+    img: observator_img,
     date: 'November 1, 2019',
     title: 'BETRA – Noua criptomonedă românească cu portofel digital și plăți instante prin QR Code',
     sm_desc: 'Be Trader Academy lansează BETRA Coin, prima criptomonedă privată românească cu wallet și plăți QR',
     author_name: 'Observator News',
-    outlet_logo: grid_img_5,
+    outlet_logo: observator_logo,
     comments: 41,
     watch: '178k',
     blog_grid: true,
@@ -1314,12 +1336,12 @@ const blog_data = [
   {
     id: 60,
     tag: ['Technology', 'Crypto', 'Investment'],
-    img: grid_img_6,
+    img: kanald_img,
     date: 'September 27, 2019',
     title: 'OFICIAL: BETRA, criptomoneda propusă de celebra academie de trading din Pipera este acum în Private Sale',
     sm_desc: 'BETRA Coin intră în faza de Private Sale cu reduceri de 75% la comisioane de trading',
     author_name: 'Kanal D',
-    outlet_logo: grid_img_6,
+    outlet_logo: kanald_logo,
     comments: 29,
     watch: '134k',
     blog_grid: true,
@@ -1354,12 +1376,12 @@ const blog_data = [
   {
     id: 61,
     tag: ['Technology', 'Crypto', 'Exchange'],
-    img: grid_img_7,
+    img: spynews_img,
     date: 'November 11, 2019',
     title: 'BETRA Coin va fi listată pe 3 Exchange-uri importante din lumea criptomonedelor',
     sm_desc: 'BETRA Coin se listează pe Bitlocus, IDCM și BIKI – trei platforme majore de schimb cripto',
     author_name: 'SpyNews',
-    outlet_logo: grid_img_7,
+    outlet_logo: spynews_logo,
     comments: 38,
     watch: '167k',
     blog_grid: true,
@@ -1390,12 +1412,12 @@ const blog_data = [
   {
     id: 62,
     tag: ['Technology', 'Crypto', 'Blockchain'],
-    img: grid_img_8,
+    img: prnewswire_img,
     date: 'August 29, 2019',
     title: 'Imperium Talks to BETRA Coin CEO About All Things Blockchain',
     sm_desc: 'Interviu internațional cu Ciprian Ciceu despre blockchain, BETRA Coin și viitorul tehnologiei',
     author_name: 'PR Newswire',
-    outlet_logo: grid_img_8,
+    outlet_logo: prnewswire_logo,
     comments: 21,
     watch: '89k',
     blog_grid: true,
@@ -1724,6 +1746,61 @@ const blog_data = [
     comments: 54,
     watch: '266,7k',
     blog_masonry: true,
+  },
+  {
+    id: 64,
+    tag: ['Business', 'FinTech', 'AI', 'Trading', 'Entrepreneurship'],
+    img: middleeast_img,
+    date: 'December 29, 2025',
+    title: 'CIPRIAN CICEU: The Architect of AI-Driven Trading',
+    sm_desc: 'From Dubai to Europe, building automated financial systems designed for the future of global markets',
+    author_name: 'Middle East Business',
+    outlet_logo: middleeastbusiness_logo,
+    comments: 42,
+    watch: '215k',
+    blog_grid: true,
+    featured: true,
+    link: 'https://middleeastbusiness.ae/featured/ciprian-ciceu-the-architect-of-ai-driven-trading/',
+    content: `
+      <p>A fresh generation of fintech innovators is reshaping global financial markets. Among them stands Ciprian Ciceu, a Romanian entrepreneur bridging Europe and Dubai with over a decade of expertise in trading education, blockchain systems, and digital financial infrastructure.</p>
+
+      <h3>From Trading Education to Fintech Vision</h3>
+      <p>Ciceu's journey began with foundational work in financial education. He established BeTrader Academy, an advanced trading platform serving Romania and Belgium. The academy gained recognition for combining real-market strategies with systematic learning frameworks, welcoming both novices and seasoned traders.</p>
+
+      <p>This educational foundation shaped his broader philosophy: technology should democratize finance rather than complicate it. This perspective eventually evolved into his comprehensive fintech vision emphasizing both automation and accessibility.</p>
+
+      <h3>Mainet X: AI-Powered Trading Platform</h3>
+      <p>Currently serving as Founder and CEO of Mainet X, Ciceu leads an artificial intelligence-driven ecosystem designed to eliminate emotional decision-making from markets. The platform integrates sophisticated algorithms, automated execution, and risk management systems, enabling technology-based trading rather than manual approaches alone.</p>
+
+      <p>The platform operates on four foundational pillars:</p>
+      <ul>
+        <li>AI-powered automated trading</li>
+        <li>Scalable fintech infrastructure</li>
+        <li>Education-driven financial empowerment</li>
+        <li>Long-term sustainability in digital finance</li>
+      </ul>
+
+      <p>Mainet X has expanded considerably, establishing teams across Romania, Dubai, and India, positioning the company at the convergence of European innovation, Middle Eastern financial ambition, and emerging market expansion.</p>
+
+      <h3>Dubai's Strategic Importance</h3>
+      <p>Dubai's business-friendly environment and progressive fintech regulatory framework made it an ideal expansion hub for Ciceu. The city's forward-thinking approach toward digital finance provides the ecosystem necessary for advancing automated trading and artificial intelligence-powered financial solutions. From Dubai, Ciceu coordinates international development, forges fintech partnerships, and drives product innovation.</p>
+
+      <h3>Education and Responsibility as Core Values</h3>
+      <p>Beyond platforms and algorithms, Ciceu emphasizes financial literacy as central to his long-term strategy. He stresses that "technology alone is not enough. Education, when paired with responsible innovation, becomes the real engine of sustainable wealth creation."</p>
+
+      <h3>Future Vision</h3>
+      <p>Planned initiatives include:</p>
+      <ul>
+        <li>Expanding AI-based trading solutions</li>
+        <li>Advanced fintech education programs</li>
+        <li>Blockchain-powered financial instruments</li>
+        <li>Strategic global partnerships across Europe, the Middle East, and emerging markets</li>
+      </ul>
+
+      <p><strong>Key Takeaway:</strong> Ciceu exemplifies a new generation of globally-minded fintech entrepreneurs whose work demonstrates how innovation, education, and geographic strategy converge to build enduring systems rather than temporary solutions.</p>
+
+      <p><strong>Contact:</strong> Instagram <a href="https://www.instagram.com/ciprian_ciceu22" target="_blank">@ciprian_ciceu22</a></p>
+    `,
   },
 ]
 

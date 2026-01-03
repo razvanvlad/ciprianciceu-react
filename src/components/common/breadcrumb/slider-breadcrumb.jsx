@@ -1,80 +1,66 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Pagination } from 'swiper/modules';
 import Link from 'next/link';
 // internal
-import bg_1 from '@assets/img/blog/breadcrumb/blog-breadcrumb-slider-1.jpg';
-import bg_2 from '@assets/img/blog/breadcrumb/blog-breadcrumb-slider-2.jpg';
-import bg_3 from '@assets/img/blog/breadcrumb/blog-breadcrumb-slider-3.jpg';
-import bg_4 from '@assets/img/blog/breadcrumb/blog-breadcrumb-slider-4.jpg';
+import blog_data from '@data/blog-data';
 import { CommentThree, DateTwo, EyeTwo } from '@svg/index';
 
-const slider_data = [
-  {
-    id:1,
-    bg:bg_1,
-    tag:'Business',
-    title:'Investment Trend Monitor: Top Trends in 2023',
-    date:'October 24, 2022',
-    comment:'35',
-    watch:'234,5k'
-  },
-  {
-    id:2,
-    bg:bg_2,
-    tag:'Creative',
-    title:'Things Your Boss Needs To Know Agency Industry.',
-    date:'October 26, 2022',
-    comment:'40',
-    watch:'180,2k'
-  },
-  {
-    id:3,
-    bg:bg_3,
-    tag:'Agency',
-    title:'The Reasons Why We Love The Agency Industry.',
-    date:'November 15, 2022',
-    comment:'25',
-    watch:'150,3k'
-  },
-  {
-    id:4,
-    bg:bg_4,
-    tag:'Latest',
-    title:'Here What Industry Insiders Say About Agency.',
-    date:'December 10, 2022',
-    comment:'22',
-    watch:'118,6k'
-  },
-]
+// Helper function to create slug from title
+const createSlug = (str) => {
+  if (!str || typeof str !== 'string') return '';
+
+  // Replace Romanian diacritics with ASCII equivalents
+  const normalized = str
+    .replace(/ă/g, 'a')
+    .replace(/â/g, 'a')
+    .replace(/î/g, 'i')
+    .replace(/ș/g, 's')
+    .replace(/ț/g, 't')
+    .replace(/Ă/g, 'A')
+    .replace(/Â/g, 'A')
+    .replace(/Î/g, 'I')
+    .replace(/Ș/g, 'S')
+    .replace(/Ț/g, 'T');
+
+  return normalized
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/--+/g, '-');
+};
 
 // slider item
-function SingleSliderItem({ bg, tag, title, date, comment, watch }) {
+function SingleSliderItem({ img, tag, title, date, author_name, slug }) {
+  // Get the image source - handle both imported images and strings
+  const imgSrc = img?.src || img;
+
+  // Get first tag if it's an array
+  const displayTag = Array.isArray(tag) ? tag[0] : tag;
+
   return (
-    <div className="blog__breadcrumb-item blog__breadcrumb-height blog__breadcrumb-overlay include-bg d-flex align-items-end" style={{backgroundImage:`url(${bg.src})`}}>
+    <div className="blog__breadcrumb-item blog__breadcrumb-height blog__breadcrumb-overlay include-bg d-flex align-items-end" style={{backgroundImage:`url(${imgSrc})`}}>
       <div className="container">
         <div className="col-xxl-8 col-xl-8 col-lg-10">
           <div className="blog__breadcrumb-thumb"></div>
           <div className="blog__breadcrumb-content">
             <div className="blog__breadcrumb-tag">
-              <a href="#">{tag}</a>
+              <span>{displayTag}</span>
             </div>
             <h3 className="blog__breadcrumb-title">
-              <Link href="/blog-details">{title}</Link>
+              <Link href={`/blog/${slug}`}>{title}</Link>
             </h3>
             <div className="blog__breadcrumb-meta">
               <span>
                 <DateTwo />{date}
               </span>
-              <span>
-                <CommentThree />{comment}
-              </span>
-              <span>
-                <EyeTwo />{watch}
-              </span>
+              {author_name && (
+                <span>
+                  <CommentThree />{author_name}
+                </span>
+              )}
             </div>
             <div className="blog__breadcrumb-btn">
-              <Link href="/blog-details" className="tp-btn-border-2">Continue Reading</Link>
+              <Link href={`/blog/${slug}`} className="tp-btn-border-2">Continue Reading</Link>
             </div>
           </div>
         </div>
@@ -85,6 +71,21 @@ function SingleSliderItem({ bg, tag, title, date, comment, watch }) {
 
 
 const SliderBreadcrumb = () => {
+  // Get featured articles and prepare them for the slider
+  const featuredArticles = useMemo(() => {
+    const featured = blog_data
+      .filter((blog) => blog.featured === true)
+      .map((blog) => ({
+        ...blog,
+        slug: createSlug(blog.title)
+      }));
+
+    return featured.length > 0 ? featured : blog_data.slice(0, 3).map((blog) => ({
+      ...blog,
+      slug: createSlug(blog.title)
+    }));
+  }, []);
+
   return (
     <section className="blog__breadcrumb">
       <div className="blog__breadcrumb-slider p-relative">
@@ -101,7 +102,7 @@ const SliderBreadcrumb = () => {
             clickable: true,
           }}
         >
-          {slider_data.map((item) => (
+          {featuredArticles.map((item) => (
             <SwiperSlide key={item.id}>
               <SingleSliderItem {...item} />
             </SwiperSlide>
