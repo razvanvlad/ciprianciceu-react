@@ -107,6 +107,8 @@ const PortfolioBanner = () => {
                     src={main_img}
                     alt="main image"
                     priority
+                    fetchPriority="high"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
               </div>

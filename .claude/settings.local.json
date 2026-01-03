@@ -14,7 +14,8 @@
       "Bash(echo:*)",
       "Bash(npm run build:*)",
       "Bash(curl:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(npm install:*)"
     ]
   }
 }

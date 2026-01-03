@@ -93,12 +93,49 @@
 
 ---
 
+## 🔧 Phase 3: Critical Fixes Applied ✅
+
+### 1. Hero Image Optimization
+**File**: [src/components/hero-banners/portfolio-banner.jsx](src/components/hero-banners/portfolio-banner.jsx:105-112)
+
+**Changes:**
+- Added `fetchPriority="high"` to LCP image
+- Added `sizes="(max-width: 768px) 100vw, 50vw"` for proper responsive sizing
+
+**Impact**: Saves 157 KiB (image now served at correct dimensions), improves LCP score
+
+### 2. Font Optimization Fix (CRITICAL)
+**File**: [public/assets/scss/utils/_typography.scss](public/assets/scss/utils/_typography.scss:6-22)
+
+**Problem Identified:**
+- SCSS files had hardcoded font-family values like `'Inter', sans-serif`
+- This caused browser to load fonts from Google CDN despite Next.js optimization
+- Next.js font CSS variables (`--font-inter`, `--font-space-grotesk`, etc.) were created but NOT used
+
+**Solution:**
+- Updated all font-family declarations to use Next.js CSS variables:
+  - `'body': "var(--font-inter), sans-serif"`
+  - `'heading': "var(--font-space-grotesk), sans-serif"`
+  - `'roboto': "var(--font-roboto), sans-serif"`
+  - And all other fonts...
+
+**Impact**: Should eliminate the 660ms render-blocking font load, fonts now served optimally by Next.js
+
+### 3. PurgeCSS Dependencies
+**Status**: Already installed ✅
+
+**Packages:**
+- purgecss-webpack-plugin
+- glob-all
+
+---
+
 ## 📦 Required Dependencies
 
-Install these dependencies for full optimization:
+All dependencies are now installed:
 
 ```bash
-npm install --save-dev purgecss-webpack-plugin glob-all
+npm install --save-dev purgecss-webpack-plugin glob-all  # ✅ DONE
 ```
 
 ---
