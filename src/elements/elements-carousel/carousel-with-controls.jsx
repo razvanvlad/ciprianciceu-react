@@ -2,11 +2,11 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import Slider from "react-slick";
 // internal
-import slider_img_1 from "@assets/img/portfolio/metro/portfolio-metro-1.jpg";
-import slider_img_2 from "@assets/img/portfolio/metro/portfolio-metro-2.jpg";
-import slider_img_3 from "@assets/img/portfolio/metro/portfolio-metro-3.jpg";
-import slider_img_4 from "@assets/img/portfolio/metro/portfolio-metro-4.jpg";
-import slider_img_5 from "@assets/img/portfolio/metro/portfolio-metro-5.jpg";
+import slider_img_1 from "@assets/img/portfolio/grid/portfolio-grid-1.jpg";
+import slider_img_2 from "@assets/img/portfolio/grid/portfolio-grid-2.jpg";
+import slider_img_3 from "@assets/img/portfolio/grid/portfolio-grid-3.jpg";
+import slider_img_4 from "@assets/img/portfolio/grid/portfolio-grid-4.jpg";
+import slider_img_5 from "@assets/img/portfolio/grid/portfolio-grid-5.jpg";
 
 // carousel_images
 const carousel_images = [

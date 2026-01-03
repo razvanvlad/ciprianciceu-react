@@ -1,7 +1,7 @@
 // home main
-import img_1 from '@assets/img/portfolio/portfolio-1.jpg';
-import img_2 from '@assets/img/portfolio/portfolio-2.jpg';
-import img_3 from '@assets/img/portfolio/portfolio-3.jpg';
+import img_1 from '@assets/img/portfolio/grid/portfolio-grid-1.jpg';
+import img_2 from '@assets/img/portfolio/grid/portfolio-grid-2.jpg';
+import img_3 from '@assets/img/portfolio/grid/portfolio-grid-3.jpg';
 // home lowyer
 import case_1 from '@assets/img/case/case-1.jpg';
 import case_2 from '@assets/img/case/case-2.jpg';

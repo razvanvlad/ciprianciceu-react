@@ -6,11 +6,11 @@ import Image from "next/image";
 // internal
 import { testimonial_data } from "./creative-testimonial";
 import CreativeSingleTesti from "./single-testimonial/creative-single-testi";
-import brand_1 from "@assets/img/brand/7/brand-1.png";
-import brand_2 from "@assets/img/brand/7/brand-2.png";
-import brand_3 from "@assets/img/brand/7/brand-3.png";
-import brand_4 from "@assets/img/brand/7/brand-4.png";
-import brand_5 from "@assets/img/brand/7/brand-5.png";
+import brand_1 from "@assets/img/brand/5/forbes-2x.png";
+import brand_2 from "@assets/img/brand/5/wall-street-2x.png";
+import brand_3 from "@assets/img/brand/5/barchart-2x.png";
+import brand_4 from "@assets/img/brand/5/digital-journal-2x.png";
+import brand_5 from "@assets/img/brand/5/now-payments-2x.png";
 
 // brand images
 const brand_images = [brand_1, brand_2, brand_3, brand_4, brand_5];

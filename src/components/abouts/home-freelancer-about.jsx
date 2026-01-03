@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 // internal
-import author_sign from '@assets/img/about/about-author-sign.png';
+import author_sign from '@assets/img/about/14/about-shape-1.png';
 import FreelancerCounter from '@components/counters/freelancer-counter';
 
 const HomeFreelancerAbout = () => {

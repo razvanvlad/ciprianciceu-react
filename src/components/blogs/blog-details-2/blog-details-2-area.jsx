@@ -11,8 +11,8 @@ import QuoteThree from "@svg/quote-3";
 import PostShareWrapper from "../blog-details/post-share-wrapper";
 import PostAuthor from "../blog-details/post-author";
 import MoreNavigationTwo from "./more-navigation-2";
-import blog_img from "@assets/img/blog/blog-big-3.jpg";
-import blog_bg from "@assets/img/blog/blog-big-2.jpg";
+import blog_img from "@assets/img/blog/grid/business24-ciceu-futures.jpg";
+import blog_bg from "@assets/img/blog/grid/adevarul-mara-restaurant.jpg";
 import { SocialShare } from "@components/social";
 
 // blog data

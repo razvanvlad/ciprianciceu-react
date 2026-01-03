@@ -2,12 +2,12 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// brands 
-import brand_1 from '@assets/img/brand/brand-2.png';
-import brand_2 from '@assets/img/brand/brand-3.png';
-import brand_3 from '@assets/img/brand/brand-4.png';
-import brand_4 from '@assets/img/brand/brand-5.png';
-import brand_5 from '@assets/img/brand/brand-6.png';
+// brands
+import brand_1 from '@assets/img/brand/5/forbes-2x.png';
+import brand_2 from '@assets/img/brand/5/wall-street-2x.png';
+import brand_3 from '@assets/img/brand/5/barchart-2x.png';
+import brand_4 from '@assets/img/brand/5/digital-journal-2x.png';
+import brand_5 from '@assets/img/brand/5/now-payments-2x.png';
 
 
 const HomeBrandSlider = () => {

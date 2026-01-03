@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 // internal
-import title_icon from '@assets/img/about/about-me-title-icon.png';
+import title_icon from '@assets/img/about/14/about-shape-2.png';
 import {ArrowRightThree} from "@svg/index";
 
 const AboutMeInfo = () => {

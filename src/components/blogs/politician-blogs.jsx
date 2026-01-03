@@ -8,7 +8,7 @@ import blog_data from "@data/blog-data";
 const blog_items = blog_data.filter((blog) => blog.home_politician);
 const first_blog = blog_items.find((blog) => blog.p_blog_1);
 const big_blog = blog_items.find((blog) => blog.p_blog_big);
-const sm_blogs = blog_items.find((blog) => blog.sm_blogs).sm_blogs;
+const sm_blogs = blog_items.find((blog) => blog.sm_blogs)?.sm_blogs || [];
 
 const PoliticianBlogs = () => {
   return (

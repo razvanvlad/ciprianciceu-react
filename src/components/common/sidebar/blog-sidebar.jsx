@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import author from "@assets/img/blog/sidebar/sidebar-author.jpg";
+import author from "@assets/img/blog/grid/adevarul-mara-restaurant.jpg";
 import Search from "@svg/search";
-import rc_img_1 from "@assets/img/blog/sidebar/blog-sm-1.jpg";
-import rc_img_2 from "@assets/img/blog/sidebar/blog-sm-2.jpg";
-import rc_img_3 from "@assets/img/blog/sidebar/blog-sm-3.jpg";
+import rc_img_1 from "@assets/img/blog/grid/business24-ciceu-futures.jpg";
+import rc_img_2 from "@assets/img/blog/grid/celebritatea-ciceu-isuccess.jpg";
+import rc_img_3 from "@assets/img/blog/grid/kanald-betra-private-sale.jpg";
 import SingleRecentPost from "@components/blogs/single-blog/single-recent-post";
 
 // tags

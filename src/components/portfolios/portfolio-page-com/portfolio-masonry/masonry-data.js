@@ -1,15 +1,15 @@
-import img_1 from '@assets/img/portfolio/masonary/portfolio-masonary-1.jpg';                
-import img_2 from '@assets/img/portfolio/masonary/portfolio-masonary-2.jpg';                
-import img_3 from '@assets/img/portfolio/masonary/portfolio-masonary-3.jpg';                
-import img_4 from '@assets/img/portfolio/masonary/portfolio-masonary-4.jpg';                
-import img_5 from '@assets/img/portfolio/masonary/portfolio-masonary-5.jpg';                
-import img_6 from '@assets/img/portfolio/masonary/portfolio-masonary-6.jpg';                
-import img_7 from '@assets/img/portfolio/masonary/portfolio-masonary-7.jpg';                
-import img_8 from '@assets/img/portfolio/masonary/portfolio-masonary-8.jpg';                
-import img_9 from '@assets/img/portfolio/masonary/portfolio-masonary-9.jpg';                
-import img_10 from '@assets/img/portfolio/masonary/portfolio-masonary-10.jpg';                
-import img_11 from '@assets/img/portfolio/masonary/portfolio-masonary-11.jpg';                
-import img_12 from '@assets/img/portfolio/masonary/portfolio-masonary-12.jpg';               
+import img_1 from '@assets/img/portfolio/grid/portfolio-grid-1.jpg';
+import img_2 from '@assets/img/portfolio/grid/portfolio-grid-2.jpg';
+import img_3 from '@assets/img/portfolio/grid/portfolio-grid-3.jpg';
+import img_4 from '@assets/img/portfolio/grid/portfolio-grid-4.jpg';
+import img_5 from '@assets/img/portfolio/grid/portfolio-grid-5.jpg';
+import img_6 from '@assets/img/portfolio/grid/portfolio-grid-6.jpg';
+import img_7 from '@assets/img/portfolio/grid/portfolio-grid-7.jpg';
+import img_8 from '@assets/img/portfolio/grid/portfolio-grid-8.jpg';
+import img_9 from '@assets/img/portfolio/grid/portfolio-grid-9.jpg';
+import img_10 from '@assets/img/portfolio/grid/portfolio-grid-10.jpg';
+import img_11 from '@assets/img/portfolio/grid/portfolio-grid-11.jpg';
+import img_12 from '@assets/img/portfolio/grid/portfolio-grid-12.jpg';               
 
 
 const masonry_data = [

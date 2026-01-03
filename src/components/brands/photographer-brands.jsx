@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
 // internal
-import brand_1 from "@assets/img/brand/3/brand-1.png";
-import brand_2 from "@assets/img/brand/3/brand-2.png";
-import brand_3 from "@assets/img/brand/3/brand-3.png";
-import brand_4 from "@assets/img/brand/3/brand-4.png";
-import brand_5 from "@assets/img/brand/3/brand-5.png";
-import brand_6 from "@assets/img/brand/3/brand-6.png";
-import brand_7 from "@assets/img/brand/3/brand-7.png";
-import brand_8 from "@assets/img/brand/3/brand-8.png";
+import brand_1 from "@assets/img/brand/5/forbes-2x.png";
+import brand_2 from "@assets/img/brand/5/wall-street-2x.png";
+import brand_3 from "@assets/img/brand/5/barchart-2x.png";
+import brand_4 from "@assets/img/brand/5/digital-journal-2x.png";
+import brand_5 from "@assets/img/brand/5/now-payments-2x.png";
+import brand_6 from "@assets/img/brand/5/adevarul-2x.png";
+import brand_7 from "@assets/img/brand/5/antena3-2x.png";
+import brand_8 from "@assets/img/brand/5/ceo-times-2x.png";
 
 // single brand
 function SingleBrand({ src }) {

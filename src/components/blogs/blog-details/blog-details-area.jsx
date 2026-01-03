@@ -3,7 +3,7 @@ import Image from "next/image";
 // internal
 import blog_data from "@data/blog-data";
 import SingleGridItem from "../single-blog/single-grid-item";
-import blog_img from "@assets/img/blog/blog-big-1.jpg";
+import blog_img from "@assets/img/blog/grid/newsro.jpg";
 import PostNavigation from "./post-navigation";
 import PostShareWrapper from "./post-share-wrapper";
 import SingleMetaItem from "./single-meta-item";

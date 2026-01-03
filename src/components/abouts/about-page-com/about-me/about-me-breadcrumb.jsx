@@ -1,5 +1,5 @@
 import React from "react";
-import bg from '@assets/img/about/about-me-breadcrumb.jpg';
+import bg from '@assets/img/about/14/about-img-1.jpg';
 
 const AboutMeBreadcrumb = () => {
   return (
