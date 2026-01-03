@@ -5,8 +5,8 @@ import ElVideoStyleOne from "./el-video-style-1";
 import incentiveEgyptThumbnail from "@assets/img/video/thumbnail-INCENTIVE-EGYPT.jpg";
 import prezentareCandidatThumbnail from "@assets/img/video/prezentare-candidat.jpg";
 import euSuntCiprianThumbnail from "@assets/img/video/eu-sunt-ciprian-ciceu.jpg";
-import historyBehindThumbnail from "@assets/img/video/Ciceu Ciprian - History behind.jpg";
-import mainetDubaiThumbnail from "@assets/img/video/Mainet First Incentive in Dubai.jpg";
+import historyBehindThumbnail from "@assets/img/video/Ciceu-Ciprian-History-behind.jpg";
+import mainetDubaiThumbnail from "@assets/img/video/Mainet-First-Incentive-in-Dubai.jpg";
 import abidjanThumbnail from "@assets/img/video/MAINET-BIG-EVENT-ABIDJAN.jpg";
 
 
