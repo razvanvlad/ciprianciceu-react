@@ -88,6 +88,9 @@ import realitatea_img from '@assets/img/blog/grid/realitatea-betrader-academy.jp
 import prnewswire_img from '@assets/img/blog/grid/prnewswire-imperium-betra.jpg';
 import business24_img from '@assets/img/blog/grid/business24-ciceu-futures.jpg';
 import adevarul_mara_img from '@assets/img/blog/grid/adevarul-mara-restaurant.jpg';
+import celebritatea_img from '@assets/img/blog/grid/celebritatea-ciceu-isuccess.jpg';
+import wowbiz_betrapay_img from '@assets/img/blog/grid/wowbiz-betrapay.jpg';
+import newsweek_belgium_img from '@assets/img/blog/grid/newsweek-restaurant-belgium.jpg';
 // masonry images
 import masonry_img_1 from '@assets/img/blog/masonary/blog-masonary-1.jpg';
 import masonry_img_2 from '@assets/img/blog/masonary/blog-masonary-2.jpg';
@@ -122,6 +125,7 @@ import kanald_logo from '@assets/img/brand/5/kanald-2x.svg';
 import realitatea_logo from '@assets/img/brand/5/realitatea-2x.png';
 import prnewswire_logo from '@assets/img/brand/5/prnewswire-2x.png';
 import business24_logo from '@assets/img/brand/5/business24-2x.svg';
+import celebritatea_logo from '@assets/img/brand/5/celebritatea-2x.png';
 // svg icon
 import { Resource, Tutorial, UX } from '@svg/index';
 
@@ -1298,7 +1302,7 @@ const blog_data = [
   {
     id: 59,
     tag: ['Technology', 'Crypto', 'Payments'],
-    img: wowbiz_img,
+    img: wowbiz_betrapay_img,
     date: 'November 7, 2019',
     title: 'Betra Coin lansează propriul sistem de plată prin QR Code – BetraPay',
     sm_desc: 'BetraPay oferă wallet digital cu suport pentru 200 de criptomonede și plăți instant prin QR',
@@ -1439,7 +1443,7 @@ const blog_data = [
   {
     id: 63,
     tag: ['Social', 'Personal', 'Entrepreneurship'],
-    img: newsro_img,
+    img: newsweek_belgium_img,
     date: 'August 8, 2018',
     title: 'Înstrăinații – Ciprian Ciceu și povestea primului restaurant românesc din Belgia',
     sm_desc: 'Povestea emigrării în Belgia și a construirii primului restaurant românesc de către familia Ciceu',
@@ -1467,12 +1471,12 @@ const blog_data = [
   {
     id: 64,
     tag: ['Awards', 'Recognition', 'Success'],
-    img: clickro_img,
+    img: celebritatea_img,
     date: 'September 26, 2020',
     title: 'Ciprian Ciceu premiat la gala I Success – Oameni de succes',
     sm_desc: 'Recunoaștere publică pentru Leadership în Tehnologie Blockchain – Betra Coin la gala iSuccess',
     author_name: 'Celebritatea.ro',
-    outlet_logo: clickro_logo,
+    outlet_logo: celebritatea_logo,
     comments: 27,
     watch: '103k',
     blog_grid: true,
