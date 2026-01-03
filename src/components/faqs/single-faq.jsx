@@ -10,10 +10,10 @@ const SingleFaq = ({item}) => {
           <span className="accordion-btn"></span>
         </button>
       </h2>
-      <div id={`collapse${id}`} className={`accordion-collapse collapse ${show ? 'show' : ''}`} 
+      <div id={`collapse${id}`} className={`accordion-collapse collapse ${show ? 'show' : ''}`}
       aria-labelledby={`heading${id}`} data-bs-parent={`#${parent}`}>
         <div className="accordion-body">
-          <p>{desc}</p>
+          {typeof desc === 'string' ? <p>{desc}</p> : desc}
         </div>
       </div>
     </div>
