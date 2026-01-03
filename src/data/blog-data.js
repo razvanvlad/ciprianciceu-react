@@ -121,7 +121,7 @@ import kingnewswire_logo from '@assets/img/brand/5/kingnewswire-2x.png';
 import money_logo from '@assets/img/brand/5/money-2x.png';
 import spynews_logo from '@assets/img/brand/5/spynews-2x.svg';
 import observator_logo from '@assets/img/brand/5/observator-2x.svg';
-import kanald_logo from '@assets/img/brand/5/kanald-2x.svg';
+import kanald_logo from '@assets/img/brand/5/kanald-2x.png';
 import realitatea_logo from '@assets/img/brand/5/realitatea-2x.png';
 import prnewswire_logo from '@assets/img/brand/5/prnewswire-2x.png';
 import business24_logo from '@assets/img/brand/5/business24-2x.svg';
