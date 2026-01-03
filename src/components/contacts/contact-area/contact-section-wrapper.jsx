@@ -16,9 +16,9 @@ const ContactSectionWrapper = ({title,subtitle}) => {
               <span className="tp-section-subtitle-2 subtitle-mb-9">
                 {title}
               </span>
-              <h3 className="tp-section-title-2 font-70">
+              <h1 className="tp-section-title-2 font-70">
                 {subtitle}
-              </h3>
+              </h1>
             </div>
           </div>
         </div>

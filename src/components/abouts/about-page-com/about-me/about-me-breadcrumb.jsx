@@ -13,7 +13,7 @@ const AboutMeBreadcrumb = () => {
             <div
               className="about__me-content"
             >
-              <h3 className="about__me-title">About Me</h3>
+              <h1 className="about__me-title">About Me</h1>
             </div>
           </div>
         </div>

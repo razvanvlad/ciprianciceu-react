@@ -41,6 +41,8 @@ const MediaVideos = () => {
                       src={video.thumbnail}
                       alt={video.title}
                       style={{ width: "100%", height: "auto" }}
+                      loading="lazy"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
                     <div className="about__play">
                       <a
@@ -82,6 +84,8 @@ const MediaVideos = () => {
                         src={video.thumbnail}
                         alt={video.title}
                         style={{ width: "100%", height: "auto", aspectRatio: "9/16", objectFit: "cover" }}
+                        loading="lazy"
+                        sizes="(max-width: 768px) 100vw, 33vw"
                       />
                       <div className="about__play">
                         <a

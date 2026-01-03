@@ -27,13 +27,13 @@ const PortfolioBanner = () => {
               <div className="col-xl-7 col-lg-6 col-md-7">
                 <div className="slider__content-9">
                   <span className="section__title-pre">{pre_title}</span>
-                  <h3 className="section__title mb-4">
+                  <h1 className="section__title mb-4">
                     {title}{" "}
                     <span className="section__title-highlight">
                       {highlight_text}
                       <ShapeLine />
                     </span>
-                  </h3>
+                  </h1>
                   <p>{desc}</p>
 
                   <div className="slider__btn-9 mb-85">
@@ -90,6 +90,7 @@ const PortfolioBanner = () => {
                         className="layer"
                         src={shape_1}
                         alt="shape"
+                        loading="lazy"
                       />
                     </div>
                     <div className="slider__shape-21">
@@ -97,6 +98,7 @@ const PortfolioBanner = () => {
                         className="layer"
                         src={shape_2}
                         alt="shape"
+                        loading="lazy"
                       />
                     </div>
                   </div>

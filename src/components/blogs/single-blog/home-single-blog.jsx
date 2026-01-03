@@ -13,7 +13,12 @@ const HomeSingleBlog = ({blog}) => {
           <div className="blog__thumb m-img fix">
             <div className="tp-thumb-overlay wow"></div>
             <Link href={`/blog-details/${blog.id}`}>
-              <Image src={blog.img} alt="blog img" />
+              <Image
+                src={blog.img}
+                alt="blog img"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
             </Link>
           </div>
         </div>

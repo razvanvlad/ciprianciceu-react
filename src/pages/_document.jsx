@@ -4,10 +4,20 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        {/* Google Fonts */}
+        {/* DNS prefetch for external resources */}
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+        {/* Preconnect to critical origins */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+
+        {/* Preload critical hero image */}
         <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
+          rel="preload"
+          href="/assets/img/ciceu/ciceu-decupat.png"
+          as="image"
+          type="image/png"
         />
 
         <link rel="icon" href="/favicon.ico" />

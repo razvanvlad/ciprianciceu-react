@@ -68,6 +68,7 @@ export const VideoProvider = ({ children }) => {
                 className="video-modal-iframe"
                 controls
                 autoPlay
+                preload="metadata"
                 style={{ width: '100%', height: '100%', objectFit: 'contain' }}
               >
                 Your browser does not support the video tag.

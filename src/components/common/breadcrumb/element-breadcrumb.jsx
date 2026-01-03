@@ -21,9 +21,9 @@ const ElementBreadcrumb = ({title}) => {
         <div className="row justify-content-center">
           <div className="col-xxl-7 col-xl-8 col-lg-9">
             <div className="breadcrumb__content breadcrumb__content-2 p-relative z-index-1 text-center">
-              <h3 className="breadcrumb__title">
+              <h1 className="breadcrumb__title">
                 {title}
-              </h3>
+              </h1>
               <div className="breadcrumb__list">
                 <span>
                   <Link href="/home">Home</Link>

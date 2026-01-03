@@ -46,9 +46,9 @@ function SingleSliderItem({ img, tag, title, date, author_name, slug }) {
             <div className="blog__breadcrumb-tag">
               <span>{displayTag}</span>
             </div>
-            <h3 className="blog__breadcrumb-title">
+            <h1 className="blog__breadcrumb-title">
               <Link href={`/blog/${slug}`}>{title}</Link>
-            </h3>
+            </h1>
             <div className="blog__breadcrumb-meta">
               <span>
                 <DateTwo />{date}
