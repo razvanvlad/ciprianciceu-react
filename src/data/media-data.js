@@ -9,14 +9,48 @@ export const video_items = [
     title: 'Blockchain Education Masterclass',
     youtube_id: 'dQw4w9WgXcQ', // Replace with actual YouTube video ID
     thumbnail: video_thumb_1,
-    description: 'A comprehensive guide to blockchain technology and cryptocurrency fundamentals.'
+    description: 'A comprehensive guide to blockchain technology and cryptocurrency fundamentals.',
+    layout: 'horizontal'
   },
   {
     id: 2,
     title: 'Entrepreneurship Journey',
     youtube_id: 'dQw4w9WgXcQ', // Replace with actual YouTube video ID
     thumbnail: video_thumb_2,
-    description: 'Sharing insights and lessons learned from building successful ventures.'
+    description: 'Sharing insights and lessons learned from building successful ventures.',
+    layout: 'horizontal'
+  },
+  {
+    id: 3,
+    title: 'Ciprian Ciceu - Video 1',
+    video_url: '/assets/video/Ciceu-video-1.mp4',
+    thumbnail: video_thumb_1,
+    description: 'Exclusive content featuring Ciprian Ciceu.',
+    layout: 'vertical'
+  },
+  {
+    id: 4,
+    title: 'Ciprian Ciceu - Video 2',
+    video_url: '/assets/video/Ciceu-video-2.mp4',
+    thumbnail: video_thumb_2,
+    description: 'Behind the scenes with Ciprian Ciceu.',
+    layout: 'horizontal'
+  },
+  {
+    id: 5,
+    title: 'Ciprian Ciceu - Video 3',
+    video_url: '/assets/video/Ciceu-video-3.mp4',
+    thumbnail: video_thumb_1,
+    description: 'Insights and perspectives from Ciprian Ciceu.',
+    layout: 'vertical'
+  },
+  {
+    id: 6,
+    title: 'Ciprian Ciceu - Video 4',
+    video_url: '/assets/video/Ciceu-video-4.mp4',
+    thumbnail: video_thumb_2,
+    description: 'More exclusive content with Ciprian Ciceu.',
+    layout: 'vertical'
   }
 ];
 
