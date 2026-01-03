@@ -67,7 +67,7 @@
 /*  01. THEME DEFAULT CSS START
 /*----------------------------------------*/
 
-@import url($font-url);
+// REMOVED: @import url($font-url); - Using Next.js optimized fonts instead
 
 *{
 	margin: 0;
