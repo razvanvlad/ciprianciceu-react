@@ -12,7 +12,7 @@ const TextArea = () => {
               data-wow-duration="1s"
             >
               <h3 className="about__text-title">
-                It started with a <br /> bang now we are here.
+                Introduction
               </h3>
             </div>
           </div>
@@ -23,18 +23,10 @@ const TextArea = () => {
               data-wow-duration="1s"
             >
               <p>
-                Ut at maximus magna. Vestibulum interdum sapien in facilisis
-                imperdiet. Pellentesque habitant morbi tristique senectus et
-                netus et malesuada fames ac turpis egestas. Proin ac placerat
-                risus. Nullam eget tortor felis. Nulla facilisi.Vestibulum
-                mattis diam non luctus elementum. Cras sollicitudin, nisi in
-                semper viverra, felis diam consequat mi, quis tincidunt ligula
+                Ciprian Ciceu is a technology entrepreneur, blockchain educator and founder with extensive experience in building digital platforms, automated systems and international communities across fintech, blockchain and emerging technologies. His professional journey spans more than a decade and reflects a consistent focus on innovation grounded in education, structure and long-term sustainability.
               </p>
-
               <p>
-                Nam nibh diam, varius quis lectus eget, laoreet cursus metus.
-                morbi augue lectus, dapibus eget justo nec, consectetur auctor
-                nis luctus neque.!
+                Throughout his career, Ciprian has worked at the intersection of technology and finance, contributing to the development of scalable digital ecosystems and educational initiatives designed to make complex technologies more accessible. His approach emphasizes responsibility, transparency and practical execution, positioning technology as a tool for empowerment rather than speculation.
               </p>
             </div>
           </div>

@@ -20,10 +20,10 @@ const AboutCta = ({ element_style = false }) => {
           <div className="row align-items-center">
             <div className="col-xxl-8 col-xl-8 col-lg-8">
               <div className="cta__content-5">
-                <span>Get to meet Your Next Agency</span>
+                <span>Contact and Professional Inquiries</span>
 
                 <h3 className="cta__title-5">
-                  Let’s talk about your next business challenge
+                  For media requests, speaking engagements or professional collaboration
                 </h3>
               </div>
             </div>
