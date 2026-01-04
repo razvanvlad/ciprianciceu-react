@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "analyze": "ANALYZE=true next build",
     "clean": "rm -rf node_modules yarn.lock package-lock.json .next",
     "lint": "eslint ."
   },
@@ -34,6 +35,7 @@
     "yup": "^1.7.1"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^16.1.1",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "glob-all": "^3.3.1",

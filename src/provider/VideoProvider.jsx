@@ -1,5 +1,13 @@
 "use client";
 import { createContext, useContext, useState, useCallback } from "react";
+import dynamic from "next/dynamic";
+
+// Lazy load video modal only when needed
+const VideoModalContent = dynamic(
+  () => import("@components/common/modals/video-modal-content"),
+  { ssr: false }
+);
+
 const VideoContext = createContext({
   isVideoOpen: false,
   videoUrl: "",
@@ -36,54 +44,16 @@ export const VideoProvider = ({ children }) => {
     setIsLocalVideo(false);
   }, []);
 
-  const handleBackdropClick = (e) => {
-    if (e.target === e.currentTarget) {
-      closeVideo();
-    }
-  };
-
   return (
     <VideoContext.Provider value={{ isVideoOpen, videoUrl, isLocalVideo, playVideo, closeVideo }}>
       {children}
 
       {isVideoOpen && (
-        <div className="video-modal-overlay">
-          {/* Click outside to close */}
-          <div
-            className="video-modal-backdrop"
-            onClick={handleBackdropClick}
-          ></div>
-
-          <div className="video-modal-container">
-            <button
-              onClick={closeVideo}
-              className="video-modal-close"
-              aria-label="Close video modal"
-            >
-              ×
-            </button>
-            {isLocalVideo ? (
-              <video
-                src={videoUrl}
-                className="video-modal-iframe"
-                controls
-                autoPlay
-                preload="metadata"
-                style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-              >
-                Your browser does not support the video tag.
-              </video>
-            ) : (
-              <iframe
-                src={videoUrl}
-                className="video-modal-iframe"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                title="Video player"
-              ></iframe>
-            )}
-          </div>
-        </div>
+        <VideoModalContent
+          videoUrl={videoUrl}
+          isLocalVideo={isLocalVideo}
+          closeVideo={closeVideo}
+        />
       )}
     </VideoContext.Provider>
   );

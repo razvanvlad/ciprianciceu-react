@@ -17,7 +17,7 @@ export default function Document() {
           rel="preload"
           href="/assets/img/ciceu/ciceu-decupat.webp"
           as="image"
-          type="image/png"
+          type="image/webp"
         />
 
         <link rel="icon" href="/favicon.ico" />
