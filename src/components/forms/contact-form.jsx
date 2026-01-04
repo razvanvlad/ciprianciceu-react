@@ -5,8 +5,8 @@ import { contact_schema } from "@utils/validation-schema";
 import ErrorMsg from "./error-msg";
 
 const ContactForm = ({ style_2 = false }) => {
-    // use formik
-    const { handleChange, handleSubmit, handleBlur, errors, values, touched } =
+  // use formik
+  const { handleChange, handleSubmit, handleBlur, errors, values, touched } =
     useFormik({
       initialValues: {
         name: "",
@@ -113,8 +113,8 @@ const ContactForm = ({ style_2 = false }) => {
             <div className="contact__form-call float-md-end">
               <span>Call for Consultation</span>
               <p>
-                <a href="tel:2236-384-870">
-                  <i className="fa-solid fa-phone-flip"></i> +2236 384 870
+                <a href="tel:+971502809015">
+                  <i className="fa-solid fa-phone-flip"></i> +971/502809015
                 </a>
               </p>
             </div>

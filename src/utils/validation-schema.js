@@ -6,14 +6,14 @@ export const law_schema = Yup.object().shape({
   lastName: Yup.string().required().label("Last Name"),
   email: Yup.string().required().email().label("Email"),
   phone: Yup.string().required().min(11).label("Phone"),
-  msg: Yup.string().required().min(20).label("Message"),
+  msg: Yup.string().required().min(10).label("Message"),
 });
 
 // contact_schema
 export const contact_schema = Yup.object().shape({
   name: Yup.string().required().label("Name"),
   email: Yup.string().required().email().label("Email"),
-  phone: Yup.string().required().min(11).label("Phone"),
+  phone: Yup.string().required().min(10).label("Phone"),
   company: Yup.string().required().label("Company"),
   msg: Yup.string().required().min(20).label("Message"),
 });
@@ -32,7 +32,7 @@ export const register_schema = Yup.object().shape({
   email: Yup.string().required().email().label("Email"),
   password: Yup.string().required().min(6).label("Password"),
   passwordConfirmation: Yup.string()
-     .oneOf([Yup.ref('password'), null], 'Passwords must match')
+    .oneOf([Yup.ref('password'), null], 'Passwords must match')
 });
 
 export const login_schema = Yup.object().shape({
@@ -46,5 +46,5 @@ export const blogSchema = Yup.object().shape({
   email: Yup.string().required().email().label("Email"),
   number: Yup.string().required().min(11).label("Number"),
   msg: Yup.string().required().min(20).label("Message"),
-  terms:Yup.bool().oneOf([true,'You need to accept the terms and conditions']),
+  terms: Yup.bool().oneOf([true, 'You need to accept the terms and conditions']),
 });

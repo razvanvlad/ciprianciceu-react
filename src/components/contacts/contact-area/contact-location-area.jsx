@@ -65,22 +65,21 @@ const ContactLocationArea = () => {
           <div className="col-xl-10 ">
             <div className="contact__location-wrapper">
               <SingleLocationItem
-                title="Australia Office"
+                title="ROMÂNIA - TRADING ACADEMY"
                 icon={location_icon_1}
-                location="contact.location@website.com"
-                tel="686-324-6838"
+                location="Bucuresti, Bulevardul Pipera nr 31"
+                tel="+40746847493"
               />
               <SingleLocationItem
-                title="San Francisco Office"
+                title="DUBAI UAE - COMPANY OFFICE"
                 icon={location_icon_2}
-                location="contact.location@website.com"
-                tel="686-324-6810"
+                location="Silicon Oasis Digital Park A1 (UNITED ARAB EMIRATES) "
+                tel="+971/502809015"
               />
               <SingleLocationItem
-                title="Egpyt Office"
+                title="BELGIUM BRUXELLES - TRADING ACADEMY"
                 icon={location_icon_3}
-                location="contact.location@website.com"
-                tel="786-324-6810"
+                location="Avenue Louise nr 173, 1050 Bruxelles"
               />
             </div>
           </div>
