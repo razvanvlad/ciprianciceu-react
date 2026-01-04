@@ -1,5 +1,5 @@
 // external
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 
@@ -77,16 +77,7 @@ const AgencyBrands = ({
   pt = "",
   pb = ""
 }) => {
-
-  const sliderRef = useRef();
-  let autoplayOn = true;
-  let autoplaySpeed = 0;
-  useEffect(() => {
-    setInterval(function () {
-      if (!autoplayOn) return;
-      sliderRef?.current?.slickPrev();
-    }, autoplaySpeed);
-  }, [autoplayOn, autoplaySpeed]);
+  // Removed manual autoplay interval since sliders already have autoplay configured in settings
 
   return (
     <>
@@ -123,7 +114,6 @@ const AgencyBrands = ({
                   <Slider
                     {...settings_2}
                     className="brand__slider-active-5-1"
-                    ref={sliderRef}
                   >
                     {brand_2_data.map((brand, i) => (
                       <div key={i} className="brand__item-5">
