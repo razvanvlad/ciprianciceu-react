@@ -3,20 +3,20 @@
 
 $font-url: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap';
 
-// font family - Optimized to 2 fonts only (Inter + Space Grotesk)
+// font family - Optimized to 2 fonts only (Inter + Poppins)
 $font-family: (
     ff: (
-        'body': "var(--font-inter), sans-serif", // PRIMARY body font
-        'heading': "var(--font-space-grotesk), sans-serif", // PRIMARY heading font
-        'p': "var(--font-inter), sans-serif", // paragraph font
-        'inter': "var(--font-inter), sans-serif", // inter font
-        'roboto': "var(--font-inter), sans-serif", // MAPPED: roboto → inter
-        'oswald': "var(--font-space-grotesk), sans-serif", // MAPPED: oswald → space grotesk
-        'poppins': "var(--font-inter), sans-serif", // MAPPED: poppins → inter
-        'space': "var(--font-space-grotesk), sans-serif", // space grotesk
-        'play': "var(--font-space-grotesk), serif", // MAPPED: playfair → space grotesk
-        'syne': "var(--font-space-grotesk), sans-serif", // MAPPED: syne → space grotesk
-        'rajdhani': "var(--font-space-grotesk), sans-serif", // MAPPED: rajdhani → space grotesk
+        'body': "Inter, sans-serif", // PRIMARY body font
+        'heading': "Poppins, sans-serif", // PRIMARY heading font
+        'p': "Inter, sans-serif", // paragraph font
+        'inter': "Inter, sans-serif", // inter font
+        'roboto': "Inter, sans-serif", // MAPPED: roboto → inter
+        'oswald': "Poppins, sans-serif", // MAPPED: oswald → poppins
+        'poppins': "Poppins, sans-serif", // poppins font
+        'space': "Poppins, sans-serif", // MAPPED: space grotesk → poppins
+        'play': "Poppins, serif", // MAPPED: playfair → poppins
+        'syne': "Poppins, sans-serif", // MAPPED: syne → poppins
+        'rajdhani': "Poppins, sans-serif", // MAPPED: rajdhani → poppins
         'fontawesome': '"Font Awesome 6 Pro"', // fontawesome (icon font)
     )
 );

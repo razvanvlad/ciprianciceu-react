@@ -1,6 +1,6 @@
-import { Inter, Space_Grotesk } from 'next/font/google';
+import { Inter, Poppins } from 'next/font/google';
 
-// Body font - Inter (181 uses) - PRIMARY BODY FONT
+// Body font - Inter - PRIMARY BODY FONT (p tags, normal text)
 export const inter = Inter({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
@@ -8,17 +8,17 @@ export const inter = Inter({
   variable: '--font-inter',
 });
 
-// Heading font - Space Grotesk (330 uses) - PRIMARY HEADING FONT
-export const spaceGrotesk = Space_Grotesk({
+// Heading font - Poppins - PRIMARY HEADING FONT (h1-h6)
+export const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   display: 'swap',
-  variable: '--font-space-grotesk',
+  variable: '--font-poppins',
 });
 
-// REMOVED FONTS (mapped to Inter/Space Grotesk in typography.scss):
+// REMOVED FONTS (mapped to Inter/Poppins in typography.scss):
 // - Roboto (79 uses) → Inter
-// - Syne (59 uses) → Space Grotesk
-// - Oswald (27 uses) → Space Grotesk
-// - Rajdhani (9 uses) → Space Grotesk
-// - Poppins (1 use) → Inter
+// - Syne (59 uses) → Poppins
+// - Oswald (27 uses) → Poppins
+// - Rajdhani (9 uses) → Poppins
+// - Space Grotesk (330 uses) → Poppins
