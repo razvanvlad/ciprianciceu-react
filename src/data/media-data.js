@@ -20,38 +20,38 @@ export const video_items = [
     description: 'Sharing insights and lessons learned from building successful ventures.',
     layout: 'horizontal'
   },
-  {
-    id: 3,
-    title: 'Ciprian Ciceu - Video 1',
-    video_url: '/assets/video/Ciceu-video-1.mp4',
-    thumbnail: video_thumb_1,
-    description: 'Exclusive content featuring Ciprian Ciceu.',
-    layout: 'vertical'
-  },
-  {
-    id: 4,
-    title: 'Ciprian Ciceu - Video 2',
-    video_url: '/assets/video/Ciceu-video-2.mp4',
-    thumbnail: video_thumb_2,
-    description: 'Behind the scenes with Ciprian Ciceu.',
-    layout: 'horizontal'
-  },
-  {
-    id: 5,
-    title: 'Ciprian Ciceu - Video 3',
-    video_url: '/assets/video/Ciceu-video-3.mp4',
-    thumbnail: video_thumb_1,
-    description: 'Insights and perspectives from Ciprian Ciceu.',
-    layout: 'vertical'
-  },
-  {
-    id: 6,
-    title: 'Ciprian Ciceu - Video 4',
-    video_url: '/assets/video/Ciceu-video-4.mp4',
-    thumbnail: video_thumb_2,
-    description: 'More exclusive content with Ciprian Ciceu.',
-    layout: 'vertical'
-  }
+  // {
+  //   id: 3,
+  //   title: 'Ciprian Ciceu - Video 1',
+  //   video_url: '/assets/video/Ciceu-video-1.mp4',
+  //   thumbnail: video_thumb_1,
+  //   description: 'Exclusive content featuring Ciprian Ciceu.',
+  //   layout: 'vertical'
+  // },
+  // {
+  //   id: 4,
+  //   title: 'Ciprian Ciceu - Video 2',
+  //   video_url: '/assets/video/Ciceu-video-2.mp4',
+  //   thumbnail: video_thumb_2,
+  //   description: 'Behind the scenes with Ciprian Ciceu.',
+  //   layout: 'horizontal'
+  // },
+  // {
+  //   id: 5,
+  //   title: 'Ciprian Ciceu - Video 3',
+  //   video_url: '/assets/video/Ciceu-video-3.mp4',
+  //   thumbnail: video_thumb_1,
+  //   description: 'Insights and perspectives from Ciprian Ciceu.',
+  //   layout: 'vertical'
+  // },
+  // {
+  //   id: 6,
+  //   title: 'Ciprian Ciceu - Video 4',
+  //   video_url: '/assets/video/Ciceu-video-4.mp4',
+  //   thumbnail: video_thumb_2,
+  //   description: 'More exclusive content with Ciprian Ciceu.',
+  //   layout: 'vertical'
+  // }
 ];
 
 // Press & Media Coverage Items

@@ -67,39 +67,40 @@ const ElementsVideoMain = () => {
   const sortedYoutubeVideos = [...youtubeVideos].sort((a, b) => b.dateObj - a.dateObj);
 
   // Local MP4 Videos - all using History Behind thumbnail
-  const localVideos = [
-    {
-      videoId: "/assets/video/Ciceu-video-1.mp4",
-      thumbnail: historyBehindThumbnail,
-      title: "Ciprian Ciceu - Exclusive Content 1",
-      date: "Jan 3, 2026",
-      description: "Exclusive content featuring Ciprian Ciceu"
-    },
-    {
-      videoId: "/assets/video/Ciceu-video-2.mp4",
-      thumbnail: historyBehindThumbnail,
-      title: "Ciprian Ciceu - Behind the Scenes",
-      date: "Jan 3, 2026",
-      description: "Behind the scenes with Ciprian Ciceu"
-    },
-    {
-      videoId: "/assets/video/Ciceu-video-3.mp4",
-      thumbnail: historyBehindThumbnail,
-      title: "Ciprian Ciceu - Insights & Perspectives",
-      date: "Jan 3, 2026",
-      description: "Insights and perspectives from Ciprian Ciceu"
-    },
-    {
-      videoId: "/assets/video/Ciceu-video-4.mp4",
-      thumbnail: historyBehindThumbnail,
-      title: "Ciprian Ciceu - Exclusive Content 2",
-      date: "Jan 3, 2026",
-      description: "More exclusive content with Ciprian Ciceu"
-    }
-  ];
+  // const localVideos = [
+  //   {
+  //     videoId: "/assets/video/Ciceu-video-1.mp4",
+  //     thumbnail: historyBehindThumbnail,
+  //     title: "Ciprian Ciceu - Exclusive Content 1",
+  //     date: "Jan 3, 2026",
+  //     description: "Exclusive content featuring Ciprian Ciceu"
+  //   },
+  //   {
+  //     videoId: "/assets/video/Ciceu-video-2.mp4",
+  //     thumbnail: historyBehindThumbnail,
+  //     title: "Ciprian Ciceu - Behind the Scenes",
+  //     date: "Jan 3, 2026",
+  //     description: "Behind the scenes with Ciprian Ciceu"
+  //   },
+  //   {
+  //     videoId: "/assets/video/Ciceu-video-3.mp4",
+  //     thumbnail: historyBehindThumbnail,
+  //     title: "Ciprian Ciceu - Insights & Perspectives",
+  //     date: "Jan 3, 2026",
+  //     description: "Insights and perspectives from Ciprian Ciceu"
+  //   },
+  //   {
+  //     videoId: "/assets/video/Ciceu-video-4.mp4",
+  //     thumbnail: historyBehindThumbnail,
+  //     title: "Ciprian Ciceu - Exclusive Content 2",
+  //     date: "Jan 3, 2026",
+  //     description: "More exclusive content with Ciprian Ciceu"
+  //   }
+  // ];
 
   // Combine: sorted YouTube videos first, then local videos
-  const videos = [...sortedYoutubeVideos, ...localVideos];
+  // const videos = [...sortedYoutubeVideos, ...localVideos];
+  const videos = [...sortedYoutubeVideos];
 
   return (
     <React.Fragment>
