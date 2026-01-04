@@ -3,6 +3,12 @@ import SingleFaq from "./single-faq";
 
 // faq items
 export function AccordionItems({ parent_id }) {
+  const [openId, setOpenId] = React.useState(parent_id ? `one-${parent_id}` : "One");
+
+  const handleToggle = (id) => {
+    setOpenId(openId === id ? null : id);
+  };
+
   // data
   const faq_items = [
     {
@@ -34,7 +40,12 @@ export function AccordionItems({ parent_id }) {
   return (
     <div className="accordion" id={`${parent_id ? parent_id : "faqaccordion"}`}>
       {faq_items.map((item) => (
-        <SingleFaq key={item.id} item={item} />
+        <SingleFaq
+          key={item.id}
+          item={item}
+          isOpen={openId === item.id}
+          onToggle={() => handleToggle(item.id)}
+        />
       ))}
     </div>
   );

@@ -17,25 +17,45 @@ export function TabItem({ active, id, accordion_items }) {
     >
       {/* <!-- faq item one of community question --> */}
       {accordion_items.map((item, i) => (
-        <div key={i} className="faq__item pb-95">
-          <div className="row">
-            <div className="col-xl-3 col-lg-3 col-md-4">
-              <div className="faq__content">
-                <h3 className="faq__title-2">{item.title}</h3>
-              </div>
-            </div>
-            <div className="col-xl-9 col-lg-9 col-md-8">
-              <div className="faq__wrapper faq__style-4 tp-accordion">
-                <div className="accordion" id={`${id}-${i + 1}_accordion`}>
-                  {item.accordions.map((item) => (
-                    <SingleFaq key={item.id} item={item} />
-                  ))}
-                </div>
-              </div>
+        <AccordionGroup key={i} item={item} groupId={`${id}-${i + 1}`} />
+      ))}
+    </div>
+  );
+}
+
+// AccordionGroup - manages state for each group of accordions
+function AccordionGroup({ item, groupId }) {
+  const [openId, setOpenId] = React.useState(
+    item.accordions.find(acc => acc.show)?.id || item.accordions[0]?.id
+  );
+
+  const handleToggle = (itemId) => {
+    setOpenId(openId === itemId ? null : itemId);
+  };
+
+  return (
+    <div className="faq__item pb-95">
+      <div className="row">
+        <div className="col-xl-3 col-lg-3 col-md-4">
+          <div className="faq__content">
+            <h3 className="faq__title-2">{item.title}</h3>
+          </div>
+        </div>
+        <div className="col-xl-9 col-lg-9 col-md-8">
+          <div className="faq__wrapper faq__style-4 tp-accordion">
+            <div className="accordion" id={`${groupId}_accordion`}>
+              {item.accordions.map((accordionItem) => (
+                <SingleFaq
+                  key={accordionItem.id}
+                  item={accordionItem}
+                  isOpen={openId === accordionItem.id}
+                  onToggle={() => handleToggle(accordionItem.id)}
+                />
+              ))}
             </div>
           </div>
         </div>
-      ))}
+      </div>
     </div>
   );
 }

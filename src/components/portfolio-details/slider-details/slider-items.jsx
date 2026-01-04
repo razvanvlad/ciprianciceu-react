@@ -1,13 +1,7 @@
 import React, { useRef } from "react";
 import Image from "next/image";
-import dynamic from "next/dynamic";
+import Slider from "react-slick";
 import Link from 'next/link';
-
-// Lazy load Slider to reduce initial bundle size
-const Slider = dynamic(() => import("react-slick"), {
-  ssr: false,
-  loading: () => <div>Loading...</div>
-});
 // internal
 import img_1 from "@assets/img/portfolio/details/mainetx-project.png";
 import img_2 from "@assets/img/portfolio/details/betrader-courses.png";
@@ -56,7 +50,7 @@ const settings = {
   speed: 1000,
   slidesToShow: 1,
   slidesToScroll: 1,
-  rtl: true,
+  rtl: false,
 };
 
 //ImageStyle

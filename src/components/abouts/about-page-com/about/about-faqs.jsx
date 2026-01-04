@@ -100,6 +100,11 @@ const faq_items = [
 
 const AboutFaqs = ({ element_faq = false }) => {
   const { playVideo } = useVideoModal();
+  const [openId, setOpenId] = React.useState("about-one");
+
+  const handleToggle = (id) => {
+    setOpenId(openId === id ? null : id);
+  };
 
   return (
     <React.Fragment>
@@ -136,7 +141,12 @@ const AboutFaqs = ({ element_faq = false }) => {
                 </div>
                 <div className="accordion" id="faqaccordion">
                   {faq_items.map((item) => (
-                    <SingleFaq key={item.id} item={item} />
+                    <SingleFaq
+                      key={item.id}
+                      item={item}
+                      isOpen={openId === item.id}
+                      onToggle={() => handleToggle(item.id)}
+                    />
                   ))}
                 </div>
               </div>

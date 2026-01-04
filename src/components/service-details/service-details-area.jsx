@@ -58,6 +58,12 @@ function NavItem({ active = false, icon, title }) {
 }
 
 const ServiceDetailsArea = () => {
+  const [openId, setOpenId] = React.useState("One");
+
+  const handleToggle = (itemId) => {
+    setOpenId(openId === itemId ? null : itemId);
+  };
+
   return (
     <section className="services__area pt-120 pb-125">
       <div className="container">
@@ -171,7 +177,12 @@ const ServiceDetailsArea = () => {
                 <div className="faq__tab-content tp-accordion">
                   <div className="accordion" id="general_accordion">
                     {faq_items.map((item) => (
-                      <SingleFaq key={item.id} item={item} />
+                      <SingleFaq
+                        key={item.id}
+                        item={item}
+                        isOpen={openId === item.id}
+                        onToggle={() => handleToggle(item.id)}
+                      />
                     ))}
                   </div>
                 </div>

@@ -1,6 +1,6 @@
+// WOW.js animation library removed for performance optimization
 export const animationCreate = () => {
-  if (typeof window !== "undefined") {
-    window.WOW = require("wowjs");
-  }
-  new WOW.WOW({live: false}).init()
+  // Disabled - WOW.js package uninstalled
+  // Animations now handled by Framer Motion or CSS
+  return null;
 };

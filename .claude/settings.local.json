@@ -20,7 +20,17 @@
       "Bash(du:*)",
       "Bash(set ANALYZE=true)",
       "Bash(npm run dev:*)",
-      "Bash(timeout /t 10 /nobreak)"
+      "Bash(timeout /t 10 /nobreak)",
+      "Bash(wc:*)",
+      "Bash(cat:*)",
+      "Bash(xargs ls:*)",
+      "Bash(powershell -Command \"Get-ChildItem -Path ''public/assets/scss'' -Recurse -Filter ''*.scss'' | Select-Object @{Name=''Size\\(KB\\)'';Expression={[math]::Round\\($_Length/1024,2\\)}}, FullName | Sort-Object ''Size\\(KB\\)'' -Descending | Format-Table\")",
+      "Bash(powershell:*)",
+      "Bash(while read f)",
+      "Bash(npm uninstall:*)",
+      "Bash(rm:*)",
+      "Bash(taskkill:*)",
+      "Bash(del /f \".next\\\\dev\\\\lock\")"
     ]
   }
 }

@@ -1,12 +1,6 @@
 import React, { useState } from "react";
-import dynamic from "next/dynamic";
+import Slider from "react-slick";
 import Image from "next/image";
-
-// Lazy load Slider
-const Slider = dynamic(() => import("react-slick"), {
-  ssr: false,
-  loading: () => <div>Loading...</div>
-});
 // user images
 import user_1 from "@assets/img/users/user-1.jpg";
 import user_2 from "@assets/img/users/user-2.jpg";

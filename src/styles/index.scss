@@ -1,8 +1,15 @@
-@forward '../../public/assets/css/bootstrap.css';
-@forward "swiper/css/bundle";
-@forward "slick-carousel/slick/slick.css";
-@forward 'react-photo-view/dist/react-photo-view.css';
-@forward '@assets/scss/main.scss';
+// Import Bootstrap grid and utilities only (~80 KB vs 243 KB full Bootstrap)
+@import "bootstrap/dist/css/bootstrap-grid.min.css";
+@import "bootstrap/dist/css/bootstrap-utilities.min.css";
+
+// Import carousel and main styles
+@import "slick-carousel/slick/slick.css";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/scrollbar";
+@import "swiper/css/effect-fade";
+@import '../../public/assets/scss/main.scss';
 
 // Video modal style 
 .video-modal-overlay {
@@ -100,5 +107,95 @@
 
 .article-content li {
   margin-bottom: 0.5rem;
+}
+
+/* Accordion Collapse Animation - Custom since Bootstrap JS is removed */
+.accordion-collapse {
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.accordion-collapse:not(.show) {
+  height: 0 !important;
+  display: none;
+}
+
+.accordion-collapse.show {
+  height: auto;
+  display: block;
+}
+
+/* Fix FAQ video to maintain consistent size */
+.faq__area.p-relative {
+  min-height: 900px;
+
+  @media (max-width: 1399px) {
+    min-height: 950px;
+  }
+
+  @media (max-width: 1199px) {
+    min-height: 1000px;
+  }
+
+  @media (max-width: 991px) {
+    min-height: auto;
+  }
+}
+
+.faq__video {
+  @media (min-width: 992px) {
+    height: 780px !important;
+    min-height: 780px;
+  }
+}
+
+/* Center play button in video circle */
+.faq__video-btn a,
+.media-play-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  background-color: var(--tp-common-white);
+  border-radius: 50%;
+  color: var(--tp-theme-1);
+
+  svg {
+    transform: translateX(2px) !important;
+    margin: 0;
+  }
+
+  &::after,
+  &::before {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 40px rgba(3, 4, 28, 0.06);
+    backdrop-filter: blur(4px);
+  }
+}
+
+/* Center social media icons (X/Twitter fix) */
+.footer__social a,
+.offcanvas__social a,
+.slider__social-9 ul li a,
+.slider__social a,
+[class*="__social"] a {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+
+  svg {
+    display: block;
+    vertical-align: middle;
+  }
+
+  i {
+    display: block;
+    vertical-align: middle;
+  }
 }
 

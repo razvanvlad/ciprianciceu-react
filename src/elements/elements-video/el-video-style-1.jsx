@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 // internal
 import about_img from "@assets/img/about/6/about-1.jpg";
-import play_icon from "@assets/img/about/6/about-play-icon.png";
+import { PlayThree } from "@svg/index";
 import { useVideoModal } from "src/provider/VideoProvider";
 
 const ElVideoStyleOne = ({
@@ -55,10 +55,9 @@ const ElVideoStyleOne = ({
                     <a
                       style={{ cursor: "pointer" }}
                       onClick={() => playVideo(videoId)}
-                      className="about__play-btn popup-video tp-pulse-border"
+                      className="popup-video tp-pulse-border media-play-btn"
                     >
-                      <span className="video-play-bg"></span>
-                      <Image src={play_icon} alt="play icon" />
+                      <PlayThree />
                     </a>
                   </div>
                 </div>

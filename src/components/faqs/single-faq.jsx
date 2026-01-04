@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const SingleFaq = ({item}) => {
-  const {title,desc,id,show,parent} = item || {};
+const SingleFaq = ({item, isOpen, onToggle}) => {
+  const {title, desc, id} = item || {};
+
   return (
     <div className="accordion-item">
       <h2 className="accordion-header" id={`heading${id}`}>
-        <button className={`accordion-button ${show ? '' : 'collapsed'}`} type="button" data-bs-toggle="collapse" data-bs-target={`#collapse${id}`} aria-expanded={show ? 'true' : 'false'} aria-controls={`collapse${id}`}>
+        <button
+          className={`accordion-button ${!isOpen ? 'collapsed' : ''}`}
+          type="button"
+          onClick={onToggle}
+          aria-expanded={isOpen ? 'true' : 'false'}
+          aria-controls={`collapse${id}`}
+        >
           {title}
           <span className="accordion-btn"></span>
         </button>
       </h2>
-      <div id={`collapse${id}`} className={`accordion-collapse collapse ${show ? 'show' : ''}`}
-      aria-labelledby={`heading${id}`} data-bs-parent={`#${parent}`}>
+      <div
+        id={`collapse${id}`}
+        className={`accordion-collapse collapse ${isOpen ? 'show' : ''}`}
+        aria-labelledby={`heading${id}`}
+      >
         <div className="accordion-body">
           {typeof desc === 'string' ? <p>{desc}</p> : desc}
         </div>

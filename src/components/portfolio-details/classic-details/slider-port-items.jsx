@@ -1,12 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import dynamic from "next/dynamic";
-
-// Lazy load Slider
-const Slider = dynamic(() => import("react-slick"), {
-  ssr: false,
-  loading: () => <div>Loading...</div>
-});
+import Slider from "react-slick";
 // internal
 import img_1 from "@assets/img/portfolio/details/slider/portfolio-details-slider-1.jpg";
 import img_2 from "@assets/img/portfolio/details/slider/portfolio-details-slider-2.jpg";

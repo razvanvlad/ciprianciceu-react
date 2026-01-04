@@ -1,12 +1,6 @@
 import Link from "next/link";
 import React, { useEffect, useRef } from "react";
-import dynamic from "next/dynamic";
-
-// Lazy load Slider
-const Slider = dynamic(() => import("react-slick"), {
-  ssr: false,
-  loading: () => <div>Loading...</div>
-});
+import Slider from "react-slick";
 
 // slider top
 const slider_top = {

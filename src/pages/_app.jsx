@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import SEO from "@components/seo";
 import "../styles/index.scss";
 import { VideoProvider } from "src/provider/VideoProvider";
@@ -26,15 +25,7 @@ export function reportWebVitals(metric) {
 }
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    // Lazy load Bootstrap after initial render
-    const timer = setTimeout(() => {
-      if (typeof window !== "undefined") {
-        import("bootstrap/dist/js/bootstrap");
-      }
-    }, 100);
-    return () => clearTimeout(timer);
-  }, []);
+  // Bootstrap removed - using custom components and utilities
 
   return (
     <div

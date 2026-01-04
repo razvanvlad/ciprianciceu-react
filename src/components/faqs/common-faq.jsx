@@ -25,6 +25,14 @@ export function NavItem({ active, id, title, icon }) {
 
 // tab item
 function TabItem({ active, id, accordion_items }) {
+  const [openId, setOpenId] = React.useState(
+    accordion_items.find(item => item.show)?.id || accordion_items[0]?.id
+  );
+
+  const handleToggle = (itemId) => {
+    setOpenId(openId === itemId ? null : itemId);
+  };
+
   return (
     <div
       className={`tab-pane fade ${active ? "show active" : ""}`}
@@ -34,7 +42,12 @@ function TabItem({ active, id, accordion_items }) {
     >
       <div className="accordion" id={`${id}_accordion`}>
         {accordion_items.map((item) => (
-          <SingleFaq key={item.id} item={item} />
+          <SingleFaq
+            key={item.id}
+            item={item}
+            isOpen={openId === item.id}
+            onToggle={() => handleToggle(item.id)}
+          />
         ))}
       </div>
     </div>

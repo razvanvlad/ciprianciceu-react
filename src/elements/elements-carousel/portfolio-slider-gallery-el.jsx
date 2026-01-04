@@ -1,14 +1,8 @@
 import React, { useRef } from "react";
 // internal
 import portfolio_data from "@data/portfolio-data";
-import dynamic from "next/dynamic";
+import Slider from "react-slick";
 import Image from "next/image";
-
-// Lazy load Slider
-const Slider = dynamic(() => import("react-slick"), {
-  ssr: false,
-  loading: () => <div>Loading...</div>
-});
 
 // portfolio items
 const portfolio_items = portfolio_data.filter((item) => item.home_agency);
