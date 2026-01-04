@@ -10,7 +10,7 @@ import brand_6 from "@assets/img/brand/5/adevarul-2x.png";
 import brand_7 from "@assets/img/brand/5/antena3-2x.png";
 import brand_8 from "@assets/img/brand/5/ceo-times-2x.png";
 import brand_9 from "@assets/img/brand/5/clickro-2x.png";
-import brand_10 from "@assets/img/brand/5/brand-10.png";
+import brand_10 from "@assets/img/brand/5/ceo-times-2x.png";
 import ElBrandSectionWrapper from "@elements/elements-brand/el-brand-section-wrapper";
 
 // single brand item
@@ -26,9 +26,8 @@ const CreativeBrands = ({ element_style = false }) => {
   return (
     <>
       <section
-        className={`brand__area grey-bg-7 ${
-          element_style ? "pt-110 pb-70" : ""
-        }`}
+        className={`brand__area grey-bg-7 ${element_style ? "pt-110 pb-70" : ""
+          }`}
       >
         <div className="container">
           {!element_style && (
