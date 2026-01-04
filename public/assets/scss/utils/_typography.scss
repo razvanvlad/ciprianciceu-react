@@ -3,21 +3,21 @@
 
 $font-url: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap';
 
-// font family - Updated to use Next.js optimized fonts
+// font family - Optimized to 2 fonts only (Inter + Space Grotesk)
 $font-family: (
     ff: (
-        'body': "var(--font-inter), sans-serif", // body font - Next.js optimized
-        'heading': "var(--font-space-grotesk), sans-serif", // heading font - Next.js optimized
-        'p': "var(--font-inter), sans-serif", //  p tag font - Next.js optimized
-        'inter': "var(--font-inter), sans-serif", //  inter font - Next.js optimized
-        'roboto': "var(--font-roboto), sans-serif", // roboto - Next.js optimized
-        'oswald': "var(--font-oswald), sans-serif", // oswald - Next.js optimized
-        'poppins': "var(--font-poppins), sans-serif", // poppins - Next.js optimized
-        'space': "var(--font-space-grotesk), sans-serif", // space grotesk - Next.js optimized
-        'play': "'Playfair Display', serif;", // playfair - NOT optimized (rarely used)
-        'syne': "var(--font-syne), sans-serif;", // syne - Next.js optimized
-        'rajdhani': "var(--font-rajdhani), sans-serif;", // rajdhani - Next.js optimized
-        'fontawesome': '"Font Awesome 6 Pro"', // fontawesome
+        'body': "var(--font-inter), sans-serif", // PRIMARY body font
+        'heading': "var(--font-space-grotesk), sans-serif", // PRIMARY heading font
+        'p': "var(--font-inter), sans-serif", // paragraph font
+        'inter': "var(--font-inter), sans-serif", // inter font
+        'roboto': "var(--font-inter), sans-serif", // MAPPED: roboto → inter
+        'oswald': "var(--font-space-grotesk), sans-serif", // MAPPED: oswald → space grotesk
+        'poppins': "var(--font-inter), sans-serif", // MAPPED: poppins → inter
+        'space': "var(--font-space-grotesk), sans-serif", // space grotesk
+        'play': "var(--font-space-grotesk), serif", // MAPPED: playfair → space grotesk
+        'syne': "var(--font-space-grotesk), sans-serif", // MAPPED: syne → space grotesk
+        'rajdhani': "var(--font-space-grotesk), sans-serif", // MAPPED: rajdhani → space grotesk
+        'fontawesome': '"Font Awesome 6 Pro"', // fontawesome (icon font)
     )
 );
 

@@ -3,7 +3,7 @@ import SEO from "@components/seo";
 import "../styles/index.scss";
 import { VideoProvider } from "src/provider/VideoProvider";
 import 'react-tooltip/dist/react-tooltip.css'
-import { inter, spaceGrotesk, roboto, syne, oswald, rajdhani, poppins } from '@lib/fonts';
+import { inter, spaceGrotesk } from '@lib/fonts';
 
 // Web Vitals tracking function
 export function reportWebVitals(metric) {
@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div
-      className={`${inter.variable} ${spaceGrotesk.variable} ${roboto.variable} ${syne.variable} ${oswald.variable} ${rajdhani.variable} ${poppins.variable}`}
+      className={`${inter.variable} ${spaceGrotesk.variable}`}
     >
       <SEO />
       <VideoProvider>

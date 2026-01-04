@@ -15,7 +15,9 @@
       "Bash(npm run build:*)",
       "Bash(curl:*)",
       "Bash(git checkout:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(xargs -I {} sh -c 'echo \"\"=== {} ===\"\" && head -30 \"\"{}\"\"')",
+      "Bash(du:*)"
     ]
   }
 }

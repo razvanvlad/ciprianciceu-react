@@ -4,7 +4,7 @@ import Link from "next/link";
 // internal
 import shape_1 from '@assets/img/slider/9/slider-shape-1.png';
 import shape_2 from '@assets/img/slider/9/slider-shape-2.png';
-import main_img from '@assets/img/ciceu/ciceu-decupat.png';
+import main_img from '@assets/img/ciceu/ciceu-decupat.webp';
 import ShapeLine from "@svg/shape-line";
 import TwitterX from "@svg/twitter-x";
 

@@ -15,7 +15,7 @@ export default function Document() {
         {/* Preload critical hero image */}
         <link
           rel="preload"
-          href="/assets/img/ciceu/ciceu-decupat.png"
+          href="/assets/img/ciceu/ciceu-decupat.webp"
           as="image"
           type="image/png"
         />
