@@ -1,7 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import Slider from "react-slick";
+import dynamic from "next/dynamic";
 import Link from "next/link";
+
+// Lazy load Slider
+const Slider = dynamic(() => import("react-slick"), {
+  ssr: false,
+  loading: () => <div>Loading...</div>
+});
 // internal
 import shape from "@assets/img/portfolio/3/portfolio-shape-1.png";
 import portfolio_data from "@data/portfolio-data";

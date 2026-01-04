@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import Slider from "react-slick";
+import dynamic from "next/dynamic";
+
+// Lazy load Slider
+const Slider = dynamic(() => import("react-slick"), {
+  ssr: false,
+  loading: () => <div>Loading...</div>
+});
 // internal
 import shape from "@assets/img/testimonial/8/testimonial-bg-1.png";
 import quote from "@assets/img/testimonial/8/testimonial-quote-1.png";

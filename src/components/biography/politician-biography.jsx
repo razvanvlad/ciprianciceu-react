@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import Slider from "react-slick";
+import dynamic from "next/dynamic";
+
+// Lazy load Slider
+const Slider = dynamic(() => import("react-slick"), {
+  ssr: false,
+  loading: () => <div>Loading...</div>
+});
 // internal
 import bio_bg_1 from "@assets/img/biography/biography-1.jpg";
 import bio_bg_2 from "@assets/img/biography/biography-2.jpg";

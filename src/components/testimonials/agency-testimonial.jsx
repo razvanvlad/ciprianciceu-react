@@ -16,7 +16,13 @@ import user_3 from "@assets/img/users/user-3.jpg";
 import user_4 from "@assets/img/users/user-4.jpg";
 import user_5 from "@assets/img/users/user-5.jpg";
 import user_6 from "@assets/img/users/user-6.jpg";
-import Slider from "react-slick";
+import dynamic from "next/dynamic";
+
+// Lazy load Slider
+const Slider = dynamic(() => import("react-slick"), {
+  ssr: false,
+  loading: () => <div>Loading...</div>
+});
 
 // testimonial data
 const testimonial_data = [

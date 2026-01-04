@@ -1,7 +1,13 @@
 // external
 import React, { useEffect, useRef } from "react";
-import Slider from "react-slick";
+import dynamic from "next/dynamic";
 import Image from "next/image";
+
+// Lazy load Slider
+const Slider = dynamic(() => import("react-slick"), {
+  ssr: false,
+  loading: () => <div>Loading...</div>
+});
 // internal
 import ElBrandSectionWrapper from "@elements/elements-brand/el-brand-section-wrapper";
 import brand_1 from "@assets/img/brand/5/forbes-2x.png";
