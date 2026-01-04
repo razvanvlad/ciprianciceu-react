@@ -199,3 +199,93 @@
   }
 }
 
+/* Mobile Responsive Typography & Spacing */
+@media (max-width: 991px) {
+  /* Mobile Typography - Reduce font sizes */
+  h1 {
+    font-size: 28px !important;
+  }
+
+  h2 {
+    font-size: 24px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+  h4 {
+    font-size: 18px !important;
+  }
+
+  h5 {
+    font-size: 16px !important;
+  }
+
+  h6 {
+    font-size: 14px !important;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
+
+  /* Mobile Container Padding - Add space on left/right */
+  .container,
+  .container-fluid,
+  section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  /* Ensure rows don't extend to edges */
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Mobile Image Scaling */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Reduce section padding on mobile */
+  [class*="pt-"],
+  [class*="pb-"] {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 575px) {
+  /* Even smaller typography for very small screens */
+  h1 {
+    font-size: 24px !important;
+  }
+
+  h2 {
+    font-size: 20px !important;
+  }
+
+  h3 {
+    font-size: 18px !important;
+  }
+
+  /* Tighter container padding on very small screens */
+  .container,
+  .container-fluid,
+  section {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* Further reduce section padding */
+  [class*="pt-"],
+  [class*="pb-"] {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+}
+
