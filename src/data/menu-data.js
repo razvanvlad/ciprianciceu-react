@@ -22,6 +22,12 @@ const menu_data = [
     title: 'Media',
     link: '/media',
     hasDropdown: false
+  },
+  {
+    id: 5,
+    title: 'Press & Blog',
+    link: '/blog',
+    hasDropdown: false
   }
   // Note: Contact is handled as a button in the header, not in menu
 ]

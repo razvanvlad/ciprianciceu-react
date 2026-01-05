@@ -12,10 +12,8 @@ export default function Policy() {
         title="Privacy Policy"
         subtitle={
           <>
-            Your privacy is important to us. It is Harry’s policy to respect
-            your privacy regarding <br /> any information we may collect from
-            you across our website, https:// Harry.com, <br /> and other sites
-            we own and operate.
+            Your privacy is important to us. This Privacy Policy explains how personal data <br />
+            is collected, used, and protected when you visit our Website.
           </>
         }
       />

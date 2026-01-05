@@ -78,7 +78,7 @@ const FooterSeven = () => {
                     { url: "/about", title: "About" },
                     { url: "/projects", title: "Projects" },
                     { url: "/media", title: "Media" },
-                    { url: "/blog", title: "Blog" },
+                    { url: "/blog", title: "Press & Blog" },
                   ]}
                 />
                 <FooterWidget
@@ -132,7 +132,7 @@ const FooterSeven = () => {
                     <div className="footer__link-6 text-sm-end">
                       <Link href="/policy">Privacy Policy</Link>
                       <Link href="/terms">Terms of Use</Link>
-                      <Link href="/policy">Cookie Policy</Link>
+                      <Link href="/cookie-policy">Cookie Policy</Link>
                     </div>
                   </div>
                 </div>

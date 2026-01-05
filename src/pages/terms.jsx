@@ -10,7 +10,12 @@ export default function Terms() {
       <HeaderEight />
       <SectionArea
         title="Terms and Conditions"
-        subtitle="The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural."
+        subtitle={
+          <>
+            These Terms govern the use of this Website. By accessing or using this Website, <br />
+            you agree to be bound by these Terms and Conditions.
+          </>
+        }
       />
       <TermsArea/>
       <FooterSeven />

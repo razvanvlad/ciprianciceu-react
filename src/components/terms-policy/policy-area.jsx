@@ -8,91 +8,76 @@ const PolicyArea = () => {
           <div className="col-xl-10">
             <div className="policy__wrapper policy__translate p-relative z-index-1">
               <div className="policy__item mb-35">
-                <h4 className="policy__meta">Effective date: May 25, 2023</h4>
+                <h4 className="policy__meta">Last updated: January 5, 2026</h4>
                 <p>
-                  Harry knows that you care about how your personal information
-                  is used and shared, and Harry takes your privacy seriously.
-                  Please read the following to learn more about Harry Privacy
-                  Policy (“Privacy Policy”). This Privacy Policy also tells you
-                  about your rights and choices with respect to your Personal
-                  Information, and how you can reach us to update your contact
-                  information or get answers to questions you may have about our
-                  privacy practices.
+                  Your privacy is important to us. This Privacy Policy explains how
+                  personal data is collected, used, and protected when you visit
+                  www.ciprianciceu.com (the "Website"), operated by Ciprian Gabriel
+                  Ciceu ("we", "us", "our").
                 </p>
                 <p>
-                  By using or accessing the Services in any manner, you
-                  acknowledge that you accept the practices and policies
-                  outlined in this Privacy Policy, and you hereby consent that
-                  Harry will collect, use, and share your information in the
-                  following ways. Remember that your use of Services is at all
-                  times subject to the Terms as set forth at
-                  https://harry.com/legal/terms, which incorporate this Privacy
-                  Policy. Any terms Harry uses in this Privacy Policy without
-                  defining them have the definitions given to them in the Terms.
+                  By using this Website, you agree to the collection and use of
+                  information in accordance with this Privacy Policy.
                 </p>
               </div>
 
               <div className="policy__item policy__item-2 mb-35">
-                <h3 className="policy__title">Information Collection</h3>
+                <h3 className="policy__title">1. Scope of This Privacy Policy</h3>
                 <p>
-                  You can visit and enjoy our Website without disclosing any
-                  Personal Information about yourself. However, for the Service
-                  to work properly we will need you to share with us certain
-                  Personal Information.
-                </p>
-
-                <p>
-                  For the purposes of this Privacy Policy, “Personal
-                  Information” means information that identifies, relates to,
-                  describes, is reasonably capable of being associated with, or
-                  could be reasonably linked, directly or indirectly, with a
-                  particular consumer, device or household. It does not include
-                  de-identified or aggregate information, or public information
-                  lawfully available from governmental records.
+                  This Privacy Policy applies solely to information collected through
+                  this Website and does not apply to any third-party websites or
+                  platforms that may be linked from this site.
                 </p>
               </div>
 
-              <div className="policy__list mb-35">
-                <h3 className="policy__title">Use of Personal Information</h3>
+              <div className="policy__item mb-35">
+                <h3 className="policy__title">2. Information We Collect</h3>
+
+                <h4 className="policy__subtitle mt-30 mb-20">2.1 Personal Information</h4>
+                <p>
+                  We may collect limited personal information only when you voluntarily
+                  provide it, such as:
+                </p>
                 <ul>
-                  <li>To provide and maintain the Service;</li>
-                  <li>To detect, prevent and address technical issues;</li>
-                  <li>
-                    To register you as a user and to provide the services you
-                    require;
-                  </li>
-                  <li>
-                    To decide whether to offer you a Capchase product or
-                    service;
-                  </li>
-                  <li>To notify you about changes to our Service;</li>
-                  <li>To provide customer care and support;</li>
+                  <li>name</li>
+                  <li>email address</li>
+                  <li>information submitted via contact forms</li>
+                </ul>
+
+                <h4 className="policy__subtitle mt-30 mb-20">2.2 Non-Personal Information</h4>
+                <p>
+                  We may automatically collect non-identifiable information such as:
+                </p>
+                <ul>
+                  <li>browser type</li>
+                  <li>device type</li>
+                  <li>pages visited</li>
+                  <li>approximate location (country or region level)</li>
                 </ul>
               </div>
+
               <div className="policy__contact">
-                <h3 className="policy__title policy__title-2">Contact us</h3>
-                <p>You may contact us at any time via:</p>
+                <h3 className="policy__title policy__title-2">Contact Information</h3>
+                <p>
+                  If you have any questions about this Privacy Policy, please contact:
+                </p>
 
                 <ul>
                   <li>
                     Email:{" "}
                     <span>
-                      <a href="mailto:harry.com">support@harry.com</a>
+                      <a href="mailto:contact@ciprianciceu.com">contact@ciprianciceu.com</a>
+                    </span>
+                  </li>
+                  <li>
+                    Website:{" "}
+                    <span>
+                      <a href="https://www.ciprianciceu.com" target="_blank" rel="noreferrer">
+                        www.ciprianciceu.com
+                      </a>
                     </span>
                   </li>
                 </ul>
-
-                <div className="policy__address">
-                  <p>
-                    <a
-                      rel="noreferrer"
-                      href="https://www.google.com/maps/place/102+Thompson+St,+New+York,+NY+10012,+USA/@40.7255437,-74.004061,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2598c338f691d:0x6d5f394e7a1962cc!8m2!3d40.7255397!4d-74.0018723"
-                      target="_blank"
-                    >
-                      harry PTY LTD <br /> 4270, Brisbane, Australia
-                    </a>
-                  </p>
-                </div>
               </div>
             </div>
           </div>

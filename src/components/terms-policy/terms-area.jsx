@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 const TermsArea = () => {
@@ -9,106 +8,154 @@ const TermsArea = () => {
           <div className="col-xl-10">
             <div className="policy__wrapper policy__translate p-relative z-index-1">
               <div className="policy__item mb-35">
-                <h4 className="policy__meta">
-                  Last updated: September 18, 2022
-                </h4>
+                <h4 className="policy__meta">Last updated: January 5, 2026</h4>
                 <p>
-                  These are the Terms and Conditions governing the use of this
-                  Service and the agreement that operates between You and the
-                  Company. These Terms and Conditions set out the rights and
-                  obligations of all users regarding the use of the Service.Your
-                  access to and use of the Service is conditioned on Your
-                  acceptance of and compliance with these Terms and Conditions.
-                  These Terms and Conditions apply to all visitors, users and
-                  others who access or use the Service.
+                  These Terms and Conditions ("Terms") govern the use of the website
+                  www.ciprianciceu.com (the "Website"), operated by Ciprian Gabriel
+                  Ciceu ("we", "us", "our").
                 </p>
                 <p>
-                  By using or accessing the Services in any manner, you
-                  acknowledge that you accept the practices and policies
-                  outlined in this Privacy Policy, and you hereby consent that
-                  Harry will collect, use, and share your information in the
-                  following ways. Remember that your use of Services is at all
-                  times subject to the Terms as set forth at
-                  https://harry.com/legal/terms, which incorporate this Privacy
-                  Policy. Any terms Harry uses in this Privacy Policy without
-                  defining them have the definitions given to them in the Terms.
+                  By accessing or using this Website, you agree to be bound by these
+                  Terms. If you do not agree with any part of these Terms, please
+                  discontinue use of the Website.
                 </p>
               </div>
 
               <div className="policy__item policy__item-2 mb-35">
-                <h3 className="policy__title">Definitions</h3>
+                <h3 className="policy__title">1. Purpose of the Website</h3>
                 <p>
-                  The words of which the initial letter is capitalized have
-                  meanings defined under the following conditions. The following
-                  definitions shall have the same meaning regardless of whether
-                  they appear in singular or in plural.
+                  This Website is a personal and professional presentation platform
+                  designed to provide information about:
+                </p>
+                <ul>
+                  <li>the background, experience, and projects of Ciprian Gabriel Ciceu</li>
+                  <li>public media appearances, interviews, and publications</li>
+                  <li>
+                    educational content related to technology, blockchain,
+                    entrepreneurship, and innovation
+                  </li>
+                </ul>
+                <p>The Website does not constitute financial, legal, or investment advice.</p>
+              </div>
+
+              <div className="policy__item mb-35">
+                <h3 className="policy__title">2. No Investment Solicitation</h3>
+                <p>Nothing on this Website shall be interpreted as:</p>
+                <ul>
+                  <li>an offer to invest</li>
+                  <li>a solicitation of funds</li>
+                  <li>a promise of financial returns</li>
+                </ul>
+                <p>
+                  Any business activity, investment opportunity, or platform referenced
+                  on this Website is governed by its own independent terms, legal
+                  entities, and agreements.
                 </p>
               </div>
 
-              <div className="policy__list mb-35">
-                <h3 className="policy__title">
-                  Purposes of these Terms and Conditions:
-                </h3>
-                <ul>
-                  <li>
-                    <strong>Affiliate</strong> means an entity that controls, is
-                    controlled by or is under common control with a party, where
-                    &quot;control&quot; means ownership of 50% or more of the
-                    shares, equity interest or other securities entitled to vote
-                    for election of directors or other managing authority.
-                  </li>
-                  <li>
-                    <strong>Country</strong> refers to: California, United
-                    States
-                  </li>
-                  <li>
-                    <strong>Company</strong> (referred to as either &quot;the
-                    Company&quot;, &quot;We&quot;, &quot;Us&quot; or
-                    &quot;Our&quot; in this Agreement) refers to Harry.
-                  </li>
-                  <li>
-                    <strong>Device</strong> means any device that can access the
-                    Service such as a computer, a cellphone or a digital tablet.
-                  </li>
-                  <li>
-                    <strong>Service</strong> refers to the Website.
-                  </li>
-                  <li>
-                    <strong>Website</strong> refers to Harry, accessible from{" "}
-                    <Link
-                      href="/"
-                      rel="external nofollow noopener"
-                      target="_blank"
-                    >
-                      harry.com
-                    </Link>
-                  </li>
-                </ul>
+              <div className="policy__item mb-35">
+                <h3 className="policy__title">3. Accuracy of Information</h3>
+                <p>
+                  We strive to ensure that all information presented on this Website is
+                  accurate and up to date. However, we make no warranties or guarantees
+                  regarding completeness, accuracy, or reliability.
+                </p>
+                <p>
+                  Content may be updated, modified, or removed at any time without prior
+                  notice.
+                </p>
               </div>
+
+              <div className="policy__item mb-35">
+                <h3 className="policy__title">4. Intellectual Property</h3>
+                <p>
+                  All content on this Website, including but not limited to:
+                </p>
+                <ul>
+                  <li>text</li>
+                  <li>images</li>
+                  <li>logos</li>
+                  <li>graphics</li>
+                  <li>videos</li>
+                </ul>
+                <p>
+                  is the intellectual property of Ciprian Gabriel Ciceu, unless
+                  otherwise stated.
+                </p>
+                <p>
+                  Unauthorized reproduction, distribution, or use of any content is
+                  strictly prohibited.
+                </p>
+              </div>
+
+              <div className="policy__item mb-35">
+                <h3 className="policy__title">5. Third-Party Links</h3>
+                <p>
+                  This Website may contain links to third-party websites for reference
+                  or informational purposes.
+                </p>
+                <p>
+                  We are not responsible for the content, policies, or practices of any
+                  third-party websites.
+                </p>
+              </div>
+
+              <div className="policy__item mb-35">
+                <h3 className="policy__title">6. Limitation of Liability</h3>
+                <p>
+                  To the maximum extent permitted by law, Ciprian Gabriel Ciceu shall
+                  not be liable for any direct, indirect, incidental, or consequential
+                  damages arising from the use of this Website.
+                </p>
+                <p>Use of the Website is entirely at your own risk.</p>
+              </div>
+
+              <div className="policy__item mb-35">
+                <h3 className="policy__title">7. Privacy</h3>
+                <p>
+                  Use of this Website is also governed by our Privacy Policy, which
+                  explains how personal data is handled in accordance with applicable
+                  data protection regulations (including GDPR where applicable).
+                </p>
+              </div>
+
+              <div className="policy__item mb-35">
+                <h3 className="policy__title">8. Changes to These Terms</h3>
+                <p>
+                  We reserve the right to modify these Terms at any time. Changes will
+                  be effective immediately upon publication on this page.
+                </p>
+              </div>
+
+              <div className="policy__item mb-35">
+                <h3 className="policy__title">9. Governing Law</h3>
+                <p>
+                  These Terms shall be governed and interpreted in accordance with the
+                  laws of the European Union and applicable international regulations,
+                  without regard to conflict of law principles.
+                </p>
+              </div>
+
               <div className="policy__contact">
-                <h3 className="policy__title policy__title-2">Contact us</h3>
-                <p>You may contact us at any time via:</p>
+                <h3 className="policy__title policy__title-2">10. Contact</h3>
+                <p>For questions regarding these Terms, please contact:</p>
 
                 <ul>
                   <li>
                     Email:{" "}
                     <span>
-                      <a href="mailto:harry.com">support@harry.com</a>
+                      <a href="mailto:contact@ciprianciceu.com">contact@ciprianciceu.com</a>
+                    </span>
+                  </li>
+                  <li>
+                    Website:{" "}
+                    <span>
+                      <a href="https://www.ciprianciceu.com" target="_blank" rel="noreferrer">
+                        www.ciprianciceu.com
+                      </a>
                     </span>
                   </li>
                 </ul>
-
-                <div className="policy__address">
-                  <p>
-                    <a
-                      rel="noreferrer"
-                      href="https://www.google.com/maps/place/102+Thompson+St,+New+York,+NY+10012,+USA/@40.7255437,-74.004061,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2598c338f691d:0x6d5f394e7a1962cc!8m2!3d40.7255397!4d-74.0018723"
-                      target="_blank"
-                    >
-                      harry PTY LTD <br /> 4270, Brisbane, Australia
-                    </a>
-                  </p>
-                </div>
               </div>
             </div>
           </div>
