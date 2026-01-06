@@ -55,7 +55,8 @@ const SEO = ({
       "https://www.instagram.com/ciprian_ciceu22",
       "https://www.tiktok.com/@ciprian.ciceu22",
       "https://www.facebook.com/ciprian.ciceu",
-      "https://youtube.com/@ciprianciceu22"
+      "https://youtube.com/@ciprianciceu22",
+      "https://mainetx.com"
     ],
     "knowsAbout": [
       "FinTech",

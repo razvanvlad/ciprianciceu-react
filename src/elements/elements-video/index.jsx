@@ -60,6 +60,14 @@ const ElementsVideoMain = () => {
       date: "Dec 12, 2022",
       dateObj: new Date("2022-12-12"),
       description: "Mainet First Incentive in Dubai - 2/12 3/12 & 4/12/2022 Yacht Party 🎊 Awards Gala 🏆 Safari 🐪"
+    },
+    {
+      videoId: "l_YOy0MTUoY",
+      thumbnail: mainetDubaiThumbnail,
+      title: "Official launch of Betra Coin",
+      date: "Sep 16, 2020",
+      dateObj: new Date("2020-09-16"),
+      description: "The first Romanian cryptocurrency created by a Romanian trading company "
     }
   ];
 
