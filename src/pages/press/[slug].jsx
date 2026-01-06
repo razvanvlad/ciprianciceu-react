@@ -2,14 +2,15 @@ import { useRouter } from "next/router";
 // internal
 import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo";
-import BlogArticleDetailsArea from "@components/blogs/blog-details/blog-article-details-area";
-import blog_articles_data from "@data/blog-articles-data";
+import BreadcrumbSix from "@components/common/breadcrumb/breadcrumb-6";
+import BlogDetailsArea from "@components/blogs/blog-details/blog-details-area";
+import blog_data from "@data/blog-data";
 
-export default function BlogDetails() {
+export default function PressDetails() {
   const router = useRouter();
   const { slug } = router.query;
 
-  // Helper function to create slug from title (must match the one in single-article-postbox.jsx)
+  // Helper function to create slug from title (must match the one in single-grid-item.jsx)
   const createSlug = (str) => {
     if (!str || typeof str !== 'string') return '';
 
@@ -33,21 +34,21 @@ export default function BlogDetails() {
       .replace(/--+/g, '-');
   };
 
-  // Find blog article by matching slug with title slug
-  const single_blog = blog_articles_data.find(
+  // Find press article by matching slug with title slug
+  const single_article = blog_data.find(
     (item) => item.title && createSlug(item.title) === slug
   );
 
-  // If blog not found, show 404 or redirect
-  if (!single_blog && slug) {
+  // If article not found, show 404 or redirect
+  if (!single_article && slug) {
     return (
       <Wrapper>
-        <SEO pageTitle={"Blog Not Found"} />
+        <SEO pageTitle={"Press Article Not Found"} />
         <HeaderEight />
         <div style={{ textAlign: 'center', padding: '100px 20px' }}>
-          <h1>Blog Post Not Found</h1>
-          <p>The blog post you're looking for doesn't exist.</p>
-          <a href="/blog">Return to Blog</a>
+          <h1>Press Article Not Found</h1>
+          <p>The press article you're looking for doesn't exist.</p>
+          <a href="/press">Return to Press</a>
         </div>
         <FooterSeven />
       </Wrapper>
@@ -55,9 +56,9 @@ export default function BlogDetails() {
   }
 
   // Helper function to create slug from title
-  const getBlogUrl = (blog) => {
-    if (!blog?.title) return '/blog';
-    return `/blog/${createSlug(blog.title)}`;
+  const getPressUrl = (article) => {
+    if (!article?.title) return '/press';
+    return `/press/${createSlug(article.title)}`;
   };
 
   // Convert date to ISO format for structured data
@@ -74,18 +75,19 @@ export default function BlogDetails() {
   return (
     <Wrapper>
       <SEO
-        pageTitle={single_blog?.title || "Blog Details"}
-        description={single_blog?.sm_desc || single_blog?.desc || "Read the latest insights and updates from Ciprian Ciceu"}
-        image={single_blog?.img?.src || single_blog?.img}
-        url={getBlogUrl(single_blog)}
+        pageTitle={single_article?.title || "Press Article"}
+        description={single_article?.sm_desc || single_article?.desc || "Read the latest press coverage featuring Ciprian Ciceu"}
+        image={single_article?.img?.src || single_article?.img}
+        url={getPressUrl(single_article)}
         type="article"
-        author={single_blog?.author_name || "Ciprian Ciceu"}
-        publishedDate={getISODate(single_blog?.date)}
-        tags={single_blog?.tag}
-        canonical={`https://ciprianciceu.com${getBlogUrl(single_blog)}`}
+        author={single_article?.author_name || "Ciprian Ciceu"}
+        publishedDate={getISODate(single_article?.date)}
+        tags={single_article?.tag}
+        canonical={`https://ciprianciceu.com${getPressUrl(single_article)}`}
       />
       <HeaderEight />
-      <BlogArticleDetailsArea blog={single_blog} />
+      <BreadcrumbSix {...single_article} />
+      <BlogDetailsArea blog={single_article} />
       <FooterSeven />
     </Wrapper>
   );

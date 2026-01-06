@@ -17,6 +17,7 @@ const SingleGridItem = ({
   outlet_logo,
   link,
   tag,
+  baseUrl = '/blog', // Default to /blog, but can be /press or other
 }) => {
   // Handle both single tag (string) and multiple tags (array)
   const tags = Array.isArray(tag) ? tag.slice(0, 3) : tag ? [tag] : [];
@@ -40,11 +41,12 @@ const SingleGridItem = ({
 
     return normalized
       .trim()
+      .toLowerCase()
       .replace(/\s+/g, '-')  // Replace spaces with dashes
       .replace(/--+/g, '-'); // Replace multiple dashes with single dash
   };
 
-  const blogUrl = `/blog/${createSlug(title)}`;
+  const blogUrl = `${baseUrl}/${createSlug(title)}`;
 
   return (
     <React.Fragment>

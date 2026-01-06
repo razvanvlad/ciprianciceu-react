@@ -1,21 +1,18 @@
 import React, { useState, useMemo } from "react";
 // internal
-import blog_data from "@data/blog-data";
-import SingleGridItem from "./single-blog/single-grid-item";
+import blog_articles_data from "@data/blog-articles-data";
+import SingleArticlePostbox from "./single-blog/single-article-postbox";
 import { ShapeLine } from "@svg/index";
 import Link from "next/link";
 
-// blog items
-const blog_items = blog_data.filter((blog) => blog.blog_grid);
-
-const BlogGridArea = ({ limit, url }) => {
+const BlogArticlesArea = ({ limit }) => {
   const [selectedTag, setSelectedTag] = useState("All");
   const [sortOrder, setSortOrder] = useState("newest");
 
   // Get all unique tags from blog items
   const allTags = useMemo(() => {
     const tagsSet = new Set();
-    blog_items.forEach((item) => {
+    blog_articles_data.forEach((item) => {
       if (Array.isArray(item.tag)) {
         item.tag.forEach((t) => tagsSet.add(t));
       } else if (item.tag) {
@@ -27,11 +24,11 @@ const BlogGridArea = ({ limit, url }) => {
 
   // Filter and sort items
   const filteredAndSortedItems = useMemo(() => {
-    let filtered = blog_items;
+    let filtered = blog_articles_data;
 
     // Filter by tag
     if (selectedTag !== "All") {
-      filtered = blog_items.filter((item) => {
+      filtered = blog_articles_data.filter((item) => {
         if (Array.isArray(item.tag)) {
           return item.tag.includes(selectedTag);
         }
@@ -62,15 +59,14 @@ const BlogGridArea = ({ limit, url }) => {
             <div className="col-xxl-12">
               <div className="section__title-wrapper section-title-sm mb-20">
                 <h2 className="section__title">
-                  Latest Media & Press
+                  Latest Blog
                   <span className="section__title-highlight">
                     {" "}Articles
                     <ShapeLine />
                   </span>
-                  {" "}Featuring Ciprian Ciceu
                 </h2>
                 <p className="section__subtitle mt-3" style={{ maxWidth: "800px", fontSize: "16px", lineHeight: "1.6", color: "#666" }}>
-                  A selection of recent international media articles and press features highlighting Ciprian Ciceu's work in fintech, blockchain innovation and AI-driven trading platforms.
+                  Insights, analysis, and perspectives on technology, trading, blockchain, and innovation from Ciprian Ciceu and the MainetX team.
                 </p>
               </div>
             </div>
@@ -137,22 +133,17 @@ const BlogGridArea = ({ limit, url }) => {
           )}
 
           <div className="row">
-            {filteredAndSortedItems.length > 0 ? (
-              filteredAndSortedItems.map((item) => (
-                <div
-                  key={item.id}
-                  className="col-xxl-4 col-xl-4 col-lg-6 col-md-6"
-                >
-                  <SingleGridItem {...item} baseUrl={url ? `/${url}` : '/blog'} />
-                </div>
-              ))
-            ) : (
-              <div className="col-xxl-12">
+            <div className="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1">
+              {filteredAndSortedItems.length > 0 ? (
+                filteredAndSortedItems.map((item) => (
+                  <SingleArticlePostbox key={item.id} {...item} />
+                ))
+              ) : (
                 <div className="text-center py-5">
                   <p className="text-muted">No articles found for the selected filter.</p>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
           </div>
 
           {limit && (
@@ -161,7 +152,7 @@ const BlogGridArea = ({ limit, url }) => {
                 <div className="tp-pagination mt-20">
                   <div className="text-center">
                     <Link href="/blog" className="tp-btn-5 tp-link-btn-3">
-                      View All Media & Press Coverage
+                      View All Blog Articles
                       <span>
                         <i className="fa-regular fa-arrow-right"></i>
                       </span>
@@ -177,4 +168,4 @@ const BlogGridArea = ({ limit, url }) => {
   );
 };
 
-export default BlogGridArea;
+export default BlogArticlesArea;

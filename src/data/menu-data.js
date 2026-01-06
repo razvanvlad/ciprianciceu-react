@@ -25,7 +25,13 @@ const menu_data = [
   },
   {
     id: 5,
-    title: 'Press & Blog',
+    title: 'Press',
+    link: '/press',
+    hasDropdown: false
+  },
+  {
+    id: 6,
+    title: 'Blog',
     link: '/blog',
     hasDropdown: false
   }

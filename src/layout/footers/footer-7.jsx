@@ -78,7 +78,8 @@ const FooterSeven = () => {
                     { url: "/about", title: "About" },
                     { url: "/projects", title: "Projects" },
                     { url: "/media", title: "Media" },
-                    { url: "/blog", title: "Press & Blog" },
+                    { url: "/press", title: "Press" },
+                    { url: "/blog", title: "Blog" },
                   ]}
                 />
                 <FooterWidget
