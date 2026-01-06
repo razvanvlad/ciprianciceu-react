@@ -8,6 +8,7 @@ import euSuntCiprianThumbnail from "@assets/img/video/eu-sunt-ciprian-ciceu.jpg"
 import historyBehindThumbnail from "@assets/img/video/Ciceu-Ciprian-History-behind.jpg";
 import mainetDubaiThumbnail from "@assets/img/video/Mainet-First-Incentive-in-Dubai.jpg";
 import abidjanThumbnail from "@assets/img/video/MAINET-BIG-EVENT-ABIDJAN.jpg";
+import betracoin from "@assets/img/video/official-launch-of-betra-coin.jpg";
 
 
 const ElementsVideoMain = () => {
@@ -63,7 +64,7 @@ const ElementsVideoMain = () => {
     },
     {
       videoId: "l_YOy0MTUoY",
-      thumbnail: mainetDubaiThumbnail,
+      thumbnail: betracoin,
       title: "Official launch of Betra Coin",
       date: "Sep 16, 2020",
       dateObj: new Date("2020-09-16"),
