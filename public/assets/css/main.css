@@ -58215,7 +58215,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .postbox__meta-author-thumb img {
   height: 50px;
   width: 50px;
-  border-radius: 50%;
   margin-right: 12px;
 }
 

@@ -36,7 +36,7 @@ const BlogDetailsArea = ({ blog }) => {
                           <div className="postbox__meta-author d-flex align-items-center">
                             {blog?.outlet_logo && (
                               <div className="postbox__meta-author-thumb">
-                                <Image src={blog.outlet_logo} alt={blog.author_name || "Publication"} style={{objectFit: 'contain', maxWidth: '140px', maxHeight: '40px', width: 'auto', height: 'auto'}} />
+                                <Image src={blog.outlet_logo} alt={blog.author_name || "Publication"} style={{objectFit: 'contain', maxWidth: '140px', maxHeight: '40px', width: 'auto', height: 'auto', borderRadius: '0'}} />
                               </div>
                             )}
                             <div className="postbox__meta-content">

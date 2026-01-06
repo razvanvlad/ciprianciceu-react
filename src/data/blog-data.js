@@ -21,6 +21,8 @@ import adevarul_mara_img from '@assets/img/blog/grid/adevarul-mara-restaurant.we
 import celebritatea_img from '@assets/img/blog/grid/celebritatea-ciceu-isuccess.webp';
 import wowbiz_betrapay_img from '@assets/img/blog/grid/wowbiz-betrapay.webp';
 import newsweek_belgium_img from '@assets/img/blog/grid/newsweek-restaurant-belgium.webp';
+import romania_libera_img from '@assets/img/blog/grid/romania-libera.webp';
+
 import forbes_logo from '@assets/img/brand/5/forbes-2x.webp';
 import adevarul_logo from '@assets/img/brand/5/adevarul-2x.webp';
 import newsro_logo from '@assets/img/brand/5/newsro-2x.png';
@@ -41,10 +43,51 @@ import realitatea_logo from '@assets/img/brand/5/realitatea-2x.webp';
 import prnewswire_logo from '@assets/img/brand/5/prnewswire-2x.webp';
 import business24_logo from '@assets/img/brand/5/business24-2x.svg';
 import celebritatea_logo from '@assets/img/brand/5/celebritatea-2x.webp';
+import romania_libera_logo from '@assets/img/brand/5/romania-libera-logo.webp';
 // svg icon
 import { Resource, Tutorial, UX } from '@svg/index';
 
 const blog_data = [
+  {
+    id: 43,
+    tag: 'Politics',
+    img: evz_img,
+    date: 'May 18, 2024',
+    title: 'Ciprian Ciceu și-a depus candidatura la Primăria Sectorului 1',
+    sm_desc: 'EVZ analizează profilul unui candidat atipic, cu background solid în business, blockchain și educație',
+    author_name: 'Evenimentul Zilei',
+    outlet_logo: evz_logo,
+    comments: 54,
+    watch: '198k',
+    blog_grid: true,
+    featured: true,
+    link: 'https://evz.ro/ciprian-ciceu-si-a-depus-candidatura-la-primaria-sectorului-1-din-partea-restart-romania.html',
+    content: `
+      <p>Ciprian Ciceu, candidat din partea partidului RE:START România, și-a depus oficial candidatura pentru funcția de primar al Sectorului 1 din București. Ciceu vine cu un profil neconvențional pentru politica românească, având peste 20 de ani de experiență în antreprenoriat, management și tehnologie informației.</p>
+
+      <h3>Experiența Profesională</h3>
+      <p>Ciprian Ciceu a dezvoltat mai multe afaceri în diverse domenii, inclusiv HoReCa și software. Este fondatorul BeTrader Academy, o instituție educațională cu birouri în București, Paris, Bruxelles și Miami, care oferă cursuri acreditate în domeniul tranzacțiilor la bursă și a investițiilor financiare.</p>
+
+      <p>Cu o experiență vastă în analiza financiară, planificare de business, management, tranzacții la bursă și managementul riscului, Ciceu aduce o perspectivă antreprenorială în administrația publică locală.</p>
+
+      <h3>Viziunea pentru Sectorul 1</h3>
+      <p>Candidatul RE:START România pune accent pe:</p>
+      <ul>
+        <li>Digitalizarea administrației publice</li>
+        <li>Îmbunătățirea comportamentului oficial față de cetățeni</li>
+        <li>Reducerea birocrației</li>
+        <li>Modernizarea serviciilor publice</li>
+        <li>Transparență și eficiență administrativă</li>
+      </ul>
+
+      <p>"Digitalizarea administrației, îmbunătățirea comportamentului oficial față de cetățeni și reducerea birocrației trebuie să fie priorități," a declarat Ciprian Ciceu la depunerea candidaturii.</p>
+
+      <h3>Context Electoral</h3>
+      <p>Candidatura lui Ciceu face parte din strategia RE:START România de a participa la alegerile locale cu candidați în mai multe sectoare din București. Partidul promovează o viziune modernă, axată pe eficiență și funcționalitate instituțională.</p>
+
+      <p>Alături de Ciprian Ciceu, partidul a desemnat candidați și pentru sectoarele 2, 4 și 6, toți având profiluri profesionale solide și experiență în mediul privat sau administrație publică.</p>
+    `,
+  },
   {
     id: 40,
     tag: ['Education', 'Business'],
@@ -165,45 +208,6 @@ const blog_data = [
 
       <h3>Alexandra Gheorghe-Iovu – Sector 6 Candidate</h3>
       <p>Interim president for Sector 6, Gheorghe-Iovu returned to Romania after six years abroad. She advocates: "Representatives must ask citizens about needs, listen to opinions, and undertake citizen-benefiting projects."</p>
-    `,
-  },
-  {
-    id: 43,
-    tag: 'Politics',
-    img: evz_img,
-    date: 'May 18, 2024',
-    title: 'Ciprian Ciceu și-a depus candidatura la Primăria Sectorului 1',
-    sm_desc: 'EVZ analizează profilul unui candidat atipic, cu background solid în business, blockchain și educație',
-    author_name: 'Evenimentul Zilei',
-    outlet_logo: evz_logo,
-    comments: 54,
-    watch: '198k',
-    blog_grid: true,
-    link: 'https://evz.ro/ciprian-ciceu-si-a-depus-candidatura-la-primaria-sectorului-1-din-partea-restart-romania.html',
-    content: `
-      <p>Ciprian Ciceu, candidat din partea partidului RE:START România, și-a depus oficial candidatura pentru funcția de primar al Sectorului 1 din București. Ciceu vine cu un profil neconvențional pentru politica românească, având peste 20 de ani de experiență în antreprenoriat, management și tehnologie informației.</p>
-
-      <h3>Experiența Profesională</h3>
-      <p>Ciprian Ciceu a dezvoltat mai multe afaceri în diverse domenii, inclusiv HoReCa și software. Este fondatorul BeTrader Academy, o instituție educațională cu birouri în București, Paris, Bruxelles și Miami, care oferă cursuri acreditate în domeniul tranzacțiilor la bursă și a investițiilor financiare.</p>
-
-      <p>Cu o experiență vastă în analiza financiară, planificare de business, management, tranzacții la bursă și managementul riscului, Ciceu aduce o perspectivă antreprenorială în administrația publică locală.</p>
-
-      <h3>Viziunea pentru Sectorul 1</h3>
-      <p>Candidatul RE:START România pune accent pe:</p>
-      <ul>
-        <li>Digitalizarea administrației publice</li>
-        <li>Îmbunătățirea comportamentului oficial față de cetățeni</li>
-        <li>Reducerea birocrației</li>
-        <li>Modernizarea serviciilor publice</li>
-        <li>Transparență și eficiență administrativă</li>
-      </ul>
-
-      <p>"Digitalizarea administrației, îmbunătățirea comportamentului oficial față de cetățeni și reducerea birocrației trebuie să fie priorități," a declarat Ciprian Ciceu la depunerea candidaturii.</p>
-
-      <h3>Context Electoral</h3>
-      <p>Candidatura lui Ciceu face parte din strategia RE:START România de a participa la alegerile locale cu candidați în mai multe sectoare din București. Partidul promovează o viziune modernă, axată pe eficiență și funcționalitate instituțională.</p>
-
-      <p>Alături de Ciprian Ciceu, partidul a desemnat candidați și pentru sectoarele 2, 4 și 6, toți având profiluri profesionale solide și experiență în mediul privat sau administrație publică.</p>
     `,
   },
   {
@@ -981,12 +985,12 @@ const blog_data = [
   {
     id: 66,
     tag: ['Politics', 'Civic', 'Leadership'],
-    img: newsro_img,
+    img: romania_libera_img,
     date: 'August 28, 2020',
     title: 'Cum are de gând Ciprian Ciceu să producă un Re:Start România în Sectorul 1 al Capitalei',
     sm_desc: 'Viziunea candidatului Re:Start România pentru modernizarea și digitalizarea Sectorului 1',
     author_name: 'România Liberă',
-    outlet_logo: newsro_logo,
+    outlet_logo: romania_libera_logo,
     comments: 42,
     watch: '198k',
     blog_grid: true,
