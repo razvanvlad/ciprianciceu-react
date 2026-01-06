@@ -65,7 +65,7 @@ const ContactLocationArea = () => {
           <div className="col-xl-10 ">
             <div className="contact__location-wrapper">
               <SingleLocationItem
-                title="ROMÂNIA - TRADING ACADEMY"
+                title="BUCUREȘTI ROMÂNIA - TRADING ACADEMY"
                 icon={location_icon_1}
                 location="Bucuresti, Bulevardul Pipera nr 31"
                 tel="+40746847493"

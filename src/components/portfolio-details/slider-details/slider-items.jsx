@@ -3,9 +3,10 @@ import Image from "next/image";
 import Slider from "react-slick";
 import Link from 'next/link';
 // internal
-import img_1 from "@assets/img/portfolio/details/mainetx-project.png";
-import img_2 from "@assets/img/portfolio/details/betrader-courses.png";
-import img_3 from "@assets/img/portfolio/details/blockchain-project.png";
+import img_1 from "@assets/img/portfolio/details/mainetx-project.webp";
+import img_2 from "@assets/img/portfolio/details/betrader-courses.webp";
+import img_3 from "@assets/img/portfolio/details/blockchain-project.webp";
+import img_4 from "@assets/img/portfolio/details/betra-coin.webp";
 import { ArrowRightTwo, AwardFive, Category, Client, Date } from "@svg/index";
 import MetaItem from "../list-details/single-meta";
 
@@ -18,7 +19,8 @@ const project_data = [
     founder: "Ciprian Ciceu",
     status: "Active",
     sector: "Technology",
-    launched: "2020"
+    launched: "2020",
+    url: "https://www.mainetx.com"
   },
   {
     img: img_2,
@@ -27,7 +29,8 @@ const project_data = [
     founder: "Ciprian Ciceu",
     status: "Active",
     sector: "Education",
-    launched: "2017"
+    launched: "2017",
+    url: "https://betrader.ro"
   },
   {
     img: img_3,
@@ -36,7 +39,18 @@ const project_data = [
     founder: "Ciprian Ciceu",
     status: "Active",
     sector: "Innovation",
-    launched: "2023"
+    launched: "2023",
+    url: "https://mainetfunded.com"
+  },
+  {
+    img: img_4,
+    title: "Betra Crypto Coin",
+    description: "Cryptocurrency coin payment platform and digital wallet solution for seamless crypto transactions.",
+    founder: "Ciprian Ciceu",
+    status: "Active",
+    sector: "FinTech",
+    launched: "2019",
+    url: "https://bscscan.com/token/0xfae21da223da19f77c8bca7183ea942a0b5c03e7"
   }
 ];
 
@@ -113,6 +127,21 @@ const SliderItems = ({ padd = '120' }) => {
                         subtitle={item.launched}
                       />
                     </div>
+                    {item.url && (
+                      <div className="portfolio__details-btn text-center mt-30">
+                        <a
+                          href={item.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="tp-btn-border"
+                        >
+                          Visit Website
+                          <span>
+                            <ArrowRightTwo />
+                          </span>
+                        </a>
+                      </div>
+                    )}
                   </div>
                 ))}
               </Slider>

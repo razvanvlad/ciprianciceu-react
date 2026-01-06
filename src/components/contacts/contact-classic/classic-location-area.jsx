@@ -52,7 +52,7 @@ const ClassicLocationArea = ({ element_style = false }) => {
         )}
         <div className="row">
           <SingleLocationItem
-            title="ROMÂNIA - TRADING ACADEMY"
+            title="BUCUREȘTI ROMÂNIA - TRADING ACADEMY"
             icon={location_icon_1}
             location="Bulevardul Pipera nr 31, București"
             tel="+40746847493"

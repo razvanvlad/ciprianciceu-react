@@ -87,8 +87,10 @@ const FooterSeven = () => {
                   col_2="3"
                   title="Projects"
                   contents={[
-                    { url: "/projects-creative", title: "🚀 Mainet X" },
-                    { url: "/projects", title: "🎓 BeTrader Academy" },
+                    { url: "https://www.mainetx.com", title: "🚀 Mainet X" },
+                    { url: "https://betrader.ro", title: "🎓 BeTrader Academy" },
+                    { url: "https://mainetfunded.com", title: "🤖 Mainetfunded" },
+                    { url: "https://bscscan.com/token/0xfae21da223da19f77c8bca7183ea942a0b5c03e7", title: "🥯 Betra Crypto Coin" },
                   ]}
                 />
                 <div className="col-xxl-4 col-xl-3 col-lg-3 col-md-6 col-sm-6">
