@@ -1,15 +1,15 @@
 // Import Bootstrap grid and utilities only (~80 KB vs 243 KB full Bootstrap)
-@import "bootstrap/dist/css/bootstrap-grid.min.css";
-@import "bootstrap/dist/css/bootstrap-utilities.min.css";
+@use "bootstrap/dist/css/bootstrap-grid.min.css";
+@use "bootstrap/dist/css/bootstrap-utilities.min.css";
 
 // Import carousel and main styles
-@import "slick-carousel/slick/slick.css";
-@import "swiper/css";
-@import "swiper/css/navigation";
-@import "swiper/css/pagination";
-@import "swiper/css/scrollbar";
-@import "swiper/css/effect-fade";
-@import '../../public/assets/scss/main.scss';
+@use "slick-carousel/slick/slick.css";
+@use "swiper/css";
+@use "swiper/css/navigation";
+@use "swiper/css/pagination";
+@use "swiper/css/scrollbar";
+@use "swiper/css/effect-fade";
+@use '../../public/assets/scss/main.scss' as *;
 
 // Video modal style 
 .video-modal-overlay {

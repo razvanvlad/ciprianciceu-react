@@ -6,7 +6,7 @@ import shape_1 from '@assets/img/slider/9/slider-shape-1.png';
 import shape_2 from '@assets/img/slider/9/slider-shape-2.png';
 import main_img from '@assets/img/ciceu/ciceu-decupat.webp';
 import ShapeLine from "@svg/shape-line";
-import TwitterX from "@svg/twitter-x";
+import { social_links, SocialIcon } from "@components/social";
 
 const banner_contents = {
   pre_title: "Hi! I am Ciprian Ciceu",
@@ -48,36 +48,13 @@ const PortfolioBanner = () => {
                   <div className="slider__social-9 d-flex flex-wrap align-items-center">
                     <span>Check out my:</span>
                     <ul>
-                      <li>
-                        <a href="https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr" target='_blank' rel="noreferrer">
-                          <i className="fa-brands fa-instagram"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.tiktok.com/@ciprian.ciceu22?_r=1&_t=ZN-92UEGvw67du" target='_blank' rel="noreferrer">
-                          <i className="fa-brands fa-tiktok"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.facebook.com/share/1FZ8CDueWj/?mibextid=wwXIfr" target='_blank' rel="noreferrer">
-                          <i className="fa-brands fa-facebook-f"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.linkedin.com/in/ciprian-ciceu-30b72045?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target='_blank' rel="noreferrer">
-                          <i className="fa-brands fa-linkedin-in"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://x.com/ciceu_ciprian?s=11&t=EBHN-d7VEHH1sp-EP0D8rQ" target='_blank' rel="noreferrer">
-                          <TwitterX />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://youtube.com/@ciprianciceu22?si=sTZ9n5HPGhHqrFcz" target='_blank' rel="noreferrer">
-                          <i className="fa-brands fa-youtube"></i>
-                        </a>
-                      </li>
+                      {social_links.map((link, i) => (
+                        <li key={i}>
+                          <a href={link.link} target={link.target} rel="noreferrer">
+                            <SocialIcon icon={link.icon} />
+                          </a>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
