@@ -288,3 +288,21 @@
     padding-bottom: 40px !important;
   }
 }
+
+/* Portfolio Details - Visit Website Button Hover */
+.portfolio__details-btn {
+  .tp-btn-border {
+    &:hover {
+      color: #fff !important;
+
+      span, i, svg {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+/* Portfolio Details Meta - Keep on Same Row */
+.portfolio__details-meta-slider {
+  flex-wrap: nowrap !important;
+}

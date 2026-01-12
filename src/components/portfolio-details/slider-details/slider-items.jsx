@@ -105,7 +105,7 @@ const SliderItems = ({ padd = '120' }) => {
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
                       />
                     </div>
-                    <div className="portfolio__details-meta portfolio__details-meta-slider d-flex justify-content-center flex-wrap mt-40" style={{ gap: '60px' }}>
+                    <div className="portfolio__details-meta portfolio__details-meta-slider d-flex justify-content-center mt-40" style={{ gap: '60px' }}>
                       <MetaItem
                         icon={<Category />}
                         title="Sector:"
