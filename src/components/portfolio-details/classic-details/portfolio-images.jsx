@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 // internal
-import img_1 from "@assets/img/portfolio/details/portfolio-big-1.jpg";
-import img_2 from "@assets/img/portfolio/details/portfolio-big-2.jpg";
-import img_3 from "@assets/img/portfolio/details/portfolio-big-3.jpg";
+import img_1 from "@assets/img/portfolio/details/blockchain-project.webp";
+import img_2 from "@assets/img/portfolio/details/betrader-courses.webp";
+import img_3 from "@assets/img/portfolio/details/mainetx-project.webp";
 
 const ImageStyle = {
   width:'auto',
