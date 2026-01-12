@@ -80,7 +80,7 @@ const SliderItems = ({ padd = '120' }) => {
     <section className={`portfolio__area fix pb-${padd}`}>
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-xl-10 col-lg-10">
+          <div className="col-xl-8 col-lg-9 col-md-10">
             <div className="portfolio__details-slider-2 p-relative mb-50">
               <Slider
                 {...settings}
@@ -105,17 +105,7 @@ const SliderItems = ({ padd = '120' }) => {
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
                       />
                     </div>
-                    <div className="portfolio__details-meta portfolio__details-meta-slider d-flex justify-content-center flex-wrap mt-40" style={{ gap: '40px' }}>
-                      <MetaItem
-                        icon={<Client />}
-                        title="Founder:"
-                        subtitle={item.founder}
-                      />
-                      <MetaItem
-                        icon={<AwardFive />}
-                        title="Status:"
-                        subtitle={item.status}
-                      />
+                    <div className="portfolio__details-meta portfolio__details-meta-slider d-flex justify-content-center flex-wrap mt-40" style={{ gap: '60px' }}>
                       <MetaItem
                         icon={<Category />}
                         title="Sector:"
