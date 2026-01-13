@@ -36,12 +36,12 @@ import barchart_logo from '@assets/img/brand/5/barchart-2x.png';
 import middleeastbusiness_logo from '@assets/img/brand/5/middleeastbusiness-2x.webp';
 import kingnewswire_logo from '@assets/img/brand/5/kingnewswire-2x.webp';
 import money_logo from '@assets/img/brand/5/money-2x.webp';
-import spynews_logo from '@assets/img/brand/5/spynews-2x.svg';
-import observator_logo from '@assets/img/brand/5/observator-2x.svg';
+import spynews_logo from '@assets/img/brand/5/spynews-2x.webp';
+import observator_logo from '@assets/img/brand/5/observator-2x.webp';
 import kanald_logo from '@assets/img/brand/5/kanald-2x.webp';
 import realitatea_logo from '@assets/img/brand/5/realitatea-2x.webp';
 import prnewswire_logo from '@assets/img/brand/5/prnewswire-2x.webp';
-import business24_logo from '@assets/img/brand/5/business24-2x.svg';
+import business24_logo from '@assets/img/brand/5/business24-2x.webp';
 import celebritatea_logo from '@assets/img/brand/5/celebritatea-2x.webp';
 import romania_libera_logo from '@assets/img/brand/5/romania-libera-logo.webp';
 // svg icon

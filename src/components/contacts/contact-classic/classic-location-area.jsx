@@ -6,7 +6,7 @@ import location_icon_2 from "@assets/img/contact/contact-location-2.png";
 import location_icon_3 from "@assets/img/contact/contact-location-3.png";
 
 // single location item
-function SingleLocationItem({ title, icon, company, location, tel }) {
+function SingleLocationItem({ title, subtitle, icon, company, location, tel }) {
   return (
     <div className="col-lg-4 col-md-6">
       <div className="contact__location-box text-center white-bg mb-30">
@@ -15,6 +15,7 @@ function SingleLocationItem({ title, icon, company, location, tel }) {
         </div>
         <div className="contact__location-box-content">
           <h3 className="contact__location-box-title">{title}</h3>
+          <p className="contact__location-box-title">{subtitle}</p>
 
           <div className="contact__location-box-info">
             <p>{company}</p>
@@ -52,20 +53,23 @@ const ClassicLocationArea = ({ element_style = false }) => {
         )}
         <div className="row">
           <SingleLocationItem
-            title="BUCUREȘTI ROMÂNIA - TRADING ACADEMY"
+            title="ROMÂNIA BUCUREȘTI "
+            subtitle="TRADING ACADEMY"
             icon={location_icon_1}
             location="Bulevardul Pipera nr 31, București"
             tel="+40746847493"
           />
           <SingleLocationItem
-            title="DUBAI UAE - COMPANY OFFICE"
+            title="DUBAI UAE"
+            subtitle="COMPANY OFFICE"
             icon={location_icon_2}
             company="MainetX Prop Firm Service FZCO "
             location="Silicon Oasis Digital Park A1 (UNITED ARAB EMIRATES)"
             tel="+971/502809015"
           />
           <SingleLocationItem
-            title="BELGIUM BRUXELLES - TRADING ACADEMY"
+            title="BELGIUM BRUXELLES"
+            subtitle="TRADING ACADEMY"
             icon={location_icon_3}
             location="Avenue Louise nr 173, 1050 Bruxelles"
             tel="+40746847493"

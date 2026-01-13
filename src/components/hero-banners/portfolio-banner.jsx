@@ -1,9 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-// internal
-import shape_1 from '@assets/img/slider/9/slider-shape-1.png';
-import shape_2 from '@assets/img/slider/9/slider-shape-2.png';
 import main_img from '@assets/img/ciceu/ciceu-decupat.webp';
 import ShapeLine from "@svg/shape-line";
 import { social_links, SocialIcon } from "@components/social";
@@ -61,24 +58,7 @@ const PortfolioBanner = () => {
               </div>
               <div className="col-xl-5 col-lg-6 col-md-5 order-first order-md-last">
                 <div className="slider__thumb-9 p-relative scene">
-                  <div className="slider__shape">
-                    <div className="slider__shape-20">
-                      <Image
-                        className="layer"
-                        src={shape_1}
-                        alt="shape"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div className="slider__shape-21">
-                      <Image
-                        className="layer"
-                        src={shape_2}
-                        alt="shape"
-                        loading="lazy"
-                      />
-                    </div>
-                  </div>
+
                   <Image
                     className="slider__thumb-9-main"
                     src={main_img}
