@@ -9,6 +9,7 @@ import historyBehindThumbnail from "@assets/img/video/Ciceu-Ciprian-History-behi
 import mainetDubaiThumbnail from "@assets/img/video/Mainet-First-Incentive-in-Dubai.jpg";
 import abidjanThumbnail from "@assets/img/video/MAINET-BIG-EVENT-ABIDJAN.jpg";
 import betracoin from "@assets/img/video/official-launch-of-betra-coin.jpg";
+import mediaBg from '@assets/img/ciceu/princeton-black-white-canvas.webp';
 
 
 const ElementsVideoMain = () => {
@@ -114,7 +115,7 @@ const ElementsVideoMain = () => {
   return (
     <React.Fragment>
       {/* breadcrumb start */}
-      <ElementBreadcrumb title="Media & Press Coverage" />
+      <ElementBreadcrumb title="Media & Press Coverage" bgImage={mediaBg} />
       {/* breadcrumb end */}
 
       {videos.map((video, index) => (

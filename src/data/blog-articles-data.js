@@ -14,7 +14,6 @@ const blog_articles_data = [
     watch: '1.2k',
     blog_grid: true,
     featured: true,
-    link: '/blog/future-of-automated-crypto-trading',
     content: `
       <p>At MainetX, we believe that the financial landscape is shifting rapidly. Traditional trading methods are being augmented—and in some cases replaced—by sophisticated algorithms capable of processing market data at speeds no human can match.</p>
 
@@ -51,7 +50,6 @@ const blog_articles_data = [
     watch: '980',
     blog_grid: true,
     featured: false,
-    link: '/blog/why-financial-education-matters-before-trading',
     content: `
       <h3>Introduction</h3>
       <p>Access to financial markets has never been easier. With just a few clicks, individuals can trade cryptocurrencies, forex, or other financial instruments from anywhere in the world.</p>
@@ -112,7 +110,6 @@ const blog_articles_data = [
     watch: '850',
     blog_grid: true,
     featured: false,
-    link: '/blog/what-is-crypto-hedging-and-why-is-it-used',
     content: `
       <h3>Introduction</h3>
       <p>Cryptocurrency markets are known for high volatility. Rapid price movements can create opportunities, but they also introduce significant risk.</p>
@@ -185,7 +182,6 @@ const blog_articles_data = [
     watch: '1.1k',
     blog_grid: true,
     featured: false,
-    link: '/blog/automated-trading-benefits-limits-and-responsibilities',
     content: `
       <h3>Introduction</h3>
       <p>Automation has become an integral part of modern financial markets. From algorithmic execution to rule-based trading systems, automated trading tools are widely used to support efficiency and discipline.</p>
@@ -265,7 +261,6 @@ const blog_articles_data = [
     watch: '920',
     blog_grid: true,
     featured: false,
-    link: '/blog/the-role-of-education-in-long-term-trading-success',
     content: `
       <h3>Introduction</h3>
       <p>Financial markets reward discipline, patience, and understanding over time. While short-term results may vary, long-term participation requires a solid foundation built on education rather than assumptions or promises.</p>
@@ -354,7 +349,6 @@ const blog_articles_data = [
     watch: '890',
     blog_grid: true,
     featured: false,
-    link: '/blog/technology-vs-human-decision-making-in-trading',
     content: `
       <h3>Introduction</h3>
       <p>Technology has transformed financial markets. Advanced platforms, automation, and algorithm-assisted tools allow participants to access and interact with markets more efficiently than ever before.</p>
@@ -430,7 +424,6 @@ const blog_articles_data = [
     watch: '1.3k',
     blog_grid: true,
     featured: false,
-    link: '/blog/common-mistakes-new-traders-make',
     content: `
       <h3>Introduction</h3>
       <p>Entering financial markets for the first time can be both exciting and overwhelming. New participants often focus on potential opportunities without fully understanding the challenges and risks involved.</p>
@@ -508,7 +501,6 @@ const blog_articles_data = [
     watch: '780',
     blog_grid: true,
     featured: false,
-    link: '/blog/transparency-risk-disclosure-and-user-responsibility',
     content: `
       <h3>Introduction</h3>
       <p>Trust in financial platforms is built on transparency, honest communication, and clear responsibility. In an increasingly digital financial landscape, users need to understand not only opportunities, but also risks and personal accountability.</p>

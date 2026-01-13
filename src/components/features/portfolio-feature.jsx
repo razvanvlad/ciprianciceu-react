@@ -4,10 +4,10 @@ import Image from "next/image";
 import user_1 from "@assets/img/users/user-1.jpg";
 import user_2 from "@assets/img/users/user-2.jpg";
 import user_3 from "@assets/img/users/user-3.jpg";
-import feature_thumb_1 from "@assets/img/ciceu/determination.png";
-import feature_thumb_2 from "@assets/img/ciceu/tech.png";
-import feature_thumb_3 from "@assets/img/ciceu/financial-inovation.png";
-import feature_thumb_4 from "@assets/img/ciceu/community.png";
+import feature_thumb_1 from "@assets/img/ciceu/determination.webp";
+import feature_thumb_2 from "@assets/img/ciceu/tech.webp";
+import feature_thumb_3 from "@assets/img/ciceu/financial-inovation.webp";
+import feature_thumb_4 from "@assets/img/ciceu/community.webp";
 
 // feature content
 const feature_contents = [

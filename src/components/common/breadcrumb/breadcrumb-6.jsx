@@ -17,16 +17,6 @@ const BreadcrumbSix = ({
                 <a href="#">{displayTags}</a>
               </div>
               <h3 className="breadcrumb__title">{title}</h3>
-
-              <div className="breadcrumb__list">
-                <span>
-                  <a href="/">Home</a>
-                </span>
-                <span className="dvdr">
-                  <i className="fa-solid fa-circle-small"></i>
-                </span>
-                <span>{title}</span>
-              </div>
             </div>
           </div>
         </div>

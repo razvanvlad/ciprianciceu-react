@@ -1,13 +1,15 @@
 import React from "react";
 // internal
-import bg from '@assets/img/contact/contact-bg.png';
+import defaultBg from '@assets/img/contact/contact-bg.png';
 
-const SectionArea = ({title,subtitle}) => {
+const SectionArea = ({title, subtitle, bgImage}) => {
+  const backgroundImage = bgImage || defaultBg;
+
   return (
     <section className="tp-section-area p-relative z-index-1 tp-section-spacing">
       <div
         className="tp-section-bg include-bg"
-        style={{backgroundImage:`url(${bg.src})`}}
+        style={{backgroundImage:`url(${backgroundImage.src})`}}
       ></div>
       <div className="container">
         <div className="row justify-content-center">

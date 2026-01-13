@@ -306,3 +306,43 @@
 .portfolio__details-meta-slider {
   flex-wrap: nowrap !important;
 }
+
+/* Dynamic Breadcrumb Component */
+.dynamic-breadcrumb {
+  background-color: var(--tp-grey-4);
+
+  .breadcrumb {
+    font-size: 14px;
+    background-color: transparent;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+
+    .breadcrumb-item {
+      color: #6c757d;
+
+      a {
+        color: #6c757d;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #5956e9;
+          text-decoration: underline;
+        }
+      }
+
+      &.active {
+        color: #212529;
+        font-weight: 500;
+      }
+
+      & + .breadcrumb-item::before {
+        content: "›";
+        color: #6c757d;
+        padding: 0 8px;
+      }
+    }
+  }
+}

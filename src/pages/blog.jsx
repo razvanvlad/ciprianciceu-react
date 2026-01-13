@@ -2,6 +2,7 @@ import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo";
 import SectionArea from "@components/section-area/section-area";
 import BlogArticlesArea from "@components/blogs/blog-articles-area";
+import blogBg from '@assets/img/ciceu/princeton-black-white-canvas.webp';
 
 
 export default function Blog() {
@@ -23,6 +24,7 @@ export default function Blog() {
             blockchain, and innovation.
           </>
         }
+        bgImage={blogBg}
       />
       <BlogArticlesArea />
       <FooterSeven />

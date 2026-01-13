@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo";
 import BreadcrumbSix from "@components/common/breadcrumb/breadcrumb-6";
+import DynamicBreadcrumb from "@components/common/breadcrumb/dynamic-breadcrumb";
 import BlogDetailsArea from "@components/blogs/blog-details/blog-details-area";
 import blog_data from "@data/blog-data";
 
@@ -87,6 +88,13 @@ export default function PressDetails() {
       />
       <HeaderEight />
       <BreadcrumbSix {...single_article} />
+      <DynamicBreadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Press", href: "/press" },
+          { label: single_article?.title || "Article" }
+        ]}
+      />
       <BlogDetailsArea blog={single_article} />
       <FooterSeven />
     </Wrapper>

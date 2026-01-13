@@ -6,12 +6,14 @@ import shape from "@assets/img/breadcrumb/breadcrumb-shape-1.png";
 import dot_1 from "@assets/img/breadcrumb/breadcrumb-dot-1.png";
 import dot_2 from "@assets/img/breadcrumb/breadcrumb-dot-2.png";
 
-const ElementBreadcrumb = ({title}) => {
+const ElementBreadcrumb = ({title, bgImage}) => {
+  const backgroundShape = bgImage || shape;
+
   return (
     <section className="breadcrumb__area breadcrumb__style-7 breadcrumb__bg-3 p-relative z-index-1 include-bg pt-180 pb-100">
       <div
         className="breadcrumb__bg-shape include-bg"
-        style={{ backgroundImage: `url(${shape.src})` }}
+        style={{ backgroundImage: `url(${backgroundShape.src})` }}
       ></div>
       <div className="breadcrumb__shape">
         <Image className="breadcrumb__shape-1" src={dot_1} alt="dot img" />
@@ -24,15 +26,6 @@ const ElementBreadcrumb = ({title}) => {
               <h1 className="breadcrumb__title">
                 {title}
               </h1>
-              <div className="breadcrumb__list">
-                <span>
-                  <Link href="/home">Home</Link>
-                </span>
-                <span className="dvdr">
-                  <i className="fa-solid fa-circle-small"></i>
-                </span>
-                <span>Elements</span>
-              </div>
             </div>
           </div>
         </div>

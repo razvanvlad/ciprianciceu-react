@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 // internal
 import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo";
+import DynamicBreadcrumb from "@components/common/breadcrumb/dynamic-breadcrumb";
 import BlogArticleDetailsArea from "@components/blogs/blog-details/blog-article-details-area";
 import blog_articles_data from "@data/blog-articles-data";
 
@@ -85,6 +86,13 @@ export default function BlogDetails() {
         canonical={`https://ciprianciceu.com${getBlogUrl(single_blog)}`}
       />
       <HeaderEight />
+      <DynamicBreadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Blog", href: "/blog" },
+          { label: single_blog?.title || "Article" }
+        ]}
+      />
       <BlogArticleDetailsArea blog={single_blog} />
       <FooterSeven />
     </Wrapper>
