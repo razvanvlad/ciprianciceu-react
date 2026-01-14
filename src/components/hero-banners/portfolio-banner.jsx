@@ -4,10 +4,11 @@ import Link from "next/link";
 import main_img from '@assets/img/ciceu/ciceu-decupat.webp';
 import ShapeLine from "@svg/shape-line";
 import { social_links, SocialIcon } from "@components/social";
-import { useTranslations } from '@context/IntlContext';
+import { useTranslations, useLocale } from '@context/IntlContext';
 
 const PortfolioBanner = () => {
   const t = useTranslations('banner');
+  const locale = useLocale();
   return (
     <>
       <section className="slider__area pt-40 p-relative fix">
@@ -27,7 +28,7 @@ const PortfolioBanner = () => {
                   <p>{t('description')}</p>
 
                   <div className="slider__btn-9 mb-85">
-                    <Link href="/contact" className="tp-btn-5 tp-link-btn-3">
+                    <Link href={`/${locale}/contact`} className="tp-btn-5 tp-link-btn-3">
                       {t('cta')}
                       <span>
                         <i className="fa-regular fa-arrow-right"></i>

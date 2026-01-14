@@ -4,13 +4,14 @@ import blog_data from "@data/blog-data";
 import SingleGridItem from "./single-blog/single-grid-item";
 import { ShapeLine } from "@svg/index";
 import Link from "next/link";
-import { useTranslations } from '@context/IntlContext';
+import { useTranslations, useLocale } from '@context/IntlContext';
 
 // blog items
 const blog_items = blog_data.filter((blog) => blog.blog_grid);
 
 const BlogGridArea = ({ limit, url }) => {
   const t = useTranslations('blog');
+  const locale = useLocale();
   const [selectedTag, setSelectedTag] = useState("All");
   const [sortOrder, setSortOrder] = useState("newest");
 
@@ -162,7 +163,7 @@ const BlogGridArea = ({ limit, url }) => {
               <div className="col-xxl-12">
                 <div className="tp-pagination mt-20">
                   <div className="text-center">
-                    <Link href="/blog" className="tp-btn-5 tp-link-btn-3">
+                    <Link href={`/${locale}/blog`} className="tp-btn-5 tp-link-btn-3">
                       {t('viewAll')}
                       <span>
                         <i className="fa-regular fa-arrow-right"></i>

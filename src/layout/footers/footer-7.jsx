@@ -8,10 +8,10 @@ import { Call, Email } from "@svg/index";
 import SocialLinks from "@components/social";
 import CopyrightText from "./component/copyright-text";
 import Languages from "@layout/headers/component/languages";
-import { useTranslations } from '@context/IntlContext';
+import { useTranslations, useLocale } from '@context/IntlContext';
 
 // footer widget
-function FooterWidget({ col, col_2, title, contents }) {
+function FooterWidget({ col, col_2, title, contents, locale }) {
   return (
     <div className={`col-xxl-${col} col-xl-${col} col-lg-3 col-md-6 col-sm-6`}>
       <div className={`footer__widget-6 mb-50 footer-col-6-${col_2}`}>
@@ -20,7 +20,9 @@ function FooterWidget({ col, col_2, title, contents }) {
           <ul>
             {contents.map((item, i) => (
               <li key={i}>
-                <Link href={item.url}>{item.title}</Link>
+                <Link href={item.url.startsWith('http') ? item.url : `/${locale}${item.url}`}>
+                  {item.title}
+                </Link>
               </li>
             ))}
           </ul>
@@ -34,6 +36,7 @@ const FooterSeven = () => {
   const tFooter = useTranslations('footer');
   const tNav = useTranslations('nav');
   const tCommon = useTranslations('footer');
+  const locale = useLocale();
 
   return (
     <>
@@ -52,7 +55,7 @@ const FooterSeven = () => {
                 <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
                   <div className="footer__widget-6 mb-50 footer-col-6-1">
                     <div className="footer__logo">
-                      <Link href="/home">
+                      <Link href={`/${locale}`}>
                         <Image src={logo} alt="logo" />
                       </Link>
                     </div>
@@ -64,7 +67,7 @@ const FooterSeven = () => {
                         </p>
 
                         <Link
-                          href="/contact"
+                          href={`/${locale}/contact`}
                           className="tp-link-btn-2 tp-link-btn-white"
                         >
                           {tFooter('getInTouch')}
@@ -80,9 +83,10 @@ const FooterSeven = () => {
                   col="3"
                   col_2="2"
                   title={tCommon('quickLink')}
+                  locale={locale}
                   contents={[
                     { url: "/about", title: tNav('about') },
-                    { url: "/projects", title: tNav('projects') },
+                    { url: "/portfolio", title: tNav('projects') },
                     { url: "/media", title: tNav('media') },
                     { url: "/press", title: tNav('press') },
                     { url: "/blog", title: tNav('blog') },
@@ -92,6 +96,7 @@ const FooterSeven = () => {
                   col="2"
                   col_2="3"
                   title={tCommon('projects')}
+                  locale={locale}
                   contents={[
                     { url: "https://www.mainetx.com", title: "🚀 Mainet X" },
                     { url: "https://betrader.ro", title: "🎓 BeTrader Academy" },
@@ -142,9 +147,9 @@ const FooterSeven = () => {
                   </div>
                   <div className="col-lg-6 col-sm-6">
                     <div className="footer__link-6 text-lg-end text-sm-center">
-                      <Link href="/policy">Privacy Policy</Link>
-                      <Link href="/terms">Terms of Use</Link>
-                      <Link href="/cookie-policy">Cookie Policy</Link>
+                      <Link href={`/${locale}/policy`}>Privacy Policy</Link>
+                      <Link href={`/${locale}/terms`}>Terms of Use</Link>
+                      <Link href={`/${locale}/cookie-policy`}>Cookie Policy</Link>
                     </div>
                   </div>
                 </div>

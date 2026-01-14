@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { useTranslations } from '@context/IntlContext';
+import { useTranslations, useLocale } from '@context/IntlContext';
 // internal
 import menu_data from "@data/menu-data";
 
 const MobileMenus = () => {
   const t = useTranslations('nav');
+  const locale = useLocale();
   const [subMenu, setSubMenu] = useState("");
   const [navTitle, setNavTitle] = useState("");
   //openMobileMenu
@@ -31,7 +32,7 @@ const MobileMenus = () => {
           <React.Fragment key={i}>
             {menu.hasDropdown && !menu.megaMenu && !menu.pages && (
               <li className="has-dropdown">
-                <Link href={menu.link}>{t(menu.titleKey)}</Link>
+                <Link href={`/${locale}${menu.link}`}>{t(menu.titleKey)}</Link>
                 <ul
                   className="submenu"
                   style={{
@@ -40,7 +41,7 @@ const MobileMenus = () => {
                 >
                   {menu.submenus.map((sub, i) => (
                     <li key={i}>
-                      <Link href={sub.link}>{sub.title}</Link>
+                      <Link href={`/${locale}${sub.link}`}>{sub.title}</Link>
                     </li>
                   ))}
                 </ul>
@@ -58,7 +59,7 @@ const MobileMenus = () => {
 
             {menu.megaMenu && !menu.pages && (
               <li className="has-dropdown has-mega-menu">
-                <Link href={menu.link}>{menu.title}</Link>
+                <Link href={`/${locale}${menu.link}`}>{menu.title}</Link>
                 <ul
                   className="mega-menu"
                   style={{
@@ -67,7 +68,7 @@ const MobileMenus = () => {
                 >
                   {menu.mega_menus.map((mega_m, i) => (
                     <li key={i}>
-                      <Link href={mega_m.link} className="mega-menu-title">
+                      <Link href={`/${locale}${mega_m.link}`} className="mega-menu-title">
                         {mega_m.title}
                       </Link>
                       <ul
@@ -77,7 +78,7 @@ const MobileMenus = () => {
                       >
                         {mega_m.submenus.map((sub_m, i) => (
                           <li key={i}>
-                            <Link href={sub_m.link}>{sub_m.title}</Link>
+                            <Link href={`/${locale}${sub_m.link}`}>{sub_m.title}</Link>
                           </li>
                         ))}
                       </ul>
@@ -107,7 +108,7 @@ const MobileMenus = () => {
 
             {menu.pages && (
               <li className="has-dropdown has-mega-menu">
-                <Link href={menu.link}>{menu.title}</Link>
+                <Link href={`/${locale}${menu.link}`}>{menu.title}</Link>
                 <ul
                   className="mega-menu"
                   style={{
@@ -116,7 +117,7 @@ const MobileMenus = () => {
                 >
                   {menu.mega_menus.map((mega_m, i) => (
                     <li key={i}>
-                      <Link href={mega_m.link} className="mega-menu-title">
+                      <Link href={`/${locale}${mega_m.link}`} className="mega-menu-title">
                         {mega_m.title}
                       </Link>
                       <ul
@@ -126,7 +127,7 @@ const MobileMenus = () => {
                       >
                         {mega_m.submenus.map((sub_m, i) => (
                           <li key={i}>
-                            <Link href={sub_m.link}>{sub_m.title}</Link>
+                            <Link href={`/${locale}${sub_m.link}`}>{sub_m.title}</Link>
                           </li>
                         ))}
                       </ul>
@@ -151,6 +152,12 @@ const MobileMenus = () => {
                 >
                   <i className="fal fa-plus"></i>
                 </a>
+              </li>
+            )}
+
+            {!menu.hasDropdown && !menu.megaMenu && !menu.pages && (
+              <li>
+                <Link href={`/${locale}${menu.link}`}>{t(menu.titleKey)}</Link>
               </li>
             )}
           </React.Fragment>

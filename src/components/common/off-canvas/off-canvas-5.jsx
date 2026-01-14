@@ -8,8 +8,13 @@ import SocialLinks from "@components/social";
 import CloseFour from "@svg/close-4";
 import MobileMenus from "./mobile-menus";
 import Languages from "@layout/headers/component/languages";
+import { useTranslations, useLocale } from '@context/IntlContext';
 
 const OffCanvasFive = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
+  const t = useTranslations('offcanvas');
+  const tNav = useTranslations('nav');
+  const locale = useLocale();
+
   return (
     <React.Fragment>
       <div
@@ -29,7 +34,7 @@ const OffCanvasFive = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
           <div className="offcanvas__content">
             <div className="offcanvas__top mb-10 d-flex justify-content-between align-items-center">
               <div className="offcanvas__logo logo">
-                <Link href="/home">
+                <Link href={`/${locale}`}>
                   <Image src={logo} alt="logo" style={{ maxWidth: "100%", height: "auto" }} />
                 </Link>
               </div>
@@ -50,44 +55,44 @@ const OffCanvasFive = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
             <div className="offcanvas__menu offcanvas__menu-3 offcanvas__menu-ff-space d-none d-lg-block">
               <nav>
                 <ul>
-
                   <li>
-                    <Link href="/abouut">About </Link>
+                    <Link href={`/${locale}/about`}>{tNav('about')}</Link>
                   </li>
                   <li>
-                    <Link href="/projects">Projects</Link>
+                    <Link href={`/${locale}/portfolio`}>{tNav('projects')}</Link>
                   </li>
                   <li>
-                    <Link href="/media">Media</Link>
+                    <Link href={`/${locale}/media`}>{tNav('media')}</Link>
                   </li>
                 </ul>
               </nav>
             </div>
             <div className="offcanvas__inner mb-80 d-none d-lg-block">
-              <h4>Professional & Media Inquiries</h4>
-              <p>For professional inquiries, media requests, speaking engagements or collaboration proposals, please use the official contact channels listed below.</p>
+              <h4>{t('inquiriesTitle')}</h4>
+              <p>{t('inquiriesDesc')}</p>
 
-              <p>All messages are reviewed with attention and confidentiality.</p>
+              <p>{t('confidentialityNote')}</p>
             </div>
 
             <div className="offcanvas__inner-btn mb-80">
               <a href="mailto:contact@ciprianciceu.com" className="tp-btn-offcanvas-pink w-100">
-                Say Hello!
+                {t('sayHello')}
               </a>
             </div>
 
             <div className="offcanvas__contact mb-40">
               <p className="offcanvas__contact-mail">
-                📧 General Inquiries: <br></br>
+                📧 {t('generalInquiries')}: <br></br>
                 <a href="mailto:contact@ciprianciceu.com">contact@ciprianciceu.com</a>
               </p>
               <p className="offcanvas__contact-mail">
-                📧 Press & Media <br></br>
+                📧 {t('pressMedia')} <br></br>
                 <a href="mailto:press@ciprianciceu.com">press@ciprianciceu.com</a>
               </p>
             </div>
 
             <div className="offcanvas__social-3">
+              <h4>{t('checkOut')}</h4>
               <SocialLinks />
             </div>
           </div>

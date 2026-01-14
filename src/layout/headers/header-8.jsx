@@ -6,10 +6,13 @@ import logo from "@assets/img/logo/ciprian-ciceu-logo-horizontal.png";
 import Menus from "./menus";
 import useSticky from "@hooks/use-sticky";
 import OffCanvasFive from "@components/common/off-canvas/off-canvas-5";
+import { useLocale } from "@context/IntlContext";
 
 const HeaderEight = () => {
   const { sticky } = useSticky();
   const [isOffCanvasOpen, setIsOffCanvasOpen] = useState(false);
+  const locale = useLocale();
+
   return (
     <>
       <header>
@@ -25,7 +28,7 @@ const HeaderEight = () => {
                 <div className="row align-items-center">
                   <div className="col-xxl-3 col-xl-3 col-lg-2 col-md-4 col-sm-5 col-6">
                     <div className="logo">
-                      <Link href="/">
+                      <Link href={`/${locale}`}>
                         <Image src={logo} alt="logo" style={{ width: "auto", height: "auto", maxWidth: "100%", maxHeight: "60px" }} />
                       </Link>
                     </div>
@@ -41,7 +44,7 @@ const HeaderEight = () => {
                   <div className="col-xxl-3 col-xl-3 col-lg-4 col-md-8 col-sm-7 col-6">
                     <div className="header__bottom-right-8 d-flex justify-content-end align-items-center">
                       <div className="header__btn-8 ml-30 d-none d-sm-block">
-                        <Link href="/contact" className="tp-btn-5">
+                        <Link href={`/${locale}/contact`} className="tp-btn-5">
                           Contact
                         </Link>
                       </div>
