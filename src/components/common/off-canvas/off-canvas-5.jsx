@@ -7,6 +7,7 @@ import logo from "@assets/img/logo/ciprian-ciceu-logo-icon.png";
 import SocialLinks from "@components/social";
 import CloseFour from "@svg/close-4";
 import MobileMenus from "./mobile-menus";
+import Languages from "@layout/headers/component/languages";
 
 const OffCanvasFive = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
   return (
@@ -33,6 +34,12 @@ const OffCanvasFive = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                 </Link>
               </div>
             </div>
+
+            {/* Language Selector in Mobile Menu */}
+            <div className="offcanvas__lang mb-20">
+              <Languages />
+            </div>
+
             <div className="mobile-menu fix mb-40 menu-counter mean-container d-lg-none">
               <div className="mean-bar">
                 {/* MobileMenus start*/}

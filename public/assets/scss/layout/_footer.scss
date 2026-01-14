@@ -3660,3 +3660,176 @@
 
     }
 }
+// Footer Language Selector Styles
+.footer__lang {
+    display: inline-block;
+
+    .header__lang-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+
+    .header__lang-selected-lang {
+        color: var(--tp-common-white) !important;
+        cursor: pointer;
+        padding: 8px 15px;
+        padding-right: 35px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+        display: inline-flex !important;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+        position: relative;
+        white-space: nowrap;
+        min-width: 150px;
+        font-size: 14px;
+
+        svg {
+            width: 20px;
+            height: 15px;
+            flex-shrink: 0;
+            display: block !important;
+        }
+
+        .header__lang-name {
+            color: var(--tp-common-white);
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        &::after {
+            position: absolute;
+            content: '\f107';
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--tp-common-white);
+            font-size: 14px;
+            font-family: var(--tp-ff-fontawesome);
+            transition: all 0.3s ease;
+        }
+
+        &:hover {
+            border-color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    .header__lang-list {
+        background: var(--tp-common-black);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+
+        li {
+            color: var(--tp-common-white);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            svg {
+                width: 20px;
+                height: 15px;
+                flex-shrink: 0;
+            }
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+
+            &.active {
+                background-color: var(--tp-theme-primary);
+            }
+        }
+    }
+}
+
+// Footer bottom fixes
+.footer__bottom {
+    &-inner-6 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+// Footer Language Selector in Footer Widget (Under Social Links)
+.footer__lang-6 {
+    margin-top: 20px;
+
+    .header__lang-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+
+    .header__lang-selected-lang {
+        color: var(--tp-common-white) !important;
+        cursor: pointer;
+        padding: 8px 15px;
+        padding-right: 35px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+        display: inline-flex !important;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+        position: relative;
+        white-space: nowrap;
+        min-width: 150px;
+        font-size: 14px;
+
+        svg {
+            width: 20px;
+            height: 15px;
+            flex-shrink: 0;
+            display: block !important;
+        }
+
+        .header__lang-name {
+            color: var(--tp-common-white);
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        &::after {
+            position: absolute;
+            content: '\f107';
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--tp-common-white);
+            font-size: 14px;
+            font-family: var(--tp-ff-fontawesome);
+            transition: all 0.3s ease;
+        }
+
+        &:hover {
+            border-color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    .header__lang-list {
+        background: var(--tp-common-black);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+
+        li {
+            color: var(--tp-common-white);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            svg {
+                width: 20px;
+                height: 15px;
+                flex-shrink: 0;
+            }
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+
+            &.active {
+                background-color: var(--tp-theme-primary);
+            }
+        }
+    }
+}

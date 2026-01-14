@@ -1,15 +1,18 @@
 import Link from 'next/link';
 import React from 'react';
+import { useTranslations } from '@context/IntlContext';
 // internal
 import menu_data from '@data/menu-data';
 
 const Menus = () => {
+  const t = useTranslations('nav');
+
   return (
     <ul>
       {menu_data.map((menu, i) => (
         <li key={i} className={`has-dropdown ${menu.megaMenu ? 'has-mega-menu' : ''}`}>
           <Link href={menu.link}>
-            {menu.title}
+            {t(menu.titleKey)}
           </Link>
           {menu.hasDropdown && <ul className="submenu">
             {menu.submenus.map((sub, i) => (

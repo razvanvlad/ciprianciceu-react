@@ -1,0 +1,13 @@
+import React from 'react';
+
+const FlagFR = () => {
+  return (
+    <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="6.67" height="15" fill="#0055A4"/>
+      <rect x="6.67" width="6.67" height="15" fill="#FFFFFF"/>
+      <rect x="13.33" width="6.67" height="15" fill="#EF4135"/>
+    </svg>
+  );
+};
+
+export default FlagFR;

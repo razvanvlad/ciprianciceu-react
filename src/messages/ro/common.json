@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "about": "Despre",
+    "projects": "Proiecte",
+    "media": "Media",
+    "press": "Presă",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "header": {
+    "language": "Limbă",
+    "bookCall": "Rezervă un apel"
+  },
+  "footer": {
+    "copyright": "© 2024 Ciprian Ciceu. Toate drepturile rezervate.",
+    "privacyPolicy": "Politica de confidențialitate",
+    "terms": "Termeni și condiții",
+    "cookiePolicy": "Politica cookie-urilor"
+  },
+  "ui": {
+    "readMore": "Citește mai mult",
+    "viewProject": "Vezi proiectul",
+    "downloadCV": "Descarcă CV",
+    "loadMore": "Încarcă mai mult",
+    "backToHome": "Înapoi acasă",
+    "shareOn": "Distribuie pe",
+    "englishOnly": "Disponibil doar în limba engleză"
+  },
+  "offcanvas": {
+    "inquiriesTitle": "Solicitări profesionale și media",
+    "inquiriesDesc": "Pentru solicitări profesionale, solicitări media, conferințe sau propuneri de colaborare, vă rugăm să utilizați canalele de contact oficiale enumerate mai jos.",
+    "confidentialityNote": "Toate mesajele sunt revizuite cu atenție și confidențialitate.",
+    "sayHello": "Spune bună!",
+    "generalInquiries": "Solicitări generale",
+    "pressMedia": "Presă & Media",
+    "checkOut": "Descoperă:"
+  }
+}

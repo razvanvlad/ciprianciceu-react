@@ -1,0 +1,22 @@
+{
+  "seo": {
+    "title": "Contact & Media Inquiries",
+    "description": "Get in touch with Ciprian Ciceu for media inquiries, business opportunities, speaking engagements, and partnership discussions."
+  },
+  "title": "Get in Touch",
+  "subtitle": "Let's discuss your project",
+  "form": {
+    "name": "Your Name",
+    "email": "Your Email",
+    "subject": "Subject",
+    "message": "Your Message",
+    "submit": "Send Message",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again."
+  },
+  "info": {
+    "general": "General Inquiries",
+    "press": "Press & Media",
+    "confidentiality": "All messages are reviewed with attention and confidentiality."
+  }
+}

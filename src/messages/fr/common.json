@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "media": "Médias",
+    "press": "Presse",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "header": {
+    "language": "Langue",
+    "bookCall": "Réserver un appel"
+  },
+  "footer": {
+    "copyright": "© 2024 Ciprian Ciceu. Tous droits réservés.",
+    "privacyPolicy": "Politique de confidentialité",
+    "terms": "Termes et conditions",
+    "cookiePolicy": "Politique des cookies"
+  },
+  "ui": {
+    "readMore": "Lire plus",
+    "viewProject": "Voir le projet",
+    "downloadCV": "Télécharger le CV",
+    "loadMore": "Charger plus",
+    "backToHome": "Retour à l'accueil",
+    "shareOn": "Partager sur",
+    "englishOnly": "Disponible en anglais uniquement"
+  },
+  "offcanvas": {
+    "inquiriesTitle": "Demandes professionnelles et médiatiques",
+    "inquiriesDesc": "Pour les demandes professionnelles, les demandes médiatiques, les conférences ou les propositions de collaboration, veuillez utiliser les canaux de contact officiels listés ci-dessous.",
+    "confidentialityNote": "Tous les messages sont examinés avec attention et confidentialité.",
+    "sayHello": "Dites bonjour !",
+    "generalInquiries": "Demandes générales",
+    "pressMedia": "Presse & Médias",
+    "checkOut": "Découvrez mon :"
+  }
+}

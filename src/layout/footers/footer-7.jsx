@@ -7,6 +7,7 @@ import bg_shape from "@assets/img/footer/footer-shape-2.jpg";
 import { Call, Email } from "@svg/index";
 import SocialLinks from "@components/social";
 import CopyrightText from "./component/copyright-text";
+import Languages from "@layout/headers/component/languages";
 
 // footer widget
 function FooterWidget({ col, col_2, title, contents }) {
@@ -116,6 +117,9 @@ const FooterSeven = () => {
                       <div className="footer__social-6">
                         <SocialLinks />
                       </div>
+                      <div className="footer__lang-6 mt-20">
+                        <Languages />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -125,14 +129,14 @@ const FooterSeven = () => {
           <div className="footer__bottom">
             <div className="container">
               <div className="footer__bottom-inner-6">
-                <div className="row">
-                  <div className="col-sm-6">
+                <div className="row align-items-center">
+                  <div className="col-lg-6 col-sm-6">
                     <div className="footer__copyright-6">
                       <CopyrightText />
                     </div>
                   </div>
-                  <div className="col-sm-6">
-                    <div className="footer__link-6 text-sm-end">
+                  <div className="col-lg-6 col-sm-6">
+                    <div className="footer__link-6 text-lg-end text-sm-center">
                       <Link href="/policy">Privacy Policy</Link>
                       <Link href="/terms">Terms of Use</Link>
                       <Link href="/cookie-policy">Cookie Policy</Link>

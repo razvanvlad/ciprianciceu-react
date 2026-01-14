@@ -4,7 +4,6 @@ import Link from "next/link";
 // internal
 import logo from "@assets/img/logo/ciprian-ciceu-logo-horizontal.png";
 import Menus from "./menus";
-import Languages from "./component/languages";
 import useSticky from "@hooks/use-sticky";
 import OffCanvasFive from "@components/common/off-canvas/off-canvas-5";
 
@@ -36,13 +35,11 @@ const HeaderEight = () => {
                       <nav id="mobile-menu">
                         <Menus />
                       </nav>
+                      {/* Language selector removed - now using floating button */}
                     </div>
                   </div>
                   <div className="col-xxl-3 col-xl-3 col-lg-4 col-md-8 col-sm-7 col-6">
                     <div className="header__bottom-right-8 d-flex justify-content-end align-items-center">
-                      <div className="header__lang ml-30 d-none d-lg-block">
-                        <Languages />
-                      </div>
                       <div className="header__btn-8 ml-30 d-none d-sm-block">
                         <Link href="/contact" className="tp-btn-5">
                           Contact

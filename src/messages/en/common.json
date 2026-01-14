@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "media": "Media",
+    "press": "Press",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "header": {
+    "language": "Language",
+    "bookCall": "Book a call"
+  },
+  "footer": {
+    "copyright": "© 2024 Ciprian Ciceu. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "cookiePolicy": "Cookie Policy"
+  },
+  "ui": {
+    "readMore": "Read More",
+    "viewProject": "View Project",
+    "downloadCV": "Download CV",
+    "loadMore": "Load More",
+    "backToHome": "Back to Home",
+    "shareOn": "Share on",
+    "englishOnly": "Available in English only"
+  },
+  "offcanvas": {
+    "inquiriesTitle": "Professional & Media Inquiries",
+    "inquiriesDesc": "For professional inquiries, media requests, speaking engagements or collaboration proposals, please use the official contact channels listed below.",
+    "confidentialityNote": "All messages are reviewed with attention and confidentiality.",
+    "sayHello": "Say Hello!",
+    "generalInquiries": "General Inquiries",
+    "pressMedia": "Press & Media",
+    "checkOut": "Check out my:"
+  }
+}

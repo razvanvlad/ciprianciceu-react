@@ -1,8 +1,13 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
-export default function Document() {
+export default function Document(props) {
+  // Get locale from Next.js data
+  const locale = props.__NEXT_DATA__.locale || 'en';
+  // Set direction to rtl for Arabic, ltr for all others
+  const dir = locale === 'ar' ? 'rtl' : 'ltr';
+
   return (
-    <Html lang="en">
+    <Html lang={locale} dir={dir}>
       <Head>
         {/* DNS prefetch for external resources */}
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />

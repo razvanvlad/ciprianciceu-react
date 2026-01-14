@@ -209,6 +209,10 @@ import CloseTwo from "./close-2";
 import CloseThree from "./close-3";
 import HighlightShapeNine from "./highlight-shape-9";
 import CloseFour from "./close-4";
+import FlagEN from "./flag-en";
+import FlagFR from "./flag-fr";
+import FlagRO from "./flag-ro";
+import FlagAR from "./flag-ar";
 
 
 export {
@@ -423,4 +427,8 @@ export {
   CreativeFeatureIconFour,
   WinCup,
   PlayTwo,
+  FlagEN,
+  FlagFR,
+  FlagRO,
+  FlagAR,
 }

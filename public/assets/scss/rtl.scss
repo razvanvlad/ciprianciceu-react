@@ -1,0 +1,169 @@
+// RTL (Right-to-Left) overrides for Arabic language
+// This stylesheet is dynamically loaded only when locale is 'ar'
+
+[dir="rtl"] {
+  text-align: right;
+  direction: rtl;
+
+  // Header & Navigation
+  .header__lang {
+    margin-right: 0;
+    margin-left: 30px;
+  }
+
+  .header__btn-8 {
+    margin-right: 0;
+    margin-left: 30px;
+  }
+
+  .header__hamburger {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  .main-menu ul li {
+    float: right;
+    margin-left: 40px;
+    margin-right: 0;
+  }
+
+  // Buttons with arrows/icons
+  .tp-btn-5 span i,
+  .tp-link-btn-3 span i {
+    transform: rotate(180deg);
+  }
+
+  .slider__btn-9 span i {
+    transform: rotate(180deg);
+  }
+
+  // Sliders & Carousels
+  .slick-prev {
+    right: auto;
+    left: 25px;
+  }
+
+  .slick-next {
+    left: auto;
+    right: 25px;
+  }
+
+  .swiper-button-prev {
+    right: auto;
+    left: 25px;
+  }
+
+  .swiper-button-next {
+    left: auto;
+    right: 25px;
+  }
+
+  // Off-canvas mobile menu
+  .offcanvas__area {
+    right: auto;
+    left: 0;
+  }
+
+  .offcanvas__close {
+    right: auto;
+    left: 30px;
+  }
+
+  // Footer
+  .footer__widget ul li {
+    text-align: right;
+  }
+
+  .footer__social {
+    text-align: left;
+  }
+
+  // Blog elements
+  .blog__meta span {
+    margin-right: 0;
+    margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .blog__tag a {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+
+  // Forms
+  .contact__form input,
+  .contact__form textarea {
+    text-align: right;
+  }
+
+  // Breadcrumbs
+  .breadcrumb__item::before {
+    content: "‹";
+  }
+
+  // Lists and bullets
+  ul li {
+    text-align: right;
+  }
+
+  // Portfolio/Grid items
+  .portfolio__item {
+    text-align: right;
+  }
+
+  // Section titles and subtitles
+  .section__title-pre {
+    text-align: right;
+  }
+
+  // Social icons (keep LTR direction)
+  .slider__social-9 ul,
+  .tp-social ul {
+    direction: ltr;
+    text-align: right;
+  }
+
+  // Flex containers that need adjustment
+  .d-flex {
+    &.justify-content-start {
+      justify-content: flex-end;
+    }
+
+    &.justify-content-end {
+      justify-content: flex-start;
+    }
+  }
+
+  // Text alignment helpers
+  .text-start {
+    text-align: right !important;
+  }
+
+  .text-end {
+    text-align: left !important;
+  }
+
+  // Padding and margin adjustments
+  .ps-30 {
+    padding-left: 0;
+    padding-right: 30px;
+  }
+
+  .pe-30 {
+    padding-right: 0;
+    padding-left: 30px;
+  }
+
+  .ms-30 {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+
+  .me-30 {
+    margin-right: 0;
+    margin-left: 30px;
+  }
+}

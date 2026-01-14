@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { useTranslations } from '@context/IntlContext';
 // internal
 import menu_data from "@data/menu-data";
 
 const MobileMenus = () => {
+  const t = useTranslations('nav');
   const [subMenu, setSubMenu] = useState("");
   const [navTitle, setNavTitle] = useState("");
   //openMobileMenu
@@ -29,11 +31,11 @@ const MobileMenus = () => {
           <React.Fragment key={i}>
             {menu.hasDropdown && !menu.megaMenu && !menu.pages && (
               <li className="has-dropdown">
-                <Link href={menu.link}>{menu.title}</Link>
+                <Link href={menu.link}>{t(menu.titleKey)}</Link>
                 <ul
                   className="submenu"
                   style={{
-                    display: navTitle === menu.title ? "block" : "none",
+                    display: navTitle === menu.titleKey ? "block" : "none",
                   }}
                 >
                   {menu.submenus.map((sub, i) => (
@@ -44,9 +46,9 @@ const MobileMenus = () => {
                 </ul>
                 <a
                   className={`mean-expand ${
-                    navTitle === menu.title ? "mean-clicked" : ""
+                    navTitle === menu.titleKey ? "mean-clicked" : ""
                   }`}
-                  onClick={() => openMobileMenu(menu.title)}
+                  onClick={() => openMobileMenu(menu.titleKey)}
                   style={{ fontSize: "18px",cursor:'pointer' }}
                 >
                   <i className="fal fa-plus"></i>

@@ -1747,6 +1747,9 @@
 
             /* menu css for home 8 */
             & .main-menu-9 {
+                display: flex;
+                align-items: center;
+
                 & ul {
                     & li {
                         & a {
@@ -1927,15 +1930,28 @@
             }
         }
 
-        &-selected-lang {
+        &-wrapper {
+            position: relative;
+            display: inline-block;
+        }
 
+        &-selected-lang {
             color: var(--tp-common-white-op-7);
             font-size: 14px;
             font-weight: 500;
             background-color: transparent;
             position: relative;
-            padding-right: 15px;
+            padding-right: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             @extend %tp-transition;
+
+            svg {
+                width: 20px;
+                height: 15px;
+                flex-shrink: 0;
+            }
 
             @include rtl {
                 padding-left: 15px;
@@ -1996,6 +2012,15 @@
                 list-style: none;
                 color: var(--tp-common-black);
                 text-align: left;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                svg {
+                    width: 20px;
+                    height: 15px;
+                    flex-shrink: 0;
+                }
 
                 @include rtl {
                     text-align: right;
@@ -2043,6 +2068,114 @@
                         color: var(--tp-common-white);
 
                         &::after {
+                            color: var(--tp-common-white);
+                        }
+                    }
+                }
+            }
+        }
+
+        &-after-menu {
+            display: inline-block;
+            margin-left: 30px;
+
+            #{$self} {
+                &-wrapper {
+                    position: relative;
+                    display: inline-block;
+                }
+
+                &-selected-lang {
+                    color: var(--tp-common-white) !important;
+                    font-weight: 500;
+                    cursor: pointer;
+                    padding: 8px 35px 8px 15px;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    border-radius: 4px;
+                    display: inline-flex !important;
+                    align-items: center;
+                    gap: 8px;
+                    transition: all 0.3s ease;
+                    position: relative;
+                    background-color: transparent;
+                    white-space: nowrap;
+                    min-width: 150px;
+                    font-size: 14px;
+
+                    svg {
+                        width: 20px;
+                        height: 15px;
+                        flex-shrink: 0;
+                        display: block !important;
+                    }
+
+                    .header__lang-name {
+                        color: var(--tp-common-white);
+                        font-size: 14px;
+                        display: inline-block;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        content: '\f107';
+                        right: 12px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: var(--tp-common-white);
+                        font-size: 14px;
+                        font-family: var(--tp-ff-fontawesome);
+                        transition: all 0.3s ease;
+                    }
+
+                    &:hover {
+                        border-color: rgba(255, 255, 255, 0.5);
+                        background-color: rgba(255, 255, 255, 0.1);
+                    }
+                }
+
+                &-list {
+                    position: absolute;
+                    top: calc(100% + 10px);
+                    left: 0;
+                    background-color: var(--tp-common-white);
+                    z-index: 999;
+                    padding: 15px;
+                    min-width: 180px;
+                    border-radius: 4px;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all 0.3s ease;
+
+                    &.tp-lang-list-open {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+
+                    li {
+                        list-style: none;
+                        color: var(--tp-common-black);
+                        text-align: left;
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        padding: 10px 12px;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+
+                        svg {
+                            width: 20px;
+                            height: 15px;
+                            flex-shrink: 0;
+                        }
+
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.05);
+                        }
+
+                        &.active {
+                            background-color: var(--tp-theme-1);
                             color: var(--tp-common-white);
                         }
                     }

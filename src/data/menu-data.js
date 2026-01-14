@@ -1,37 +1,37 @@
 const menu_data = [
   {
     id: 1,
-    title: 'Home',
+    titleKey: 'home', // Translation key for nav.home
     link: '/',
     hasDropdown: false
   },
   {
     id: 2,
-    title: 'About',
+    titleKey: 'about', // Translation key for nav.about
     link: '/about',
     hasDropdown: false
   },
   {
     id: 3,
-    title: 'Projects',
+    titleKey: 'projects', // Translation key for nav.projects
     link: '/portfolio',
     hasDropdown: false
   },
   {
     id: 4,
-    title: 'Media',
+    titleKey: 'media', // Translation key for nav.media
     link: '/media',
     hasDropdown: false
   },
   {
     id: 5,
-    title: 'Press',
+    titleKey: 'press', // Translation key for nav.press
     link: '/press',
     hasDropdown: false
   },
   {
     id: 6,
-    title: 'Blog',
+    titleKey: 'blog', // Translation key for nav.blog
     link: '/blog',
     hasDropdown: false
   }
