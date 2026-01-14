@@ -1,8 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useLocale } from '@context/IntlContext';
 
 const FreelancerSingleBlog = ({item}) => {
+  const locale = useLocale();
+
   return (
     <div
       className="blog__item-2 white-bg transition-3 mb-30 wow fadeInUp"
@@ -10,7 +13,7 @@ const FreelancerSingleBlog = ({item}) => {
       data-wow-duration="1s"
     >
       <div className="blog__thumb-2 p-relative w-img fix">
-        <Link Link href="/blog-details">
+        <Link Link href={`/${locale}/blog-details`}>
           <Image
             src={item.img}
             alt="blog image"
@@ -28,11 +31,11 @@ const FreelancerSingleBlog = ({item}) => {
           <a href="#">{item.tag}</a>
         </div>
         <h3 className="blog__title-2">
-          <Link href="/blog-details">{item.title}</Link>
+          <Link href={`/${locale}/blog-details`}>{item.title}</Link>
         </h3>
         <p>{item.sm_text}</p>
         <div className="blog__btn">
-          <Link href="/blog-details" className="tp-btn-border-green-2">
+          <Link href={`/${locale}/blog-details`} className="tp-btn-border-green-2">
             read more
           </Link>
         </div>

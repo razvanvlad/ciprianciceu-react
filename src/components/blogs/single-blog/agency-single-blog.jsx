@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useLocale } from '@context/IntlContext';
 
 const AgencySingleBlog = ({ blog }) => {
+  const locale = useLocale();
   const { id, img, date, tag, comment, delay, sm_text, title } = blog;
   return (
     <div
@@ -13,7 +15,7 @@ const AgencySingleBlog = ({ blog }) => {
       <div className="row align-items-center">
         <div className="col-xl-5 col-lg-12">
           <div className="blog__thumb-5">
-            <Link href="/blog-details">
+            <Link href={`/${locale}/blog-details`}>
               <Image src={img} alt="blog image" />
             </Link>
           </div>
@@ -24,7 +26,7 @@ const AgencySingleBlog = ({ blog }) => {
               <a href="#">{tag}</a>
             </div>
             <h3 className="blog__title-5">
-              <Link href="/blog-details">{title}</Link>
+              <Link href={`/${locale}/blog-details`}>{title}</Link>
             </h3>
             <div className="blog__meta-5">
               <span>
@@ -38,7 +40,7 @@ const AgencySingleBlog = ({ blog }) => {
             <p>{sm_text}</p>
 
             <div className="blog__btn-5">
-              <Link href="/blog-details" className="tp-link-btn-circle">
+              <Link href={`/${locale}/blog-details`} className="tp-link-btn-circle">
                 Read More
                 <span>
                   <i className="fa-regular fa-arrow-right"></i>

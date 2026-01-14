@@ -1,11 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
+import { useLocale } from '@context/IntlContext';
 // internal
 import Calender from "@svg/calender";
 import Comment from "@svg/comment";
 
 const LawyerSingleBlog = ({ blog }) => {
+  const locale = useLocale();
   const {
     id,
     tag,
@@ -22,7 +24,7 @@ const LawyerSingleBlog = ({ blog }) => {
     <div className="row">
       <div className="col-lg-5 col-md-5 col-sm-6">
         <div className="blog__thumb-4 m-img">
-          <Link href="/blog-details">
+          <Link href={`/${locale}/blog-details`}>
             <Image
               src={img}
               alt="blog image"
@@ -37,7 +39,7 @@ const LawyerSingleBlog = ({ blog }) => {
             <a href="#">{tag}</a>
           </div>
           <h3 className="blog__title-4">
-            <Link href="/blog-details">{title}</Link>
+            <Link href={`/${locale}/blog-details`}>{title}</Link>
           </h3>
           <p>{sm_text}</p>
 

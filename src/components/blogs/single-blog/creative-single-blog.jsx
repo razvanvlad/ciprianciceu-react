@@ -2,8 +2,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useVideoModal } from "src/provider/VideoProvider";
+import { useLocale } from '@context/IntlContext';
 
 const CreativeSingleBlog = ({ blog }) => {
+  const locale = useLocale();
   const { img, icon, title, sm_text, tag, date, delay, author_name, video_id } =
     blog || {};
   const { playVideo } = useVideoModal();
@@ -16,7 +18,7 @@ const CreativeSingleBlog = ({ blog }) => {
         data-wow-duration="1s"
       >
         <div className="blog__thumb-6">
-          <Link href="/blog-details">
+          <Link href={`/${locale}/blog-details`}>
             <Image className="layer" src={img} alt="image" />
           </Link>
         </div>
@@ -31,7 +33,7 @@ const CreativeSingleBlog = ({ blog }) => {
           </div>
           <div className="col-md-3 col-sm-6">
             <h3 className="blog__title-6">
-              <Link href="/blog-details">{title}</Link>
+              <Link href={`/${locale}/blog-details`}>{title}</Link>
             </h3>
           </div>
           <div className="col-md-6 col-sm-6">
