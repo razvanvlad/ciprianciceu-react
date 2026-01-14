@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import Link from "next/link";
+import { useLocale } from '@context/IntlContext';
 // internal
 import blog_data from "@data/blog-data";
 import HighlightShapeSix from "@svg/highlight-shape-6";
@@ -11,6 +12,7 @@ import ArchSingleBlog from "./single-blog/arch-single-blog";
 const blog_items = blog_data.filter((blog) => blog.home_architecture);
 
 const ArchBlogs = () => {
+  const locale = useLocale();
   const [loop,setLoop] = useState(false);
   useEffect(() => setLoop(true),[])
   return (
@@ -33,7 +35,7 @@ const ArchBlogs = () => {
             </div>
             <div className="col-xxl-4 col-xl-4 col-lg-4">
               <div className="blog__more-8 text-lg-end mb-80">
-                <Link href="/blog-list-sidebar" className="tp-btn-border-7">
+                <Link href={`/${locale}/blog-list-sidebar`} className="tp-btn-border-7">
                   View all Articles{" "}
                   <i className="fa-regular fa-chevron-right"></i>
                 </Link>

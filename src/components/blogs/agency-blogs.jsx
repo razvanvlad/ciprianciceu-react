@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useLocale } from '@context/IntlContext';
 // internal
 import shape_1 from "@assets/img/blog/5/shape/shape-1.png";
 import shape_2 from "@assets/img/blog/5/shape/shape-2.png";
@@ -13,6 +14,8 @@ import AgencySingleBlog from "./single-blog/agency-single-blog";
 const blog_items = blog_data.filter((item) => item.home_agency);
 
 const AgencyBlogs = () => {
+  const locale = useLocale();
+
   return (
     <>
       <section className="blog__area p-relative z-index-1 pt-150 pb-130">
@@ -49,7 +52,7 @@ const AgencyBlogs = () => {
                 data-wow-delay=".7s"
                 data-wow-duration="1s"
               >
-                <Link href="/blog-grid" className="tp-btn-round">
+                <Link href={`/${locale}/blog-grid`} className="tp-btn-round">
                   View our all News
                 </Link>
               </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { useLocale } from '@context/IntlContext';
 // internal
 import blog_data from "@data/blog-data";
 import PortfolioSingleBlog from "./single-blog/portfolio-single-blog";
@@ -8,6 +9,8 @@ import PortfolioSingleBlog from "./single-blog/portfolio-single-blog";
 const blog_items = blog_data.filter((blog) => blog.home_portfolio);
 
 const PortfolioBlogs = () => {
+  const locale = useLocale();
+
   return (
     <>
       <section className="blog__area grey-bg-12 pt-115 pb-90 p-relative z-index-1">
@@ -23,7 +26,7 @@ const PortfolioBlogs = () => {
             </div>
             <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-5">
               <div className="blog__more-9 mb-85 text-md-end">
-                <Link href="/blog-grid" className="tp-btn-5 ">
+                <Link href={`/${locale}/blog-grid`} className="tp-btn-5 ">
                   VIEW ALL POST
                 </Link>
               </div>

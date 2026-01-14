@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from "react";
+import { useLocale } from '@context/IntlContext';
 // internal
 import blog_articles_data from "@data/blog-articles-data";
 import SingleArticlePostbox from "./single-blog/single-article-postbox";
@@ -6,6 +7,7 @@ import { ShapeLine } from "@svg/index";
 import Link from "next/link";
 
 const BlogArticlesArea = ({ limit }) => {
+  const locale = useLocale();
   const [selectedTag, setSelectedTag] = useState("All");
   const [sortOrder, setSortOrder] = useState("newest");
 
@@ -151,7 +153,7 @@ const BlogArticlesArea = ({ limit }) => {
               <div className="col-xxl-12">
                 <div className="tp-pagination mt-20">
                   <div className="text-center">
-                    <Link href="/blog" className="tp-btn-5 tp-link-btn-3">
+                    <Link href={`/${locale}/blog`} className="tp-btn-5 tp-link-btn-3">
                       View All Blog Articles
                       <span>
                         <i className="fa-regular fa-arrow-right"></i>
