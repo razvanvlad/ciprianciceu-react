@@ -7,6 +7,119 @@
     "cta": "Book a call",
     "checkOut": "Check out my:"
   },
+  "about": {
+    "subtitle": "ABOUT ME",
+    "title": {
+      "part1": "Ciprian Ciceu is a",
+      "highlight1": " technology entrepreneur",
+      "part2": " and blockchain educator",
+      "highlight2": " with over a decade of experience",
+      "part3": " in building digital platforms, ",
+      "highlight3": "automated trading systems",
+      "part4": " and international business communities."
+    },
+    "description": "His work focuses on the intersection of technology, financial innovation and education, with projects developed and scaled across Europe, the Middle East and emerging markets. Throughout his career, Ciprian has contributed to the creation of fintech solutions, blockchain-based infrastructures and educational programs designed to make advanced technology more accessible to individuals and organizations. His approach combines technical execution, strategic thinking and long-term sustainability, with a strong emphasis on transparency and real-world impact."
+  },
+  "features": {
+    "quote": "Technology should serve people, simplify complexity and contribute to meaningful, long-lasting progress",
+    "items": [
+      { "subtitle": "Professional", "title": "Focus & Determination" },
+      { "subtitle": "Building", "title": "Technology Platforms" },
+      { "subtitle": "Blockchain", "title": "Financial Innovation" },
+      { "subtitle": "Education", "title": "Community Building" }
+    ]
+  },
+  "projects": {
+    "category": "Strategic Growth",
+    "title": "FEATURED PROJECTS",
+    "description": "Over the years, Ciprian Ciceu has been involved in multiple international projects, including:"
+  },
+  "skills": {
+    "preTitle": "Elite Capabilities",
+    "title": "Skills & Experience",
+    "items": [
+      {
+        "title": "Blockchain Architecture & Crypto Ecosystems",
+        "level": "Expert Level",
+        "description": "Design and implementation of scalable blockchain architectures, tokenized ecosystems, smart contracts, secure payment infrastructures, and real-world crypto adoption models. Proven experience in building compliant, scalable crypto platforms used internationally."
+      },
+      {
+        "title": "AI-Powered Trading & Automation",
+        "level": "Expert Level",
+        "description": "Development of AI-driven trading systems, automated trading bots, hedge strategies, and risk-management algorithms. Hands-on experience with execution systems, market automation, and real-time performance optimization."
+      },
+      {
+        "title": "FinTech Product Strategy & UX Vision",
+        "level": "Advanced",
+        "description": "End-to-end strategy and product vision for FinTech platforms, prop-firm infrastructures, trading dashboards, and scalable financial user experiences. Focused on usability, performance, and long-term platform growth."
+      },
+      {
+        "title": "Global Business Leadership & Scaling",
+        "level": "Expert Level",
+        "description": "International business expansion, cross-border team leadership, and strategic partnerships across Europe, Middle East, and emerging markets. Execution-driven leadership with a strong focus on scalability and sustainability."
+      },
+      {
+        "title": "Personal Branding, Growth & Reputation Management",
+        "level": "Advanced",
+        "description": "High-authority personal branding, SEO reputation strategy, media positioning, and digital influence building. Active management of online presence, press coverage, and long-term brand credibility."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "quote": "I build scalable financial ecosystems where technology, automation, and vision converge.",
+    "items": [
+      {
+        "title": "Founder & CEO",
+        "designation": "Mainet Prop Firm Services – FZCO · Dubai, UAE",
+        "year": "2020 – Present",
+        "description": "Leading a global fintech and AI-driven trading ecosystem operating across Europe, the Middle East, and Africa. Architect of the Mainet X platform, combining automated trading, prop-firm systems, and advanced fintech infrastructure."
+      },
+      {
+        "title": "Founder & Strategic Visionary",
+        "designation": "BeTrader Academy · Europe",
+        "year": "2017 – Present",
+        "description": "International financial education platform focused on trading, blockchain, and applied financial intelligence. Creator of proprietary trading methodologies and scalable education systems."
+      },
+      {
+        "title": "Blockchain Technology Professor",
+        "designation": "Romanian-American University · Bucharest",
+        "year": "2019 – 2022",
+        "description": "Delivered academic and practical courses on blockchain technology, crypto economics, and digital finance applications."
+      },
+      {
+        "title": "Founder & Product Architect",
+        "designation": "Betra Coin / BetraPay",
+        "year": "2017 – Present",
+        "description": "Developed Romania's first privately funded cryptocurrency ecosystem, focusing on utility, payments, and adoption strategy."
+      },
+      {
+        "title": "International FinTech & Blockchain Consultant",
+        "designation": "Independent",
+        "year": "2014 – 2019",
+        "description": "Advised startups and private investors on fintech products, trading automation, crypto systems, and scaling strategies."
+      }
+    ]
+  },
+  "blog": {
+    "title": "Latest Media & Press",
+    "titleHighlight": "Articles",
+    "titleEnd": "Featuring Ciprian Ciceu",
+    "subtitle": "A selection of recent international media articles and press features highlighting Ciprian Ciceu's work in fintech, blockchain innovation and AI-driven trading platforms.",
+    "filterBy": "Filter by:",
+    "sortBy": "Sort by:",
+    "sortNewest": "Newest First",
+    "sortOldest": "Oldest First",
+    "noArticles": "No articles found for the selected filter.",
+    "viewAll": "View All Media & Press Coverage"
+  },
+  "footer": {
+    "description": "For professional inquiries, media requests, speaking engagements or collaboration proposals, please use the official contact channels listed below.",
+    "getInTouch": "Get in Touch",
+    "quickLink": "Quick Link",
+    "projects": "Projects",
+    "contactUs": "Contact Us"
+  },
   "seo": {
     "title": "Ciprian Ciceu – FinTech & Blockchain Entrepreneur",
     "description": "Ciprian Ciceu is a FinTech & Blockchain entrepreneur building scalable technology platforms and educational ecosystems."

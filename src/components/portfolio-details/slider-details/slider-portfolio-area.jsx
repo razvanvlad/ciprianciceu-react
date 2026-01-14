@@ -3,8 +3,11 @@ import Link from "next/link";
 // internal
 import { ArrowRightTwo, AwardFive, Category, Client, Date } from "@svg/index";
 import MetaItem from "../list-details/single-meta";
+import { useTranslations } from '@context/IntlContext';
 
 const SliderPortfolioArea = ({ pt = '100', pb = '10' }) => {
+  const t = useTranslations('projects');
+
   return (
     <>
       <section className={`portfolio__area pt-${pt} pb-${pb}`}>
@@ -15,14 +18,14 @@ const SliderPortfolioArea = ({ pt = '100', pb = '10' }) => {
                 <div className="portfolio__details-content-2 mb-40">
                   <div className="portfolio__details-category">
                     <span>
-                      <a href="#">Strategic Growth</a>
+                      <a href="#">{t('category')}</a>
                     </span>
                   </div>
                   <h3 className="portfolio__details-title-2" style={{ fontSize: '42px', lineHeight: '1.2', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                    FEATURED PROJECTS
+                    {t('title')}
                   </h3>
                   <p style={{ fontSize: '18px', lineHeight: '1.6' }}>
-                    Over the years, Ciprian Ciceu has been involved in multiple international projects, including:
+                    {t('description')}
                   </p>
                 </div>
               </div>

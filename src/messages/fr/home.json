@@ -7,6 +7,119 @@
     "cta": "Réserver un appel",
     "checkOut": "Découvrez mon :"
   },
+  "about": {
+    "subtitle": "À PROPOS DE MOI",
+    "title": {
+      "part1": "Ciprian Ciceu est un",
+      "highlight1": " entrepreneur technologique",
+      "part2": " et éducateur en blockchain",
+      "highlight2": " avec plus d'une décennie d'expérience",
+      "part3": " dans la création de plateformes numériques, ",
+      "highlight3": "systèmes de trading automatisés",
+      "part4": " et communautés d'affaires internationales."
+    },
+    "description": "Son travail se concentre sur l'intersection de la technologie, de l'innovation financière et de l'éducation, avec des projets développés et mis à l'échelle à travers l'Europe, le Moyen-Orient et les marchés émergents. Tout au long de sa carrière, Ciprian a contribué à la création de solutions fintech, d'infrastructures basées sur la blockchain et de programmes éducatifs conçus pour rendre la technologie avancée plus accessible aux particuliers et aux organisations. Son approche combine exécution technique, réflexion stratégique et durabilité à long terme, avec un fort accent sur la transparence et l'impact concret."
+  },
+  "features": {
+    "quote": "La technologie doit servir les gens, simplifier la complexité et contribuer à un progrès significatif et durable",
+    "items": [
+      { "subtitle": "Professionnel", "title": "Concentration & Détermination" },
+      { "subtitle": "Construction", "title": "Plateformes Technologiques" },
+      { "subtitle": "Blockchain", "title": "Innovation Financière" },
+      { "subtitle": "Éducation", "title": "Construction de Communauté" }
+    ]
+  },
+  "projects": {
+    "category": "Croissance Stratégique",
+    "title": "PROJETS PHARES",
+    "description": "Au fil des ans, Ciprian Ciceu a été impliqué dans plusieurs projets internationaux, notamment :"
+  },
+  "skills": {
+    "preTitle": "Capacités d'Élite",
+    "title": "Compétences & Expérience",
+    "items": [
+      {
+        "title": "Architecture Blockchain & Écosystèmes Crypto",
+        "level": "Niveau Expert",
+        "description": "Conception et mise en œuvre d'architectures blockchain évolutives, d'écosystèmes tokenisés, de contrats intelligents, d'infrastructures de paiement sécurisées et de modèles d'adoption crypto dans le monde réel. Expérience avérée dans la construction de plateformes crypto conformes et évolutives utilisées à l'international."
+      },
+      {
+        "title": "Trading & Automatisation alimentés par l'IA",
+        "level": "Niveau Expert",
+        "description": "Développement de systèmes de trading pilotés par l'IA, de robots de trading automatisés, de stratégies de couverture et d'algorithmes de gestion des risques. Expérience pratique des systèmes d'exécution, de l'automatisation du marché et de l'optimisation des performances en temps réel."
+      },
+      {
+        "title": "Stratégie Produit FinTech & Vision UX",
+        "level": "Avancé",
+        "description": "Stratégie de bout en bout et vision produit pour les plateformes FinTech, les infrastructures de prop-firm, les tableaux de bord de trading et les expériences utilisateur financières évolutives. Axé sur l'utilisabilité, la performance et la croissance à long terme de la plateforme."
+      },
+      {
+        "title": "Leadership Commercial Mondial & Mise à l'Échelle",
+        "level": "Niveau Expert",
+        "description": "Expansion commerciale internationale, leadership d'équipes transfrontalières et partenariats stratégiques à travers l'Europe, le Moyen-Orient et les marchés émergents. Leadership axé sur l'exécution avec un fort accent sur l'évolutivité et la durabilité."
+      },
+      {
+        "title": "Image de Marque Personnelle, Croissance & Gestion de la Réputation",
+        "level": "Avancé",
+        "description": "Image de marque personnelle de haute autorité, stratégie de réputation SEO, positionnement médiatique et construction d'influence numérique. Gestion active de la présence en ligne, couverture presse et crédibilité de marque à long terme."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Expérience",
+    "quote": "Je construis des écosystèmes financiers évolutifs où technologie, automatisation et vision convergent.",
+    "items": [
+      {
+        "title": "Fondateur & PDG",
+        "designation": "Mainet Prop Firm Services – FZCO · Dubaï, EAU",
+        "year": "2020 – Présent",
+        "description": "Diriger un écosystème mondial de fintech et de trading piloté par l'IA opérant à travers l'Europe, le Moyen-Orient et l'Afrique. Architecte de la plateforme Mainet X, combinant trading automatisé, systèmes de prop-firm et infrastructure fintech avancée."
+      },
+      {
+        "title": "Fondateur & Visionnaire Stratégique",
+        "designation": "BeTrader Academy · Europe",
+        "year": "2017 – Présent",
+        "description": "Plateforme internationale d'éducation financière axée sur le trading, la blockchain et l'intelligence financière appliquée. Créateur de méthodologies de trading propriétaires et de systèmes d'éducation évolutifs."
+      },
+      {
+        "title": "Professeur de Technologie Blockchain",
+        "designation": "Université Roumano-Américaine · Bucarest",
+        "year": "2019 – 2022",
+        "description": "Dispensé des cours académiques et pratiques sur la technologie blockchain, l'économie crypto et les applications de finance numérique."
+      },
+      {
+        "title": "Fondateur & Architecte Produit",
+        "designation": "Betra Coin / BetraPay",
+        "year": "2017 – Présent",
+        "description": "Développé le premier écosystème de cryptomonnaie financé par des fonds privés en Roumanie, axé sur l'utilité, les paiements et la stratégie d'adoption."
+      },
+      {
+        "title": "Consultant International FinTech & Blockchain",
+        "designation": "Indépendant",
+        "year": "2014 – 2019",
+        "description": "Conseillé des startups et des investisseurs privés sur les produits fintech, l'automatisation du trading, les systèmes crypto et les stratégies de mise à l'échelle."
+      }
+    ]
+  },
+  "blog": {
+    "title": "Derniers Médias & Presse",
+    "titleHighlight": "Articles",
+    "titleEnd": "Mettant en Vedette Ciprian Ciceu",
+    "subtitle": "Une sélection d'articles médiatiques internationaux récents et de couvertures presse mettant en lumière le travail de Ciprian Ciceu dans la fintech, l'innovation blockchain et les plateformes de trading pilotées par l'IA.",
+    "filterBy": "Filtrer par :",
+    "sortBy": "Trier par :",
+    "sortNewest": "Plus Récent D'Abord",
+    "sortOldest": "Plus Ancien D'Abord",
+    "noArticles": "Aucun article trouvé pour le filtre sélectionné.",
+    "viewAll": "Voir Toute la Couverture Médiatique & Presse"
+  },
+  "footer": {
+    "description": "Pour les demandes professionnelles, les demandes médiatiques, les conférences ou les propositions de collaboration, veuillez utiliser les canaux de contact officiels listés ci-dessous.",
+    "getInTouch": "Prendre Contact",
+    "quickLink": "Lien Rapide",
+    "projects": "Projets",
+    "contactUs": "Nous Contacter"
+  },
   "seo": {
     "title": "Ciprian Ciceu – Entrepreneur FinTech & Blockchain",
     "description": "Ciprian Ciceu est un entrepreneur FinTech & Blockchain qui crée des plateformes technologiques évolutives et des écosystèmes éducatifs."

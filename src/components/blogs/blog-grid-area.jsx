@@ -4,11 +4,13 @@ import blog_data from "@data/blog-data";
 import SingleGridItem from "./single-blog/single-grid-item";
 import { ShapeLine } from "@svg/index";
 import Link from "next/link";
+import { useTranslations } from '@context/IntlContext';
 
 // blog items
 const blog_items = blog_data.filter((blog) => blog.blog_grid);
 
 const BlogGridArea = ({ limit, url }) => {
+  const t = useTranslations('blog');
   const [selectedTag, setSelectedTag] = useState("All");
   const [sortOrder, setSortOrder] = useState("newest");
 
@@ -62,15 +64,15 @@ const BlogGridArea = ({ limit, url }) => {
             <div className="col-xxl-12">
               <div className="section__title-wrapper section-title-sm mb-20">
                 <h2 className="section__title">
-                  Latest Media & Press
+                  {t('title')}
                   <span className="section__title-highlight">
-                    {" "}Articles
+                    {" "}{t('titleHighlight')}
                     <ShapeLine />
                   </span>
-                  {" "}Featuring Ciprian Ciceu
+                  {" "}{t('titleEnd')}
                 </h2>
                 <p className="section__subtitle mt-3" style={{ maxWidth: "800px", fontSize: "16px", lineHeight: "1.6", color: "#666" }}>
-                  A selection of recent international media articles and press features highlighting Ciprian Ciceu's work in fintech, blockchain innovation and AI-driven trading platforms.
+                  {t('subtitle')}
                 </p>
               </div>
             </div>
@@ -82,7 +84,7 @@ const BlogGridArea = ({ limit, url }) => {
               <div className="row mb-20">
                 <div className="col-xxl-12">
                   <div className="blog__filter-tags d-flex align-items-center gap-2 flex-wrap">
-                    <span className="filter-label fw-bold" style={{ whiteSpace: 'nowrap' }}>Filter by:</span>
+                    <span className="filter-label fw-bold" style={{ whiteSpace: 'nowrap' }}>{t('filterBy')}</span>
                     {allTags.map((tag) => (
                       <button
                         key={tag}
@@ -113,7 +115,7 @@ const BlogGridArea = ({ limit, url }) => {
               <div className="row mb-40">
                 <div className="col-xxl-12">
                   <div className="blog__filter-sort d-flex align-items-center gap-2" style={{ flexWrap: 'nowrap' }}>
-                    <span className="filter-label fw-bold" style={{ whiteSpace: 'nowrap' }}>Sort by:</span>
+                    <span className="filter-label fw-bold" style={{ whiteSpace: 'nowrap' }}>{t('sortBy')}</span>
                     <select
                       value={sortOrder}
                       onChange={(e) => setSortOrder(e.target.value)}
@@ -127,8 +129,8 @@ const BlogGridArea = ({ limit, url }) => {
                         maxWidth: "200px",
                       }}
                     >
-                      <option value="newest">Newest First</option>
-                      <option value="oldest">Oldest First</option>
+                      <option value="newest">{t('sortNewest')}</option>
+                      <option value="oldest">{t('sortOldest')}</option>
                     </select>
                   </div>
                 </div>
@@ -149,7 +151,7 @@ const BlogGridArea = ({ limit, url }) => {
             ) : (
               <div className="col-xxl-12">
                 <div className="text-center py-5">
-                  <p className="text-muted">No articles found for the selected filter.</p>
+                  <p className="text-muted">{t('noArticles')}</p>
                 </div>
               </div>
             )}
@@ -161,7 +163,7 @@ const BlogGridArea = ({ limit, url }) => {
                 <div className="tp-pagination mt-20">
                   <div className="text-center">
                     <Link href="/blog" className="tp-btn-5 tp-link-btn-3">
-                      View All Media & Press Coverage
+                      {t('viewAll')}
                       <span>
                         <i className="fa-regular fa-arrow-right"></i>
                       </span>

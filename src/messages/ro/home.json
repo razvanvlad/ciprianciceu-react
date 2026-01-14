@@ -7,6 +7,119 @@
     "cta": "Rezervă un apel",
     "checkOut": "Descoperă:"
   },
+  "about": {
+    "subtitle": "DESPRE MINE",
+    "title": {
+      "part1": "Ciprian Ciceu este un",
+      "highlight1": " antreprenor în tehnologie",
+      "part2": " și educator în blockchain",
+      "highlight2": " cu peste un deceniu de experiență",
+      "part3": " în construirea de platforme digitale, ",
+      "highlight3": "sisteme de trading automatizat",
+      "part4": " și comunități de afaceri internaționale."
+    },
+    "description": "Munca sa se concentrează pe intersecția dintre tehnologie, inovație financiară și educație, cu proiecte dezvoltate și scalate în Europa, Orientul Mijlociu și piețele emergente. De-a lungul carierei sale, Ciprian a contribuit la crearea de soluții fintech, infrastructuri bazate pe blockchain și programe educaționale destinate să facă tehnologia avansată mai accesibilă pentru indivizi și organizații. Abordarea sa combină execuția tehnică, gândirea strategică și sustenabilitatea pe termen lung, cu un accent puternic pe transparență și impact real."
+  },
+  "features": {
+    "quote": "Tehnologia ar trebui să servească oamenii, să simplifice complexitatea și să contribuie la progres semnificativ și de durată",
+    "items": [
+      { "subtitle": "Profesional", "title": "Concentrare & Determinare" },
+      { "subtitle": "Construire", "title": "Platforme Tehnologice" },
+      { "subtitle": "Blockchain", "title": "Inovație Financiară" },
+      { "subtitle": "Educație", "title": "Construirea Comunității" }
+    ]
+  },
+  "projects": {
+    "category": "Creștere Strategică",
+    "title": "PROIECTE EVIDENȚIATE",
+    "description": "De-a lungul anilor, Ciprian Ciceu a fost implicat în multiple proiecte internaționale, inclusiv:"
+  },
+  "skills": {
+    "preTitle": "Capabilități de Elită",
+    "title": "Abilități & Experiență",
+    "items": [
+      {
+        "title": "Arhitectură Blockchain & Ecosisteme Crypto",
+        "level": "Nivel Expert",
+        "description": "Proiectare și implementare de arhitecturi blockchain scalabile, ecosisteme tokenizate, contracte inteligente, infrastructuri de plată securizate și modele de adoptare crypto în lumea reală. Experiență dovedită în construirea de platforme crypto conforme și scalabile utilizate internațional."
+      },
+      {
+        "title": "Trading & Automatizare bazate pe AI",
+        "level": "Nivel Expert",
+        "description": "Dezvoltare de sisteme de trading conduse de AI, roboți de trading automatizați, strategii de hedging și algoritmi de gestionare a riscurilor. Experiență practică cu sisteme de execuție, automatizare de piață și optimizare a performanței în timp real."
+      },
+      {
+        "title": "Strategie Produs FinTech & Viziune UX",
+        "level": "Avansat",
+        "description": "Strategie end-to-end și viziune de produs pentru platforme FinTech, infrastructuri prop-firm, dashboard-uri de trading și experiențe utilizator financiare scalabile. Concentrat pe utilizabilitate, performanță și creștere pe termen lung a platformei."
+      },
+      {
+        "title": "Leadership de Afaceri Global & Scalare",
+        "level": "Nivel Expert",
+        "description": "Expansiune internațională de afaceri, leadership de echipe transfrontaliere și parteneriate strategice în Europa, Orientul Mijlociu și piețele emergente. Leadership orientat spre execuție cu accent puternic pe scalabilitate și sustenabilitate."
+      },
+      {
+        "title": "Branding Personal, Creștere & Gestionarea Reputației",
+        "level": "Avansat",
+        "description": "Branding personal de înaltă autoritate, strategie de reputație SEO, poziționare media și construirea influenței digitale. Gestionare activă a prezenței online, acoperire în presă și credibilitate de brand pe termen lung."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experiență",
+    "quote": "Construiesc ecosisteme financiare scalabile unde tehnologia, automatizarea și viziunea converg.",
+    "items": [
+      {
+        "title": "Fondator & CEO",
+        "designation": "Mainet Prop Firm Services – FZCO · Dubai, EAU",
+        "year": "2020 – Prezent",
+        "description": "Conduc un ecosistem global de fintech și trading condus de AI care operează în Europa, Orientul Mijlociu și Africa. Arhitect al platformei Mainet X, combinând trading automatizat, sisteme prop-firm și infrastructură fintech avansată."
+      },
+      {
+        "title": "Fondator & Vizionar Strategic",
+        "designation": "BeTrader Academy · Europa",
+        "year": "2017 – Prezent",
+        "description": "Platformă internațională de educație financiară concentrată pe trading, blockchain și inteligență financiară aplicată. Creator de metodologii de trading proprietare și sisteme educaționale scalabile."
+      },
+      {
+        "title": "Profesor de Tehnologie Blockchain",
+        "designation": "Universitatea Româno-Americană · București",
+        "year": "2019 – 2022",
+        "description": "Oferit cursuri academice și practice despre tehnologia blockchain, economia crypto și aplicații de finanțe digitale."
+      },
+      {
+        "title": "Fondator & Arhitect Produs",
+        "designation": "Betra Coin / BetraPay",
+        "year": "2017 – Prezent",
+        "description": "Dezvoltat primul ecosistem de criptomonedă finanțat privat din România, concentrat pe utilitate, plăți și strategie de adoptare."
+      },
+      {
+        "title": "Consultant Internațional FinTech & Blockchain",
+        "designation": "Independent",
+        "year": "2014 – 2019",
+        "description": "Consiliat startup-uri și investitori privați pe produse fintech, automatizare de trading, sisteme crypto și strategii de scalare."
+      }
+    ]
+  },
+  "blog": {
+    "title": "Ultimele Apariții Media & Presă",
+    "titleHighlight": "Articole",
+    "titleEnd": "Cu Ciprian Ciceu",
+    "subtitle": "O selecție de articole media internaționale recente și apariții în presă care evidențiază munca lui Ciprian Ciceu în fintech, inovație blockchain și platforme de trading conduse de AI.",
+    "filterBy": "Filtrează după:",
+    "sortBy": "Sortează după:",
+    "sortNewest": "Cele Mai Noi Primele",
+    "sortOldest": "Cele Mai Vechi Primele",
+    "noArticles": "Nu au fost găsite articole pentru filtrul selectat.",
+    "viewAll": "Vezi Toate Aparițiile Media & Presă"
+  },
+  "footer": {
+    "description": "Pentru solicitări profesionale, solicitări media, conferințe sau propuneri de colaborare, vă rugăm să utilizați canalele de contact oficiale enumerate mai jos.",
+    "getInTouch": "Intră în Contact",
+    "quickLink": "Link Rapid",
+    "projects": "Proiecte",
+    "contactUs": "Contactează-ne"
+  },
   "seo": {
     "title": "Ciprian Ciceu – Antreprenor FinTech & Blockchain",
     "description": "Ciprian Ciceu este un antreprenor FinTech & Blockchain care construiește platforme tehnologice scalabile și ecosisteme educaționale."

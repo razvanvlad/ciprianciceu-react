@@ -8,6 +8,7 @@ import { Call, Email } from "@svg/index";
 import SocialLinks from "@components/social";
 import CopyrightText from "./component/copyright-text";
 import Languages from "@layout/headers/component/languages";
+import { useTranslations } from '@context/IntlContext';
 
 // footer widget
 function FooterWidget({ col, col_2, title, contents }) {
@@ -30,6 +31,10 @@ function FooterWidget({ col, col_2, title, contents }) {
 }
 
 const FooterSeven = () => {
+  const tFooter = useTranslations('footer');
+  const tNav = useTranslations('nav');
+  const tCommon = useTranslations('footer');
+
   return (
     <>
       <footer>
@@ -55,14 +60,14 @@ const FooterSeven = () => {
                     <div className="footer__widget-content">
                       <div className="footer__info">
                         <p>
-                          For professional inquiries, media requests, speaking engagements or collaboration proposals, please use the official contact channels listed below.
+                          {tFooter('description')}
                         </p>
 
                         <Link
                           href="/contact"
                           className="tp-link-btn-2 tp-link-btn-white"
                         >
-                          Get in Touch
+                          {tFooter('getInTouch')}
                           <span>
                             <i className="fa-regular fa-arrow-right"></i>
                           </span>
@@ -74,19 +79,19 @@ const FooterSeven = () => {
                 <FooterWidget
                   col="3"
                   col_2="2"
-                  title="Quick Link"
+                  title={tCommon('quickLink')}
                   contents={[
-                    { url: "/about", title: "About" },
-                    { url: "/projects", title: "Projects" },
-                    { url: "/media", title: "Media" },
-                    { url: "/press", title: "Press" },
-                    { url: "/blog", title: "Blog" },
+                    { url: "/about", title: tNav('about') },
+                    { url: "/projects", title: tNav('projects') },
+                    { url: "/media", title: tNav('media') },
+                    { url: "/press", title: tNav('press') },
+                    { url: "/blog", title: tNav('blog') },
                   ]}
                 />
                 <FooterWidget
                   col="2"
                   col_2="3"
-                  title="Projects"
+                  title={tCommon('projects')}
                   contents={[
                     { url: "https://www.mainetx.com", title: "🚀 Mainet X" },
                     { url: "https://betrader.ro", title: "🎓 BeTrader Academy" },
@@ -96,7 +101,7 @@ const FooterSeven = () => {
                 />
                 <div className="col-xxl-4 col-xl-3 col-lg-3 col-md-6 col-sm-6">
                   <div className="footer__widget-6 mb-50 footer-col-6-4">
-                    <h3 className="footer__widget-title-6">Contact Us</h3>
+                    <h3 className="footer__widget-title-6">{tCommon('contactUs')}</h3>
 
                     <div className="footer__widget-content">
                       <div className="footer__info">

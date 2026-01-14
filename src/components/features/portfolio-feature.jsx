@@ -8,14 +8,7 @@ import feature_thumb_1 from "@assets/img/ciceu/determination.webp";
 import feature_thumb_2 from "@assets/img/ciceu/tech.webp";
 import feature_thumb_3 from "@assets/img/ciceu/financial-inovation.webp";
 import feature_thumb_4 from "@assets/img/ciceu/community.webp";
-
-// feature content
-const feature_contents = [
-  { id: 1, subtitle: "Professional", title: "Focus & Determination" },
-  { id: 2, subtitle: "Building", title: "Technology Platforms" },
-  { id: 3, subtitle: "Blockchain", title: "Financial Innovation" },
-  { id: 4, subtitle: "Education", title: "Community Building" },
-];
+import { useTranslations } from '@context/IntlContext';
 
 const feature_thumbs = [
   { ref: "features-img-1", img: feature_thumb_1 },
@@ -25,10 +18,14 @@ const feature_thumbs = [
 ];
 
 const PortfolioFeature = () => {
+  const t = useTranslations('features');
   const [serviceActive, setServiceActive] = useState("features-img-2");
+
+  const feature_contents = t('items');
+
   // handleServiceActive
   const handleServiceActive = (id) => {
-    setServiceActive(`features-img-${id}`);
+    setServiceActive(`features-img-${id + 1}`);
   };
 
   return (
@@ -38,15 +35,15 @@ const PortfolioFeature = () => {
           <div className="row">
             <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="features__wrapper-9 mr-30">
-                {feature_contents.map((item) => (
+                {feature_contents.map((item, index) => (
                   <div
-                    key={item.id}
-                    onClick={() => handleServiceActive(item.id)}
-                    className={`features__content-9 features-item-content ${serviceActive === `features-img-${item.id}`
+                    key={index}
+                    onClick={() => handleServiceActive(index)}
+                    className={`features__content-9 features-item-content ${serviceActive === `features-img-${index + 1}`
                       ? "active"
                       : ""
                       }`}
-                    rel="features-img-1"
+                    rel={`features-img-${index + 1}`}
                   >
                     <span>{item.subtitle}</span>
                     <h3 className="features__title-9">{item.title}</h3>
@@ -65,9 +62,7 @@ const PortfolioFeature = () => {
                     >
                       <Image src={item.img} alt="image" />
                       <div className="features__thumb-9-content">
-                        <p>
-                          "Technology should serve people, simplify complexity and contribute to meaningful, long-lasting progress"
-                        </p>
+                        <p>{t('quote')}</p>
 
                         <div className="features-users">
                           <Image src={user_1} alt="user" />

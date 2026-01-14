@@ -1,69 +1,13 @@
 import React from "react";
-
-// data
-const skill_data = [
-  {
-    title: "Blockchain Architecture & Crypto Ecosystems",
-    level: "Expert Level",
-    description: "Design and implementation of scalable blockchain architectures, tokenized ecosystems, smart contracts, secure payment infrastructures, and real-world crypto adoption models. Proven experience in building compliant, scalable crypto platforms used internationally."
-  },
-  {
-    title: "AI-Powered Trading & Automation",
-    level: "Expert Level",
-    description: "Development of AI-driven trading systems, automated trading bots, hedge strategies, and risk-management algorithms. Hands-on experience with execution systems, market automation, and real-time performance optimization."
-  },
-  {
-    title: "FinTech Product Strategy & UX Vision",
-    level: "Advanced",
-    description: "End-to-end strategy and product vision for FinTech platforms, prop-firm infrastructures, trading dashboards, and scalable financial user experiences. Focused on usability, performance, and long-term platform growth."
-  },
-  {
-    title: "Global Business Leadership & Scaling",
-    level: "Expert Level",
-    description: "International business expansion, cross-border team leadership, and strategic partnerships across Europe, Middle East, and emerging markets. Execution-driven leadership with a strong focus on scalability and sustainability."
-  },
-  {
-    title: "Personal Branding, Growth & Reputation Management",
-    level: "Advanced",
-    description: "High-authority personal branding, SEO reputation strategy, media positioning, and digital influence building. Active management of online presence, press coverage, and long-term brand credibility."
-  },
-];
-
-// career_data
-const career_data = [
-  {
-    title: "Founder & CEO",
-    designation: "Mainet Prop Firm Services – FZCO · Dubai, UAE",
-    year: "2020 – Present",
-    description: "Leading a global fintech and AI-driven trading ecosystem operating across Europe, the Middle East, and Africa. Architect of the Mainet X platform, combining automated trading, prop-firm systems, and advanced fintech infrastructure."
-  },
-  {
-    title: "Founder & Strategic Visionary",
-    designation: "BeTrader Academy · Europe",
-    year: "2017 – Present",
-    description: "International financial education platform focused on trading, blockchain, and applied financial intelligence. Creator of proprietary trading methodologies and scalable education systems."
-  },
-  {
-    title: "Blockchain Technology Professor",
-    designation: "Romanian-American University · Bucharest",
-    year: "2019 – 2022",
-    description: "Delivered academic and practical courses on blockchain technology, crypto economics, and digital finance applications."
-  },
-  {
-    title: "Founder & Product Architect",
-    designation: "Betra Coin / BetraPay",
-    year: "2017 – Present",
-    description: "Developed Romania's first privately funded cryptocurrency ecosystem, focusing on utility, payments, and adoption strategy."
-  },
-  {
-    title: "International FinTech & Blockchain Consultant",
-    designation: "Independent",
-    year: "2014 – 2019",
-    description: "Advised startups and private investors on fintech products, trading automation, crypto systems, and scaling strategies."
-  },
-];
+import { useTranslations } from '@context/IntlContext';
 
 const PortfolioSkills = () => {
+  const tSkills = useTranslations('skills');
+  const tExperience = useTranslations('experience');
+
+  const skill_data = tSkills('items');
+  const career_data = tExperience('items');
+
   return (
     <>
       <section className="skill__area pt-95 grey-bg-12 pb-125">
@@ -72,10 +16,10 @@ const PortfolioSkills = () => {
             <div className="col-xxl-5 col-xl-5 col-lg-5">
               <div className="skill__wrapper-9">
                 <div className="section__title-wrapper-9 mb-55">
-                  <span className="section__title-pre-9">Elite Capabilities</span>
+                  <span className="section__title-pre-9">{tSkills('preTitle')}</span>
                   <h3 className="section__title-9">
-                    Skills & <br />
-                    Experience
+                    {tSkills('title').split(' & ')[0]} & <br />
+                    {tSkills('title').split(' & ')[1]}
                   </h3>
                 </div>
                 <div className="skill__item-wrapper-9">
@@ -99,7 +43,7 @@ const PortfolioSkills = () => {
             </div>
             <div className="col-xxl-7 col-xl-7 col-lg-7">
               <div className="career__wrapper career__style-2 pl-60">
-                <h4 className="career__title">Experience</h4>
+                <h4 className="career__title">{tExperience('title')}</h4>
                 {career_data.map((item, i) => (
                   <div
                     key={i}
@@ -124,7 +68,7 @@ const PortfolioSkills = () => {
                 ))}
                 <div className="mt-50 text-center" style={{ borderTop: '2px solid #e0e0e0', paddingTop: '30px' }}>
                   <p style={{ fontSize: '18px', fontStyle: 'italic', color: '#333', fontWeight: '500', lineHeight: '1.6' }}>
-                    "I build scalable financial ecosystems where technology, automation, and vision converge."
+                    "{tExperience('quote')}"
                   </p>
                 </div>
               </div>
