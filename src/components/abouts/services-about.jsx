@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useLocale } from '@context/IntlContext';
 // internal
 import shape_1 from "@assets/img/about/14/about-shape-1.png";
 import shape_2 from "@assets/img/about/14/about-shape-2.png";
@@ -8,6 +9,8 @@ import about_img_1 from "@assets/img/about/14/about-img-1.jpg";
 import about_img_2 from "@assets/img/about/14/about-img-2.jpg";
 
 const ServicesAbout = () => {
+  const locale = useLocale();
+
   return (
     <section className="about__area pb-140">
       <div className="container">
@@ -47,7 +50,7 @@ const ServicesAbout = () => {
               </div>
 
               <div className="about-btn">
-                <Link href="/services" className="tp-btn">
+                <Link href={`/${locale}/services`} className="tp-btn">
                   Our Services
                 </Link>
               </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useLocale } from '@context/IntlContext';
 // internal
 import about_thumb from "@assets/img/about/3/about-1.jpg";
 import PhotographerAboutSelf from "./p-about-self";
@@ -8,6 +9,7 @@ import PhotographerAboutEducation from "./p-about-education";
 import PhotographerAboutSkill from "./p-about-skill";
 
 const PhotographerAbout = () => {
+  const locale = useLocale();
   const activeRef = useRef(null);
   const marker = useRef(null);
   // handleActive
@@ -133,7 +135,7 @@ const PhotographerAbout = () => {
                         </a>
                       </div>
                       <div className="about__btn-3-inner mb-20">
-                        <Link href="/contact-2" className="tp-btn-border-3 ">
+                        <Link href={`/${locale}/contact-2`} className="tp-btn-border-3 ">
                           Hire Me
                         </Link>
                       </div>

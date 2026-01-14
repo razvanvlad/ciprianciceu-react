@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
+import { useLocale } from '@context/IntlContext';
 // internal
 import shape_1 from "@assets/img/about/5/shape/about-shape-1.png";
 import shape_2 from "@assets/img/about/5/shape/about-shape-2.png";
@@ -11,6 +12,7 @@ import { useVideoModal } from "src/provider/VideoProvider";
 
 const HomeAgencyAbout = () => {
   const {playVideo} = useVideoModal();
+  const locale = useLocale();
 
   return (
     <>
@@ -44,7 +46,7 @@ const HomeAgencyAbout = () => {
                 </p>
 
                 <div className="about__btn-5">
-                  <Link href="/about" className="tp-btn-blue">
+                  <Link href={`/${locale}/about`} className="tp-btn-blue">
                     More About Us
                   </Link>
                 </div>

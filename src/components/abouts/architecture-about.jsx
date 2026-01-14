@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useLocale } from '@context/IntlContext';
 // internal
 import about_img from "@assets/img/about/8/about-img-1.jpg";
 import bg from "@assets/img/about/8/about-img-2.jpg";
@@ -9,6 +10,7 @@ import { useVideoModal } from "src/provider/VideoProvider";
 
 const ArchitectureAbout = () => {
   const { playVideo } = useVideoModal();
+  const locale = useLocale();
 
   return (
     <>
@@ -90,7 +92,7 @@ const ArchitectureAbout = () => {
                   </div>
                 </div>
                 <div className="about__btn-8 d-block d-sm-flex align-items-center">
-                  <Link href="/about" className="tp-btn-border-8 mb-20 mr-30">
+                  <Link href={`/${locale}/about`} className="tp-btn-border-8 mb-20 mr-30">
                     More About Us
                   </Link>
                   <a

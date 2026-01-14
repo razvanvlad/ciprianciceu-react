@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useLocale } from '@context/IntlContext';
 // internal
 import thumb_main from "@assets/img/about/4/about-img-1.png";
 import thumb_shape from "@assets/img/about/4/about-shape-1.png";
@@ -37,6 +38,8 @@ const {
 } = content;
 
 const HomeLawyerAbout = () => {
+  const locale = useLocale();
+
   return (
     <>
       <section id="about" className="about__area grey-bg-8 pt-200 pb-200">
@@ -93,7 +96,7 @@ const HomeLawyerAbout = () => {
                 <p>{text}</p>
                 <p>{text_2}</p>
                 <div className="about__btn-4 mt-45 d-sm-flex align-items-center">
-                  <Link href="/contact" className="tp-btn-brown mr-30">
+                  <Link href={`/${locale}/contact`} className="tp-btn-brown mr-30">
                     Schedule Constitution
                   </Link>
                   <div className="about__call d-flex align-items-center">
