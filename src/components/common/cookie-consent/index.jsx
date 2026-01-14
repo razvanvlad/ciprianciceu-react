@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { useLocale } from '@context/IntlContext';
 
 const CookieConsent = () => {
+  const locale = useLocale();
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
@@ -32,7 +34,7 @@ const CookieConsent = () => {
             We use cookies to enhance your browsing experience, analyze site traffic,
             and personalize content. By clicking "Accept All", you consent to our use
             of cookies.{" "}
-            <Link href="/cookie-policy" className="cookie-policy-link">
+            <Link href={`/${locale}/cookie-policy`} className="cookie-policy-link">
               Learn more
             </Link>
           </p>

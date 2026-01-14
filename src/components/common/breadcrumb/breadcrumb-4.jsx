@@ -1,9 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { useLocale } from '@context/IntlContext';
 // internal
 import bg from "@assets/img/blog/breadcrumb/blog-breadcrumb-slider-3.jpg";
 
 const BreadcrumbFour = ({title,subtitle}) => {
+  const locale = useLocale();
+
   return (
     <section className="breadcrumb__area pt-130 pb-115 breadcrumb__style-10 black-bg p-relative z-index-1">
       <div
@@ -17,7 +20,7 @@ const BreadcrumbFour = ({title,subtitle}) => {
               <h3 className="breadcrumb__title">{title}</h3>
               <div className="breadcrumb__list">
                 <span>
-                  <Link href="/home">Home</Link>
+                  <Link href={`/${locale}/home`}>Home</Link>
                 </span>
                 <span className="dvdr">
                   <i className="fa-solid fa-circle-small"></i>
