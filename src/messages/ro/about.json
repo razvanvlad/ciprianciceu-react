@@ -1,6 +1,83 @@
 {
   "seo": {
-    "title": "About Ciprian Ciceu - Technology Entrepreneur & Blockchain Educator",
-    "description": "Learn about Ciprian Ciceu, a technology entrepreneur and blockchain educator with extensive experience in fintech, digital platforms, and educational initiatives across Europe and the Middle East."
+    "title": "Despre Ciprian Ciceu - Antreprenor Tehnologic & Educator Blockchain",
+    "description": "Aflați despre Ciprian Ciceu, un antreprenor tehnologic și educator blockchain cu experiență vastă în fintech, platforme digitale și inițiative educaționale în Europa și Orientul Mijlociu."
+  },
+  "topBar": {
+    "title": "DESPRE CIPRIAN CICEU",
+    "subtitle": "Antreprenor Tehnologic, Educator Blockchain & Lider în Inovație"
+  },
+  "introduction": {
+    "title": "Introducere",
+    "paragraph1": "Ciprian Ciceu este un antreprenor tehnologic, educator blockchain și fondator cu experiență vastă în construirea de platforme digitale, sisteme automate și comunități internaționale în domeniile fintech, blockchain și tehnologii emergente. Parcursul său profesional se întinde pe mai bine de un deceniu și reflectă o concentrare constantă pe inovație bazată pe educație, structură și sustenabilitate pe termen lung.",
+    "paragraph2": "De-a lungul carierei sale, Ciprian a lucrat la intersecția dintre tehnologie și finanțe, contribuind la dezvoltarea de ecosisteme digitale scalabile și inițiative educaționale menite să facă tehnologiile complexe mai accesibile. Abordarea sa pune accent pe responsabilitate, transparență și execuție practică, poziționând tehnologia ca pe un instrument de împuternicire, nu de speculație."
+  },
+  "faqs": {
+    "preTitle": "Luați legătura cu noi pentru a vedea cum",
+    "title": "Oferim servicii digitale inteligente și flexibile",
+    "items": [
+      {
+        "title": "Blockchain și Inovație Digitală",
+        "intro": "Tehnologia blockchain reprezintă un pilon central al activității profesionale a lui Ciprian. Ca un avocat timpuriu al educației blockchain și al adoptării practice, el a fost implicat în proiecte care explorează cum tehnologiile descentralizate pot îmbunătăți transparența, securitatea și eficiența operațională.",
+        "listTitle": "Munca sa în acest domeniu include:",
+        "list": [
+          "Inițiative de educație și formare în blockchain",
+          "Cercetare și utilizare aplicată a tehnologiilor de registru distribuit",
+          "Explorarea infrastructurilor de active digitale",
+          "Roluri de consultanță legate de integrarea blockchain"
+        ],
+        "conclusion": "Ciprian abordează blockchain-ul nu ca pe o tendință speculativă, ci ca pe o tehnologie fundamentală cu implicații pe termen lung pentru finanțe, guvernanță și sisteme digitale."
+      },
+      {
+        "title": "Educație și Partajare de Cunoștințe",
+        "intro": "Educația este o componentă esențială a misiunii lui Ciprian Ciceu. El crede cu tărie că inovația sustenabilă poate fi realizată doar prin cunoaștere, formare și utilizare responsabilă a tehnologiei.",
+        "listTitle": "El a contribuit la dezvoltarea programelor educaționale și academiilor axate pe:",
+        "list": [
+          "Alfabetizare financiară",
+          "Fundamentele tehnologiei și blockchain",
+          "Educație practică de tranzacționare",
+          "Gândire strategică și conștientizarea riscurilor"
+        ],
+        "conclusion": "Prin aceste inițiative, Ciprian a ajutat indivizi și comunități să înțeleagă mai bine conceptele digitale complexe și să le aplice în moduri structurate și informate."
+      },
+      {
+        "title": "Antreprenoriat și Leadership",
+        "intro": "Ca antreprenor, Ciprian a fondat și susținut multiple inițiative care combină tehnologia, educația și construirea de comunități. Stilul său de leadership pune accent pe:",
+        "list": [
+          "Structură și guvernanță clare",
+          "Planificare strategică pe termen lung",
+          "Responsabilitate etică",
+          "Colaborare internațională"
+        ],
+        "conclusion": "El a lucrat cu echipe din Europa, Orientul Mijlociu și alte regiuni, coordonând eforturile între dezvoltatori, educatori, analiști și lideri de afaceri. Experiența sa în gestionarea echipelor diverse și multiculturale a fost esențială în scalarea proiectelor dincolo de piețele locale."
+      },
+      {
+        "title": "Prezență Publică și Media",
+        "intro": "Ciprian Ciceu a fost prezentat în diverse publicații media naționale și internaționale, unde a împărtășit perspective despre tehnologie, blockchain, antreprenoriat și educație digitală. Contribuțiile sale publice se concentrează pe explicarea subiectelor complexe într-o manieră accesibilă și pe încurajarea adoptării informate și responsabile a noilor tehnologii.",
+        "listTitle": "Pe lângă apariții în media, Ciprian participă la conferințe, workshop-uri și evenimente private, unde vorbește despre:",
+        "list": [
+          "Tehnologie și transformare digitală",
+          "Fundamentele și aplicațiile blockchain",
+          "Antreprenoriat și leadership",
+          "Educația ca motor al inovației"
+        ]
+      },
+      {
+        "title": "Filozofie și Valori",
+        "intro": "Munca lui Ciprian este ghidată de un set de principii fundamentale care modelează atât abordarea sa profesională, cât și cea personală:",
+        "list": [
+          "<strong>Claritate în locul exagerărilor</strong> – prioritizarea înțelegerii în locul promovării",
+          "<strong>Educație în locul speculației</strong> – împuternicirea oamenilor prin cunoaștere",
+          "<strong>Structură în locul improvizației</strong> – construirea de sisteme care durează",
+          "<strong>Viziune pe termen lung în locul rezultatelor pe termen scurt</strong> – concentrare pe creștere sustenabilă"
+        ],
+        "conclusion": "El crede că tehnologia ar trebui să servească oamenii, să simplifice complexitatea și să contribuie la progres semnificativ și durabil."
+      }
+    ]
+  },
+  "currentFocus": {
+    "title": "Focus Curent și Direcție Viitoare",
+    "paragraph1": "Astăzi, Ciprian Ciceu continuă să se concentreze pe dezvoltarea platformelor tehnologice, inițiativelor educaționale și colaborărilor internaționale care se aliniază cu viziunea sa pe termen lung. Munca sa continuă explorează noi modalități de a combina automatizarea, blockchain-ul și educația în ecosisteme coezive care oferă valoare reală.",
+    "paragraph2": "Privind înainte, Ciprian rămâne dedicat construirii de soluții care sunt responsabile, scalabile și impactante, continuând în același timp să contribuie la conversațiile globale despre viitorul tehnologiei și inovației."
   }
 }

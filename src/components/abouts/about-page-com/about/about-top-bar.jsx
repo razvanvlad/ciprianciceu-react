@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslations } from '@context/IntlContext';
 
 const AboutTopBar = () => {
+  const t = useTranslations('about.topBar');
+
   return (
     <section
       className="about__heading about__heading-overlay about__spacing include-bg jarallax"
@@ -10,9 +13,9 @@ const AboutTopBar = () => {
         <div className="row justify-content-center">
           <div className="col-xl-8 col-lg-10">
             <div className="about__heading-content text-center p-relative z-index-1">
-              <h1 className="about__heading-title">ABOUT CIPRIAN CICEU </h1>
+              <h1 className="about__heading-title">{t('title')}</h1>
               <h3 className="about__heading-subtitle">
-                Technology Entrepreneur, Blockchain Educator & Innovation Leader
+                {t('subtitle')}
               </h3>
             </div>
           </div>

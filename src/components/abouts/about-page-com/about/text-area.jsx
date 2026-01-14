@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslations } from '@context/IntlContext';
 
 const TextArea = () => {
+  const t = useTranslations('about.introduction');
+
   return (
     <section className="about__text pt-115 pb-100">
       <div className="container">
@@ -12,7 +15,7 @@ const TextArea = () => {
               data-wow-duration="1s"
             >
               <h3 className="about__text-title">
-                Introduction
+                {t('title')}
               </h3>
             </div>
           </div>
@@ -23,10 +26,10 @@ const TextArea = () => {
               data-wow-duration="1s"
             >
               <p>
-                Ciprian Ciceu is a technology entrepreneur, blockchain educator and founder with extensive experience in building digital platforms, automated systems and international communities across fintech, blockchain and emerging technologies. His professional journey spans more than a decade and reflects a consistent focus on innovation grounded in education, structure and long-term sustainability.
+                {t('paragraph1')}
               </p>
               <p>
-                Throughout his career, Ciprian has worked at the intersection of technology and finance, contributing to the development of scalable digital ecosystems and educational initiatives designed to make complex technologies more accessible. His approach emphasizes responsibility, transparency and practical execution, positioning technology as a tool for empowerment rather than speculation.
+                {t('paragraph2')}
               </p>
             </div>
           </div>
