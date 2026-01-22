@@ -12,3 +12,15 @@ export default function Login() {
     </Wrapper>
   );
 }
+
+// Load translations for this page
+export async function getStaticProps() {
+  return {
+    props: {
+      messages: {
+        ...(await import(`../messages/en/common.json`)).default,
+        ...(await import(`../messages/en/home.json`)).default,
+      }
+    }
+  };
+}
