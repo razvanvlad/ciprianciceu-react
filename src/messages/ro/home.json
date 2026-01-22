@@ -32,7 +32,33 @@
   "projects": {
     "category": "Creștere Strategică",
     "title": "PROIECTE EVIDENȚIATE",
-    "description": "De-a lungul anilor, Ciprian Ciceu a fost implicat în multiple proiecte internaționale, inclusiv:"
+    "description": "De-a lungul anilor, Ciprian Ciceu a fost implicat în multiple proiecte internaționale, inclusiv:",
+    "sectorLabel": "Sector:",
+    "launchedLabel": "Lansat:",
+    "visitWebsite": "Vizitează Website",
+    "concludingText": "Fiecare proiect reflectă o viziune pe termen lung centrată pe inovație, educație și creștere sustenabilă.",
+    "items": [
+      {
+        "title": "Mainet X",
+        "description": "Un ecosistem fintech și tehnologic axat pe automatizare, finanțe digitale și infrastructură scalabilă.",
+        "sector": "Tehnologie"
+      },
+      {
+        "title": "BeTrader Academy",
+        "description": "O inițiativă educațională dedicată alfabetizării financiare, formării tehnologice și educației aplicate în trading.",
+        "sector": "Educație"
+      },
+      {
+        "title": "Proiecte Blockchain & Automatizare",
+        "description": "Inițiative independente și colaborative axate pe integrarea blockchain, automatizare și transformare digitală.",
+        "sector": "Inovație"
+      },
+      {
+        "title": "Betra Crypto Coin",
+        "description": "Platformă de plăți cu criptomonede și soluție de portofel digital pentru tranzacții crypto fără probleme.",
+        "sector": "FinTech"
+      }
+    ]
   },
   "skills": {
     "preTitle": "Capabilități de Elită",

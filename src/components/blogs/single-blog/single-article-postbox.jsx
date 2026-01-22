@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 // internal
 import { DateTwo, UserTwo } from "@svg/index";
+import { useTranslations, useLocale } from '@context/IntlContext';
 
 const SingleArticlePostbox = ({
   id,
@@ -12,7 +13,10 @@ const SingleArticlePostbox = ({
   author_name,
   tag,
   link,
+  translationNamespace = 'press',
 }) => {
+  const t = useTranslations(translationNamespace + '.ui');
+  const locale = useLocale();
   // Handle both single tag (string) and multiple tags (array)
   const tags = Array.isArray(tag) ? tag.slice(0, 3) : tag ? [tag] : [];
 
@@ -40,7 +44,9 @@ const SingleArticlePostbox = ({
       .replace(/--+/g, '-');
   };
 
-  const blogUrl = link || `/blog/${createSlug(title)}`;
+  // Use the translation namespace to determine the URL path
+  const urlPath = translationNamespace === 'blog' ? 'blog' : 'press';
+  const blogUrl = link || `/${locale}/${urlPath}/${createSlug(title)}`;
 
   return (
     <article className="postbox__item format-standard mb-50 transition-3">
@@ -113,7 +119,7 @@ const SingleArticlePostbox = ({
         {/* Read More Button */}
         <div className="postbox__read-more">
           <Link href={blogUrl} className="tp-btn">
-            Read Full Article
+            {t('readMore')}
           </Link>
         </div>
       </div>

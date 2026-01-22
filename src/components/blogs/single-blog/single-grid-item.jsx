@@ -3,6 +3,7 @@ import Image from "next/image";
 // internal
 import { QuoteTwo, DateTwo } from "@svg/index";
 import Link from "next/link";
+import { useTranslations, useLocale } from '@context/IntlContext';
 
 const SingleGridItem = ({
   id,
@@ -18,7 +19,10 @@ const SingleGridItem = ({
   link,
   tag,
   baseUrl = '/blog', // Default to /blog, but can be /press or other
+  translationNamespace = 'press',
 }) => {
+  const t = useTranslations(translationNamespace + '.ui');
+  const locale = useLocale();
   // Handle both single tag (string) and multiple tags (array)
   const tags = Array.isArray(tag) ? tag.slice(0, 3) : tag ? [tag] : [];
 
@@ -46,7 +50,7 @@ const SingleGridItem = ({
       .replace(/--+/g, '-'); // Replace multiple dashes with single dash
   };
 
-  const blogUrl = `${baseUrl}/${createSlug(title)}`;
+  const blogUrl = `/${locale}${baseUrl}/${createSlug(title)}`;
 
   return (
     <React.Fragment>
@@ -92,7 +96,7 @@ const SingleGridItem = ({
                 <div className="blog__outlet-logo d-flex align-items-center gap-3">
                   {link && (
                     <a href={link} target="_blank" rel="noopener noreferrer" className="btn btn-sm">
-                      Original Article:
+                      {t('originalArticle')}
                     </a>
                   )}
                   <div className="blog__outlet-logo-img">

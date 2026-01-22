@@ -4,7 +4,7 @@ import SliderBreadcrumb from "@components/common/breadcrumb/slider-breadcrumb";
 import BlogGridArea from "@components/blogs/blog-grid-area";
 import { useTranslations } from '@context/IntlContext';
 
-export default function Press() {
+export default function Press({ localizedArticles }) {
   const t = useTranslations('press.seo');
 
   return (
@@ -16,36 +16,28 @@ export default function Press() {
         type="website"
       />
       <HeaderEight />
-      <SliderBreadcrumb />
-      <BlogGridArea url="press" />
+      <SliderBreadcrumb localizedArticles={localizedArticles} translationNamespace="press" />
+      <BlogGridArea url="press" localizedArticles={localizedArticles} translationNamespace="press" />
       <FooterSeven />
     </Wrapper>
   )
 }
 
 // Load translations for this page
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   const locale = params.locale;
+
+  // Dynamically load localized articles
+  const { getLocalizedArticles } = await import('@data/get-localized-articles');
+  const localizedArticles = await getLocalizedArticles(locale);
 
   return {
     props: {
       messages: {
         ...(await import(`../../messages/${locale}/common.json`)).default,
         ...(await import(`../../messages/${locale}/press.json`)).default,
-      }
+      },
+      localizedArticles
     }
-  };
-}
-
-// Generate static pages for all locales
-export async function getStaticPaths() {
-  return {
-    paths: [
-      { params: { locale: 'en' } },
-      { params: { locale: 'fr' } },
-      { params: { locale: 'ro' } },
-      { params: { locale: 'ar' } }
-    ],
-    fallback: false
   };
 }

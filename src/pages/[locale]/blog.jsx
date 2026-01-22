@@ -5,8 +5,9 @@ import BlogArticlesArea from "@components/blogs/blog-articles-area";
 import blogBg from '@assets/img/ciceu/princeton-black-white-canvas.webp';
 import { useTranslations } from '@context/IntlContext';
 
-export default function Blog() {
+export default function Blog({ localizedArticles }) {
   const t = useTranslations('blog.seo');
+  const tHeader = useTranslations('blog.header');
 
   return (
     <Wrapper>
@@ -18,44 +19,31 @@ export default function Blog() {
       />
       <HeaderEight />
       <SectionArea
-        title="Blog"
-        subtitle={
-          <>
-            Insights, analysis, and perspectives on technology, trading, <br />
-            blockchain, and innovation.
-          </>
-        }
+        title={tHeader('title')}
+        subtitle={tHeader('subtitle')}
         bgImage={blogBg}
       />
-      <BlogArticlesArea />
+      <BlogArticlesArea localizedArticles={localizedArticles} />
       <FooterSeven />
     </Wrapper>
   )
 }
 
 // Load translations for this page
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   const locale = params.locale;
+
+  // Dynamically load localized blog articles
+  const { getLocalizedBlogArticles } = await import('@data/get-localized-blog-articles');
+  const localizedArticles = await getLocalizedBlogArticles(locale);
 
   return {
     props: {
       messages: {
         ...(await import(`../../messages/${locale}/common.json`)).default,
         ...(await import(`../../messages/${locale}/blog.json`)).default,
-      }
+      },
+      localizedArticles
     }
-  };
-}
-
-// Generate static pages for all locales
-export async function getStaticPaths() {
-  return {
-    paths: [
-      { params: { locale: 'en' } },
-      { params: { locale: 'fr' } },
-      { params: { locale: 'ro' } },
-      { params: { locale: 'ar' } }
-    ],
-    fallback: false
   };
 }

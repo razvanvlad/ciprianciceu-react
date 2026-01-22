@@ -1,22 +1,48 @@
 {
-  "seo": {
-    "title": "Contact & Media Inquiries",
-    "description": "Get in touch with Ciprian Ciceu for media inquiries, business opportunities, speaking engagements, and partnership discussions."
-  },
-  "title": "Get in Touch",
-  "subtitle": "Let's discuss your project",
-  "form": {
-    "name": "Your Name",
-    "email": "Your Email",
-    "subject": "Subject",
-    "message": "Your Message",
-    "submit": "Send Message",
-    "success": "Message sent successfully!",
-    "error": "Failed to send message. Please try again."
-  },
-  "info": {
-    "general": "General Inquiries",
-    "press": "Press & Media",
-    "confidentiality": "All messages are reviewed with attention and confidentiality."
+  "contact": {
+    "seo": {
+      "title": "Contact & Media Inquiries",
+      "description": "Get in touch with Ciprian Ciceu for media inquiries, business opportunities, speaking engagements, and partnership discussions."
+    },
+    "header": {
+      "title": "CONTACT US",
+      "subtitle": "Get in touch with us for more information"
+    },
+    "form": {
+      "title": "Send a message",
+      "name": "Enter your name",
+      "email": "Enter your email",
+      "phone": "Mobile no",
+      "company": "Company",
+      "message": "Your message",
+      "agree": "I am bound by the terms of the Service I accept Privacy Policy.",
+      "submit": "Send Message",
+      "callTitle": "Call for Consultation",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    },
+    "locations": {
+      "romania": {
+        "title": "ROMANIA BUCHAREST",
+        "subtitle": "TRADING ACADEMY",
+        "location": "Bulevardul Pipera nr 31, Bucharest"
+      },
+      "dubai": {
+        "title": "DUBAI UAE",
+        "subtitle": "COMPANY OFFICE",
+        "company": "MainetX Prop Firm Service FZCO",
+        "location": "Silicon Oasis Digital Park A1 (UNITED ARAB EMIRATES)"
+      },
+      "belgium": {
+        "title": "BELGIUM BRUSSELS",
+        "subtitle": "TRADING ACADEMY",
+        "location": "Avenue Louise nr 173, 1050 Brussels"
+      }
+    },
+    "info": {
+      "general": "General Inquiries",
+      "press": "Press & Media",
+      "confidentiality": "All messages are reviewed with attention and confidentiality."
+    }
   }
 }

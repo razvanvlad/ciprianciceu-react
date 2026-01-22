@@ -1,7 +1,24 @@
 {
-  "seo": {
-    "title": "Press & Media Coverage",
-    "description": "International media coverage featuring Ciprian Ciceu's work in fintech, blockchain innovation, AI-driven trading platforms, and entrepreneurial insights.",
-    "tags": ["Media", "Press", "FinTech", "Blockchain", "Business", "Trading", "Education", "Technology", "Entrepreneurship"]
+  "press": {
+    "seo": {
+      "title": "الصحافة والتغطية الإعلامية",
+      "description": "تغطية إعلامية دولية تعرض عمل سيبريان سيسيو في التكنولوجيا المالية، الابتكار في البلوكتشين، منصات التداول المدعومة بالذكاء الاصطناعي، ورؤى ريادة الأعمال.",
+      "tags": ["إعلام", "صحافة", "تكنولوجيا مالية", "بلوكتشين", "أعمال", "تداول", "تعليم", "تكنولوجيا", "ريادة أعمال"]
+    },
+    "ui": {
+      "title": "أحدث مقالات",
+      "titleHighlight": "الصحافة",
+      "titleEnd": "",
+      "subtitle": "تغطية إعلامية دولية تعرض عمل سيبريان سيسيو في التكنولوجيا المالية، البلوكتشين، التداول المدعوم بالذكاء الاصطناعي والابتكار الريادي",
+      "filterBy": "تصفية حسب:",
+      "sortBy": "ترتيب حسب:",
+      "sortNewest": "الأحدث أولاً",
+      "sortOldest": "الأقدم أولاً",
+      "viewAll": "عرض جميع المقالات الصحفية",
+      "readMore": "اقرأ المقال كاملاً",
+      "continueReading": "متابعة القراءة",
+      "noArticles": "لم يتم العثور على مقالات للفلتر المحدد.",
+      "originalArticle": "المقال الأصلي:"
+    }
   }
 }

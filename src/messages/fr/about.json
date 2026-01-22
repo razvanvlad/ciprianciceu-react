@@ -1,83 +1,85 @@
 {
-  "seo": {
-    "title": "À propos de Ciprian Ciceu - Entrepreneur Technologique & Éducateur Blockchain",
-    "description": "Découvrez Ciprian Ciceu, un entrepreneur technologique et éducateur blockchain avec une vaste expérience en fintech, plateformes digitales et initiatives éducatives en Europe et au Moyen-Orient."
-  },
-  "topBar": {
-    "title": "À PROPOS DE CIPRIAN CICEU",
-    "subtitle": "Entrepreneur Technologique, Éducateur Blockchain & Leader en Innovation"
-  },
-  "introduction": {
-    "title": "Introduction",
-    "paragraph1": "Ciprian Ciceu est un entrepreneur technologique, éducateur blockchain et fondateur avec une vaste expérience dans la construction de plateformes digitales, systèmes automatisés et communautés internationales dans les secteurs fintech, blockchain et technologies émergentes. Son parcours professionnel s'étend sur plus d'une décennie et reflète une concentration constante sur l'innovation fondée sur l'éducation, la structure et la durabilité à long terme.",
-    "paragraph2": "Tout au long de sa carrière, Ciprian a travaillé à l'intersection de la technologie et de la finance, contribuant au développement d'écosystèmes digitaux évolutifs et d'initiatives éducatives conçues pour rendre les technologies complexes plus accessibles. Son approche met l'accent sur la responsabilité, la transparence et l'exécution pratique, positionnant la technologie comme un outil d'autonomisation plutôt que de spéculation."
-  },
-  "faqs": {
-    "preTitle": "Contactez-nous pour voir comment",
-    "title": "Nous fournissons des services digitaux intelligents et flexibles",
-    "items": [
-      {
-        "title": "Blockchain et Innovation Digitale",
-        "intro": "La technologie blockchain représente un pilier central de l'activité professionnelle de Ciprian. En tant que défenseur précoce de l'éducation blockchain et de l'adoption pratique, il a été impliqué dans des projets qui explorent comment les technologies décentralisées peuvent améliorer la transparence, la sécurité et l'efficacité opérationnelle.",
-        "listTitle": "Son travail dans ce domaine comprend :",
-        "list": [
-          "Initiatives d'éducation et de formation blockchain",
-          "Recherche et utilisation appliquée des technologies de registre distribué",
-          "Exploration des infrastructures d'actifs digitaux",
-          "Rôles de conseil liés à l'intégration blockchain"
-        ],
-        "conclusion": "Ciprian aborde la blockchain non pas comme une tendance spéculative, mais comme une technologie fondamentale avec des implications à long terme pour la finance, la gouvernance et les systèmes digitaux."
-      },
-      {
-        "title": "Éducation et Partage de Connaissances",
-        "intro": "L'éducation est une composante essentielle de la mission de Ciprian Ciceu. Il croit fermement que l'innovation durable ne peut être réalisée que par la connaissance, la formation et l'utilisation responsable de la technologie.",
-        "listTitle": "Il a contribué au développement de programmes éducatifs et d'académies axés sur :",
-        "list": [
-          "L'alphabétisation financière",
-          "Les fondamentaux de la technologie et de la blockchain",
-          "L'éducation pratique au trading",
-          "La pensée stratégique et la conscience des risques"
-        ],
-        "conclusion": "Grâce à ces initiatives, Ciprian a aidé des individus et des communautés à mieux comprendre les concepts digitaux complexes et à les appliquer de manière structurée et éclairée."
-      },
-      {
-        "title": "Entrepreneuriat et Leadership",
-        "intro": "En tant qu'entrepreneur, Ciprian a fondé et soutenu plusieurs initiatives qui combinent technologie, éducation et construction de communautés. Son style de leadership met l'accent sur :",
-        "list": [
-          "Structure et gouvernance claires",
-          "Planification stratégique à long terme",
-          "Responsabilité éthique",
-          "Collaboration internationale"
-        ],
-        "conclusion": "Il a travaillé avec des équipes à travers l'Europe, le Moyen-Orient et d'autres régions, coordonnant les efforts entre développeurs, éducateurs, analystes et dirigeants d'entreprise. Son expérience dans la gestion d'équipes diverses et multiculturelles a été déterminante pour faire évoluer les projets au-delà des marchés locaux."
-      },
-      {
-        "title": "Présence Publique et Médias",
-        "intro": "Ciprian Ciceu a été présenté dans divers médias nationaux et internationaux, où il a partagé des perspectives sur la technologie, la blockchain, l'entrepreneuriat et l'éducation digitale. Ses contributions publiques se concentrent sur l'explication de sujets complexes de manière accessible et l'encouragement d'une adoption informée et responsable des nouvelles technologies.",
-        "listTitle": "En plus des apparitions médiatiques, Ciprian participe à des conférences, ateliers et événements privés, où il parle de :",
-        "list": [
-          "Technologie et transformation digitale",
-          "Fondamentaux et applications de la blockchain",
-          "Entrepreneuriat et leadership",
-          "L'éducation comme moteur de l'innovation"
-        ]
-      },
-      {
-        "title": "Philosophie et Valeurs",
-        "intro": "Le travail de Ciprian est guidé par un ensemble de principes fondamentaux qui façonnent à la fois son approche professionnelle et personnelle :",
-        "list": [
-          "<strong>Clarté plutôt que battage</strong> – prioriser la compréhension plutôt que la promotion",
-          "<strong>Éducation plutôt que spéculation</strong> – autonomiser les gens par la connaissance",
-          "<strong>Structure plutôt qu'improvisation</strong> – construire des systèmes durables",
-          "<strong>Vision à long terme plutôt que résultats à court terme</strong> – se concentrer sur la croissance durable"
-        ],
-        "conclusion": "Il croit que la technologie doit servir les gens, simplifier la complexité et contribuer à un progrès significatif et durable."
-      }
-    ]
-  },
-  "currentFocus": {
-    "title": "Focus Actuel et Direction Future",
-    "paragraph1": "Aujourd'hui, Ciprian Ciceu continue de se concentrer sur le développement de plateformes technologiques, d'initiatives éducatives et de collaborations internationales qui s'alignent sur sa vision à long terme. Son travail en cours explore de nouvelles façons de combiner l'automatisation, la blockchain et l'éducation en écosystèmes cohésifs qui apportent une valeur réelle.",
-    "paragraph2": "En regardant vers l'avenir, Ciprian reste engagé à construire des solutions responsables, évolutives et impactantes, tout en continuant à contribuer aux conversations mondiales sur l'avenir de la technologie et de l'innovation."
+  "about": {
+    "seo": {
+      "title": "À propos de Ciprian Ciceu - Entrepreneur Technologique & Éducateur Blockchain",
+      "description": "Découvrez Ciprian Ciceu, un entrepreneur technologique et éducateur blockchain avec une vaste expérience en fintech, plateformes digitales et initiatives éducatives en Europe et au Moyen-Orient."
+    },
+    "topBar": {
+      "title": "À PROPOS DE CIPRIAN CICEU",
+      "subtitle": "Entrepreneur Technologique, Éducateur Blockchain & Leader en Innovation"
+    },
+    "introduction": {
+      "title": "Introduction",
+      "paragraph1": "Ciprian Ciceu est un entrepreneur technologique, éducateur blockchain et fondateur avec une vaste expérience dans la construction de plateformes digitales, systèmes automatisés et communautés internationales dans les secteurs fintech, blockchain et technologies émergentes. Son parcours professionnel s'étend sur plus d'une décennie et reflète une concentration constante sur l'innovation fondée sur l'éducation, la structure et la durabilité à long terme.",
+      "paragraph2": "Tout au long de sa carrière, Ciprian a travaillé à l'intersection de la technologie et de la finance, contribuant au développement d'écosystèmes digitaux évolutifs et d'initiatives éducatives conçues pour rendre les technologies complexes plus accessibles. Son approche met l'accent sur la responsabilité, la transparence et l'exécution pratique, positionnant la technologie comme un outil d'autonomisation plutôt que de spéculation."
+    },
+    "faqs": {
+      "preTitle": "Contactez-nous pour voir comment",
+      "title": "Nous fournissons des services digitaux intelligents et flexibles",
+      "items": [
+        {
+          "title": "Blockchain et Innovation Digitale",
+          "intro": "La technologie blockchain représente un pilier central de l'activité professionnelle de Ciprian. En tant que défenseur précoce de l'éducation blockchain et de l'adoption pratique, il a été impliqué dans des projets qui explorent comment les technologies décentralisées peuvent améliorer la transparence, la sécurité et l'efficacité opérationnelle.",
+          "listTitle": "Son travail dans ce domaine comprend :",
+          "list": [
+            "Initiatives d'éducation et de formation blockchain",
+            "Recherche et utilisation appliquée des technologies de registre distribué",
+            "Exploration des infrastructures d'actifs digitaux",
+            "Rôles de conseil liés à l'intégration blockchain"
+          ],
+          "conclusion": "Ciprian aborde la blockchain non pas comme une tendance spéculative, mais comme une technologie fondamentale avec des implications à long terme pour la finance, la gouvernance et les systèmes digitaux."
+        },
+        {
+          "title": "Éducation et Partage de Connaissances",
+          "intro": "L'éducation est une composante essentielle de la mission de Ciprian Ciceu. Il croit fermement que l'innovation durable ne peut être réalisée que par la connaissance, la formation et l'utilisation responsable de la technologie.",
+          "listTitle": "Il a contribué au développement de programmes éducatifs et d'académies axés sur :",
+          "list": [
+            "L'alphabétisation financière",
+            "Les fondamentaux de la technologie et de la blockchain",
+            "L'éducation pratique au trading",
+            "La pensée stratégique et la conscience des risques"
+          ],
+          "conclusion": "Grâce à ces initiatives, Ciprian a aidé des individus et des communautés à mieux comprendre les concepts digitaux complexes et à les appliquer de manière structurée et éclairée."
+        },
+        {
+          "title": "Entrepreneuriat et Leadership",
+          "intro": "En tant qu'entrepreneur, Ciprian a fondé et soutenu plusieurs initiatives qui combinent technologie, éducation et construction de communautés. Son style de leadership met l'accent sur :",
+          "list": [
+            "Structure et gouvernance claires",
+            "Planification stratégique à long terme",
+            "Responsabilité éthique",
+            "Collaboration internationale"
+          ],
+          "conclusion": "Il a travaillé avec des équipes à travers l'Europe, le Moyen-Orient et d'autres régions, coordonnant les efforts entre développeurs, éducateurs, analystes et dirigeants d'entreprise. Son expérience dans la gestion d'équipes diverses et multiculturelles a été déterminante pour faire évoluer les projets au-delà des marchés locaux."
+        },
+        {
+          "title": "Présence Publique et Médias",
+          "intro": "Ciprian Ciceu a été présenté dans divers médias nationaux et internationaux, où il a partagé des perspectives sur la technologie, la blockchain, l'entrepreneuriat et l'éducation digitale. Ses contributions publiques se concentrent sur l'explication de sujets complexes de manière accessible et l'encouragement d'une adoption informée et responsable des nouvelles technologies.",
+          "listTitle": "En plus des apparitions médiatiques, Ciprian participe à des conférences, ateliers et événements privés, où il parle de :",
+          "list": [
+            "Technologie et transformation digitale",
+            "Fondamentaux et applications de la blockchain",
+            "Entrepreneuriat et leadership",
+            "L'éducation comme moteur de l'innovation"
+          ]
+        },
+        {
+          "title": "Philosophie et Valeurs",
+          "intro": "Le travail de Ciprian est guidé par un ensemble de principes fondamentaux qui façonnent à la fois son approche professionnelle et personnelle :",
+          "list": [
+            "<strong>Clarté plutôt que battage</strong> – prioriser la compréhension plutôt que la promotion",
+            "<strong>Éducation plutôt que spéculation</strong> – autonomiser les gens par la connaissance",
+            "<strong>Structure plutôt qu'improvisation</strong> – construire des systèmes durables",
+            "<strong>Vision à long terme plutôt que résultats à court terme</strong> – se concentrer sur la croissance durable"
+          ],
+          "conclusion": "Il croit que la technologie doit servir les gens, simplifier la complexité et contribuer à un progrès significatif et durable."
+        }
+      ]
+    },
+    "currentFocus": {
+      "title": "Focus Actuel et Direction Future",
+      "paragraph1": "Aujourd'hui, Ciprian Ciceu continue de se concentrer sur le développement de plateformes technologiques, d'initiatives éducatives et de collaborations internationales qui s'alignent sur sa vision à long terme. Son travail en cours explore de nouvelles façons de combiner l'automatisation, la blockchain et l'éducation en écosystèmes cohésifs qui apportent une valeur réelle.",
+      "paragraph2": "En regardant vers l'avenir, Ciprian reste engagé à construire des solutions responsables, évolutives et impactantes, tout en continuant à contribuer aux conversations mondiales sur l'avenir de la technologie et de l'innovation."
+    }
   }
 }

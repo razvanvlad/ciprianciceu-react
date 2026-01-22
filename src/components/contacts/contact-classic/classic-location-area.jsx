@@ -4,6 +4,7 @@ import Image from "next/image";
 import location_icon_1 from "@assets/img/contact/contact-location-1.png";
 import location_icon_2 from "@assets/img/contact/contact-location-2.png";
 import location_icon_3 from "@assets/img/contact/contact-location-3.png";
+import { useTranslations } from '@context/IntlContext';
 
 // single location item
 function SingleLocationItem({ title, subtitle, icon, company, location, tel }) {
@@ -18,12 +19,12 @@ function SingleLocationItem({ title, subtitle, icon, company, location, tel }) {
           <p className="contact__location-box-title">{subtitle}</p>
 
           <div className="contact__location-box-info">
-            <p>{company}</p>
+            {company && <p>{company}</p>}
             <p>
               {location}
             </p>
             <p>
-              <a href="tel:+40746847493">{tel}</a>
+              <a href={`tel:${tel.replace(/\//g, '')}`}>{tel}</a>
             </p>
           </div>
         </div>
@@ -33,6 +34,8 @@ function SingleLocationItem({ title, subtitle, icon, company, location, tel }) {
 }
 
 const ClassicLocationArea = ({ element_style = false }) => {
+  const t = useTranslations('contact.locations');
+
   return (
     <section
       className={`contact__loacation-box-area ${element_style ? "pt-110" : "pt-120"
@@ -53,25 +56,25 @@ const ClassicLocationArea = ({ element_style = false }) => {
         )}
         <div className="row">
           <SingleLocationItem
-            title="ROMÂNIA BUCUREȘTI "
-            subtitle="TRADING ACADEMY"
+            title={t('romania.title')}
+            subtitle={t('romania.subtitle')}
             icon={location_icon_1}
-            location="Bulevardul Pipera nr 31, București"
+            location={t('romania.location')}
             tel="+40746847493"
           />
           <SingleLocationItem
-            title="DUBAI UAE"
-            subtitle="COMPANY OFFICE"
+            title={t('dubai.title')}
+            subtitle={t('dubai.subtitle')}
             icon={location_icon_2}
-            company="MainetX Prop Firm Service FZCO "
-            location="Silicon Oasis Digital Park A1 (UNITED ARAB EMIRATES)"
+            company={t('dubai.company')}
+            location={t('dubai.location')}
             tel="+971/502809015"
           />
           <SingleLocationItem
-            title="BELGIUM BRUXELLES"
-            subtitle="TRADING ACADEMY"
+            title={t('belgium.title')}
+            subtitle={t('belgium.subtitle')}
             icon={location_icon_3}
-            location="Avenue Louise nr 173, 1050 Bruxelles"
+            location={t('belgium.location')}
             tel="+40746847493"
           />
         </div>

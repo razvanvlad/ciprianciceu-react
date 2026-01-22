@@ -30,7 +30,23 @@
       "Bash(npm uninstall:*)",
       "Bash(rm:*)",
       "Bash(taskkill:*)",
-      "Bash(del /f \".next\\\\dev\\\\lock\")"
+      "Bash(del /f \".next\\\\dev\\\\lock\")",
+      "Bash(git commit:*)",
+      "Bash(do if grep -q 'href=\"\"/' \"$f\")",
+      "Bash(! grep -q 'locale' \"$f\")",
+      "Bash(then echo \"$f\")",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(! grep -q 'http' \"$f\")",
+      "Bash(then basename \"$f\")",
+      "Bash(timeout /t 5)",
+      "Bash(for file in \"src/data/get-localized-articles.js\" \"src/data/translations/articles-en.js\" \"src/data/translations/articles-ro.js\" \"src/data/translations/articles-fr.js\" \"src/data/translations/articles-ar.js\" \"src/pages/[locale]/press.jsx\" \"src/pages/[locale]/index.jsx\" \"src/components/blogs/blog-grid-area.jsx\")",
+      "Bash(do echo \"Checking: $file\")",
+      "Bash(node:*)",
+      "Bash(for file in src/messages/*/press.json src/messages/*/blog.json)",
+      "Bash(do echo \"=== Checking $file ===\")",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)"
     ]
   }
 }

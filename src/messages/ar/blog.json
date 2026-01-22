@@ -1,6 +1,26 @@
 {
-  "seo": {
-    "title": "Blog - Ciprian Ciceu",
-    "description": "Read insights and articles on fintech, blockchain, entrepreneurship, and technology innovation."
+  "blog": {
+    "seo": {
+      "title": "مدونة - سيبريان سيسيو",
+      "description": "اقرأ رؤى ومقالات حول التكنولوجيا المالية والبلوك تشين وريادة الأعمال والابتكار التكنولوجي."
+    },
+    "header": {
+      "title": "المدونة",
+      "subtitle": "رؤى، تحليلات، ووجهات نظر حول التكنولوجيا، التداول، البلوكتشين والابتكار."
+    },
+    "ui": {
+      "title": "أحدث مقالات",
+      "titleHighlight": "المدونة",
+      "titleEnd": "",
+      "subtitle": "رؤى، تحليلات، ووجهات نظر حول التكنولوجيا، التداول، البلوكتشين والابتكار من سيبريان سيسيو وفريق MainetX.",
+      "filterBy": "تصفية حسب:",
+      "sortBy": "ترتيب حسب:",
+      "sortNewest": "الأحدث أولاً",
+      "sortOldest": "الأقدم أولاً",
+      "noArticles": "لم يتم العثور على مقالات لهذه الفئة",
+      "viewAll": "عرض جميع مقالات المدونة",
+      "readMore": "اقرأ المقال كاملاً",
+      "continueReading": "متابعة القراءة"
+    }
   }
 }

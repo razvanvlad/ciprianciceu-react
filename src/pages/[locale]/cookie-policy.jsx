@@ -13,12 +13,7 @@ export default function CookiePolicy() {
       <HeaderEight />
       <SectionArea
         title={t('title')}
-        subtitle={
-          <>
-            This Cookie Policy explains how we use cookies and similar technologies <br />
-            to recognize visitors and improve user experience on our Website.
-          </>
-        }
+        subtitle={t('subtitle')}
       />
       <CookiePolicyArea />
       <FooterSeven />
@@ -27,7 +22,7 @@ export default function CookiePolicy() {
 }
 
 // Load translations for this page
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   const locale = params.locale;
 
   return {
@@ -37,18 +32,5 @@ export async function getStaticProps({ params }) {
         ...(await import(`../../messages/${locale}/policy.json`)).default,
       }
     }
-  };
-}
-
-// Generate static pages for all locales
-export async function getStaticPaths() {
-  return {
-    paths: [
-      { params: { locale: 'en' } },
-      { params: { locale: 'fr' } },
-      { params: { locale: 'ro' } },
-      { params: { locale: 'ar' } }
-    ],
-    fallback: false
   };
 }

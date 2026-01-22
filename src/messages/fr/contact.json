@@ -1,22 +1,48 @@
 {
-  "seo": {
-    "title": "Contact & Media Inquiries",
-    "description": "Get in touch with Ciprian Ciceu for media inquiries, business opportunities, speaking engagements, and partnership discussions."
-  },
-  "title": "Get in Touch",
-  "subtitle": "Let's discuss your project",
-  "form": {
-    "name": "Your Name",
-    "email": "Your Email",
-    "subject": "Subject",
-    "message": "Your Message",
-    "submit": "Send Message",
-    "success": "Message sent successfully!",
-    "error": "Failed to send message. Please try again."
-  },
-  "info": {
-    "general": "General Inquiries",
-    "press": "Press & Media",
-    "confidentiality": "All messages are reviewed with attention and confidentiality."
+  "contact": {
+    "seo": {
+      "title": "Contact et Demandes Médias",
+      "description": "Contactez Ciprian Ciceu pour des demandes médias, des opportunités commerciales, des invitations à des conférences et des discussions de partenariat."
+    },
+    "header": {
+      "title": "CONTACTEZ-NOUS",
+      "subtitle": "Contactez-nous pour plus d'informations"
+    },
+    "form": {
+      "title": "Envoyer un message",
+      "name": "Entrez votre nom",
+      "email": "Entrez votre email",
+      "phone": "Numéro de téléphone",
+      "company": "Entreprise",
+      "message": "Votre message",
+      "agree": "Je suis lié par les conditions du service et j'accepte la politique de confidentialité.",
+      "submit": "Envoyer le Message",
+      "callTitle": "Appeler pour Consultation",
+      "success": "Message envoyé avec succès!",
+      "error": "Échec de l'envoi du message. Veuillez réessayer."
+    },
+    "locations": {
+      "romania": {
+        "title": "ROUMANIE BUCAREST",
+        "subtitle": "ACADÉMIE DE TRADING",
+        "location": "Bulevardul Pipera nr 31, Bucarest"
+      },
+      "dubai": {
+        "title": "DUBAÏ EAU",
+        "subtitle": "SIÈGE SOCIAL",
+        "company": "MainetX Prop Firm Service FZCO",
+        "location": "Silicon Oasis Digital Park A1 (ÉMIRATS ARABES UNIS)"
+      },
+      "belgium": {
+        "title": "BELGIQUE BRUXELLES",
+        "subtitle": "ACADÉMIE DE TRADING",
+        "location": "Avenue Louise nr 173, 1050 Bruxelles"
+      }
+    },
+    "info": {
+      "general": "Demandes Générales",
+      "press": "Presse et Médias",
+      "confidentiality": "Tous les messages sont examinés avec attention et confidentialité."
+    }
   }
 }

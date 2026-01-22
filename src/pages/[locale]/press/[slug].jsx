@@ -5,17 +5,17 @@ import SEO from "@components/seo";
 import BreadcrumbSix from "@components/common/breadcrumb/breadcrumb-6";
 import DynamicBreadcrumb from "@components/common/breadcrumb/dynamic-breadcrumb";
 import BlogDetailsArea from "@components/blogs/blog-details/blog-details-area";
-import blog_data from "@data/blog-data";
 
-export default function PressDetails() {
+export default function PressDetails({ single_article: propArticle }) {
   const router = useRouter();
-  const { slug, locale } = router.query;
+  const { locale } = router.query;
 
-  // Helper function to create slug from title (must match the one in single-grid-item.jsx)
+  const single_article = propArticle;
+
+  // Helper function to create slug from title
   const createSlug = (str) => {
     if (!str || typeof str !== 'string') return '';
 
-    // Replace Romanian diacritics with ASCII equivalents
     const normalized = str
       .replace(/ă/g, 'a')
       .replace(/â/g, 'a')
@@ -35,13 +35,8 @@ export default function PressDetails() {
       .replace(/--+/g, '-');
   };
 
-  // Find press article by matching slug with title slug
-  const single_article = blog_data.find(
-    (item) => item.title && createSlug(item.title) === slug
-  );
-
   // If article not found, show 404 or redirect
-  if (!single_article && slug) {
+  if (!single_article) {
     return (
       <Wrapper>
         <SEO pageTitle={"Press Article Not Found"} />
@@ -102,14 +97,67 @@ export default function PressDetails() {
 }
 
 export async function getServerSideProps(context) {
-  const { locale } = context.params;
+  const { locale, slug } = context.params;
+
+  // Load localized articles
+  const { getLocalizedArticles, findArticleIdBySlugAcrossLocales } = await import('@data/get-localized-articles');
+  const localizedArticles = await getLocalizedArticles(locale);
+
+  // Helper function to create slug from title (must match the one in the component)
+  const createSlug = (str) => {
+    if (!str || typeof str !== 'string') return '';
+
+    const normalized = str
+      .replace(/ă/g, 'a')
+      .replace(/â/g, 'a')
+      .replace(/î/g, 'i')
+      .replace(/ș/g, 's')
+      .replace(/ț/g, 't')
+      .replace(/Ă/g, 'A')
+      .replace(/Â/g, 'A')
+      .replace(/Î/g, 'I')
+      .replace(/Ș/g, 'S')
+      .replace(/Ț/g, 'T');
+
+    return normalized
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/--+/g, '-');
+  };
+
+  // Try to find the article by slug in current locale
+  let single_article = localizedArticles.find(
+    (item) => item.title && createSlug(item.title) === slug
+  );
+
+  // If not found, search across all locales and redirect to correct slug
+  if (!single_article) {
+    const articleId = await findArticleIdBySlugAcrossLocales(slug, createSlug);
+    if (articleId) {
+      // Find the article by ID in current locale
+      single_article = localizedArticles.find(a => a.id === articleId);
+      if (single_article && single_article.title) {
+        // Redirect to the correct slug for this locale
+        const correctSlug = createSlug(single_article.title);
+        return {
+          redirect: {
+            destination: `/${locale}/press/${correctSlug}`,
+            permanent: false,
+          },
+        };
+      }
+    }
+  }
 
   return {
     props: {
       messages: {
         ...(await import(`../../../messages/${locale}/common.json`)).default,
         ...(await import(`../../../messages/${locale}/press.json`)).default,
-      }
+      },
+      localizedArticles,
+      single_article: single_article || null,
     },
   }
 }

@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslations } from '@context/IntlContext';
 
 const CookiePolicyArea = () => {
+  const t = useTranslations('policy.cookie');
+
   return (
     <section className="policy__area pb-120">
       <div className="container">
@@ -8,121 +11,75 @@ const CookiePolicyArea = () => {
           <div className="col-xl-10">
             <div className="policy__wrapper policy__translate p-relative z-index-1">
               <div className="policy__item mb-35">
-                <h4 className="policy__meta">Last updated: January 5, 2026</h4>
-                <p>
-                  This Cookie Policy explains how www.ciprianciceu.com (the "Website"),
-                  operated by Ciprian Gabriel Ciceu ("we", "us", "our"), uses cookies and
-                  similar technologies to recognize visitors and improve user experience.
-                </p>
-                <p>
-                  By continuing to browse or use this Website, you agree to the use of
-                  cookies in accordance with this Cookie Policy.
-                </p>
+                <h4 className="policy__meta">{t('lastUpdated')}</h4>
+                <p>{t('intro1')}</p>
+                <p>{t('intro2')}</p>
               </div>
 
               <div className="policy__item policy__item-2 mb-35">
-                <h3 className="policy__title">1. What Are Cookies</h3>
-                <p>
-                  Cookies are small text files that are stored on your device (computer,
-                  tablet, or mobile phone) when you visit a website. They help websites
-                  function properly, enhance security, and provide information about how
-                  the site is used.
-                </p>
+                <h3 className="policy__title">{t('section1Title')}</h3>
+                <p>{t('section1Text')}</p>
               </div>
 
               <div className="policy__item mb-35">
-                <h3 className="policy__title">2. Types of Cookies We Use</h3>
+                <h3 className="policy__title">{t('section2Title')}</h3>
 
-                <h4 className="policy__subtitle mt-30 mb-20">2.1 Essential Cookies</h4>
-                <p>
-                  These cookies are necessary for the Website to function correctly and
-                  cannot be disabled in our systems. They are usually set in response to
-                  actions such as navigation or form submissions.
-                </p>
+                <h4 className="policy__subtitle mt-30 mb-20">{t('section2_1Title')}</h4>
+                <p>{t('section2_1Text')}</p>
 
-                <h4 className="policy__subtitle mt-30 mb-20">2.2 Analytics Cookies</h4>
-                <p>
-                  These cookies help us understand how visitors interact with the Website
-                  by collecting anonymous information such as:
-                </p>
+                <h4 className="policy__subtitle mt-30 mb-20">{t('section2_2Title')}</h4>
+                <p>{t('section2_2Text')}</p>
                 <ul>
-                  <li>pages visited</li>
-                  <li>time spent on pages</li>
-                  <li>browser and device type</li>
+                  <li>{t('section2_2Item1')}</li>
+                  <li>{t('section2_2Item2')}</li>
+                  <li>{t('section2_2Item3')}</li>
                 </ul>
-                <p>
-                  This data is used strictly to improve performance and content quality.
-                </p>
+                <p>{t('section2_2Note')}</p>
 
-                <h4 className="policy__subtitle mt-30 mb-20">2.3 Third-Party Cookies</h4>
-                <p>
-                  In some cases, the Website may include embedded content or tools from
-                  third parties (such as video platforms or analytics services). These
-                  third parties may set their own cookies in accordance with their
-                  respective privacy policies.
-                </p>
-                <p>
-                  We do not control third-party cookies.
-                </p>
+                <h4 className="policy__subtitle mt-30 mb-20">{t('section2_3Title')}</h4>
+                <p>{t('section2_3Text1')}</p>
+                <p>{t('section2_3Text2')}</p>
               </div>
 
               <div className="policy__item mb-35">
-                <h3 className="policy__title">3. How You Can Control Cookies</h3>
-                <p>
-                  You can manage or disable cookies at any time through your browser settings.
-                  Please note that disabling certain cookies may affect the functionality or
-                  performance of the Website.
-                </p>
-                <p>
-                  Instructions for managing cookies are available in your browser's help section.
-                </p>
+                <h3 className="policy__title">{t('section3Title')}</h3>
+                <p>{t('section3Text1')}</p>
+                <p>{t('section3Text2')}</p>
               </div>
 
               <div className="policy__item mb-35">
-                <h3 className="policy__title">4. Legal Basis for Cookie Use (GDPR)</h3>
-                <p>
-                  Cookies are used based on:
-                </p>
+                <h3 className="policy__title">{t('section4Title')}</h3>
+                <p>{t('section4Text')}</p>
                 <ul>
-                  <li>your consent (where required)</li>
-                  <li>legitimate interest for website security, functionality, and analytics</li>
+                  <li>{t('section4Item1')}</li>
+                  <li>{t('section4Item2')}</li>
                 </ul>
-                <p>
-                  You may withdraw your consent at any time by adjusting your browser settings.
-                </p>
+                <p>{t('section4Note')}</p>
               </div>
 
               <div className="policy__item mb-35">
-                <h3 className="policy__title">5. Data Protection</h3>
-                <p>
-                  Any information collected through cookies is processed in accordance with
-                  our Privacy Policy and applicable data protection laws, including GDPR.
-                </p>
+                <h3 className="policy__title">{t('section5Title')}</h3>
+                <p>{t('section5Text')}</p>
               </div>
 
               <div className="policy__item mb-35">
-                <h3 className="policy__title">6. Changes to This Cookie Policy</h3>
-                <p>
-                  We reserve the right to update this Cookie Policy at any time. Changes
-                  will be effective immediately upon publication on this page.
-                </p>
+                <h3 className="policy__title">{t('section6Title')}</h3>
+                <p>{t('section6Text')}</p>
               </div>
 
               <div className="policy__contact">
-                <h3 className="policy__title policy__title-2">7. Contact Information</h3>
-                <p>
-                  If you have any questions about our use of cookies, please contact:
-                </p>
+                <h3 className="policy__title policy__title-2">{t('contactTitle')}</h3>
+                <p>{t('contactText')}</p>
 
                 <ul>
                   <li>
-                    Email:{" "}
+                    {t('contactEmail')}{" "}
                     <span>
                       <a href="mailto:contact@ciprianciceu.com">contact@ciprianciceu.com</a>
                     </span>
                   </li>
                   <li>
-                    Website:{" "}
+                    {t('contactWebsite')}{" "}
                     <span>
                       <a href="https://www.ciprianciceu.com" target="_blank" rel="noreferrer">
                         www.ciprianciceu.com

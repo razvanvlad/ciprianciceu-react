@@ -4,11 +4,14 @@ import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo";
 import DynamicBreadcrumb from "@components/common/breadcrumb/dynamic-breadcrumb";
 import BlogArticleDetailsArea from "@components/blogs/blog-details/blog-article-details-area";
-import blog_articles_data from "@data/blog-articles-data";
+import { useTranslations } from '@context/IntlContext';
 
-export default function BlogDetails() {
+export default function BlogDetails({ single_blog: propBlog }) {
   const router = useRouter();
-  const { slug, locale } = router.query;
+  const { locale } = router.query;
+  const t = useTranslations('blog.ui');
+
+  const single_blog = propBlog;
 
   // Helper function to create slug from title (must match the one in single-article-postbox.jsx)
   const createSlug = (str) => {
@@ -34,13 +37,8 @@ export default function BlogDetails() {
       .replace(/--+/g, '-');
   };
 
-  // Find blog article by matching slug with title slug
-  const single_blog = blog_articles_data.find(
-    (item) => item.title && createSlug(item.title) === slug
-  );
-
   // If blog not found, show 404 or redirect
-  if (!single_blog && slug) {
+  if (!single_blog) {
     return (
       <Wrapper>
         <SEO pageTitle={"Blog Not Found"} />
@@ -100,14 +98,67 @@ export default function BlogDetails() {
 }
 
 export async function getServerSideProps(context) {
-  const { locale } = context.params;
+  const { locale, slug } = context.params;
+
+  // Load localized blog articles
+  const { getLocalizedBlogArticles, findBlogArticleIdBySlugAcrossLocales } = await import('@data/get-localized-blog-articles');
+  const localizedArticles = await getLocalizedBlogArticles(locale);
+
+  // Helper function to create slug from title (must match the one in the component)
+  const createSlug = (str) => {
+    if (!str || typeof str !== 'string') return '';
+
+    const normalized = str
+      .replace(/ă/g, 'a')
+      .replace(/â/g, 'a')
+      .replace(/î/g, 'i')
+      .replace(/ș/g, 's')
+      .replace(/ț/g, 't')
+      .replace(/Ă/g, 'A')
+      .replace(/Â/g, 'A')
+      .replace(/Î/g, 'I')
+      .replace(/Ș/g, 'S')
+      .replace(/Ț/g, 'T');
+
+    return normalized
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/--+/g, '-');
+  };
+
+  // Try to find the blog article by slug in current locale
+  let single_blog = localizedArticles.find(
+    (item) => item.title && createSlug(item.title) === slug
+  );
+
+  // If not found, search across all locales and redirect to correct slug
+  if (!single_blog) {
+    const articleId = await findBlogArticleIdBySlugAcrossLocales(slug, createSlug);
+    if (articleId) {
+      // Find the article by ID in current locale
+      single_blog = localizedArticles.find(a => a.id === articleId);
+      if (single_blog && single_blog.title) {
+        // Redirect to the correct slug for this locale
+        const correctSlug = createSlug(single_blog.title);
+        return {
+          redirect: {
+            destination: `/${locale}/blog/${correctSlug}`,
+            permanent: false,
+          },
+        };
+      }
+    }
+  }
 
   return {
     props: {
       messages: {
         ...(await import(`../../../messages/${locale}/common.json`)).default,
         ...(await import(`../../../messages/${locale}/blog.json`)).default,
-      }
+      },
+      localizedArticles,
+      single_blog: single_blog || null,
     },
   }
 }

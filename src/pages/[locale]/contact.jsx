@@ -21,7 +21,7 @@ export default function Contact() {
 }
 
 // Load translations for this page
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   const locale = params.locale;
 
   return {
@@ -31,18 +31,5 @@ export async function getStaticProps({ params }) {
         ...(await import(`../../messages/${locale}/contact.json`)).default,
       }
     }
-  };
-}
-
-// Generate static pages for all locales
-export async function getStaticPaths() {
-  return {
-    paths: [
-      { params: { locale: 'en' } },
-      { params: { locale: 'fr' } },
-      { params: { locale: 'ro' } },
-      { params: { locale: 'ar' } }
-    ],
-    fallback: false
   };
 }

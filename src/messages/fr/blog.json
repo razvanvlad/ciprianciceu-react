@@ -1,6 +1,26 @@
 {
-  "seo": {
-    "title": "Blog - Ciprian Ciceu",
-    "description": "Read insights and articles on fintech, blockchain, entrepreneurship, and technology innovation."
+  "blog": {
+    "seo": {
+      "title": "Blog - Ciprian Ciceu",
+      "description": "Lisez des perspectives et des articles sur la fintech, la blockchain, l'entrepreneuriat et l'innovation technologique."
+    },
+    "header": {
+      "title": "Blog",
+      "subtitle": "Analyses, perspectives et points de vue sur la technologie, le trading, la blockchain et l'innovation."
+    },
+    "ui": {
+      "title": "Derniers Articles du",
+      "titleHighlight": "Blog",
+      "titleEnd": "",
+      "subtitle": "Analyses, perspectives et points de vue sur la technologie, le trading, la blockchain et l'innovation par Ciprian Ciceu et l'équipe MainetX.",
+      "filterBy": "Filtrer par :",
+      "sortBy": "Trier par :",
+      "sortNewest": "Plus récents",
+      "sortOldest": "Plus anciens",
+      "noArticles": "Aucun article trouvé pour cette catégorie",
+      "viewAll": "Voir tous les articles du blog",
+      "readMore": "Lire l'article complet",
+      "continueReading": "Continuer la lecture"
+    }
   }
 }

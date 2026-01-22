@@ -1,22 +1,48 @@
 {
-  "seo": {
-    "title": "Contact & Media Inquiries",
-    "description": "Get in touch with Ciprian Ciceu for media inquiries, business opportunities, speaking engagements, and partnership discussions."
-  },
-  "title": "Get in Touch",
-  "subtitle": "Let's discuss your project",
-  "form": {
-    "name": "Your Name",
-    "email": "Your Email",
-    "subject": "Subject",
-    "message": "Your Message",
-    "submit": "Send Message",
-    "success": "Message sent successfully!",
-    "error": "Failed to send message. Please try again."
-  },
-  "info": {
-    "general": "General Inquiries",
-    "press": "Press & Media",
-    "confidentiality": "All messages are reviewed with attention and confidentiality."
+  "contact": {
+    "seo": {
+      "title": "اتصل بنا واستفسارات الإعلام",
+      "description": "تواصل مع سيبريان سيسيو للاستفسارات الإعلامية وفرص الأعمال ودعوات المؤتمرات ومناقشات الشراكة."
+    },
+    "header": {
+      "title": "اتصل بنا",
+      "subtitle": "تواصل معنا للمزيد من المعلومات"
+    },
+    "form": {
+      "title": "أرسل رسالة",
+      "name": "أدخل اسمك",
+      "email": "أدخل بريدك الإلكتروني",
+      "phone": "رقم الهاتف",
+      "company": "الشركة",
+      "message": "رسالتك",
+      "agree": "أوافق على شروط الخدمة وأقبل سياسة الخصوصية.",
+      "submit": "إرسال الرسالة",
+      "callTitle": "اتصل للاستشارة",
+      "success": "تم إرسال الرسالة بنجاح!",
+      "error": "فشل إرسال الرسالة. يرجى المحاولة مرة أخرى."
+    },
+    "locations": {
+      "romania": {
+        "title": "رومانيا بوخارست",
+        "subtitle": "أكاديمية التداول",
+        "location": "بوليفارد بيبيرا رقم 31، بوخارست"
+      },
+      "dubai": {
+        "title": "دبي الإمارات",
+        "subtitle": "مكتب الشركة",
+        "company": "MainetX Prop Firm Service FZCO",
+        "location": "سيليكون أويسز ديجيتال بارك A1 (الإمارات العربية المتحدة)"
+      },
+      "belgium": {
+        "title": "بلجيكا بروكسل",
+        "subtitle": "أكاديمية التداول",
+        "location": "أفينيو لويز رقم 173، 1050 بروكسل"
+      }
+    },
+    "info": {
+      "general": "الاستفسارات العامة",
+      "press": "الصحافة والإعلام",
+      "confidentiality": "يتم مراجعة جميع الرسائل بعناية وسرية."
+    }
   }
 }

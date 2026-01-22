@@ -28,6 +28,7 @@ export async function getStaticProps({ params }) {
     props: {
       messages: {
         ...(await import(`../../messages/${locale}/common.json`)).default,
+        ...(await import(`../../messages/${locale}/home.json`)).default,
         ...(await import(`../../messages/${locale}/about.json`)).default,
       }
     }

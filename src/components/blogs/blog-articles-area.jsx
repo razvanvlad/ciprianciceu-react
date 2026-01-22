@@ -1,20 +1,26 @@
 import React, { useState, useMemo } from "react";
-import { useLocale } from '@context/IntlContext';
+import { useLocale, useTranslations } from '@context/IntlContext';
 // internal
 import blog_articles_data from "@data/blog-articles-data";
 import SingleArticlePostbox from "./single-blog/single-article-postbox";
 import { ShapeLine } from "@svg/index";
 import Link from "next/link";
 
-const BlogArticlesArea = ({ limit }) => {
+const BlogArticlesArea = ({ limit, localizedArticles }) => {
   const locale = useLocale();
+  const t = useTranslations('blog.ui');
   const [selectedTag, setSelectedTag] = useState("All");
   const [sortOrder, setSortOrder] = useState("newest");
+
+  // Use localized articles if provided, otherwise fall back to default data
+  const articles = useMemo(() => {
+    return localizedArticles || blog_articles_data;
+  }, [localizedArticles]);
 
   // Get all unique tags from blog items
   const allTags = useMemo(() => {
     const tagsSet = new Set();
-    blog_articles_data.forEach((item) => {
+    articles.forEach((item) => {
       if (Array.isArray(item.tag)) {
         item.tag.forEach((t) => tagsSet.add(t));
       } else if (item.tag) {
@@ -22,15 +28,15 @@ const BlogArticlesArea = ({ limit }) => {
       }
     });
     return ["All", ...Array.from(tagsSet).sort()];
-  }, []);
+  }, [articles]);
 
   // Filter and sort items
   const filteredAndSortedItems = useMemo(() => {
-    let filtered = blog_articles_data;
+    let filtered = articles;
 
     // Filter by tag
     if (selectedTag !== "All") {
-      filtered = blog_articles_data.filter((item) => {
+      filtered = articles.filter((item) => {
         if (Array.isArray(item.tag)) {
           return item.tag.includes(selectedTag);
         }
@@ -51,7 +57,7 @@ const BlogArticlesArea = ({ limit }) => {
     });
 
     return limit ? sorted.slice(0, limit) : sorted;
-  }, [selectedTag, sortOrder, limit]);
+  }, [articles, selectedTag, sortOrder, limit]);
 
   return (
     <>
@@ -61,14 +67,15 @@ const BlogArticlesArea = ({ limit }) => {
             <div className="col-xxl-12">
               <div className="section__title-wrapper section-title-sm mb-20">
                 <h2 className="section__title">
-                  Latest Blog
+                  {t('title')}
                   <span className="section__title-highlight">
-                    {" "}Articles
+                    {" "}{t('titleHighlight')}
                     <ShapeLine />
                   </span>
+                  {t('titleEnd') && <> {t('titleEnd')}</>}
                 </h2>
                 <p className="section__subtitle mt-3" style={{ maxWidth: "800px", fontSize: "16px", lineHeight: "1.6", color: "#666" }}>
-                  Insights, analysis, and perspectives on technology, trading, blockchain, and innovation from Ciprian Ciceu and the MainetX team.
+                  {t('subtitle')}
                 </p>
               </div>
             </div>
@@ -80,7 +87,7 @@ const BlogArticlesArea = ({ limit }) => {
               <div className="row mb-20">
                 <div className="col-xxl-12">
                   <div className="blog__filter-tags d-flex align-items-center gap-2 flex-wrap">
-                    <span className="filter-label fw-bold" style={{ whiteSpace: 'nowrap' }}>Filter by:</span>
+                    <span className="filter-label fw-bold" style={{ whiteSpace: 'nowrap' }}>{t('filterBy')}</span>
                     {allTags.map((tag) => (
                       <button
                         key={tag}
@@ -111,7 +118,7 @@ const BlogArticlesArea = ({ limit }) => {
               <div className="row mb-40">
                 <div className="col-xxl-12">
                   <div className="blog__filter-sort d-flex align-items-center gap-2" style={{ flexWrap: 'nowrap' }}>
-                    <span className="filter-label fw-bold" style={{ whiteSpace: 'nowrap' }}>Sort by:</span>
+                    <span className="filter-label fw-bold" style={{ whiteSpace: 'nowrap' }}>{t('sortBy')}</span>
                     <select
                       value={sortOrder}
                       onChange={(e) => setSortOrder(e.target.value)}
@@ -125,8 +132,8 @@ const BlogArticlesArea = ({ limit }) => {
                         maxWidth: "200px",
                       }}
                     >
-                      <option value="newest">Newest First</option>
-                      <option value="oldest">Oldest First</option>
+                      <option value="newest">{t('sortNewest')}</option>
+                      <option value="oldest">{t('sortOldest')}</option>
                     </select>
                   </div>
                 </div>
@@ -138,11 +145,11 @@ const BlogArticlesArea = ({ limit }) => {
             <div className="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1">
               {filteredAndSortedItems.length > 0 ? (
                 filteredAndSortedItems.map((item) => (
-                  <SingleArticlePostbox key={item.id} {...item} />
+                  <SingleArticlePostbox key={item.id} {...item} translationNamespace="blog" />
                 ))
               ) : (
                 <div className="text-center py-5">
-                  <p className="text-muted">No articles found for the selected filter.</p>
+                  <p className="text-muted">{t('noArticles')}</p>
                 </div>
               )}
             </div>
@@ -154,7 +161,7 @@ const BlogArticlesArea = ({ limit }) => {
                 <div className="tp-pagination mt-20">
                   <div className="text-center">
                     <Link href={`/${locale}/blog`} className="tp-btn-5 tp-link-btn-3">
-                      View All Blog Articles
+                      {t('viewAll')}
                       <span>
                         <i className="fa-regular fa-arrow-right"></i>
                       </span>

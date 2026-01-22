@@ -5,7 +5,7 @@ import ElementsVideoMain from "@elements/elements-video";
 import { useTranslations } from '@context/IntlContext';
 
 export default function Media() {
-  const t = useTranslations('media.seo');
+  const t = useTranslations('seo');
 
   return (
     <Wrapper>

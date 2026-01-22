@@ -5,6 +5,7 @@ import Link from 'next/link';
 // internal
 import blog_data from '@data/blog-data';
 import { CommentThree, DateTwo, EyeTwo } from '@svg/index';
+import { useTranslations, useLocale } from '@context/IntlContext';
 
 // Helper function to create slug from title
 const createSlug = (str) => {
@@ -30,7 +31,9 @@ const createSlug = (str) => {
 };
 
 // slider item
-function SingleSliderItem({ img, tag, title, date, author_name, slug }) {
+function SingleSliderItem({ img, tag, title, date, author_name, slug, translationNamespace = 'blog' }) {
+  const t = useTranslations(translationNamespace + '.ui');
+  const locale = useLocale();
   // Get the image source - handle both imported images and strings
   const imgSrc = img?.src || img;
 
@@ -47,7 +50,7 @@ function SingleSliderItem({ img, tag, title, date, author_name, slug }) {
               <span>{displayTag}</span>
             </div>
             <h1 className="blog__breadcrumb-title">
-              <Link href={`/blog/${slug}`}>{title}</Link>
+              <Link href={`/${locale}/press/${slug}`}>{title}</Link>
             </h1>
             <div className="blog__breadcrumb-meta">
               <span>
@@ -60,7 +63,7 @@ function SingleSliderItem({ img, tag, title, date, author_name, slug }) {
               )}
             </div>
             <div className="blog__breadcrumb-btn">
-              <Link href={`/blog/${slug}`} className="tp-btn-border-2">Continue Reading</Link>
+              <Link href={`/${locale}/press/${slug}`} className="tp-btn-border-2">{t('continueReading')}</Link>
             </div>
           </div>
         </div>
@@ -70,21 +73,24 @@ function SingleSliderItem({ img, tag, title, date, author_name, slug }) {
 }
 
 
-const SliderBreadcrumb = () => {
+const SliderBreadcrumb = ({ localizedArticles, translationNamespace = 'blog' }) => {
+  // Use localized articles if provided, otherwise fall back to default blog_data
+  const articles = localizedArticles || blog_data;
+
   // Get featured articles and prepare them for the slider
   const featuredArticles = useMemo(() => {
-    const featured = blog_data
+    const featured = articles
       .filter((blog) => blog.featured === true)
       .map((blog) => ({
         ...blog,
         slug: createSlug(blog.title)
       }));
 
-    return featured.length > 0 ? featured : blog_data.slice(0, 3).map((blog) => ({
+    return featured.length > 0 ? featured : articles.slice(0, 3).map((blog) => ({
       ...blog,
       slug: createSlug(blog.title)
     }));
-  }, []);
+  }, [articles]);
 
   return (
     <section className="blog__breadcrumb">
@@ -104,7 +110,7 @@ const SliderBreadcrumb = () => {
         >
           {featuredArticles.map((item) => (
             <SwiperSlide key={item.id}>
-              <SingleSliderItem {...item} />
+              <SingleSliderItem {...item} translationNamespace={translationNamespace} />
             </SwiperSlide>
           ))}
         <div className="blog-slider-dot-breadcrumb tp-swiper-dot"></div>

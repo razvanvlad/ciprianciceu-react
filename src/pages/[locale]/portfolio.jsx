@@ -6,7 +6,7 @@ import SliderItems from '@components/portfolio-details/slider-details/slider-ite
 import { useTranslations } from '@context/IntlContext';
 
 export default function Portfolio() {
-  const t = useTranslations('portfolio.seo');
+  const t = useTranslations('seo');
 
   return (
     <Wrapper>
@@ -32,6 +32,7 @@ export async function getStaticProps({ params }) {
       messages: {
         ...(await import(`../../messages/${locale}/common.json`)).default,
         ...(await import(`../../messages/${locale}/portfolio.json`)).default,
+        ...(await import(`../../messages/${locale}/home.json`)).default,
       }
     }
   };

@@ -13,10 +13,17 @@
     "bookCall": "Rezervă un apel"
   },
   "footer": {
-    "copyright": "© 2024 Ciprian Ciceu. Toate drepturile rezervate.",
+    "copyright": "© {year} Ciprian Ciceu. Toate drepturile rezervate.",
+    "copyrightBy": "Drepturi de autor © {year} de",
+    "allRightsReserved": "Toate drepturile rezervate.",
     "privacyPolicy": "Politica de confidențialitate",
-    "terms": "Termeni și condiții",
-    "cookiePolicy": "Politica cookie-urilor"
+    "terms": "Termeni de utilizare",
+    "cookiePolicy": "Politica cookie-urilor",
+    "description": "Antreprenor și inovator în fintech, blockchain și tehnologia tranzacționării. Construiesc viitorul tranzacționării automatizate.",
+    "getInTouch": "Contactează-ne",
+    "quickLink": "Link-uri rapide",
+    "projects": "Proiecte",
+    "contactUs": "Contactați-ne"
   },
   "ui": {
     "readMore": "Citește mai mult",

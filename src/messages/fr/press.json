@@ -1,7 +1,24 @@
 {
-  "seo": {
-    "title": "Press & Media Coverage",
-    "description": "International media coverage featuring Ciprian Ciceu's work in fintech, blockchain innovation, AI-driven trading platforms, and entrepreneurial insights.",
-    "tags": ["Media", "Press", "FinTech", "Blockchain", "Business", "Trading", "Education", "Technology", "Entrepreneurship"]
+  "press": {
+    "seo": {
+      "title": "Presse et Couverture Médiatique",
+      "description": "Couverture médiatique internationale présentant le travail de Ciprian Ciceu dans la fintech, l'innovation blockchain, les plateformes de trading basées sur l'IA et les perspectives entrepreneuriales.",
+      "tags": ["Médias", "Presse", "FinTech", "Blockchain", "Affaires", "Trading", "Éducation", "Technologie", "Entrepreneuriat"]
+    },
+    "ui": {
+      "title": "Derniers Articles de",
+      "titleHighlight": "Presse",
+      "titleEnd": "",
+      "subtitle": "Couverture médiatique internationale présentant le travail de Ciprian Ciceu dans la fintech, blockchain, trading basé sur l'IA et innovation entrepreneuriale",
+      "filterBy": "Filtrer par :",
+      "sortBy": "Trier par :",
+      "sortNewest": "Plus récents",
+      "sortOldest": "Plus anciens",
+      "viewAll": "Voir tous les articles de presse",
+      "readMore": "Lire l'article complet",
+      "continueReading": "Continuer la lecture",
+      "noArticles": "Aucun article trouvé pour le filtre sélectionné.",
+      "originalArticle": "Article Original :"
+    }
   }
 }

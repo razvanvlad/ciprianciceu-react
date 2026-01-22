@@ -3,8 +3,11 @@ import { useFormik } from "formik";
 // internal
 import { contact_schema } from "@utils/validation-schema";
 import ErrorMsg from "./error-msg";
+import { useTranslations } from '@context/IntlContext';
 
 const ContactForm = ({ style_2 = false }) => {
+  const t = useTranslations('contact.form');
+
   // use formik
   const { handleChange, handleSubmit, handleBlur, errors, values, touched } =
     useFormik({
@@ -32,7 +35,7 @@ const ContactForm = ({ style_2 = false }) => {
               onChange={handleChange}
               onBlur={handleBlur}
               type="text"
-              placeholder="Enter your name"
+              placeholder={t('name')}
               id="name"
             />
             {touched.name && <ErrorMsg error={errors.name} />}
@@ -46,7 +49,7 @@ const ContactForm = ({ style_2 = false }) => {
               onChange={handleChange}
               onBlur={handleBlur}
               type="email"
-              placeholder="Enter your email"
+              placeholder={t('email')}
               id="email"
             />
             {touched.email && <ErrorMsg error={errors.email} />}
@@ -60,7 +63,7 @@ const ContactForm = ({ style_2 = false }) => {
               onChange={handleChange}
               onBlur={handleBlur}
               type="text"
-              placeholder="Mobile no"
+              placeholder={t('phone')}
               id="phone"
             />
             {touched.phone && <ErrorMsg error={errors.phone} />}
@@ -74,7 +77,7 @@ const ContactForm = ({ style_2 = false }) => {
               onChange={handleChange}
               onBlur={handleBlur}
               type="text"
-              placeholder="Company"
+              placeholder={t('company')}
               id="company"
             />
             {touched.company && <ErrorMsg error={errors.company} />}
@@ -88,7 +91,7 @@ const ContactForm = ({ style_2 = false }) => {
               onChange={handleChange}
               onBlur={handleBlur}
               id="msg"
-              placeholder="Your message"
+              placeholder={t('message')}
             ></textarea>
             {touched.msg && <ErrorMsg error={errors.msg} />}
           </div>
@@ -97,21 +100,21 @@ const ContactForm = ({ style_2 = false }) => {
           <div className="contact__agree d-flex align-items-start mb-25">
             <input className="e-check-input" type="checkbox" id="e-agree" />
             <label className="e-check-label" htmlFor="e-agree">
-              I am bound by the terms of the Service I accept Privacy Policy.
+              {t('agree')}
             </label>
           </div>
         </div>
         <div className="col-md-5">
           <div className="contact__btn-2">
             <button type="submit" className="tp-btn">
-              Send Message
+              {t('submit')}
             </button>
           </div>
         </div>
         {style_2 && (
           <div className="col-md-7">
             <div className="contact__form-call float-md-end">
-              <span>Call for Consultation</span>
+              <span>{t('callTitle')}</span>
               <p>
                 <a href="tel:+971502809015">
                   <i className="fa-solid fa-phone-flip"></i> +971/502809015

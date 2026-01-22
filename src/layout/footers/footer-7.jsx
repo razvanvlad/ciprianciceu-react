@@ -147,9 +147,9 @@ const FooterSeven = () => {
                   </div>
                   <div className="col-lg-6 col-sm-6">
                     <div className="footer__link-6 text-lg-end text-sm-center">
-                      <Link href={`/${locale}/policy`}>Privacy Policy</Link>
-                      <Link href={`/${locale}/terms`}>Terms of Use</Link>
-                      <Link href={`/${locale}/cookie-policy`}>Cookie Policy</Link>
+                      <Link href={`/${locale}/policy`}>{tFooter('privacyPolicy')}</Link>
+                      <Link href={`/${locale}/terms`}>{tFooter('terms')}</Link>
+                      <Link href={`/${locale}/cookie-policy`}>{tFooter('cookiePolicy')}</Link>
                     </div>
                   </div>
                 </div>

@@ -32,7 +32,33 @@
   "projects": {
     "category": "Croissance Stratégique",
     "title": "PROJETS PHARES",
-    "description": "Au fil des ans, Ciprian Ciceu a été impliqué dans plusieurs projets internationaux, notamment :"
+    "description": "Au fil des ans, Ciprian Ciceu a été impliqué dans plusieurs projets internationaux, notamment :",
+    "sectorLabel": "Secteur :",
+    "launchedLabel": "Lancé :",
+    "visitWebsite": "Visiter le Site",
+    "concludingText": "Chaque projet reflète une vision à long terme centrée sur l'innovation, l'éducation et la croissance durable.",
+    "items": [
+      {
+        "title": "Mainet X",
+        "description": "Un écosystème fintech et technologique axé sur l'automatisation, la finance numérique et l'infrastructure évolutive.",
+        "sector": "Technologie"
+      },
+      {
+        "title": "BeTrader Academy",
+        "description": "Une initiative éducative dédiée à la littératie financière, à la formation technologique et à l'éducation appliquée au trading.",
+        "sector": "Éducation"
+      },
+      {
+        "title": "Projets Blockchain & Automatisation",
+        "description": "Initiatives indépendantes et collaboratives axées sur l'intégration blockchain, l'automatisation et la transformation numérique.",
+        "sector": "Innovation"
+      },
+      {
+        "title": "Betra Crypto Coin",
+        "description": "Plateforme de paiement en cryptomonnaie et solution de portefeuille numérique pour des transactions crypto fluides.",
+        "sector": "FinTech"
+      }
+    ]
   },
   "skills": {
     "preTitle": "Capacités d'Élite",

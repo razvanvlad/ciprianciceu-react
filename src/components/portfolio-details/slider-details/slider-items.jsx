@@ -9,46 +9,27 @@ import img_3 from "@assets/img/portfolio/details/blockchain-project.webp";
 import img_4 from "@assets/img/portfolio/details/betra-coin.webp";
 import { ArrowRightTwo, AwardFive, Category, Client, Date } from "@svg/index";
 import MetaItem from "../list-details/single-meta";
+import { useTranslations } from '@context/IntlContext';
 
-// data
-const project_data = [
+// Static data (images, URLs, launch years - don't need translation)
+const project_static_data = [
   {
     img: img_1,
-    title: "Mainet X",
-    description: "A fintech and technology ecosystem focused on automation, digital finance and scalable infrastructure.",
-    founder: "Ciprian Ciceu",
-    status: "Active",
-    sector: "Technology",
     launched: "2020",
     url: "https://www.mainetx.com"
   },
   {
     img: img_2,
-    title: "BeTrader Academy",
-    description: "An educational initiative dedicated to financial literacy, technology training and applied trading education.",
-    founder: "Ciprian Ciceu",
-    status: "Active",
-    sector: "Education",
     launched: "2017",
     url: "https://betrader.ro"
   },
   {
     img: img_3,
-    title: "Blockchain & Automation Projects",
-    description: "Independent and collaborative initiatives focused on blockchain integration, automation and digital transformation.",
-    founder: "Ciprian Ciceu",
-    status: "Active",
-    sector: "Innovation",
     launched: "2023",
     url: "https://mainetfunded.com"
   },
   {
     img: img_4,
-    title: "Betra Crypto Coin",
-    description: "Cryptocurrency coin payment platform and digital wallet solution for seamless crypto transactions.",
-    founder: "Ciprian Ciceu",
-    status: "Active",
-    sector: "FinTech",
     launched: "2019",
     url: "https://bscscan.com/token/0xfae21da223da19f77c8bca7183ea942a0b5c03e7"
   }
@@ -76,6 +57,17 @@ const ImageStyle = {
 
 const SliderItems = ({ padd = '120' }) => {
   const sliderRef = useRef();
+  const t = useTranslations('projects');
+
+  // Get translated items and merge with static data
+  const translatedItems = t('items') || [];
+  const project_data = project_static_data.map((staticItem, index) => ({
+    ...staticItem,
+    title: translatedItems[index]?.title || '',
+    description: translatedItems[index]?.description || '',
+    sector: translatedItems[index]?.sector || '',
+  }));
+
   return (
     <section className={`portfolio__area fix pb-${padd}`}>
       <div className="container">
@@ -108,12 +100,12 @@ const SliderItems = ({ padd = '120' }) => {
                     <div className="portfolio__details-meta portfolio__details-meta-slider d-flex justify-content-center mt-40" style={{ gap: '60px' }}>
                       <MetaItem
                         icon={<Category />}
-                        title="Sector:"
+                        title={t('sectorLabel')}
                         subtitle={item.sector}
                       />
                       <MetaItem
                         icon={<Date />}
-                        title="Launched:"
+                        title={t('launchedLabel')}
                         subtitle={item.launched}
                       />
                     </div>
@@ -125,7 +117,7 @@ const SliderItems = ({ padd = '120' }) => {
                           rel="noopener noreferrer"
                           className="tp-btn-border"
                         >
-                          Visit Website
+                          {t('visitWebsite')}
                           <span>
                             <ArrowRightTwo />
                           </span>
@@ -156,7 +148,7 @@ const SliderItems = ({ padd = '120' }) => {
 
             <div className="portfolio__details-concluding-content text-center mt-60">
               <p style={{ fontSize: '20px', fontStyle: 'italic', marginBottom: '40px', color: 'var(--tp-common-black)' }}>
-                Each project reflects a long-term vision centered on innovation, education and sustainable growth.
+                {t('concludingText')}
               </p>
               {/* <div className="portfolio__details-btn">
                 <Link href="/portfolio" className="tp-btn-border">

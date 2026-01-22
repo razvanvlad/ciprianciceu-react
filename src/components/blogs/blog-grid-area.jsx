@@ -6,14 +6,17 @@ import { ShapeLine } from "@svg/index";
 import Link from "next/link";
 import { useTranslations, useLocale } from '@context/IntlContext';
 
-// blog items
-const blog_items = blog_data.filter((blog) => blog.blog_grid);
-
-const BlogGridArea = ({ limit, url }) => {
-  const t = useTranslations('blog');
+const BlogGridArea = ({ limit, url, localizedArticles, translationNamespace = 'blog' }) => {
+  const t = useTranslations(translationNamespace + '.ui');
   const locale = useLocale();
   const [selectedTag, setSelectedTag] = useState("All");
   const [sortOrder, setSortOrder] = useState("newest");
+
+  // Use localized articles if provided, otherwise fall back to default blog_data
+  const blog_items = useMemo(() => {
+    const articles = localizedArticles || blog_data;
+    return articles.filter((blog) => blog.blog_grid);
+  }, [localizedArticles]);
 
   // Get all unique tags from blog items
   const allTags = useMemo(() => {
@@ -26,7 +29,7 @@ const BlogGridArea = ({ limit, url }) => {
       }
     });
     return ["All", ...Array.from(tagsSet).sort()];
-  }, []);
+  }, [blog_items]);
 
   // Filter and sort items
   const filteredAndSortedItems = useMemo(() => {
@@ -55,7 +58,7 @@ const BlogGridArea = ({ limit, url }) => {
     });
 
     return limit ? sorted.slice(0, limit) : sorted;
-  }, [selectedTag, sortOrder, limit]);
+  }, [blog_items, selectedTag, sortOrder, limit]);
 
   return (
     <>
@@ -70,7 +73,7 @@ const BlogGridArea = ({ limit, url }) => {
                     {" "}{t('titleHighlight')}
                     <ShapeLine />
                   </span>
-                  {" "}{t('titleEnd')}
+                  {t('titleEnd') && <> {t('titleEnd')}</>}
                 </h2>
                 <p className="section__subtitle mt-3" style={{ maxWidth: "800px", fontSize: "16px", lineHeight: "1.6", color: "#666" }}>
                   {t('subtitle')}
@@ -146,7 +149,7 @@ const BlogGridArea = ({ limit, url }) => {
                   key={item.id}
                   className="col-xxl-4 col-xl-4 col-lg-6 col-md-6"
                 >
-                  <SingleGridItem {...item} baseUrl={url ? `/${url}` : '/blog'} />
+                  <SingleGridItem {...item} baseUrl={url ? `/${url}` : '/blog'} translationNamespace={translationNamespace} />
                 </div>
               ))
             ) : (

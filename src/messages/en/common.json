@@ -13,10 +13,17 @@
     "bookCall": "Book a call"
   },
   "footer": {
-    "copyright": "© 2024 Ciprian Ciceu. All rights reserved.",
+    "copyright": "© {year} Ciprian Ciceu. All rights reserved.",
+    "copyrightBy": "Copyright © {year} by",
+    "allRightsReserved": "All rights reserved.",
     "privacyPolicy": "Privacy Policy",
-    "terms": "Terms & Conditions",
-    "cookiePolicy": "Cookie Policy"
+    "terms": "Terms of Use",
+    "cookiePolicy": "Cookie Policy",
+    "description": "Entrepreneur and innovator in fintech, blockchain, and trading technology. Building the future of automated trading.",
+    "getInTouch": "Get in Touch",
+    "quickLink": "Quick Links",
+    "projects": "Projects",
+    "contactUs": "Contact Us"
   },
   "ui": {
     "readMore": "Read More",
