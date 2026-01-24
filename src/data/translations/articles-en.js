@@ -760,4 +760,47 @@ export default {
       <p><strong>Contact:</strong> Instagram <a href="https://www.instagram.com/ciprian_ciceu22" target="_blank">@ciprian_ciceu22</a></p>
     `,
   },
+  68: {
+    title: 'Discover the Trading Course in Pipera That Awards a Diploma Equivalent to 2 University Years!',
+    sm_desc: 'Wall-Street.ro presents Be Trader Academy Romania, the Pipera academy offering accredited trading courses with VTCT Level 5 diploma',
+    content: `
+      <p>Making money on the Stock Exchange is not an easy task, but if you "arm yourself" with the best trading methods and ideas, new trading strategies and the right mindset, you can achieve wonderful things.</p>
+
+      <p>All these are taught at the trading courses in Pipera, offered by Be Trader Academy Romania. Although transactions can be easy to understand for some, it is clear that both beginner and advanced traders need to know if all strategies really work and continue to refine their skills.</p>
+
+      <p>BeTrader Academy has over 100 experts teaching the best trading methods with the lowest risks. This accredited center belongs to the most prestigious organization in Europe and has offices in Paris, Miami, Brussels and other major cities around the world.</p>
+
+      <h3>What are the main advantages offered by Be Trader Academy Romania?</h3>
+      <p>Anyone experiencing stock market trading should be aware that it requires time spent on planning and analysis. All you have to do to make money is buy low and sell high. Be Trader Academy Romania courses teach you how to think like a successful trader, how to avoid risks and make profitable investments and transactions on the Stock Exchange.</p>
+
+      <p>To know how to invest in stocks, contracts and other stock exchange values, it is essential to first focus on studies. After all, getting positive results is not really a matter of luck. It is about analysis, interpretation, decision and other important things that you can learn at Be Trader Academy courses.</p>
+
+      <h3>Innovative Trading Courses</h3>
+      <p>One thing is certain: the academy teaches you the most innovative trading methods through FUTURES, OPTIONS and CRYPTO trading courses.</p>
+
+      <p>These FUTURES and OPTIONS courses are for beginners as well as those who want to improve their knowledge. The main advantage is that they can offer you more profit in a short time. Every investor must also understand that there are risks. They will learn about this in the courses, how risks can be avoided, what are the secrets of the stock market and the most efficient trading strategies.</p>
+
+      <p>To be successful, all risks must be known before trading. The courses are not for everyone, they are for those interested in trading on financial markets, for traders who want to extend their trading activity to new areas.</p>
+
+      <h3>Accredited VTCT Level 5 Diploma</h3>
+      <p>Each graduate will receive at the end of the courses an accredited VTCT Level 5 diploma, which corresponds to 120 credits and 2 university years.</p>
+
+      <h3>Methods to Make Money with Cryptocurrencies</h3>
+      <p>Currently, almost everyone wants to make money from cryptocurrencies. This is possible if you pay attention to risks and scams. There are many methods to make money with cryptocurrencies:</p>
+      <ul>
+        <li>Through monetary transactions, through transfers and small commissions</li>
+        <li>By using them for investment and speculation purposes to generate profits</li>
+        <li>Through cryptocurrency mining</li>
+        <li>By buying them and storing in an electronic wallet called Wallet</li>
+        <li>Through short-term trading (intraday), or long-term</li>
+        <li>Through margin trading long – through which large profits can be obtained</li>
+      </ul>
+
+      <h3>BETRA COIN - The First Romanian Cryptocurrency</h3>
+      <p>Be Trader Academy will publicly launch on the IDCM and BIKI exchanges the first Romanian cryptocurrency BETRA COIN, on Romania's National Day, in Dubai. The coin is ERC20 type, based on Ethereum.</p>
+
+      <h3>BETRA Wallet and BETRA PAY</h3>
+      <p>From April, the new BETRA Wallet will also be launched. This electronic wallet will have approximately 200 different cryptocurrencies, and of course will include the BETRA COIN cryptocurrency. The BETRA Wallet will be able to store Bitcoin, Ethereum, ETC, BCH, LTC cryptocurrencies and other ERC20 type coins.</p>
+    `,
+  },
 };

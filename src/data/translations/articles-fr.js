@@ -760,4 +760,47 @@ export default {
       <p><strong>Contact :</strong> Instagram <a href="https://www.instagram.com/ciprian_ciceu22" target="_blank">@ciprian_ciceu22</a></p>
     `,
   },
+  68: {
+    title: 'Découvrez le Cours de Trading à Pipera qui Délivre un Diplôme Équivalent à 2 Années Universitaires !',
+    sm_desc: 'Wall-Street.ro présente Be Trader Academy Romania, l\'académie de Pipera offrant des cours de trading accrédités avec un diplôme VTCT Niveau 5',
+    content: `
+      <p>Gagner de l'argent en Bourse n'est pas une tâche facile, mais si vous vous "armez" des meilleures méthodes et idées de trading, de nouvelles stratégies commerciales et du bon état d'esprit, vous pouvez accomplir des choses merveilleuses.</p>
+
+      <p>Tout cela s'apprend aux cours de trading à Pipera, proposés par Be Trader Academy Romania. Bien que les transactions puissent être faciles à comprendre pour certains, il est clair que les traders débutants comme avancés ont besoin de savoir si toutes les stratégies fonctionnent vraiment et de continuer à perfectionner leurs compétences.</p>
+
+      <p>BeTrader Academy compte plus de 100 experts enseignant les meilleures méthodes de trading avec les risques les plus faibles. Ce centre accrédité appartient à l'organisation la plus prestigieuse d'Europe et possède des bureaux à Paris, Miami, Bruxelles et d'autres grandes villes du monde.</p>
+
+      <h3>Quels sont les principaux avantages offerts par Be Trader Academy Romania ?</h3>
+      <p>Quiconque expérimente le trading boursier doit être conscient que cela nécessite du temps consacré à la planification et à l'analyse. Tout ce que vous avez à faire pour gagner de l'argent est d'acheter bas et de vendre haut. Les cours de Be Trader Academy Romania vous enseignent comment penser comme un trader prospère, comment éviter les risques et effectuer des investissements et des transactions rentables en Bourse.</p>
+
+      <p>Pour savoir comment investir dans les actions, les contrats et autres valeurs boursières, il est essentiel de se concentrer d'abord sur les études. Après tout, obtenir des résultats positifs n'est pas vraiment une question de chance. Il s'agit d'analyse, d'interprétation, de décision et d'autres choses importantes que vous pouvez apprendre aux cours de Be Trader Academy.</p>
+
+      <h3>Cours de Trading Innovants</h3>
+      <p>Une chose est sûre : l'académie vous enseigne les méthodes de trading les plus innovantes grâce aux cours de trading FUTURES, OPTIONS et CRYPTO.</p>
+
+      <p>Ces cours FUTURES et OPTIONS s'adressent aux débutants ainsi qu'à ceux qui souhaitent améliorer leurs connaissances. Le principal avantage est qu'ils peuvent vous offrir plus de profits en peu de temps. Chaque investisseur doit également comprendre qu'il y a des risques. Ils l'apprendront dans les cours, comment éviter les risques, quels sont les secrets du marché boursier et les stratégies de trading les plus efficaces.</p>
+
+      <p>Pour réussir, tous les risques doivent être connus avant de trader. Les cours ne sont pas pour tout le monde, ils sont destinés à ceux qui s'intéressent au trading sur les marchés financiers, aux traders qui veulent étendre leur activité de trading à de nouveaux domaines.</p>
+
+      <h3>Diplôme Accrédité VTCT Niveau 5</h3>
+      <p>Chaque diplômé recevra à la fin des cours un diplôme accrédité VTCT Niveau 5, qui correspond à 120 crédits et 2 années universitaires.</p>
+
+      <h3>Méthodes pour Gagner de l'Argent avec les Cryptomonnaies</h3>
+      <p>Actuellement, presque tout le monde veut gagner de l'argent avec les cryptomonnaies. C'est possible si vous faites attention aux risques et aux arnaques. Il existe de nombreuses méthodes pour gagner de l'argent avec les cryptomonnaies :</p>
+      <ul>
+        <li>Par des transactions monétaires, par des transferts et de petites commissions</li>
+        <li>En les utilisant à des fins d'investissement et de spéculation pour générer des profits</li>
+        <li>Par le minage de cryptomonnaies</li>
+        <li>En les achetant et en les stockant dans un portefeuille électronique appelé Wallet</li>
+        <li>Par le trading à court terme (intraday), ou à long terme</li>
+        <li>Par le margin trading long – grâce auquel de gros profits peuvent être obtenus</li>
+      </ul>
+
+      <h3>BETRA COIN - La Première Cryptomonnaie Roumaine</h3>
+      <p>Be Trader Academy lancera publiquement sur les bourses IDCM et BIKI la première cryptomonnaie roumaine BETRA COIN, le jour de la Fête Nationale de la Roumanie, à Dubaï. La monnaie est de type ERC20, basée sur Ethereum.</p>
+
+      <h3>BETRA Wallet et BETRA PAY</h3>
+      <p>À partir d'avril, le nouveau BETRA Wallet sera également lancé. Ce portefeuille électronique aura environ 200 cryptomonnaies différentes, et inclura bien sûr la cryptomonnaie BETRA COIN. Le BETRA Wallet pourra stocker les cryptomonnaies Bitcoin, Ethereum, ETC, BCH, LTC et d'autres monnaies de type ERC20.</p>
+    `,
+  },
 };

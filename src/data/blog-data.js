@@ -24,8 +24,10 @@ import wowbiz_betrapay_img from '@assets/img/blog/grid/wowbiz-betrapay.webp';
 import newsweek_belgium_img from '@assets/img/blog/grid/newsweek-restaurant-belgium.webp';
 import romania_libera_img from '@assets/img/blog/grid/romania-libera.webp';
 import romania_libera_alocatii_img from '@assets/img/blog/grid/ciprian-ciceu-atrage-atentia-asupra-alocatiei-pentru-copii-la-care-au-dreptul-cetatenii-romani.jpg';
+import wallstreet_trading_img from '@assets/img/blog/grid/descopera-cursul-de-trading-din-pipera-de-la-care-pleci-cu-o-diploma-care-corespunde-cu-2-ani.webp';
 
 import forbes_logo from '@assets/img/brand/5/forbes-2x.webp';
+import wallstreet_logo from '@assets/img/brand/5/wall-street-2x.webp';
 import adevarul_logo from '@assets/img/brand/5/adevarul-2x.webp';
 import newsro_logo from '@assets/img/brand/5/newsro-2x.png';
 import evz_logo from '@assets/img/brand/5/evz-2x.webp';
@@ -1074,6 +1076,65 @@ const blog_data = [
       <p><strong>Key Takeaway:</strong> Ciceu exemplifies a new generation of globally-minded fintech entrepreneurs whose work demonstrates how innovation, education, and geographic strategy converge to build enduring systems rather than temporary solutions.</p>
 
       <p><strong>Contact:</strong> Instagram <a href="https://www.instagram.com/ciprian_ciceu22" target="_blank">@ciprian_ciceu22</a></p>
+    `,
+  },
+  {
+    id: 68,
+    tag: ['Education', 'Business', 'Crypto'],
+    img: wallstreet_trading_img,
+    date: 'November 27, 2019',
+    title: 'Descoperă cursul de trading din Pipera, de la care pleci cu o diplomă care corespunde cu 2 ani universitari!',
+    sm_desc: 'Wall-Street.ro prezintă Be Trader Academy România, academia din Pipera care oferă cursuri acreditate de trading cu diploma VTCT Level 5',
+    author_name: 'Wall-Street.ro',
+    outlet_logo: wallstreet_logo,
+    comments: 38,
+    watch: '145k',
+    blog_grid: true,
+    featured: false,
+    link: 'https://www.wall-street.ro/articol/Educatie-bursiera/246159/p-descopera-cursul-de-trading-din-pipera-de-la-care-pleci-cu-o-diploma-care-corespunde-cu-2-ani-universitari.html',
+    content: `
+      <p>A câștiga bani la Bursă nu este o sarcină ușoară, însă, dacă vă "înarmați" cu cele mai bune metode și idei de tranzacționare, cu noi strategii de comerț și mentalitatea potrivită, puteți realiza lucruri minunate.</p>
+
+      <p>Toate acestea se învață la cursurile de trading din Pipera, oferite de Be Trader Academy România. Deși tranzacțiile pot fi ușor de înțeles pentru unii, este clar că atât comercianții începători cât și cei avansați au nevoie să știe dacă toate strategiile funcționează cu adevărat și să-și perfecționeze în continuare abilitățile.</p>
+
+      <p>BeTrader Academy are peste 100 de experți care predau cele mai bune metode de tranzacționare, cu cele mai mici riscuri. Acest centru acreditat aparține de cea mai prestigioasă organizație din Europa și are birouri în Paris, Miami, Bruxelles și alte orașe mari ale lumii.</p>
+
+      <h3>Care sunt principalele avantaje oferite de Be Trader Academy Romania?</h3>
+      <p>Oricine experimentează tranzacțiile la Bursă ar trebui să fie conștient de faptul că asta necesită timp petrecut cu planificarea și analiza. Tot ce trebuie să faci pentru a câștiga bani este să cumperi ieftin și să vinzi scump. Cursurile Be Trader Academy Romania te învață cum să gândești ca un comerciant de succes, cum să eviți riscurile și să faci investiții și tranzacții profitabile la Bursă.</p>
+
+      <p>Pentru a ști cum să investești în acțiuni, contracte și alte valori ale Bursei, este esențial mai întâi să te concentrezi pe studii. La urma urmei, pentru a avea rezultate pozitive nu este chiar o chestiune de noroc. Este vorba despre analiză, interpretare, decizie și alte lucruri importante, despre care poți afla la cursurile Academiei Be Trader.</p>
+
+      <h3>Cursuri inovative de trading</h3>
+      <p>Un lucru este sigur: academia te învață cele mai inovative metode de tranzacționare, prin cursurile de trading cu FUTURES, OPTIONS și CRYPTO.</p>
+
+      <p>Aceste cursuri FUTURES și OPTIONS sunt pentru începători, dar și pentru cei care vor să-și îmbunătățească cunoștințele. Principalul avantaj este că ele vă pot oferi mai mult profit într-un timp scurt. Fiecare investitor trebuie să înțeleagă și faptul că există și riscuri. Despre asta vor afla la cursuri, cum pot fi evitate riscurile, care sunt secretele pieței bursei și cele mai eficiente strategii de trading.</p>
+
+      <p>Pentru a avea succes, trebuie cunoscute toate riscurile înainte de tranzacționare. Cursurile nu sunt pentru toată lumea, sunt pentru cei interesați de tranzacționarea pe piețele financiare, pentru comercianții care vor să-și extindă activitatea de tranzacționare în zone noi.</p>
+
+      <h3>Diplomă acreditată VTCT Level 5</h3>
+      <p>Fiecare absolvent va primi la finalul cursurilor o diplomă VTCT Level 5, acreditată, care corespunde cu 120 de credite și 2 ani universitari.</p>
+
+      <h3>Metode de a face bani cu criptomonede</h3>
+      <p>În prezent, aproape oricine vrea să facă bani din criptomonede. Asta este posibil dacă ești atent la riscuri și înșelătorii. Există multe metode de a face bani cu criptomonede:</p>
+      <ul>
+        <li>Prin tranzacții monetare, prin transferuri și comisioane mici</li>
+        <li>Prin folosirea lor în scop de investiții și speculații ce au rolul de a genera câștiguri</li>
+        <li>Prin minarea de criptomonede</li>
+        <li>Prin cumpărarea lor și depozitarea într-un portofel electronic numit Wallet</li>
+        <li>Prin trading pe termen scurt (intraday), sau pe termen lung</li>
+        <li>Prin margin trading long – prin care se pot obține profituri mari</li>
+      </ul>
+
+      <h3>BETRA COIN - Prima criptomonedă românească</h3>
+      <p>Academia Be Trader va lansa public pe exchange-urile IDCM și BIKI prima criptomonedă românească BETRA COIN, de Ziua Națională a României, în Dubai. Moneda este de tip ERC20, bazată pe Ethereum.</p>
+
+      <h3>BETRA Wallet și BETRA PAY</h3>
+      <p>Din luna aprilie se va lansa și noul BETRA Wallet. Acest portofel electronic va avea aproximativ 200 de criptomonede diferite, și desigur va include criptomoneda BETRA COIN. Portofelul BETRA Wallet va putea stoca criptomonede Bitcoin, Ethereum, ETC, BCH, LTC și alte monede tip ERC20.</p>
+
+      <p>BETRA Coin lansează și sistemul de plată prin QR Code numit BETRA PAY, care va fi introdus în aplicația BETRAWALLET pentru comercianții ce utilizează criptomonede.</p>
+
+      <h3>Despre fondator</h3>
+      <p>Fondatorul BETRA și BeTrader Academy Romania este Ciprian Ciceu, un profesionist în domeniu; are peste 20 de ani experiență în management, antreprenoriat, analiză financiară, planificare în afaceri, operațiuni și analize de decizie. El a fost personal în China, la Blockshine Centre Shanghai, pentru a discuta funcțiile wallet-ului.</p>
     `,
   },
 ]
