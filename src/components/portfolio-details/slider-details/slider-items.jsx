@@ -32,7 +32,8 @@ const project_static_data = [
   {
     img: img_4,
     launched: "2019",
-    url: "https://bscscan.com/token/0xfae21da223da19f77c8bca7183ea942a0b5c03e7"
+    url: "https://bscscan.com/token/0xfae21da223da19f77c8bca7183ea942a0b5c03e7",
+    tradeUrl: "https://irobotexchange.ro/trade-betra-coin/"
   }
 ];
 
@@ -68,6 +69,7 @@ const SliderItems = ({ padd = '120' }) => {
     description: translatedItems[index]?.description || '',
     sector: translatedItems[index]?.sector || '',
     pdf: staticItem.pdf || null,
+    tradeUrl: staticItem.tradeUrl || null,
   }));
 
   return (
@@ -137,6 +139,22 @@ const SliderItems = ({ padd = '120' }) => {
                           {t('downloadPdf')}
                           <span>
                             <i className="fa-solid fa-download" style={{ marginLeft: '8px' }}></i>
+                          </span>
+                        </a>
+                      </div>
+                    )}
+                    {item.tradeUrl && (
+                      <div className="portfolio__details-btn text-center mt-20">
+                        <a
+                          href={item.tradeUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="tp-btn-border"
+                          style={{ backgroundColor: 'var(--tp-theme-1)', color: '#fff', borderColor: 'var(--tp-theme-1)' }}
+                        >
+                          {t('tradeCoin')}
+                          <span>
+                            <ArrowRightTwo />
                           </span>
                         </a>
                       </div>
