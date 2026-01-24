@@ -21,7 +21,8 @@ const project_static_data = [
   {
     img: img_2,
     launched: "2017",
-    url: "https://betrader.ro"
+    url: "https://betrader.ro",
+    pdf: "/assets/img/portfolio/details/CRYPTO-BETRADER-PDF.pdf.pdf"
   },
   {
     img: img_3,
@@ -66,6 +67,7 @@ const SliderItems = ({ padd = '120' }) => {
     title: translatedItems[index]?.title || '',
     description: translatedItems[index]?.description || '',
     sector: translatedItems[index]?.sector || '',
+    pdf: staticItem.pdf || null,
   }));
 
   return (
@@ -120,6 +122,21 @@ const SliderItems = ({ padd = '120' }) => {
                           {t('visitWebsite')}
                           <span>
                             <ArrowRightTwo />
+                          </span>
+                        </a>
+                      </div>
+                    )}
+                    {item.pdf && (
+                      <div className="portfolio__details-btn text-center mt-20">
+                        <a
+                          href={item.pdf}
+                          download
+                          className="tp-btn-border"
+                          style={{ backgroundColor: 'var(--tp-theme-1)', color: '#fff', borderColor: 'var(--tp-theme-1)' }}
+                        >
+                          {t('downloadPdf')}
+                          <span>
+                            <i className="fa-solid fa-download" style={{ marginLeft: '8px' }}></i>
                           </span>
                         </a>
                       </div>

@@ -16,7 +16,7 @@ const SectionArea = ({title, subtitle, bgImage}) => {
           <div className="col-xl-7 col-lg-8">
             <div className="tp-section-wrapper-2 text-center">
               <h3 className="tp-section-title-2 font-70">{title}</h3>
-              <p>
+              <p className="text-black">
                 {subtitle}
               </p>
             </div>

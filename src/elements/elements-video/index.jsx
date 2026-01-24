@@ -10,124 +10,97 @@ import mainetDubaiThumbnail from "@assets/img/video/Mainet-First-Incentive-in-Du
 import abidjanThumbnail from "@assets/img/video/MAINET-BIG-EVENT-ABIDJAN.jpg";
 import betracoin from "@assets/img/video/official-launch-of-betra-coin.jpg";
 import mediaBg from '@assets/img/ciceu/princeton-black-white-canvas.webp';
+import { useTranslations } from '@context/IntlContext';
 
 
 const ElementsVideoMain = () => {
+  const t = useTranslations('videos');
+  const tBreadcrumb = useTranslations('breadcrumb');
+
   // YouTube videos with dates
   const youtubeVideos = [
     {
       videoId: "IPYr8a3LgWs",
       thumbnail: prezentareCandidatThumbnail,
-      title: "Prezentare Candidat CIPRIAN CICEU",
       date: "Sep 22, 2020",
-      dateObj: new Date("2020-09-22"),
-      description: "Interviu la Hotel Scala Bucuresti"
+      dateObj: new Date("2020-09-22")
     },
     {
       videoId: "aiEKoEc7P2Y",
       thumbnail: incentiveEgyptThumbnail,
-      title: "INCENTIVE EGYPT",
       date: "Mar 24, 2023",
-      dateObj: new Date("2023-03-24"),
-      description: "Second Mainet Incentive in Egypt. After Dubai a Yacht Party on a 'GREEN SEA' we continue with Boat party on the 'RED SEA' and of course the next incentive will be on the 'BLACK SEA' we respect the natural flow of our diamonds positions"
+      dateObj: new Date("2023-03-24")
     },
     {
       videoId: "myol9P_KOTE",
       thumbnail: abidjanThumbnail,
-      title: "MAINET BIG EVENT ABIDJAN 2023 !! + de 1000 Personnes sur Place !",
       date: "Apr 18, 2023",
-      dateObj: new Date("2023-04-18"),
-      description: "Dans cette vidéo, je partage avec vous tout sur le MAINET BIG EVENT ABIDJAN 2023 ! !! le CEO Ciprian Ciceu était présent ! Cet événement a été incroyable ! Ne ratez pas cette occasion unique d'apprendre les dernières nouveautés ! Le MAINET BIG EVENT ABIDJAN 2023 ! !"
+      dateObj: new Date("2023-04-18")
     },
     {
       videoId: "42VkeRLruqw",
       thumbnail: euSuntCiprianThumbnail,
-      title: "Eu sunt Ciprian CICEU",
       date: "Sep 17, 2020",
-      dateObj: new Date("2020-09-17"),
-      description: "Candidat la primăria sectorului 1 București, din partea Re:Start România. Sunt Ciprian CICEU și vreau sa fac bine! Votati pozitia 13 pe buletinul de vot la postul de primar. Votati pozitia 15 pe buletinul de vot, cap de lista la postul de consilier"
+      dateObj: new Date("2020-09-17")
     },
     {
       videoId: "4XQLNYJc2xQ",
       thumbnail: historyBehindThumbnail,
-      title: "Ciceu Ciprian - History behind (EN subtitle) / 1994-2022",
       date: "Dec 14, 2022",
-      dateObj: new Date("2022-12-14"),
-      description: "Présentation des différents affaires entre 1994 et 2022 ♦️ 28 années d'expérience positives et négatives qui ont donné le résultat du jour présents - toujours avec la devise 'Qu'on a jamais une deuxième chance de faire une première impression!' 🏆"
+      dateObj: new Date("2022-12-14")
     },
     {
       videoId: "jMdjc-ynPVw",
       thumbnail: mainetDubaiThumbnail,
-      title: "Mainet First Incentive in Dubai - 2/12 3/12 & 4/12/2022 Yacht Party 🎊 Awards Gala 🏆 Safari 🐪",
       date: "Dec 12, 2022",
-      dateObj: new Date("2022-12-12"),
-      description: "Mainet First Incentive in Dubai - 2/12 3/12 & 4/12/2022 Yacht Party 🎊 Awards Gala 🏆 Safari 🐪"
+      dateObj: new Date("2022-12-12")
     },
     {
       videoId: "l_YOy0MTUoY",
       thumbnail: betracoin,
-      title: "Official launch of Betra Coin",
       date: "Sep 16, 2020",
-      dateObj: new Date("2020-09-16"),
-      description: "The first Romanian cryptocurrency created by a Romanian trading company "
+      dateObj: new Date("2020-09-16")
     }
   ];
 
   // Sort YouTube videos by date (newest first)
   const sortedYoutubeVideos = [...youtubeVideos].sort((a, b) => b.dateObj - a.dateObj);
 
-  // Local MP4 Videos - all using History Behind thumbnail
-  // const localVideos = [
-  //   {
-  //     videoId: "/assets/video/Ciceu-video-1.mp4",
-  //     thumbnail: historyBehindThumbnail,
-  //     title: "Ciprian Ciceu - Exclusive Content 1",
-  //     date: "Jan 3, 2026",
-  //     description: "Exclusive content featuring Ciprian Ciceu"
-  //   },
-  //   {
-  //     videoId: "/assets/video/Ciceu-video-2.mp4",
-  //     thumbnail: historyBehindThumbnail,
-  //     title: "Ciprian Ciceu - Behind the Scenes",
-  //     date: "Jan 3, 2026",
-  //     description: "Behind the scenes with Ciprian Ciceu"
-  //   },
-  //   {
-  //     videoId: "/assets/video/Ciceu-video-3.mp4",
-  //     thumbnail: historyBehindThumbnail,
-  //     title: "Ciprian Ciceu - Insights & Perspectives",
-  //     date: "Jan 3, 2026",
-  //     description: "Insights and perspectives from Ciprian Ciceu"
-  //   },
-  //   {
-  //     videoId: "/assets/video/Ciceu-video-4.mp4",
-  //     thumbnail: historyBehindThumbnail,
-  //     title: "Ciprian Ciceu - Exclusive Content 2",
-  //     date: "Jan 3, 2026",
-  //     description: "More exclusive content with Ciprian Ciceu"
-  //   }
-  // ];
+  // Get translated title and description for a video
+  const getVideoTranslation = (videoId) => {
+    const videoTranslation = t(videoId);
+    // If translation exists and is an object, use it; otherwise use fallback
+    if (videoTranslation && typeof videoTranslation === 'object') {
+      return {
+        title: videoTranslation.title || videoId,
+        description: videoTranslation.description || ''
+      };
+    }
+    // Fallback - return the key as title
+    return { title: videoId, description: '' };
+  };
 
-  // Combine: sorted YouTube videos first, then local videos
-  // const videos = [...sortedYoutubeVideos, ...localVideos];
   const videos = [...sortedYoutubeVideos];
 
   return (
     <React.Fragment>
       {/* breadcrumb start */}
-      <ElementBreadcrumb title="Media & Press Coverage" bgImage={mediaBg} />
+      <ElementBreadcrumb title={tBreadcrumb('title')} bgImage={mediaBg} />
       {/* breadcrumb end */}
 
-      {videos.map((video, index) => (
-        <ElVideoStyleOne
-          key={index}
-          videoId={video.videoId}
-          thumbnail={video.thumbnail}
-          title={video.title}
-          date={video.date}
-          description={video.description}
-        />
-      ))}
+      {videos.map((video, index) => {
+        const translation = getVideoTranslation(video.videoId);
+        return (
+          <ElVideoStyleOne
+            key={index}
+            videoId={video.videoId}
+            thumbnail={video.thumbnail}
+            title={translation.title}
+            date={video.date}
+            description={translation.description}
+          />
+        );
+      })}
     </React.Fragment>
   );
 };

@@ -1,6 +1,39 @@
 {
   "seo": {
-    "title": "Media & Press Coverage",
-    "description": "Watch international media coverage and press features of Ciprian Ciceu discussing fintech innovation, blockchain technology, and Mainet X ecosystem development."
+    "title": "Médias et Couverture Presse",
+    "description": "Regardez la couverture médiatique internationale et les articles de presse présentant Ciprian Ciceu discutant de l'innovation fintech, de la technologie blockchain et du développement de l'écosystème Mainet X."
+  },
+  "breadcrumb": {
+    "title": "Médias et Couverture Presse"
+  },
+  "videos": {
+    "IPYr8a3LgWs": {
+      "title": "Présentation du Candidat CIPRIAN CICEU",
+      "description": "Interview à l'Hôtel Scala Bucarest"
+    },
+    "aiEKoEc7P2Y": {
+      "title": "INCENTIVE ÉGYPTE",
+      "description": "Deuxième Incentive Mainet en Égypte. Après la Yacht Party à Dubaï sur une 'MER VERTE', nous continuons avec une Boat Party sur la 'MER ROUGE', et bien sûr le prochain incentive sera sur la 'MER NOIRE' - nous respectons le flux naturel de nos positions diamant."
+    },
+    "myol9P_KOTE": {
+      "title": "MAINET BIG EVENT ABIDJAN 2023 - Plus de 1000 Personnes sur Place !",
+      "description": "Dans cette vidéo, je partage avec vous tout sur le MAINET BIG EVENT ABIDJAN 2023 ! Le CEO Ciprian Ciceu était présent ! Cet événement a été incroyable ! Ne ratez pas cette occasion unique d'apprendre les dernières nouveautés !"
+    },
+    "42VkeRLruqw": {
+      "title": "Je suis Ciprian CICEU",
+      "description": "Candidat à la mairie du Secteur 1 de Bucarest, du parti Re:Start Roumanie. Je suis Ciprian CICEU et je veux faire le bien ! Votez position 13 sur le bulletin pour le maire. Votez position 15 sur le bulletin, tête de liste pour conseiller."
+    },
+    "4XQLNYJc2xQ": {
+      "title": "Ciprian Ciceu - L'Histoire Derrière (1994-2022)",
+      "description": "Présentation des différentes affaires entre 1994 et 2022. 28 années d'expériences positives et négatives qui ont donné le résultat d'aujourd'hui - toujours avec la devise 'On n'a jamais une deuxième chance de faire une première impression !'"
+    },
+    "jMdjc-ynPVw": {
+      "title": "Mainet Premier Incentive à Dubaï - Yacht Party, Gala de Remise des Prix et Safari",
+      "description": "Mainet Premier Incentive à Dubaï - 2, 3 et 4 décembre 2022. Yacht Party, Gala de Remise des Prix, expérience Safari."
+    },
+    "l_YOy0MTUoY": {
+      "title": "Lancement Officiel de Betra Coin",
+      "description": "La première cryptomonnaie roumaine créée par une société de trading roumaine."
+    }
   }
 }

@@ -1,6 +1,39 @@
 {
   "seo": {
-    "title": "Media & Press Coverage",
-    "description": "Watch international media coverage and press features of Ciprian Ciceu discussing fintech innovation, blockchain technology, and Mainet X ecosystem development."
+    "title": "Media și Acoperire de Presă",
+    "description": "Urmăriți acoperirea media internațională și articolele de presă în care Ciprian Ciceu discută despre inovația fintech, tehnologia blockchain și dezvoltarea ecosistemului Mainet X."
+  },
+  "breadcrumb": {
+    "title": "Media și Acoperire de Presă"
+  },
+  "videos": {
+    "IPYr8a3LgWs": {
+      "title": "Prezentare Candidat CIPRIAN CICEU",
+      "description": "Interviu la Hotel Scala București"
+    },
+    "aiEKoEc7P2Y": {
+      "title": "INCENTIVE EGIPT",
+      "description": "Al doilea Incentive Mainet în Egipt. După Yacht Party de la Dubai pe 'MAREA VERDE', continuăm cu Boat Party pe 'MAREA ROȘIE', și bineînțeles următorul incentive va fi pe 'MAREA NEAGRĂ' - respectăm fluxul natural al pozițiilor noastre de diamant."
+    },
+    "myol9P_KOTE": {
+      "title": "MAINET BIG EVENT ABIDJAN 2023 - Peste 1000 de Persoane Prezente!",
+      "description": "În acest video, vă împărtășesc totul despre MAINET BIG EVENT ABIDJAN 2023! CEO-ul Ciprian Ciceu a fost prezent! Acest eveniment a fost incredibil! Nu ratați această ocazie unică de a afla ultimele noutăți!"
+    },
+    "42VkeRLruqw": {
+      "title": "Eu sunt Ciprian CICEU",
+      "description": "Candidat la primăria sectorului 1 București, din partea Re:Start România. Sunt Ciprian CICEU și vreau să fac bine! Votați poziția 13 pe buletinul de vot la postul de primar. Votați poziția 15 pe buletinul de vot, cap de listă la postul de consilier."
+    },
+    "4XQLNYJc2xQ": {
+      "title": "Ciprian Ciceu - Istoria Din Spate (1994-2022)",
+      "description": "Prezentarea diferitelor afaceri între 1994 și 2022. 28 de ani de experiențe pozitive și negative care au dus la rezultatul de astăzi - mereu cu deviza 'Nu ai niciodată o a doua șansă să faci o primă impresie!'"
+    },
+    "jMdjc-ynPVw": {
+      "title": "Mainet Primul Incentive în Dubai - Yacht Party, Gala Premiilor și Safari",
+      "description": "Mainet Primul Incentive în Dubai - 2, 3 și 4 decembrie 2022. Yacht Party, Gala Premiilor, experiență Safari."
+    },
+    "l_YOy0MTUoY": {
+      "title": "Lansarea Oficială a Betra Coin",
+      "description": "Prima criptomonedă românească creată de o companie de trading românească."
+    }
   }
 }
