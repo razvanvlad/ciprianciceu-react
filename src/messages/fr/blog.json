@@ -20,7 +20,8 @@
       "noArticles": "Aucun article trouvé pour cette catégorie",
       "viewAll": "Voir tous les articles du blog",
       "readMore": "Lire l'article complet",
-      "continueReading": "Continuer la lecture"
+      "continueReading": "Continuer la lecture",
+      "backToBlog": "Retour au Blog"
     },
     "notFound": {
       "title": "Article de Blog Introuvable",

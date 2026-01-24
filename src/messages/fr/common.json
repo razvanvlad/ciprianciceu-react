@@ -34,6 +34,11 @@
     "shareOn": "Partager sur",
     "englishOnly": "Disponible en anglais uniquement"
   },
+  "cta": {
+    "label": "Contact et Demandes Professionnelles",
+    "title": "Pour les demandes médias, interventions ou collaborations professionnelles",
+    "buttonText": "Nous Contacter"
+  },
   "offcanvas": {
     "inquiriesTitle": "Demandes professionnelles et médiatiques",
     "inquiriesDesc": "Pour les demandes professionnelles, les demandes médiatiques, les conférences ou les propositions de collaboration, veuillez utiliser les canaux de contact officiels listés ci-dessous.",

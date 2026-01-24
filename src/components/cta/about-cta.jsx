@@ -2,8 +2,12 @@ import React from "react";
 import Link from "next/link";
 // internal
 import bg from "@assets/img/cta/5/cta-bg.png";
+import { useTranslations, useLocale } from '@context/IntlContext';
 
 const AboutCta = ({ element_style = false }) => {
+  const t = useTranslations('cta');
+  const locale = useLocale();
+
   return (
     <section
       className={`cta__area cta__style-2 p-relative z-index-1 ${
@@ -20,17 +24,17 @@ const AboutCta = ({ element_style = false }) => {
           <div className="row align-items-center">
             <div className="col-xxl-8 col-xl-8 col-lg-8">
               <div className="cta__content-5">
-                <span>Contact and Professional Inquiries</span>
+                <span>{t('label')}</span>
 
                 <h3 className="cta__title-5">
-                  For media requests, speaking engagements or professional collaboration
+                  {t('title')}
                 </h3>
               </div>
             </div>
             <div className="col-xxl-4 col-xl-4 col-lg-4">
               <div className="cta__btn-5 text-lg-end">
-                <Link href="/contact" className="tp-btn-orange-2">
-                  Get in Touch
+                <Link href={`/${locale}/contact`} className="tp-btn-orange-2">
+                  {t('buttonText')}
                 </Link>
               </div>
             </div>

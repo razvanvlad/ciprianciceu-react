@@ -5,7 +5,6 @@ import AboutFaqs from './about-faqs';
 import AboutTopBar from './about-top-bar';
 import TextArea from './text-area';
 import CurrentFocus from './current-focus';
-import AboutCta from '@components/cta/about-cta';
 import { useTranslations } from '@context/IntlContext';
 
 const AboutArea = () => {
@@ -26,7 +25,6 @@ const AboutArea = () => {
       <CurrentFocus />
       <SliderPortfolioArea pt="0" />
       <SliderItems />
-      <AboutCta />
     </React.Fragment>
   );
 };

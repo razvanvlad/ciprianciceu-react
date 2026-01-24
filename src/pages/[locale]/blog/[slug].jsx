@@ -92,7 +92,7 @@ export default function BlogDetails({ single_blog: propBlog }) {
           { label: single_blog?.title || "Article" }
         ]}
       />
-      <BlogArticleDetailsArea blog={single_blog} />
+      <BlogArticleDetailsArea blog={single_blog} locale={locale} backToBlogText={t('backToBlog')} />
       <FooterSeven />
     </Wrapper>
   );

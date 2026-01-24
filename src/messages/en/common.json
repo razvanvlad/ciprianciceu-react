@@ -34,6 +34,11 @@
     "shareOn": "Share on",
     "englishOnly": "Available in English only"
   },
+  "cta": {
+    "label": "Contact and Professional Inquiries",
+    "title": "For media requests, speaking engagements or professional collaboration",
+    "buttonText": "Get in Touch"
+  },
   "offcanvas": {
     "inquiriesTitle": "Professional & Media Inquiries",
     "inquiriesDesc": "For professional inquiries, media requests, speaking engagements or collaboration proposals, please use the official contact channels listed below.",

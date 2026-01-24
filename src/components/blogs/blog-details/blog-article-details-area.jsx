@@ -1,7 +1,7 @@
 import React from "react";
 import { DateTwo, UserTwo } from "@svg/index";
 
-const BlogArticleDetailsArea = ({ blog }) => {
+const BlogArticleDetailsArea = ({ blog, locale = 'en', backToBlogText = 'Back to Blog' }) => {
   if (!blog) {
     return (
       <section className="blog__area pt-120 pb-120">
@@ -98,8 +98,8 @@ const BlogArticleDetailsArea = ({ blog }) => {
 
                 {/* Back to Blog Link */}
                 <div className="postbox__read-more mt-50 pt-40" style={{ borderTop: '1px solid #e5e5e5' }}>
-                  <a href="/blog" className="tp-btn">
-                    ← Back to Blog
+                  <a href={`/${locale}/blog`} className="tp-btn">
+                    ← {backToBlogText}
                   </a>
                 </div>
               </div>

@@ -3,9 +3,6 @@ import SEO from "@components/seo";
 import StartUpPricing from "@components/pricings/start-up-pricing";
 import PricingTestimonial from "@components/testimonials/pricing-testimonial";
 import CommonFaq from "@components/faqs/common-faq";
-import AboutCta from "@components/cta/about-cta";
-
-
 
 export default function Pricing() {
   return (
@@ -15,7 +12,6 @@ export default function Pricing() {
       <StartUpPricing style_2={true} />
       <PricingTestimonial />
       <CommonFaq padd={"120"} />
-      <AboutCta />
       <FooterSeven />
     </Wrapper>
   );

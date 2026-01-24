@@ -77,6 +77,11 @@
         }
       ]
     },
+    "cta": {
+      "label": "Contact și Solicitări Profesionale",
+      "title": "Pentru cereri media, discursuri sau colaborări profesionale",
+      "buttonText": "Contactează-ne"
+    },
     "currentFocus": {
       "title": "Focus Curent și Direcție Viitoare",
       "paragraph1": "Astăzi, Ciprian Ciceu continuă să se concentreze pe dezvoltarea platformelor tehnologice, inițiativelor educaționale și colaborărilor internaționale care se aliniază cu viziunea sa pe termen lung. Munca sa continuă explorează noi modalități de a combina automatizarea, blockchain-ul și educația în ecosisteme coezive care oferă valoare reală.",

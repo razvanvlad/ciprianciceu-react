@@ -34,6 +34,11 @@
     "shareOn": "Distribuie pe",
     "englishOnly": "Disponibil doar în limba engleză"
   },
+  "cta": {
+    "label": "Contact și Solicitări Profesionale",
+    "title": "Pentru cereri media, discursuri sau colaborări profesionale",
+    "buttonText": "Contactează-ne"
+  },
   "offcanvas": {
     "inquiriesTitle": "Solicitări profesionale și media",
     "inquiriesDesc": "Pentru solicitări profesionale, solicitări media, conferințe sau propuneri de colaborare, vă rugăm să utilizați canalele de contact oficiale enumerate mai jos.",

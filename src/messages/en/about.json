@@ -77,6 +77,11 @@
         }
       ]
     },
+    "cta": {
+      "label": "Contact and Professional Inquiries",
+      "title": "For media requests, speaking engagements or professional collaboration",
+      "buttonText": "Get in Touch"
+    },
     "currentFocus": {
       "title": "Current Focus and Future Direction",
       "paragraph1": "Today, Ciprian Ciceu continues to focus on developing technology platforms, educational initiatives and international collaborations that align with his long-term vision. His ongoing work explores new ways to combine automation, blockchain and education into cohesive ecosystems that deliver real-world value.",

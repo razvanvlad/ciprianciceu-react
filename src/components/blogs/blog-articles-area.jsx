@@ -72,7 +72,7 @@ const BlogArticlesArea = ({ limit, localizedArticles }) => {
                     {" "}{t('titleHighlight')}
                     <ShapeLine />
                   </span>
-                  {t('titleEnd') && <> {t('titleEnd')}</>}
+                  {t('titleEnd') && t('titleEnd') !== 'titleEnd' && t('titleEnd').trim() !== '' && <> {t('titleEnd')}</>}
                 </h2>
                 <p className="section__subtitle mt-3" style={{ maxWidth: "800px", fontSize: "16px", lineHeight: "1.6", color: "#666" }}>
                   {t('subtitle')}

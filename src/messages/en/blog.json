@@ -20,7 +20,8 @@
       "noArticles": "No articles found for this category",
       "viewAll": "View All Blog Articles",
       "readMore": "Read Full Article",
-      "continueReading": "Continue Reading"
+      "continueReading": "Continue Reading",
+      "backToBlog": "Back to Blog"
     },
     "notFound": {
       "title": "Blog Post Not Found",

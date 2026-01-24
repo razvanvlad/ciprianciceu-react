@@ -9,6 +9,7 @@ import SocialLinks from "@components/social";
 import CopyrightText from "./component/copyright-text";
 import Languages from "@layout/headers/component/languages";
 import { useTranslations, useLocale } from '@context/IntlContext';
+import AboutCta from "@components/cta/about-cta";
 
 // footer widget
 function FooterWidget({ col, col_2, title, contents, locale }) {
@@ -40,6 +41,7 @@ const FooterSeven = () => {
 
   return (
     <>
+      <AboutCta />
       <footer>
         <div
           className="footer__area p-relative z-index-1"
