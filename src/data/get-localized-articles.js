@@ -13,8 +13,8 @@ const translations = {
  * @param {string} locale - The locale code (en, ro, fr, ar)
  * @returns {Promise<Array>} - Array of localized article objects
  */
-export async function getLocalizedArticles(locale = 'ro') {
-  // Default to Romanian if translations don't exist yet or invalid locale
+export async function getLocalizedArticles(locale = 'en') {
+  // Default to English if translations don't exist yet or invalid locale
   if (!translations[locale]) {
     return blog_data;
   }
@@ -52,13 +52,8 @@ export async function getLocalizedArticles(locale = 'ro') {
  * @param {string} locale - The locale code
  * @returns {Array} - Array of article objects
  */
-export function getLocalizedArticlesSync(locale = 'ro') {
-  // For Romanian, return original data directly
-  if (locale === 'ro') {
-    return blog_data;
-  }
-
-  // For other locales, return base data
+export function getLocalizedArticlesSync(locale = 'en') {
+  // Return base data for initial render
   // The async version will be used to hydrate with actual translations
   return blog_data;
 }

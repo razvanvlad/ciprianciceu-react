@@ -21,6 +21,11 @@
       "viewAll": "View All Blog Articles",
       "readMore": "Read Full Article",
       "continueReading": "Continue Reading"
+    },
+    "notFound": {
+      "title": "Blog Post Not Found",
+      "message": "The blog post you're looking for doesn't exist.",
+      "returnLink": "Return to Blog"
     }
   }
 }

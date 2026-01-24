@@ -5,10 +5,12 @@ import SEO from "@components/seo";
 import BreadcrumbSix from "@components/common/breadcrumb/breadcrumb-6";
 import DynamicBreadcrumb from "@components/common/breadcrumb/dynamic-breadcrumb";
 import BlogDetailsArea from "@components/blogs/blog-details/blog-details-area";
+import { useTranslations } from '@context/IntlContext';
 
 export default function PressDetails({ single_article: propArticle }) {
   const router = useRouter();
   const { locale } = router.query;
+  const tNotFound = useTranslations('press.notFound');
 
   const single_article = propArticle;
 
@@ -39,12 +41,12 @@ export default function PressDetails({ single_article: propArticle }) {
   if (!single_article) {
     return (
       <Wrapper>
-        <SEO pageTitle={"Press Article Not Found"} />
+        <SEO pageTitle={tNotFound('title')} />
         <HeaderEight />
         <div style={{ textAlign: 'center', padding: '100px 20px' }}>
-          <h1>Press Article Not Found</h1>
-          <p>The press article you're looking for doesn't exist.</p>
-          <a href={`/${locale}/press`}>Return to Press</a>
+          <h1>{tNotFound('title')}</h1>
+          <p>{tNotFound('message')}</p>
+          <a href={`/${locale}/press`}>{tNotFound('returnLink')}</a>
         </div>
         <FooterSeven />
       </Wrapper>
@@ -85,8 +87,8 @@ export default function PressDetails({ single_article: propArticle }) {
       <BreadcrumbSix {...single_article} />
       <DynamicBreadcrumb
         items={[
-          { label: "Home", href: "/" },
-          { label: "Press", href: "/press" },
+          { label: "Home", href: `/${locale}` },
+          { label: "Press", href: `/${locale}/press` },
           { label: single_article?.title || "Article" }
         ]}
       />

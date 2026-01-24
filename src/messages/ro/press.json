@@ -19,6 +19,11 @@
       "continueReading": "Continuă lectura",
       "noArticles": "Nu au fost găsite articole pentru filtrul selectat.",
       "originalArticle": "Articol Original:"
+    },
+    "notFound": {
+      "title": "Articol de Presă Negăsit",
+      "message": "Articolul de presă pe care îl căutați nu există.",
+      "returnLink": "Înapoi la Presă"
     }
   }
 }

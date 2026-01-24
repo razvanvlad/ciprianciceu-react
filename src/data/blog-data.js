@@ -4,6 +4,7 @@ import adevarul_img from '@assets/img/blog/grid/adevarul.webp';
 import newsro_img from '@assets/img/blog/grid/newsro.webp';
 import evz_img from '@assets/img/blog/grid/evz.webp';
 import antena3_img from '@assets/img/blog/grid/antena-3.webp';
+import antena3_universitate_img from '@assets/img/blog/grid/antena-3-articol-universitate.webp';
 import clickro_img from '@assets/img/blog/grid/clickro.webp';
 import wowbiz_img from '@assets/img/blog/grid/wowbiz.webp';
 import digital_img from '@assets/img/blog/grid/digital.webp';
@@ -22,6 +23,7 @@ import celebritatea_img from '@assets/img/blog/grid/celebritatea-ciceu-isuccess.
 import wowbiz_betrapay_img from '@assets/img/blog/grid/wowbiz-betrapay.webp';
 import newsweek_belgium_img from '@assets/img/blog/grid/newsweek-restaurant-belgium.webp';
 import romania_libera_img from '@assets/img/blog/grid/romania-libera.webp';
+import romania_libera_alocatii_img from '@assets/img/blog/grid/ciprian-ciceu-atrage-atentia-asupra-alocatiei-pentru-copii-la-care-au-dreptul-cetatenii-romani.jpg';
 
 import forbes_logo from '@assets/img/brand/5/forbes-2x.webp';
 import adevarul_logo from '@assets/img/brand/5/adevarul-2x.webp';
@@ -685,7 +687,7 @@ const blog_data = [
   {
     id: 56,
     tag: ['Education', 'University', 'Blockchain'],
-    img: antena3_img,
+    img: antena3_universitate_img,
     date: 'October 19, 2022',
     title: 'Universitatea Româno-Americană implementează cursul Blockchain și tehnologii financiare',
     sm_desc: 'Program universitar de master în blockchain predat de Ciprian Ciceu la Universitatea Româno-Americană',
@@ -962,12 +964,12 @@ const blog_data = [
   {
     id: 65,
     tag: ['Politics', 'Social', 'Policy'],
-    img: evz_img,
+    img: romania_libera_alocatii_img,
     date: 'September 8, 2020',
     title: 'Ciprian Ciceu atrage atenția asupra alocației pentru copii la care au dreptul cetățenii români',
     sm_desc: 'Candidat pentru Primăria Sectorului 1 informează despre drepturile la alocații pentru copii',
     author_name: 'România Liberă',
-    outlet_logo: evz_logo,
+    outlet_logo: romania_libera_logo,
     comments: 15,
     watch: '67k',
     blog_grid: true,
@@ -1020,7 +1022,7 @@ const blog_data = [
     `,
   },
   {
-    id: 64,
+    id: 67,
     tag: ['Business', 'FinTech', 'AI', 'Trading', 'Entrepreneurship'],
     img: middleeast_img,
     date: 'December 29, 2025',

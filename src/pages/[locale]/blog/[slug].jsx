@@ -10,6 +10,7 @@ export default function BlogDetails({ single_blog: propBlog }) {
   const router = useRouter();
   const { locale } = router.query;
   const t = useTranslations('blog.ui');
+  const tNotFound = useTranslations('blog.notFound');
 
   const single_blog = propBlog;
 
@@ -41,12 +42,12 @@ export default function BlogDetails({ single_blog: propBlog }) {
   if (!single_blog) {
     return (
       <Wrapper>
-        <SEO pageTitle={"Blog Not Found"} />
+        <SEO pageTitle={tNotFound('title')} />
         <HeaderEight />
         <div style={{ textAlign: 'center', padding: '100px 20px' }}>
-          <h1>Blog Post Not Found</h1>
-          <p>The blog post you're looking for doesn't exist.</p>
-          <a href={`/${locale}/blog`}>Return to Blog</a>
+          <h1>{tNotFound('title')}</h1>
+          <p>{tNotFound('message')}</p>
+          <a href={`/${locale}/blog`}>{tNotFound('returnLink')}</a>
         </div>
         <FooterSeven />
       </Wrapper>
@@ -86,8 +87,8 @@ export default function BlogDetails({ single_blog: propBlog }) {
       <HeaderEight />
       <DynamicBreadcrumb
         items={[
-          { label: "Home", href: "/" },
-          { label: "Blog", href: "/blog" },
+          { label: "Home", href: `/${locale}` },
+          { label: "Blog", href: `/${locale}/blog` },
           { label: single_blog?.title || "Article" }
         ]}
       />

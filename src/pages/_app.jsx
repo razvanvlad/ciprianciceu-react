@@ -30,8 +30,15 @@ export function reportWebVitals(metric) {
 function MyApp({ Component, pageProps }) {
   // Bootstrap removed - using custom components and utilities
   const router = useRouter();
-  // Extract locale from router query (dynamic route param)
-  const locale = router.query.locale || 'en';
+
+  // Extract locale from URL path (more reliable than router.query on initial SSR)
+  // URL pattern: /[locale]/... (e.g., /en/blog, /ro/press)
+  const locales = ['en', 'fr', 'ro', 'ar'];
+  const pathSegments = router.asPath.split('/').filter(Boolean);
+  const pathLocale = locales.includes(pathSegments[0]) ? pathSegments[0] : null;
+
+  // Priority: path locale > router.query > default 'en'
+  const locale = pathLocale || router.query.locale || 'en';
 
   // Load RTL styles for Arabic
   useEffect(() => {

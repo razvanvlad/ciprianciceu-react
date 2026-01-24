@@ -19,6 +19,11 @@
       "continueReading": "Continuer la lecture",
       "noArticles": "Aucun article trouvé pour le filtre sélectionné.",
       "originalArticle": "Article Original :"
+    },
+    "notFound": {
+      "title": "Article de Presse Introuvable",
+      "message": "L'article de presse que vous recherchez n'existe pas.",
+      "returnLink": "Retour à la Presse"
     }
   }
 }

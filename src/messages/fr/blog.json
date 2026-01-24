@@ -21,6 +21,11 @@
       "viewAll": "Voir tous les articles du blog",
       "readMore": "Lire l'article complet",
       "continueReading": "Continuer la lecture"
+    },
+    "notFound": {
+      "title": "Article de Blog Introuvable",
+      "message": "L'article de blog que vous recherchez n'existe pas.",
+      "returnLink": "Retour au Blog"
     }
   }
 }

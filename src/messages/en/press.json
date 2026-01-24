@@ -19,6 +19,11 @@
       "continueReading": "Continue Reading",
       "noArticles": "No articles found for the selected filter.",
       "originalArticle": "Original Article:"
+    },
+    "notFound": {
+      "title": "Press Article Not Found",
+      "message": "The press article you're looking for doesn't exist.",
+      "returnLink": "Return to Press"
     }
   }
 }

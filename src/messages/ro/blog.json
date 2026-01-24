@@ -21,6 +21,11 @@
       "viewAll": "Vezi toate articolele din blog",
       "readMore": "Citește articolul complet",
       "continueReading": "Continuă lectura"
+    },
+    "notFound": {
+      "title": "Articol de Blog Negăsit",
+      "message": "Articolul de blog pe care îl căutați nu există.",
+      "returnLink": "Înapoi la Blog"
     }
   }
 }

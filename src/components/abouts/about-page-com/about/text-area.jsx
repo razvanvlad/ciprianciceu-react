@@ -31,6 +31,9 @@ const TextArea = () => {
               <p>
                 {t('paragraph2')}
               </p>
+              <p>
+                {t('paragraph3')}
+              </p>
             </div>
           </div>
         </div>
