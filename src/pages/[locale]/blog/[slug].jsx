@@ -35,6 +35,7 @@ export default function BlogDetails({ single_blog: propBlog }) {
       .trim()
       .toLowerCase()
       .replace(/\s+/g, '-')
+      .replace(/[?!#$%^&*()+=[\]{}<>|\\;:'",`~]/g, '') // Remove URL-unsafe characters
       .replace(/--+/g, '-');
   };
 
@@ -125,6 +126,7 @@ export async function getServerSideProps(context) {
       .trim()
       .toLowerCase()
       .replace(/\s+/g, '-')
+      .replace(/[?!#$%^&*()+=[\]{}<>|\\;:'",`~]/g, '') // Remove URL-unsafe characters
       .replace(/--+/g, '-');
   };
 

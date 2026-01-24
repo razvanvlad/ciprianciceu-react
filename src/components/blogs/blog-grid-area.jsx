@@ -166,7 +166,7 @@ const BlogGridArea = ({ limit, url, localizedArticles, translationNamespace = 'b
               <div className="col-xxl-12">
                 <div className="tp-pagination mt-20">
                   <div className="text-center">
-                    <Link href={`/${locale}/blog`} className="tp-btn-5 tp-link-btn-3">
+                    <Link href={`/${locale}/${translationNamespace}`} className="tp-btn-5 tp-link-btn-3">
                       {t('viewAll')}
                       <span>
                         <i className="fa-regular fa-arrow-right"></i>

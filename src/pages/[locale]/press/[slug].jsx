@@ -34,6 +34,7 @@ export default function PressDetails({ single_article: propArticle }) {
       .trim()
       .toLowerCase()
       .replace(/\s+/g, '-')
+      .replace(/[?!#$%^&*()+=[\]{}<>|\\;:'",`~]/g, '') // Remove URL-unsafe characters
       .replace(/--+/g, '-');
   };
 
@@ -125,6 +126,7 @@ export async function getServerSideProps(context) {
       .trim()
       .toLowerCase()
       .replace(/\s+/g, '-')
+      .replace(/[?!#$%^&*()+=[\]{}<>|\\;:'",`~]/g, '') // Remove URL-unsafe characters
       .replace(/--+/g, '-');
   };
 

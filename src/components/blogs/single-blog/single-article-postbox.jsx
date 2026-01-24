@@ -41,6 +41,7 @@ const SingleArticlePostbox = ({
       .trim()
       .toLowerCase()
       .replace(/\s+/g, '-')
+      .replace(/[?!#$%^&*()+=[\]{}<>|\\;:'",`~]/g, '') // Remove URL-unsafe characters
       .replace(/--+/g, '-');
   };
 

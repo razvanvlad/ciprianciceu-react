@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { useFormik } from "formik";
+import emailjs from "@emailjs/browser";
 // internal
 import { contact_schema } from "@utils/validation-schema";
 import ErrorMsg from "./error-msg";
@@ -7,6 +8,7 @@ import { useTranslations } from '@context/IntlContext';
 
 const ContactForm = ({ style_2 = false }) => {
   const t = useTranslations('contact.form');
+  const [status, setStatus] = useState({ loading: false, success: false, error: false });
 
   // use formik
   const { handleChange, handleSubmit, handleBlur, errors, values, touched } =
@@ -19,9 +21,28 @@ const ContactForm = ({ style_2 = false }) => {
         msg: "",
       },
       validationSchema: contact_schema,
-      onSubmit: (values, { resetForm }) => {
-        console.log(values);
-        resetForm();
+      onSubmit: async (values, { resetForm }) => {
+        setStatus({ loading: true, success: false, error: false });
+
+        try {
+          await emailjs.send(
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+            {
+              name: values.name,
+              email: values.email,
+              phone: values.phone,
+              company: values.company,
+              message: values.msg,
+            },
+            process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+          );
+          setStatus({ loading: false, success: true, error: false });
+          resetForm();
+        } catch (error) {
+          console.error("EmailJS error:", error);
+          setStatus({ loading: false, success: false, error: true });
+        }
       },
     });
   return (
@@ -106,10 +127,16 @@ const ContactForm = ({ style_2 = false }) => {
         </div>
         <div className="col-md-5">
           <div className="contact__btn-2">
-            <button type="submit" className="tp-btn">
-              {t('submit')}
+            <button type="submit" className="tp-btn" disabled={status.loading}>
+              {status.loading ? "..." : t('submit')}
             </button>
           </div>
+          {status.success && (
+            <p className="text-success mt-15">{t('success')}</p>
+          )}
+          {status.error && (
+            <p className="text-danger mt-15">{t('error')}</p>
+          )}
         </div>
         {style_2 && (
           <div className="col-md-7">

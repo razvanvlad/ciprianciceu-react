@@ -47,6 +47,7 @@ const SingleGridItem = ({
       .trim()
       .toLowerCase()
       .replace(/\s+/g, '-')  // Replace spaces with dashes
+      .replace(/[?!#$%^&*()+=[\]{}<>|\\;:'",`~]/g, '') // Remove URL-unsafe characters
       .replace(/--+/g, '-'); // Replace multiple dashes with single dash
   };
 
