@@ -57,19 +57,18 @@ const SingleArticlePostbox = ({
       {/* Article Thumbnail */}
       {img && (
         <div className="postbox__thumb" style={{
-          position: 'relative',
           width: '100%',
-          height: '280px',
-          overflow: 'hidden',
           borderRadius: '8px 8px 0 0',
+          overflow: 'hidden',
         }}>
           <Link href={blogUrl}>
             <Image
               src={img}
               alt={imgAlt || title}
-              fill
+              width={800}
+              height={600}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 700px"
-              style={{ objectFit: 'cover' }}
+              style={{ width: '100%', height: 'auto', display: 'block' }}
               quality={80}
             />
           </Link>

@@ -43,6 +43,13 @@
       "general": "General Inquiries",
       "press": "Press & Media",
       "confidentiality": "All messages are reviewed with attention and confidentiality."
+    },
+    "thankYou": {
+      "seoTitle": "Thank You",
+      "title": "MESSAGE SENT",
+      "subtitle": "Thank You!",
+      "text": "Your message has been received successfully. We will review it and get back to you as soon as possible.",
+      "button": "Back to Home"
     }
   }
 }

@@ -32,17 +32,16 @@ const BlogArticleDetailsArea = ({ blog, locale = 'en', backToBlogText = 'Back to
               {/* Hero Image */}
               {blog.img && (
                 <div style={{
-                  position: 'relative',
                   width: '100%',
-                  height: '400px',
                   overflow: 'hidden',
                 }}>
                   <Image
                     src={blog.img}
                     alt={blog.imgAlt || blog.title}
-                    fill
+                    width={1200}
+                    height={800}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 900px"
-                    style={{ objectFit: 'cover' }}
+                    style={{ width: '100%', height: 'auto', display: 'block' }}
                     quality={85}
                     priority
                   />

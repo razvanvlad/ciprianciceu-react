@@ -43,6 +43,13 @@
       "general": "Demandes Générales",
       "press": "Presse et Médias",
       "confidentiality": "Tous les messages sont examinés avec attention et confidentialité."
+    },
+    "thankYou": {
+      "seoTitle": "Merci",
+      "title": "MESSAGE ENVOYÉ",
+      "subtitle": "Merci!",
+      "text": "Votre message a été reçu avec succès. Nous l'examinerons et vous répondrons dans les plus brefs délais.",
+      "button": "Retour à l'Accueil"
     }
   }
 }

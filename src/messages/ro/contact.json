@@ -43,6 +43,13 @@
       "general": "Întrebări Generale",
       "press": "Presă și Media",
       "confidentiality": "Toate mesajele sunt revizuite cu atenție și confidențialitate."
+    },
+    "thankYou": {
+      "seoTitle": "Mulțumim",
+      "title": "MESAJ TRIMIS",
+      "subtitle": "Mulțumim!",
+      "text": "Mesajul tău a fost primit cu succes. Îl vom analiza și te vom contacta cât mai curând posibil.",
+      "button": "Înapoi la Pagina Principală"
     }
   }
 }

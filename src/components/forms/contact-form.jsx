@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { useFormik } from "formik";
+import { useRouter } from "next/router";
 // internal
 import { contact_schema } from "@utils/validation-schema";
 import ErrorMsg from "./error-msg";
-import { useTranslations } from '@context/IntlContext';
+import { useTranslations, useLocale } from '@context/IntlContext';
 
 const ContactForm = ({ style_2 = false }) => {
   const t = useTranslations('contact.form');
+  const router = useRouter();
+  const locale = useLocale();
   const [status, setStatus] = useState({ loading: false, success: false, error: false });
 
   // use formik
@@ -42,8 +45,8 @@ const ContactForm = ({ style_2 = false }) => {
             throw new Error('Failed to send message');
           }
 
-          setStatus({ loading: false, success: true, error: false });
           resetForm();
+          router.push(`/${locale}/thank-you`);
         } catch (error) {
           console.error("Contact form error:", error);
           setStatus({ loading: false, success: false, error: true });
@@ -136,9 +139,6 @@ const ContactForm = ({ style_2 = false }) => {
               {status.loading ? "..." : t('submit')}
             </button>
           </div>
-          {status.success && (
-            <p className="text-success mt-15">{t('success')}</p>
-          )}
           {status.error && (
             <p className="text-danger mt-15">{t('error')}</p>
           )}
@@ -151,7 +151,7 @@ const ContactForm = ({ style_2 = false }) => {
                 <a href="https://wa.me/971502809015" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', marginRight: '10px' }}>
                   <i className="fa-brands fa-whatsapp" style={{ color: '#25D366', fontSize: '2em' }}></i>
                 </a>
-                <a href="tel:+971502809015" style={{ color: '#25D366' }}>
+                <a href="https://wa.me/971502809015" style={{ color: '#25D366' }}>
                   +971/502809015
                 </a>
               </p>
