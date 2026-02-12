@@ -16,6 +16,8 @@
       "company": "Companie",
       "message": "Mesajul tău",
       "agree": "Sunt de acord cu termenii serviciului și accept Politica de Confidențialitate.",
+      "gdprText": "Sunt de acord cu prelucrarea datelor mele personale conform",
+      "gdprLink": "Politicii de Confidențialitate",
       "submit": "Trimite Mesajul",
       "callTitle": "Sună pentru Consultanță",
       "success": "Mesaj trimis cu succes!",

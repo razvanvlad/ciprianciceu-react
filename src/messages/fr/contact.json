@@ -16,6 +16,8 @@
       "company": "Entreprise",
       "message": "Votre message",
       "agree": "Je suis lié par les conditions du service et j'accepte la politique de confidentialité.",
+      "gdprText": "Je consens au traitement de mes données personnelles conformément à la",
+      "gdprLink": "Politique de Confidentialité",
       "submit": "Envoyer le Message",
       "callTitle": "Appeler pour Consultation",
       "success": "Message envoyé avec succès!",

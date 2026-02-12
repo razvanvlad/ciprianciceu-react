@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { contact_schema } from "@utils/validation-schema";
 import ErrorMsg from "./error-msg";
 import { useTranslations, useLocale } from '@context/IntlContext';
+import Link from "next/link";
 
 const ContactForm = ({ style_2 = false }) => {
   const t = useTranslations('contact.form');
@@ -21,6 +22,7 @@ const ContactForm = ({ style_2 = false }) => {
         phone: "",
         company: "",
         msg: "",
+        gdpr: false,
       },
       validationSchema: contact_schema,
       onSubmit: async (values, { resetForm }) => {
@@ -128,11 +130,21 @@ const ContactForm = ({ style_2 = false }) => {
         </div>
         <div className="col-md-12">
           <div className="contact__agree d-flex align-items-start mb-25">
-            <input className="e-check-input" type="checkbox" id="e-agree" />
+            <input
+              className="e-check-input"
+              type="checkbox"
+              id="e-agree"
+              name="gdpr"
+              checked={values.gdpr}
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
             <label className="e-check-label" htmlFor="e-agree">
-              {t('agree')}
+              {t('gdprText')}{' '}
+              <Link href={`/${locale}/policy`}>{t('gdprLink')}</Link>
             </label>
           </div>
+          {touched.gdpr && <ErrorMsg error={errors.gdpr} />}
         </div>
         <div className="col-md-5">
           <div className="contact__btn-2">

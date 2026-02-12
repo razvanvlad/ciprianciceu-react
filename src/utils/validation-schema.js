@@ -16,6 +16,7 @@ export const contact_schema = Yup.object().shape({
   phone: Yup.string().required().min(10).label("Phone"),
   company: Yup.string().required().label("Company"),
   msg: Yup.string().required().min(20).label("Message"),
+  gdpr: Yup.bool().oneOf([true], "You must accept the privacy policy to continue"),
 });
 // contact_schema
 export const portfolio_schema = Yup.object().shape({

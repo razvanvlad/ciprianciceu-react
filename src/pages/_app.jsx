@@ -1,4 +1,3 @@
-import SEO from "@components/seo";
 import "../styles/index.scss";
 import { VideoProvider } from "src/provider/VideoProvider";
 import 'react-tooltip/dist/react-tooltip.css'
@@ -52,7 +51,6 @@ function MyApp({ Component, pageProps }) {
       <div
         className={`${inter.variable} ${poppins.variable}`}
       >
-        <SEO />
         <VideoProvider>
           <Component {...pageProps} />
         </VideoProvider>

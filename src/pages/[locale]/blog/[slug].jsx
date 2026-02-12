@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import Head from "next/head";
 // internal
 import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo";
@@ -80,24 +79,17 @@ export default function BlogDetails({ single_blog: propBlog }) {
         description={single_blog?.sm_desc || single_blog?.desc || "Read the latest insights from Ciprian Ciceu"}
         image={single_blog?.img?.src || single_blog?.img}
         url={getBlogUrl(single_blog)}
-        type="article"
-        author={single_blog?.author || "Ciprian Ciceu"}
+        pageType="blogPost"
         publishedDate={getISODate(single_blog?.date)}
         modifiedDate={single_blog?.modified ? getISODate(single_blog.modified) : undefined}
-        tags={single_blog?.category}
+        tags={single_blog?.tag}
+        faqItems={single_blog?.faq || null}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Blog", url: "/blog" },
+          { name: single_blog?.title || "Article" }
+        ]}
       />
-      {/* Render article-specific JSON-LD scripts */}
-      {single_blog?.scripts && single_blog.scripts.length > 0 && (
-        <Head>
-          {single_blog.scripts.map((script, index) => (
-            <script
-              key={`article-script-${index}`}
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(script) }}
-            />
-          ))}
-        </Head>
-      )}
       <HeaderEight />
       <DynamicBreadcrumb
         items={[

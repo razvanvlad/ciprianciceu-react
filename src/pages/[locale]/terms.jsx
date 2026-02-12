@@ -9,7 +9,15 @@ export default function Terms() {
 
   return (
     <Wrapper>
-      <SEO pageTitle={t('title')} url="/terms" />
+      <SEO
+        pageTitle={t('title')}
+        url="/terms"
+        pageType="default"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Terms of Service" }
+        ]}
+      />
       <HeaderEight />
       <SectionArea
         title={t('title')}

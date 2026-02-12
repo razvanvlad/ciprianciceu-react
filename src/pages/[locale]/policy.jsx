@@ -9,7 +9,15 @@ export default function Policy() {
 
   return (
     <Wrapper>
-      <SEO pageTitle={t('title')} url="/policy" />
+      <SEO
+        pageTitle={t('title')}
+        url="/policy"
+        pageType="default"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Privacy Policy" }
+        ]}
+      />
       <HeaderEight />
       <SectionArea
         title={t('title')}

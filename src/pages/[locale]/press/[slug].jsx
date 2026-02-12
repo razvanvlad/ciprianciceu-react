@@ -78,11 +78,15 @@ export default function PressDetails({ single_article: propArticle }) {
         description={single_article?.sm_desc || single_article?.desc || "Read the latest press coverage featuring Ciprian Ciceu"}
         image={single_article?.img?.src || single_article?.img}
         url={getPressUrl(single_article)}
-        type="article"
-        author={single_article?.author_name || "Ciprian Ciceu"}
+        pageType="pressArticle"
         publishedDate={getISODate(single_article?.date)}
         tags={single_article?.tag}
         canonical={`https://ciprianciceu.com${getPressUrl(single_article)}`}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Press", url: "/press" },
+          { name: single_article?.title || "Article" }
+        ]}
       />
       <HeaderEight />
       <BreadcrumbSix {...single_article} />

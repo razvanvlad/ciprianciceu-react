@@ -12,6 +12,11 @@ export default function Contact() {
         pageTitle={t('title')}
         description={t('description')}
         url="/contact"
+        pageType="default"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Contact" }
+        ]}
       />
       <HeaderEight />
       <ContactClassicArea />

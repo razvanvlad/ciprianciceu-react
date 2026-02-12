@@ -13,7 +13,11 @@ export default function Press({ localizedArticles }) {
         pageTitle={t('title')}
         description={t('description')}
         url="/press"
-        type="website"
+        pageType="default"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Press" }
+        ]}
       />
       <HeaderEight />
       <SliderBreadcrumb localizedArticles={localizedArticles} translationNamespace="press" />

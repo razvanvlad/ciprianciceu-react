@@ -9,7 +9,15 @@ export default function ThankYou() {
 
   return (
     <Wrapper>
-      <SEO pageTitle={t('seoTitle')} url="/thank-you" />
+      <SEO
+        pageTitle={t('seoTitle')}
+        url="/thank-you"
+        pageType="default"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Thank You" }
+        ]}
+      />
       <HeaderEight />
       <section className="tp-section-area pt-120 pb-120">
         <div className="container">

@@ -16,6 +16,8 @@
       "company": "Company",
       "message": "Your message",
       "agree": "I am bound by the terms of the Service I accept Privacy Policy.",
+      "gdprText": "I consent to the processing of my personal data in accordance with the",
+      "gdprLink": "Privacy Policy",
       "submit": "Send Message",
       "callTitle": "Call for Consultation",
       "success": "Message sent successfully!",

@@ -13,6 +13,11 @@ export default function Media() {
         pageTitle={t('title')}
         description={t('description')}
         url="/media"
+        pageType="default"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Media" }
+        ]}
       />
       <HeaderEight />
       <ElementsVideoMain />

@@ -12,6 +12,11 @@ export default function About() {
         pageTitle={t('title')}
         description={t('description')}
         url="/about"
+        pageType="about"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "About" }
+        ]}
       />
       <HeaderEight />
       <AboutArea />

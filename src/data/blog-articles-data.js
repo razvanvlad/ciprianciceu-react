@@ -15,16 +15,6 @@ const blog_articles_data = [
     watch: '1.2k',
     blog_grid: true,
     featured: true,
-    scripts: [
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Viitorul Tranzacționării Automatizate de Criptomonede",
-        "author": { "@type": "Person", "name": "Ciprian Ciceu", "url": "https://ciprianciceu.com" },
-        "datePublished": "2026-01-05",
-        "image": "https://ciprianciceu.com/images/viitorul-tranzactionarii-automatizate-crypto-ai.jpg"
-      }
-    ],
     content: `
       <p>At MainetX, we believe that the financial landscape is shifting rapidly. Traditional trading methods are being augmented—and in some cases replaced—by sophisticated algorithms capable of processing market data at speeds no human can match.</p>
 
@@ -62,16 +52,6 @@ const blog_articles_data = [
     watch: '980',
     blog_grid: true,
     featured: false,
-    scripts: [
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "De Ce Contează Educația Financiară Înainte de Tranzacționare",
-        "author": { "@type": "Person", "name": "Ciprian Ciceu", "url": "https://ciprianciceu.com" },
-        "datePublished": "2026-01-05",
-        "image": "https://ciprianciceu.com/images/educatie-financiara-inainte-trading.jpg"
-      }
-    ],
     content: `
       <h3>Introduction</h3>
       <p>Access to financial markets has never been easier. With just a few clicks, individuals can trade cryptocurrencies, forex, or other financial instruments from anywhere in the world.</p>
@@ -133,16 +113,6 @@ const blog_articles_data = [
     watch: '850',
     blog_grid: true,
     featured: false,
-    scripts: [
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Ce Este Hedging-ul Cripto și De Ce Este Utilizat?",
-        "author": { "@type": "Person", "name": "Ciprian Ciceu", "url": "https://ciprianciceu.com" },
-        "datePublished": "2026-01-05",
-        "image": "https://ciprianciceu.com/images/hedging-crypto-risk-management.jpg"
-      }
-    ],
     content: `
       <h3>Introduction</h3>
       <p>Cryptocurrency markets are known for high volatility. Rapid price movements can create opportunities, but they also introduce significant risk.</p>
@@ -216,16 +186,6 @@ const blog_articles_data = [
     watch: '1.1k',
     blog_grid: true,
     featured: false,
-    scripts: [
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Tranzacționarea Automatizată: Beneficii, Limite și Responsabilități",
-        "author": { "@type": "Person", "name": "Ciprian Ciceu", "url": "https://ciprianciceu.com" },
-        "datePublished": "2026-01-05",
-        "image": "https://ciprianciceu.com/images/tranzactionare-automatizata-beneficii-limite.jpg"
-      }
-    ],
     content: `
       <h3>Introduction</h3>
       <p>Automation has become an integral part of modern financial markets. From algorithmic execution to rule-based trading systems, automated trading tools are widely used to support efficiency and discipline.</p>
@@ -306,16 +266,6 @@ const blog_articles_data = [
     watch: '920',
     blog_grid: true,
     featured: false,
-    scripts: [
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Rolul Educației în Succesul pe Termen Lung în Tranzacționare",
-        "author": { "@type": "Person", "name": "Ciprian Ciceu", "url": "https://ciprianciceu.com" },
-        "datePublished": "2026-01-05",
-        "image": "https://ciprianciceu.com/images/educatie-succes-trading-termen-lung.jpg"
-      }
-    ],
     content: `
       <h3>Introduction</h3>
       <p>Financial markets reward discipline, patience, and understanding over time. While short-term results may vary, long-term participation requires a solid foundation built on education rather than assumptions or promises.</p>
@@ -405,16 +355,6 @@ const blog_articles_data = [
     watch: '890',
     blog_grid: true,
     featured: false,
-    scripts: [
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Tehnologie vs Decizia Umană în Tranzacționare",
-        "author": { "@type": "Person", "name": "Ciprian Ciceu", "url": "https://ciprianciceu.com" },
-        "datePublished": "2026-01-05",
-        "image": "https://ciprianciceu.com/images/tehnologie-vs-decizie-umana-trading.jpg"
-      }
-    ],
     content: `
       <h3>Introduction</h3>
       <p>Technology has transformed financial markets. Advanced platforms, automation, and algorithm-assisted tools allow participants to access and interact with markets more efficiently than ever before.</p>
@@ -491,16 +431,6 @@ const blog_articles_data = [
     watch: '1.3k',
     blog_grid: true,
     featured: false,
-    scripts: [
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Greșeli Comune pe Care le Fac Traderii Începători",
-        "author": { "@type": "Person", "name": "Ciprian Ciceu", "url": "https://ciprianciceu.com" },
-        "datePublished": "2026-01-05",
-        "image": "https://ciprianciceu.com/images/greseli-comune-traderi-incepatori.jpg"
-      }
-    ],
     content: `
       <h3>Introduction</h3>
       <p>Entering financial markets for the first time can be both exciting and overwhelming. New participants often focus on potential opportunities without fully understanding the challenges and risks involved.</p>
@@ -579,16 +509,6 @@ const blog_articles_data = [
     watch: '780',
     blog_grid: true,
     featured: false,
-    scripts: [
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Transparență, Divulgarea Riscurilor și Responsabilitatea Utilizatorului",
-        "author": { "@type": "Person", "name": "Ciprian Ciceu", "url": "https://ciprianciceu.com" },
-        "datePublished": "2026-01-05",
-        "image": "https://ciprianciceu.com/images/transparenta-divulgarea-riscurilor-financiare.jpg"
-      }
-    ],
     content: `
       <h3>Introduction</h3>
       <p>Trust in financial platforms is built on transparency, honest communication, and clear responsibility. In an increasingly digital financial landscape, users need to understand not only opportunities, but also risks and personal accountability.</p>
@@ -675,6 +595,7 @@ const blog_articles_data = [
     id: 9,
     tag: ['Education', 'Trading', 'Finance'],
     img: '/assets/img/articles/trading-courses-article.jpeg',
+    imgAlt: 'Professional trading courses by Ciprian Ciceu with technical analysis charts',
     date: 'February 15, 2026',
     title: 'Professional Trading Courses by Ciprian Ciceu',
     subtitle: 'University-Level Technical Analysis & Strategic Market Education',
@@ -684,77 +605,18 @@ const blog_articles_data = [
     watch: '0',
     blog_grid: true,
     featured: true,
-    scripts: [
+    faq: [
       {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Professional Trading Courses by Ciprian Ciceu – University-Level Technical Analysis Education",
-        "description": "Professional trading courses developed by Ciprian Ciceu, blockchain lecturer and fintech entrepreneur. 12 modules of advanced technical analysis and strategy.",
-        "image": "https://ciprianciceu.com/images/professional-trading-courses.jpg",
-        "author": {
-          "@type": "Person",
-          "name": "Ciprian Ciceu",
-          "url": "https://ciprianciceu.com"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Ciprian Ciceu",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://ciprianciceu.com/images/logo.png"
-          }
-        },
-        "datePublished": "2026-02-15",
-        "dateModified": "2026-02-15",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://ciprianciceu.com/blog/professional-trading-courses-ciprian-ciceu"
-        }
+        question: "Who is Ciprian Ciceu and what qualifies him to develop a professional trading course?",
+        answer: "Ciprian Ciceu is a fintech entrepreneur, blockchain lecturer, and trading educator with academic teaching experience at the Romanian-American University of Bucharest. The Professional Trading Course was developed based on university-level methodology, real market experience, and structured technical analysis frameworks designed for long-term strategic trading performance."
       },
       {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Ciprian Ciceu",
-        "url": "https://ciprianciceu.com",
-        "image": "https://ciprianciceu.com/images/ciprian-ciceu.jpg",
-        "jobTitle": "Fintech Entrepreneur & Blockchain Lecturer",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Mainet Prop Firm Services FZCO"
-        },
-        "alumniOf": {
-          "@type": "CollegeOrUniversity",
-          "name": "Romanian-American University of Bucharest"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/in/ciprianciceu/",
-          "https://www.instagram.com/ciprianciceu/",
-          "https://www.facebook.com/ciprianciceu/"
-        ]
+        question: "What does the Professional Technical Analysis & Trading Course include?",
+        answer: "The Professional Trading Education Program includes 12 structured modules covering advanced technical analysis, market structure interpretation, strategic entry and exit models, risk management systems, indicator combinations, and multi-platform trading application. The course is designed to provide comprehensive professional trading education rather than short-term signal-based guidance."
       },
       {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": "https://ciprianciceu.com/#person",
-        "name": "Ciprian Ciceu",
-        "url": "https://ciprianciceu.com",
-        "image": "https://ciprianciceu.com/images/ciprian-ciceu.jpg",
-        "jobTitle": "Fintech Entrepreneur & Blockchain Lecturer",
-        "description": "Fintech entrepreneur, blockchain lecturer and trading educator based in Europe.",
-        "alumniOf": {
-          "@type": "CollegeOrUniversity",
-          "name": "Romanian-American University of Bucharest"
-        },
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Mainet Prop Firm Services FZCO"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/in/ciprianciceu/",
-          "https://www.instagram.com/ciprianciceu/",
-          "https://www.facebook.com/ciprianciceu/",
-          "https://www.mainetx.com"
-        ]
+        question: "Is this a university-level trading education program?",
+        answer: "Yes. The course is structured following academic standards inspired by university-level curriculum design. It focuses on analytical thinking, structured strategy development, disciplined risk management, and independent market interpretation — aligning with professional trading education standards rather than speculative online tutorials."
       }
     ],
     content: `

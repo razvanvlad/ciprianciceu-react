@@ -20,6 +20,7 @@ export default function Home({ localizedArticles }) {
         pageTitle={t('title')}
         description={t('description')}
         url="/"
+        pageType="homepage"
       />
       <HeaderEight />
       <PortfolioBanner />

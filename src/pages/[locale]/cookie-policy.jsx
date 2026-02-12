@@ -9,7 +9,15 @@ export default function CookiePolicy() {
 
   return (
     <Wrapper>
-      <SEO pageTitle={t('title')} url="/cookie-policy" />
+      <SEO
+        pageTitle={t('title')}
+        url="/cookie-policy"
+        pageType="default"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Cookie Policy" }
+        ]}
+      />
       <HeaderEight />
       <SectionArea
         title={t('title')}

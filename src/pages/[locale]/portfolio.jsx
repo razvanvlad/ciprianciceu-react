@@ -14,6 +14,11 @@ export default function Portfolio() {
         pageTitle={t('title')}
         description={t('description')}
         url="/portfolio"
+        pageType="default"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Portfolio" }
+        ]}
       />
       <HeaderEight />
       <SliderPortfolioArea pt="0" />

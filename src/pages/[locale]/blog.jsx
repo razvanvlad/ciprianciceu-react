@@ -15,7 +15,11 @@ export default function Blog({ localizedArticles }) {
         pageTitle={t('title')}
         description={t('description')}
         url="/blog"
-        type="website"
+        pageType="default"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Blog" }
+        ]}
       />
       <HeaderEight />
       <SectionArea
