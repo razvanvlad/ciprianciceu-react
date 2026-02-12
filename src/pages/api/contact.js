@@ -12,6 +12,17 @@ export default async function handler(req, res) {
     return res.status(400).json({ message: 'All fields are required' });
   }
 
+  // Check SMTP configuration
+  if (!process.env.SMTP_HOST || !process.env.SMTP_PORT || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
+    console.error('Missing SMTP env vars:', {
+      host: !!process.env.SMTP_HOST,
+      port: !!process.env.SMTP_PORT,
+      user: !!process.env.SMTP_USER,
+      pass: !!process.env.SMTP_PASS,
+    });
+    return res.status(500).json({ message: 'Server email configuration is incomplete' });
+  }
+
   // Create transporter with SMTP settings
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
@@ -55,7 +66,7 @@ ${message}
     await transporter.sendMail(mailOptions);
     return res.status(200).json({ message: 'Email sent successfully' });
   } catch (error) {
-    console.error('Email error:', error);
-    return res.status(500).json({ message: 'Failed to send email' });
+    console.error('Email error:', error.message, error.code);
+    return res.status(500).json({ message: 'Failed to send email', error: error.message });
   }
 }

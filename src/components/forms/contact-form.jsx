@@ -42,7 +42,8 @@ const ContactForm = ({ style_2 = false }) => {
           });
 
           if (!response.ok) {
-            throw new Error('Failed to send message');
+            const data = await response.json().catch(() => ({}));
+            throw new Error(data.error || data.message || 'Failed to send message');
           }
 
           resetForm();
