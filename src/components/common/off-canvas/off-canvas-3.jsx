@@ -48,7 +48,7 @@ const OffCanvasThree = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
             </div>
 
             <div className="offcanvas__inner-btn mb-80">
-              <a href="mailto:contact@ciprianciceu.com" className="tp-btn-offcanvas-white w-100">
+              <a href="mailto:contact@ciprianciceu.ro" className="tp-btn-offcanvas-white w-100">
                 Say Hello!
               </a>
             </div>
@@ -56,11 +56,11 @@ const OffCanvasThree = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
             <div className="offcanvas__contact mb-40">
               <p className="offcanvas__contact-mail">
                 📧 General Inquiries: <br></br>
-                <a href="mailto:contact@ciprianciceu.com">contact@ciprianciceu.com</a>
+                <a href="mailto:contact@ciprianciceu.ro">contact@ciprianciceu.ro</a>
               </p>
               <p className="offcanvas__contact-mail">
                 📧 General Inquiries: <br></br>
-                <a href="mailto:press@ciprianciceu.com">press@ciprianciceu.com</a>
+                <a href="mailto:press@ciprianciceu.ro">press@ciprianciceu.ro</a>
               </p>
             </div>
             <div className="offcanvas__social">

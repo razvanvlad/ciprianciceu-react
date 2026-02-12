@@ -75,7 +75,7 @@ const CookiePolicyArea = () => {
                   <li>
                     {t('contactEmail')}{" "}
                     <span>
-                      <a href="mailto:contact@ciprianciceu.com">contact@ciprianciceu.com</a>
+                      <a href="mailto:contact@ciprianciceu.ro">contact@ciprianciceu.ro</a>
                     </span>
                   </li>
                   <li>

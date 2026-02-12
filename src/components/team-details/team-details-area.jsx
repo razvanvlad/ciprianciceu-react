@@ -41,7 +41,7 @@ const TeamDetailsArea = () => {
                   <div className="team__details-contact-item d-flex align-items-center">
                     <div className="team__details-contact-content">
                       <p>
-                        <a href="mailto:hello@website.com">hello@website.com</a>
+                        <a href="mailto:contact@ciprianciceu.ro">contact@ciprianciceu.ro</a>
                       </p>
                     </div>
                   </div>

@@ -50,7 +50,7 @@ const ContactItemArea = ({ element_style = false }) => {
             content={
               <>
                 <p>
-                  <a href="mailto:location@website.com">location@website.com</a>
+                  <a href="mailto:contact@ciprianciceu.ro">contact@ciprianciceu.ro</a>
                 </p>
                 <p>
                   <a href="tel:602-762-472-96">+(602) 762 472 96</a>

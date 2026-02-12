@@ -56,7 +56,7 @@ const HelpCenterContacts = () => {
                     </div>
                     <div className="contact__info-content has-fw-400">
                       <p>
-                        <a href="mailto:support@harry.com">support@harry.com</a>
+                        <a href="mailto:contact@ciprianciceu.ro">contact@ciprianciceu.ro</a>
                       </p>
                     </div>
                   </div>

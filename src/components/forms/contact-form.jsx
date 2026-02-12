@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useFormik } from "formik";
-import emailjs from "@emailjs/browser";
 // internal
 import { contact_schema } from "@utils/validation-schema";
 import ErrorMsg from "./error-msg";
@@ -25,22 +24,28 @@ const ContactForm = ({ style_2 = false }) => {
         setStatus({ loading: true, success: false, error: false });
 
         try {
-          await emailjs.send(
-            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-            {
+          const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
               name: values.name,
               email: values.email,
               phone: values.phone,
               company: values.company,
               message: values.msg,
-            },
-            process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-          );
+            }),
+          });
+
+          if (!response.ok) {
+            throw new Error('Failed to send message');
+          }
+
           setStatus({ loading: false, success: true, error: false });
           resetForm();
         } catch (error) {
-          console.error("EmailJS error:", error);
+          console.error("Contact form error:", error);
           setStatus({ loading: false, success: false, error: true });
         }
       },

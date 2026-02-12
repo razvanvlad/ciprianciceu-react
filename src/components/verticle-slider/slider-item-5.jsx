@@ -87,11 +87,11 @@ export function HomeVerticalContactArea({ element_style = false }) {
                 bottom_content={
                   <>
                     <p>
-                      <a href="mailto:hello@harry.com">hello@harry.com</a>
+                      <a href="mailto:contact@ciprianciceu.ro">contact@ciprianciceu.ro</a>
                     </p>
                     <p>
-                      <a href="mailto:hello@harry.com">
-                        contact@harryportfolio.com
+                      <a href="mailto:contact@ciprianciceu.ro">
+                        contact@ciprianciceu.ro
                       </a>
                     </p>
                   </>

@@ -73,9 +73,12 @@
 
         // Set the recipient email address.
 
-        // FIXME: Update this to your desired email address.
+        // SMTP Settings:
+        // Username: contact@ciprianciceu.ro
+        // Incoming Server: mail.ciprianciceu.ro (IMAP: 993, POP3: 995)
+        // Outgoing Server: mail.ciprianciceu.ro (SMTP: 465)
 
-        $recipient = "basictheme400@gmail.com";
+        $recipient = "contact@ciprianciceu.ro";
 
 
 

@@ -36,7 +36,7 @@ const team_data = [
     img:img_1,
     name:'Leslie Alexander',
     title:'Founder-CO',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },
       { link: 'https://www.tiktok.com/@ciprian.ciceu22?_r=1&_t=ZN-92UEGvw67du', target: '_blank', icon: 'fa-brands fa-tiktok', name: 'TikTok' },
@@ -52,7 +52,7 @@ const team_data = [
     img:img_2,
     name:'Annette Black',
     title:'Product Designer',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },
       { link: 'https://www.tiktok.com/@ciprian.ciceu22?_r=1&_t=ZN-92UEGvw67du', target: '_blank', icon: 'fa-brands fa-tiktok', name: 'TikTok' },
@@ -68,7 +68,7 @@ const team_data = [
     img:img_3,
     name:'Kathryn Murphy',
     title:'Creative Director',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },
       { link: 'https://www.tiktok.com/@ciprian.ciceu22?_r=1&_t=ZN-92UEGvw67du', target: '_blank', icon: 'fa-brands fa-tiktok', name: 'TikTok' },
@@ -84,7 +84,7 @@ const team_data = [
     img:img_4,
     name:'Guy Hawkins',
     title:'Developer',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },
       { link: 'https://www.tiktok.com/@ciprian.ciceu22?_r=1&_t=ZN-92UEGvw67du', target: '_blank', icon: 'fa-brands fa-tiktok', name: 'TikTok' },
@@ -100,7 +100,7 @@ const team_data = [
     img:img_5,
     name:'Deli Yanky',
     title:'Consulting Officer',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },
       { link: 'https://www.tiktok.com/@ciprian.ciceu22?_r=1&_t=ZN-92UEGvw67du', target: '_blank', icon: 'fa-brands fa-tiktok', name: 'TikTok' },
@@ -116,7 +116,7 @@ const team_data = [
     img:img_6,
     name:'Zin Denvar',
     title:'Sales Manager',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },
       { link: 'https://www.tiktok.com/@ciprian.ciceu22?_r=1&_t=ZN-92UEGvw67du', target: '_blank', icon: 'fa-brands fa-tiktok', name: 'TikTok' },
@@ -133,7 +133,7 @@ const team_data = [
     img:team_img_1,
     name:'Maurice Craig',
     title:'FINANCIAL MANAGER',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },
       { link: 'https://www.tiktok.com/@ciprian.ciceu22?_r=1&_t=ZN-92UEGvw67du', target: '_blank', icon: 'fa-brands fa-tiktok', name: 'TikTok' },
@@ -148,7 +148,7 @@ const team_data = [
     img:team_img_2,
     name:'Kari Rasmussen',
     title:'JUNIOR DEVELOPER',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },
       { link: 'https://www.tiktok.com/@ciprian.ciceu22?_r=1&_t=ZN-92UEGvw67du', target: '_blank', icon: 'fa-brands fa-tiktok', name: 'TikTok' },
@@ -165,7 +165,7 @@ const team_data = [
     img:img_law_1,
     name:'Floyd Miles',
     title:'Criminal Lawyer',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     sm_desc:'Nulla quis lorem ut libero malesuada feugiat vivamus suscipit tortor eget felis porttitor volutpat.',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },
@@ -181,7 +181,7 @@ const team_data = [
     img:img_law_2,
     name:'Dianne Russell',
     title:'Attorney in Law',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     sm_desc:'Nulla quis lorem ut libero malesuada feugiat vivamus suscipit tortor eget felis porttitor volutpat.',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },
@@ -197,7 +197,7 @@ const team_data = [
     img:img_law_3,
     name:'Jenny Wilson',
     title:'Business Lawyer',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     sm_desc:'Nulla quis lorem ut libero malesuada feugiat vivamus suscipit tortor eget felis porttitor volutpat.',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },
@@ -213,7 +213,7 @@ const team_data = [
     img:img_law_4,
     name:'Jerome Bell',
     title:'Family Lawyer',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     sm_desc:'Nulla quis lorem ut libero malesuada feugiat vivamus suscipit tortor eget felis porttitor volutpat.',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },
@@ -230,7 +230,7 @@ const team_data = [
     img:img_creative_1,
     name:'Valentino Morose',
     title:'Senior Manager',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     sm_desc:'Nulla quis lorem ut libero malesuada feugiat vivamus suscipit tortor eget felis porttitor volutpat.',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },
@@ -247,7 +247,7 @@ const team_data = [
     img:img_creative_2,
     name:'Carnegie Mondover',
     title:'Developer',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     sm_desc:'Nulla quis lorem ut libero malesuada feugiat vivamus suscipit tortor eget felis porttitor volutpat.',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },
@@ -264,7 +264,7 @@ const team_data = [
     img:img_creative_3,
     name:'Desmond Eagle',
     title:'Consultant',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     sm_desc:'Nulla quis lorem ut libero malesuada feugiat vivamus suscipit tortor eget felis porttitor volutpat.',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },
@@ -343,7 +343,7 @@ const team_data = [
     img:polity_img_1,
     name:'Jason Response',
     title:'Party Leader',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     phone:'+088 3579 523 43',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },
@@ -360,7 +360,7 @@ const team_data = [
     img:polity_img_2,
     name:'Dylan Meringue',
     title:'Actuary',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     phone:'+088 3579 523 44',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },
@@ -377,7 +377,7 @@ const team_data = [
     img:polity_img_3,
     name:'Phillip Anthropy',
     title:'Director',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     phone:'+088 3579 523 45',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },
@@ -394,7 +394,7 @@ const team_data = [
     img:polity_img_4,
     name:'Valentino Morose',
     title:'Speaker',
-    mail:'mailto:team@harry.com',
+    mail:'mailto:contact@ciprianciceu.ro',
     phone:'+088 3579 523 46',
     social_links: [
       { link: 'https://www.instagram.com/ciprian_ciceu22?igsh=bXF2OW1sOW9laWI1&utm_source=qr', target: '_blank', icon: 'fa-brands fa-instagram', name: 'Instagram' },

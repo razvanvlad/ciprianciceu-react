@@ -19,7 +19,7 @@ function SingleLocationItem({ title, icon, location, tel }) {
               </div>
               <div className="contact__location-content">
                 <p>
-                  <a href="mailto:contact.location@website.com">{location}</a>
+                  <a href="mailto:contact@ciprianciceu.ro">{location}</a>
                 </p>
                 <p>
                   <a href="tel:686-324-6838">{tel}</a>

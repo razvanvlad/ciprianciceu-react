@@ -120,8 +120,8 @@ const FooterSeven = () => {
                             </span>
                           </div>
                           <div className="footer__info-text-6">
-                            <a href="mailto:contact@ciprianciceu.com">
-                              contact@ciprianciceu.com
+                            <a href="mailto:contact@ciprianciceu.ro">
+                              contact@ciprianciceu.ro
                             </a>
                           </div>
                         </div>

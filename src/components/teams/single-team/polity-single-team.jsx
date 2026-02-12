@@ -26,7 +26,7 @@ const PolitySingleTeam = ({ item }) => {
               <a href="tel:088-3579-523-45">{phone}</a>
             </p>
             <p>
-              <a href="mailto:harry@citygov.com">{mail}</a>
+              <a href="mailto:contact@ciprianciceu.ro">{mail}</a>
             </p>
           </div>
           <div className="team__social-10 d-flex justify-content-center">

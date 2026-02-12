@@ -47,7 +47,7 @@ const LawyerContact = ({ element_style = false }) => {
                     <div className="contact__list-content">
                       <h5>Email us on</h5>
                       <p>
-                        <a href="mailto:harry@lawyer.com">harry@lawyer.com</a>
+                        <a href="mailto:contact@ciprianciceu.ro">contact@ciprianciceu.ro</a>
                       </p>
                     </div>
                   </div>

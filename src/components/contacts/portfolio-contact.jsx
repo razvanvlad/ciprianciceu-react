@@ -56,7 +56,7 @@ const PortfolioContact = ({ element_style = false }) => {
                     <div className="contact__list-content-9">
                       <h5>Email</h5>
                       <p>
-                        <a href="mailto:hello@contact.com">hello@contact.com</a>
+                        <a href="mailto:contact@ciprianciceu.ro">contact@ciprianciceu.ro</a>
                       </p>
                     </div>
                   </div>
