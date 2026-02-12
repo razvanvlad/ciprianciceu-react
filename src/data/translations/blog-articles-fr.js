@@ -482,4 +482,146 @@ export default {
       <p><em>Avertissement : Cet article est à des fins éducatives uniquement et ne constitue pas un conseil financier ou d'investissement. Les marchés financiers comportent des risques et les résultats peuvent varier.</em></p>
     `,
   },
+  9: {
+    title: 'Cours de Trading Professionnel par Ciprian Ciceu',
+    subtitle: 'Analyse Technique de Niveau Universitaire & Éducation Stratégique des Marchés',
+    sm_desc: 'Dès la semaine prochaine, Ciprian Ciceu lance officiellement les Cours Universitaires de Trading Professionnel — un programme éducatif structuré basé sur une méthodologie académique et une expérience réelle des marchés.',
+    content: `
+      <p>Dans les marchés financiers, le succès est rarement accidentel.</p>
+
+      <p>Derrière chaque trader constant se trouvent la structure, la discipline et l'éducation. Dans une ère dominée par les algorithmes, le capital institutionnel et l'intelligence artificielle, les connaissances professionnelles sont devenues le véritable avantage compétitif.</p>
+
+      <p>Dès la semaine prochaine, je lance officiellement les <strong>Cours Universitaires de Trading Professionnel</strong>, un programme éducatif structuré basé sur une méthodologie académique et une expérience réelle des marchés.</p>
+
+      <p>Cette initiative représente l'intersection entre l'innovation fintech, l'expertise blockchain et l'éducation professionnelle en trading.</p>
+
+      <h3>De l'Enseignement Académique à l'Application sur les Marchés</h3>
+
+      <p>Mon parcours en technologie financière ne s'est pas limité à l'entrepreneuriat et au développement blockchain.</p>
+
+      <p>J'ai également été <strong>Chargé de cours en Blockchain pour les Masters à l'Université Roumano-Américaine de Bucarest</strong>, où la rigueur académique et la conception structurée des programmes étaient essentielles.</p>
+
+      <p>Cette expérience académique a façonné l'architecture de ce programme de trading.</p>
+
+      <p>Ces cours ne sont pas conçus comme des services spéculatifs de « signaux » ou des tutoriels en ligne simplifiés. Ils sont construits comme un cadre éducatif structuré aligné sur les standards universitaires.</p>
+
+      <p>L'objectif n'est pas d'enseigner des raccourcis. L'objectif est d'enseigner la compréhension.</p>
+
+      <h3>Pourquoi l'Éducation Structurée en Trading Est Importante</h3>
+
+      <p>Les marchés modernes sont des écosystèmes complexes influencés par :</p>
+      <ul>
+        <li>Les cycles macroéconomiques</li>
+        <li>La liquidité institutionnelle</li>
+        <li>Les systèmes d'exécution algorithmique</li>
+        <li>Les modèles de finance comportementale</li>
+        <li>L'innovation technologique</li>
+      </ul>
+
+      <p>Sans connaissances structurées, la plupart des participants se fient aux émotions, au bruit ou à des informations incomplètes.</p>
+
+      <p>Le trading professionnel nécessite :</p>
+      <ul>
+        <li>Clarté analytique</li>
+        <li>Patience stratégique</li>
+        <li>Discipline en gestion des risques</li>
+        <li>Cadres de prise de décision reproductibles</li>
+      </ul>
+
+      <p>L'éducation transforme l'incertitude en probabilité structurée.</p>
+
+      <h3>À l'Intérieur du Programme de Trading Professionnel</h3>
+
+      <p>Le programme se compose de <strong>12 modules structurés d'Analyse Technique & Trading Stratégique</strong>, développés progressivement.</p>
+
+      <p>Les participants apprendront :</p>
+
+      <h4>1. Structure du Marché & Logique des Prix</h4>
+      <p>Comprendre la formation des tendances, les zones de liquidité et les changements structurels.</p>
+
+      <h4>2. Indicateurs Techniques & Combinaison Stratégique</h4>
+      <p>Moyennes mobiles, indicateurs de momentum, outils de volatilité — non pas individuellement, mais comme partie de systèmes cohérents.</p>
+
+      <h4>3. Architecture de Gestion des Risques</h4>
+      <p>Modèles d'allocation du capital, contrôle du drawdown et positionnement basé sur les probabilités.</p>
+
+      <h4>4. Cadres d'Entrée & de Sortie</h4>
+      <p>Construire des plans de trading structurés plutôt que des réactions impulsives.</p>
+
+      <h4>5. Application Multi-Plateforme</h4>
+      <p>La méthodologie est applicable dans plusieurs environnements de trading, sans se limiter à un seul écosystème.</p>
+
+      <p>Chaque module se concentre sur la logique, pas le battage médiatique. Sur la structure, pas la spéculation.</p>
+
+      <h3>La Différence Entre Information et Éducation</h3>
+
+      <p>Aujourd'hui, l'information sur le trading est partout.</p>
+
+      <p>Mais l'information sans structure crée la confusion. Les signaux sans compréhension créent la dépendance.</p>
+
+      <p>Ce programme est conçu pour développer la <strong>pensée analytique indépendante</strong>.</p>
+
+      <p>Les participants ne comprendront pas seulement ce que font les marchés — mais <strong>pourquoi</strong> ils se comportent selon des schémas spécifiques.</p>
+
+      <p>Cette différence sépare l'enthousiasme temporaire de la compétence à long terme.</p>
+
+      <h3>Pour Qui Ce Programme Est Conçu</h3>
+
+      <p>Ces cours sont adaptés pour :</p>
+      <ul>
+        <li>Les personnes recherchant une éducation professionnelle en trading</li>
+        <li>Les investisseurs souhaitant une compréhension plus approfondie des marchés</li>
+        <li>Les entrepreneurs intéressés par les marchés financiers</li>
+        <li>Les professionnels explorant les cadres d'analyse technique</li>
+        <li>Les membres des écosystèmes financiers numériques cherchant des connaissances indépendantes</li>
+      </ul>
+
+      <p>L'éducation reste le fondement de l'autonomie financière.</p>
+
+      <h3>Une Étape Stratégique dans une Vision Plus Large</h3>
+
+      <p>Tout au long de mon parcours professionnel en fintech et blockchain, un principe est resté constant :</p>
+
+      <blockquote style="border-left: 4px solid #0EA5E9; padding-left: 20px; margin: 30px 0; font-style: italic; color: #555;">
+        "L'innovation doit être soutenue par l'éducation. La technologie sans compréhension crée la fragilité. L'éducation crée la résilience."
+      </blockquote>
+
+      <p>Ces cours représentent une étape importante vers la construction d'un écosystème d'éducation financière structurée aligné sur les réalités technologiques modernes.</p>
+
+      <h3>Disponibilité Officielle</h3>
+
+      <p>Les Cours Universitaires de Trading Professionnel seront disponibles dès la semaine prochaine.</p>
+
+      <p>Les détails d'accès et les informations d'inscription seront publiés sur :</p>
+
+      <p><strong><a href="https://www.mainetx.com" target="_blank" rel="noopener noreferrer">www.mainetx.com</a></strong></p>
+
+      <p>D'autres initiatives éducatives suivront dans le cadre d'une feuille de route à plus long terme.</p>
+
+      <h3>Perspective Finale</h3>
+
+      <p>Les marchés évoluent. La technologie évolue. L'intelligence artificielle évolue.</p>
+
+      <p>L'éducation doit évoluer aussi.</p>
+
+      <p>La structure professionnelle, la discipline analytique et la clarté stratégique restent intemporelles.</p>
+
+      <p>Ce programme reflète des années d'implication académique, de développement fintech et d'expérience des marchés — réunies dans un cadre éducatif cohérent.</p>
+
+      <p>Et ce n'est que le début.</p>
+
+      <p><em>— Ciprian Ciceu<br/>Entrepreneur Fintech | Chargé de cours Blockchain | Éducateur en Trading</em></p>
+
+      <h3>Questions Fréquemment Posées (FAQ)</h3>
+
+      <h4>Qui est Ciprian Ciceu et qu'est-ce qui le qualifie pour développer un cours de trading professionnel ?</h4>
+      <p>Ciprian Ciceu est un entrepreneur fintech, chargé de cours en blockchain et éducateur en trading avec une expérience d'enseignement académique à l'Université Roumano-Américaine de Bucarest. Le Cours de Trading Professionnel a été développé sur la base d'une méthodologie universitaire, d'une expérience réelle des marchés et de cadres structurés d'analyse technique conçus pour la performance stratégique de trading à long terme.</p>
+
+      <h4>Que comprend le Cours Professionnel d'Analyse Technique & Trading ?</h4>
+      <p>Le Programme d'Éducation Professionnelle en Trading comprend 12 modules structurés couvrant l'analyse technique avancée, l'interprétation de la structure du marché, les modèles stratégiques d'entrée et de sortie, les systèmes de gestion des risques, les combinaisons d'indicateurs et l'application de trading multi-plateforme. Le cours est conçu pour fournir une éducation professionnelle complète en trading plutôt qu'un guidage basé sur des signaux à court terme.</p>
+
+      <h4>Est-ce un programme d'éducation en trading de niveau universitaire ?</h4>
+      <p>Oui. Le cours est structuré selon des standards académiques inspirés de la conception de programmes universitaires. Il se concentre sur la pensée analytique, le développement structuré de stratégies, la gestion disciplinée des risques et l'interprétation indépendante du marché — s'alignant sur les standards d'éducation professionnelle en trading plutôt que sur des tutoriels en ligne spéculatifs.</p>
+    `,
+  },
 };

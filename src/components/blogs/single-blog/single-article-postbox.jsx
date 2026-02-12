@@ -1,11 +1,14 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 // internal
 import { DateTwo, UserTwo } from "@svg/index";
 import { useTranslations, useLocale } from '@context/IntlContext';
 
 const SingleArticlePostbox = ({
   id,
+  img,
+  imgAlt,
   title,
   subtitle,
   sm_desc,
@@ -51,6 +54,27 @@ const SingleArticlePostbox = ({
 
   return (
     <article className="postbox__item format-standard mb-50 transition-3">
+      {/* Article Thumbnail */}
+      {img && (
+        <div className="postbox__thumb" style={{
+          position: 'relative',
+          width: '100%',
+          height: '280px',
+          overflow: 'hidden',
+          borderRadius: '8px 8px 0 0',
+        }}>
+          <Link href={blogUrl}>
+            <Image
+              src={img}
+              alt={imgAlt || title}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 700px"
+              style={{ objectFit: 'cover' }}
+              quality={80}
+            />
+          </Link>
+        </div>
+      )}
       <div className="postbox__content">
         {/* Tags */}
         {tags.length > 0 && (

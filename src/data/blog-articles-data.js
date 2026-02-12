@@ -4,7 +4,8 @@ const blog_articles_data = [
   {
     id: 1,
     tag: ['Technology', 'Trading', 'AI'],
-    // img: crypto_trading_img, // Optional - add your own image here
+    img: '/assets/img/articles/viitorul-tranzactionarii-automatizate-crypto-ai.jpg',
+    imgAlt: 'Automated cryptocurrency trading concept with AI robotic hand and financial market charts',
     date: 'January 5, 2026',
     title: 'The Future of Automated Crypto Trading',
     subtitle: 'Discover how AI and algorithmic strategies are reshaping the way we interact with global financial markets.',
@@ -14,6 +15,16 @@ const blog_articles_data = [
     watch: '1.2k',
     blog_grid: true,
     featured: true,
+    scripts: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Viitorul Tranzacționării Automatizate de Criptomonede",
+        "author": { "@type": "Person", "name": "Ciprian Ciceu", "url": "https://ciprianciceu.com" },
+        "datePublished": "2026-01-05",
+        "image": "https://ciprianciceu.com/images/viitorul-tranzactionarii-automatizate-crypto-ai.jpg"
+      }
+    ],
     content: `
       <p>At MainetX, we believe that the financial landscape is shifting rapidly. Traditional trading methods are being augmented—and in some cases replaced—by sophisticated algorithms capable of processing market data at speeds no human can match.</p>
 
@@ -40,7 +51,8 @@ const blog_articles_data = [
   {
     id: 2,
     tag: ['Education', 'Trading', 'Finance'],
-    // img: financial_education_img, // Optional - add your own image here
+    img: '/assets/img/articles/educatie-financiara-inainte-trading.jpg',
+    imgAlt: 'Financial education concept with graduation cap, books and financial growth chart',
     date: 'January 5, 2026',
     title: 'Why Financial Education Matters Before Trading',
     subtitle: 'Building knowledge before entering financial markets',
@@ -50,6 +62,16 @@ const blog_articles_data = [
     watch: '980',
     blog_grid: true,
     featured: false,
+    scripts: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "De Ce Contează Educația Financiară Înainte de Tranzacționare",
+        "author": { "@type": "Person", "name": "Ciprian Ciceu", "url": "https://ciprianciceu.com" },
+        "datePublished": "2026-01-05",
+        "image": "https://ciprianciceu.com/images/educatie-financiara-inainte-trading.jpg"
+      }
+    ],
     content: `
       <h3>Introduction</h3>
       <p>Access to financial markets has never been easier. With just a few clicks, individuals can trade cryptocurrencies, forex, or other financial instruments from anywhere in the world.</p>
@@ -100,7 +122,8 @@ const blog_articles_data = [
   {
     id: 3,
     tag: ['Trading', 'Education', 'Risk Management'],
-    // img: crypto_hedging_img, // Optional - add your own image here
+    img: '/assets/img/articles/hedging-crypto-risk-management.jpg',
+    imgAlt: 'Crypto hedging concept with shield, bitcoin symbol and financial risk chart',
     date: 'January 5, 2026',
     title: 'What Is Crypto Hedging and Why Is It Used?',
     subtitle: 'Understanding risk management in digital asset markets',
@@ -110,6 +133,16 @@ const blog_articles_data = [
     watch: '850',
     blog_grid: true,
     featured: false,
+    scripts: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Ce Este Hedging-ul Cripto și De Ce Este Utilizat?",
+        "author": { "@type": "Person", "name": "Ciprian Ciceu", "url": "https://ciprianciceu.com" },
+        "datePublished": "2026-01-05",
+        "image": "https://ciprianciceu.com/images/hedging-crypto-risk-management.jpg"
+      }
+    ],
     content: `
       <h3>Introduction</h3>
       <p>Cryptocurrency markets are known for high volatility. Rapid price movements can create opportunities, but they also introduce significant risk.</p>
@@ -172,7 +205,8 @@ const blog_articles_data = [
   {
     id: 4,
     tag: ['Trading', 'Technology', 'Education'],
-    // img: automated_trading_img, // Optional - add your own image here
+    img: '/assets/img/articles/tranzactionare-automatizata-beneficii-limite.jpg',
+    imgAlt: 'Automated trading system with robotic arms and financial market dashboard',
     date: 'January 5, 2026',
     title: 'Automated Trading: Benefits, Limits, and Responsibilities',
     subtitle: 'Understanding technology-assisted trading in modern markets',
@@ -182,6 +216,16 @@ const blog_articles_data = [
     watch: '1.1k',
     blog_grid: true,
     featured: false,
+    scripts: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Tranzacționarea Automatizată: Beneficii, Limite și Responsabilități",
+        "author": { "@type": "Person", "name": "Ciprian Ciceu", "url": "https://ciprianciceu.com" },
+        "datePublished": "2026-01-05",
+        "image": "https://ciprianciceu.com/images/tranzactionare-automatizata-beneficii-limite.jpg"
+      }
+    ],
     content: `
       <h3>Introduction</h3>
       <p>Automation has become an integral part of modern financial markets. From algorithmic execution to rule-based trading systems, automated trading tools are widely used to support efficiency and discipline.</p>
@@ -251,7 +295,8 @@ const blog_articles_data = [
   {
     id: 5,
     tag: ['Education', 'Trading', 'Finance'],
-    // img: education_success_img, // Optional - add your own image here
+    img: '/assets/img/articles/educatie-succes-trading-termen-lung.jpg',
+    imgAlt: 'Long-term trading success concept with books and financial growth arrow',
     date: 'January 5, 2026',
     title: 'The Role of Education in Long-Term Trading Success',
     subtitle: 'Why knowledge matters more than short-term results',
@@ -261,6 +306,16 @@ const blog_articles_data = [
     watch: '920',
     blog_grid: true,
     featured: false,
+    scripts: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Rolul Educației în Succesul pe Termen Lung în Tranzacționare",
+        "author": { "@type": "Person", "name": "Ciprian Ciceu", "url": "https://ciprianciceu.com" },
+        "datePublished": "2026-01-05",
+        "image": "https://ciprianciceu.com/images/educatie-succes-trading-termen-lung.jpg"
+      }
+    ],
     content: `
       <h3>Introduction</h3>
       <p>Financial markets reward discipline, patience, and understanding over time. While short-term results may vary, long-term participation requires a solid foundation built on education rather than assumptions or promises.</p>
@@ -339,7 +394,8 @@ const blog_articles_data = [
   {
     id: 6,
     tag: ['Technology', 'Trading', 'Education'],
-    // img: tech_vs_human_img, // Optional - add your own image here
+    img: '/assets/img/articles/tehnologie-vs-decizie-umana-trading.jpg',
+    imgAlt: 'Technology versus human decision in trading with AI brain and financial charts',
     date: 'January 5, 2026',
     title: 'Technology vs Human Decision-Making in Trading',
     subtitle: 'Understanding the balance between automation and responsibility',
@@ -349,6 +405,16 @@ const blog_articles_data = [
     watch: '890',
     blog_grid: true,
     featured: false,
+    scripts: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Tehnologie vs Decizia Umană în Tranzacționare",
+        "author": { "@type": "Person", "name": "Ciprian Ciceu", "url": "https://ciprianciceu.com" },
+        "datePublished": "2026-01-05",
+        "image": "https://ciprianciceu.com/images/tehnologie-vs-decizie-umana-trading.jpg"
+      }
+    ],
     content: `
       <h3>Introduction</h3>
       <p>Technology has transformed financial markets. Advanced platforms, automation, and algorithm-assisted tools allow participants to access and interact with markets more efficiently than ever before.</p>
@@ -414,7 +480,8 @@ const blog_articles_data = [
   {
     id: 7,
     tag: ['Education', 'Trading', 'Finance'],
-    // img: common_mistakes_img, // Optional - add your own image here
+    img: '/assets/img/articles/greseli-comune-traderi-incepatori.jpg',
+    imgAlt: 'Common beginner trading mistakes concept with checklist and market charts',
     date: 'January 5, 2026',
     title: 'Common Mistakes New Traders Make',
     subtitle: 'Learning from errors to build responsible market participation',
@@ -424,6 +491,16 @@ const blog_articles_data = [
     watch: '1.3k',
     blog_grid: true,
     featured: false,
+    scripts: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Greșeli Comune pe Care le Fac Traderii Începători",
+        "author": { "@type": "Person", "name": "Ciprian Ciceu", "url": "https://ciprianciceu.com" },
+        "datePublished": "2026-01-05",
+        "image": "https://ciprianciceu.com/images/greseli-comune-traderi-incepatori.jpg"
+      }
+    ],
     content: `
       <h3>Introduction</h3>
       <p>Entering financial markets for the first time can be both exciting and overwhelming. New participants often focus on potential opportunities without fully understanding the challenges and risks involved.</p>
@@ -491,7 +568,8 @@ const blog_articles_data = [
   {
     id: 8,
     tag: ['Education', 'Finance', 'Trading'],
-    // img: transparency_img, // Optional - add your own image here
+    img: '/assets/img/articles/transparenta-divulgarea-riscurilor-financiare.jpg',
+    imgAlt: 'Financial transparency and risk disclosure concept with shield and checklist',
     date: 'January 5, 2026',
     title: 'Transparency, Risk Disclosure, and User Responsibility',
     subtitle: 'The Foundations of Responsible Financial Platforms',
@@ -501,6 +579,16 @@ const blog_articles_data = [
     watch: '780',
     blog_grid: true,
     featured: false,
+    scripts: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Transparență, Divulgarea Riscurilor și Responsabilitatea Utilizatorului",
+        "author": { "@type": "Person", "name": "Ciprian Ciceu", "url": "https://ciprianciceu.com" },
+        "datePublished": "2026-01-05",
+        "image": "https://ciprianciceu.com/images/transparenta-divulgarea-riscurilor-financiare.jpg"
+      }
+    ],
     content: `
       <h3>Introduction</h3>
       <p>Trust in financial platforms is built on transparency, honest communication, and clear responsibility. In an increasingly digital financial landscape, users need to understand not only opportunities, but also risks and personal accountability.</p>
@@ -581,6 +669,230 @@ const blog_articles_data = [
       <p>By understanding risks, accepting responsibility, and prioritizing education, users can engage with financial markets in a more informed and sustainable way.</p>
 
       <p><em>Disclaimer: This article is for educational purposes only and does not constitute financial or investment advice. Financial markets involve risk, and outcomes may vary.</em></p>
+    `,
+  },
+  {
+    id: 9,
+    tag: ['Education', 'Trading', 'Finance'],
+    img: '/assets/img/articles/trading-courses-article.jpeg',
+    date: 'February 15, 2026',
+    title: 'Professional Trading Courses by Ciprian Ciceu',
+    subtitle: 'University-Level Technical Analysis & Strategic Market Education',
+    sm_desc: 'Starting next week, Ciprian Ciceu officially launches the Professional University Trading Courses — a structured educational program built on academic methodology and real-world market experience.',
+    author_name: 'Ciprian Ciceu',
+    comments: 0,
+    watch: '0',
+    blog_grid: true,
+    featured: true,
+    scripts: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Professional Trading Courses by Ciprian Ciceu – University-Level Technical Analysis Education",
+        "description": "Professional trading courses developed by Ciprian Ciceu, blockchain lecturer and fintech entrepreneur. 12 modules of advanced technical analysis and strategy.",
+        "image": "https://ciprianciceu.com/images/professional-trading-courses.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Ciprian Ciceu",
+          "url": "https://ciprianciceu.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Ciprian Ciceu",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://ciprianciceu.com/images/logo.png"
+          }
+        },
+        "datePublished": "2026-02-15",
+        "dateModified": "2026-02-15",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://ciprianciceu.com/blog/professional-trading-courses-ciprian-ciceu"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ciprian Ciceu",
+        "url": "https://ciprianciceu.com",
+        "image": "https://ciprianciceu.com/images/ciprian-ciceu.jpg",
+        "jobTitle": "Fintech Entrepreneur & Blockchain Lecturer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Mainet Prop Firm Services FZCO"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Romanian-American University of Bucharest"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/ciprianciceu/",
+          "https://www.instagram.com/ciprianciceu/",
+          "https://www.facebook.com/ciprianciceu/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://ciprianciceu.com/#person",
+        "name": "Ciprian Ciceu",
+        "url": "https://ciprianciceu.com",
+        "image": "https://ciprianciceu.com/images/ciprian-ciceu.jpg",
+        "jobTitle": "Fintech Entrepreneur & Blockchain Lecturer",
+        "description": "Fintech entrepreneur, blockchain lecturer and trading educator based in Europe.",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Romanian-American University of Bucharest"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Mainet Prop Firm Services FZCO"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/ciprianciceu/",
+          "https://www.instagram.com/ciprianciceu/",
+          "https://www.facebook.com/ciprianciceu/",
+          "https://www.mainetx.com"
+        ]
+      }
+    ],
+    content: `
+      <p>In financial markets, success is rarely accidental.</p>
+
+      <p>Behind every consistent trader stands structure, discipline, and education. In an era dominated by algorithms, institutional capital, and artificial intelligence, professional knowledge has become the true competitive advantage.</p>
+
+      <p>Starting next week, I am officially launching the <strong>Professional University Trading Courses</strong>, a structured educational program built on academic methodology and real-world market experience.</p>
+
+      <p>This initiative represents the intersection between fintech innovation, blockchain expertise, and professional trading education.</p>
+
+      <h3>From Academic Teaching to Market Application</h3>
+
+      <p>My journey in financial technology has not been limited to entrepreneurship and blockchain development.</p>
+
+      <p>I have also served as a <strong>Blockchain Lecturer for Master Courses at the Romanian-American University of Bucharest</strong>, where academic rigor and structured curriculum design were essential.</p>
+
+      <p>That academic experience shaped the architecture of this trading program.</p>
+
+      <p>These courses are not designed as speculative "signal services" or simplified online tutorials. They are built as a structured educational framework aligned with university-level standards.</p>
+
+      <p>The objective is not to teach shortcuts. The objective is to teach understanding.</p>
+
+      <h3>Why Structured Trading Education Matters</h3>
+
+      <p>Modern markets are complex ecosystems influenced by:</p>
+      <ul>
+        <li>Macroeconomic cycles</li>
+        <li>Institutional liquidity</li>
+        <li>Algorithmic execution systems</li>
+        <li>Behavioral finance patterns</li>
+        <li>Technological innovation</li>
+      </ul>
+
+      <p>Without structured knowledge, most participants rely on emotion, noise, or incomplete information.</p>
+
+      <p>Professional trading requires:</p>
+      <ul>
+        <li>Analytical clarity</li>
+        <li>Strategic patience</li>
+        <li>Risk management discipline</li>
+        <li>Repeatable decision-making frameworks</li>
+      </ul>
+
+      <p>Education transforms uncertainty into structured probability.</p>
+
+      <h3>Inside the Professional Trading Program</h3>
+
+      <p>The program consists of <strong>12 structured modules of Technical Analysis & Strategic Trading</strong>, developed progressively.</p>
+
+      <p>Participants will learn:</p>
+
+      <h4>1. Market Structure & Price Logic</h4>
+      <p>Understanding trend formation, liquidity zones, and structural shifts.</p>
+
+      <h4>2. Technical Indicators & Strategic Combination</h4>
+      <p>Moving averages, momentum indicators, volatility tools — not individually, but as part of coherent systems.</p>
+
+      <h4>3. Risk Management Architecture</h4>
+      <p>Capital allocation models, drawdown control, and probability-based positioning.</p>
+
+      <h4>4. Entry & Exit Frameworks</h4>
+      <p>Building structured trade plans rather than impulsive reactions.</p>
+
+      <h4>5. Multi-Platform Application</h4>
+      <p>The methodology is applicable across multiple trading environments, not limited to one ecosystem.</p>
+
+      <p>Each module focuses on logic, not hype. On structure, not speculation.</p>
+
+      <h3>The Difference Between Information and Education</h3>
+
+      <p>Today, trading information is everywhere.</p>
+
+      <p>But information without structure creates confusion. Signals without understanding create dependency.</p>
+
+      <p>This program is designed to develop <strong>independent analytical thinking</strong>.</p>
+
+      <p>Participants will not only understand what markets do — but <strong>why</strong> they behave in specific patterns.</p>
+
+      <p>That difference separates temporary enthusiasm from long-term competence.</p>
+
+      <h3>Who This Program Is Designed For</h3>
+
+      <p>These courses are suitable for:</p>
+      <ul>
+        <li>Individuals seeking professional trading education</li>
+        <li>Investors wanting deeper market comprehension</li>
+        <li>Entrepreneurs interested in financial markets</li>
+        <li>Professionals exploring technical analysis frameworks</li>
+        <li>Members of digital financial ecosystems seeking independent knowledge</li>
+      </ul>
+
+      <p>Education remains the foundation of financial autonomy.</p>
+
+      <h3>A Strategic Step in a Broader Vision</h3>
+
+      <p>Throughout my professional journey in fintech and blockchain, one principle remained constant:</p>
+
+      <blockquote style="border-left: 4px solid #0EA5E9; padding-left: 20px; margin: 30px 0; font-style: italic; color: #555;">
+        "Innovation must be supported by education. Technology without understanding creates fragility. Education creates resilience."
+      </blockquote>
+
+      <p>These courses represent an important step toward building a structured financial education ecosystem aligned with modern technological realities.</p>
+
+      <h3>Official Availability</h3>
+
+      <p>The Professional University Trading Courses will be available starting next week.</p>
+
+      <p>Access details and enrollment information will be published via:</p>
+
+      <p><strong><a href="https://www.mainetx.com" target="_blank" rel="noopener noreferrer">www.mainetx.com</a></strong></p>
+
+      <p>Further educational initiatives will follow as part of a broader long-term roadmap.</p>
+
+      <h3>Final Perspective</h3>
+
+      <p>Markets evolve. Technology evolves. Artificial intelligence evolves.</p>
+
+      <p>Education must evolve too.</p>
+
+      <p>Professional structure, analytical discipline, and strategic clarity remain timeless.</p>
+
+      <p>This program reflects years of academic involvement, fintech development, and market experience — brought together into a coherent educational framework.</p>
+
+      <p>And this is only the beginning.</p>
+
+      <p><em>— Ciprian Ciceu<br/>Fintech Entrepreneur | Blockchain Lecturer | Trading Educator</em></p>
+
+      <h3>Frequently Asked Questions (FAQ)</h3>
+
+      <h4>Who is Ciprian Ciceu and what qualifies him to develop a professional trading course?</h4>
+      <p>Ciprian Ciceu is a fintech entrepreneur, blockchain lecturer, and trading educator with academic teaching experience at the Romanian-American University of Bucharest. The Professional Trading Course was developed based on university-level methodology, real market experience, and structured technical analysis frameworks designed for long-term strategic trading performance.</p>
+
+      <h4>What does the Professional Technical Analysis & Trading Course include?</h4>
+      <p>The Professional Trading Education Program includes 12 structured modules covering advanced technical analysis, market structure interpretation, strategic entry and exit models, risk management systems, indicator combinations, and multi-platform trading application. The course is designed to provide comprehensive professional trading education rather than short-term signal-based guidance.</p>
+
+      <h4>Is this a university-level trading education program?</h4>
+      <p>Yes. The course is structured following academic standards inspired by university-level curriculum design. It focuses on analytical thinking, structured strategy development, disciplined risk management, and independent market interpretation — aligning with professional trading education standards rather than speculative online tutorials.</p>
     `,
   },
 ];

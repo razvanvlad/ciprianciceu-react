@@ -46,7 +46,12 @@
       "Bash(for file in src/messages/*/press.json src/messages/*/blog.json)",
       "Bash(do echo \"=== Checking $file ===\")",
       "Bash(netstat:*)",
-      "Bash(findstr:*)"
+      "Bash(findstr:*)",
+      "Bash(npx next build:*)",
+      "Bash(copy:*)",
+      "Bash(copy \"De-Ce-Conteaza.jpeg\" \"educatie-financiara-inainte-trading.jpg\")",
+      "Bash(copy \"Rolul.jpeg\" \"educatie-succes-trading-termen-lung.jpg\")",
+      "Bash(copy \"transparenta.jpeg\" \"transparenta-divulgarea-riscurilor-financiare.jpg\")"
     ]
   }
 }

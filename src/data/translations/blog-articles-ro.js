@@ -482,4 +482,146 @@ export default {
       <p><em>Declinare de responsabilitate: Acest articol este doar în scop educativ și nu constituie sfat financiar sau de investiții. Piețele financiare implică riscuri și rezultatele pot varia.</em></p>
     `,
   },
+  9: {
+    title: 'Cursuri Profesionale de Trading de Ciprian Ciceu',
+    subtitle: 'Analiză Tehnică la Nivel Universitar & Educație Strategică de Piață',
+    sm_desc: 'Începând de săptămâna viitoare, Ciprian Ciceu lansează oficial Cursurile Profesionale Universitare de Trading — un program educațional structurat bazat pe metodologie academică și experiență reală pe piață.',
+    content: `
+      <p>În piețele financiare, succesul este rareori accidental.</p>
+
+      <p>În spatele fiecărui trader consistent stau structura, disciplina și educația. Într-o eră dominată de algoritmi, capital instituțional și inteligență artificială, cunoștințele profesionale au devenit adevăratul avantaj competitiv.</p>
+
+      <p>Începând de săptămâna viitoare, lansez oficial <strong>Cursurile Profesionale Universitare de Trading</strong>, un program educațional structurat construit pe metodologie academică și experiență reală pe piață.</p>
+
+      <p>Această inițiativă reprezintă intersecția dintre inovația fintech, expertiza blockchain și educația profesională de trading.</p>
+
+      <h3>De la Predarea Academică la Aplicarea pe Piață</h3>
+
+      <p>Parcursul meu în tehnologia financiară nu s-a limitat la antreprenoriat și dezvoltare blockchain.</p>
+
+      <p>Am servit și ca <strong>Lector de Blockchain pentru Cursuri de Master la Universitatea Româno-Americană din București</strong>, unde rigoarea academică și designul structurat al curriculumului au fost esențiale.</p>
+
+      <p>Acea experiență academică a modelat arhitectura acestui program de trading.</p>
+
+      <p>Aceste cursuri nu sunt concepute ca servicii speculative de „semnale" sau tutoriale online simplificate. Sunt construite ca un cadru educațional structurat aliniat la standarde universitare.</p>
+
+      <p>Obiectivul nu este să predau scurtături. Obiectivul este să predau înțelegerea.</p>
+
+      <h3>De Ce Contează Educația Structurată de Trading</h3>
+
+      <p>Piețele moderne sunt ecosisteme complexe influențate de:</p>
+      <ul>
+        <li>Cicluri macroeconomice</li>
+        <li>Lichiditate instituțională</li>
+        <li>Sisteme de execuție algoritmică</li>
+        <li>Tipare de finanțe comportamentale</li>
+        <li>Inovație tehnologică</li>
+      </ul>
+
+      <p>Fără cunoștințe structurate, majoritatea participanților se bazează pe emoții, zgomot sau informații incomplete.</p>
+
+      <p>Tradingul profesional necesită:</p>
+      <ul>
+        <li>Claritate analitică</li>
+        <li>Răbdare strategică</li>
+        <li>Disciplina managementului riscului</li>
+        <li>Cadre repetabile de luare a deciziilor</li>
+      </ul>
+
+      <p>Educația transformă incertitudinea în probabilitate structurată.</p>
+
+      <h3>Interiorul Programului Profesional de Trading</h3>
+
+      <p>Programul constă din <strong>12 module structurate de Analiză Tehnică & Trading Strategic</strong>, dezvoltate progresiv.</p>
+
+      <p>Participanții vor învăța:</p>
+
+      <h4>1. Structura Pieței & Logica Prețului</h4>
+      <p>Înțelegerea formării trendurilor, zonelor de lichiditate și schimbărilor structurale.</p>
+
+      <h4>2. Indicatori Tehnici & Combinație Strategică</h4>
+      <p>Medii mobile, indicatori de momentum, instrumente de volatilitate — nu individual, ci ca parte a unor sisteme coerente.</p>
+
+      <h4>3. Arhitectura Managementului Riscului</h4>
+      <p>Modele de alocare a capitalului, controlul drawdown-ului și poziționare bazată pe probabilitate.</p>
+
+      <h4>4. Cadre de Intrare & Ieșire</h4>
+      <p>Construirea planurilor de tranzacționare structurate în loc de reacții impulsive.</p>
+
+      <h4>5. Aplicare Multi-Platformă</h4>
+      <p>Metodologia este aplicabilă în multiple medii de tranzacționare, nefiind limitată la un singur ecosistem.</p>
+
+      <p>Fiecare modul se concentrează pe logică, nu pe entuziasm. Pe structură, nu pe speculație.</p>
+
+      <h3>Diferența Dintre Informație și Educație</h3>
+
+      <p>Astăzi, informația de trading este peste tot.</p>
+
+      <p>Dar informația fără structură creează confuzie. Semnalele fără înțelegere creează dependență.</p>
+
+      <p>Acest program este conceput pentru a dezvolta <strong>gândirea analitică independentă</strong>.</p>
+
+      <p>Participanții nu vor înțelege doar ce fac piețele — ci <strong>de ce</strong> se comportă în tipare specifice.</p>
+
+      <p>Această diferență separă entuziasmul temporar de competența pe termen lung.</p>
+
+      <h3>Pentru Cine Este Conceput Acest Program</h3>
+
+      <p>Aceste cursuri sunt potrivite pentru:</p>
+      <ul>
+        <li>Persoane care caută educație profesională de trading</li>
+        <li>Investitori care doresc o înțelegere mai profundă a pieței</li>
+        <li>Antreprenori interesați de piețele financiare</li>
+        <li>Profesioniști care explorează cadre de analiză tehnică</li>
+        <li>Membri ai ecosistemelor financiare digitale care caută cunoștințe independente</li>
+      </ul>
+
+      <p>Educația rămâne fundația autonomiei financiare.</p>
+
+      <h3>Un Pas Strategic într-o Viziune Mai Largă</h3>
+
+      <p>De-a lungul parcursului meu profesional în fintech și blockchain, un principiu a rămas constant:</p>
+
+      <blockquote style="border-left: 4px solid #0EA5E9; padding-left: 20px; margin: 30px 0; font-style: italic; color: #555;">
+        "Inovația trebuie susținută de educație. Tehnologia fără înțelegere creează fragilitate. Educația creează reziliență."
+      </blockquote>
+
+      <p>Aceste cursuri reprezintă un pas important către construirea unui ecosistem de educație financiară structurată aliniat realităților tehnologice moderne.</p>
+
+      <h3>Disponibilitate Oficială</h3>
+
+      <p>Cursurile Profesionale Universitare de Trading vor fi disponibile începând de săptămâna viitoare.</p>
+
+      <p>Detaliile de acces și informațiile de înscriere vor fi publicate pe:</p>
+
+      <p><strong><a href="https://www.mainetx.com" target="_blank" rel="noopener noreferrer">www.mainetx.com</a></strong></p>
+
+      <p>Inițiative educaționale suplimentare vor urma ca parte a unei foi de parcurs pe termen lung.</p>
+
+      <h3>Perspectivă Finală</h3>
+
+      <p>Piețele evoluează. Tehnologia evoluează. Inteligența artificială evoluează.</p>
+
+      <p>Educația trebuie să evolueze și ea.</p>
+
+      <p>Structura profesională, disciplina analitică și claritatea strategică rămân atemporale.</p>
+
+      <p>Acest program reflectă ani de implicare academică, dezvoltare fintech și experiență de piață — aduse împreună într-un cadru educațional coerent.</p>
+
+      <p>Și acesta este doar începutul.</p>
+
+      <p><em>— Ciprian Ciceu<br/>Antreprenor Fintech | Lector Blockchain | Educator de Trading</em></p>
+
+      <h3>Întrebări Frecvente (FAQ)</h3>
+
+      <h4>Cine este Ciprian Ciceu și ce îl califică să dezvolte un curs profesional de trading?</h4>
+      <p>Ciprian Ciceu este un antreprenor fintech, lector blockchain și educator de trading cu experiență de predare academică la Universitatea Româno-Americană din București. Cursul Profesional de Trading a fost dezvoltat pe baza metodologiei la nivel universitar, experiență reală pe piață și cadre structurate de analiză tehnică concepute pentru performanța strategică de trading pe termen lung.</p>
+
+      <h4>Ce include Cursul Profesional de Analiză Tehnică & Trading?</h4>
+      <p>Programul de Educație Profesională de Trading include 12 module structurate care acoperă analiza tehnică avansată, interpretarea structurii pieței, modele strategice de intrare și ieșire, sisteme de management al riscului, combinații de indicatori și aplicare de trading multi-platformă. Cursul este conceput să ofere educație profesională completă de trading, nu ghidare bazată pe semnale pe termen scurt.</p>
+
+      <h4>Este acesta un program de educație de trading la nivel universitar?</h4>
+      <p>Da. Cursul este structurat urmând standarde academice inspirate de designul curriculumului la nivel universitar. Se concentrează pe gândirea analitică, dezvoltarea structurată a strategiei, managementul disciplinat al riscului și interpretarea independentă a pieței — aliniindu-se cu standardele de educație profesională de trading, nu cu tutoriale online speculative.</p>
+    `,
+  },
 };

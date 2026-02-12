@@ -147,9 +147,12 @@ const ContactForm = ({ style_2 = false }) => {
           <div className="col-md-7">
             <div className="contact__form-call float-md-end">
               <span>{t('callTitle')}</span>
-              <p>
-                <a href="tel:+971502809015">
-                  <i className="fa-solid fa-phone-flip"></i> +971/502809015
+              <p style={{ display: 'flex', alignItems: 'center' }}>
+                <a href="https://wa.me/971502809015" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', marginRight: '10px' }}>
+                  <i className="fa-brands fa-whatsapp" style={{ color: '#25D366', fontSize: '2em' }}></i>
+                </a>
+                <a href="tel:+971502809015" style={{ color: '#25D366' }}>
+                  +971/502809015
                 </a>
               </p>
             </div>

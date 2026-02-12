@@ -40,4 +40,9 @@ export default {
     subtitle: 'The Foundations of Responsible Financial Platforms',
     sm_desc: 'Trust in financial platforms is built on transparency, honest communication, and clear responsibility. Transparency and risk disclosure are not formalities — they are essential components of responsible market participation.',
   },
+  9: {
+    title: 'Professional Trading Courses by Ciprian Ciceu',
+    subtitle: 'University-Level Technical Analysis & Strategic Market Education',
+    sm_desc: 'Starting next week, Ciprian Ciceu officially launches the Professional University Trading Courses — a structured educational program built on academic methodology and real-world market experience.',
+  },
 };

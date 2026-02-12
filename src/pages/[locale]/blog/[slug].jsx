@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Head from "next/head";
 // internal
 import { FooterSeven, HeaderEight, Wrapper } from "@layout/index";
 import SEO from "@components/seo";
@@ -85,6 +86,18 @@ export default function BlogDetails({ single_blog: propBlog }) {
         modifiedDate={single_blog?.modified ? getISODate(single_blog.modified) : undefined}
         tags={single_blog?.category}
       />
+      {/* Render article-specific JSON-LD scripts */}
+      {single_blog?.scripts && single_blog.scripts.length > 0 && (
+        <Head>
+          {single_blog.scripts.map((script, index) => (
+            <script
+              key={`article-script-${index}`}
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(script) }}
+            />
+          ))}
+        </Head>
+      )}
       <HeaderEight />
       <DynamicBreadcrumb
         items={[

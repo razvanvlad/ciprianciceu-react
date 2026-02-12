@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { DateTwo, UserTwo } from "@svg/index";
 
 const BlogArticleDetailsArea = ({ blog, locale = 'en', backToBlogText = 'Back to Blog' }) => {
@@ -27,8 +28,27 @@ const BlogArticleDetailsArea = ({ blog, locale = 'en', backToBlogText = 'Back to
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-xxl-10 col-xl-10 col-lg-10">
-            <article className="postbox__item format-standard white-bg transition-3 p-5 mb-50">
-              <div className="postbox__content">
+            <article className="postbox__item format-standard white-bg transition-3 mb-50" style={{ overflow: 'hidden' }}>
+              {/* Hero Image */}
+              {blog.img && (
+                <div style={{
+                  position: 'relative',
+                  width: '100%',
+                  height: '400px',
+                  overflow: 'hidden',
+                }}>
+                  <Image
+                    src={blog.img}
+                    alt={blog.imgAlt || blog.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 900px"
+                    style={{ objectFit: 'cover' }}
+                    quality={85}
+                    priority
+                  />
+                </div>
+              )}
+              <div className="postbox__content p-5">
                 {/* Tags */}
                 {tags.length > 0 && (
                   <div className="postbox__meta mb-30" style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
