@@ -25,6 +25,7 @@ import newsweek_belgium_img from '@assets/img/blog/grid/newsweek-restaurant-belg
 import romania_libera_img from '@assets/img/blog/grid/romania-libera.webp';
 import romania_libera_alocatii_img from '@assets/img/blog/grid/ciprian-ciceu-atrage-atentia-asupra-alocatiei-pentru-copii-la-care-au-dreptul-cetatenii-romani.jpg';
 import wallstreet_trading_img from '@assets/img/blog/grid/descopera-cursul-de-trading-din-pipera-de-la-care-pleci-cu-o-diploma-care-corespunde-cu-2-ani.webp';
+import wallstreet_robot_img from '@assets/img/blog/grid/wall-street-robot-trading.jpg';
 
 import forbes_logo from '@assets/img/brand/5/forbes-2x.webp';
 import wallstreet_logo from '@assets/img/brand/5/wall-street-2x.webp';
@@ -1135,6 +1136,44 @@ const blog_data = [
 
       <h3>Despre fondator</h3>
       <p>Fondatorul BETRA și BeTrader Academy Romania este Ciprian Ciceu, un profesionist în domeniu; are peste 20 de ani experiență în management, antreprenoriat, analiză financiară, planificare în afaceri, operațiuni și analize de decizie. El a fost personal în China, la Blockshine Centre Shanghai, pentru a discuta funcțiile wallet-ului.</p>
+    `,
+  },
+  {
+    id: 69,
+    tag: ['Technology', 'Trading', 'Forex', 'AI'],
+    img: wallstreet_robot_img,
+    date: 'February 15, 2026',
+    title: 'Un robot românesc de trading, prezentat în faţa celor mai importante companii financiare din lume',
+    sm_desc: 'Mainet EA, invenţia antreprenorului român Ciprian Ciceu, a ajuns în atenţia companiilor financiare gigant la evenimentul Exchange ETF din Miami',
+    author_name: 'Wall-Street.ro',
+    outlet_logo: wallstreet_logo,
+    comments: 0,
+    watch: '0',
+    blog_grid: true,
+    featured: true,
+    link: 'https://www.wall-street.ro/articol/International/294723/un-robot-romanesc-de-trading-prezentat-in-fata-celor-mai-importante-companii-financiare-din-lume.html',
+    content: `
+      <h4>Robotul românesc, menit să îi ajute pe utilizatori să îşi atingă toate obiectivele financiare, a fost prezentat lumii întregi, la doar câteva luni de la lansare, în cadrul celui mai avangardist eveniment ETF din industrie! Mainet EA, invenţia antreprenorului român Ciprian Ciceu şi a echipei sale de specialişti în informatică şi matematică, a ajuns în atenţia celor mai importante companii financiare mondiale, la Miami, oraş devenit la început de februarie 2023 polul unde s-au prezentat tendinţele globale în leadership.</h4>
+
+      <h2>Ciprian Ciceu, alături de veterani în industria financiară, la evenimentul de peste Ocean</h2>
+
+      <p>Cu o experienţă de peste două decenii în domeniul antreprenoriatului, managementului, planificării de afaceri şi a ingineriei software, profesorul universitar <a href="https://www.instagram.com/ciprian_ciceu22/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer">Ciprian Ciceu</a> face acum parte din comunitatea exclusivistă a celor mai creative minţi din domeniul financiar, ghidată spre îmbunătățirea serviciilor dedicate companiilor! Între 5 şi 8 februarie 2023 a participat la evenimentul Exchange ETF, conferinţa anuală care a avut loc în Miami, Florida, şi care a reunit inovatorii-momentului în finanțe și investiții. Pasul este unul uriaş pentru român, mai ales că Mainet EA este un start-up la început de drum, robotul fiind lansat la final de 2022!</p>
+
+      <blockquote style="border-left: 4px solid #0EA5E9; padding-left: 20px; margin: 30px 0; font-style: italic; color: #555;">
+        „Este măgulitor să primim o astfel de invitaţie, mai ales într-un moment în care căutăm să dezvoltăm şi să ducem acest nou concept la cel mai înalt nivel. Despre platforma care a luat naştere pe meleaguri româneşti au putut afla companii gigant din domeniul managementului investițiilor, precum Vanguard şi Black Rock, care gestionează bunuri în valoare de peste şapte trilioane de dolari." (Ciprian Ciceu)
+      </blockquote>
+
+      <p>Trader profesionist, Ciprian Ciceu s-a alăturat astfel celor peste o mie de participanţi din toată lumea, care au putut afla, de asemenea, cele mai noi idei şi tehnici care modelează viitorul piețelor financiare, într-o lume plină de provocări. Construit în jurul networking-ului, evenimentul i-a oferit românului prilejul de a lua parte la expoziţii creative şi de a discuta direct cu administratori de active, consilieri de top şi lideri de opinie din întreaga industrie despre strategii de tranzacţionare eficientă.</p>
+
+      <h2>Românul inovează pe piaţa Forex</h2>
+
+      <p>Invenţia lui Ciprian Ciceu, numită „Best Crypto & Forex Trading Algorithm 2022" în Dubai, a apărut ca răspuns la nevoia constantă de optimizare a operaţiunilor de trading. Ea oferă soluţii de tranzacţionare automată pe cea mai mare piaţă financiară din lume, Forex, unde se fac zilnic operaţiuni de aproximativ 5.000 de miliarde de dolari.</p>
+
+      <blockquote style="border-left: 4px solid #0EA5E9; padding-left: 20px; margin: 30px 0; font-style: italic; color: #555;">
+        „Prin predictibilitatea ridicată, platforma facilitează obţinerea unui randament pozitiv în toate condiţiile de piaţă. Sistemul automatizat permite utilizatorilor să se conecteze prin API la platformele tuturor brokerilor reglementaţi. Algoritmul funcţionează 24 de ore din 24, 5 zile din 7, aplicând tranzacţiilor anumite strategii bazate pe analiza statistică a volumului. Robotul a fost testat mai bine de 2 ani pe conturile personale ale Traderului." (Ciprian Ciceu)
+      </blockquote>
+
+      <p>Sistemul este rezultatul multor ani de cercetare şi de perfecţionare continuă a modului în care funcţionează roboţii de tranzacţionare şi a fost creat de o întreagă echipă. Ingineri informaticieni şi matematicieni de top ai academiei fondate de Ciprian Ciceu, <a href="https://www.instagram.com/trading_academy22/" target="_blank" rel="noopener noreferrer">Be Trader România</a>, au lucrat pentru a-l transforma în realitate.</p>
     `,
   },
 ]

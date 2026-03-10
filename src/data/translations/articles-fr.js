@@ -803,4 +803,31 @@ export default {
       <p>À partir d'avril, le nouveau BETRA Wallet sera également lancé. Ce portefeuille électronique aura environ 200 cryptomonnaies différentes, et inclura bien sûr la cryptomonnaie BETRA COIN. Le BETRA Wallet pourra stocker les cryptomonnaies Bitcoin, Ethereum, ETC, BCH, LTC et d'autres monnaies de type ERC20.</p>
     `,
   },
+  69: {
+    title: 'Un robot de trading roumain présenté aux plus importantes sociétés financières du monde',
+    sm_desc: 'Mainet EA, l\'invention de l\'entrepreneur roumain Ciprian Ciceu, a été présenté aux géants financiers mondiaux lors de l\'événement Exchange ETF à Miami',
+    content: `
+      <h4>Le robot roumain, conçu pour aider les utilisateurs à atteindre tous leurs objectifs financiers, a été présenté au monde entier, quelques mois seulement après son lancement, lors de l'événement ETF le plus avant-gardiste de l'industrie ! Mainet EA, l'invention de l'entrepreneur roumain Ciprian Ciceu et de son équipe de spécialistes en informatique et en mathématiques, a retenu l'attention des plus importantes sociétés financières mondiales à Miami — une ville devenue début février 2023 le pôle mondial des tendances en leadership.</h4>
+
+      <h2>Ciprian Ciceu aux côtés des vétérans de l'industrie financière lors de l'événement transatlantique</h2>
+
+      <p>Fort de plus de deux décennies d'expérience dans l'entrepreneuriat, le management, la planification d'entreprise et le génie logiciel, le professeur universitaire <a href="https://www.instagram.com/ciprian_ciceu22/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer">Ciprian Ciceu</a> fait désormais partie de la communauté exclusive des esprits les plus créatifs dans le domaine financier, orientée vers l'amélioration des services dédiés aux entreprises. Du 5 au 8 février 2023, il a participé à l'événement Exchange ETF, la conférence annuelle qui s'est tenue à Miami, en Floride, et qui a réuni les innovateurs du moment en finance et en investissement. C'est un pas immense pour le Roumain, d'autant plus que Mainet EA est une startup à ses débuts — le robot ayant été lancé fin 2022 !</p>
+
+      <blockquote style="border-left: 4px solid #0EA5E9; padding-left: 20px; margin: 30px 0; font-style: italic; color: #555;">
+        « Il est flatteur de recevoir une telle invitation, surtout à un moment où nous cherchons à développer et à porter ce nouveau concept au plus haut niveau. Des sociétés géantes dans la gestion des investissements, telles que Vanguard et BlackRock, qui gèrent des actifs d'une valeur de plus de sept billions de dollars, ont pu découvrir la plateforme née sur le sol roumain. » (Ciprian Ciceu)
+      </blockquote>
+
+      <p>Trader professionnel, Ciprian Ciceu a ainsi rejoint plus d'un millier de participants du monde entier qui ont également découvert les idées et techniques les plus récentes qui façonnent l'avenir des marchés financiers dans un monde plein de défis. Construit autour du networking, l'événement a offert au Roumain l'occasion de participer à des expositions créatives et de discuter directement avec des gestionnaires d'actifs, des conseillers de premier plan et des leaders d'opinion de toute l'industrie sur les stratégies de trading efficaces.</p>
+
+      <h2>Le Roumain innove sur le marché Forex</h2>
+
+      <p>L'invention de Ciprian Ciceu, nommée « Best Crypto & Forex Trading Algorithm 2022 » à Dubaï, est née en réponse au besoin constant d'optimisation des opérations de trading. Elle offre des solutions de trading automatisé sur le plus grand marché financier du monde — le Forex — où environ 5 000 milliards de dollars de transactions sont effectués quotidiennement.</p>
+
+      <blockquote style="border-left: 4px solid #0EA5E9; padding-left: 20px; margin: 30px 0; font-style: italic; color: #555;">
+        « Grâce à sa haute prédictibilité, la plateforme facilite l'obtention d'un rendement positif dans toutes les conditions de marché. Le système automatisé permet aux utilisateurs de se connecter via API aux plateformes de tous les courtiers réglementés. L'algorithme fonctionne 24 heures sur 24, 5 jours sur 7, en appliquant certaines stratégies aux transactions basées sur l'analyse statistique du volume. Le robot a été testé pendant plus de 2 ans sur les comptes personnels du Trader. » (Ciprian Ciceu)
+      </blockquote>
+
+      <p>Le système est le résultat de nombreuses années de recherche et d'amélioration continue du fonctionnement des robots de trading, et a été créé par toute une équipe. Des ingénieurs informaticiens et des mathématiciens de haut niveau de l'académie fondée par Ciprian Ciceu, <a href="https://www.instagram.com/trading_academy22/" target="_blank" rel="noopener noreferrer">Be Trader România</a>, ont travaillé pour le rendre réalité.</p>
+    `,
+  },
 };

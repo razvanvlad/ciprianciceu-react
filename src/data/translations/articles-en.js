@@ -803,4 +803,31 @@ export default {
       <p>From April, the new BETRA Wallet will also be launched. This electronic wallet will have approximately 200 different cryptocurrencies, and of course will include the BETRA COIN cryptocurrency. The BETRA Wallet will be able to store Bitcoin, Ethereum, ETC, BCH, LTC cryptocurrencies and other ERC20 type coins.</p>
     `,
   },
+  69: {
+    title: 'A Romanian Trading Robot Presented to the World\'s Most Important Financial Companies',
+    sm_desc: 'Mainet EA, the invention of Romanian entrepreneur Ciprian Ciceu, was showcased to global financial giants at the Exchange ETF event in Miami',
+    content: `
+      <h4>The Romanian robot, designed to help users achieve all their financial goals, was presented to the entire world just months after its launch, at the most avant-garde ETF event in the industry! Mainet EA, the invention of Romanian entrepreneur Ciprian Ciceu and his team of computer science and mathematics specialists, captured the attention of the world's most important financial companies in Miami — a city that became the global hub for leadership trends in early February 2023.</h4>
+
+      <h2>Ciprian Ciceu Alongside Industry Veterans at the Transatlantic Event</h2>
+
+      <p>With over two decades of experience in entrepreneurship, management, business planning, and software engineering, university professor <a href="https://www.instagram.com/ciprian_ciceu22/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer">Ciprian Ciceu</a> is now part of the exclusive community of the most creative minds in finance, focused on improving services dedicated to companies. Between February 5 and 8, 2023, he participated in the Exchange ETF event, the annual conference held in Miami, Florida, which brought together the moment's innovators in finance and investment. This is a huge step for the Romanian, especially since Mainet EA is a startup at the beginning of its journey — the robot was launched at the end of 2022!</p>
+
+      <blockquote style="border-left: 4px solid #0EA5E9; padding-left: 20px; margin: 30px 0; font-style: italic; color: #555;">
+        "It is flattering to receive such an invitation, especially at a moment when we are looking to develop and take this new concept to the highest level. Giant companies in investment management, such as Vanguard and BlackRock, which manage assets worth over seven trillion dollars, were able to learn about the platform born on Romanian soil." (Ciprian Ciceu)
+      </blockquote>
+
+      <p>A professional trader, Ciprian Ciceu joined over a thousand participants from around the world who also discovered the newest ideas and techniques shaping the future of financial markets in a world full of challenges. Built around networking, the event gave the Romanian the opportunity to participate in creative exhibitions and to discuss directly with asset managers, top advisors, and opinion leaders from across the industry about effective trading strategies.</p>
+
+      <h2>The Romanian Innovates on the Forex Market</h2>
+
+      <p>Ciprian Ciceu's invention, named "Best Crypto & Forex Trading Algorithm 2022" in Dubai, emerged as a response to the constant need to optimize trading operations. It offers automated trading solutions on the world's largest financial market — Forex — where approximately $5 trillion in transactions occur daily.</p>
+
+      <blockquote style="border-left: 4px solid #0EA5E9; padding-left: 20px; margin: 30px 0; font-style: italic; color: #555;">
+        "Through high predictability, the platform facilitates obtaining a positive return in all market conditions. The automated system allows users to connect via API to all regulated broker platforms. The algorithm operates 24 hours a day, 5 days a week, applying certain strategies to transactions based on statistical volume analysis. The robot was tested for more than 2 years on the Trader's personal accounts." (Ciprian Ciceu)
+      </blockquote>
+
+      <p>The system is the result of many years of research and continuous refinement of how trading robots work, and was created by an entire team. Top computer engineers and mathematicians from the academy founded by Ciprian Ciceu, <a href="https://www.instagram.com/trading_academy22/" target="_blank" rel="noopener noreferrer">Be Trader România</a>, worked to make it a reality.</p>
+    `,
+  },
 };
