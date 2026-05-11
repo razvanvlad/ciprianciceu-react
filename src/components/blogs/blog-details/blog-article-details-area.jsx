@@ -7,6 +7,14 @@ const SITE_URL = "https://ciprianciceu.com";
 
 function SocialShareButtons({ url, title }) {
   const [copied, setCopied] = useState(false);
+  const [copiedIG, setCopiedIG] = useState(false);
+
+  const handleCopyIG = () => {
+    navigator.clipboard.writeText(url).then(() => {
+      setCopiedIG(true);
+      setTimeout(() => setCopiedIG(false), 2000);
+    });
+  };
   const encoded = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
 
@@ -36,12 +44,6 @@ function SocialShareButtons({ url, title }) {
       icon: "fa-brands fa-facebook-f",
       href: `https://www.facebook.com/sharer/sharer.php?u=${encoded}`,
       color: "#1877F2",
-    },
-    {
-      label: "Instagram",
-      icon: "fa-brands fa-instagram",
-      href: `https://www.instagram.com/`,
-      color: "#E1306C",
     },
     {
       label: "WhatsApp",
@@ -113,8 +115,26 @@ function SocialShareButtons({ url, title }) {
           </a>
         ))}
 
-        {/* Copy Link */}
+        {/* Instagram — copy link for Story/Bio */}
         <a
+          href="#"
+          onClick={(e) => { e.preventDefault(); handleCopyIG(); }}
+          style={btnBase}
+          title="Copy link to share on Instagram Story or Bio"
+          onMouseOver={(e) => e.currentTarget.querySelector('.share-circle').style.opacity = '0.8'}
+          onMouseOut={(e) => e.currentTarget.querySelector('.share-circle').style.opacity = '1'}
+        >
+          <div className="share-circle" style={circle(copiedIG ? '#22C55E' : '#E1306C')}>
+            {copiedIG
+              ? <i className="fa-solid fa-check" style={{ color: '#fff' }}></i>
+              : <i className="fa-brands fa-instagram" style={{ color: '#fff' }}></i>
+            }
+          </div>
+          <span style={labelStyle}>{copiedIG ? 'Copied!' : 'Instagram'}</span>
+        </a>
+
+        {/* Copy Link */}
+        <
           href="#"
           onClick={(e) => { e.preventDefault(); handleCopy(); }}
           style={btnBase}
