@@ -45,13 +45,8 @@ const BlogGridArea = ({ limit, url, localizedArticles, translationNamespace = 'b
       });
     }
 
-    // Sort by featured status first, then by date
+    // Sort by date
     const sorted = [...filtered].sort((a, b) => {
-      // Prioritize featured articles
-      if (a.featured && !b.featured) return -1;
-      if (!a.featured && b.featured) return 1;
-
-      // If both featured or both not featured, sort by date
       const dateA = new Date(a.date);
       const dateB = new Date(b.date);
       return sortOrder === "newest" ? dateB - dateA : dateA - dateB;
