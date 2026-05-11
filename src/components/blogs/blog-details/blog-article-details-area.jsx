@@ -43,8 +43,8 @@ function SocialShareButtons({ url, title }) {
   ];
 
   return (
-    <div style={{ marginTop: '40px', paddingTop: '30px', borderTop: '1px solid #e5e5e5' }}>
-      <p style={{ fontWeight: '600', fontSize: '15px', marginBottom: '16px', color: '#333' }}>Share this article:</p>
+    <div>
+      <p style={{ fontWeight: '600', fontSize: '15px', marginBottom: '12px', color: '#555' }}>Share this article:</p>
       <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center' }}>
         {shares.map((s) => (
           <a
@@ -107,10 +107,7 @@ const BlogArticleDetailsArea = ({ blog, locale = 'en', backToBlogText = 'Back to
             <article className="postbox__item format-standard white-bg transition-3 mb-50" style={{ overflow: 'hidden' }}>
               {/* Hero Image */}
               {blog.img && (
-                <div style={{
-                  width: '100%',
-                  overflow: 'hidden',
-                }}>
+                <div style={{ width: '100%', overflow: 'hidden' }}>
                   <Image
                     src={blog.img}
                     alt={blog.imgAlt || blog.title}
@@ -121,6 +118,13 @@ const BlogArticleDetailsArea = ({ blog, locale = 'en', backToBlogText = 'Back to
                     quality={85}
                     priority
                   />
+                  {/* Social Share under image */}
+                  <div style={{ padding: '16px 24px', background: '#f9f9f9', borderTop: '1px solid #eee' }}>
+                    <SocialShareButtons
+                      url={`${SITE_URL}/${locale}/blog/${blog.slug || blog.title}`}
+                      title={blog.seoTitle || blog.title}
+                    />
+                  </div>
                 </div>
               )}
               <div className="postbox__content p-5">
@@ -189,12 +193,6 @@ const BlogArticleDetailsArea = ({ blog, locale = 'en', backToBlogText = 'Back to
                     color: '#333'
                   }}
                   dangerouslySetInnerHTML={{ __html: blog.content }}
-                />
-
-                {/* Social Share */}
-                <SocialShareButtons
-                  url={`${SITE_URL}/${locale}/blog/${blog.slug || blog.title}`}
-                  title={blog.seoTitle || blog.title}
                 />
 
                 {/* Back to Blog Link */}
