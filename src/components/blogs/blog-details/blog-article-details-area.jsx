@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { DateTwo, UserTwo } from "@svg/index";
+import TwitterX from "@svg/twitter-x";
 
 const SITE_URL = "https://ciprianciceu.com";
 
@@ -25,7 +26,8 @@ function SocialShareButtons({ url, title }) {
     },
     {
       label: "X",
-      icon: "fa-brands fa-x-twitter",
+      icon: null,
+      svg: <TwitterX />,
       href: `https://x.com/intent/tweet?url=${encoded}&text=${encodedTitle}`,
       color: "#2D2D2D",
     },
@@ -95,7 +97,10 @@ function SocialShareButtons({ url, title }) {
             onMouseOut={(e) => e.currentTarget.querySelector('.share-circle').style.opacity = '1'}
           >
             <div className="share-circle" style={circle(s.color)}>
-              <i className={s.icon} style={{ color: '#fff' }}></i>
+              {s.svg
+                ? <span style={{ color: '#fff', display: 'flex' }}>{s.svg}</span>
+                : <i className={s.icon} style={{ color: '#fff' }}></i>
+              }
             </div>
             <span style={labelStyle}>{s.label}</span>
           </a>
