@@ -27,7 +27,7 @@ function SocialShareButtons({ url, title }) {
       label: "X",
       icon: "fa-brands fa-x-twitter",
       href: `https://x.com/intent/tweet?url=${encoded}&text=${encodedTitle}`,
-      color: "#000",
+      color: "#2D2D2D",
     },
     {
       label: "Facebook",
@@ -95,7 +95,7 @@ function SocialShareButtons({ url, title }) {
             onMouseOut={(e) => e.currentTarget.querySelector('.share-circle').style.opacity = '1'}
           >
             <div className="share-circle" style={circle(s.color)}>
-              <i className={s.icon}></i>
+              <i className={s.icon} style={{ color: '#fff' }}></i>
             </div>
             <span style={labelStyle}>{s.label}</span>
           </a>
@@ -109,7 +109,7 @@ function SocialShareButtons({ url, title }) {
           onMouseOut={(e) => e.currentTarget.querySelector('.share-circle').style.opacity = '1'}
         >
           <div className="share-circle" style={circle(copied ? '#22C55E' : '#6B7280')}>
-            <i className={copied ? 'fa-solid fa-check' : 'fa-solid fa-link'}></i>
+            <i className={copied ? 'fa-solid fa-check' : 'fa-solid fa-link'} style={{ color: '#fff' }}></i>
           </div>
           <span style={labelStyle}>{copied ? 'Copied!' : 'Copy link'}</span>
         </button>
