@@ -15,6 +15,14 @@ function SocialShareButtons({ url, title }) {
       setTimeout(() => setCopiedIG(false), 2000);
     });
   };
+
+  const handleInstagram = () => {
+    if (typeof navigator !== 'undefined' && navigator.share) {
+      navigator.share({ title, url }).catch(() => handleCopyIG());
+    } else {
+      handleCopyIG();
+    }
+  };
   const encoded = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
 
@@ -118,9 +126,9 @@ function SocialShareButtons({ url, title }) {
         {/* Instagram — copy link for Story/Bio */}
         <a
           href="#"
-          onClick={(e) => { e.preventDefault(); handleCopyIG(); }}
+          onClick={(e) => { e.preventDefault(); handleInstagram(); }}
           style={btnBase}
-          title="Copy link to share on Instagram Story or Bio"
+          title="Share to Instagram Story (mobile) or copy link (desktop)"
           onMouseOver={(e) => e.currentTarget.querySelector('.share-circle').style.opacity = '0.8'}
           onMouseOut={(e) => e.currentTarget.querySelector('.share-circle').style.opacity = '1'}
         >
