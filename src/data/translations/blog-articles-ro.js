@@ -482,6 +482,11 @@ export default {
       <p><em>Declinare de responsabilitate: Acest articol este doar în scop educativ și nu constituie sfat financiar sau de investiții. Piețele financiare implică riscuri și rezultatele pot varia.</em></p>
     `,
   },
+  10: {
+    title: 'Viitorul Rezervelor Globale: De Ce Bitcoin Ar Putea Deveni Standardul Digital al Aurului',
+    subtitle: 'Ar putea Bitcoin deveni echivalentul modern al rezervelor de aur pentru era digitală?',
+    sm_desc: 'De zeci de ani, sistemul financiar global a fost construit pe încredere, politici bancare centrale și rezerve naționale susținute de active strategice precum aurul și valutele străine.',
+  },
   9: {
     title: 'Cursuri Profesionale de Trading de Ciprian Ciceu',
     subtitle: 'Analiză Tehnică la Nivel Universitar & Educație Strategică de Piață',

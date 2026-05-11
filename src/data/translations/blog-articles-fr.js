@@ -482,6 +482,11 @@ export default {
       <p><em>Avertissement : Cet article est à des fins éducatives uniquement et ne constitue pas un conseil financier ou d'investissement. Les marchés financiers comportent des risques et les résultats peuvent varier.</em></p>
     `,
   },
+  10: {
+    title: 'L\'Avenir des Réserves Mondiales : Pourquoi Bitcoin Pourrait Devenir l\'Étalon-Or Numérique',
+    subtitle: 'Bitcoin pourrait-il devenir l\'équivalent moderne des réserves d\'or pour l\'ère numérique ?',
+    sm_desc: 'Depuis des décennies, le système financier mondial est fondé sur la confiance, les politiques des banques centrales et les réserves nationales soutenues par des actifs stratégiques tels que l\'or et les devises étrangères.',
+  },
   9: {
     title: 'Cours de Trading Professionnel par Ciprian Ciceu',
     subtitle: 'Analyse Technique de Niveau Universitaire & Éducation Stratégique des Marchés',

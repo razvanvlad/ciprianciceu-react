@@ -45,4 +45,9 @@ export default {
     subtitle: 'University-Level Technical Analysis & Strategic Market Education',
     sm_desc: 'Starting next week, Ciprian Ciceu officially launches the Professional University Trading Courses — a structured educational program built on academic methodology and real-world market experience.',
   },
+  10: {
+    title: 'The Future of Global Reserves: Why Bitcoin Could Become the Digital Gold Standard',
+    subtitle: 'Could Bitcoin become the modern equivalent of gold reserves for the digital age?',
+    sm_desc: 'For decades, the global financial system has been built on confidence, central banking policies, and national reserves backed by strategic assets such as gold and foreign currencies.',
+  },
 };
