@@ -80,29 +80,25 @@ function SocialShareButtons({ url, title }) {
   };
 
   const circle = (color) => ({
-    width: '52px',
-    height: '52px',
     borderRadius: '50%',
     background: color,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     color: '#fff',
-    fontSize: '20px',
     transition: 'opacity 0.2s, transform 0.15s',
   });
 
   const labelStyle = {
-    fontSize: '12px',
     color: '#555',
     fontWeight: '500',
     whiteSpace: 'nowrap',
   };
 
   return (
-    <div style={{ textAlign: 'center' }}>
-      <p style={{ fontWeight: '600', fontSize: '14px', marginBottom: '14px', color: '#555' }}>Share this article:</p>
-      <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', alignItems: 'flex-start', justifyContent: 'center' }}>
+    <div className="share-bar">
+      <p className="share-bar__title">Share this article:</p>
+      <div className="share-bar__row">
         {shares.map((s) => (
           <a
             key={s.label}
@@ -119,11 +115,11 @@ function SocialShareButtons({ url, title }) {
                 : <i className={s.icon} style={{ color: '#fff' }}></i>
               }
             </div>
-            <span style={labelStyle}>{s.label}</span>
+            <span className="share-bar__label" style={labelStyle}>{s.label}</span>
           </a>
         ))}
 
-        {/* Instagram — copy link for Story/Bio */}
+        {/* Instagram */}
         <a
           href="#"
           onClick={(e) => { e.preventDefault(); handleInstagram(); }}
@@ -138,7 +134,7 @@ function SocialShareButtons({ url, title }) {
               : <i className="fa-brands fa-instagram" style={{ color: '#fff' }}></i>
             }
           </div>
-          <span style={labelStyle}>{copiedIG ? 'Copied!' : 'Instagram'}</span>
+          <span className="share-bar__label" style={labelStyle}>{copiedIG ? 'Copied!' : 'Instagram'}</span>
         </a>
 
         {/* Copy Link */}
@@ -152,9 +148,24 @@ function SocialShareButtons({ url, title }) {
           <div className="share-circle" style={circle(copied ? '#22C55E' : '#6B7280')}>
             <i className={copied ? 'fa-solid fa-check' : 'fa-solid fa-link'} style={{ color: '#fff' }}></i>
           </div>
-          <span style={labelStyle}>{copied ? 'Copied!' : 'Copy link'}</span>
+          <span className="share-bar__label" style={labelStyle}>{copied ? 'Copied!' : 'Copy link'}</span>
         </a>
       </div>
+
+      <style jsx>{`
+        .share-bar { text-align: center; }
+        .share-bar__title { font-weight: 600; font-size: 14px; margin-bottom: 14px; color: #555; }
+        .share-bar__row { display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start; justify-content: center; }
+        .share-circle { width: 52px; height: 52px; font-size: 20px; }
+        .share-bar__label { font-size: 12px; }
+
+        @media (max-width: 576px) {
+          .share-bar__row { gap: 14px; }
+          .share-circle { width: 38px; height: 38px; font-size: 15px; }
+          .share-bar__label { font-size: 10px; }
+          .share-bar__title { font-size: 13px; }
+        }
+      `}</style>
     </div>
   );
 }
