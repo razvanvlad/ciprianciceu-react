@@ -80,6 +80,7 @@ function SocialShareButtons({ url, title }) {
     fontSize: '12px',
     color: '#555',
     fontWeight: '500',
+    whiteSpace: 'nowrap',
   };
 
   return (
