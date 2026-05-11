@@ -758,7 +758,6 @@ const blog_articles_data = [
     `,
   },
   {
-  {
     id: 10,
     tag: ['Trading', 'Finance'],
     img: '/assets/img/articles/Ciprian-Ciceu-bitcoin-digital-gold-standard.jpg',
