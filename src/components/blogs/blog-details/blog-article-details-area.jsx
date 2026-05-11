@@ -142,7 +142,7 @@ function SocialShareButtons({ url, title }) {
         </a>
 
         {/* Copy Link */}
-        <
+        <a
           href="#"
           onClick={(e) => { e.preventDefault(); handleCopy(); }}
           style={btnBase}
