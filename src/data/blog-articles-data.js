@@ -770,7 +770,7 @@ const blog_articles_data = [
     comments: 0,
     watch: '0',
     blog_grid: true,
-    featured: false,
+    featured: true,
     content: `
       <p>For decades, the global financial system has been built on confidence, central banking policies, and national reserves backed by strategic assets such as gold and foreign currencies. Historically, nations printed money according to the amount of gold stored in their reserves, creating a system where trust was directly connected to tangible value.</p>
 
