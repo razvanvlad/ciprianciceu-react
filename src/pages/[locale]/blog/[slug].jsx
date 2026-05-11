@@ -55,10 +55,10 @@ export default function BlogDetails({ single_blog: propBlog }) {
     );
   }
 
-  // Helper function to create slug from title
+  // Helper function to create slug from title (or custom slug)
   const getBlogUrl = (blog) => {
-    if (!blog?.title) return '/blog';
-    return `/blog/${createSlug(blog.title)}`;
+    if (!blog) return '/blog';
+    return `/blog/${blog.slug || createSlug(blog.title)}`;
   };
 
   // Convert date to ISO format for structured data
@@ -75,8 +75,8 @@ export default function BlogDetails({ single_blog: propBlog }) {
   return (
     <Wrapper>
       <SEO
-        pageTitle={single_blog?.title || "Blog Article"}
-        description={single_blog?.sm_desc || single_blog?.desc || "Read the latest insights from Ciprian Ciceu"}
+        pageTitle={single_blog?.seoTitle || single_blog?.title || "Blog Article"}
+        description={single_blog?.seoDescription || single_blog?.sm_desc || single_blog?.desc || "Read the latest insights from Ciprian Ciceu"}
         image={single_blog?.img?.src || single_blog?.img}
         url={getBlogUrl(single_blog)}
         pageType="blogPost"
@@ -135,9 +135,9 @@ export async function getServerSideProps(context) {
       .replace(/--+/g, '-');
   };
 
-  // Try to find the blog article by slug in current locale
+  // Try to find the blog article by slug in current locale (custom slug takes priority)
   let single_blog = localizedArticles.find(
-    (item) => item.title && createSlug(item.title) === slug
+    (item) => item.slug === slug || (item.title && createSlug(item.title) === slug)
   );
 
   // If not found, search across all locales and redirect to correct slug

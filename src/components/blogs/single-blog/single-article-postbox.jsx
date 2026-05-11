@@ -16,6 +16,7 @@ const SingleArticlePostbox = ({
   author_name,
   tag,
   link,
+  slug,
   translationNamespace = 'press',
 }) => {
   const t = useTranslations(translationNamespace + '.ui');
@@ -50,7 +51,7 @@ const SingleArticlePostbox = ({
 
   // Use the translation namespace to determine the URL path
   const urlPath = translationNamespace === 'blog' ? 'blog' : 'press';
-  const blogUrl = link || `/${locale}/${urlPath}/${createSlug(title)}`;
+  const blogUrl = link || `/${locale}/${urlPath}/${slug || createSlug(title)}`;
 
   return (
     <article className="postbox__item format-standard mb-50 transition-3">
