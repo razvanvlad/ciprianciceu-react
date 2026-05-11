@@ -2,6 +2,82 @@ import React from "react";
 import Image from "next/image";
 import { DateTwo, UserTwo } from "@svg/index";
 
+const SITE_URL = "https://ciprianciceu.com";
+
+function SocialShareButtons({ url, title }) {
+  const encoded = encodeURIComponent(url);
+  const encodedTitle = encodeURIComponent(title);
+
+  const shares = [
+    {
+      label: "LinkedIn",
+      icon: "fa-brands fa-linkedin-in",
+      href: `https://www.linkedin.com/sharing/share-offsite/?url=${encoded}`,
+      color: "#0A66C2",
+    },
+    {
+      label: "X / Twitter",
+      icon: "fa-brands fa-x-twitter",
+      href: `https://x.com/intent/tweet?url=${encoded}&text=${encodedTitle}`,
+      color: "#000",
+    },
+    {
+      label: "Facebook",
+      icon: "fa-brands fa-facebook-f",
+      href: `https://www.facebook.com/sharer/sharer.php?u=${encoded}`,
+      color: "#1877F2",
+    },
+    {
+      label: "Medium",
+      icon: "fa-brands fa-medium",
+      href: `https://medium.com/new-story?url=${encoded}`,
+      color: "#000",
+    },
+    {
+      label: "Instagram Story",
+      icon: "fa-brands fa-instagram",
+      href: `https://www.instagram.com/`,
+      color: "#E1306C",
+      note: "Copy link",
+    },
+  ];
+
+  return (
+    <div style={{ marginTop: '40px', paddingTop: '30px', borderTop: '1px solid #e5e5e5' }}>
+      <p style={{ fontWeight: '600', fontSize: '15px', marginBottom: '16px', color: '#333' }}>Share this article:</p>
+      <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center' }}>
+        {shares.map((s) => (
+          <a
+            key={s.label}
+            href={s.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={s.label + (s.note ? ` (${s.note})` : '')}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
+              padding: '10px 18px',
+              borderRadius: '8px',
+              background: s.color,
+              color: '#fff',
+              fontSize: '14px',
+              fontWeight: '500',
+              textDecoration: 'none',
+              transition: 'opacity 0.2s',
+            }}
+            onMouseOver={(e) => e.currentTarget.style.opacity = '0.85'}
+            onMouseOut={(e) => e.currentTarget.style.opacity = '1'}
+          >
+            <i className={s.icon} style={{ fontSize: '16px' }}></i>
+            {s.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 const BlogArticleDetailsArea = ({ blog, locale = 'en', backToBlogText = 'Back to Blog' }) => {
   if (!blog) {
     return (
@@ -113,6 +189,12 @@ const BlogArticleDetailsArea = ({ blog, locale = 'en', backToBlogText = 'Back to
                     color: '#333'
                   }}
                   dangerouslySetInnerHTML={{ __html: blog.content }}
+                />
+
+                {/* Social Share */}
+                <SocialShareButtons
+                  url={`${SITE_URL}/${locale}/blog/${blog.slug || blog.title}`}
+                  title={blog.seoTitle || blog.title}
                 />
 
                 {/* Back to Blog Link */}

@@ -83,6 +83,9 @@ export default function BlogDetails({ single_blog: propBlog }) {
         publishedDate={getISODate(single_blog?.date)}
         modifiedDate={single_blog?.modified ? getISODate(single_blog.modified) : undefined}
         tags={single_blog?.tag}
+        keywords={single_blog?.keywords || []}
+        ogTitle={single_blog?.ogTitle}
+        ogDescription={single_blog?.ogDescription}
         faqItems={single_blog?.faq || null}
         breadcrumbs={[
           { name: "Home", url: "/" },

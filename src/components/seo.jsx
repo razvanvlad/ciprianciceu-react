@@ -209,9 +209,12 @@ const SEO = ({
   publishedDate,
   modifiedDate,
   tags = [],
+  keywords = [],
   canonical,
   breadcrumbs,
   faqItems,
+  ogTitle,
+  ogDescription,
 }) => {
   const fullTitle = pageTitle ? `${pageTitle} | ${SITE_NAME}` : SITE_NAME;
   const metaDescription = description.length > 160
@@ -273,7 +276,7 @@ const SEO = ({
         image: absoluteImage,
         publishedDate,
         modifiedDate,
-        tags
+        tags: [...(Array.isArray(tags) ? tags : tags ? [tags] : []), ...keywords]
       }));
 
       // Optional FAQ
@@ -320,7 +323,9 @@ const SEO = ({
       <meta name="robots" content="index, follow" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <meta name="author" content={author} />
-      {tags.length > 0 && <meta name="keywords" content={Array.isArray(tags) ? tags.join(', ') : tags} />}
+      {(keywords.length > 0 || tags.length > 0) && (
+        <meta name="keywords" content={[...keywords, ...(Array.isArray(tags) ? tags : tags ? [tags] : [])].join(', ')} />
+      )}
 
       {/* Canonical URL */}
       <link rel="canonical" href={canonical || fullUrl} />
@@ -329,8 +334,8 @@ const SEO = ({
       <meta property="og:site_name" content="Ciprian Ciceu" />
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={fullUrl} />
-      <meta property="og:title" content="Ciprian Ciceu – FinTech Entrepreneur & Blockchain Lecturer" />
-      <meta property="og:description" content="Official website of Ciprian Ciceu, fintech entrepreneur and founder of Mainet X." />
+      <meta property="og:title" content={ogTitle || "Ciprian Ciceu – FinTech Entrepreneur & Blockchain Lecturer"} />
+      <meta property="og:description" content={ogDescription || "Official website of Ciprian Ciceu, fintech entrepreneur and founder of Mainet X."} />
       <meta property="og:image" content={absoluteImage} />
       {publishedDate && <meta property="article:published_time" content={publishedDate} />}
       {modifiedDate && <meta property="article:modified_time" content={modifiedDate} />}
@@ -341,8 +346,8 @@ const SEO = ({
 
       {/* Twitter Card Tags */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Ciprian Ciceu – FinTech Entrepreneur & Blockchain Lecturer" />
-      <meta name="twitter:description" content="Official website of Ciprian Ciceu, fintech entrepreneur and founder of Mainet X." />
+      <meta name="twitter:title" content={ogTitle || "Ciprian Ciceu – FinTech Entrepreneur & Blockchain Lecturer"} />
+      <meta name="twitter:description" content={ogDescription || "Official website of Ciprian Ciceu, fintech entrepreneur and founder of Mainet X."} />
       <meta name="twitter:image" content={absoluteImage} />
       <meta name="twitter:site" content="@ciceu_ciprian" />
       <meta name="twitter:creator" content="@ciceu_ciprian" />
