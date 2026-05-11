@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { DateTwo, UserTwo } from "@svg/index";
 
 const SITE_URL = "https://ciprianciceu.com";
 
 function SocialShareButtons({ url, title }) {
+  const [copied, setCopied] = useState(false);
   const encoded = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(url).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
 
   const shares = [
     {
@@ -16,7 +24,7 @@ function SocialShareButtons({ url, title }) {
       color: "#0A66C2",
     },
     {
-      label: "X / Twitter",
+      label: "X",
       icon: "fa-brands fa-x-twitter",
       href: `https://x.com/intent/tweet?url=${encoded}&text=${encodedTitle}`,
       color: "#000",
@@ -28,51 +36,83 @@ function SocialShareButtons({ url, title }) {
       color: "#1877F2",
     },
     {
-      label: "Medium",
-      icon: "fa-brands fa-medium",
-      href: `https://medium.com/new-story?url=${encoded}`,
-      color: "#000",
-    },
-    {
-      label: "Instagram Story",
+      label: "Instagram",
       icon: "fa-brands fa-instagram",
       href: `https://www.instagram.com/`,
       color: "#E1306C",
-      note: "Copy link",
+    },
+    {
+      label: "Medium",
+      icon: "fa-brands fa-medium",
+      href: `https://medium.com/new-story?url=${encoded}`,
+      color: "#333",
     },
   ];
 
+  const btnBase = {
+    display: 'inline-flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '6px',
+    textDecoration: 'none',
+    cursor: 'pointer',
+    background: 'none',
+    border: 'none',
+    padding: '0',
+  };
+
+  const circle = (color) => ({
+    width: '52px',
+    height: '52px',
+    borderRadius: '50%',
+    background: color,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: '#fff',
+    fontSize: '20px',
+    transition: 'opacity 0.2s, transform 0.15s',
+  });
+
+  const labelStyle = {
+    fontSize: '12px',
+    color: '#555',
+    fontWeight: '500',
+  };
+
   return (
     <div>
-      <p style={{ fontWeight: '600', fontSize: '15px', marginBottom: '12px', color: '#555' }}>Share this article:</p>
-      <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center' }}>
+      <p style={{ fontWeight: '600', fontSize: '14px', marginBottom: '14px', color: '#555' }}>Share this article:</p>
+      <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', alignItems: 'flex-start' }}>
         {shares.map((s) => (
           <a
             key={s.label}
             href={s.href}
             target="_blank"
             rel="noopener noreferrer"
-            title={s.label + (s.note ? ` (${s.note})` : '')}
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '8px',
-              padding: '10px 18px',
-              borderRadius: '8px',
-              background: s.color,
-              color: '#fff',
-              fontSize: '14px',
-              fontWeight: '500',
-              textDecoration: 'none',
-              transition: 'opacity 0.2s',
-            }}
-            onMouseOver={(e) => e.currentTarget.style.opacity = '0.85'}
-            onMouseOut={(e) => e.currentTarget.style.opacity = '1'}
+            style={btnBase}
+            onMouseOver={(e) => e.currentTarget.querySelector('.share-circle').style.opacity = '0.8'}
+            onMouseOut={(e) => e.currentTarget.querySelector('.share-circle').style.opacity = '1'}
           >
-            <i className={s.icon} style={{ fontSize: '16px' }}></i>
-            {s.label}
+            <div className="share-circle" style={circle(s.color)}>
+              <i className={s.icon}></i>
+            </div>
+            <span style={labelStyle}>{s.label}</span>
           </a>
         ))}
+
+        {/* Copy Link */}
+        <button
+          onClick={handleCopy}
+          style={btnBase}
+          onMouseOver={(e) => e.currentTarget.querySelector('.share-circle').style.opacity = '0.8'}
+          onMouseOut={(e) => e.currentTarget.querySelector('.share-circle').style.opacity = '1'}
+        >
+          <div className="share-circle" style={circle(copied ? '#22C55E' : '#6B7280')}>
+            <i className={copied ? 'fa-solid fa-check' : 'fa-solid fa-link'}></i>
+          </div>
+          <span style={labelStyle}>{copied ? 'Copied!' : 'Copy link'}</span>
+        </button>
       </div>
     </div>
   );
