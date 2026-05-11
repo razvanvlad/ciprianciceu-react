@@ -44,6 +44,12 @@ function SocialShareButtons({ url, title }) {
       color: "#E1306C",
     },
     {
+      label: "WhatsApp",
+      icon: "fa-brands fa-whatsapp",
+      href: `https://wa.me/?text=${encodedTitle}%20${encoded}`,
+      color: "#25D366",
+    },
+    {
       label: "Medium",
       icon: "fa-brands fa-medium",
       href: `https://medium.com/new-story?url=${encoded}`,
