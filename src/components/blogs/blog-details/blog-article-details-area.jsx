@@ -108,8 +108,9 @@ function SocialShareButtons({ url, title }) {
         ))}
 
         {/* Copy Link */}
-        <button
-          onClick={handleCopy}
+        <a
+          href="#"
+          onClick={(e) => { e.preventDefault(); handleCopy(); }}
           style={btnBase}
           onMouseOver={(e) => e.currentTarget.querySelector('.share-circle').style.opacity = '0.8'}
           onMouseOut={(e) => e.currentTarget.querySelector('.share-circle').style.opacity = '1'}
@@ -118,7 +119,7 @@ function SocialShareButtons({ url, title }) {
             <i className={copied ? 'fa-solid fa-check' : 'fa-solid fa-link'} style={{ color: '#fff' }}></i>
           </div>
           <span style={labelStyle}>{copied ? 'Copied!' : 'Copy link'}</span>
-        </button>
+        </a>
       </div>
     </div>
   );
