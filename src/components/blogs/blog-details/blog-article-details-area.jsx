@@ -83,9 +83,9 @@ function SocialShareButtons({ url, title }) {
   };
 
   return (
-    <div>
+    <div style={{ textAlign: 'center' }}>
       <p style={{ fontWeight: '600', fontSize: '14px', marginBottom: '14px', color: '#555' }}>Share this article:</p>
-      <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', alignItems: 'flex-start' }}>
+      <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', alignItems: 'flex-start', justifyContent: 'center' }}>
         {shares.map((s) => (
           <a
             key={s.label}
