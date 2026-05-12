@@ -897,7 +897,7 @@ const blog_articles_data = [
 
       <p>And Bitcoin may ultimately become one of the most important financial assets of the 21st century.</p>
 
-      <p><em>— Ciprian Ciceu<br/>Fintech Entrepreneur | Blockchain Advocate | Founder of Mainet X</em></p>
+      <p><em>— Ciprian Ciceu<br/>Fintech Entrepreneur | Blockchain Advisor | Founder of Mainet X</em></p>
 
       <p><em>Disclaimer: This article reflects personal opinions and is intended for educational and informational purposes only. It does not constitute financial or investment advice.</em></p>
     `,
