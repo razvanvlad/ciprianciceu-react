@@ -567,7 +567,7 @@ export default {
         <li>acumularea de active digitale de către instituții;</li>
         <li>dezvoltarea monedelor digitale de stat.</li>
       </ul>
-      <p>Pentru mine, întrebarea nu mai este dacă sistemul financiar mondial se schimbă. Întrebarea este cine va deține activele strategice atunci când această transformare va fi completă.</p>
+      <p>Pentru mine, întrebarea nu mai este dacă sistemul financiar mondial se schimbă. Este cine va rămâne cu activele decisive odată ce această schimbare va deveni ireversibilă.</p>
       <p>Să vedem și ce ne rezervă calculatoarele cuantice într-un viitor blog…. vor ajuta la minarea Bitcoin, sau vor sparge cheile private ale portofelelor „adormite"? Va urma….</p>
       <p><em>— Ciprian Ciceu<br/>Fintech Entrepreneur | Blockchain Advisor | Founder of Mainet X</em></p>
       <p><em>Acest articol reprezintă exclusiv opinia personală a autorului și nu constituie sfat financiar sau recomandare de investiții.</em></p>

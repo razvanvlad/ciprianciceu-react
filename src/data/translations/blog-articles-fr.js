@@ -567,7 +567,7 @@ export default {
         <li>l'accumulation d'actifs numériques par les institutions ;</li>
         <li>le développement des monnaies numériques d'État.</li>
       </ul>
-      <p>Pour moi, la question n'est plus de savoir si le système financier mondial change. La question est qui détiendra les actifs stratégiques lorsque cette transformation sera achevée.</p>
+      <p>Pour moi, la question n'est plus de savoir si le système financier mondial change. C'est de savoir qui se retrouvera avec les actifs décisifs une fois que ce changement sera devenu irréversible.</p>
       <p>Voyons aussi ce que les ordinateurs quantiques nous réservent dans un futur blog…. aideront-ils à miner du Bitcoin, ou casseront-ils les clés privées des portefeuilles « endormis » ? À suivre….</p>
       <p><em>— Ciprian Ciceu<br/>Fintech Entrepreneur | Blockchain Advisor | Founder of Mainet X</em></p>
       <p><em>Cet article représente exclusivement l'opinion personnelle de l'auteur et ne constitue pas un conseil financier ni une recommandation d'investissement.</em></p>

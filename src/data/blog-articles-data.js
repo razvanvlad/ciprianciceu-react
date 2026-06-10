@@ -1004,7 +1004,7 @@ const blog_articles_data = [
         <li>the accumulation of digital assets by institutions;</li>
         <li>the development of state digital currencies.</li>
       </ul>
-      <p>For me, the question is no longer whether the world's financial system is changing. The question is who will own the strategic assets when this transformation is complete.</p>
+      <p>For me, the question is no longer whether the world's financial system is changing. It is who will end up holding the decisive assets once that change becomes irreversible.</p>
       <p>Let's also see what quantum computers have in store for us in a future blog post… will they help mine Bitcoin, or will they crack the private keys of the "dormant" wallets? To be continued….</p>
       <p><em>— Ciprian Ciceu<br/>Fintech Entrepreneur | Blockchain Advisor | Founder of Mainet X</em></p>
       <p><em>This article represents solely the personal opinion of the author and does not constitute financial advice or an investment recommendation.</em></p>
