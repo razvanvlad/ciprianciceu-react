@@ -50,4 +50,9 @@ export default {
     subtitle: 'Could Bitcoin become the modern equivalent of gold reserves for the digital age?',
     sm_desc: 'For decades, the global financial system has been built on confidence, central banking policies, and national reserves backed by strategic assets such as gold and foreign currencies.',
   },
+  11: {
+    title: 'Bitcoin, Wars, The Great Accumulation, Global Debt, and the Great Financial Reset – A Personal Theory About the Future of Money',
+    subtitle: 'A personal theory after 10 years watching Bitcoin, the markets, and how money moves on a global scale.',
+    sm_desc: 'This material is a personal analysis and theory about the evolution of the global financial system. It is not an economic report and not an investment recommendation — just my opinion after 10 years spent watching Bitcoin and the financial markets.',
+  },
 };
