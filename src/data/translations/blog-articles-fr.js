@@ -492,333 +492,74 @@ export default {
     subtitle: 'Une théorie personnelle après 10 ans passés à observer Bitcoin, les marchés et la façon dont l\'argent circule à l\'échelle mondiale.',
     sm_desc: 'Ce document est une analyse et une théorie personnelles sur l\'évolution du système financier mondial. Ce n\'est pas un rapport économique ni une recommandation d\'investissement — simplement mon opinion après 10 ans passés à observer Bitcoin et les marchés financiers.',
     content: `
-      <p><em>Article d'opinion – Ce document représente une analyse et une théorie personnelles sur l'évolution du système financier mondial et ne doit pas être interprété comme un fait avéré ni comme un conseil financier.</em></p>
-
-      <p><em>Ce n'est pas un rapport économique.</em></p>
-
-      <p><em>Ce n'est pas une recommandation d'investissement.</em></p>
-
-      <p><em>C'est simplement mon opinion après 10 ans passés à observer Bitcoin, les marchés financiers et la façon dont l'argent circule à l'échelle mondiale.</em></p>
+      <p><em>Article d'opinion – Ce document représente une analyse et une théorie personnelles sur l'évolution du système financier mondial et ne doit pas être interprété comme un fait avéré ni comme un conseil financier. Ce n'est pas un rapport économique. Ce n'est pas une recommandation d'investissement. C'est simplement mon opinion après 10 ans passés à observer Bitcoin, les marchés financiers et la façon dont l'argent circule à l'échelle mondiale.</em></p>
 
       <h2>Introduction</h2>
-
       <p>Ces dernières années, j'ai suivi attentivement les marchés financiers, l'évolution du Bitcoin, la croissance de la dette mondiale et les changements économiques qui se produisent à un rythme sans précédent.</p>
-
-      <p>Récemment, en une seule journée, les marchés financiers ont perdu environ 665 milliards de dollars de capitalisation, dont plus de 90 milliards rien que sur le marché des cryptomonnaies. De tels événements se répètent de plus en plus souvent et soulèvent une question simple :</p>
-
-      <p>Tout cela n'est-il qu'une volatilité normale du marché, ou assistons-nous à une transformation profonde du système financier mondial ?</p>
-
-      <p>En 2008, le monde a été frappé par la crise financière générée par le marché des prêts hypothécaires subprime aux États-Unis.</p>
-
-      <p>Toujours en 2008 paraît le document technique (White Paper) Bitcoin, signé par le mystérieux Satoshi Nakamoto.</p>
-
-      <p>Coïncidence ?</p>
-
-      <p>Peut-être.</p>
-
-      <p>Ou peut-être pas.</p>
-
-      <p>C'est ici que commence l'une des questions les plus intéressantes de l'ère moderne, qui m'a toujours fasciné : qui se cache derrière la véritable origine de Bitcoin ?</p>
-
-      <p>On nous a dit que Bitcoin avait été créé par Satoshi Nakamoto.</p>
-
-      <p>Le problème est que personne ne sait avec certitude qui est Satoshi Nakamoto. Peut-être Hal Finney ? Personnellement, je suis enclin à croire que c'est possible, pour deux raisons : son portefeuille n'a jamais été touché depuis sa création, et Hal Finney est décédé en emportant avec lui les « clés privées » de son portefeuille… ou peut-être les a-t-il laissées en héritage, pour n'être accessibles que lorsque le BTC atteindra un million de dollars ? Je suis sûr qu'il y croyait.</p>
-
-      <p>2) En calligraphie japonaise, Satoshi Nakamoto s'écrit ainsi : サトシ・ナカモト …. HAL FINNEY … il y a une certaine ressemblance — je suis sûr que vous la voyez aussi.</p>
-
-      <p>Pourtant, même avec ces spéculations, après presque deux décennies, son identité demeure l'un des plus grands mystères de l'ère numérique.</p>
-
-      <p>Était-il un programmeur génial ?</p>
-
-      <p>Était-ce un groupe de développeurs ?</p>
-
-      <p>Était-ce un projet académique ?</p>
-
-      <p>Ou peut-être quelque chose de bien plus complexe ?</p>
-
-      <p>Certains ont spéculé au fil du temps que derrière Bitcoin pourraient se trouver des organisations ou des agences disposant de ressources extraordinaires, y compris des structures gouvernementales ou de renseignement telles que la NSA.</p>
-
-      <p>Il n'existe aucune preuve pour confirmer cette théorie.</p>
-
-      <p>Mais il est difficile d'ignorer le fait que Bitcoin est apparu exactement au moment où le système financier mondial traversait la plus grande crise des dernières décennies.</p>
-
-      <p>Coïncidence ?</p>
-
-      <p>Peut-être.</p>
-
-      <p>Mais après presque 10 ans passés dans cette industrie, j'ai appris que parfois les questions les plus intéressantes sont celles auxquelles nous n'avons pas encore de réponse.</p>
-
-      <p>Il n'existe aucune preuve pour confirmer l'une des versions.</p>
-
-      <p>Mais la question reste ouverte.</p>
+      <p>Récemment, en une seule journée, les marchés financiers ont perdu environ 665 milliards de dollars de capitalisation, dont plus de 90 milliards rien que sur le marché des cryptomonnaies. De tels événements se répètent de plus en plus souvent et soulèvent une question simple : tout cela n'est-il qu'une volatilité normale du marché, ou assistons-nous à une transformation profonde du système financier mondial ?</p>
+      <p>En 2008, le monde a été frappé par la crise financière générée par le marché des prêts hypothécaires subprime aux États-Unis. Toujours en 2008 paraît le document technique (White Paper) Bitcoin, signé par le mystérieux Satoshi Nakamoto. Coïncidence ? Peut-être. Ou peut-être pas.</p>
+      <p>C'est ici que commence l'une des questions les plus intéressantes de l'ère moderne, qui m'a toujours fasciné : qui se cache derrière la véritable origine de Bitcoin ? On nous a dit que Bitcoin avait été créé par Satoshi Nakamoto. Le problème est que personne ne sait avec certitude qui est Satoshi Nakamoto.</p>
+      <p>Peut-être Hal Finney ? Personnellement, je suis enclin à croire que c'est possible, pour deux raisons : son portefeuille n'a jamais été touché depuis sa création, et Hal Finney est décédé en emportant avec lui les « clés privées » de son portefeuille… ou peut-être les a-t-il laissées en héritage, pour n'être accessibles que lorsque le BTC atteindra un million de dollars ? Je suis sûr qu'il y croyait. Et en calligraphie japonaise, Satoshi Nakamoto s'écrit ainsi : サトシ・ナカモト …. HAL FINNEY … il y a une certaine ressemblance — je suis sûr que vous la voyez aussi.</p>
+      <p>Pourtant, même avec ces spéculations, après presque deux décennies, son identité demeure l'un des plus grands mystères de l'ère numérique. Était-il un programmeur génial ? Était-ce un groupe de développeurs ? Était-ce un projet académique ? Ou peut-être quelque chose de bien plus complexe ?</p>
+      <p>Certains ont spéculé au fil du temps que derrière Bitcoin pourraient se trouver des organisations ou des agences disposant de ressources extraordinaires, y compris des structures gouvernementales ou de renseignement telles que la NSA. Il n'existe aucune preuve pour confirmer cette théorie. Mais il est difficile d'ignorer le fait que Bitcoin est apparu exactement au moment où le système financier mondial traversait la plus grande crise des dernières décennies.</p>
+      <p>Coïncidence ? Peut-être. Mais après presque 10 ans passés dans cette industrie, j'ai appris que parfois les questions les plus intéressantes sont celles auxquelles nous n'avons pas encore de réponse. Il n'existe aucune preuve pour confirmer l'une des versions, mais la question reste ouverte.</p>
 
       <h2>Ma théorie : Bitcoin comme mécanisme de transition financière</h2>
-
-      <p>Nous entrons ici dans le domaine des hypothèses personnelles.</p>
-
-      <p>Je crois qu'il est possible que Bitcoin soit devenu quelque chose de bien plus important que ce que ses créateurs avaient imaginé.</p>
-
-      <p>Quel que soit son créateur, les États et les grandes institutions financières ont réalisé qu'il représente le premier actif numérique véritablement limité de l'histoire.</p>
-
-      <p>Il n'existe que 21 millions de Bitcoin.</p>
-
-      <p>On ne peut pas en imprimer davantage.</p>
-
-      <p>Ils ne peuvent pas être créés par une décision politique.</p>
-
-      <p>Ils ne peuvent pas être multipliés par décret.</p>
-
-      <p>Pour cette raison, Bitcoin commence à ressembler de plus en plus à l'or.</p>
-
-      <p>Mais sous une forme numérique.</p>
+      <p>Nous entrons ici dans le domaine des hypothèses personnelles. Je crois qu'il est possible que Bitcoin soit devenu quelque chose de bien plus important que ce que ses créateurs avaient imaginé.</p>
+      <p>Quel que soit son créateur, les États et les grandes institutions financières ont réalisé qu'il représente le premier actif numérique véritablement limité de l'histoire. Il n'existe que 21 millions de Bitcoin. On ne peut pas en imprimer davantage. Ils ne peuvent pas être créés par une décision politique. Ils ne peuvent pas être multipliés par décret.</p>
+      <p>Pour cette raison, Bitcoin commence à ressembler de plus en plus à l'or — mais sous une forme numérique.</p>
 
       <h2>La volatilité de Bitcoin : marché libre ou mécanisme de redistribution ?</h2>
-
-      <p>Bitcoin est l'une des classes d'actifs les plus volatiles au monde.</p>
-
-      <p>Des milliards de dollars sont liquidés en une seule journée.</p>
-
-      <p>Les traders perdent.</p>
-
-      <p>Les traders gagnent.</p>
-
-      <p>Les fonds se transfèrent continuellement entre les participants.</p>
-
+      <p>Bitcoin est l'une des classes d'actifs les plus volatiles au monde. Des milliards de dollars sont liquidés en une seule journée. Les traders perdent, les traders gagnent, et les fonds se transfèrent continuellement entre les participants.</p>
       <p>Ma théorie est que cette énorme volatilité n'est pas seulement une caractéristique naturelle du marché, mais aussi un processus par lequel les actifs numériques passent progressivement des mains des investisseurs émotionnels à celles des investisseurs institutionnels.</p>
-
       <p>Chaque fois que la panique apparaît :</p>
-
       <ul>
         <li>la population vend ;</li>
         <li>les institutions achètent.</li>
       </ul>
-
       <p>Chaque fois que l'euphorie apparaît :</p>
-
       <ul>
         <li>la population achète ;</li>
         <li>les institutions distribuent.</li>
       </ul>
-
-      <p>Ce comportement est observable sur tous les marchés financiers et ne nécessite pas l'existence d'une conspiration pour fonctionner.</p>
-
-      <p>C'est tout simplement la psychologie des masses.</p>
+      <p>Ce comportement est observable sur tous les marchés financiers et ne nécessite pas l'existence d'une conspiration pour fonctionner. C'est tout simplement la psychologie des masses.</p>
 
       <h2>Bitcoin – le nouvel or du XXIe siècle ?</h2>
-
-      <p>Je crois qu'au cours des 10 à 20 prochaines années, Bitcoin sera perçu de manière similaire à l'or.</p>
-
-      <p>Non pas comme une monnaie pour les achats quotidiens.</p>
-
-      <p>Mais comme un actif stratégique.</p>
-
-      <p>Tout comme les États accumulent des réserves d'or, il est possible qu'à l'avenir ils accumulent également des réserves de Bitcoin.</p>
-
-      <p>Certains États ont déjà commencé ce processus.</p>
-
+      <p>Je crois qu'au cours des 10 à 20 prochaines années, Bitcoin sera perçu de manière similaire à l'or. Non pas comme une monnaie pour les achats quotidiens, mais comme un actif stratégique. Tout comme les États accumulent des réserves d'or, il est possible qu'à l'avenir ils accumulent également des réserves de Bitcoin. Certains États ont déjà commencé ce processus.</p>
       <p>Je suis entré sur le marché Crypto en 2016, lorsqu'il se négociait autour de 870 dollars en décembre sur Coinbase.</p>
-
       <blockquote style="border-left: 4px solid #0EA5E9; padding-left: 20px; margin: 30px 0; font-style: italic; color: #555;">
         « Ne me demandez pas si je détiens encore ceux que j'ai achetés à 870 — je m'étonne moi-même d'avoir tenu jusqu'à ce qu'ils atteignent 8000. Mais un x10 en une seule année, c'est tout de même bien, je dirais :) »
       </blockquote>
-
-      <p>À cette époque, la plupart des gens considéraient Bitcoin comme une plaisanterie.</p>
-
-      <p>Une mode.</p>
-
-      <p>Une expérience.</p>
-
-      <p>Certains disaient qu'il disparaîtrait en quelques mois.</p>
-
-      <p>En 2017, je l'ai vu grimper d'environ 1 000 dollars à près de 20 000 dollars.</p>
+      <p>À cette époque, la plupart des gens considéraient Bitcoin comme une plaisanterie. Une mode. Une expérience. Certains disaient qu'il disparaîtrait en quelques mois. En 2017, je l'ai vu grimper d'environ 1 000 dollars à près de 20 000 dollars.</p>
 
       <h2>La crise de 2008 et l'apparition de Bitcoin</h2>
-
-      <p>En mars 2020 (COVID-19), je l'ai vu s'effondrer jusqu'à la zone des 3 850 dollars. (J'ai mis une de mes voitures en gage pour en racheter :)</p>
-
-      <p>J'ai vu des gens dire qu'il était mort.</p>
-
-      <p>Puis je l'ai vu revenir.</p>
-
-      <p>Puis dépasser 20 000 dollars.</p>
-
-      <p>Puis 50 000.</p>
-
-      <p>Puis 100 000.</p>
-
-      <p>Et c'est précisément pour cette raison qu'aujourd'hui je ne me demande plus si Bitcoin survivra.</p>
-
-      <p>Je me demande qui le détiendra, le contrôlera et en possédera suffisamment pour manipuler le prix.</p>
-
-      <p>Parce que c'est là, je crois, que se trouve la véritable histoire.</p>
-
-      <p>En 2016, presque personne ne voulait de Bitcoin.</p>
-
-      <p>En 2026, BlackRock l'achète.</p>
-
-      <p>Strategy (anciennement MicroStrategy) l'achète.</p>
-
-      <p>Les ETF l'achètent.</p>
-
-      <p>Elon Musk l'achète.</p>
-
-      <p>Les fonds d'investissement l'achètent.</p>
-
-      <p>Des entreprises cotées en bourse l'achètent.</p>
-
-      <p>Des institutions qui, il y a quelques années, le critiquaient ou l'ignoraient complètement l'achètent.</p>
-
-      <p>Ne vous demandez-vous pas pourquoi ?</p>
-
-      <p>Et exactement au cours de cette même période, nous observons un autre phénomène.</p>
-
-      <p>Il devient de plus en plus difficile de détenir du Bitcoin de manière anonyme.</p>
+      <p>En mars 2020 (COVID-19), je l'ai vu s'effondrer jusqu'à la zone des 3 850 dollars. (J'ai mis une de mes voitures en gage pour en racheter :) J'ai vu des gens dire qu'il était mort. Puis je l'ai vu revenir, puis dépasser 20 000 dollars, puis 50 000, puis 100 000.</p>
+      <p>Et c'est précisément pour cette raison qu'aujourd'hui je ne me demande plus si Bitcoin survivra. Je me demande qui le détiendra, le contrôlera et en possédera suffisamment pour manipuler le prix. Parce que c'est là, je crois, que se trouve la véritable histoire.</p>
+      <p>En 2016, presque personne ne voulait de Bitcoin. En 2026, il est acheté par BlackRock, par Strategy (anciennement MicroStrategy), par les ETF, par Elon Musk, par les fonds d'investissement, par des entreprises cotées en bourse — par des institutions qui, il y a quelques années, le critiquaient ou l'ignoraient complètement. Ne vous demandez-vous pas pourquoi ?</p>
+      <p>Et exactement au cours de cette même période, nous observons un autre phénomène : il devient de plus en plus difficile de détenir du Bitcoin de manière anonyme.</p>
 
       <h2>KYC, réglementation et contrôle</h2>
-
       <p>Nous observons déjà une tendance mondiale :</p>
-
       <ul>
         <li>vérifications KYC obligatoires ;</li>
         <li>déclarations fiscales automatiques ;</li>
         <li>réglementations plus strictes pour les plateformes d'échange ;</li>
         <li>surveillance des flux financiers.</li>
       </ul>
-
-      <p>Les autorités soutiennent que ces mesures sont nécessaires pour lutter contre la fraude, le blanchiment d'argent et le financement d'activités illégales.</p>
-
-      <p>Les critiques affirment qu'elles réduisent progressivement l'anonymat financier.</p>
-
-      <p>Quelle que soit la perspective adoptée, la direction semble claire : plus de transparence et moins d'anonymat.</p>
-
-      <p>La question que je me pose est simple :</p>
-
-      <p>Si Bitcoin n'est qu'un actif spéculatif, pourquoi existe-t-il un si grand besoin de savoir exactement qui le détient ?</p>
-
-      <p>Peut-être existe-t-il des explications parfaitement légitimes.</p>
-
-      <p>Lutter contre la fraude.</p>
-
-      <p>Lutter contre le blanchiment d'argent.</p>
-
-      <p>Lutter contre le financement d'activités illégales.</p>
-
-      <p>Mais il est impossible de ne pas remarquer que, à mesure que les grandes institutions accumulent du Bitcoin, le niveau de contrôle et d'identification des utilisateurs augmente constamment.</p>
-
-      <p>Coïncidence ?</p>
-
-      <p>Peut-être.</p>
-
-      <p>Ou peut-être que Bitcoin est déjà devenu trop important pour être ignoré.</p>
-
-      <p>Une autre chose qui me fascine est la volatilité.</p>
-
-      <p>Chaque jour, nous voyons des milliards de dollars liquidés.</p>
-
-      <p>Des positions longues détruites.</p>
-
-      <p>Des positions courtes détruites.</p>
-
-      <p>Des comptes effacés.</p>
-
-      <p>Des gens qui perdent en une seule journée les économies de plusieurs années.</p>
-
-      <p>Les médias parlent de ceux qui ont perdu.</p>
-
-      <p>Moi, je regarde autre chose.</p>
-
-      <p>Qui achète ?</p>
-
-      <p>Parce que lorsque quelqu'un est liquidé, quelqu'un d'autre achète.</p>
-
-      <p>Lorsque quelqu'un vend dans la panique, quelqu'un d'autre accumule.</p>
-
-      <p>Lorsque des milliards disparaissent du marché, les actifs ne disparaissent pas.</p>
-
-      <p>Ils changent de propriétaire.</p>
-
-      <p>Et alors surgit la question qui me hante depuis des années :</p>
-
-      <p>Assistons-nous peut-être à l'un des plus grands transferts de richesse numérique de l'histoire moderne ?</p>
-
-      <p>Pas des institutions vers la population.</p>
-
-      <p>Mais l'inverse.</p>
-
-      <p>De la population vers les institutions.</p>
-
-      <p>Puis il y a la composante géopolitique.</p>
-
-      <p>Je n'affirme pas que les guerres sont déclenchées pour Bitcoin.</p>
-
-      <p>Je n'en ai aucune preuve.</p>
-
-      <p>Mais j'observe certaines choses.</p>
-
-      <p>J'observe que l'énergie devient de plus en plus importante.</p>
-
-      <p>J'observe que la puissance de calcul devient de plus en plus importante.</p>
-
-      <p>J'observe que l'infrastructure numérique devient de plus en plus importante.</p>
-
-      <p>Et j'observe que Bitcoin dépend directement de tous ces éléments.</p>
-
-      <p>Je me permets donc de poser quelques questions.</p>
-
-      <p>Pourquoi le Groenland est-il devenu si important stratégiquement ces dernières années ?</p>
-
-      <p>S'agit-il uniquement de sa position géographique ?</p>
-
-      <p>Ou aussi de ressources, d'énergie, de climat et des futures infrastructures numériques ?</p>
-
-      <p>Dans un monde où les centres de données et les opérations de minage consomment des quantités énormes d'énergie, l'accès à une énergie bon marché et à un climat froid peut devenir un avantage stratégique énorme.</p>
-
-      <p>Je me pose la même question à propos d'autres régions du monde riches en énergie.</p>
-
-      <p>Peut-être que les réponses sont simples.</p>
-
-      <p>Peut-être que non.</p>
-
-      <p>Mais je crois qu'il vaut la peine de poser les questions.</p>
-
-      <p>Parce que les grandes transformations économiques sont rarement entièrement expliquées au moment où elles se produisent.</p>
-
-      <p>Elles sont généralement comprises des années plus tard.</p>
-
-      <p>Peut-être que je me trompe.</p>
-
-      <p>Peut-être que tout cela n'est que de simples coïncidences.</p>
-
-      <p>Mais après presque une décennie passée à observer Bitcoin, j'ai appris une chose :</p>
-
-      <p>Quand tout le monde vend, quelqu'un achète.</p>
-
-      <p>Quand la panique apparaît, quelqu'un en profite.</p>
-
-      <p>Quand des milliards sont liquidés, quelqu'un accumule.</p>
-
-      <p>Et la question qui m'intéresse le plus n'est pas de savoir si Bitcoin atteindra 1 000 000 d'euros — car de cela je suis convaincu.</p>
-
-      <p>La bonne question, celle qui m'intéresse, est : qui détiendra les actifs stratégiques lorsque cette transformation sera achevée ?</p>
-
-      <p>Et parmi tous les actifs existant aujourd'hui, Bitcoin semble être celui qui attire le plus l'attention des institutions, des États et des investisseurs à la fois.</p>
-
-      <p>Peut-être que dans 10 ans, nous regarderons en arrière et découvrirons que la véritable révolution n'a pas été l'apparition des cryptomonnaies. Mais la transformation de Bitcoin en réserve stratégique numérique du XXIe siècle.</p>
-
-      <p>Qui détiendra la majorité des Bitcoin lorsqu'il y parviendra ?</p>
+      <p>Les autorités soutiennent que ces mesures sont nécessaires pour lutter contre la fraude, le blanchiment d'argent et le financement d'activités illégales. Les critiques affirment qu'elles réduisent progressivement l'anonymat financier. Quelle que soit la perspective adoptée, la direction semble claire : plus de transparence et moins d'anonymat.</p>
+      <p>La question que je me pose est simple : si Bitcoin n'est qu'un actif spéculatif, pourquoi existe-t-il un si grand besoin de savoir exactement qui le détient ? Peut-être existe-t-il des explications parfaitement légitimes — lutter contre la fraude, le blanchiment d'argent et le financement d'activités illégales. Mais il est impossible de ne pas remarquer que, à mesure que les grandes institutions accumulent du Bitcoin, le niveau de contrôle et d'identification des utilisateurs augmente constamment. Coïncidence ? Peut-être. Ou peut-être que Bitcoin est déjà devenu trop important pour être ignoré.</p>
+      <p>Une autre chose qui me fascine est la volatilité. Chaque jour, nous voyons des milliards de dollars liquidés — des positions longues détruites, des positions courtes détruites, des comptes effacés, des gens qui perdent en une seule journée les économies de plusieurs années. Les médias parlent de ceux qui ont perdu. Moi, je regarde autre chose : qui achète ? Parce que lorsque quelqu'un est liquidé, quelqu'un d'autre achète. Lorsque quelqu'un vend dans la panique, quelqu'un d'autre accumule. Lorsque des milliards disparaissent du marché, les actifs ne disparaissent pas — ils changent de propriétaire.</p>
+      <p>Et alors surgit la question qui me hante depuis des années : assistons-nous peut-être à l'un des plus grands transferts de richesse numérique de l'histoire moderne ? Pas des institutions vers la population, mais l'inverse — de la population vers les institutions.</p>
+      <p>Puis il y a la composante géopolitique. Je n'affirme pas que les guerres sont déclenchées pour Bitcoin — je n'en ai aucune preuve. Mais j'observe certaines choses. J'observe que l'énergie, la puissance de calcul et l'infrastructure numérique deviennent de plus en plus importantes. Et j'observe que Bitcoin dépend directement de tous ces éléments.</p>
+      <p>Je me permets donc de poser quelques questions. Pourquoi le Groenland est-il devenu si important stratégiquement ces dernières années ? S'agit-il uniquement de sa position géographique, ou aussi de ressources, d'énergie, de climat et des futures infrastructures numériques ? Dans un monde où les centres de données et les opérations de minage consomment des quantités énormes d'énergie, l'accès à une énergie bon marché et à un climat froid peut devenir un avantage stratégique énorme. Je me pose la même question à propos d'autres régions du monde riches en énergie.</p>
+      <p>Peut-être que les réponses sont simples. Peut-être que non. Mais je crois qu'il vaut la peine de poser les questions, car les grandes transformations économiques sont rarement entièrement expliquées au moment où elles se produisent — elles sont généralement comprises des années plus tard.</p>
+      <p>Peut-être que je me trompe. Peut-être que tout cela n'est que de simples coïncidences. Mais après presque une décennie passée à observer Bitcoin, j'ai appris une chose : quand tout le monde vend, quelqu'un achète ; quand la panique apparaît, quelqu'un en profite ; quand des milliards sont liquidés, quelqu'un accumule.</p>
+      <p>Et la question qui m'intéresse le plus n'est pas de savoir si Bitcoin atteindra 1 000 000 d'euros — car de cela je suis convaincu. La bonne question, celle qui m'intéresse, est : qui détiendra les actifs stratégiques lorsque cette transformation sera achevée ?</p>
+      <p>Et parmi tous les actifs existant aujourd'hui, Bitcoin semble être celui qui attire le plus l'attention des institutions, des États et des investisseurs à la fois. Peut-être que dans 10 ans, nous regarderons en arrière et découvrirons que la véritable révolution n'a pas été l'apparition des cryptomonnaies, mais la transformation de Bitcoin en réserve stratégique numérique du XXIe siècle. Qui détiendra la majorité des Bitcoin lorsqu'il y parviendra ?</p>
 
       <h2>Conclusion</h2>
-
-      <p>Je ne prétends pas détenir la vérité.</p>
-
-      <p>Peut-être que ma théorie est fausse.</p>
-
-      <p>Peut-être qu'elle n'est que partiellement correcte.</p>
-
-      <p>Mais je crois que nous vivons l'une des transitions financières les plus importantes de l'histoire moderne.</p>
-
+      <p>Je ne prétends pas détenir la vérité. Peut-être que ma théorie est fausse. Peut-être qu'elle n'est que partiellement correcte. Mais je crois que nous vivons l'une des transitions financières les plus importantes de l'histoire moderne.</p>
       <p>Nous voyons simultanément :</p>
-
       <ul>
         <li>des dettes mondiales records ;</li>
         <li>la numérisation de l'argent ;</li>
@@ -826,21 +567,9 @@ export default {
         <li>l'accumulation d'actifs numériques par les institutions ;</li>
         <li>le développement des monnaies numériques d'État.</li>
       </ul>
-
-      <p>Pour moi, la question n'est plus de savoir si le système financier mondial change.</p>
-
-      <p>La question est : qui détiendra les actifs stratégiques lorsque cette transformation sera achevée ?</p>
-
-      <p>Et parmi tous les actifs existant aujourd'hui, Bitcoin semble être celui qui attire le plus l'attention des institutions, des États et des investisseurs à la fois.</p>
-
-      <p>Peut-être que dans 10 ans, nous regarderons en arrière et découvrirons que la véritable révolution n'a pas été l'apparition des cryptomonnaies. Mais la transformation de Bitcoin en réserve stratégique numérique du XXIe siècle.</p>
-
-      <p>Voyons aussi ce que les ordinateurs quantiques nous réservent dans un futur blog…. aideront-ils à miner du Bitcoin, ou casseront-ils les clés privées des portefeuilles « endormis » ?</p>
-
-      <p>À suivre….</p>
-
+      <p>Pour moi, la question n'est plus de savoir si le système financier mondial change. La question est qui détiendra les actifs stratégiques lorsque cette transformation sera achevée.</p>
+      <p>Voyons aussi ce que les ordinateurs quantiques nous réservent dans un futur blog…. aideront-ils à miner du Bitcoin, ou casseront-ils les clés privées des portefeuilles « endormis » ? À suivre….</p>
       <p><em>— Ciprian Ciceu<br/>Fintech Entrepreneur | Blockchain Advisor | Founder of Mainet X</em></p>
-
       <p><em>Cet article représente exclusivement l'opinion personnelle de l'auteur et ne constitue pas un conseil financier ni une recommandation d'investissement.</em></p>
     `,
   },

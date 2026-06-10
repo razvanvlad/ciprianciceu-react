@@ -492,333 +492,74 @@ export default {
     subtitle: 'O teorie personală după 10 ani petrecuți urmărind Bitcoin, piețele financiare și modul în care se mișcă banii la nivel global.',
     sm_desc: 'Acest material reprezintă o analiză și o teorie personală asupra evoluției sistemului financiar global. Nu este un raport economic și nu este o recomandare de investiții — este doar opinia mea după 10 ani petrecuți urmărind Bitcoin și piețele financiare.',
     content: `
-      <p><em>Articol de opinie – Acest material reprezintă o analiză și o teorie personală asupra evoluției sistemului financiar global și nu trebuie interpretat ca fapt demonstrat sau consultanță financiară.</em></p>
-
-      <p><em>Nu este un raport economic.</em></p>
-
-      <p><em>Nu este o recomandare de investiții.</em></p>
-
-      <p><em>Este doar opinia mea după 10 ani petrecuți urmărind Bitcoin, piețele financiare și modul în care se mișcă banii la nivel global.</em></p>
+      <p><em>Articol de opinie – Acest material reprezintă o analiză și o teorie personală asupra evoluției sistemului financiar global și nu trebuie interpretat ca fapt demonstrat sau consultanță financiară. Nu este un raport economic. Nu este o recomandare de investiții. Este doar opinia mea după 10 ani petrecuți urmărind Bitcoin, piețele financiare și modul în care se mișcă banii la nivel global.</em></p>
 
       <h2>Introducere</h2>
-
       <p>În ultimii ani am urmărit cu atenție piețele financiare, evoluția Bitcoinului, creșterea datoriei globale și schimbările economice care au loc într-un ritm fără precedent.</p>
-
-      <p>Recent, într-o singură zi, piețele financiare au pierdut aproximativ 665 miliarde de dolari din capitalizare, dintre care peste 90 miliarde doar din piața criptomonedelor. Astfel de evenimente se repetă din ce în ce mai des și ridică o întrebare simplă:</p>
-
-      <p>Este totul doar volatilitate normală de piață sau asistăm la o transformare profundă a sistemului financiar mondial?</p>
-
-      <p>În 2008 lumea a fost lovită de criza financiară generată de piața creditelor ipotecare subprime din Statele Unite.</p>
-
-      <p>Tot în 2008 apare documentul tehnic (White Paper) Bitcoin, semnat de misteriosul Satoshi Nakamoto.</p>
-
-      <p>Coincidență?</p>
-
-      <p>Poate.</p>
-
-      <p>Sau poate nu.</p>
-
-      <p>Aici începe una dintre cele mai interesante întrebări ale epocii moderne care m-a fascinat întotdeauna: cine este în spatele adevăratei origini a Bitcoin.</p>
-
-      <p>Ni s-a spus că Bitcoin a fost creat de Satoshi Nakamoto.</p>
-
-      <p>Problema este că nimeni nu știe cu certitudine cine este Satoshi Nakamoto. Poate Hal Finney? Eu personal tind să cred că e posibil, din 2 perspective: portofelul lui nu a mai fost atins niciodată de la creare, Hal Finney a decedat luând cu el „cheile private" ale portofelului său … sau poate le-a lăsat moștenire și vor fi accesate doar când BTC va atinge un milion de dolari? Sunt sigur că el credea asta.</p>
-
-      <p>2) Caligrafic, în japoneză, Satoshi Nakamoto se scrie așa: サトシ・ナカモト …. HAL FINNEY … ceva asemănare vedeți și voi, sunt sigur.</p>
-
-      <p>Totuși, chiar și cu aceste speculații, după aproape două decenii, identitatea sa rămâne unul dintre cele mai mari mistere ale erei digitale.</p>
-
-      <p>A fost un programator genial?</p>
-
-      <p>A fost un grup de dezvoltatori?</p>
-
-      <p>A fost un proiect academic?</p>
-
-      <p>Sau poate ceva mult mai complex?</p>
-
-      <p>Unii au speculat de-a lungul timpului că în spatele Bitcoin s-ar putea afla organizații sau agenții cu resurse extraordinare, inclusiv structuri guvernamentale sau de informații precum NSA.</p>
-
-      <p>Nu există dovezi care să confirme această teorie.</p>
-
-      <p>Dar este greu să ignori faptul că Bitcoin a apărut exact în momentul în care sistemul financiar global trecea prin cea mai mare criză din ultimele decenii.</p>
-
-      <p>Coincidență?</p>
-
-      <p>Poate.</p>
-
-      <p>Dar după aproape 10 ani petrecuți în această industrie, am învățat că uneori cele mai interesante întrebări sunt cele la care încă nu avem răspuns.</p>
-
-      <p>Nu există dovezi care să confirme una dintre variante.</p>
-
-      <p>Dar întrebarea rămâne deschisă.</p>
+      <p>Recent, într-o singură zi, piețele financiare au pierdut aproximativ 665 miliarde de dolari din capitalizare, dintre care peste 90 miliarde doar din piața criptomonedelor. Astfel de evenimente se repetă din ce în ce mai des și ridică o întrebare simplă: este totul doar volatilitate normală de piață sau asistăm la o transformare profundă a sistemului financiar mondial?</p>
+      <p>În 2008 lumea a fost lovită de criza financiară generată de piața creditelor ipotecare subprime din Statele Unite. Tot în 2008 apare documentul tehnic (White Paper) Bitcoin, semnat de misteriosul Satoshi Nakamoto. Coincidență? Poate. Sau poate nu.</p>
+      <p>Aici începe una dintre cele mai interesante întrebări ale epocii moderne care m-a fascinat întotdeauna: cine este în spatele adevăratei origini a Bitcoin? Ni s-a spus că Bitcoin a fost creat de Satoshi Nakamoto. Problema este că nimeni nu știe cu certitudine cine este Satoshi Nakamoto.</p>
+      <p>Poate Hal Finney? Eu personal tind să cred că e posibil, din 2 perspective: portofelul lui nu a mai fost atins niciodată de la creare, iar Hal Finney a decedat luând cu el „cheile private" ale portofelului său … sau poate le-a lăsat moștenire și vor fi accesate doar când BTC va atinge un milion de dolari? Sunt sigur că el credea asta. Iar caligrafic, în japoneză, Satoshi Nakamoto se scrie așa: サトシ・ナカモト …. HAL FINNEY … ceva asemănare vedeți și voi, sunt sigur.</p>
+      <p>Totuși, chiar și cu aceste speculații, după aproape două decenii, identitatea sa rămâne unul dintre cele mai mari mistere ale erei digitale. A fost un programator genial? A fost un grup de dezvoltatori? A fost un proiect academic? Sau poate ceva mult mai complex?</p>
+      <p>Unii au speculat de-a lungul timpului că în spatele Bitcoin s-ar putea afla organizații sau agenții cu resurse extraordinare, inclusiv structuri guvernamentale sau de informații precum NSA. Nu există dovezi care să confirme această teorie. Dar este greu să ignori faptul că Bitcoin a apărut exact în momentul în care sistemul financiar global trecea prin cea mai mare criză din ultimele decenii.</p>
+      <p>Coincidență? Poate. Dar după aproape 10 ani petrecuți în această industrie, am învățat că uneori cele mai interesante întrebări sunt cele la care încă nu avem răspuns. Nu există dovezi care să confirme una dintre variante, dar întrebarea rămâne deschisă.</p>
 
       <h2>Teoria mea: Bitcoin ca mecanism de tranziție financiară</h2>
-
-      <p>Aici intrăm în zona ipotezelor personale.</p>
-
-      <p>Cred că este posibil ca Bitcoin să fi devenit ceva mult mai important decât și-au imaginat creatorii săi.</p>
-
-      <p>Indiferent cine l-a creat, statele și marile instituții financiare au realizat că reprezintă primul activ digital cu adevărat limitat din istorie.</p>
-
-      <p>Există doar 21 de milioane de Bitcoin.</p>
-
-      <p>Nu pot fi imprimați alții.</p>
-
-      <p>Nu pot fi creați printr-o decizie politică.</p>
-
-      <p>Nu pot fi multiplicați printr-un decret.</p>
-
-      <p>Din acest motiv, Bitcoin începe să semene din ce în ce mai mult cu aurul.</p>
-
-      <p>Doar că într-o formă digitală.</p>
+      <p>Aici intrăm în zona ipotezelor personale. Cred că este posibil ca Bitcoin să fi devenit ceva mult mai important decât și-au imaginat creatorii săi.</p>
+      <p>Indiferent cine l-a creat, statele și marile instituții financiare au realizat că reprezintă primul activ digital cu adevărat limitat din istorie. Există doar 21 de milioane de Bitcoin. Nu pot fi imprimați alții. Nu pot fi creați printr-o decizie politică. Nu pot fi multiplicați printr-un decret.</p>
+      <p>Din acest motiv, Bitcoin începe să semene din ce în ce mai mult cu aurul — doar că într-o formă digitală.</p>
 
       <h2>Volatilitatea Bitcoin: piață liberă sau mecanism de redistribuire?</h2>
-
-      <p>Bitcoin este una dintre cele mai volatile clase de active din lume.</p>
-
-      <p>Miliarde de dolari sunt lichidate într-o singură zi.</p>
-
-      <p>Traderii pierd.</p>
-
-      <p>Traderii câștigă.</p>
-
-      <p>Fondurile se transferă continuu între participanți.</p>
-
+      <p>Bitcoin este una dintre cele mai volatile clase de active din lume. Miliarde de dolari sunt lichidate într-o singură zi. Traderii pierd, traderii câștigă, iar fondurile se transferă continuu între participanți.</p>
       <p>Teoria mea este că această volatilitate uriașă nu reprezintă doar o caracteristică naturală a pieței, ci și un proces prin care activele digitale ajung treptat din mâinile investitorilor emoționali în mâinile investitorilor instituționali.</p>
-
       <p>De fiecare dată când apare panică:</p>
-
       <ul>
         <li>populația vinde;</li>
         <li>instituțiile cumpără.</li>
       </ul>
-
       <p>De fiecare dată când apare euforia:</p>
-
       <ul>
         <li>populația cumpără;</li>
         <li>instituțiile distribuie.</li>
       </ul>
-
-      <p>Acest comportament este observabil pe toate piețele financiare și nu necesită existența unei conspirații pentru a funcționa.</p>
-
-      <p>Este pur și simplu psihologia maselor.</p>
+      <p>Acest comportament este observabil pe toate piețele financiare și nu necesită existența unei conspirații pentru a funcționa. Este pur și simplu psihologia maselor.</p>
 
       <h2>Bitcoin – noul aur al secolului XXI?</h2>
-
-      <p>Cred că în următorii 10–20 de ani Bitcoin va fi perceput similar aurului.</p>
-
-      <p>Nu ca monedă pentru cumpărături zilnice.</p>
-
-      <p>Ci ca activ strategic.</p>
-
-      <p>Exact cum statele acumulează rezerve de aur, este posibil ca în viitor să acumuleze și rezerve de Bitcoin.</p>
-
-      <p>Unele state au început deja acest proces.</p>
-
+      <p>Cred că în următorii 10–20 de ani Bitcoin va fi perceput similar aurului. Nu ca monedă pentru cumpărături zilnice, ci ca activ strategic. Exact cum statele acumulează rezerve de aur, este posibil ca în viitor să acumuleze și rezerve de Bitcoin. Unele state au început deja acest proces.</p>
       <p>Am intrat în piața Crypto în 2016, când se tranzacționa în jurul valorii de 870 de dolari în decembrie pe Coinbase.</p>
-
       <blockquote style="border-left: 4px solid #0EA5E9; padding-left: 20px; margin: 30px 0; font-style: italic; color: #555;">
         „Nu vă întrebați dacă mai am și acum din cei cumpărați la 870, mă minunez oricum că am rezistat până au ajuns la 8000. Dar un x10 e totuși bine, zic eu, într-un an :)"
       </blockquote>
-
-      <p>La acea vreme, majoritatea oamenilor considerau Bitcoin o glumă.</p>
-
-      <p>O modă.</p>
-
-      <p>Un experiment.</p>
-
-      <p>Unii spuneau că va dispărea în câteva luni.</p>
-
-      <p>În 2017 l-am văzut urcând de la aproximativ 1.000 de dolari până aproape de 20.000 de dolari.</p>
+      <p>La acea vreme, majoritatea oamenilor considerau Bitcoin o glumă. O modă. Un experiment. Unii spuneau că va dispărea în câteva luni. În 2017 l-am văzut urcând de la aproximativ 1.000 de dolari până aproape de 20.000 de dolari.</p>
 
       <h2>Criza din 2008 și apariția Bitcoinului</h2>
-
-      <p>În martie 2020 (COVID-19) l-am văzut prăbușindu-se până în zona de 3.850 de dolari. (Mi-am lăsat o mașină amanet ca să cumpăr din nou :)</p>
-
-      <p>Am văzut oameni care spuneau că a murit.</p>
-
-      <p>Apoi l-am văzut revenind.</p>
-
-      <p>Apoi depășind 20.000 de dolari.</p>
-
-      <p>Apoi 50.000.</p>
-
-      <p>Apoi 100.000.</p>
-
-      <p>Și tocmai de aceea, astăzi nu mă mai întreb dacă Bitcoin va supraviețui.</p>
-
-      <p>Mă întreb cine îl va deține, controla și va avea suficienți cât să manipuleze prețul.</p>
-
-      <p>Pentru că aici cred că se află adevărata poveste.</p>
-
-      <p>În 2016 aproape nimeni nu voia Bitcoin.</p>
-
-      <p>În 2026 îl cumpără BlackRock.</p>
-
-      <p>Îl cumpără Strategy (fosta MicroStrategy).</p>
-
-      <p>Îl cumpără ETF-urile.</p>
-
-      <p>Îl cumpără Elon Musk.</p>
-
-      <p>Îl cumpără fondurile de investiții.</p>
-
-      <p>Îl cumpără companii listate la bursă.</p>
-
-      <p>Îl cumpără instituții care în urmă cu câțiva ani îl criticau sau îl ignorau complet.</p>
-
-      <p>Nu vă întrebați de ce?</p>
-
-      <p>Și exact în aceeași perioadă observăm un alt fenomen.</p>
-
-      <p>Devine din ce în ce mai greu să deții Bitcoin anonim.</p>
+      <p>În martie 2020 (COVID-19) l-am văzut prăbușindu-se până în zona de 3.850 de dolari. (Mi-am lăsat o mașină amanet ca să cumpăr din nou :) Am văzut oameni care spuneau că a murit. Apoi l-am văzut revenind, apoi depășind 20.000 de dolari, apoi 50.000, apoi 100.000.</p>
+      <p>Și tocmai de aceea, astăzi nu mă mai întreb dacă Bitcoin va supraviețui. Mă întreb cine îl va deține, controla și va avea suficienți cât să manipuleze prețul. Pentru că aici cred că se află adevărata poveste.</p>
+      <p>În 2016 aproape nimeni nu voia Bitcoin. În 2026 îl cumpără BlackRock, îl cumpără Strategy (fosta MicroStrategy), îl cumpără ETF-urile, îl cumpără Elon Musk, îl cumpără fondurile de investiții, îl cumpără companii listate la bursă — îl cumpără instituții care în urmă cu câțiva ani îl criticau sau îl ignorau complet. Nu vă întrebați de ce?</p>
+      <p>Și exact în aceeași perioadă observăm un alt fenomen: devine din ce în ce mai greu să deții Bitcoin anonim.</p>
 
       <h2>KYC, reglementare și control</h2>
-
       <p>Vedem deja o tendință globală:</p>
-
       <ul>
         <li>verificări KYC obligatorii;</li>
         <li>raportări fiscale automate;</li>
         <li>reglementări mai stricte pentru exchange-uri;</li>
         <li>monitorizarea fluxurilor financiare.</li>
       </ul>
-
-      <p>Autoritățile argumentează că aceste măsuri sunt necesare pentru combaterea fraudei, spălării banilor și finanțării activităților ilegale.</p>
-
-      <p>Criticii susțin că ele reduc gradual anonimatul financiar.</p>
-
-      <p>Indiferent de perspectiva adoptată, direcția pare clară: mai multă transparență și mai puțin anonimat.</p>
-
-      <p>Întrebarea pe care mi-o pun este simplă:</p>
-
-      <p>Dacă Bitcoin este doar un activ speculativ, de ce există o nevoie atât de mare de a ști exact cine îl deține?</p>
-
-      <p>Poate există explicații perfect legitime.</p>
-
-      <p>Combaterea fraudei.</p>
-
-      <p>Combaterea spălării banilor.</p>
-
-      <p>Combaterea finanțării activităților ilegale.</p>
-
-      <p>Dar este imposibil să nu observ că, pe măsură ce marile instituții acumulează Bitcoin, nivelul de control și identificare al utilizatorilor crește constant.</p>
-
-      <p>Coincidență?</p>
-
-      <p>Poate.</p>
-
-      <p>Sau poate că Bitcoin a devenit deja prea important pentru a mai fi ignorat.</p>
-
-      <p>Un alt lucru care mă fascinează este volatilitatea.</p>
-
-      <p>În fiecare zi vedem miliarde de dolari lichidate.</p>
-
-      <p>Long-uri distruse.</p>
-
-      <p>Short-uri distruse.</p>
-
-      <p>Conturi șterse.</p>
-
-      <p>Oameni care pierd într-o singură zi economiile de ani întregi.</p>
-
-      <p>Mass-media vorbește despre cei care au pierdut.</p>
-
-      <p>Eu mă uit la altceva.</p>
-
-      <p>Cine cumpără?</p>
-
-      <p>Pentru că atunci când cineva este lichidat, altcineva cumpără.</p>
-
-      <p>Când cineva vinde în panică, altcineva acumulează.</p>
-
-      <p>Când miliarde dispar din piață, activele nu dispar.</p>
-
-      <p>Ele își schimbă proprietarul.</p>
-
-      <p>Și atunci apare întrebarea care mă urmărește de ani de zile:</p>
-
-      <p>Asistăm oare la unul dintre cele mai mari transferuri de avere digitală din istoria modernă?</p>
-
-      <p>Nu de la instituții către populație.</p>
-
-      <p>Ci invers.</p>
-
-      <p>De la populație către instituții.</p>
-
-      <p>Apoi există componenta geopolitică.</p>
-
-      <p>Nu afirm că războaiele sunt declanșate pentru Bitcoin.</p>
-
-      <p>Nu am dovezi pentru asta.</p>
-
-      <p>Dar observ anumite lucruri.</p>
-
-      <p>Observ că energia devine din ce în ce mai importantă.</p>
-
-      <p>Observ că puterea de calcul devine din ce în ce mai importantă.</p>
-
-      <p>Observ că infrastructura digitală devine din ce în ce mai importantă.</p>
-
-      <p>Și observ că Bitcoin depinde direct de toate aceste elemente.</p>
-
-      <p>Așa că îmi permit să pun câteva întrebări.</p>
-
-      <p>De ce Groenlanda a devenit atât de importantă strategic în ultimii ani?</p>
-
-      <p>Este vorba doar despre poziția sa geografică?</p>
-
-      <p>Sau și despre resurse, energie, climă și viitoarele infrastructuri digitale?</p>
-
-      <p>Într-o lume în care centrele de date și operațiunile de minare consumă cantități uriașe de energie, accesul la energie ieftină și la climă rece poate deveni un avantaj strategic enorm.</p>
-
-      <p>La fel mă întreb și despre alte regiuni ale lumii bogate în energie.</p>
-
-      <p>Poate că răspunsurile sunt simple.</p>
-
-      <p>Poate că nu.</p>
-
-      <p>Dar cred că merită să punem întrebările.</p>
-
-      <p>Pentru că marile transformări economice sunt rareori explicate complet în momentul în care au loc.</p>
-
-      <p>De obicei sunt înțelese ani mai târziu.</p>
-
-      <p>Poate că mă înșel.</p>
-
-      <p>Poate că toate acestea sunt simple coincidențe.</p>
-
-      <p>Dar după aproape un deceniu petrecut urmărind Bitcoin am învățat un lucru:</p>
-
-      <p>Când toată lumea vinde, cineva cumpără.</p>
-
-      <p>Când apare panica, cineva profită.</p>
-
-      <p>Când miliarde sunt lichidate, cineva acumulează.</p>
-
-      <p>Iar întrebarea care mă interesează cel mai mult nu este dacă Bitcoin va ajunge la 1.000.000 de euro, pentru că asta sunt convins.</p>
-
-      <p>Întrebarea corectă care mă interesează este: cine va deține activele strategice atunci când această transformare va fi completă?</p>
-
-      <p>Iar dintre toate activele existente astăzi, Bitcoin pare să fie cel care atrage cea mai mare atenție din partea instituțiilor, statelor și investitorilor deopotrivă.</p>
-
-      <p>Poate că peste 10 ani vom privi înapoi și vom descoperi că adevărata revoluție nu a fost apariția criptomonedelor. Ci transformarea Bitcoinului în rezerva strategică digitală a secolului XXI.</p>
-
-      <p>Cine va deține majoritatea Bitcoin atunci când va ajunge acolo?</p>
+      <p>Autoritățile argumentează că aceste măsuri sunt necesare pentru combaterea fraudei, spălării banilor și finanțării activităților ilegale. Criticii susțin că ele reduc gradual anonimatul financiar. Indiferent de perspectiva adoptată, direcția pare clară: mai multă transparență și mai puțin anonimat.</p>
+      <p>Întrebarea pe care mi-o pun este simplă: dacă Bitcoin este doar un activ speculativ, de ce există o nevoie atât de mare de a ști exact cine îl deține? Poate există explicații perfect legitime — combaterea fraudei, a spălării banilor și a finanțării activităților ilegale. Dar este imposibil să nu observ că, pe măsură ce marile instituții acumulează Bitcoin, nivelul de control și identificare al utilizatorilor crește constant. Coincidență? Poate. Sau poate că Bitcoin a devenit deja prea important pentru a mai fi ignorat.</p>
+      <p>Un alt lucru care mă fascinează este volatilitatea. În fiecare zi vedem miliarde de dolari lichidate — long-uri distruse, short-uri distruse, conturi șterse, oameni care pierd într-o singură zi economiile de ani întregi. Mass-media vorbește despre cei care au pierdut. Eu mă uit la altceva: cine cumpără? Pentru că atunci când cineva este lichidat, altcineva cumpără. Când cineva vinde în panică, altcineva acumulează. Când miliarde dispar din piață, activele nu dispar — ele își schimbă proprietarul.</p>
+      <p>Și atunci apare întrebarea care mă urmărește de ani de zile: asistăm oare la unul dintre cele mai mari transferuri de avere digitală din istoria modernă? Nu de la instituții către populație, ci invers — de la populație către instituții.</p>
+      <p>Apoi există componenta geopolitică. Nu afirm că războaiele sunt declanșate pentru Bitcoin — nu am dovezi pentru asta. Dar observ anumite lucruri. Observ că energia, puterea de calcul și infrastructura digitală devin din ce în ce mai importante. Și observ că Bitcoin depinde direct de toate aceste elemente.</p>
+      <p>Așa că îmi permit să pun câteva întrebări. De ce Groenlanda a devenit atât de importantă strategic în ultimii ani? Este vorba doar despre poziția sa geografică, sau și despre resurse, energie, climă și viitoarele infrastructuri digitale? Într-o lume în care centrele de date și operațiunile de minare consumă cantități uriașe de energie, accesul la energie ieftină și la climă rece poate deveni un avantaj strategic enorm. La fel mă întreb și despre alte regiuni ale lumii bogate în energie.</p>
+      <p>Poate că răspunsurile sunt simple. Poate că nu. Dar cred că merită să punem întrebările, pentru că marile transformări economice sunt rareori explicate complet în momentul în care au loc — de obicei sunt înțelese ani mai târziu.</p>
+      <p>Poate că mă înșel. Poate că toate acestea sunt simple coincidențe. Dar după aproape un deceniu petrecut urmărind Bitcoin am învățat un lucru: când toată lumea vinde, cineva cumpără; când apare panica, cineva profită; când miliarde sunt lichidate, cineva acumulează.</p>
+      <p>Iar întrebarea care mă interesează cel mai mult nu este dacă Bitcoin va ajunge la 1.000.000 de euro, pentru că asta sunt convins. Întrebarea corectă care mă interesează este: cine va deține activele strategice atunci când această transformare va fi completă?</p>
+      <p>Iar dintre toate activele existente astăzi, Bitcoin pare să fie cel care atrage cea mai mare atenție din partea instituțiilor, statelor și investitorilor deopotrivă. Poate că peste 10 ani vom privi înapoi și vom descoperi că adevărata revoluție nu a fost apariția criptomonedelor, ci transformarea Bitcoinului în rezerva strategică digitală a secolului XXI. Cine va deține majoritatea Bitcoin atunci când va ajunge acolo?</p>
 
       <h2>Concluzie</h2>
-
-      <p>Nu pretind că dețin adevărul.</p>
-
-      <p>Poate teoria mea este greșită.</p>
-
-      <p>Poate este doar parțial corectă.</p>
-
-      <p>Dar cred că trăim una dintre cele mai importante tranziții financiare din istoria modernă.</p>
-
+      <p>Nu pretind că dețin adevărul. Poate teoria mea este greșită. Poate este doar parțial corectă. Dar cred că trăim una dintre cele mai importante tranziții financiare din istoria modernă.</p>
       <p>Vedem simultan:</p>
-
       <ul>
         <li>datorii globale record;</li>
         <li>digitalizarea banilor;</li>
@@ -826,21 +567,9 @@ export default {
         <li>acumularea de active digitale de către instituții;</li>
         <li>dezvoltarea monedelor digitale de stat.</li>
       </ul>
-
-      <p>Pentru mine, întrebarea nu mai este dacă sistemul financiar mondial se schimbă.</p>
-
-      <p>Întrebarea este: cine va deține activele strategice atunci când această transformare va fi completă?</p>
-
-      <p>Iar dintre toate activele existente astăzi, Bitcoin pare să fie cel care atrage cea mai mare atenție din partea instituțiilor, statelor și investitorilor deopotrivă.</p>
-
-      <p>Poate că peste 10 ani vom privi înapoi și vom descoperi că adevărata revoluție nu a fost apariția criptomonedelor. Ci transformarea Bitcoinului în rezerva strategică digitală a secolului XXI.</p>
-
-      <p>Să vedem și ce ne rezervă calculatoarele cuantice într-un viitor blog…. vor ajuta la minarea Bitcoin, sau vor sparge cheile private ale portofelelor „adormite"?</p>
-
-      <p>Va urma….</p>
-
+      <p>Pentru mine, întrebarea nu mai este dacă sistemul financiar mondial se schimbă. Întrebarea este cine va deține activele strategice atunci când această transformare va fi completă.</p>
+      <p>Să vedem și ce ne rezervă calculatoarele cuantice într-un viitor blog…. vor ajuta la minarea Bitcoin, sau vor sparge cheile private ale portofelelor „adormite"? Va urma….</p>
       <p><em>— Ciprian Ciceu<br/>Fintech Entrepreneur | Blockchain Advisor | Founder of Mainet X</em></p>
-
       <p><em>Acest articol reprezintă exclusiv opinia personală a autorului și nu constituie sfat financiar sau recomandare de investiții.</em></p>
     `,
   },
